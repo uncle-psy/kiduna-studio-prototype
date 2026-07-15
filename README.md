@@ -2,6 +2,8 @@
 
 A persistent, interactive prototype of the Kiduna Studio Field.
 
+Live prototype: [kiduna-studio-prototype.vercel.app](https://kiduna-studio-prototype.vercel.app)
+
 The first scenario follows one member through a complete collaborative arc inside Kinship Duna:
 
 1. Gather Sucil and Ashik.
