@@ -1,0 +1,9 @@
+@font-face { font-family: "Goudy Heavyface"; src: url("/fonts/goudy-heavyface.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "Avenir"; src: url("/fonts/avenir-book.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Avenir"; src: url("/fonts/avenir-heavy.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+
+* { box-sizing: border-box; }
+html, body { width: 100%; min-height: 100%; margin: 0; background: #0d0805; }
+body { overflow: hidden; -webkit-font-smoothing: antialiased; }
+button, input { font: inherit; }
+::selection { background: #35d8e5; color: #09282a; }
