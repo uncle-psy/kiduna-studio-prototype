@@ -1,29 +1,42 @@
-# Kiduna Studio Prototype
+# Kiduna Studio UX Prototype
 
-A persistent, interactive prototype of the Kiduna Studio Field.
+A high-fidelity, persistent prototype for learning what Kiduna Studio should become. The prototype is intentionally optimized for believable interaction, fast iteration, and domain-model discovery—not for production readiness.
 
-Live prototype: [kiduna-studio-prototype.vercel.app](https://kiduna-studio-prototype.vercel.app)
+- Live Studio: [kiduna-studio-prototype.vercel.app](https://kiduna-studio-prototype.vercel.app)
+- UX specification and iteration history: [/iterations](https://kiduna-studio-prototype.vercel.app/iterations)
+- Prototype gap backlog: [GitHub issue #1](https://github.com/uncle-psy/kiduna-studio-prototype/issues/1)
 
-The first scenario follows one member through a complete collaborative arc inside Kinship Duna:
+## Current scenario
 
-1. Gather Sucil and Ashik.
-2. Form the private Studio Makers community.
-3. Start Studio Field Prototype inside that community.
-4. Bring three private source artifacts into the project.
-5. Invoke Mapper with project-scoped, read-only access.
-6. Work through the brief in a project conversation.
-7. Review a cited proposed change.
-8. Approve version 0.2 and retain a receipt.
+1. Sign in locally as David, Jeya, or Aashik. Each browser keeps its own selected identity.
+2. David asks Lumen, his Ally, to bring Jeya and Aashik together.
+3. Their acceptance activates the secret Studio Makers community and its Envoy.
+4. A member starts the Studio Field Prototype as a project inside the community.
+5. Sources become project Wisdom; Mapper reads only the project's shared scope.
+6. The Allies and Envoys surface a contextual direction instead of creating a group-chat transcript.
+7. A member approves direction 0.2 and the Field retains a receipt.
+
+The Field is always present. Chat and detailed information appear as a nearly opaque HUD, preserving spatial context without competing with focused work.
+
+## Domain vocabulary under test
+
+- **Member** — a person with a private Ally.
+- **Ally** — the member's continuous, personal agent relationship.
+- **Community** — a living relationship among members, represented by an Envoy.
+- **Envoy** — the agent-facing presence of a non-member container such as a community or project.
+- **Wisdom** — a scoped, provenance-aware knowledge namespace available to a person, community, project, or Envoy.
+- **Project** — purposeful work that can contain people, Envoys, actors, sources, direction, and receipts.
+- **Actor** — an invoked capability, such as Mapper, with explicit purpose and scope.
 
 ## Architecture
 
 - Next.js App Router and React
 - Neon/Postgres through Drizzle ORM
-- One persistent workspace projection for the current Field state
-- An append-only event table for action receipts
+- Persisted workspace projection plus append-only action receipts
+- OpenAI Responses API integration with a deterministic prototype fallback
 - Vercel deployment connected to GitHub
 
-The prototype uses namespaced database tables (`studio_prototype_*`) so it can safely share the current development database while the product model is still changing.
+The database tables use the `studio_prototype_*` namespace so the model can evolve safely during UX exploration.
 
 ## Local development
 
@@ -34,16 +47,20 @@ npm run db:migrate
 npm run dev
 ```
 
-`DATABASE_URL` must point to a Postgres-compatible database.
+Required environment:
 
-## Current prototype boundaries
+- `DATABASE_URL` — a Postgres-compatible database.
+- `OPENAI_API_KEY` — optional; enables generative Ally responses. Never commit or paste this value into prompts or source control.
+- `OPENAI_MODEL` — optional; defaults to `gpt-5.4-mini`.
 
-- One shared workspace rather than authenticated, per-member projections
-- Simulated invitation acceptance rather than live delivery
-- One project and one community
-- No artifact upload/blob storage yet
-- No real-time presence or concurrent conflict handling yet
-- No agent runtime; Mapper activity is represented as typed persisted actions
-- No organization policy editor or contextual grant negotiation yet
+Without an OpenAI key, the Ally remains fully usable through deterministic, scenario-aware responses.
 
-These are deliberate boundaries for the first functional loop and the next areas to test.
+## Prototype boundaries
+
+- Account selection is local browser identity switching, not authentication.
+- Invitation delivery, external Slack/Telegram connections, and concurrent work are simulated.
+- The current scenario contains one community, one project, and one actor so interaction quality can be evaluated before testing density.
+- Wisdom sources are represented, but upload, provenance inspection, and granular sharing controls remain prototype gaps.
+- Envoy Stance, Connections, Skills, and Automations are represented conceptually and need dedicated edit flows.
+
+See the in-product specification and GitHub backlog for the use cases and questions driving the next iteration.

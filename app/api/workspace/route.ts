@@ -1,143 +1,114 @@
 import { desc, eq } from "drizzle-orm";
 import { db } from "@/db";
 import { studioEvents, studioWorkspaces } from "@/db/schema";
-import { defaultStudioState, type StudioAction, type StudioReceipt, type StudioState } from "@/lib/studio-state";
+import {
+  defaultStudioState,
+  normalizeStudioState,
+  type MemberId,
+  type StudioAction,
+  type StudioReceipt,
+  type StudioState,
+} from "@/lib/studio-state";
 
 export const runtime = "nodejs";
 
 const WORKSPACE_SLUG = "kinship-studio-field";
+const names: Record<MemberId, string> = { david: "David", jeya: "Jeya", aashik: "Aashik" };
 
 async function getWorkspace() {
-  const existing = await db.query.studioWorkspaces.findFirst({
-    where: eq(studioWorkspaces.slug, WORKSPACE_SLUG),
-  });
-
+  const existing = await db.query.studioWorkspaces.findFirst({ where: eq(studioWorkspaces.slug, WORKSPACE_SLUG) });
   if (existing) return existing;
-
-  await db.insert(studioWorkspaces).values({
-    slug: WORKSPACE_SLUG,
-    state: defaultStudioState,
-  }).onConflictDoNothing({ target: studioWorkspaces.slug });
-
-  return db.query.studioWorkspaces.findFirst({
-    where: eq(studioWorkspaces.slug, WORKSPACE_SLUG),
-  });
+  await db.insert(studioWorkspaces).values({ slug: WORKSPACE_SLUG, state: defaultStudioState })
+    .onConflictDoNothing({ target: studioWorkspaces.slug });
+  return db.query.studioWorkspaces.findFirst({ where: eq(studioWorkspaces.slug, WORKSPACE_SLUG) });
 }
 
 async function responsePayload() {
   const workspace = await getWorkspace();
+  const state = normalizeStudioState(workspace?.state);
   const events = await db.select().from(studioEvents)
     .where(eq(studioEvents.workspaceSlug, WORKSPACE_SLUG))
-    .orderBy(desc(studioEvents.createdAt))
-    .limit(12);
-
-  return { state: workspace?.state ?? defaultStudioState, events };
+    .orderBy(desc(studioEvents.createdAt)).limit(20);
+  return { state, events };
 }
 
 export async function GET() {
-  try {
-    return Response.json(await responsePayload());
-  } catch (error) {
+  try { return Response.json(await responsePayload()); }
+  catch (error) {
     console.error("Studio workspace read failed", error);
-    return Response.json({ error: "The Studio backend is unavailable." }, { status: 503 });
+    return Response.json({ error: "The living workspace is momentarily quiet." }, { status: 503 });
   }
 }
 
 export async function POST(request: Request) {
   try {
-    const body = await request.json() as { action?: StudioAction; message?: string };
+    const body = await request.json() as { action?: StudioAction; memberId?: MemberId };
     if (!body.action) return Response.json({ error: "Action is required." }, { status: 400 });
-
+    const memberId = body.memberId && names[body.memberId] ? body.memberId : "david";
     const workspace = await getWorkspace();
-    const current = workspace?.state ?? defaultStudioState;
+    const current = normalizeStudioState(workspace?.state);
     let next: StudioState = structuredClone(current);
-    let actor = "David";
     let summary = "";
 
     switch (body.action) {
-      case "GATHER_MEMBERS":
-        next = { ...next, scene: 1, communityStatus: "gathered" };
-        summary = "Gathered Sucil and Ashik without changing authority.";
+      case "INVITE_MEMBERS":
+        next.community.status = "inviting";
+        next.community.invitations = { jeya: "delivered", aashik: "delivered" };
+        summary = "The Studio Makers invitations reached Jeya and Aashik through their Allies.";
         break;
-      case "CREATE_COMMUNITY":
-        next = { ...next, scene: 2, communityStatus: "draft" };
-        summary = "Prepared private community invitations for Sucil and Ashik.";
-        break;
-      case "SEND_INVITATIONS":
-        next = { ...next, scene: 3, communityStatus: "active" };
-        summary = "Sucil and Ashik accepted invitations to Studio Makers.";
+      case "ACCEPT_INVITATIONS":
+        next.community.status = "active";
+        next.community.invitations = { jeya: "accepted", aashik: "accepted" };
+        summary = "Studio Makers became active when Jeya and Aashik joined.";
         break;
       case "START_PROJECT":
-        next = { ...next, scene: 4, projectStatus: "active" };
-        summary = "Created Studio Field Prototype inside Studio Makers.";
+        next.community.status = "active";
+        next.community.invitations = { jeya: "accepted", aashik: "accepted" };
+        next.project.status = "active";
+        summary = "Studio Field Prototype began inside Studio Makers.";
         break;
-      case "BRING_MATERIALS":
-        next = { ...next, scene: 5, materialCount: 3, actorStatus: "comparing" };
-        summary = "Added three private source artifacts and invoked Mapper with read-only scope.";
+      case "OPEN_WISDOM":
+        next.project.status = "active";
+        next.project.materialCount = 3;
+        next.wisdom.sourceCount = 3;
+        next.wisdom.synthesis = "Three private sources now reinforce a single principle: the Field stays alive while attention gathers into calm, contextual surfaces.";
+        summary = "Three private sources became project Wisdom, available through each member's Ally.";
         break;
-      case "OPEN_PROJECT_CHAT":
-        next = { ...next, scene: 6 };
-        summary = "Opened the private Studio Field Prototype conversation.";
+      case "RUN_MAPPER":
+        next.project.mapperStatus = "ready";
+        next.wisdom.sourceCount = Math.max(3, next.wisdom.sourceCount);
+        next.direction.status = "proposed";
+        summary = "Mapper found a design direction and prepared it as a small, cited signal.";
         break;
-      case "PREPARE_UPDATE":
-        next = { ...next, scene: 7, actorStatus: "change-ready" };
-        actor = "Mapper";
-        summary = "Prepared brief version 0.2 from three cited private sources.";
+      case "PROPOSE_DIRECTION":
+        next.direction.status = "proposed";
+        summary = "The project Envoy surfaced one decision that benefits from David's attention.";
         break;
-      case "APPROVE_UPDATE":
-        next = { ...next, scene: 7, actorStatus: "complete", briefVersion: "0.2", briefApproved: true };
-        summary = "Accepted Studio Field interaction brief version 0.2 as a private project artifact.";
+      case "APPROVE_DIRECTION":
+        next.direction = { ...next.direction, version: "0.2", status: "accepted" };
+        summary = "Direction 0.2 became part of the project's living Wisdom.";
         break;
-      case "SEND_MESSAGE": {
-        const message = body.message?.trim();
-        if (!message || message.length > 1000) {
-          return Response.json({ error: "Message must contain 1–1000 characters." }, { status: 400 });
-        }
-        next = {
-          ...next,
-          scene: 6,
-          messages: [...next.messages, {
-            id: crypto.randomUUID(),
-            author: "David",
-            initials: "DL",
-            body: message,
-            createdAt: new Date().toISOString(),
-          }],
-        };
-        summary = "Added a member message to the private project conversation.";
-        break;
-      }
       case "RESET":
         next = structuredClone(defaultStudioState);
-        summary = "Reset the prototype workspace to its initial Field state.";
+        summary = "The UX demonstration returned to its beginning.";
         break;
       default:
-        return Response.json({ error: "Unknown Studio action." }, { status: 400 });
+        return Response.json({ error: "That prototype action is not available." }, { status: 400 });
     }
 
     const receipt: StudioReceipt = {
-      id: crypto.randomUUID(),
-      action: body.action,
-      summary,
-      createdAt: new Date().toISOString(),
+      id: crypto.randomUUID(), action: body.action, actor: names[memberId], summary, createdAt: new Date().toISOString(),
     };
-    next.lastReceipt = receipt;
+    next.receipts = [receipt, ...next.receipts].slice(0, 20);
 
-    await db.update(studioWorkspaces)
-      .set({ state: next, updatedAt: new Date() })
+    await db.update(studioWorkspaces).set({ state: next, updatedAt: new Date() })
       .where(eq(studioWorkspaces.slug, WORKSPACE_SLUG));
-
     await db.insert(studioEvents).values({
-      workspaceSlug: WORKSPACE_SLUG,
-      action: body.action,
-      actor,
-      summary,
-      payload: body.action === "SEND_MESSAGE" ? { messageId: next.messages.at(-1)?.id } : {},
+      workspaceSlug: WORKSPACE_SLUG, action: body.action, actor: names[memberId], summary, payload: { memberId },
     });
-
     return Response.json(await responsePayload());
   } catch (error) {
     console.error("Studio workspace action failed", error);
-    return Response.json({ error: "The Studio action could not be recorded." }, { status: 500 });
+    return Response.json({ error: "That movement could not be carried into the Field." }, { status: 500 });
   }
 }
