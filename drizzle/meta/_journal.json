@@ -8,6 +8,13 @@
       "when": 1784141968937,
       "tag": "0000_gorgeous_multiple_man",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1784153611824,
+      "tag": "0001_pretty_genesis",
+      "breakpoints": true
     }
   ]
 }

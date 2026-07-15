@@ -1,0 +1,24 @@
+services:
+  postgres:
+    build:
+      context: ./infra/postgres
+      args:
+        PG_MAJOR: "16"
+        AGE_VERSION: "1.6.0"
+        PGVECTOR_VERSION: "0.8.2"
+    environment:
+      POSTGRES_DB: kiduna
+      POSTGRES_USER: kiduna
+      POSTGRES_PASSWORD: kiduna_dev
+    ports:
+      - "55432:5432"
+    volumes:
+      - kiduna_postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U kiduna -d kiduna && psql -U kiduna -d kiduna -tAc \"select count(*) = 2 from pg_extension where extname in ('vector','age')\" | grep -q t"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+volumes:
+  kiduna_postgres:

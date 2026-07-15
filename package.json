@@ -10,15 +10,19 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --ignore-pattern .next",
+    "db:up": "docker-compose up -d --build postgres",
+    "db:down": "docker-compose down",
+    "db:check": "node --env-file=.env.local scripts/db-check.mjs",
+    "db:seed": "node --env-file=.env.local scripts/db-seed.mjs",
     "db:generate": "node --env-file=.env.local ./node_modules/drizzle-kit/bin.cjs generate",
     "db:migrate": "node --env-file=.env.local ./node_modules/drizzle-kit/bin.cjs migrate"
   },
   "dependencies": {
-    "@neondatabase/serverless": "^1.1.0",
     "drizzle-orm": "0.45.2",
     "next": "16.2.6",
     "react": "19.2.6",
-    "react-dom": "19.2.6"
+    "react-dom": "19.2.6",
+    "postgres": "^3.4.7"
   },
   "devDependencies": {
     "@types/node": "22.19.19",

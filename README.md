@@ -19,7 +19,9 @@ The first scenario follows one fixed member identity through a continuous collab
 ## Architecture
 
 - Next.js App Router and React
-- Neon/Postgres through Drizzle ORM
+- PostgreSQL through Drizzle ORM and the portable Postgres.js driver
+- pgvector for scoped Wisdom embeddings and semantic retrieval
+- Apache AGE for the organization, community, project, member, agent, and artifact relationship graph
 - One persistent workspace projection for the current Field state
 - An append-only event table for action receipts
 - Vercel deployment connected to GitHub
@@ -31,11 +33,25 @@ The prototype uses namespaced database tables (`studio_prototype_*`) so it can s
 ```bash
 npm install
 cp .env.example .env.local
+npm run db:up
 npm run db:migrate
+npm run db:check
+npm run db:seed
 npm run dev
 ```
 
-`DATABASE_URL` must point to a Postgres-compatible database.
+The included PostgreSQL 16 image builds pgvector 0.8.2 and Apache AGE 1.6.0, creates the `kiduna` graph, and initializes the project Wisdom vector table. It listens on port `55432` so it does not collide with a conventional local PostgreSQL installation.
+
+`DATABASE_URL` can also point to a hosted PostgreSQL server, but that server must permit both extensions for the complete stack. The database capability endpoint is available at `/api/system/database`.
+
+Useful commands:
+
+```bash
+npm run db:up       # build and start PostgreSQL
+npm run db:check    # test PostgreSQL, vector distance, AGE, and the Kiduna graph
+npm run db:seed     # seed the Studio domain graph and one project Wisdom record
+npm run db:down     # stop the local database without deleting its volume
+```
 
 ## Current prototype boundaries
 
