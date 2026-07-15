@@ -39,6 +39,18 @@ export const defaultStudioState: StudioState = {
   lastReceipt: null,
 };
 
+export function normalizeStudioState(value: unknown): StudioState {
+  if (!value || typeof value !== "object" || (value as { version?: number }).version !== 1) {
+    return structuredClone(defaultStudioState);
+  }
+  const state = value as Partial<StudioState>;
+  return {
+    ...structuredClone(defaultStudioState),
+    ...state,
+    messages: Array.isArray(state.messages) ? state.messages : [],
+  } as StudioState;
+}
+
 export type StudioAction =
   | "GATHER_MEMBERS"
   | "CREATE_COMMUNITY"

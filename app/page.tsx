@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 import styles from "./studio.module.css";
 import type { StudioAction, StudioState } from "@/lib/studio-state";
@@ -16,7 +17,7 @@ const scenes = [
   {
     kicker: "Living return",
     title: "Back in Kinship Duna",
-    ally: "Good morning, David. Sucil is here now. Ashik was active 12 minutes ago. Nothing needs your approval.",
+    ally: "Good morning. David, Jeya, and Aashik are present. Nothing needs your approval.",
     action: "Gather members",
     actionKey: "GATHER_MEMBERS",
     depth: "Clear",
@@ -25,7 +26,7 @@ const scenes = [
   {
     kicker: "Gather · reversible",
     title: "Two members, one intention",
-    ally: "You gathered Sucil and Ashik. I can open a conversation, start a project, or create a community. Nothing has changed yet.",
+    ally: "You brought Jeya and Aashik into context. I can start a project or create a community. Nothing has changed yet.",
     action: "Create community",
     actionKey: "CREATE_COMMUNITY",
     depth: "Context",
@@ -34,7 +35,7 @@ const scenes = [
   {
     kicker: "Command preview",
     title: "Invite them into a community",
-    ally: "This will invite Sucil and Ashik to Studio Makers, a private community in Kinship Duna. You will be its steward.",
+    ally: "This will invite Jeya and Aashik to Studio Makers, a private community in Kinship Duna. You will be its steward.",
     action: "Send invitations",
     actionKey: "SEND_INVITATIONS",
     depth: "Focus",
@@ -43,7 +44,7 @@ const scenes = [
   {
     kicker: "Community · active",
     title: "Studio Makers is here",
-    ally: "Both invitations were accepted. The three of you now share this community, its conversation, and its private materials.",
+    ally: "Both invitations were accepted. The three of you now share this community and its private materials.",
     action: "Start a project",
     actionKey: "START_PROJECT",
     depth: "Context",
@@ -80,7 +81,7 @@ const scenes = [
     kicker: "Artifact · proposed change",
     title: "Review before the project changes",
     ally: "Mapper proposes a new accepted brief from three private sources. Approving creates version 0.2 inside this project; it does not publish or deploy it.",
-    action: "Approve version 0.2",
+    action: "Review version 0.2",
     actionKey: "APPROVE_UPDATE",
     depth: "Focus",
     depthValue: "94%",
@@ -89,22 +90,31 @@ const scenes = [
 
 const members = [
   { id: "david", initials: "DL", name: "David", role: "Steward" },
-  { id: "sucil", initials: "SD", name: "Sucil", role: "Builder" },
-  { id: "ashik", initials: "AK", name: "Ashik", role: "Builder" },
+  { id: "jeya", initials: "JY", name: "Jeya", role: "Meaning maker" },
+  { id: "aashik", initials: "AK", name: "Aashik", role: "Builder" },
 ] as const;
 
+const accounts = [
+  { id: "david", initials: "DL", name: "David", role: "Steward", ally: "Ki", allyInitials: "KI" },
+  { id: "jeya", initials: "JY", name: "Jeya", role: "Meaning maker", ally: "Mira", allyInitials: "MI" },
+  { id: "aashik", initials: "AK", name: "Aashik", role: "Builder", ally: "Kite", allyInitials: "KT" },
+] as const;
+
+type AccountId = typeof accounts[number]["id"];
+type Focus = "chat" | "artifact" | null;
+
 export default function StudioPage() {
+  const [accountId, setAccountId] = useState<AccountId | null>(null);
+  const [identityReady, setIdentityReady] = useState(false);
   const [scene, setScene] = useState(0);
+  const [focus, setFocus] = useState<Focus>(null);
   const [workspace, setWorkspace] = useState<StudioState | null>(null);
   const [events, setEvents] = useState<WorkspaceEvent[]>([]);
   const [busy, setBusy] = useState(false);
   const [backendError, setBackendError] = useState("");
   const [chatValue, setChatValue] = useState("");
   const current = scenes[scene];
-
-  const move = useCallback((direction: number) => {
-    setScene((value) => Math.min(scenes.length - 1, Math.max(0, value + direction)));
-  }, []);
+  const account = accounts.find((item) => item.id === accountId) ?? accounts[0];
 
   const applyPayload = useCallback((payload: { state: StudioState; events: WorkspaceEvent[] }) => {
     setWorkspace(payload.state);
@@ -119,18 +129,30 @@ export default function StudioPage() {
       const response = await fetch("/api/workspace", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ action, message }),
+        body: JSON.stringify({ action, message, memberId: accountId ?? "david" }),
       });
       const payload = await response.json();
       if (!response.ok) throw new Error(payload.error || "Studio could not record that action.");
       applyPayload(payload);
       if (action === "SEND_MESSAGE") setChatValue("");
+      if (action === "OPEN_PROJECT_CHAT") setFocus("chat");
+      if (action === "PREPARE_UPDATE") setFocus("artifact");
+      if (action === "RESET") setFocus(null);
     } catch (error) {
       setBackendError(error instanceof Error ? error.message : "Studio could not record that action.");
     } finally {
       setBusy(false);
     }
-  }, [applyPayload]);
+  }, [accountId, applyPayload]);
+
+  useEffect(() => {
+    const saved = sessionStorage.getItem("kiduna-studio-member") as AccountId | null;
+    const frame = requestAnimationFrame(() => {
+      if (saved && accounts.some((item) => item.id === saved)) setAccountId(saved);
+      setIdentityReady(true);
+    });
+    return () => cancelAnimationFrame(frame);
+  }, []);
 
   useEffect(() => {
     let active = true;
@@ -145,43 +167,60 @@ export default function StudioPage() {
   }, [applyPayload]);
 
   useEffect(() => {
-    const onKey = (event: KeyboardEvent) => {
-      if (event.key === "ArrowRight") move(1);
-      if (event.key === "ArrowLeft") move(-1);
-      if (event.key === "Escape" && scene > 0) move(-1);
-    };
+    const onKey = (event: KeyboardEvent) => { if (event.key === "Escape") setFocus(null); };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [move, scene]);
+  }, []);
 
   const isCommunity = scene >= 3;
   const isProject = scene >= 4;
   const isWorkbench = scene >= 5;
-  const isChat = scene === 6;
-  const isArtifactFocus = scene === 7;
+  const isChat = focus === "chat";
+  const isArtifactFocus = focus === "artifact";
   const approved = workspace?.briefApproved ?? false;
   const materialCount = workspace?.materialCount ?? (isWorkbench ? 3 : 1);
+
+  const enterAs = (id: AccountId) => {
+    sessionStorage.setItem("kiduna-studio-member", id);
+    setAccountId(id);
+  };
+
+  if (!identityReady) return null;
+
+  if (!accountId) return <main className={`${styles.studio} ${styles.entry}`}>
+    <div className={styles.fieldWeather} aria-hidden="true" />
+    <section className={styles.entryPanel}>
+      <Image src="/kiduna-mark.svg" alt="" width={46} height={46} priority />
+      <span>STUDIO · KINSHIP DUNA</span>
+      <h1>Enter the Field</h1>
+      <p>Choose who you are entering as. This identity remains fixed for this browser session.</p>
+      <div>{accounts.map((item) => <button key={item.id} type="button" onClick={() => enterAs(item.id)}>
+        <b>{item.initials}</b><span><strong>{item.name}</strong><small>{item.role} · {item.ally} is their Ally</small></span><i>Enter →</i>
+      </button>)}</div>
+      <small>Prototype identity · no account switching inside the Field</small>
+    </section>
+  </main>;
 
   return (
     <main className={`${styles.studio} ${styles[`scene${scene}`]}`}>
       <div className={styles.fieldWeather} aria-hidden="true" />
 
       <header className={styles.hudTop}>
-        <button className={styles.containerChip} type="button" aria-label="Current container">
-          <img src="/kiduna-mark.svg" alt="" />
+        <div className={styles.containerChip} aria-label="Current container">
+          <Image src="/kiduna-mark.svg" alt="" width={40} height={40} />
           <span>
             <small>acting as member</small>
-            <strong>Kinship Duna</strong>
+            <strong>{account.name}</strong>
           </span>
+          <i>›</i><span><small>organization</small><strong>Kinship Duna</strong></span>
           {isCommunity && <><i>›</i><span><small>community</small><strong>Studio Makers</strong></span></>}
           {isProject && <><i>›</i><span><small>project</small><strong>Field Prototype</strong></span></>}
-        </button>
+        </div>
 
         <div className={styles.contextActions} aria-label="Available actions">
-          {scene > 0 && <button type="button" onClick={() => move(-1)}>Retreat</button>}
           <button type="button" onClick={() => runAction("RESET")} disabled={busy}>Reset</button>
-          <button type="button">Ask Ally</button>
-          <button className={styles.primaryAction} type="button" onClick={() => runAction(current.actionKey)} disabled={busy || (scene === scenes.length - 1 && approved)}>
+          {isProject && <button type="button" onClick={() => setFocus("chat")}>Ask {account.ally}</button>}
+          <button className={styles.primaryAction} type="button" onClick={() => scene === 7 && !approved ? setFocus("artifact") : runAction(current.actionKey)} disabled={busy || (scene === scenes.length - 1 && approved)}>
             {busy ? "Recording…" : approved && scene === 7 ? "Version 0.2 accepted" : current.action}
           </button>
         </div>
@@ -231,8 +270,8 @@ export default function StudioPage() {
           <h2>Studio Makers</h2>
           <p>A place to build the first Studio Field demonstration from inside Kiduna.</p>
           <div className={styles.inviteRows}>
-            <div><b>SD</b><span><strong>Sucil Doss</strong><small>invitation ready</small></span><em>Builder</em></div>
-            <div><b>AK</b><span><strong>Ashik</strong><small>invitation ready</small></span><em>Builder</em></div>
+            <div><b>JY</b><span><strong>Jeya</strong><small>invitation ready</small></span><em>Meaning maker</em></div>
+            <div><b>AK</b><span><strong>Aashik</strong><small>invitation ready</small></span><em>Builder</em></div>
           </div>
           <div className={styles.consequence}>
             <span>WHAT CHANGES</span>
@@ -288,10 +327,10 @@ export default function StudioPage() {
             <small>3 people · Ally present · private</small>
           </div>
           <div className={styles.chatThread}>
-            <article><b>SD</b><div><strong>Sucil</strong><p>The field should stay present even when we are talking. I want the project objects to respond to the conversation.</p></div><time>11:56</time></article>
-            <article><b>DL</b><div><strong>You</strong><p>Yes. Keep the field underneath, but let chat become nearly opaque when we need to read and work through something.</p></div><time>11:58</time></article>
+            <article><b>JY</b><div><strong>Jeya</strong><p>The field should stay present even when we are talking. I want the project objects to respond to the work.</p></div><time>11:56</time></article>
+            <article><b>{account.initials}</b><div><strong>You</strong><p>Yes. Keep the field underneath, but let focused information become nearly opaque when we need to read and work through something.</p></div><time>11:58</time></article>
             {workspace?.messages.map((message) => <article key={message.id}><b>{message.initials}</b><div><strong>You</strong><p>{message.body}</p></div><time>{new Date(message.createdAt).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}</time></article>)}
-            <article className={styles.allyMessage}><b>KI</b><div><strong>Ki · your Ally</strong><p>I can update the project brief with that principle and cite this conversation plus the two source documents.</p><button type="button" onClick={() => runAction("PREPARE_UPDATE")} disabled={busy}>Prepare a proposed update →</button></div><time>now</time></article>
+            <article className={styles.allyMessage}><b>{account.allyInitials}</b><div><strong>{account.ally} · your Ally</strong><p>I can update the project brief with that principle and cite this work plus the two source documents.</p><button type="button" onClick={() => runAction("PREPARE_UPDATE")} disabled={busy}>Prepare a proposed update →</button></div><time>now</time></article>
           </div>
           <label className={styles.chatInput}><input aria-label="Message the project" placeholder="Talk to the project…" value={chatValue} onChange={(event) => setChatValue(event.target.value)} onKeyDown={(event) => { if (event.key === "Enter" && chatValue.trim()) runAction("SEND_MESSAGE", chatValue); }} /><button type="button" onClick={() => runAction("SEND_MESSAGE", chatValue)} disabled={busy || !chatValue.trim()}>Send</button></label>
         </aside>
@@ -318,7 +357,7 @@ export default function StudioPage() {
           <div className={styles.approvalBox}>
             <span>{approved ? "RECEIPT" : "CONSEQUENCE"}</span>
             <p>{approved ? workspace?.lastReceipt?.summary : "Creates accepted brief v0.2 inside Studio Field Prototype. Private. No external action. Previous version remains available."}</p>
-            {!approved && <div><button type="button" onClick={() => move(-1)}>Not now</button><button type="button" className={styles.approve} onClick={() => runAction("APPROVE_UPDATE")} disabled={busy}>Approve version 0.2</button></div>}
+            {!approved && <div><button type="button" onClick={() => setFocus(null)}>Not now</button><button type="button" className={styles.approve} onClick={() => runAction("APPROVE_UPDATE")} disabled={busy}>Approve version 0.2</button></div>}
           </div>
         </aside>
 
@@ -329,9 +368,9 @@ export default function StudioPage() {
       </section>
 
       <footer className={`${styles.allyBand} ${current.depth === "Focus" ? styles.allyFocus : ""}`}>
-        <button className={styles.allyPresence} type="button"><span>KI</span><i /></button>
+        <button className={styles.allyPresence} type="button" onClick={() => isProject && setFocus("chat")}><span>{account.allyInitials}</span><i /></button>
         <div className={styles.allyCopy}>
-          <span>KI · YOUR ALLY</span>
+          <span>{account.ally.toUpperCase()} · YOUR ALLY</span>
           <p>{approved && scene === 7 ? "Version 0.2 is now accepted inside this private project. The previous version and its complete source chain remain available." : current.ally}</p>
         </div>
         <div className={styles.attentionDial} aria-label={`HUD attention: ${current.depth}`}>
@@ -340,12 +379,6 @@ export default function StudioPage() {
           <strong>{current.depth}</strong>
           <small>{current.depthValue}</small>
         </div>
-        <nav className={styles.sceneNav} aria-label="Prototype scenes">
-          <button type="button" onClick={() => move(-1)} disabled={scene === 0} aria-label="Previous scene">←</button>
-          <div>{scenes.map((item, index) => <button key={item.title} type="button" className={index === scene ? styles.active : ""} onClick={() => setScene(index)} aria-label={`Scene ${index + 1}: ${item.title}`} />)}</div>
-          <span>{String(scene + 1).padStart(2, "0")} / {String(scenes.length).padStart(2, "0")}</span>
-          <button type="button" onClick={() => move(1)} disabled={scene === scenes.length - 1} aria-label="Next scene">→</button>
-        </nav>
       </footer>
     </main>
   );

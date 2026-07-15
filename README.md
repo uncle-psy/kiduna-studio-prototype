@@ -4,16 +4,17 @@ A persistent, interactive prototype of the Kiduna Studio Field.
 
 Live prototype: [kiduna-studio-prototype.vercel.app](https://kiduna-studio-prototype.vercel.app)
 
-The first scenario follows one member through a complete collaborative arc inside Kinship Duna:
+The first scenario follows one fixed member identity through a continuous collaborative arc inside Kinship Duna:
 
-1. Gather Sucil and Ashik.
-2. Form the private Studio Makers community.
-3. Start Studio Field Prototype inside that community.
-4. Bring three private source artifacts into the project.
-5. Invoke Mapper with project-scoped, read-only access.
-6. Work through the brief in a project conversation.
-7. Review a cited proposed change.
-8. Approve version 0.2 and retain a receipt.
+1. Enter as David, Jeya, or Aashik for the browser session.
+2. Bring Jeya and Aashik into context.
+3. Form the private Studio Makers community.
+4. Start Studio Field Prototype inside that community.
+5. Bring three private source artifacts into the project.
+6. Invoke Mapper with project-scoped, read-only access.
+7. Work through the brief in a focused surface while the Field remains present.
+8. Review a cited proposed change.
+9. Approve version 0.2 and retain a receipt.
 
 ## Architecture
 
@@ -39,6 +40,7 @@ npm run dev
 ## Current prototype boundaries
 
 - One shared workspace rather than authenticated, per-member projections
+- Prototype identity is fixed per browser session; there is no in-Field account switcher
 - Simulated invitation acceptance rather than live delivery
 - One project and one community
 - No artifact upload/blob storage yet

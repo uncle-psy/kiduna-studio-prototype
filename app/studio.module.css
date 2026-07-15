@@ -142,13 +142,13 @@
 .persona small { position: absolute; top: calc(100% + 29px); color: rgba(255,248,237,.42); font-size: 8px; letter-spacing: .12em; text-transform: uppercase; white-space: nowrap; }
 .persona.away { filter: saturate(.45); opacity: .48; }
 .david { left: 53%; top: 43%; }
-.sucil { left: 68%; top: 41%; }
-.ashik { left: 78%; top: 58%; }
-.scene1 .sucil, .scene2 .sucil { left: 61%; top: 44%; }
-.scene1 .ashik, .scene2 .ashik { left: 72%; top: 56%; }
+.jeya { left: 68%; top: 41%; }
+.aashik { left: 78%; top: 58%; }
+.scene1 .jeya, .scene2 .jeya { left: 61%; top: 44%; }
+.scene1 .aashik, .scene2 .aashik { left: 72%; top: 56%; }
 .scene3 .david, .scene4 .david, .scene5 .david, .scene6 .david, .scene7 .david { left: 48%; top: 39%; }
-.scene3 .sucil, .scene4 .sucil, .scene5 .sucil, .scene6 .sucil, .scene7 .sucil { left: 69%; top: 39%; }
-.scene3 .ashik, .scene4 .ashik, .scene5 .ashik, .scene6 .ashik, .scene7 .ashik { left: 77%; top: 62%; }
+.scene3 .jeya, .scene4 .jeya, .scene5 .jeya, .scene6 .jeya, .scene7 .jeya { left: 69%; top: 39%; }
+.scene3 .aashik, .scene4 .aashik, .scene5 .aashik, .scene6 .aashik, .scene7 .aashik { left: 77%; top: 62%; }
 .scene4 .persona, .scene5 .persona, .scene6 .persona, .scene7 .persona { width: 60px; height: 60px; }
 .scene4 .persona span, .scene5 .persona span, .scene6 .persona span, .scene7 .persona span { font-size: 18px; }
 
@@ -278,7 +278,7 @@
 .receiptToast.receiptError { border-color: rgba(233,189,96,.3); background: rgba(42,24,12,.94); }
 .receiptToast.receiptError span { color: var(--gold); }
 
-.allyBand { position: absolute; z-index: 55; left: 22px; right: 22px; bottom: 18px; min-height: 92px; display: grid; grid-template-columns: 58px minmax(260px, 1fr) 220px 245px; gap: 14px; align-items: center; padding: 12px 15px; border: 1px solid rgba(255,248,237,.13); border-radius: 21px; background: rgba(20,12,8,.78); box-shadow: 0 20px 70px rgba(0,0,0,.45); backdrop-filter: blur(28px); transition: background .32s ease; }
+.allyBand { position: absolute; z-index: 55; left: 22px; right: 22px; bottom: 18px; min-height: 92px; display: grid; grid-template-columns: 58px minmax(260px, 1fr) 220px; gap: 14px; align-items: center; padding: 12px 15px; border: 1px solid rgba(255,248,237,.13); border-radius: 21px; background: rgba(20,12,8,.78); box-shadow: 0 20px 70px rgba(0,0,0,.45); backdrop-filter: blur(28px); transition: background .32s ease; }
 .allyBand.allyFocus { background: rgba(17,10,7,.95); }
 .allyPresence { position: relative; width: 52px; height: 52px; border: 1px solid rgba(53,216,229,.42); border-radius: 50%; background: radial-gradient(circle at 35% 30%, rgba(53,216,229,.34), rgba(10,46,50,.85)); color: var(--sky); cursor: pointer; }
 .allyPresence span { font-family: "Goudy Heavyface", Georgia, serif; font-size: 18px; }
@@ -300,6 +300,22 @@
 .sceneNav > div button { width: 5px; height: 5px; padding: 0; border: 0; border-radius: 50%; background: rgba(255,248,237,.18); cursor: pointer; }
 .sceneNav > div button.active { width: 18px; border-radius: 9px; background: var(--sky); }
 .sceneNav > span { color: rgba(255,248,237,.35); font-family: monospace; font-size: 8px; }
+
+.entry { display: grid; place-items: center; }
+.entryPanel { position: relative; z-index: 2; width: min(560px, calc(100vw - 40px)); padding: 34px; border: 1px solid rgba(255,248,237,.14); border-radius: 24px; background: rgba(20,12,8,.84); box-shadow: 0 34px 120px rgba(0,0,0,.6); backdrop-filter: blur(30px); }
+.entryPanel > img { width: 46px; height: 46px; padding: 11px; border-radius: 13px; background: rgba(53,216,229,.11); }
+.entryPanel > span { display: block; margin-top: 25px; color: var(--sky); font-size: 8px; font-weight: 700; letter-spacing: .2em; }
+.entryPanel h1 { margin: 9px 0 6px; font-family: "Goudy Heavyface", Georgia, serif; font-size: 52px; font-weight: 400; line-height: .95; }
+.entryPanel > p { margin: 0 0 24px; color: rgba(255,248,237,.55); font-size: 12px; line-height: 1.6; }
+.entryPanel > div { display: grid; gap: 8px; }
+.entryPanel > div button { min-height: 64px; display: grid; grid-template-columns: 42px 1fr auto; gap: 13px; align-items: center; padding: 10px 14px; border: 1px solid rgba(255,248,237,.11); border-radius: 14px; background: rgba(255,248,237,.035); text-align: left; cursor: pointer; }
+.entryPanel > div button:hover { border-color: rgba(53,216,229,.45); background: rgba(53,216,229,.055); }
+.entryPanel > div button > b { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; background: var(--camel); color: #24150c; font-family: "Goudy Heavyface", Georgia, serif; font-size: 13px; }
+.entryPanel > div button span { display: grid; gap: 2px; }
+.entryPanel > div button strong { font-size: 12px; }
+.entryPanel > div button small { color: rgba(255,248,237,.42); font-size: 9px; }
+.entryPanel > div button i { color: var(--sky); font-size: 9px; font-style: normal; font-weight: 700; }
+.entryPanel > small { display: block; margin-top: 17px; color: rgba(255,248,237,.3); font-size: 8px; letter-spacing: .08em; }
 
 @media (max-width: 1000px) {
   .sceneTitle { left: 5%; width: 38vw; }

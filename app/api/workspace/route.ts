@@ -1,7 +1,7 @@
 import { desc, eq } from "drizzle-orm";
 import { db } from "@/db";
 import { studioEvents, studioWorkspaces } from "@/db/schema";
-import { defaultStudioState, type StudioAction, type StudioReceipt, type StudioState } from "@/lib/studio-state";
+import { defaultStudioState, normalizeStudioState, type StudioAction, type StudioReceipt, type StudioState } from "@/lib/studio-state";
 
 export const runtime = "nodejs";
 
@@ -31,7 +31,7 @@ async function responsePayload() {
     .orderBy(desc(studioEvents.createdAt))
     .limit(12);
 
-  return { state: workspace?.state ?? defaultStudioState, events };
+  return { state: normalizeStudioState(workspace?.state), events };
 }
 
 export async function GET() {
@@ -45,27 +45,32 @@ export async function GET() {
 
 export async function POST(request: Request) {
   try {
-    const body = await request.json() as { action?: StudioAction; message?: string };
+    const body = await request.json() as { action?: StudioAction; message?: string; memberId?: "david" | "jeya" | "aashik" };
     if (!body.action) return Response.json({ error: "Action is required." }, { status: 400 });
 
     const workspace = await getWorkspace();
-    const current = workspace?.state ?? defaultStudioState;
+    const current = normalizeStudioState(workspace?.state);
     let next: StudioState = structuredClone(current);
-    let actor = "David";
+    const identity = {
+      david: { name: "David", initials: "DL" },
+      jeya: { name: "Jeya", initials: "JY" },
+      aashik: { name: "Aashik", initials: "AK" },
+    }[body.memberId ?? "david"];
+    let actor = identity.name;
     let summary = "";
 
     switch (body.action) {
       case "GATHER_MEMBERS":
         next = { ...next, scene: 1, communityStatus: "gathered" };
-        summary = "Gathered Sucil and Ashik without changing authority.";
+        summary = "Brought Jeya and Aashik into context without changing authority.";
         break;
       case "CREATE_COMMUNITY":
         next = { ...next, scene: 2, communityStatus: "draft" };
-        summary = "Prepared private community invitations for Sucil and Ashik.";
+        summary = "Prepared private community invitations for Jeya and Aashik.";
         break;
       case "SEND_INVITATIONS":
         next = { ...next, scene: 3, communityStatus: "active" };
-        summary = "Sucil and Ashik accepted invitations to Studio Makers.";
+        summary = "Jeya and Aashik accepted invitations to Studio Makers.";
         break;
       case "START_PROJECT":
         next = { ...next, scene: 4, projectStatus: "active" };
@@ -98,8 +103,8 @@ export async function POST(request: Request) {
           scene: 6,
           messages: [...next.messages, {
             id: crypto.randomUUID(),
-            author: "David",
-            initials: "DL",
+            author: identity.name,
+            initials: identity.initials,
             body: message,
             createdAt: new Date().toISOString(),
           }],
@@ -121,7 +126,7 @@ export async function POST(request: Request) {
       summary,
       createdAt: new Date().toISOString(),
     };
-    next.lastReceipt = receipt;
+    next.lastReceipt = body.action === "RESET" ? null : receipt;
 
     await db.update(studioWorkspaces)
       .set({ state: next, updatedAt: new Date() })
