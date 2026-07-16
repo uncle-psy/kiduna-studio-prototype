@@ -2,13 +2,14 @@
 
 ## Load order
 
-1. Load `KI-SYSTEM-PROMPT-FUNCTIONAL-PROTOTYPE-v1.0.md` section “System prompt” as the immutable runtime prompt.
-2. Bind native tool definitions; do not paste tool schemas into conversational context.
-3. Inject the trusted runtime envelope from `runtime-contract.md`.
-4. Expose `ki-run-prototype` and the routed domain skills.
-5. Bind the permission-scoped vector index built from `KI-GENESIS-ALLY-COMPLETE-KNOWLEDGE-v2.5.md`.
-6. Resolve current context, capability modes, and active Actions.
-7. Trigger Ki's startup greeting appropriate to Visitor, Guest, or Member state.
+1. Load `KI-SYSTEM-PROMPT-FUNCTIONAL-PROTOTYPE-v1.0.md` section “System prompt” as the immutable base runtime prompt.
+2. Load the current `ki-maintain-system-canon/references/system-canon.md` as the owner-ratified experiential overlay. Locked phrases and ratified rules supersede older member-facing language without rewriting historical source packages.
+3. Bind native tool definitions; do not paste tool schemas into conversational context.
+4. Inject the trusted runtime envelope from `runtime-contract.md`.
+5. Expose `ki-run-prototype` and the routed domain skills.
+6. Bind the permission-scoped vector index built from `KI-GENESIS-ALLY-COMPLETE-KNOWLEDGE-v2.5.md`.
+7. Resolve current Persona, Ecosystem, Organization, Project, capability modes, and active Actions.
+8. Trigger Ki's startup greeting appropriate to Visitor, Guest, or Member state and current canon.
 
 ## Vector metadata
 

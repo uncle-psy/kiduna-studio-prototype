@@ -1,0 +1,4 @@
+interface:
+  display_name: "Maintain System Canon"
+  short_description: "Preserve Kiduna's experiential voice and owner rulings"
+  default_prompt: "Use $ki-maintain-system-canon to classify and propagate this experiential ruling."
