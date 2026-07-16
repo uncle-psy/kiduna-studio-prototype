@@ -24,7 +24,20 @@ function cleanSentence(content: string) {
 }
 
 async function retrieveWisdom(message: string) {
-  const embedding = vectorLiteral(prototypeEmbedding(message));
+  const lower = message.toLowerCase();
+  let retrievalQuery = message;
+  if (/what is this|what.*place|where am i|how.*work|show me around/.test(lower)) {
+    retrievalQuery = "Field canonical always-live projection Studio HUD Clear Context Focus conversation Ally";
+  } else if (/jeya|aashik|invite|bring.*in|with them|together/.test(lower)) {
+    retrievalQuery = "invitations Profiler person-specific code zero spam Relationship context invite one person well";
+  } else if (/project|make something|start building|begin building|genesis studio/.test(lower)) {
+    retrievalQuery = "Create from Within Project Studio artifacts Actors first running system member Ally";
+  } else if (/kinship duna|organization|duna|let'?s begin|start here|create.*community/.test(lower)) {
+    retrievalQuery = "Genesis bootstrap Kinship Duna Organization genesis in sequence not authority";
+  } else if (/who are you|what are you|tell me about you|your name/.test(lower)) {
+    retrievalQuery = "Ki Genesis Ally Kinship Intelligence Source initial interface identity mandate";
+  }
+  const embedding = vectorLiteral(prototypeEmbedding(retrievalQuery));
   const rows = await sqlClient<WisdomRow[]>`
     select title, content, provenance,
       1 - (embedding <=> ${embedding}::vector) as similarity
