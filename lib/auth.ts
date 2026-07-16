@@ -8,7 +8,7 @@ const SESSION_COOKIE = "kiduna_prototype_session";
 const SESSION_DAYS = 30;
 
 export type AccountPersona = { id: string; name: string; handle: string; initials: string; role: string; isDefault: boolean };
-export type CurrentAccount = { id: string; name: string; email: string; lineage: string[]; personas: AccountPersona[]; arrival: null | { inviterName: string; trustLevel: string; contextSummary: string; purpose: string } };
+export type CurrentAccount = { id: string; name: string; handle: string; email: string; lineage: string[]; personas: AccountPersona[]; arrival: null | { inviterName: string; trustLevel: string; contextSummary: string; purpose: string } };
 
 export function normalizeEmail(value: string) {
   return value.trim().toLowerCase();
@@ -61,8 +61,8 @@ export async function getCurrentAccount(): Promise<CurrentAccount | null> {
   const jar = await cookies();
   const token = jar.get(SESSION_COOKIE)?.value;
   if (!token) return null;
-  const [user] = await sqlClient<{ id: string; name: string; email: string; lineage: string[] }[]>`
-    select u.id, u.name, u.email, u.lineage
+  const [user] = await sqlClient<{ id: string; name: string; handle: string; email: string; lineage: string[] }[]>`
+    select u.id, u.name, u.handle, u.email, u.lineage
     from prototype_sessions s join prototype_users u on u.id = s.user_id
     where s.id = ${tokenHash(token)} and s.expires_at > now()
       and u.status = 'active' and u.email_verified_at is not null

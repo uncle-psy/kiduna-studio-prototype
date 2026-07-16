@@ -35,6 +35,15 @@ export async function POST(request: Request) {
     if (!(expiresIn in durations)) throw new Error("Choose a valid time boundary.");
     const duration = durations[expiresIn];
     const maxUses = audience === "personal" || body.useLimit === "single" ? 1 : null;
+    let boundName = String(body.boundName ?? "");
+    let boundEmail = String(body.boundEmail ?? "");
+    const targetUserId = String(body.targetUserId ?? "");
+    if (audience === "personal" && targetUserId) {
+      const [target] = await sqlClient<{ id: string; name: string; email: string }[]>`select id, name, email from prototype_users where id = ${targetUserId} and status = 'active' and email_verified_at is not null and id <> ${account.id} limit 1`;
+      if (!target) throw new Error("That member is no longer available.");
+      boundName = target.name;
+      boundEmail = target.email;
+    }
     const accessNotes = String(body.accessNotes ?? "").trim();
     const emails = accessNotes.match(/[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}/g) ?? [];
     const grantedUserIds: string[] = [];
@@ -44,8 +53,8 @@ export async function POST(request: Request) {
     }
     const code = await issueKinshipCode(account, String(body.personaId ?? "") || null, {
       audience,
-      boundName: String(body.boundName ?? ""),
-      boundEmail: String(body.boundEmail ?? ""),
+      boundName,
+      boundEmail,
       trustLevel,
       purpose: String(body.purpose),
       contextSummary: String(body.contextSummary),

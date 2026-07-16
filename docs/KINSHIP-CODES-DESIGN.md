@@ -72,12 +72,15 @@ Prototype Code values are high-entropy human-readable references. They are not J
 ## 5. Issuance flow through Ki
 
 1. The Persona tells Ki they want to invite someone.
-2. Ki asks who the person is, how the Persona knows them, what they hope to do together, and what should welcome them.
-3. The Persona chooses personal or open audience, High/Medium/Low trust, single or unlimited use, redemption window, and information boundary.
-4. For private or secret Wisdom, the Persona states which additional people or containers may see it.
-5. Ki previews the Code and consequence.
-6. On confirmation, the system creates the Code, its lineage, the relationship Wisdom namespace, and the issuer-belief Wisdom entry in one database transaction.
-7. The Persona sends the Code out of band. The system does not contact an unregistered person.
+2. Ki asks who, then searches registered members and clarifies identity only when necessary.
+3. If the person is new, Ki says so and asks about them while explaining that this remains the inviter's private perspective.
+4. Ki asks one conversational question at a time about the relationship, optional public profiles, mutual interests, and intended work.
+5. Ki asks about High/Medium/Low directional trust and explains the distinction in place.
+6. Ki asks whether the inviter's thoughts should be public, private, secret, or personal and explains each in member language. Private or secret entries may name additional people or containers.
+7. General/group/social invitations branch into an open-audience flow with their own audience and limit questions.
+8. Ki summarizes person or audience, intention, trust, privacy, and limits; asks whether it is right; and allows refinement.
+9. Only after confirmation does the system create the Code, lineage, relationship namespace, and inviter-belief entry transactionally.
+10. Ki displays the Code with a copy Action. The Persona sends it out of band; Ki does not contact an unregistered person.
 
 ## 6. Signup, verification, and redemption
 

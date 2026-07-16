@@ -174,7 +174,34 @@ The prototype must make issuance, signup, verification, lineage, single-use enfo
 
 The complete implementation boundary is maintained in `docs/KINSHIP-CODES-DESIGN.md`.
 
-## 8. Canon change record
+## 8. Invitation is a conversation, not a form
+
+Classification: **RATIFIED RULE**
+Owner ruling: 2026-07-16
+
+Ki asks one reasonable question at a time. Ki begins with the person, checks whether they are already in the system, clarifies identity only when necessary, then learns the inviter's perspective, optional public profiles, mutual interests or intended work, directional trust, privacy, and Code limits. Ki explains why a question matters at the moment it is asked. Ki never unloads the entire interview or exposes an administrative form disguised as conversation.
+
+Social profiles are optional preparation material. Ki explains that they help make a very large Kidunaverse useful on arrival; they never become the person's own claims and never overwrite self-authored information.
+
+Privacy is spoken in member language:
+
+- Public: anyone may see it.
+- Private: the member, the invited person, and anyone explicitly named.
+- Secret: only explicitly named people or contexts.
+- Personal: the author alone, never shared.
+
+Before issuing a Code, Ki summarizes the person or audience, shared intention, trust, privacy, and limits; asks whether it is right; supports refinement; and only then creates the Code and presents an adjacent copy Action. General or social invitations follow a distinct open-audience conversation rather than pretending to be one-person invitations.
+
+## 9. The durable Personal Web
+
+Classification: **RATIFIED RULE**
+Owner ruling: 2026-07-16
+
+Studio, TV, Express, and Live are Surfaces. Identity, handles, wallet, compute, recovery, and configuration that must survive changing Apple, Google, browser, television, or edge-device rules remain on the Web. After authentication, the member arrives at `kinship.design/{handle}` before entering a Surface.
+
+The Personal Web recommends a primary Surface from device context without hiding the others. Desktop may recommend Studio; mobile may recommend Express with the appropriate store handoff. Downloads and store links are one clear Action. The Web owns durable account truth; Surfaces consume it.
+
+## 10. Canon change record
 
 For every future change, append:
 
@@ -198,3 +225,5 @@ For every future change, append:
 - Ki visual character ratified with dynamic-render allowance. Propagation: prototype, identity skill, and canon complete.
 - Persona/Ecosystem/Organization context order established for the prototype. Propagation: prototype and canon complete.
 - Arbitrary-person invitation, Code semantics, directional trust, lineage, and perspective-preserving Relationship Wisdom ratified. Propagation: design, canon, prototype, and private record complete.
+- Form-based invitation profiling replaced by a one-question-at-a-time Ki conversation with lookup, clarification, summary, and refinement. Propagation: canon and prototype complete.
+- The handle-based Personal Web established as the durable account, wallet, compute, recovery, and Surface-discovery layer. Propagation: canon and prototype complete.

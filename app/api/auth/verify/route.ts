@@ -12,7 +12,7 @@ export async function GET(request: Request) {
     select id, user_id, code_id, expires_at, used_at from prototype_email_verification_tokens where id = ${tokenHash(token)} limit 1
   `;
   if (!verification || verification.used_at || new Date(verification.expires_at).getTime() <= Date.now()) return Response.redirect(new URL("/?verification=invalid", request.url));
-  const [user] = await sqlClient<{ id: string; email: string; name: string }[]>`select id, email, name from prototype_users where id = ${verification.user_id}`;
+  const [user] = await sqlClient<{ id: string; handle: string; email: string; name: string }[]>`select id, handle, email, name from prototype_users where id = ${verification.user_id}`;
   if (!user) return Response.redirect(new URL("/?verification=invalid", request.url));
 
   try {
@@ -22,7 +22,7 @@ export async function GET(request: Request) {
       await tx`update prototype_users set email_verified_at = now(), updated_at = now() where id = ${user.id}`;
     });
     await createSession(user.id);
-    return Response.redirect(new URL("/studio?verified=1", request.url));
+    return Response.redirect(new URL(`/${user.handle}?verified=1`, request.url));
   } catch (error) {
     console.error("Kinship Code redemption failed", error);
     return Response.redirect(new URL("/?verification=code", request.url));

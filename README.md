@@ -6,13 +6,15 @@ Live prototype: [kiduna-studio-prototype.vercel.app](https://kiduna-studio-proto
 
 The current scenario begins with a real prototype account and follows an invitation into a continuous collaborative arc inside Kinship Duna:
 
-1. Log in outside the Field or sign up with a Kinship Code and verified email.
-2. Enter as one of the signed-in account's Personas.
-3. Ask Ki to invite any person or create an open invitation.
-4. Set directional trust, use count, time boundary, privacy, and relationship context.
-5. Redeem the Code as a second account and preserve its invitation lineage.
-6. Keep the inviter's belief and the invitee's self-shared Wisdom as distinct perspectives.
-7. Continue into Organizations, communities, Projects, artifacts, and Actors from the same Field.
+1. Log in outside the Field or sign up with a handle, Kinship Code, and verified email.
+2. Arrive at the durable Personal Web page at `kinship.design/{handle}`.
+3. Choose among Studio, TV, Express, and Live; device context recommends the primary Surface.
+4. Enter Studio as one of the signed-in account's Personas.
+5. Ask Ki to invite any person or create an open invitation through a one-question-at-a-time conversation.
+6. Set directional trust, use count, time boundary, privacy, and relationship context.
+7. Redeem the Code as a second account and preserve its invitation lineage.
+8. Keep the inviter's belief and the invitee's self-shared Wisdom as distinct perspectives.
+9. Continue into Organizations, communities, Projects, artifacts, and Actors from the same Field.
 
 ## Architecture
 
@@ -23,6 +25,8 @@ The current scenario begins with a real prototype account and follows an invitat
 - Authenticated accounts, Personas, server-side sessions, and email verification
 - Atomic Kinship Code issuance/redemption with trust, lineage, and use limits
 - Perspective-preserving Relationship Wisdom namespaces
+- Handle-based Personal Web pages with device-aware Surface discovery
+- Prototype wallet and compute conventions that remain outside device Surfaces
 - An append-only event table for action receipts
 - Vercel deployment connected to GitHub
 

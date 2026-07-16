@@ -13,9 +13,9 @@ const passwordHash = (() => {
 })();
 
 await sql.begin(async (tx) => {
-  await tx`insert into prototype_users (id, name, email, password_hash, status, email_verified_at, lineage)
-    values (${userId}, 'David', 'david@kiduna.club', ${passwordHash}, 'active', now(), ${tx.json([userId])})
-    on conflict (email) do update set name = excluded.name, password_hash = excluded.password_hash, status = 'active', email_verified_at = coalesce(prototype_users.email_verified_at, now()), updated_at = now()`;
+  await tx`insert into prototype_users (id, name, handle, email, password_hash, status, email_verified_at, lineage)
+    values (${userId}, 'David', 'moto', 'david@kiduna.club', ${passwordHash}, 'active', now(), ${tx.json([userId])})
+    on conflict (email) do update set name = excluded.name, handle = 'moto', password_hash = excluded.password_hash, status = 'active', email_verified_at = coalesce(prototype_users.email_verified_at, now()), updated_at = now()`;
   const [owner] = await tx`select id from prototype_users where email = 'david@kiduna.club'`;
   await tx`insert into prototype_personas (id, user_id, name, handle, initials, role, is_default)
     values ('persona-david', ${owner.id}, 'David', 'david', 'DL', 'Steward', true)

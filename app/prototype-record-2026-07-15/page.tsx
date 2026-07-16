@@ -44,6 +44,12 @@ const phases = [
     copy: "Moved account access outside the Field and made the invitation path durable. Ki can now learn about any intended person, issue a bounded Kinship Code, preserve directional trust and lineage, verify a new member’s email, consume single-use Codes atomically, form the Relationship, and keep inviter belief separate from invitee self-description.",
     artifacts: ["Authenticated accounts and Personas", "Email verification", "Kinship Code design contract", "Relationship Wisdom namespaces", "Privacy-aware vector entries"],
   },
+  {
+    number: "08",
+    title: "The durable Personal Web",
+    copy: "Established the Web as the account layer that survives changing edge-device rules. Authentication now resolves to a member handle page before any Surface. The page recommends Studio, TV, Express, or Live from device context while keeping wallet, compute, recovery conventions, and Kinship Code acceptance on the Web.",
+    artifacts: ["kinship.design handle convention", "Device-aware Surface discovery", "Wallet prototype", "Compute purchase convention", "Conversational Ki invitation profiler"],
+  },
 ];
 
 const architecture = [
@@ -68,7 +74,7 @@ export default function PrototypeRecordPage() {
       <span>RECORD · GENESIS SERIES 01</span>
       <h1>How we are making<br />Studio from within.</h1>
       <p>A living record of the source materials, decisions, reversals, infrastructure, and working artifacts behind the Kiduna Studio functional prototype.</p>
-      <div><b>7</b><span>prototype phases</span><b>52</b><span>Ki source files</span><b>15</b><span>installed Skills</span><b>1</b><span>continuous Field</span></div>
+      <div><b>8</b><span>prototype phases</span><b>52</b><span>Ki source files</span><b>15</b><span>installed Skills</span><b>4</b><span>defined Surfaces</span></div>
     </section>
 
     <section className={styles.principles}>

@@ -88,6 +88,7 @@ export async function redeemKinshipCode(rawCode: string, user: { id: string; ema
   return sqlClient.begin(async (tx) => {
     const [row] = await tx<CodeRow[]>`select * from prototype_kinship_codes where code = ${normalizeCode(rawCode)} for update`;
     if (!row || row.status !== "active") throw new Error("That Kinship Code is not active.");
+    if (row.issuer_user_id === user.id) throw new Error("You can’t redeem a Code you issued yourself.");
     if (row.redeem_by && new Date(row.redeem_by).getTime() <= Date.now()) throw new Error("That Kinship Code has expired.");
     if (row.max_uses !== null && row.uses_count >= row.max_uses) throw new Error("That Kinship Code has already been used.");
     if (row.audience === "personal" && normalizeEmail(row.bound_email ?? "") !== normalizeEmail(user.email)) throw new Error("That personal Kinship Code belongs to a different email address.");
@@ -101,7 +102,7 @@ export async function redeemKinshipCode(rawCode: string, user: { id: string; ema
     await tx`update prototype_users set invited_by_code_id = ${row.id}, lineage = ${JSON.stringify(lineage)}::jsonb, updated_at = now() where id = ${user.id}`;
     await tx`update prototype_relationship_namespaces set subject_user_id = ${user.id}, subject_name = ${user.name}, subject_email = ${normalizeEmail(user.email)}, updated_at = now() where code_id = ${row.id}`;
     await tx`update prototype_relationship_wisdom w set access_grants = jsonb_set(w.access_grants, '{userIds}', coalesce(w.access_grants->'userIds', '[]'::jsonb) || to_jsonb(${user.id}::text), true)
-      from prototype_relationship_namespaces n where w.namespace_id = n.id and n.code_id = ${row.id} and w.access_level in ('private', 'secret')`;
+      from prototype_relationship_namespaces n where w.namespace_id = n.id and n.code_id = ${row.id} and w.access_level = 'private'`;
     await tx`insert into prototype_relationships (id, person_a_user_id, person_b_user_id, formed_by_code_id, a_trust_level)
       values (${relationshipId}, ${row.issuer_user_id}, ${user.id}, ${row.id}, ${row.trust_level})
       on conflict (person_a_user_id, person_b_user_id) do update set formed_by_code_id = excluded.formed_by_code_id, a_trust_level = excluded.a_trust_level, updated_at = now()`;

@@ -19,6 +19,10 @@ type Message = { id: string; role: "ki" | "source"; body: string };
 type PrimaryAction = { label: string; prompt: string } | null;
 type CreatedCode = { code: string; boundName?: string; audience: string; trustLevel: string; maxUses: number | null; redeemBy: string | null };
 type RelationshipNamespace = { id: string; subjectName: string; viewerRole: "owner" | "subject"; entries: { id: string; perspective: string; content: string; accessLevel: string }[] };
+type PersonMatch = { id: string; name: string; handle: string; initials: string };
+type InviteStep = "name" | "confirm-person" | "choose-person" | "relationship" | "social" | "purpose" | "trust" | "privacy" | "grants" | "email" | "limits" | "summary" | "refine";
+type InviteDraft = { audience: "personal" | "open"; boundName: string; boundEmail: string; targetUserId: string; inSystem: boolean; relationshipDescription: string; socialProfiles: string; purpose: string; trustLevel: "high" | "medium" | "low"; accessLevel: "public" | "private" | "secret" | "personal"; accessNotes: string; expiresIn: string; useLimit: string; generalAudience: string };
+type InviteFlow = { step: InviteStep; draft: InviteDraft; matches: PersonMatch[] };
 
 type KiResponse = {
   reply: string;
@@ -47,6 +51,18 @@ const initialMessage = (name: string, arrival?: Account["arrival"]): Message => 
   role: "ki",
   body: arrival ? `Hello, ${name}. I’m Ki, the Genesis Ally. ${arrival.inviterName} invited you here to ${arrival.purpose.toLowerCase()}. Their Code carried this context: ${arrival.contextSummary} That remains their perspective; what you share about yourself will remain yours. What would you like me to know first?` : `Hello, ${name}. I’m Ki, the Genesis Ally. This is the Inception Point—the Fertile Void. We can begin with what matters to you, and let the world take shape around it. What would you like to do first?`,
 });
+
+const blankInvite = (): InviteFlow => ({ step: "name", matches: [], draft: { audience: "personal", boundName: "", boundEmail: "", targetUserId: "", inSystem: false, relationshipDescription: "", socialProfiles: "", purpose: "", trustLevel: "medium", accessLevel: "private", accessNotes: "", expiresIn: "7d", useLimit: "single", generalAudience: "" } });
+
+function inviteSummary(draft: InviteDraft) {
+  const purpose = draft.purpose.trim().replace(/[.!?]+$/, "");
+  const naturalPurpose = purpose ? `${purpose[0].toLowerCase()}${purpose.slice(1)}` : "begin together";
+  const person = draft.audience === "open" ? `an open invitation for ${draft.generalAudience}` : `${draft.boundName}${draft.inSystem ? "—already in Kiduna" : "—new to Kiduna"}`;
+  const profile = draft.audience === "open" ? "" : draft.socialProfiles ? ` I’ll use the profiles you shared (${draft.socialProfiles}) only to prepare useful arrival context.` : " You chose not to add social profiles.";
+  const visibility = draft.accessLevel === "public" ? "public" : draft.accessLevel === "private" ? "private to you, the invitee, and anyone you name" : draft.accessLevel === "secret" ? "visible only to explicitly named people" : "personal to you alone";
+  const limit = draft.audience === "open" ? `${draft.useLimit === "single" ? "one use" : "unlimited uses"}, ${draft.expiresIn === "permanent" ? "with no expiration" : `expiring in ${draft.expiresIn}`}` : "one use, expiring in seven days";
+  return `Here’s what I have: ${person}. You want to ${naturalPurpose}. You’re extending ${draft.trustLevel} trust. Your thoughts about this will be ${visibility}. The Code will allow ${limit}.${profile} Did I get that right?`;
+}
 
 function effectStage(effect: GenesisEffect, current: number) {
   if (effect === "SEED_ORGANIZATION") return Math.max(current, 1);
@@ -83,7 +99,7 @@ export default function StudioPage({ account }: { account: Account }) {
   const [voiceState, setVoiceState] = useState<VoiceState>("idle");
   const [voiceNote, setVoiceNote] = useState("");
   const [manualTransparency, setManualTransparency] = useState<number | null>(null);
-  const [inviteOpen, setInviteOpen] = useState(false);
+  const [inviteFlow, setInviteFlow] = useState<InviteFlow | null>(null);
   const [createdCode, setCreatedCode] = useState<CreatedCode | null>(null);
   const [relationshipNamespaces, setRelationshipNamespaces] = useState<RelationshipNamespace[]>([]);
   const threadRef = useRef<HTMLDivElement>(null);
@@ -136,7 +152,8 @@ export default function StudioPage({ account }: { account: Account }) {
     setManualTransparency(null);
     setSuggestedPrompts(openingPrompts);
     setPrimaryAction(null);
-    setInviteOpen(false);
+    setInviteFlow(null);
+    setCreatedCode(null);
     setMessages([initialMessage(selected.name, account.arrival)]);
   };
 
@@ -147,6 +164,8 @@ export default function StudioPage({ account }: { account: Account }) {
     setManualTransparency(null);
     setSuggestedPrompts(openingPrompts);
     setPrimaryAction(null);
+    setInviteFlow(null);
+    setCreatedCode(null);
     setMessages([initialMessage(persona.name, account.arrival)]);
   };
 
@@ -168,6 +187,129 @@ export default function StudioPage({ account }: { account: Account }) {
     window.speechSynthesis.speak(utterance);
   };
 
+  const continueInvite = async (message: string, history: Message[], flow: InviteFlow, fromVoice: boolean) => {
+    const answer = message.trim();
+    const lower = answer.toLowerCase();
+    const next = { ...flow, draft: { ...flow.draft }, matches: [...flow.matches] };
+    let reply = "";
+    let prompts: string[] = [];
+    const finish = () => {
+      setInviteFlow(next);
+      setSuggestedPrompts(prompts);
+      setPrimaryAction(null);
+      setMessages([...history, { id: crypto.randomUUID(), role: "ki", body: reply }]);
+      if (fromVoice) speakReply(reply);
+    };
+    const moveAfterPrivacy = () => {
+      if (next.draft.accessLevel === "private" || next.draft.accessLevel === "secret") {
+        next.step = "grants";
+        reply = `Should anyone else be able to see what you’ve told me about ${next.draft.audience === "open" ? "this invitation" : next.draft.boundName}? You can name people, communities, Organizations, or Projects—or say “no one else.”`;
+        prompts = ["No one else"];
+      } else if (next.draft.audience === "open") {
+        next.step = "limits";
+        reply = "How should this general Code behave: stay open permanently, expire after seven days, or work only once?";
+        prompts = ["Open permanently", "Expire after 7 days", "One use only"];
+      } else if (!next.draft.inSystem) {
+        next.step = "email";
+        reply = `What email should I bind ${next.draft.boundName}’s one-person Code to?`;
+      } else {
+        next.step = "summary";
+        reply = inviteSummary(next.draft);
+        prompts = ["Yes—create the Code", "I want to change something"];
+      }
+    };
+
+    if (flow.step === "name") {
+      if (/general|group|social|post|many people|anyone|public invite/.test(lower)) {
+        next.draft.audience = "open"; next.step = "relationship";
+        reply = "A general invitation needs a different shape. Who do you hope it reaches, and where are you likely to share it?";
+      } else {
+        const response = await fetch(`/api/people?name=${encodeURIComponent(answer)}`);
+        const payload = await response.json() as { people?: PersonMatch[] };
+        const people = payload.people ?? [];
+        next.draft.boundName = answer;
+        if (people.length === 0) {
+          next.draft.inSystem = false; next.step = "relationship";
+          reply = `I don’t find ${answer} in Kiduna yet. What should I understand about them from your perspective? I’ll keep this private by default, and it will remain your account—not theirs.`;
+        } else if (people.length === 1) {
+          next.matches = people; next.step = "confirm-person";
+          reply = `I found ${people[0].name} (@${people[0].handle}) in Kiduna. Is that the person you mean?`;
+          prompts = ["Yes, that’s them", "No, someone else"];
+        } else {
+          next.matches = people; next.step = "choose-person";
+          reply = `I found a few possible people: ${people.map((person) => `${person.name} (@${person.handle})`).join(", ")}. Which one do you mean?`;
+          prompts = people.map((person) => `@${person.handle}`);
+        }
+      }
+    } else if (flow.step === "confirm-person") {
+      if (/^y|that'?s them|correct|right person/.test(lower)) {
+        const person = flow.matches[0]; Object.assign(next.draft, { boundName: person.name, targetUserId: person.id, inSystem: true }); next.step = "relationship";
+        reply = `Good. How do you know ${person.name}, and what feels important about the relationship from your point of view?`;
+      } else { next.step = "name"; next.matches = []; reply = "All right. What name or handle should I look for instead?"; }
+    } else if (flow.step === "choose-person") {
+      const person = flow.matches.find((candidate) => lower.includes(candidate.handle.toLowerCase()) || lower === candidate.name.toLowerCase());
+      if (!person) { reply = "I’m not sure which person you mean yet. Give me their @handle, or say “someone else.”"; prompts = flow.matches.map((candidate) => `@${candidate.handle}`); }
+      else { Object.assign(next.draft, { boundName: person.name, targetUserId: person.id, inSystem: true }); next.step = "relationship"; reply = `Thank you. How do you know ${person.name}, and what feels important about the relationship from your point of view?`; }
+    } else if (flow.step === "relationship") {
+      if (next.draft.audience === "open") {
+        next.draft.generalAudience = answer; next.draft.relationshipDescription = `Open invitation intended for ${answer}`; next.step = "purpose";
+        reply = "What do you hope the people who enter will explore, build, or do together?";
+      } else {
+        next.draft.relationshipDescription = answer; next.step = "social";
+        reply = `Do you want to share any public social profiles for ${next.draft.boundName}? I would use them only to prepare a more useful arrival in the Kidunaverse—not to speak for them or overwrite what they say about themselves.`;
+        prompts = ["Skip social profiles"];
+      }
+    } else if (flow.step === "social") {
+      next.draft.socialProfiles = /skip|none|no/.test(lower) ? "" : answer; next.step = "purpose";
+      reply = `What do you hope to explore, build, or do with ${next.draft.boundName}? Mutual interests are useful here.`;
+    } else if (flow.step === "purpose") {
+      next.draft.purpose = answer; next.step = "trust";
+      reply = "How much trust are you extending with this invitation? High means a close or proven relationship; medium means meaningful but bounded trust; low is right for a broad or lightly known connection.";
+      prompts = ["High trust", "Medium trust", "Low trust"];
+    } else if (flow.step === "trust") {
+      const trust = lower.includes("high") ? "high" : lower.includes("low") ? "low" : lower.includes("medium") ? "medium" : null;
+      if (!trust) { reply = "Would you call the trust high, medium, or low?"; prompts = ["High trust", "Medium trust", "Low trust"]; }
+      else { next.draft.trustLevel = trust; next.step = "privacy"; reply = `How should I hold your thoughts about ${next.draft.audience === "open" ? "the people this may reach" : next.draft.boundName}? Public means anyone may see them. Private means you, the invited person, and anyone you name. Secret means only explicitly named people. Personal means only you—never shared.`; prompts = ["Keep them private", "Keep them secret", "Make them public", "Keep them personal"];
+      }
+    } else if (flow.step === "privacy") {
+      const access = lower.includes("secret") ? "secret" : lower.includes("public") ? "public" : lower.includes("personal") ? "personal" : lower.includes("private") ? "private" : null;
+      if (!access) { reply = "Choose public, private, secret, or personal. I can explain any one again."; prompts = ["Private", "Secret", "Public", "Personal"]; }
+      else { next.draft.accessLevel = access; moveAfterPrivacy(); }
+    } else if (flow.step === "grants") {
+      next.draft.accessNotes = /no one|none|just me|only me/.test(lower) ? "" : answer;
+      if (next.draft.audience === "open") { next.step = "limits"; reply = "How should this general Code behave: stay open permanently, expire after seven days, or work only once?"; prompts = ["Open permanently", "Expire after 7 days", "One use only"]; }
+      else if (!next.draft.inSystem) { next.step = "email"; reply = `What email should I bind ${next.draft.boundName}’s one-person Code to?`; }
+      else { next.step = "summary"; reply = inviteSummary(next.draft); prompts = ["Yes—create the Code", "I want to change something"]; }
+    } else if (flow.step === "email") {
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(answer)) { reply = "That doesn’t look like a complete email address. What address should the Code be bound to?"; }
+      else { next.draft.boundEmail = answer.toLowerCase(); next.step = "summary"; reply = inviteSummary(next.draft); prompts = ["Yes—create the Code", "I want to change something"]; }
+    } else if (flow.step === "limits") {
+      if (/permanent|never|stay open/.test(lower)) { next.draft.expiresIn = "permanent"; next.draft.useLimit = "unlimited"; }
+      else if (/one|single|once/.test(lower)) { next.draft.expiresIn = "7d"; next.draft.useLimit = "single"; }
+      else { next.draft.expiresIn = "7d"; next.draft.useLimit = "unlimited"; }
+      next.step = "summary"; reply = inviteSummary(next.draft); prompts = ["Yes—create the Code", "I want to change something"];
+    } else if (flow.step === "summary") {
+      if (/^y|create|correct|right|looks good/.test(lower)) {
+        const response = await fetch("/api/codes", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...next.draft, personaId: persona.id, contextSummary: [next.draft.relationshipDescription, next.draft.socialProfiles ? `Public profiles offered: ${next.draft.socialProfiles}` : "", `Shared intention: ${next.draft.purpose}`].filter(Boolean).join(" ") }) });
+        const payload = await response.json() as { code?: CreatedCode; error?: string };
+        if (!response.ok || !payload.code) throw new Error(payload.error || "The Code could not be created.");
+        setCreatedCode(payload.code); setInviteFlow(null); setSuggestedPrompts([]); setStage(2);
+        reply = `It’s ready. I made the Code exactly as summarized. You send it; I haven’t contacted anyone.`;
+        setMessages([...history, { id: crypto.randomUUID(), role: "ki", body: reply }]); if (fromVoice) speakReply(reply); return;
+      }
+      next.step = "refine"; reply = "Of course. What should we change—the person, your perspective, social profiles, what you want to do together, trust, privacy, or the Code’s limits?"; prompts = ["The person", "My perspective", "Social profiles", "Our shared purpose", "Trust", "Privacy"];
+    } else {
+      if (/person/.test(lower)) { Object.assign(next, blankInvite()); reply = "Who would you like to invite instead?"; }
+      else if (/perspective|relationship/.test(lower)) { next.step = "relationship"; reply = next.draft.audience === "open" ? "Who should this general invitation reach?" : `What should I understand differently about ${next.draft.boundName} from your perspective?`; }
+      else if (/social|profile/.test(lower)) { next.step = "social"; reply = "What public social profiles should I use—or would you rather skip them?"; }
+      else if (/purpose|explore|build|do together/.test(lower)) { next.step = "purpose"; reply = "What do you hope to explore, build, or do together?"; }
+      else if (/trust/.test(lower)) { next.step = "trust"; reply = "What trust level should change: high, medium, or low?"; prompts = ["High trust", "Medium trust", "Low trust"]; }
+      else if (/privacy|private|secret|public|personal/.test(lower)) { next.step = "privacy"; reply = "How should I hold your thoughts: public, private, secret, or personal?"; prompts = ["Private", "Secret", "Public", "Personal"]; }
+      else { reply = "Tell me which part to revisit: person, perspective, profiles, purpose, trust, privacy, or limits."; }
+    }
+    finish();
+  };
+
   const talkToKi = async (text: string, fromVoice = false) => {
     const message = text.trim();
     if (!message || busy) return;
@@ -181,6 +323,10 @@ export default function StudioPage({ account }: { account: Account }) {
     setVoiceNote("");
 
     try {
+      if (inviteFlow) {
+        await continueInvite(message, history, inviteFlow, fromVoice);
+        return;
+      }
       const response = await fetch("/api/ki", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -189,7 +335,7 @@ export default function StudioPage({ account }: { account: Account }) {
       const payload = await response.json() as KiResponse & { error?: string };
       if (!response.ok) throw new Error(payload.error || "Ki is unavailable.");
       setStage((current) => effectStage(payload.effect, current));
-      if (payload.effect === "PREPARE_INVITES") setInviteOpen(true);
+      if (payload.effect === "PREPARE_INVITES") setInviteFlow(blankInvite());
       setSuggestedPrompts(payload.suggestedPrompts ?? []);
       setPrimaryAction(payload.primaryAction ?? null);
       setMessages((current) => [...current, { id: crypto.randomUUID(), role: "ki", body: payload.reply }]);
@@ -310,7 +456,6 @@ export default function StudioPage({ account }: { account: Account }) {
             {suggestedPrompts.map((prompt) => <button className={styles.suggestedPrompt} key={prompt} type="button" onClick={() => void talkToKi(prompt)}>{prompt}</button>)}
             {primaryAction && <button className={styles.primaryChoice} type="button" onClick={() => void talkToKi(primaryAction.prompt)}>{primaryAction.label}<span>→</span></button>}
           </div>}
-          {inviteOpen && <InviteBuilder personaId={persona.id} onCreated={(code) => { setCreatedCode(code); setStage(2); setInviteOpen(false); setMessages((current) => [...current, { id: crypto.randomUUID(), role: "ki", body: `The Code is ready. It carries your context and ${code.trustLevel} directional trust. You send it; I have not contacted anyone.` }]); }} />}
           {createdCode && <CodeCard code={createdCode} />}
           {relationshipNamespaces.map((namespace) => <RelationshipWisdom key={namespace.id} namespace={namespace} onAdded={(entry) => setRelationshipNamespaces((current) => current.map((item) => item.id === namespace.id ? { ...item, entries: [...item.entries, entry] } : item))} />)}
           {voiceNote && <div className={styles.voiceNote}>{voiceNote}</div>}
@@ -332,38 +477,9 @@ function TransparencyControl({ transparency, manual, onChange, onAuto }: { trans
   return <div className={styles.transparencyControl}><div className={styles.transparencyStatus}><span>{manual ? "OVERRIDE" : "AUTO"}</span><strong>{transparency}%</strong>{manual && <button type="button" onClick={onAuto}>Return to Auto</button>}</div><input aria-label="Transparency" type="range" min="0" max="100" value={transparency} onChange={(event) => onChange(Number(event.target.value))} /><div className={styles.transparencyLabels}><span>0% · Opaque</span><b>Transparency</b><span>100% · Clear</span></div></div>;
 }
 
-function InviteBuilder({ personaId, onCreated }: { personaId: string; onCreated: (code: CreatedCode) => void }) {
-  const [audience, setAudience] = useState("personal");
-  const [error, setError] = useState("");
-  const [busy, setBusy] = useState(false);
-  async function create(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault(); setBusy(true); setError("");
-    const body = { ...Object.fromEntries(new FormData(event.currentTarget)), audience, personaId };
-    try {
-      const response = await fetch("/api/codes", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
-      const payload = await response.json() as { code?: CreatedCode; error?: string };
-      if (!response.ok || !payload.code) throw new Error(payload.error || "The Code could not be created.");
-      onCreated(payload.code);
-    } catch (caught) { setError(caught instanceof Error ? caught.message : "The Code could not be created."); }
-    finally { setBusy(false); }
-  }
-  return <form className={styles.inviteBuilder} onSubmit={create}>
-    <header><span>KI · INVITATION PROFILER</span><h3>Who would you like to invite?</h3><p>Your answers become your perspective about the relationship. They do not become the other person’s self-description.</p></header>
-    <div className={styles.segmented}><button type="button" className={audience === "personal" ? styles.selected : ""} onClick={() => setAudience("personal")}>One person</button><button type="button" className={audience === "open" ? styles.selected : ""} onClick={() => setAudience("open")}>Open invitation</button></div>
-    {audience === "personal" && <div className={styles.formRow}><label><span>Their name</span><input name="boundName" required /></label><label><span>Their email</span><input name="boundEmail" type="email" required /></label></div>}
-    <label><span>How do you know them?</span><textarea name="relationshipDescription" placeholder="Describe the relationship in your own words…" required /></label>
-    <label><span>What should Ki know when they arrive?</span><textarea name="contextSummary" placeholder="The context you want this invitation to carry…" required /></label>
-    <label><span>What are you inviting them to explore or make?</span><input name="purpose" required /></label>
-    <div className={styles.formRow}><label><span>Your trust</span><select name="trustLevel" defaultValue="medium"><option value="high">High</option><option value="medium">Medium</option><option value="low">Low</option></select></label><label><span>Expires</span><select name="expiresIn" defaultValue="7d"><option value="15m">15 minutes</option><option value="24h">24 hours</option><option value="7d">7 days</option><option value="permanent">Never</option></select></label></div>
-    {audience === "open" && <label><span>Use limit</span><select name="useLimit" defaultValue="unlimited"><option value="unlimited">Anyone with the Code</option><option value="single">One use only</option></select></label>}
-    <div className={styles.formRow}><label><span>Your Wisdom visibility</span><select name="accessLevel" defaultValue="private"><option value="public">Public</option><option value="private">Private</option><option value="secret">Secret</option><option value="personal">Personal</option></select></label><label><span>Additional visibility</span><input name="accessNotes" placeholder="Member emails or context names" /></label></div>
-    {error && <div className={styles.errorNotice}>{error}</div>}<button className={styles.createCode} disabled={busy}>{busy ? "Creating…" : "Create Kinship Code"}<span>→</span></button>
-  </form>;
-}
-
 function CodeCard({ code }: { code: CreatedCode }) {
   const [copied, setCopied] = useState(false);
-  return <section className={styles.codeCard}><small>PROTOTYPE KINSHIP CODE · UNSIGNED</small><h3>{code.code}</h3><p>{code.audience === "personal" ? `Prepared for ${code.boundName}. Single use.` : code.maxUses === 1 ? "Open audience. One use." : "Open audience. Unlimited uses."} · {code.trustLevel} trust.</p><button type="button" onClick={async () => { await navigator.clipboard.writeText(code.code); setCopied(true); }}>{copied ? "Copied" : "Copy Code"}</button></section>;
+  return <section className={styles.codeCard}><small>PROTOTYPE KINSHIP CODE · UNSIGNED</small><div><h3>{code.code}</h3><button type="button" onClick={async () => { await navigator.clipboard.writeText(code.code); setCopied(true); }}>{copied ? "Copied" : "Copy Code"}</button></div><p>{code.audience === "personal" ? `Prepared for ${code.boundName}. Single use.` : code.maxUses === 1 ? "Open audience. One use." : "Open audience. Unlimited uses."} · {code.trustLevel} trust.</p></section>;
 }
 
 function RelationshipWisdom({ namespace, onAdded }: { namespace: RelationshipNamespace; onAdded: (entry: RelationshipNamespace["entries"][number]) => void }) {

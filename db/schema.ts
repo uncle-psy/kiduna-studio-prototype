@@ -48,6 +48,7 @@ export type AccessGrants = {
 export const prototypeUsers = pgTable("prototype_users", {
   id: text("id").primaryKey(),
   name: text("name").notNull(),
+  handle: text("handle").notNull(),
   email: text("email").notNull(),
   passwordHash: text("password_hash").notNull(),
   status: text("status").notNull().default("active"),
@@ -56,7 +57,7 @@ export const prototypeUsers = pgTable("prototype_users", {
   lineage: jsonb("lineage").$type<string[]>().notNull().default([]),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
-}, (table) => [uniqueIndex("prototype_users_email_idx").on(table.email)]);
+}, (table) => [uniqueIndex("prototype_users_email_idx").on(table.email), uniqueIndex("prototype_users_handle_idx").on(table.handle)]);
 
 export const prototypePersonas = pgTable("prototype_personas", {
   id: text("id").primaryKey(),

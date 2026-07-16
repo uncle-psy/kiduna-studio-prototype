@@ -80,8 +80,8 @@ function resolveResponse(message: string, persona: string, stage: number, wisdom
   if (/invite|bring.*in|someone|not so empty|together/.test(lower)) {
     return {
       effect: "PREPARE_INVITES",
-      reply: "Yes. Who would you like to invite? Tell me how you know them, what trust you’re extending, and what you hope to explore or make together. I’ll preserve that as your perspective and prepare a Kinship Code for you to send.",
-      suggestedPrompts: ["Why does the Code carry trust?", "What will they see when they arrive?"],
+      reply: "Who would you like to invite?",
+      suggestedPrompts: ["I need a general invite for a group"],
       primaryAction: null,
     };
   }

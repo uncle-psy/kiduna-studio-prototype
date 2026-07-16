@@ -1,6 +1,6 @@
 import { randomUUID } from "node:crypto";
 import { sqlClient } from "@/db";
-import { handleFor, hashPassword, initialsFor, newOpaqueToken, normalizeEmail, tokenHash } from "@/lib/auth";
+import { hashPassword, initialsFor, newOpaqueToken, normalizeEmail, tokenHash } from "@/lib/auth";
 import { inspectRedeemableCode, normalizeCode } from "@/lib/kinship-codes";
 import { sendVerificationEmail } from "@/lib/email";
 
@@ -8,12 +8,14 @@ export const runtime = "nodejs";
 
 export async function POST(request: Request) {
   try {
-    const body = await request.json() as { name?: string; email?: string; password?: string; kinshipCode?: string };
+    const body = await request.json() as { name?: string; handle?: string; email?: string; password?: string; kinshipCode?: string };
     const name = body.name?.trim() ?? "";
+    const handle = body.handle?.trim().toLowerCase() ?? "";
     const email = normalizeEmail(body.email ?? "");
     const password = body.password ?? "";
     const rawCode = body.kinshipCode ?? "";
     if (name.length < 2 || name.length > 100) return Response.json({ error: "Enter your name." }, { status: 400 });
+    if (!/^[a-z0-9](?:[a-z0-9-]{1,28}[a-z0-9])?$/.test(handle) || ["api", "studio", "prototype-record-2026-07-15"].includes(handle)) return Response.json({ error: "Choose a handle with 3–30 lowercase letters, numbers, or hyphens." }, { status: 400 });
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return Response.json({ error: "Enter a valid email address." }, { status: 400 });
     if (password.length < 10) return Response.json({ error: "Use at least 10 characters for your password." }, { status: 400 });
     if (!rawCode.trim()) return Response.json({ error: "A Kinship Code is required for this prototype." }, { status: 400 });
@@ -22,16 +24,16 @@ export async function POST(request: Request) {
     if (!codeCheck.ok) return Response.json({ error: codeCheck.error }, { status: 400 });
     const [existing] = await sqlClient<{ id: string }[]>`select id from prototype_users where email = ${email} limit 1`;
     if (existing) return Response.json({ error: "An account already exists for this email. Sign in instead." }, { status: 409 });
+    const [handleOwner] = await sqlClient<{ id: string }[]>`select id from prototype_users where handle = ${handle} limit 1`;
+    if (handleOwner) return Response.json({ error: "That handle is already held. Try another." }, { status: 409 });
 
     const userId = randomUUID();
     const personaId = randomUUID();
     const passwordHash = await hashPassword(password);
     const token = newOpaqueToken();
     const expiresAt = new Date(Date.now() + 24 * 60 * 60 * 1000);
-    const handleBase = handleFor(name);
-    const handle = `${handleBase}-${userId.slice(0, 6)}`;
     await sqlClient.begin(async (tx) => {
-      await tx`insert into prototype_users (id, name, email, password_hash, status) values (${userId}, ${name}, ${email}, ${passwordHash}, 'active')`;
+      await tx`insert into prototype_users (id, name, handle, email, password_hash, status) values (${userId}, ${name}, ${handle}, ${email}, ${passwordHash}, 'active')`;
       await tx`insert into prototype_personas (id, user_id, name, handle, initials, role, is_default) values (${personaId}, ${userId}, ${name}, ${handle}, ${initialsFor(name)}, 'Member', true)`;
       await tx`insert into prototype_email_verification_tokens (id, user_id, code_id, expires_at) values (${tokenHash(token)}, ${userId}, ${codeCheck.code.id}, ${expiresAt.toISOString()}::timestamptz)`;
     });
