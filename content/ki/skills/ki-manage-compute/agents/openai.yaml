@@ -1,0 +1,4 @@
+interface:
+  display_name: "Manage Compute"
+  short_description: "Handle Compute, pricing, ledgers, and settlements"
+  default_prompt: "Use $ki-manage-compute to inspect or manage this Compute activity."

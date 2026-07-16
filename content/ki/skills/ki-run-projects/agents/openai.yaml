@@ -1,0 +1,4 @@
+interface:
+  display_name: "Run Projects"
+  short_description: "Coordinate work, artifacts, packages, and delivery"
+  default_prompt: "Use $ki-run-projects to create or advance this Project."

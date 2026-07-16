@@ -1,0 +1,4 @@
+interface:
+  display_name: "Manage Ally Identities"
+  short_description: "Create and route personalized Ki identities"
+  default_prompt: "Use $ki-manage-ally-identities to create or update an Ally identity."

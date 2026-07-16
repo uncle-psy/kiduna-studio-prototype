@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Capabilities"
+  short_description: "Add typed Skills, Actions, Actors, and packages"
+  default_prompt: "Use $ki-create-capabilities to add this capability from within Kiduna."

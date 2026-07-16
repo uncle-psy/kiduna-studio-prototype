@@ -1,0 +1,4 @@
+interface:
+  display_name: "Use Kiduna Wisdom"
+  short_description: "Retrieve and manage permissioned Wisdom"
+  default_prompt: "Use $ki-use-wisdom to answer from or update Kiduna Wisdom."

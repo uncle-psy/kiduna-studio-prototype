@@ -1,0 +1,4 @@
+interface:
+  display_name: "Use Connections"
+  short_description: "Operate channels, accounts, tools, and services"
+  default_prompt: "Use $ki-use-connections to act through this connected service."

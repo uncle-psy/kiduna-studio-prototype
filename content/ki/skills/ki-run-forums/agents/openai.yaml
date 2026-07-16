@@ -1,0 +1,4 @@
+interface:
+  display_name: "Run Forums"
+  short_description: "Draft proposals, ballots, decisions, and Policies"
+  default_prompt: "Use $ki-run-forums to prepare or advance this Forum decision."

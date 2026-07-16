@@ -1,0 +1,4 @@
+interface:
+  display_name: "Supervise Actors"
+  short_description: "Design, name, scope, and supervise Actor roles"
+  default_prompt: "Use $ki-supervise-actors to create or supervise the right Actor for this work."

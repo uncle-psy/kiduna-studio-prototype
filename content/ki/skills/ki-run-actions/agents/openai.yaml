@@ -1,0 +1,4 @@
+interface:
+  display_name: "Run Kiduna Actions"
+  short_description: "Preview, authorize, execute, and receipt Actions"
+  default_prompt: "Use $ki-run-actions to carry this request through the Kiduna Action lifecycle."

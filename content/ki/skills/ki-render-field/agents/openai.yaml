@@ -1,0 +1,4 @@
+interface:
+  display_name: "Render the Field"
+  short_description: "Present live Kiduna state across every surface"
+  default_prompt: "Use $ki-render-field to render this state or interaction in the Field."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Protect Kiduna"
+  short_description: "Enforce Source, privacy, safety, and Vigil rules"
+  default_prompt: "Use $ki-protect-system to assess and safely handle this security or privacy situation."

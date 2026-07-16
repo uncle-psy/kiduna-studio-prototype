@@ -1,0 +1,4 @@
+interface:
+  display_name: "Run Kiduna Prototype"
+  short_description: "Operate Ki as the complete prototype system"
+  default_prompt: "Use $ki-run-prototype to operate the Kiduna prototype end to end."

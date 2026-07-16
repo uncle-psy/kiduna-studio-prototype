@@ -1,0 +1,4 @@
+interface:
+  display_name: "Manage Organizations"
+  short_description: "Form, configure, and operate Organizations"
+  default_prompt: "Use $ki-manage-organizations to form or manage this Organization."

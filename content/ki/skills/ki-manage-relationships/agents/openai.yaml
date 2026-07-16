@@ -1,0 +1,4 @@
+interface:
+  display_name: "Manage Relationships"
+  short_description: "Handle invitations, Codes, trust, and access"
+  default_prompt: "Use $ki-manage-relationships to manage this invitation or Relationship."
