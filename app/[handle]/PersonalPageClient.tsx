@@ -31,7 +31,7 @@ export default function PersonalPageClient({ account, initialDevice }: { account
     setRedeemCode(""); simulate("Kinship Code accepted. The Relationship and its context are now available in your Field.");
   }
 
-  return <main className={styles.page}>
+  return <main className={styles.page} style={{ height: "100svh", overflowX: "hidden", overflowY: "auto", overscrollBehaviorY: "contain" }}>
     <div className={styles.weather} aria-hidden="true" />
     <header className={styles.top}><Link href={`/${account.handle}`}><Image src="/kiduna-mark.svg" alt="" width={40} height={40}/><span><small>KINSHIP.DESIGN</small><strong>/{account.handle}</strong></span></Link><nav><Link href="/studio">Enter Studio</Link><button onClick={() => void logout()}>Log out</button></nav></header>
     <section className={styles.identity}><div><span>PERSONAL WEB PAGE · PROTOTYPE</span><h1>{account.name}</h1><p>kinship.design/{account.handle}</p></div><div className={styles.personas}><small>YOUR PERSONAS</small>{account.personas.map((persona) => <span key={persona.id}><b>{persona.initials}</b>{persona.name}</span>)}</div></section>
