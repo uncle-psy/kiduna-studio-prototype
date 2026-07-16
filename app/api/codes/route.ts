@@ -45,6 +45,11 @@ export async function POST(request: Request) {
       boundEmail = target.email;
     }
     const accessNotes = String(body.accessNotes ?? "").trim();
+    const organizationId = String(body.organizationId ?? "").trim();
+    if (organizationId) {
+      const [membership] = await sqlClient`select id from prototype_organization_members where organization_id = ${organizationId} and user_id = ${account.id} limit 1`;
+      if (!membership) throw new Error("You can only invite someone to a Duna you belong to.");
+    }
     const emails = accessNotes.match(/[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}/g) ?? [];
     const grantedUserIds: string[] = [];
     for (const email of emails) {
@@ -60,7 +65,7 @@ export async function POST(request: Request) {
       contextSummary: String(body.contextSummary),
       relationshipDescription: String(body.relationshipDescription),
       accessLevel,
-      accessGrants: { notes: accessNotes, userIds: grantedUserIds },
+      accessGrants: { notes: accessNotes, userIds: grantedUserIds, organizationIds: organizationId ? [organizationId] : [] },
       maxUses,
       redeemBy: duration === null ? null : new Date(Date.now() + duration),
     });
@@ -69,4 +74,20 @@ export async function POST(request: Request) {
     console.error("Kinship Code creation failed", error);
     return Response.json({ error: error instanceof Error ? error.message : "The Code could not be created." }, { status: 400 });
   }
+}
+
+export async function PATCH(request: Request) {
+  const account = await getCurrentAccount();
+  if (!account) return Response.json({ error: "Sign in first." }, { status: 401 });
+  const body = await request.json() as { code?: string; boundEmail?: string };
+  const boundEmail = String(body.boundEmail ?? "").trim().toLowerCase();
+  if (boundEmail && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(boundEmail)) return Response.json({ error: "Enter a valid email, or leave it blank." }, { status: 400 });
+  const [updated] = await sqlClient<{ code: string; boundEmail: string | null }[]>`
+    update prototype_kinship_codes set bound_email = ${boundEmail || null}, updated_at = now()
+    where code = ${String(body.code ?? "")} and issuer_user_id = ${account.id} and uses_count = 0
+    returning code, bound_email as "boundEmail"
+  `;
+  if (!updated) return Response.json({ error: "That Code can no longer be edited." }, { status: 409 });
+  await sqlClient`update prototype_relationship_namespaces set subject_email = ${boundEmail || null}, updated_at = now() where code_id = (select id from prototype_kinship_codes where code = ${updated.code})`;
+  return Response.json({ code: updated });
 }

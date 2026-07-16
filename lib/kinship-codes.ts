@@ -35,6 +35,13 @@ function humanCode() {
   return `KIN-${raw.slice(0, 4)}-${raw.slice(4, 8)}-${raw.slice(8)}`;
 }
 
+function relationshipAbstract(subjectName: string, input: IssueCodeInput) {
+  const source = `${input.relationshipDescription.trim()} ${input.contextSummary.trim()}`.replace(/\s+/g, " ").trim();
+  const sentence = source.split(/(?<=[.!?])\s+/)[0] || `${subjectName} was invited into Kiduna.`;
+  const concise = sentence.length > 220 ? `${sentence.slice(0, 217).trimEnd()}…` : sentence;
+  return `Relationship insight about ${subjectName}: ${concise}`;
+}
+
 export function normalizeCode(value: string) {
   return value.trim().toUpperCase().replace(/\s+/g, "");
 }
@@ -45,14 +52,14 @@ export async function inspectRedeemableCode(rawCode: string, email: string) {
   if (!row || row.status !== "active") return { ok: false, error: "That Kinship Code is not active." } as const;
   if (row.redeem_by && new Date(row.redeem_by).getTime() <= Date.now()) return { ok: false, error: "That Kinship Code has expired." } as const;
   if (row.max_uses !== null && row.uses_count >= row.max_uses) return { ok: false, error: "That Kinship Code has already been used." } as const;
-  if (row.audience === "personal" && normalizeEmail(row.bound_email ?? "") !== normalizeEmail(email)) {
+  if (row.audience === "personal" && row.bound_email && normalizeEmail(row.bound_email) !== normalizeEmail(email)) {
     return { ok: false, error: "That personal Kinship Code was prepared for a different email address." } as const;
   }
   return { ok: true, code: row } as const;
 }
 
 export async function issueKinshipCode(issuer: { id: string; lineage: string[] }, personaId: string | null, input: IssueCodeInput) {
-  if (input.audience === "personal" && (!input.boundName?.trim() || !input.boundEmail?.trim())) throw new Error("A personal Code needs the person’s name and email.");
+  if (input.audience === "personal" && !input.boundName?.trim()) throw new Error("A personal Code needs the person’s name.");
   const id = randomUUID();
   const code = humanCode();
   const inherited = issuer.lineage ?? [];
@@ -68,7 +75,7 @@ export async function issueKinshipCode(issuer: { id: string; lineage: string[] }
     boundTo: boundEmail, trust: input.trustLevel, purpose: input.purpose, context: input.contextSummary,
     maxUses, redeemBy: input.redeemBy?.toISOString() ?? null, lineage,
   };
-  const wisdomContent = `${input.relationshipDescription.trim()} Context for the invitation: ${input.contextSummary.trim()}`;
+  const wisdomContent = relationshipAbstract(subjectName, input);
   const embedding = vectorLiteral(prototypeEmbedding(wisdomContent));
 
   await sqlClient.begin(async (tx) => {
@@ -79,7 +86,7 @@ export async function issueKinshipCode(issuer: { id: string; lineage: string[] }
       values (${namespaceId}, ${issuer.id}, ${subjectName}, ${boundEmail}, ${id})`;
     await tx`insert into prototype_relationship_wisdom
       (id, namespace_id, author_user_id, perspective, content, access_level, access_grants, provenance, embedding)
-      values (${wisdomId}, ${namespaceId}, ${issuer.id}, 'owner_belief', ${wisdomContent}, ${input.accessLevel}, ${JSON.stringify(accessGrants)}::jsonb, ${JSON.stringify({ source: "kinship_code_issuance", codeId: id })}::jsonb, ${embedding}::vector)`;
+      values (${wisdomId}, ${namespaceId}, ${issuer.id}, 'owner_belief', ${wisdomContent}, ${input.accessLevel}, ${JSON.stringify(accessGrants)}::jsonb, ${JSON.stringify({ source: "kinship_code_issuance", codeId: id, transformed: true })}::jsonb, ${embedding}::vector)`;
   });
   return { ...input, id, code, namespaceId, lineage, maxUses, boundEmail };
 }
@@ -91,7 +98,7 @@ export async function redeemKinshipCode(rawCode: string, user: { id: string; ema
     if (row.issuer_user_id === user.id) throw new Error("You can’t redeem a Code you issued yourself.");
     if (row.redeem_by && new Date(row.redeem_by).getTime() <= Date.now()) throw new Error("That Kinship Code has expired.");
     if (row.max_uses !== null && row.uses_count >= row.max_uses) throw new Error("That Kinship Code has already been used.");
-    if (row.audience === "personal" && normalizeEmail(row.bound_email ?? "") !== normalizeEmail(user.email)) throw new Error("That personal Kinship Code belongs to a different email address.");
+    if (row.audience === "personal" && row.bound_email && normalizeEmail(row.bound_email) !== normalizeEmail(user.email)) throw new Error("That personal Kinship Code belongs to a different email address.");
 
     const redemptionId = randomUUID();
     const relationshipId = randomUUID();
@@ -106,6 +113,11 @@ export async function redeemKinshipCode(rawCode: string, user: { id: string; ema
     await tx`insert into prototype_relationships (id, person_a_user_id, person_b_user_id, formed_by_code_id, a_trust_level)
       values (${relationshipId}, ${row.issuer_user_id}, ${user.id}, ${row.id}, ${row.trust_level})
       on conflict (person_a_user_id, person_b_user_id) do update set formed_by_code_id = excluded.formed_by_code_id, a_trust_level = excluded.a_trust_level, updated_at = now()`;
+    for (const organizationId of (row.access_grants?.organizationIds as string[] | undefined) ?? []) {
+      await tx`insert into prototype_organization_members (id, organization_id, user_id, role)
+        values (${randomUUID()}, ${organizationId}, ${user.id}, 'Member')
+        on conflict (organization_id, user_id) do nothing`;
+    }
     return { codeId: row.id, lineage, issuerUserId: row.issuer_user_id };
   });
 }

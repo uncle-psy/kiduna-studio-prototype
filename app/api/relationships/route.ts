@@ -5,18 +5,31 @@ import { prototypeEmbedding, vectorLiteral } from "@/lib/ki-retrieval";
 
 type Wisdom = { id: string; authorUserId: string; perspective: string; content: string; accessLevel: string; accessGrants: { userIds?: string[]; notes?: string }; createdAt: Date };
 
+function abstractWisdom(value: string, subjectName: string) {
+  const clean = value.replace(/\s+/g, " ").trim().replace(/^(i think|i feel|i believe|for me,?)\s+/i, "");
+  const first = clean.split(/(?<=[.!?])\s+/)[0] || clean;
+  const summary = first.length > 240 ? `${first.slice(0, 237).replace(/\s+\S*$/, "")}…` : first;
+  return `Relationship insight about ${subjectName}: ${summary[0]?.toLowerCase() ?? ""}${summary.slice(1)}`;
+}
+
 export async function GET() {
   const account = await getCurrentAccount();
   if (!account) return Response.json({ error: "Sign in first." }, { status: 401 });
-  const namespaces = await sqlClient<{ id: string; ownerUserId: string; subjectUserId: string | null; subjectName: string; subjectEmail: string | null; codeId: string | null }[]>`
-    select id, owner_user_id as "ownerUserId", subject_user_id as "subjectUserId", subject_name as "subjectName", subject_email as "subjectEmail", code_id as "codeId"
-    from prototype_relationship_namespaces where owner_user_id = ${account.id} or subject_user_id = ${account.id} order by created_at desc
+  const namespaces = await sqlClient<{ id: string; ownerUserId: string; ownerName: string; ownerHandle: string; subjectUserId: string | null; subjectName: string; subjectHandle: string | null; subjectEmail: string | null; codeId: string | null; code: string | null; trustLevel: string | null; usesCount: number }[]>`
+    select n.id, n.owner_user_id as "ownerUserId", owner.name as "ownerName", owner.handle as "ownerHandle",
+      n.subject_user_id as "subjectUserId", n.subject_name as "subjectName", subject.handle as "subjectHandle",
+      n.subject_email as "subjectEmail", n.code_id as "codeId", code.code, code.trust_level as "trustLevel", coalesce(code.uses_count, 0) as "usesCount"
+    from prototype_relationship_namespaces n
+    join prototype_users owner on owner.id = n.owner_user_id
+    left join prototype_users subject on subject.id = n.subject_user_id
+    left join prototype_kinship_codes code on code.id = n.code_id
+    where n.owner_user_id = ${account.id} or n.subject_user_id = ${account.id} order by n.created_at desc
   `;
   const result = [];
   for (const namespace of namespaces) {
     const entries = await sqlClient<Wisdom[]>`select id, author_user_id as "authorUserId", perspective, content, access_level as "accessLevel", access_grants as "accessGrants", created_at as "createdAt" from prototype_relationship_wisdom where namespace_id = ${namespace.id} order by created_at`;
     const visible = entries.filter((entry) => entry.authorUserId === account.id || entry.accessLevel === "public" || (["private", "secret"].includes(entry.accessLevel) && entry.accessGrants?.userIds?.includes(account.id)));
-    result.push({ ...namespace, viewerRole: namespace.ownerUserId === account.id ? "owner" : "subject", entries: visible });
+    result.push({ ...namespace, viewerRole: namespace.ownerUserId === account.id ? "owner" : "subject", joined: Boolean(namespace.subjectUserId), entries: visible });
   }
   return Response.json({ namespaces: result });
 }
@@ -29,7 +42,7 @@ export async function POST(request: Request) {
   if (content.length < 3 || content.length > 3000) return Response.json({ error: "Write between 3 and 3,000 characters." }, { status: 400 });
   const accessLevel = body.accessLevel ?? "";
   if (!["public", "private", "secret", "personal"].includes(accessLevel)) return Response.json({ error: "Choose a visibility level." }, { status: 400 });
-  const [namespace] = await sqlClient<{ id: string; ownerUserId: string; subjectUserId: string | null }[]>`select id, owner_user_id as "ownerUserId", subject_user_id as "subjectUserId" from prototype_relationship_namespaces where id = ${body.namespaceId ?? ""} and (owner_user_id = ${account.id} or subject_user_id = ${account.id})`;
+  const [namespace] = await sqlClient<{ id: string; ownerUserId: string; subjectUserId: string | null; subjectName: string }[]>`select id, owner_user_id as "ownerUserId", subject_user_id as "subjectUserId", subject_name as "subjectName" from prototype_relationship_namespaces where id = ${body.namespaceId ?? ""} and (owner_user_id = ${account.id} or subject_user_id = ${account.id})`;
   if (!namespace) return Response.json({ error: "That Relationship is not available." }, { status: 404 });
   const perspective = namespace.subjectUserId === account.id ? "self_shared" : "owner_belief";
   const accessNotes = body.accessNotes?.trim() ?? "";
@@ -39,8 +52,9 @@ export async function POST(request: Request) {
     if (grantee && !resolvedUserIds.includes(grantee.id)) resolvedUserIds.push(grantee.id);
   }
   const grants = accessLevel === "personal" ? {} : { userIds: resolvedUserIds, notes: accessNotes };
-  const embedding = vectorLiteral(prototypeEmbedding(content));
+  const abstract = abstractWisdom(content, namespace.subjectUserId === account.id ? "this relationship" : namespace.subjectName);
+  const embedding = vectorLiteral(prototypeEmbedding(abstract));
   const id = randomUUID();
-  await sqlClient`insert into prototype_relationship_wisdom (id, namespace_id, author_user_id, perspective, content, access_level, access_grants, provenance, embedding) values (${id}, ${namespace.id}, ${account.id}, ${perspective}, ${content}, ${accessLevel}, ${JSON.stringify(grants)}::jsonb, ${JSON.stringify({ source: "member_authored", prototype: true })}::jsonb, ${embedding}::vector)`;
-  return Response.json({ entry: { id, authorUserId: account.id, perspective, content, accessLevel, accessGrants: grants, createdAt: new Date() } }, { status: 201 });
+  await sqlClient`insert into prototype_relationship_wisdom (id, namespace_id, author_user_id, perspective, content, access_level, access_grants, provenance, embedding) values (${id}, ${namespace.id}, ${account.id}, ${perspective}, ${abstract}, ${accessLevel}, ${JSON.stringify(grants)}::jsonb, ${JSON.stringify({ source: "member_authored", prototype: true, transformed: true })}::jsonb, ${embedding}::vector)`;
+  return Response.json({ entry: { id, authorUserId: account.id, perspective, content: abstract, accessLevel, accessGrants: grants, createdAt: new Date() } }, { status: 201 });
 }

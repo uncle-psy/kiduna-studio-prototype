@@ -192,8 +192,10 @@
   transition: all .55s ease;
 }
 .genesis2 .peopleSeed, .genesis3 .peopleSeed { opacity: 1; transform: translateY(0); }
-.peopleSeed > div { position: absolute; display: grid; justify-items: center; }
-.peopleSeed > div:nth-child(1) { left: 4%; top: 4%; }
+.peopleSeed > div, .peopleSeed > button { position: absolute; display: grid; justify-items: center; }
+.peopleSeed > div:nth-child(1), .peopleSeed > button { left: 4%; top: 4%; }
+.peopleSeed > button { padding: 0; border: 0; background: transparent; color: inherit; cursor: pointer; }
+.peopleSeed > button:hover b { border-color: var(--sky); box-shadow: 0 0 28px rgba(53,216,229,.15); }
 .peopleSeed > div:nth-child(2) { right: 2%; bottom: 0; }
 .peopleSeed b { width: 64px; height: 64px; display: grid; place-items: center; border: 1px dashed rgba(198,157,114,.65); border-radius: 50%; background: rgba(198,157,114,.08); color: var(--camel); font-family: "Goudy Heavyface", Georgia, serif; font-size: 18px; font-weight: 400; }
 .peopleSeed strong { margin-top: 9px; font-size: 10px; }
@@ -291,8 +293,8 @@
 .errorNotice { margin: 12px 0; padding: 11px; border: 1px solid rgba(233,189,96,.25); border-radius: 10px; color: var(--gold); font-size: 10px; }
 
 .panelComposer { min-height: 66px; display: flex; align-items: center; gap: 8px; margin: 0 17px 17px; padding: 6px; border: 1px solid rgba(255,248,237,.14); border-radius: 15px; background: rgba(255,248,237,.035); }
-.panelComposer input, .quickComposer input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; color: var(--cream); font-size: 11px; }
-.panelComposer input::placeholder, .quickComposer input::placeholder { color: rgba(255,248,237,.31); }
+.panelComposer textarea, .quickComposer textarea { flex: 1; min-width: 0; min-height: 34px; max-height: 96px; padding: 8px 2px; border: 0; outline: 0; resize: none; background: transparent; color: var(--cream); font: inherit; font-size: 11px; line-height: 1.45; }
+.panelComposer textarea::placeholder, .quickComposer textarea::placeholder { color: rgba(255,248,237,.31); }
 .panelComposer > button:last-child { align-self: stretch; min-width: 74px; border: 0; border-radius: 10px; background: var(--sky); color: #09282a; font-size: 10px; font-weight: 700; cursor: pointer; }
 .panelComposer > button:last-child:disabled, .quickComposer .sendButton:disabled { opacity: .38; cursor: default; }
 .panelDock { padding: 0 17px 15px; border-top: 1px solid rgba(255,248,237,.08); }
@@ -321,6 +323,45 @@
 .codeCard button { flex:0 0 auto;padding: 8px 11px; border: 1px solid rgba(53,216,229,.28); border-radius: 8px; background: rgba(53,216,229,.08); color: var(--sky); font-size: 8px; cursor: pointer; }
 .relationshipCard { margin: 13px 0 8px 51px; padding: 15px; border: 1px solid rgba(198,157,114,.2); border-radius: 14px; background: rgba(198,157,114,.04); }
 .relationshipCard>header { display:flex;align-items:center;justify-content:space-between;gap:12px }.relationshipCard>header span{display:grid;gap:4px}.relationshipCard>header small{color:var(--camel);font-size:7px;letter-spacing:.14em}.relationshipCard>header strong{font-size:11px}.relationshipCard>header button{padding:7px 9px;border:1px solid rgba(53,216,229,.2);border-radius:7px;background:transparent;color:var(--sky);font-size:7px;cursor:pointer}.relationshipCard article{margin-top:12px;padding:11px;border:1px solid rgba(255,248,237,.07);border-radius:9px}.relationshipCard article small{color:rgba(255,248,237,.36);font-size:6px;letter-spacing:.1em}.relationshipCard article p,.noVisibleWisdom{margin:6px 0 0;color:rgba(255,248,237,.58);font-size:9px;line-height:1.55}.relationshipCard form{display:grid;gap:8px;margin-top:12px}.relationshipCard textarea,.relationshipCard select,.relationshipCard input{box-sizing:border-box;padding:9px;border:1px solid rgba(255,248,237,.12);border-radius:8px;background:rgba(255,248,237,.04);color:var(--cream);font:inherit;font-size:8px}.relationshipCard textarea{min-height:65px;resize:vertical}.relationshipCard form>div{display:grid;grid-template-columns:90px 1fr 58px;gap:7px}.relationshipCard form button{border:0;border-radius:7px;background:var(--sky);color:#09282a;font-size:8px;font-weight:700}.relationshipCard form>small{color:var(--gold);font-size:8px}
+
+.relationshipCard details { margin-top: 8px; color: rgba(255,248,237,.43); font-size: 8px; }
+.relationshipCard summary { color: var(--sky); cursor: pointer; }
+
+.modalScrim { position: absolute; z-index: 90; inset: 0; display: grid; place-items: center; padding: 20px; background: rgba(5,3,2,.72); backdrop-filter: blur(12px); }
+.personCard, .dunaCreator { width: min(540px, calc(100vw - 40px)); max-height: calc(100vh - 64px); overflow: auto; box-sizing: border-box; padding: 24px; border: 1px solid rgba(255,248,237,.17); border-radius: 22px; background: #17100b; box-shadow: 0 32px 100px rgba(0,0,0,.7); }
+.personCard > header, .dunaCreator > header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.personCard > header > div { display: flex; align-items: center; gap: 13px; }
+.personCard > header > div > b { width: 54px; height: 54px; display: grid; place-items: center; border: 1px solid rgba(198,157,114,.55); border-radius: 50%; color: var(--camel); font-family: "Goudy Heavyface", Georgia, serif; font-weight: 400; }
+.personCard header span, .dunaCreator header span { display: grid; gap: 3px; }
+.personCard header small, .dunaCreator header small { color: var(--sky); font-size: 7px; letter-spacing: .14em; }
+.personCard header h2, .dunaCreator header h2 { margin: 0; font-family: "Goudy Heavyface", Georgia, serif; font-size: 30px; font-weight: 400; }
+.personCard header p { margin: 0; color: rgba(255,248,237,.42); font-size: 9px; }
+.personCard > header > button, .dunaCreator > header > button { border: 0; background: transparent; color: rgba(255,248,237,.45); font-size: 25px; cursor: pointer; }
+.profileFacts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 22px 0 12px; }
+.profileFacts > div { display: grid; gap: 5px; padding: 12px; border: 1px solid rgba(255,248,237,.09); border-radius: 10px; }
+.profileFacts small, .profileCode small, .profileWisdom > small { color: rgba(255,248,237,.35); font-size: 7px; letter-spacing: .12em; }
+.profileFacts strong { font-size: 10px; text-transform: capitalize; }
+.profileCode { display: grid; grid-template-columns: 1fr auto; gap: 6px 12px; align-items: center; padding: 14px; border: 1px solid rgba(149,232,199,.2); border-radius: 11px; background: rgba(149,232,199,.04); }
+.profileCode small { grid-column: 1 / -1; color: var(--mint); }
+.profileCode strong { font-family: ui-monospace, monospace; letter-spacing: .07em; }
+.profileCode button, .profileEmail button { padding: 8px 10px; border: 1px solid rgba(53,216,229,.24); border-radius: 8px; background: rgba(53,216,229,.06); color: var(--sky); font-size: 8px; cursor: pointer; }
+.profileEmail { display: grid; gap: 7px; margin-top: 12px; }
+.profileEmail > span { color: rgba(255,248,237,.62); font-size: 9px; }
+.profileEmail > span small { color: rgba(255,248,237,.32); }
+.profileEmail > div { display: flex; gap: 7px; }
+.profileEmail input { flex: 1; min-width: 0; padding: 10px; border: 1px solid rgba(255,248,237,.12); border-radius: 8px; outline: 0; background: rgba(255,248,237,.04); color: var(--cream); font: inherit; font-size: 9px; }
+.profileEmail > small { color: var(--mint); font-size: 8px; }
+.profileWisdom { margin-top: 18px; padding-top: 17px; border-top: 1px solid rgba(255,248,237,.09); }
+.profileWisdom > p, .profileWisdom details p { color: rgba(255,248,237,.67); font-size: 11px; line-height: 1.6; }
+.profileWisdom details { color: var(--sky); font-size: 9px; cursor: pointer; }
+.personCard > footer, .dunaCreator > footer { display: flex; justify-content: flex-end; gap: 8px; margin-top: 20px; }
+.personCard > footer button, .dunaCreator > footer button { min-height: 38px; padding: 0 13px; border: 1px solid rgba(255,248,237,.14); border-radius: 9px; background: transparent; color: rgba(255,248,237,.67); font-size: 9px; cursor: pointer; }
+.personCard > footer button:last-child, .dunaCreator > footer button:last-child { border-color: var(--sky); background: var(--sky); color: #09282a; font-weight: 700; }
+.dunaCreator { display: grid; gap: 15px; }
+.dunaCreator label { display: grid; gap: 7px; color: rgba(255,248,237,.56); font-size: 8px; letter-spacing: .06em; }
+.dunaCreator input, .dunaCreator textarea { box-sizing: border-box; width: 100%; padding: 11px; border: 1px solid rgba(255,248,237,.13); border-radius: 9px; outline: 0; background: rgba(255,248,237,.04); color: var(--cream); font: inherit; font-size: 10px; }
+.dunaCreator textarea { min-height: 88px; resize: vertical; }
+.dunaCreator > p { margin: 0; color: var(--gold); font-size: 9px; }
 
 .voiceButton { position: relative; flex: 0 0 42px; width: 42px; height: 42px; display: grid; place-items: center; padding: 0; border: 1px solid rgba(53,216,229,.16); border-radius: 10px; background: rgba(53,216,229,.04); color: rgba(255,248,237,.5) !important; cursor: pointer; }
 .voiceButton:hover, .voiceButton.voiceActive { border-color: rgba(53,216,229,.52); background: rgba(53,216,229,.1); color: var(--sky) !important; }
@@ -353,6 +394,7 @@
 .allyCopy > span { color: var(--sky); font-size: 8px; font-weight: 700; letter-spacing: .17em; }
 .allyCopy p { max-width: 720px; margin: 5px 0 0; color: rgba(255,248,237,.68); font-size: 9.5px; line-height: 1.45; }
 .quickComposer { min-height: 48px; display: flex; align-items: center; gap: 6px; padding: 4px; border: 1px solid rgba(255,248,237,.11); border-radius: 12px; background: rgba(255,248,237,.03); }
+.quickComposer textarea { min-height: 30px; max-height: 54px; padding: 6px 2px; }
 .quickComposer .voiceButton { flex-basis: 38px; width: 38px; height: 38px; }
 .quickComposer .sendButton { width: 36px; align-self: stretch; border: 0; border-radius: 8px; background: var(--sky); color: #09282a; font-weight: 700; cursor: pointer; }
 

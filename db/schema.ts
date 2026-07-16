@@ -174,3 +174,28 @@ export const prototypeRelationships = pgTable("prototype_relationships", {
   uniqueIndex("prototype_relationships_pair_idx").on(table.personAUserId, table.personBUserId),
   index("prototype_relationships_person_b_idx").on(table.personBUserId),
 ]);
+
+export const prototypeOrganizations = pgTable("prototype_organizations", {
+  id: text("id").primaryKey(),
+  name: text("name").notNull(),
+  orgId: text("org_id").notNull(),
+  description: text("description").notNull().default(""),
+  createdByUserId: text("created_by_user_id").notNull().references(() => prototypeUsers.id, { onDelete: "cascade" }),
+  status: text("status").notNull().default("active"),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+}, (table) => [
+  uniqueIndex("prototype_organizations_org_id_idx").on(table.orgId),
+  index("prototype_organizations_creator_idx").on(table.createdByUserId),
+]);
+
+export const prototypeOrganizationMembers = pgTable("prototype_organization_members", {
+  id: text("id").primaryKey(),
+  organizationId: text("organization_id").notNull().references(() => prototypeOrganizations.id, { onDelete: "cascade" }),
+  userId: text("user_id").notNull().references(() => prototypeUsers.id, { onDelete: "cascade" }),
+  role: text("role").notNull().default("Member"),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+}, (table) => [
+  uniqueIndex("prototype_organization_members_pair_idx").on(table.organizationId, table.userId),
+  index("prototype_organization_members_user_idx").on(table.userId),
+]);
