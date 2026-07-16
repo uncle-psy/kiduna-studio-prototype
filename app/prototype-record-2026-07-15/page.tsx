@@ -38,6 +38,12 @@ const phases = [
     copy: "Established a maintained canon layer that distinguishes exact owner-ratified language from evolving implementation guidance. The Inception Point, the Fertile Void, Ki’s dynamic nonhuman presence, the two-type chip grammar, Persona switching, voice presence, and member-controlled Transparency now share one reproducible system voice.",
     artifacts: ["System Canon v0.1", "Ki avatar glyph", "Maintain System Canon Skill", "Browser voice prototype", "David and Moto Personas"],
   },
+  {
+    number: "07",
+    title: "Kinship becomes multi-user",
+    copy: "Moved account access outside the Field and made the invitation path durable. Ki can now learn about any intended person, issue a bounded Kinship Code, preserve directional trust and lineage, verify a new member’s email, consume single-use Codes atomically, form the Relationship, and keep inviter belief separate from invitee self-description.",
+    artifacts: ["Authenticated accounts and Personas", "Email verification", "Kinship Code design contract", "Relationship Wisdom namespaces", "Privacy-aware vector entries"],
+  },
 ];
 
 const architecture = [
@@ -62,7 +68,7 @@ export default function PrototypeRecordPage() {
       <span>RECORD · GENESIS SERIES 01</span>
       <h1>How we are making<br />Studio from within.</h1>
       <p>A living record of the source materials, decisions, reversals, infrastructure, and working artifacts behind the Kiduna Studio functional prototype.</p>
-      <div><b>6</b><span>prototype phases</span><b>52</b><span>Ki source files</span><b>15</b><span>installed Skills</span><b>1</b><span>continuous Field</span></div>
+      <div><b>7</b><span>prototype phases</span><b>52</b><span>Ki source files</span><b>15</b><span>installed Skills</span><b>1</b><span>continuous Field</span></div>
     </section>
 
     <section className={styles.principles}>
@@ -102,9 +108,9 @@ export default function PrototypeRecordPage() {
 
     <section className={styles.boundary}>
       <span>WHAT IS REAL NOW · WHAT IS NEXT</span>
-      <div><h2>Real now</h2><p>The deployed interface, session-fixed identity, database connection, persisted legacy workspace, Wisdom storage and retrieval, versioned source package, local graph runtime, and deployment pipeline.</p></div>
-      <div><h2>Simulated now</h2><p>Ki’s domain Actions, invitation preparation, Organization formation, Project creation, Actor invocation, and resulting Records. The interface labels this execution mode without interrupting harmless local work.</p></div>
-      <div><h2>Next</h2><p>Deepen Ki’s first conversation one decision at a time; define David’s relationship context for Jeya and Aashik; make the Profiler Action inspectable; then let the first real Project and artifact emerge inside the Field.</p></div>
+      <div><h2>Real now</h2><p>Multi-user accounts, password hashing, verified-email state, sessions, Persona context, Codes, use and time limits, lineage, directional trust, Relationship creation, distinct Wisdom perspectives, database retrieval, and deployment pipeline.</p></div>
+      <div><h2>Simulated now</h2><p>Production cryptographic signatures, wallet authority, federated verification, Organization formation, Project creation, Actor invocation, and domain Actions beyond the prototype database.</p></div>
+      <div><h2>Next</h2><p>Learn from real invitation use; deepen Ki’s relationship questions one decision at a time; then let the first real community, Project, and artifact emerge from authenticated multi-user context.</p></div>
     </section>
 
     <footer className={styles.footer}><Image src="/kiduna-mark.svg" width={32} height={32} alt="" /><p>This page is intentionally not linked from the demonstration. It is a working record, not a public product page.</p><span>studio prototype · updated 2026-07-16</span></footer>

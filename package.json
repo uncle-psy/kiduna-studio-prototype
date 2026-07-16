@@ -15,6 +15,7 @@
     "db:check": "node --env-file=.env.local scripts/db-check.mjs",
     "db:seed": "node --env-file=.env.local scripts/db-seed.mjs",
     "db:ingest:ki": "node --env-file=.env.local scripts/ingest-ki-wisdom.mjs",
+    "db:seed:owner": "node --env-file=.env.local scripts/seed-prototype-owner.mjs",
     "db:generate": "node --env-file=.env.local ./node_modules/drizzle-kit/bin.cjs generate",
     "db:migrate": "node --env-file=.env.local ./node_modules/drizzle-kit/bin.cjs migrate"
   },

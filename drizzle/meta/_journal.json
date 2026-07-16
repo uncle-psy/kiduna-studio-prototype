@@ -15,6 +15,13 @@
       "when": 1784153611824,
       "tag": "0001_pretty_genesis",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1784228019303,
+      "tag": "0002_confused_lorna_dane",
+      "breakpoints": true
     }
   ]
 }

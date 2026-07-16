@@ -295,6 +295,32 @@
 .panelComposer input::placeholder, .quickComposer input::placeholder { color: rgba(255,248,237,.31); }
 .panelComposer > button:last-child { align-self: stretch; min-width: 74px; border: 0; border-radius: 10px; background: var(--sky); color: #09282a; font-size: 10px; font-weight: 700; cursor: pointer; }
 .panelComposer > button:last-child:disabled, .quickComposer .sendButton:disabled { opacity: .38; cursor: default; }
+.panelDock { padding: 0 17px 15px; border-top: 1px solid rgba(255,248,237,.08); }
+.panelDock .panelComposer { margin: 14px 0 10px; }
+.panelDock .transparencyControl { min-height: 54px; padding: 0 4px; border: 0; }
+
+.inviteBuilder { margin: 18px 0 8px 51px; padding: 18px; display: grid; gap: 13px; border: 1px solid rgba(53,216,229,.18); border-radius: 16px; background: rgba(9,28,29,.34); }
+.inviteBuilder header span { color: var(--sky); font-size: 7px; font-weight: 700; letter-spacing: .16em; }
+.inviteBuilder header h3 { margin: 7px 0 5px; font-family: "Goudy Heavyface", Georgia, serif; font-size: 25px; font-weight: 400; }
+.inviteBuilder header p { margin: 0; color: rgba(255,248,237,.46); font-size: 9px; line-height: 1.55; }
+.inviteBuilder label { display: grid; gap: 6px; }
+.inviteBuilder label > span { color: rgba(255,248,237,.48); font-size: 7px; letter-spacing: .08em; text-transform: uppercase; }
+.inviteBuilder input, .inviteBuilder textarea, .inviteBuilder select { width: 100%; min-width: 0; box-sizing: border-box; padding: 10px; border: 1px solid rgba(255,248,237,.13); border-radius: 9px; outline: 0; background: rgba(255,248,237,.045); color: var(--cream); font: inherit; font-size: 10px; }
+.inviteBuilder input:focus, .inviteBuilder textarea:focus, .inviteBuilder select:focus { border-color: rgba(53,216,229,.5); }
+.inviteBuilder textarea { min-height: 68px; resize: vertical; line-height: 1.5; }
+.formRow { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.segmented { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 3px; border: 1px solid rgba(255,248,237,.1); border-radius: 9px; }
+.segmented button { min-height: 34px; border: 0; border-radius: 7px; background: transparent; color: rgba(255,248,237,.45); font-size: 8px; cursor: pointer; }
+.segmented .selected { background: rgba(53,216,229,.11); color: var(--cream); }
+.createCode { min-height: 43px; border: 0; border-radius: 9px; background: var(--sky); color: #09282a !important; font-size: 9px; font-weight: 800; cursor: pointer; }
+.createCode span { margin-left: 10px; }
+.codeCard { margin: 13px 0 8px 51px; padding: 16px; border: 1px solid rgba(149,232,199,.26); border-radius: 14px; background: rgba(149,232,199,.055); }
+.codeCard small { color: var(--mint); font-size: 7px; letter-spacing: .14em; }
+.codeCard h3 { margin: 8px 0 5px; color: var(--cream); font-family: ui-monospace, monospace; font-size: 20px; letter-spacing: .08em; }
+.codeCard p { margin: 0; color: rgba(255,248,237,.5); font-size: 9px; }
+.codeCard button { margin-top: 11px; padding: 8px 11px; border: 1px solid rgba(53,216,229,.28); border-radius: 8px; background: rgba(53,216,229,.08); color: var(--sky); font-size: 8px; cursor: pointer; }
+.relationshipCard { margin: 13px 0 8px 51px; padding: 15px; border: 1px solid rgba(198,157,114,.2); border-radius: 14px; background: rgba(198,157,114,.04); }
+.relationshipCard>header { display:flex;align-items:center;justify-content:space-between;gap:12px }.relationshipCard>header span{display:grid;gap:4px}.relationshipCard>header small{color:var(--camel);font-size:7px;letter-spacing:.14em}.relationshipCard>header strong{font-size:11px}.relationshipCard>header button{padding:7px 9px;border:1px solid rgba(53,216,229,.2);border-radius:7px;background:transparent;color:var(--sky);font-size:7px;cursor:pointer}.relationshipCard article{margin-top:12px;padding:11px;border:1px solid rgba(255,248,237,.07);border-radius:9px}.relationshipCard article small{color:rgba(255,248,237,.36);font-size:6px;letter-spacing:.1em}.relationshipCard article p,.noVisibleWisdom{margin:6px 0 0;color:rgba(255,248,237,.58);font-size:9px;line-height:1.55}.relationshipCard form{display:grid;gap:8px;margin-top:12px}.relationshipCard textarea,.relationshipCard select,.relationshipCard input{box-sizing:border-box;padding:9px;border:1px solid rgba(255,248,237,.12);border-radius:8px;background:rgba(255,248,237,.04);color:var(--cream);font:inherit;font-size:8px}.relationshipCard textarea{min-height:65px;resize:vertical}.relationshipCard form>div{display:grid;grid-template-columns:90px 1fr 58px;gap:7px}.relationshipCard form button{border:0;border-radius:7px;background:var(--sky);color:#09282a;font-size:8px;font-weight:700}.relationshipCard form>small{color:var(--gold);font-size:8px}
 
 .voiceButton { position: relative; flex: 0 0 42px; width: 42px; height: 42px; display: grid; place-items: center; padding: 0; border: 1px solid rgba(53,216,229,.16); border-radius: 10px; background: rgba(53,216,229,.04); color: rgba(255,248,237,.5) !important; cursor: pointer; }
 .voiceButton:hover, .voiceButton.voiceActive { border-color: rgba(53,216,229,.52); background: rgba(53,216,229,.1); color: var(--sky) !important; }
@@ -319,6 +345,7 @@
   transition: background .32s ease;
 }
 .allyBand.allyFocus { background: rgba(17,10,7,.97); }
+.allyBand.allyFocus { grid-template-columns: 58px 1fr; }
 .allyPresence { position: relative; width: 52px; height: 52px; padding: 0; border: 1px solid rgba(53,216,229,.42); border-radius: 50%; background: #082426; color: var(--sky); cursor: pointer; }
 .allyPresence img { display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
 .allyPresence i { position: absolute; right: 0; bottom: 2px; width: 9px; height: 9px; border: 2px solid #17100b; border-radius: 50%; background: var(--mint); }
@@ -390,6 +417,8 @@
   .kiPanel { top: 10%; left: 3%; right: 3%; bottom: 2%; width: auto; }
   .kiThread { padding: 12px; }
   .kiThread .fromSource { padding-left: 10%; }
+  .inviteBuilder, .codeCard, .relationshipCard { margin-left: 0; }
+  .formRow { grid-template-columns: 1fr; }
   .allyBand { left: 8px; right: 8px; bottom: 8px; min-height: 148px; grid-template-columns: 46px 1fr; padding: 10px; }
   .allyPresence { width: 44px; height: 44px; }
   .allyCopy p { font-size: 9px; }

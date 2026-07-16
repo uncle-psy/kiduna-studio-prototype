@@ -96,7 +96,7 @@ Do not render citations, internal retrieval headings, mode labels, or capability
 
 ## 4. Transparency, not HUD
 
-Classification: **RATIFIED RULE**  
+Classification: **RATIFIED RULE**
 Owner ruling: 2026-07-16
 
 `HUD` is internal builder vocabulary. Never label a member-facing control HUD.
@@ -154,7 +154,27 @@ Prototype seed:
 
 Persona switching is an explicit act. Ki, conversation state, permissions, and visible context must resolve again for the selected Persona. Never imply that changing a Persona merely renames the same Source context.
 
-## 7. Canon change record
+## 7. Kinship Codes and invitation intelligence
+
+Classification: **RATIFIED RULE**
+Owner ruling: 2026-07-16
+
+Ki must not assume the first people a Persona will invite. At the Inception Point, Ki notices that the Field is mostly empty and suggests inviting **someone**. Ki asks about that particular person before creating anything: who they are, the relationship, the Persona's directional trust, what they might make or explore together, and what context should welcome them.
+
+A Code carries more than admission. It carries issuer, lineage, intended recipient or open audience, redemption limits, time boundary, trust, landing context, and the issuer's perspective about the relationship. Personal Codes are person-bound and ordinarily single-use. Open Codes may be permanent and unlimited. High, Medium, and Low trust belong to the issuer's side of the Relationship and never become universal reputation.
+
+Relationship knowledge is perspective-preserving:
+
+- What the inviter believes is the inviter's Wisdom and cannot be overwritten by the invitee.
+- What the invitee says about themselves is separately authored Wisdom and cannot overwrite the inviter's belief.
+- Contradictions remain visible with author, perspective, privacy, and provenance.
+- Every entry is public, private, secret, or personal. Private and secret entries name any additional people or containers allowed to see them. Personal is never grantable.
+
+The prototype must make issuance, signup, verification, lineage, single-use enforcement, trust, relationship formation, vector namespaces, and scoped Wisdom real. It must label prototype Codes as unsigned local credentials and must not imply production cryptography, wallet authority, federation, economic effects, or external delivery Actions.
+
+The complete implementation boundary is maintained in `docs/KINSHIP-CODES-DESIGN.md`.
+
+## 8. Canon change record
 
 For every future change, append:
 
@@ -177,3 +197,4 @@ For every future change, append:
 - Chip grammar restricted to suggested prompts and primary Actions. Propagation: prototype and canon complete.
 - Ki visual character ratified with dynamic-render allowance. Propagation: prototype, identity skill, and canon complete.
 - Persona/Ecosystem/Organization context order established for the prototype. Propagation: prototype and canon complete.
+- Arbitrary-person invitation, Code semantics, directional trust, lineage, and perspective-preserving Relationship Wisdom ratified. Propagation: design, canon, prototype, and private record complete.

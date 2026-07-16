@@ -4,17 +4,15 @@ A persistent, interactive prototype of the Kiduna Studio Field.
 
 Live prototype: [kiduna-studio-prototype.vercel.app](https://kiduna-studio-prototype.vercel.app)
 
-The first scenario follows one fixed member identity through a continuous collaborative arc inside Kinship Duna:
+The current scenario begins with a real prototype account and follows an invitation into a continuous collaborative arc inside Kinship Duna:
 
-1. Enter as David, Jeya, or Aashik for the browser session.
-2. Bring Jeya and Aashik into context.
-3. Form the private Studio Makers community.
-4. Start Studio Field Prototype inside that community.
-5. Bring three private source artifacts into the project.
-6. Invoke Mapper with project-scoped, read-only access.
-7. Work through the brief in a focused surface while the Field remains present.
-8. Review a cited proposed change.
-9. Approve version 0.2 and retain a receipt.
+1. Log in outside the Field or sign up with a Kinship Code and verified email.
+2. Enter as one of the signed-in account's Personas.
+3. Ask Ki to invite any person or create an open invitation.
+4. Set directional trust, use count, time boundary, privacy, and relationship context.
+5. Redeem the Code as a second account and preserve its invitation lineage.
+6. Keep the inviter's belief and the invitee's self-shared Wisdom as distinct perspectives.
+7. Continue into Organizations, communities, Projects, artifacts, and Actors from the same Field.
 
 ## Architecture
 
@@ -22,7 +20,9 @@ The first scenario follows one fixed member identity through a continuous collab
 - PostgreSQL through Drizzle ORM and the portable Postgres.js driver
 - pgvector for scoped Wisdom embeddings and semantic retrieval
 - Apache AGE for the organization, community, project, member, agent, and artifact relationship graph
-- One persistent workspace projection for the current Field state
+- Authenticated accounts, Personas, server-side sessions, and email verification
+- Atomic Kinship Code issuance/redemption with trust, lineage, and use limits
+- Perspective-preserving Relationship Wisdom namespaces
 - An append-only event table for action receipts
 - Vercel deployment connected to GitHub
 
@@ -37,6 +37,7 @@ npm run db:up
 npm run db:migrate
 npm run db:check
 npm run db:seed
+npm run db:seed:owner # requires DAVID_PASSWORD in the environment
 npm run dev
 ```
 
@@ -55,9 +56,10 @@ npm run db:down     # stop the local database without deleting its volume
 
 ## Current prototype boundaries
 
-- One shared workspace rather than authenticated, per-member projections
-- Prototype identity is fixed per browser session; there is no in-Field account switcher
-- Simulated invitation acceptance rather than live delivery
+- Authentication and multi-user invitation redemption are real prototype state
+- Persona may switch within an authenticated account; account switching requires logout
+- Email verification uses real delivery when configured and a clearly labeled local fallback otherwise
+- Prototype Codes are unsigned human-readable credentials, not production cryptographic tokens
 - One project and one community
 - No artifact upload/blob storage yet
 - No real-time presence or concurrent conflict handling yet

@@ -1,5 +1,6 @@
 import { sqlClient } from "@/db";
 import { prototypeEmbedding, vectorLiteral } from "@/lib/ki-retrieval";
+import { getCurrentAccount } from "@/lib/auth";
 
 export const runtime = "nodejs";
 
@@ -28,7 +29,7 @@ async function retrieveWisdom(message: string) {
   let retrievalQuery = message;
   if (/what is this|what.*place|where am i|how.*work|show me around/.test(lower)) {
     retrievalQuery = "Field canonical always-live projection Studio HUD Clear Context Focus conversation Ally";
-  } else if (/jeya|aashik|invite|bring.*in|with them|together/.test(lower)) {
+  } else if (/invite|bring.*in|someone|not so empty|together/.test(lower)) {
     retrievalQuery = "invitations Profiler person-specific code zero spam Relationship context invite one person well";
   } else if (/project|make something|start building|begin building|genesis studio/.test(lower)) {
     retrievalQuery = "Create from Within Project Studio artifacts Actors first running system member Ally";
@@ -76,12 +77,12 @@ function resolveResponse(message: string, persona: string, stage: number, wisdom
     };
   }
 
-  if (/jeya|aashik|invite|bring.*in|with them|together/.test(lower)) {
+  if (/invite|bring.*in|someone|not so empty|together/.test(lower)) {
     return {
       effect: "PREPARE_INVITES",
-      reply: "Yes. I can help you bring Jeya and Aashik in well. First, tell me how you know each of them and what you hope the three of you will make together. I’ll use that to prepare their context and two person-specific invitations. I won’t contact them; when the invitations are ready, you will send them yourself.",
-      suggestedPrompts: ["Why do relationships come first?", "What will they see when they arrive?"],
-      primaryAction: { label: "Shape the first Project", prompt: "Create a Project preview for the three of us." },
+      reply: "Yes. Who would you like to invite? Tell me how you know them, what trust you’re extending, and what you hope to explore or make together. I’ll preserve that as your perspective and prepare a Kinship Code for you to send.",
+      suggestedPrompts: ["Why does the Code carry trust?", "What will they see when they arrive?"],
+      primaryAction: null,
     };
   }
 
@@ -97,9 +98,9 @@ function resolveResponse(message: string, persona: string, stage: number, wisdom
   if (/kinship duna|organization|duna|let'?s begin|start here|create.*community/.test(lower)) {
     return {
       effect: "SEED_ORGANIZATION",
-      reply: "I’ve brought Kinship Duna into context as the first Organization—not as a place above the others, but as the Genesis in sequence. This is still a preview. We can define the intention that belongs here, or begin with the two people you want beside you.",
+      reply: "I’ve brought Kinship Duna into context as the first Organization—not as a place above the others, but as the Genesis in sequence. This is still a preview. We can define the intention that belongs here, or invite someone so the Field is not only ours.",
       suggestedPrompts: ["What belongs to an Organization?", "Why is Kinship Duna first?"],
-      primaryAction: { label: "Bring Jeya and Aashik into context", prompt: "I want to build something with Jeya and Aashik." },
+      primaryAction: { label: "Invite someone", prompt: "I want to invite someone." },
     };
   }
 
@@ -125,6 +126,8 @@ export async function GET() {
 
 export async function POST(request: Request) {
   try {
+    const account = await getCurrentAccount();
+    if (!account) return Response.json({ error: "Sign in to talk with Ki." }, { status: 401 });
     const body = await request.json() as { message?: string; persona?: string; stage?: number };
     const message = body.message?.trim();
     if (!message || message.length > 2000) return Response.json({ error: "Message must contain 1–2,000 characters." }, { status: 400 });
