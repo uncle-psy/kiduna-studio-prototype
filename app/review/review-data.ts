@@ -262,12 +262,17 @@ const inferredPages: ReviewPage[] = sourceRoutes
   .map((slug) => {
     const head = slug.split("/")[0];
     const group = (head === "active" ? "Active" : head === "public" ? "Public" : head === "studio" ? "Studio" : head === "market" ? "Market" : "Standalone") as ReviewGroup;
-    return { slug, title: titleFor(slug), group, sourceRoute: `/${slug.split("/").slice(1).join("/")}` };
+    let sourceRoute = head === "market" ? `/${slug}` : `/${slug.split("/").slice(1).join("/")}`;
+    if (slug === "public/home") sourceRoute = "/";
+    if (slug === "market/home") sourceRoute = "/market";
+    if (slug.startsWith("studio/launchpad-legacy")) sourceRoute = sourceRoute.replace("/launchpad-legacy", "/launchpad_");
+    if (slug === "studio/chat-deprecated") sourceRoute = "/chat_deprecated";
+    return { slug, title: titleFor(slug), group, sourceRoute };
   });
 
 const onboarding: ReviewPage[] = Array.from({ length: 6 }, (_, index) => ({
   slug: `onboarding/${index + 1}`,
-  title: ["Your account", "Verify email", "Create password", "Phone number", "Verify phone", "Kinship code"][index],
+  title: ["Create Your Big Avatar", "Inform Your Avatar", "Set Your Stance", "Create Your Performer", "Inform Your Performer", "Set Performer Stance"][index],
   group: "Onboarding" as const,
   sourceRoute: `/onboarding?step=${index + 1}`,
 }));

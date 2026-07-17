@@ -1,0 +1,1087 @@
+// ════════════════════════════════════════════════════════════════════════
+//   Kinship Market — Prisma schema (v1)
+// ════════════════════════════════════════════════════════════════════════
+//
+//   Postgres. Single tenancy boundary: `marketId`.
+//
+//   Out-of-scope for this schema (lives in other services):
+//     - User identity / auth / role → external login API
+//         GET /is-auth → returns { wallet, ... }
+//     - Agent config (system prompt, tone, schedule, knowledge bases) →
+//       external agent service
+//         POST /api/agents/presence, /api/prompts, /api/knowledge, ...
+//     - Session tokens / wallet challenges → external login service
+//
+//   Identity model:
+//     - `wallet` (base58 Solana pubkey) is the canonical user id across
+//       this app and the external services. We never need to translate
+//       between local ids and external ids.
+//     - `agentId` is the `agent_*` id from the agent service.
+//     - `platformId` is the agent-service platform; every Market lives
+//       on exactly one platform.
+//
+//   Conventions:
+//     - cuid() ids on all entity tables
+//     - createdAt / updatedAt on every entity table; append-only event
+//       tables have their own `at` / `startedAt`
+//     - Soft-delete via `deactivatedAt` on Market, Objective, Operator,
+//       Elector. Everything else hard-deletes.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ════════════════════════════════════════════════════════════════════════
+//   Enums
+// ════════════════════════════════════════════════════════════════════════
+
+enum LaunchStatus {
+  draft          // Wizard incomplete
+  initialized    // initializeLaunch done (ICO mode)
+  fundraising    // startLaunch done, contributions open
+  closed         // ICO window expired, awaiting approvals
+  settling       // settle_launch in progress
+  live           // Market operational
+  refunding      // Min raise not met, refunds available
+  failed         // Campaign failed
+  cancelled      // Founder cancelled
+
+  // Existing token flow (sponsor-funded, no ICO):
+  launching      // 4-step sponsor-funded flow in progress
+}
+
+enum ProposalKind {
+  spend
+  param
+  mint
+  metadata
+  liquidity
+  perf
+}
+
+enum ProposalStatus {
+  draft
+  submitted
+  live
+  resolving
+  resolved
+  executed
+  measured
+  cancelled
+}
+
+enum TradeSide {
+  pass
+  fail
+}
+
+enum OnchainAccountKind {
+  squads_multisig
+  squads_vault
+  futarchy_dao
+  futarchy_proposal
+  perf_package_escrow
+  token_mint
+  liquidity_pool
+}
+
+enum JoinPolicy {
+  // Anyone with a wallet can join (v1 default)
+  public
+  // Sponsor must approve each join request (future)
+  invite
+  // Must hold a Market token to join (future)
+  token_gated
+}
+
+enum ElectorIntentStatus {
+  // Awaiting auto-fire or override
+  pending
+  // Auto-fired or fired after override
+  fired
+  // Citizen cancelled before fire
+  cancelled
+  // Couldn't execute (insufficient funds, market closed, etc.)
+  failed
+}
+
+// ════════════════════════════════════════════════════════════════════════
+//   Market — the DAO itself; tenancy boundary
+// ════════════════════════════════════════════════════════════════════════
+
+model Market {
+  id String @id @default(cuid())
+
+  slug        String  @unique
+  name        String
+  description String?
+  logoUrl     String?
+
+  // Agent-service platform this Market lives on. Every call to the
+  // external agent / knowledge / prompts APIs requires this as
+  // (wallet, platformId).
+  platformId String
+
+  // Treasury / multisig — auto-provisioned at launch
+  multisigAddress  String?
+  // Token mint and ticker
+  tokenMintAddress String?
+  tokenTicker      String?
+  tokenConfig      Json?    @db.JsonB // Full token launch config from wizard
+
+  // ── Agent keypair (Keypair 2 — per-market, server-generated) ──
+  // Public key is the agent's Solana address (base58).
+  // Secret key is AES-256-GCM encrypted for database storage.
+  agentPublicKey String?
+  agentSecretKey String? @db.Text
+
+  // ── On-chain addresses (populated during launch steps) ──
+  daoAddress  String? // MetaDAO futarchy DAO PDA
+  daoNonce    String? // DAO creation nonce (for PDA re-derivation)
+  quoteMint   String? // USDC SPL mint address
+  poolAddress String? // Meteora DAMM v2 pool address
+  squadsVault String? // Squads treasury vault PDA (index 0)
+
+  // ── Launch tracking ──
+  launchStatus LaunchStatus @default(draft)
+  launchStep   Int?         // Last completed step (1-6), null if not started
+  launchError  String?      @db.Text
+  launchMode   String?      // "ico" (launchpad) or "sponsor" (existing token)
+
+  // ── ICO Launchpad Config (from wizard, new token mode only) ──
+  launchAddress        String?    // On-chain launch PDA
+  launchSignerAddress  String?    // Launch signer PDA
+  minRaise             Int?       // Min USDC target (whole units)
+  icoDurationSeconds   Int?       // Contribution window in seconds
+  monthlyBudgetUsdc    Int?       // Monthly team spending limit
+  teamAddress          String?    // Proposal sponsor wallet
+  hasBidWall           Boolean    @default(true)
+  accumulatorDelay     Int?       // Accumulator activation delay seconds
+
+  // ── Squads Spending Limit (for quick-send without proposal) ──
+  spendingLimitAddress  String?   // Squads spending limit PDA
+  spendingLimitCreateKey String?  // CreateKey used to derive the PDA
+
+  // ── Performance Package (ICO mode) ──
+  perfPackageTokens    Int?       // Tokens in perf package
+  perfPackageGrantee   String?    // Recipient wallet
+  perfMinUnlockMonths  Int?       // Min months before unlock (≥12)
+
+  // ── Additional Tokens (ICO mode) ──
+  additionalTokensAmount    Int?       // Extra tokens to mint (0 = none)
+  additionalTokensRecipient String?    // Recipient wallet
+
+  // ── ICO Live State (on-chain mirror) ──
+  totalCommitted       Int       @default(0) // USDC committed by contributors
+  totalApproved        Int       @default(0) // USDC approved by founder
+  contributorCount     Int       @default(0) // Unique contributors
+  icoPrice             Float?    // Final ICO price (USDC per token)
+  fundraiseDeadline    DateTime? // When contribution window closes
+
+  // The Operator that authored / will run this Market — also a multisig
+  // signer. Nullable during early creation steps.
+  primaryOperatorId String?
+  primaryOperator   Operator? @relation("MarketPrimaryOperator", fields: [primaryOperatorId], references: [id], onDelete: SetNull)
+
+  // Sponsor wallet — base58 Solana pubkey from the external login API
+  sponsorWallet String
+
+  // Join policy. v1 ships `public` only; the enum carries other values
+  // so future modes don't require migration.
+  joinPolicy JoinPolicy @default(public)
+
+  // Denormalized counter — maintained by the join/leave/remove write
+  // paths so listing endpoints don't need a COUNT() per Market.
+  memberCount Int @default(0)
+  proposalClassDefaults Json @default("{}") @db.JsonB
+
+  deactivatedAt DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  closeTxSignature   String?
+  refundCompletedAt  DateTime?
+
+  objectives      Objective[]
+  operators       Operator[]       @relation("MarketOperators")
+  proposals       Proposal[]
+  electors        Elector[]
+  members         MarketMember[]
+  electorIntents  ElectorIntent[]
+  onchainAccounts OnchainAccount[]
+  onchainTxs      OnchainTx[]
+  contributions   Contribution[]
+  quickSends      QuickSend[]
+  alliances       Alliance[]
+
+  @@index([sponsorWallet])
+  @@index([platformId])
+  @@map("markets")
+}
+
+// ════════════════════════════════════════════════════════════════════════
+//   Objective + Dimension
+// ════════════════════════════════════════════════════════════════════════
+
+model Objective {
+  id String @id @default(cuid())
+
+  // Optional market link — objectives are independent entities.
+  // When associated with a market, proposals under this objective
+  // belong to that market. When null, objective is a standalone template.
+  marketId String?
+  market   Market? @relation(fields: [marketId], references: [id], onDelete: SetNull)
+
+  // Owner wallet — the user who created this objective.
+  sponsorWallet String?
+
+  slug        String
+  icon        String?
+  name        String
+  description String?
+
+  allowedProposalKinds ProposalKind[]
+
+  deactivatedAt DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  dimensions Dimension[]
+  operators  Operator[]
+  proposals  Proposal[]
+  electors   Elector[]
+
+  @@unique([marketId, slug], name: "uq_objective_slug_per_market")
+  @@index([marketId])
+  @@index([sponsorWallet])
+  @@map("objectives")
+}
+
+model Dimension {
+  id String @id @default(cuid())
+
+  objectiveId String
+  objective   Objective @relation(fields: [objectiveId], references: [id], onDelete: Cascade)
+
+  slug        String
+  name        String
+  description String?
+  weightPct   Int
+  position    Int @default(0)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  impactClaims   ImpactClaim[]
+  electorWeights ElectorDimensionWeight[]
+
+  @@unique([objectiveId, slug], name: "uq_dimension_slug_per_objective")
+  @@index([objectiveId])
+  @@map("dimensions")
+}
+
+// ════════════════════════════════════════════════════════════════════════
+//   Operator — thin reference to the external agent service
+// ════════════════════════════════════════════════════════════════════════
+//
+//   Agent config (system prompt, tone, schedule, knowledge bases) lives
+//   in the agent service. We keep a local row so Proposal.operatorId
+//   and Market.primaryOperatorId can FK without round-tripping the
+//   agent service on every read.
+//
+//   `agentId` is the `agent_*` id from the agent service.
+
+model Operator {
+  id String @id @default(cuid())
+
+  agentId String
+
+  marketId String
+  market   Market @relation("MarketOperators", fields: [marketId], references: [id], onDelete: Cascade)
+
+  objectiveId String
+  objective   Objective @relation(fields: [objectiveId], references: [id], onDelete: Restrict)
+
+  deactivatedAt DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  proposals         Proposal[]
+  runs              OperatorRun[]
+  primaryForMarkets Market[]      @relation("MarketPrimaryOperator")
+
+  @@unique([marketId, agentId], name: "uq_operator_agent_per_market")
+  @@index([marketId])
+  @@index([objectiveId])
+  @@map("operators")
+}
+
+// ════════════════════════════════════════════════════════════════════════
+//   Proposal — parent + 6 kind-specific 1:1 payload tables
+// ════════════════════════════════════════════════════════════════════════
+
+model Proposal {
+  id String @id @default(cuid())
+
+  marketId String
+  market   Market @relation(fields: [marketId], references: [id], onDelete: Cascade)
+
+  objectiveId String
+  objective   Objective @relation(fields: [objectiveId], references: [id], onDelete: Restrict)
+
+  // Operator that authored (nullable: sponsors can author directly)
+  operatorId String?
+  operator   Operator? @relation(fields: [operatorId], references: [id], onDelete: SetNull)
+
+  // Wallet of the human who submitted (or whose Operator did)
+  authorWallet String
+
+  title     String
+  rationale String         @default("")
+  kind      ProposalKind
+  status    ProposalStatus
+
+  // Market timing
+  openedAt        DateTime?
+  closesAt        DateTime?
+  twapWindowHours Int       @default(18)
+  passMarginPct   Int       @default(3)
+
+  // Live state
+  passTwap Decimal? @db.Decimal(7, 4)
+  failTwap Decimal? @db.Decimal(7, 4)
+
+  // Denormalized counters
+  activeElectors Int     @default(0)
+  totalElectors  Int     @default(0)
+  tradeCount     Int     @default(0)
+  volumeUsd      Decimal @default(0) @db.Decimal(20, 6)
+
+  executedAt DateTime?
+  measuredAt DateTime?
+
+  // On-chain addresses (populated during multi-phase submission)
+  squadsProposalAddress   String?
+  futarchyProposalAddress String?
+
+  // Resume support — tracks on-chain submission progress
+  launchPhase   Int?   // Last completed phase: 0=none, 1=squads, 2=vaults, 3=live
+  launchContext Json?  // Intermediate addresses + build data for resumption
+  // Squads vault transaction index chosen at Phase 1. Persisted so a Phase-1
+  // retry after an interruption reuses the SAME index/PDA instead of reading
+  // multisig.transactionIndex+1 again (which would create a second, orphaned
+  // vault transaction). Null until Phase 1 runs.
+  squadsTransactionIndex BigInt?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // 1:1 payload — exactly one of these is populated based on `kind`
+  spend     ProposalSpend?
+  param     ProposalParam?
+  mint      ProposalMint?
+  metadata  ProposalMetadata?
+  liquidity ProposalLiquidity?
+  perf      ProposalPerf?
+
+  impactClaims ImpactClaim[]
+  statusEvents ProposalStatusEvent[]
+  trades       Trade[]
+  citizenVotes CitizenVote[]
+  settlements  Settlement[]
+  operatorRuns OperatorRun[]
+  intents      ElectorIntent[]
+
+  @@index([marketId])
+  @@index([objectiveId])
+  @@index([operatorId])
+  @@index([authorWallet])
+  @@index([status])
+  @@index([openedAt])
+  @@index([closesAt])
+  @@map("proposals")
+}
+
+model ProposalSpend {
+  proposalId String   @id
+  proposal   Proposal @relation(fields: [proposalId], references: [id], onDelete: Cascade)
+
+  recipientName       String
+  recipientAddress    String
+  amountUsd           Decimal  @db.Decimal(20, 6)
+  asset               String   @default("usdc")
+  mintAddress         String?
+  treasuryBeforeUsd   Decimal  @db.Decimal(20, 6)
+  treasuryAfterUsd    Decimal @db.Decimal(20, 6)
+  priorProposalsCount Int     @default(0)
+  txSignature         String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("proposal_spend")
+}
+
+model ProposalParam {
+  proposalId String   @id
+  proposal   Proposal @relation(fields: [proposalId], references: [id], onDelete: Cascade)
+
+  parameterPath        String
+  valueBefore          String  @db.Text
+  valueAfter           String  @db.Text
+  proposalsSinceChange Int?
+  effectiveSlot        Int?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("proposal_param")
+}
+
+model ProposalMint {
+  proposalId String   @id
+  proposal   Proposal @relation(fields: [proposalId], references: [id], onDelete: Cascade)
+
+  amount       Decimal @db.Decimal(28, 6)
+  ticker       String
+  supplyBefore Decimal @db.Decimal(28, 6)
+  supplyAfter  Decimal @db.Decimal(28, 6)
+  distribution Json    @default("[]")
+  txSignature  String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("proposal_mint")
+}
+
+model ProposalMetadata {
+  proposalId String   @id
+  proposal   Proposal @relation(fields: [proposalId], references: [id], onDelete: Cascade)
+
+  fieldsBefore   Json    @default("{}")
+  fieldsAfter    Json    @default("{}")
+  newMetadataUri String?
+  txSignature    String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("proposal_metadata")
+}
+
+model ProposalLiquidity {
+  proposalId String   @id
+  proposal   Proposal @relation(fields: [proposalId], references: [id], onDelete: Cascade)
+
+  direction            String
+  amountUsd            Decimal @db.Decimal(20, 6)
+  poolName             String
+  poolDepthBeforeUsd   Decimal @db.Decimal(20, 6)
+  poolDepthAfterUsd    Decimal @db.Decimal(20, 6)
+  priceImpactBeforeBps Int
+  priceImpactAfterBps  Int
+  txSignature          String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("proposal_liquidity")
+}
+
+model ProposalPerf {
+  proposalId String   @id
+  proposal   Proposal @relation(fields: [proposalId], references: [id], onDelete: Cascade)
+
+  recipientName     String
+  recipientWallet   String?
+  rewardAmount      Decimal  @db.Decimal(28, 6)
+  rewardTicker      String
+  rewardMintAddress String?
+  unlockConditions  Json     @default("[]")
+  escrowAddress     String?
+
+  // Price tranches — [{priceThreshold: number, tokenAmount: number}]
+  // Each tranche unlocks tokenAmount when TWAP exceeds priceThreshold
+  tranches          Json     @default("[]")
+
+  // Minimum timestamp before any unlock can start (unix seconds)
+  minUnlockTimestamp DateTime?
+
+  // TWAP window in seconds (e.g. 86400 = 24h)
+  twapLengthSeconds  Int?
+
+  // Program version
+  programVersion    String   @default("v0.7")   // "v0.6" | "v0.7"
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("proposal_perf")
+}
+
+// ════════════════════════════════════════════════════════════════════════
+//   ImpactClaim
+// ════════════════════════════════════════════════════════════════════════
+
+model ImpactClaim {
+  id String @id @default(cuid())
+
+  proposalId  String
+  proposal    Proposal  @relation(fields: [proposalId], references: [id], onDelete: Cascade)
+  dimensionId String
+  dimension   Dimension @relation(fields: [dimensionId], references: [id], onDelete: Restrict)
+
+  claim             Decimal  @db.Decimal(5, 4)
+  measured          Decimal? @db.Decimal(5, 4)
+  measurementSource String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([proposalId, dimensionId], name: "uq_claim_dim_per_proposal")
+  @@index([proposalId])
+  @@index([dimensionId])
+  @@map("impact_claims")
+}
+
+// ════════════════════════════════════════════════════════════════════════
+//   ProposalStatusEvent — append-only lifecycle log
+// ════════════════════════════════════════════════════════════════════════
+
+model ProposalStatusEvent {
+  id String @id @default(cuid())
+
+  proposalId String
+  proposal   Proposal @relation(fields: [proposalId], references: [id], onDelete: Cascade)
+
+  fromStatus ProposalStatus?
+  toStatus   ProposalStatus
+  at         DateTime
+
+  // Wallet that triggered the transition; null for system / indexer events
+  actorWallet String?
+
+  note String?
+
+  @@index([proposalId])
+  @@index([at])
+  @@map("proposal_status_events")
+}
+
+// ════════════════════════════════════════════════════════════════════════
+//   Elector + per-dimension weights
+// ════════════════════════════════════════════════════════════════════════
+
+model Elector {
+  id String @id @default(cuid())
+
+  // Citizen wallet — base58 Solana pubkey
+  wallet String
+
+  marketId    String
+  market      Market    @relation(fields: [marketId], references: [id], onDelete: Cascade)
+  objectiveId String
+  objective   Objective @relation(fields: [objectiveId], references: [id], onDelete: Cascade)
+
+  displayName  String
+  // Elector is also an agent in the external agent service (presenceSubtype
+  // ELECTOR). agentId references that record.
+  agentId      String?
+  systemPrompt String? @db.Text
+  isAutonomous Boolean @default(false)
+
+  // Public key of the server-managed keypair that signs this Elector's
+  // on-chain trades. The matching private key is stored in KMS and
+  // never crosses the API boundary. Created when the Elector is created.
+  signerPubkey String?
+
+  deactivatedAt DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  weights     ElectorDimensionWeight[]
+  trades      Trade[]
+  settlements Settlement[]
+  intents     ElectorIntent[]
+
+  // A wallet has at most one Elector per Objective
+  @@unique([wallet, objectiveId], name: "uq_elector_per_objective")
+  @@index([wallet])
+  @@index([marketId])
+  @@index([objectiveId])
+  @@index([signerPubkey])
+  @@map("electors")
+}
+
+model ElectorDimensionWeight {
+  id String @id @default(cuid())
+
+  electorId   String
+  elector     Elector   @relation(fields: [electorId], references: [id], onDelete: Cascade)
+  dimensionId String
+  dimension   Dimension @relation(fields: [dimensionId], references: [id], onDelete: Cascade)
+
+  weightPct Int
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([electorId, dimensionId], name: "uq_elector_dim_weight")
+  @@map("elector_dimension_weights")
+}
+
+// ════════════════════════════════════════════════════════════════════════
+//   Event tables (append-only)
+// ════════════════════════════════════════════════════════════════════════
+
+model Trade {
+  id String @id @default(cuid())
+
+  proposalId String
+  proposal   Proposal @relation(fields: [proposalId], references: [id], onDelete: Cascade)
+  electorId  String?
+  elector    Elector?  @relation(fields: [electorId], references: [id], onDelete: Restrict)
+
+  // Wallet that made the trade — works for both manual citizens and electors
+  wallet   String
+
+  side     TradeSide
+  stakeUsd Decimal   @db.Decimal(20, 6)
+  qty      Decimal   @db.Decimal(28, 6)
+  price    Decimal   @db.Decimal(7, 4)
+
+  at          DateTime @default(now())
+  txSignature String?
+
+  @@index([proposalId])
+  @@index([electorId])
+  @@index([wallet])
+  @@index([at])
+  @@map("trades")
+}
+
+// ════════════════════════════════════════════════════════════════════════
+//   CitizenVote — one vote per wallet per proposal (mobile voting)
+// ════════════════════════════════════════════════════════════════════════
+//
+//   When a citizen votes on a proposal from the mobile app, this row is
+//   created to enforce the one-vote-per-proposal rule. The actual USDC
+//   transfer happens on-chain before this row is written.
+//
+//   The matching Trade row is also created (for TWAP/price calculations),
+//   but this table is the source of truth for "has this wallet voted?"
+
+model CitizenVote {
+  id String @id @default(cuid())
+
+  proposalId String
+  proposal   Proposal @relation(fields: [proposalId], references: [id], onDelete: Cascade)
+
+  wallet String
+
+  side     TradeSide
+  stakeUsd Decimal   @db.Decimal(20, 6)
+
+  txSignature String?
+
+  createdAt DateTime @default(now())
+
+  @@unique([proposalId, wallet], name: "uq_one_vote_per_proposal")
+  @@index([wallet])
+  @@map("citizen_votes")
+}
+
+model Settlement {
+  id String @id @default(cuid())
+
+  proposalId String
+  proposal   Proposal @relation(fields: [proposalId], references: [id], onDelete: Cascade)
+  electorId  String
+  elector    Elector  @relation(fields: [electorId], references: [id], onDelete: Restrict)
+
+  side      TradeSide
+  amountUsd Decimal   @db.Decimal(20, 6)
+
+  settledAt   DateTime @default(now())
+  txSignature String?
+
+  @@index([proposalId])
+  @@index([electorId])
+  @@map("settlements")
+}
+
+model OperatorRun {
+  id String @id @default(cuid())
+
+  operatorId String
+  operator   Operator @relation(fields: [operatorId], references: [id], onDelete: Cascade)
+
+  startedAt DateTime  @default(now())
+  endedAt   DateTime?
+
+  // 'draft' | 'submitted' | 'skipped' | 'error'
+  outcome String
+
+  proposalId String?
+  proposal   Proposal? @relation(fields: [proposalId], references: [id], onDelete: SetNull)
+
+  // LLM io, token counts, error stack, etc.
+  details Json @default("{}")
+
+  @@index([operatorId])
+  @@index([startedAt])
+  @@map("operator_runs")
+}
+
+// ════════════════════════════════════════════════════════════════════════
+//   On-chain bridge tables
+// ════════════════════════════════════════════════════════════════════════
+
+model OnchainAccount {
+  id String @id @default(cuid())
+
+  marketId String
+  market   Market @relation(fields: [marketId], references: [id], onDelete: Cascade)
+
+  kind      OnchainAccountKind
+  refId     String?
+  address   String
+  programId String?
+
+  lastIndexedSlot Int?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([marketId, kind, refId], name: "uq_onchain_account_ref")
+  @@index([address])
+  @@index([refId])
+  @@map("onchain_accounts")
+}
+
+model OnchainTx {
+  id String @id @default(cuid())
+
+  signature   String   @unique
+  slot        Int?
+  succeeded   Boolean?
+  feeLamports Int?
+
+  marketId String
+  market   Market @relation(fields: [marketId], references: [id], onDelete: Cascade)
+
+  entityRefs Json @default("[]")
+
+  observedAt DateTime @default(now())
+
+  @@index([marketId])
+  @@index([slot])
+  @@index([observedAt])
+  @@map("onchain_txs")
+}
+
+// ════════════════════════════════════════════════════════════════════════
+//   MarketMember — wallet membership in a Market
+// ════════════════════════════════════════════════════════════════════════
+//
+//   A wallet joins a Market via POST /markets/:slug/join; this writes a
+//   row here. The sponsor of a Market is tracked separately via
+//   Market.sponsorWallet — they don't get a MarketMember row.
+//
+//   Removal (by sponsor) or leaving (by self) sets `removedAt` rather
+//   than deleting, so audit trail + rejoin history is preserved. A
+//   wallet can rejoin freely — that just inserts a fresh row.
+//
+//   Active-uniqueness is enforced via a partial unique index in a
+//   migration (Prisma can't express partial indexes natively yet).
+//   The index is conceptually:
+//     UNIQUE (marketId, wallet) WHERE removedAt IS NULL
+
+model MarketMember {
+  id String @id @default(cuid())
+
+  marketId String
+  market   Market @relation(fields: [marketId], references: [id], onDelete: Cascade)
+
+  wallet String
+
+  // Role within the market: "member" (vote only) or "admin" (full access).
+  // Defaults to "member". The original sponsor (Market.sponsorWallet) always
+  // has implicit admin access regardless of this field.
+  role String @default("member")
+
+  joinedAt   DateTime  @default(now())
+  // Last time we saw this wallet in this Market (any API call). Updated
+  // lazily on activity for "active citizens" stats.
+  lastSeenAt DateTime  @default(now())
+
+  // Soft-removal fields. removedAt null = active membership.
+  removedAt       DateTime?
+  removedByWallet String?
+  removedReason   String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([marketId, removedAt])
+  @@index([wallet, removedAt])
+  @@map("market_members")
+}
+
+// ════════════════════════════════════════════════════════════════════════
+//   ElectorIntent — pending or fired trade decision for an Elector
+// ════════════════════════════════════════════════════════════════════════
+//
+//   When a proposal opens, the system computes a recommended trade for
+//   each active Elector on the Objective. That recommendation is stored
+//   here with `autoFireAt = openedAt + 30 minutes`.
+//
+//   Within the 30-minute window, the citizen can override (POST
+//   /proposals/:id/intents/:electorId/override) which updates the row
+//   in place. At `autoFireAt`, a worker fires whatever's in the row —
+//   pass/fail/stake — by signing with the Elector's server keypair and
+//   broadcasting.
+//
+//   `resultingTradeId` links the intent to the Trade row it produced.
+//   `failed` status carries the reason in `note`.
+
+model ElectorIntent {
+  id String @id @default(cuid())
+
+  proposalId String
+  proposal   Proposal @relation(fields: [proposalId], references: [id], onDelete: Cascade)
+  electorId  String
+  elector    Elector  @relation(fields: [electorId], references: [id], onDelete: Cascade)
+  marketId   String
+  market     Market   @relation(fields: [marketId], references: [id], onDelete: Cascade)
+
+  side     TradeSide
+  stakeUsd Decimal   @db.Decimal(20, 6)
+
+  // What produced the current values:
+  //   'recommendation' — system's initial proposal
+  //   'override'       — citizen changed it within the 30-min window
+  source String
+
+  status     ElectorIntentStatus @default(pending)
+  autoFireAt DateTime
+  firedAt    DateTime?
+  /// Trade.id once fired (or null if still pending / failed)
+  resultingTradeId String?
+  /// Reason if failed, or override note
+  note             String?
+  /// Optional rationale produced by the recommendation logic
+  rationale        String?            @db.Text
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // A citizen has at most one active intent per (proposal, elector)
+  @@unique([proposalId, electorId], name: "uq_intent_proposal_elector")
+  @@index([status, autoFireAt])
+  @@index([proposalId])
+  @@index([electorId])
+  @@index([marketId])
+  @@map("elector_intents")
+}
+
+// ════════════════════════════════════════════════════════════════════════
+//   ICO Contribution (Launchpad funding record mirror)
+// ════════════════════════════════════════════════════════════════════════
+
+enum ContributionStatus {
+  confirmed   // fund() tx confirmed on-chain
+  approved    // set_funding_record_approval done
+  claimed     // claim() tokens received
+  refunded    // refund() USDC returned
+}
+
+model Contribution {
+  id       String @id @default(cuid())
+  marketId String
+  market   Market @relation(fields: [marketId], references: [id], onDelete: Cascade)
+
+  /// Contributor's Solana wallet address (base58)
+  wallet          String
+  /// USDC committed in whole units (e.g., 500 = 500 USDC)
+  amountCommitted Int
+  /// USDC approved by founder (≤ committed). Null until approved.
+  amountApproved  Int?
+  /// Solana transaction signature for the fund() call
+  txSignature     String    @unique
+  /// On-chain FundingRecord PDA address
+  fundingRecordAddress String?
+  /// Current status
+  status          ContributionStatus @default(confirmed)
+
+  // ── Post-settlement (after claim/refund) ──
+  /// Base tokens received after claim
+  tokensClaimed  Float?
+  /// USDC refunded (over-subscription excess or failed ICO)
+  usdcRefunded   Float?
+  /// Claim/refund transaction signature
+  claimTx        String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([marketId])
+  @@index([wallet])
+  @@index([marketId, wallet])
+  @@index([status])
+  @@map("contributions")
+}
+// ════════════════════════════════════════════════════════════════════════
+//   Alliance — an operational working group inside a DUNA (Market).
+//
+//   Renamed/expanded "Teams" feature. An Alliance inherits the parent
+//   Market's mission/legal standing/rules (it can't override them) and can
+//   hold its own Squads multisig wallet (the "Team Wallet").
+//
+//   Phase 2 = create + list. The creator becomes the first Wizard
+//   (recorded in AllianceMember). The Squads multisig/vault PDAs are filled
+//   later (Phase 4) once the on-chain wallet is created.
+// ════════════════════════════════════════════════════════════════════════
+
+model Alliance {
+  id String @id @default(cuid())
+
+  name        String
+  handle      String  @unique
+  description String?
+  purpose     String?
+
+  // public | private | secret
+  visibility String @default("public")
+
+  startDate DateTime?
+  endDate   DateTime?
+
+  // Squads multisig approval threshold. Starts at 1 (creator only); grows as
+  // signers are added. Always 1 <= threshold <= signer count.
+  threshold Int @default(1)
+
+  // Parent DUNA (Market) this Alliance lives inside.
+  parentMarketId String?
+  parentMarket   Market? @relation(fields: [parentMarketId], references: [id], onDelete: Cascade)
+
+  // Wallet of the creator — becomes the first Wizard.
+  creatorWallet String
+
+  // ── On-chain (filled in Phase 4 after Squads creation) ──
+  multisigPda String? // Squads multisig PDA
+  vaultPda    String? // Squads treasury vault PDA (index 0) — the Team Wallet
+
+  // ── Wallet config (toggle + rule captured at create; on-chain comes later) ──
+  walletEnabled Boolean @default(false)
+  spendingRule  String?
+  defaultTools  String?
+
+  // draft | active | archived
+  status String @default("draft")
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  members AllianceMember[]
+
+  @@index([parentMarketId, status])
+  @@index([creatorWallet])
+  @@map("alliances")
+}
+
+// ════════════════════════════════════════════════════════════════════════
+//   AllianceMember — a person (wallet) in an Alliance, with a role.
+//
+//   One row per member. Mirrors MarketMember (soft-removal via removedAt).
+//   `isSigner` = whether this member is on the Squads multisig on-chain.
+//   There must always be at least one Wizard (enforced in app logic).
+// ════════════════════════════════════════════════════════════════════════
+
+model AllianceMember {
+  id String @id @default(cuid())
+
+  allianceId String
+  alliance   Alliance @relation(fields: [allianceId], references: [id], onDelete: Cascade)
+
+  wallet String
+
+  // Wizard | Operator | Connector | Treasurer | Organizer | Guide | Scribe | Member | Guest
+  role String @default("Member")
+
+  // Is this member a signer on the Squads multisig (on-chain), or app-only?
+  isSigner Boolean @default(false)
+
+  joinedAt   DateTime @default(now())
+  lastSeenAt DateTime @default(now())
+
+  // Soft removal — removedAt null = active membership.
+  removedAt       DateTime?
+  removedByWallet String?
+  removedReason   String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([allianceId, removedAt])
+  @@index([wallet, removedAt])
+  @@map("alliance_members")
+}
+
+// ════════════════════════════════════════════════════════════════════════
+//   QuickSend — direct treasury spend via Squads spending limit
+// ════════════════════════════════════════════════════════════════════════
+//
+//   Records transfers made via the Quick Send feature (spendingLimitUse).
+//   These bypass the proposal process — authorized wallets can send USDC
+//   from the treasury up to the configured monthly limit.
+//
+//   Also appears in the treasury movements log alongside proposal-based
+//   spends, ICO contributions, and launch transactions.
+
+model QuickSend {
+  id String @id @default(cuid())
+
+  marketId String
+  market   Market @relation(fields: [marketId], references: [id], onDelete: Cascade)
+
+  /// Wallet that initiated the quick send (must be in spending limit members[])
+  senderWallet    String
+  /// Recipient Solana wallet address
+  recipientWallet String
+  /// Optional human-readable name (vendor, employee, etc.)
+  recipientName   String?
+
+  amountUsd Decimal @db.Decimal(20, 6)
+
+  txSignature String?
+
+  createdAt DateTime @default(now())
+
+  @@index([marketId])
+  @@index([senderWallet])
+  @@index([createdAt])
+  @@map("quick_sends")
+}
+
+/// Server-side persistence of the in-progress Market/Launchpad creation wizard,
+/// BEFORE a Market row exists. Keyed by the sponsor's wallet (one live draft per
+/// wallet). Holds the raw wizard state blob (operator, basics, objective,
+/// tokenConfig) so the wizard survives logout / new tab / new device — not just
+/// per-tab sessionStorage. Deleted once the wizard POSTs a real Market.
+model MarketDraft {
+  id            String   @id @default(cuid())
+  /// Sponsor wallet — one in-progress draft per wallet.
+  sponsorWallet String   @unique
+  /// Opaque wizard state (operator, basics, objective, tokenConfig, step).
+  data          Json     @db.JsonB
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@map("market_drafts")
+}
