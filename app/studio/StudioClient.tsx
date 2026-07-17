@@ -17,13 +17,14 @@ type GenesisEffect = "ORIENT_FIELD" | "SEED_ORGANIZATION" | "PREPARE_INVITES" | 
 type VoiceState = "idle" | "listening" | "speaking" | "simulated";
 type Message = { id: string; role: "ki" | "source"; body: string };
 type PrimaryAction = { label: string; prompt: string } | null;
-type CreatedCode = { id?: string; code: string; boundName?: string; boundEmail?: string | null; audience: string; trustLevel: string; maxUses: number | null; redeemBy: string | null; usesCount?: number; status?: string };
-type RelationshipNamespace = { id: string; ownerName: string; ownerHandle: string; subjectName: string; subjectEmail: string | null; subjectHandle: string | null; joined: boolean; code: string | null; trustLevel: string | null; usesCount: number; viewerRole: "owner" | "subject"; entries: { id: string; perspective: string; content: string; accessLevel: string }[] };
+type CreatedCode = { id?: string; code: string; boundName?: string; boundEmail?: string | null; audience: string; trustLevel: string; maxUses: number | null; redeemBy: string | null; usesCount?: number; status?: string; createdAt?: string };
+type RelationshipNamespace = { id: string; ownerName: string; ownerHandle: string; subjectName: string; subjectEmail: string | null; subjectHandle: string | null; joined: boolean; code: string | null; trustLevel: string | null; usesCount: number; viewerRole: "owner" | "subject"; lastSeenAt: string | null; isOnline: boolean; entries: { id: string; perspective: string; content: string; accessLevel: string }[] };
 type PersonMatch = { id: string; name: string; handle: string; initials: string };
 type Organization = { id: string; name: string; orgId: string; description: string; role: string; memberCount: number };
 type InviteStep = "name" | "confirm-person" | "choose-person" | "relationship" | "social" | "purpose" | "trust" | "privacy" | "grants" | "email" | "limits" | "summary" | "refine";
 type InviteDraft = { audience: "personal" | "open"; boundName: string; boundEmail: string; targetUserId: string; inSystem: boolean; relationshipDescription: string; socialProfiles: string; purpose: string; trustLevel: "high" | "medium" | "low"; accessLevel: "public" | "private" | "secret" | "personal"; accessNotes: string; expiresIn: string; useLimit: string; generalAudience: string; organizationId: string };
 type InviteFlow = { step: InviteStep; draft: InviteDraft; matches: PersonMatch[] };
+type DunaFlow = { step: "name" | "registered" | "orgId" | "registration" | "purpose" | "summary"; draft: { name: string; registered: boolean | null; orgId: string; wantsRegistration: boolean; purpose: string } };
 
 type KiResponse = {
   reply: string;
@@ -113,12 +114,14 @@ export default function StudioPage({ account }: { account: Account }) {
   const [manualTransparency, setManualTransparency] = useState<number | null>(null);
   const [inviteFlow, setInviteFlow] = useState<InviteFlow | null>(null);
   const [createdCode, setCreatedCode] = useState<CreatedCode | null>(null);
+  const [codes, setCodes] = useState<CreatedCode[]>([]);
+  const [showCodes, setShowCodes] = useState(false);
   const [relationshipNamespaces, setRelationshipNamespaces] = useState<RelationshipNamespace[]>([]);
   const [organizations, setOrganizations] = useState<Organization[]>([]);
   const [activeOrgId, setActiveOrgId] = useState("");
   const [selectedRelationship, setSelectedRelationship] = useState<RelationshipNamespace | null>(null);
   const [editingRelationshipId, setEditingRelationshipId] = useState<string | null>(null);
-  const [showDunaForm, setShowDunaForm] = useState(false);
+  const [dunaFlow, setDunaFlow] = useState<DunaFlow | null>(null);
   const threadRef = useRef<HTMLDivElement>(null);
   const recognitionRef = useRef<SpeechRecognitionLike | null>(null);
   const persona = useMemo(() => personas.find((item) => item.id === personaId) ?? personas[0], [personaId, personas]);
@@ -154,6 +157,7 @@ export default function StudioPage({ account }: { account: Account }) {
       const codes = codesPayload?.codes ?? [];
       const orgs = organizationsPayload?.organizations ?? [];
       setRelationshipNamespaces(namespaces);
+      setCodes(codes);
       setCreatedCode(codes[0] ?? null);
       setOrganizations(orgs);
       setActiveOrgId(orgs[0]?.id ?? "");
@@ -205,7 +209,29 @@ export default function StudioPage({ account }: { account: Account }) {
     setSuggestedPrompts(person ? [`What can I do with ${person}?`, `Show me our relationship`, `Invite ${person} into a Duna`] : openingPrompts);
     setPrimaryAction(null);
     setInviteFlow(null);
+    setDunaFlow(null);
     setMessages([initialMessage(persona.name, account.arrival)]);
+  };
+
+  const openAllyWith = (prompt: string) => {
+    setSelectedRelationship(null);
+    setShowCodes(false);
+    setFocus(true);
+    setValue(prompt);
+    setPrimaryAction(null);
+    if (prompt.startsWith("Invite ")) setSuggestedPrompts([`Invite ${prompt.slice(7).split(" to a ")[0]} to a Duna`, `Invite ${prompt.slice(7).split(" to a ")[0]} to a Project`, `Invite ${prompt.slice(7).split(" to a ")[0]} to a Community`]);
+    else if (prompt.includes("share these files")) setPrimaryAction({ label: "Review access and share", prompt });
+    window.setTimeout(() => document.querySelector<HTMLTextAreaElement>(`.${styles.panelComposer} textarea`)?.focus(), 0);
+  };
+
+  const beginCode = () => {
+    setInviteFlow(blankInvite(activeOrgId));
+    setDunaFlow(null);
+    setShowCodes(false);
+    setFocus(true);
+    setValue("I’d like to invite ");
+    setMessages((current) => [...current, { id: crypto.randomUUID(), role: "ki", body: "Who would you like to invite?" }]);
+    setSuggestedPrompts(["Create a general invitation instead"]);
   };
 
   const leave = async () => {
@@ -251,7 +277,7 @@ export default function StudioPage({ account }: { account: Account }) {
       if (!response.ok || !payload.code) throw new Error(payload.error || "The Code could not be created.");
       const refreshed = await fetch("/api/relationships").then((result) => result.ok ? result.json() : null) as { namespaces?: RelationshipNamespace[] } | null;
       setRelationshipNamespaces(refreshed?.namespaces ?? relationshipNamespaces);
-      setCreatedCode(payload.code); setInviteFlow(null); setSuggestedPrompts([`Show me ${next.draft.boundName}’s invitation`, "Invite someone else"]); setStage(2);
+      setCreatedCode(payload.code); setCodes((current) => [payload.code!, ...current]); setInviteFlow(null); setSuggestedPrompts([`Show me ${next.draft.boundName}’s relationship`, "Invite someone else"]); setStage(2);
       reply = `Done. I used private, medium-trust defaults and left the Code unbound to email. You can edit those details from ${next.draft.boundName}’s card before they join.`;
       setMessages([...history, { id: crypto.randomUUID(), role: "ki", body: reply }]); if (fromVoice) speakReply(reply);
     };
@@ -278,17 +304,18 @@ export default function StudioPage({ account }: { account: Account }) {
     };
 
     if (flow.step === "name") {
+      const requestedName = answer.replace(/^(?:i(?:’|')?d like to |i want to |please )?invite\s+/i, "").trim();
       if (/general|group|social|post|many people|anyone|public invite/.test(lower)) {
         next.draft.audience = "open"; next.step = "relationship";
         reply = "A general invitation needs a different shape. Who do you hope it reaches, and where are you likely to share it?";
       } else {
-        const response = await fetch(`/api/people?name=${encodeURIComponent(answer)}`);
+        const response = await fetch(`/api/people?name=${encodeURIComponent(requestedName)}`);
         const payload = await response.json() as { people?: PersonMatch[] };
         const people = payload.people ?? [];
-        next.draft.boundName = answer;
+        next.draft.boundName = requestedName;
         if (people.length === 0) {
           next.draft.inSystem = false; next.step = "relationship";
-          reply = `I don’t find ${answer} in Kiduna yet. What should I understand about them from your perspective? I’ll keep this private by default, and it will remain your account—not theirs.`;
+          reply = `I don’t find ${requestedName} in Kiduna yet. What should I understand about them from your perspective? I’ll keep this private by default, and it will remain your account—not theirs.`;
         } else if (people.length === 1) {
           next.matches = people; next.step = "confirm-person";
           reply = `I found ${people[0].name} (@${people[0].handle}) in Kiduna. Is that the person you mean?`;
@@ -355,7 +382,7 @@ export default function StudioPage({ account }: { account: Account }) {
         if (!response.ok || !payload.code) throw new Error(payload.error || "The Code could not be created.");
         const refreshed = await fetch("/api/relationships").then((result) => result.ok ? result.json() : null) as { namespaces?: RelationshipNamespace[] } | null;
         setRelationshipNamespaces(refreshed?.namespaces ?? relationshipNamespaces);
-        setCreatedCode(payload.code); setInviteFlow(null); setSuggestedPrompts([`Show me ${next.draft.boundName}’s invitation`, "Invite someone else"]); setStage(2);
+        setCreatedCode(payload.code); setCodes((current) => [payload.code!, ...current]); setInviteFlow(null); setSuggestedPrompts([`Show me ${next.draft.boundName}’s relationship`, "Invite someone else"]); setStage(2);
         reply = `It’s ready. I made the Code exactly as summarized. You send it; I haven’t contacted anyone.`;
         setMessages([...history, { id: crypto.randomUUID(), role: "ki", body: reply }]); if (fromVoice) speakReply(reply); return;
       }
@@ -370,6 +397,44 @@ export default function StudioPage({ account }: { account: Account }) {
       else { reply = "Tell me which part to revisit: person, perspective, profiles, purpose, trust, privacy, or limits."; }
     }
     finish();
+  };
+
+  const continueDuna = async (message: string, history: Message[], flow: DunaFlow, fromVoice: boolean) => {
+    const answer = message.trim();
+    const lower = answer.toLowerCase();
+    const next: DunaFlow = { step: flow.step, draft: { ...flow.draft } };
+    let reply = "";
+    let prompts: string[] = [];
+    if (flow.step === "name") {
+      next.draft.name = answer; next.step = "registered";
+      reply = `Has ${answer} been registered with the West Virginia Secretary of State?`;
+      prompts = ["Yes, it’s registered", "No, not yet"];
+    } else if (flow.step === "registered") {
+      if (/^y|registered/.test(lower) && !/not|no/.test(lower)) { next.draft.registered = true; next.step = "orgId"; reply = "What is its West Virginia Organization ID?"; }
+      else { next.draft.registered = false; next.step = "registration"; reply = "Would you like help registering it, or should we create the Duna here as unregistered for now?"; prompts = ["Help me register it", "Create it unregistered for now"]; }
+    } else if (flow.step === "orgId") {
+      next.draft.orgId = answer; next.step = "purpose"; reply = `What is ${next.draft.name} here to make possible?`;
+    } else if (flow.step === "registration") {
+      next.draft.wantsRegistration = /help|register/.test(lower) && !/unregistered|not now/.test(lower); next.step = "purpose";
+      reply = next.draft.wantsRegistration ? `I’ll preserve registration as an open step. What is ${next.draft.name} here to make possible?` : `All right. What is ${next.draft.name} here to make possible?`;
+    } else if (flow.step === "purpose") {
+      next.draft.purpose = answer; next.step = "summary";
+      reply = `${next.draft.name} will begin as ${next.draft.registered ? `a registered Duna with WV Organization ID ${next.draft.orgId}` : "an unregistered Duna"}. Its purpose is: ${answer}${next.draft.wantsRegistration ? " I’ll keep West Virginia registration as a next step." : ""} Did I get that right?`;
+      prompts = ["Yes—create the Duna", "I want to change something"];
+    } else if (/^y|create|correct|right/.test(lower)) {
+      const response = await fetch("/api/organizations", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ name: next.draft.name, orgId: next.draft.orgId, description: next.draft.purpose }) });
+      const payload = await response.json() as { organization?: Organization; error?: string };
+      if (!response.ok || !payload.organization) throw new Error(payload.error ?? "The Duna could not be created.");
+      setOrganizations((current) => [...current, payload.organization!]); setActiveOrgId(payload.organization.id); setStage((current) => Math.max(current, 1)); setDunaFlow(null);
+      reply = `${payload.organization.name} is now present in the Field. ${next.draft.registered ? `Its Organization ID is ${next.draft.orgId}.` : "It is marked unregistered for now."}`;
+      prompts = [`Invite someone to ${payload.organization.name}`, "What should we shape next?"];
+    } else {
+      next.step = "name"; reply = "No problem. Let’s refine it. What should the Duna be called?";
+    }
+    if (next.step !== "summary" || !/^y|create|correct|right/.test(lower)) setDunaFlow(next);
+    setSuggestedPrompts(prompts); setPrimaryAction(null);
+    setMessages([...history, { id: crypto.randomUUID(), role: "ki", body: reply }]);
+    if (fromVoice) speakReply(reply);
   };
 
   const talkToKi = async (text: string, fromVoice = false) => {
@@ -387,6 +452,32 @@ export default function StudioPage({ account }: { account: Account }) {
     try {
       if (inviteFlow) {
         await continueInvite(message, history, inviteFlow, fromVoice);
+        return;
+      }
+      if (dunaFlow) {
+        await continueDuna(message, history, dunaFlow, fromVoice);
+        return;
+      }
+      if (/(?:invite someone|invite a person|create|make|new).*(?:kinship )?code|^invite someone[.!]?$/i.test(message)) {
+        const flow = blankInvite(activeOrgId);
+        setInviteFlow(flow); setSuggestedPrompts(["A specific person", "A group or social audience"]); setPrimaryAction(null);
+        const reply = "Who would you like to invite?";
+        setMessages([...history, { id: crypto.randomUUID(), role: "ki", body: reply }]);
+        if (fromVoice) speakReply(reply);
+        return;
+      }
+      const directInvite = message.match(/^(?:i(?:’|')?d like to |i want to |please )?invite\s+(.+)$/i);
+      if (directInvite && !/\s+to\s+(?:a\s+)?(?:duna|project|community|alliance|institution)\b/i.test(message)) {
+        const flow = blankInvite(activeOrgId);
+        await continueInvite(directInvite[1], history, flow, fromVoice);
+        return;
+      }
+      if (/(?:create|make|start|new).*(?:duna)/i.test(message)) {
+        const flow: DunaFlow = { step: "name", draft: { name: "", registered: null, orgId: "", wantsRegistration: false, purpose: "" } };
+        setDunaFlow(flow); setSuggestedPrompts([]); setPrimaryAction(null);
+        const reply = "What would you like to call the Duna?";
+        setMessages([...history, { id: crypto.randomUUID(), role: "ki", body: reply }]);
+        if (fromVoice) speakReply(reply);
         return;
       }
       const relationship = relationshipNamespaces[0];
@@ -503,7 +594,7 @@ export default function StudioPage({ account }: { account: Account }) {
         <i>›</i><span><small>Current Organization</small><strong>{activeOrganization?.name ?? "Kinship Duna"}</strong></span>
         {stage >= 3 && <><i>›</i><span><small>Project</small><strong>Genesis Studio</strong></span></>}
       </div>
-      <div className={styles.contextActions}><button type="button" onClick={() => setShowDunaForm(true)}>New Duna</button><button type="button" onClick={beginAgain}>Clear conversation</button><button type="button" onClick={() => void leave()}>Log out</button></div>
+      <div className={styles.contextActions}><button type="button" onClick={() => setShowCodes(true)}>Codes</button><button type="button" onClick={beginAgain}>Clear conversation</button><button type="button" onClick={() => void leave()}>Log out</button></div>
     </header>
 
     <section className={styles.field} aria-label="Kiduna Genesis Field">
@@ -535,22 +626,17 @@ export default function StudioPage({ account }: { account: Account }) {
             {suggestedPrompts.map((prompt) => <button className={styles.suggestedPrompt} key={prompt} type="button" onClick={() => void talkToKi(prompt)}>{prompt}</button>)}
             {primaryAction && <button className={styles.primaryChoice} type="button" onClick={() => void talkToKi(primaryAction.prompt)}>{primaryAction.label}<span>→</span></button>}
           </div>}
-          {createdCode && <CodeCard code={createdCode} />}
           {relationshipNamespaces.map((namespace) => <RelationshipWisdom key={`${namespace.id}-${editingRelationshipId === namespace.id}`} namespace={namespace} startOpen={editingRelationshipId === namespace.id} onAdded={(entry) => setRelationshipNamespaces((current) => current.map((item) => item.id === namespace.id ? { ...item, entries: [...item.entries, entry] } : item))} />)}
           {voiceNote && <div className={styles.voiceNote}>{voiceNote}</div>}
           {error && <div className={styles.errorNotice}>{error}</div>}
         </div>
         <div className={styles.panelDock}><form className={styles.panelComposer} onSubmit={submit}><VoiceButton state={voiceState} onClick={toggleVoice} /><textarea aria-label="Talk with Ki" value={value} onChange={(event) => setValue(event.target.value)} onKeyDown={(event) => { if (event.key === "Enter" && !event.shiftKey) { event.preventDefault(); event.currentTarget.form?.requestSubmit(); } }} placeholder="Tell Ki what you’d like to do…" autoFocus /><button type="submit" disabled={busy || !value.trim()}>Send</button></form><TransparencyControl transparency={transparency} manual={manualTransparency !== null} onChange={setManualTransparency} onAuto={() => setManualTransparency(null)} /></div>
       </aside>
-      {selectedRelationship && <PersonCard relationship={selectedRelationship} onClose={() => setSelectedRelationship(null)} onChanged={(email) => {
-        setRelationshipNamespaces((current) => current.map((item) => item.id === selectedRelationship.id ? { ...item, subjectEmail: email } : item));
-        setSelectedRelationship((current) => current ? { ...current, subjectEmail: email } : current);
-      }} onAdd={() => { setEditingRelationshipId(selectedRelationship.id); setSelectedRelationship(null); setFocus(true); }} />}
-      {showDunaForm && <DunaCreator onClose={() => setShowDunaForm(false)} onCreated={(organization) => {
-        setOrganizations((current) => [...current, organization]); setActiveOrgId(organization.id); setStage(Math.max(stage, 1)); setShowDunaForm(false);
-        setMessages((current) => [...current, { id: crypto.randomUUID(), role: "ki", body: `${organization.name} is now active with Org ID ${organization.orgId}. You are its steward. I can invite someone into it when you’re ready.` }]);
-        setSuggestedPrompts([`Invite someone to ${organization.name}`, "What can this Duna do?"]);
+      {selectedRelationship && <PersonCard relationship={selectedRelationship} onClose={() => setSelectedRelationship(null)} onAction={openAllyWith} onTrustChanged={(trustLevel) => {
+        setRelationshipNamespaces((current) => current.map((item) => item.id === selectedRelationship.id ? { ...item, trustLevel } : item));
+        setSelectedRelationship((current) => current ? { ...current, trustLevel } : current);
       }} />}
+      {showCodes && <CodeCenter codes={codes} onClose={() => setShowCodes(false)} onCreate={beginCode} />}
     </section>
 
     <footer className={`${styles.allyBand} ${focus ? styles.allyFocus : ""}`}>
@@ -565,44 +651,63 @@ function TransparencyControl({ transparency, manual, onChange, onAuto }: { trans
   return <div className={styles.transparencyControl}><div className={styles.transparencyStatus}><span>{manual ? "OVERRIDE" : "AUTO"}</span><strong>{transparency}%</strong>{manual && <button type="button" onClick={onAuto}>Return to Auto</button>}</div><input aria-label="Transparency" type="range" min="0" max="100" value={transparency} onChange={(event) => onChange(Number(event.target.value))} /><div className={styles.transparencyLabels}><span>0% · Opaque</span><b>Transparency</b><span>100% · Clear</span></div></div>;
 }
 
-function CodeCard({ code }: { code: CreatedCode }) {
-  const [copied, setCopied] = useState(false);
-  return <section className={styles.codeCard}><small>PROTOTYPE KINSHIP CODE · UNSIGNED</small><div><h3>{code.code}</h3><button type="button" onClick={async () => { await navigator.clipboard.writeText(code.code); setCopied(true); }}>{copied ? "Copied" : "Copy Code"}</button></div><p>{code.audience === "personal" ? `Prepared for ${code.boundName}. Single use.` : code.maxUses === 1 ? "Open audience. One use." : "Open audience. Unlimited uses."} · {code.trustLevel} trust.</p></section>;
-}
-
-function PersonCard({ relationship, onClose, onChanged, onAdd }: { relationship: RelationshipNamespace; onClose: () => void; onChanged: (email: string | null) => void; onAdd: () => void }) {
-  const person = relationship.viewerRole === "subject" ? relationship.ownerName : relationship.subjectName;
-  const handle = relationship.viewerRole === "subject" ? relationship.ownerHandle : relationship.subjectHandle;
-  const [email, setEmail] = useState(relationship.subjectEmail ?? "");
-  const [copied, setCopied] = useState(false);
-  const [status, setStatus] = useState("");
-  async function saveEmail() {
-    if (!relationship.code) return;
-    const response = await fetch("/api/codes", { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ code: relationship.code, boundEmail: email }) });
-    const payload = await response.json() as { code?: { boundEmail: string | null }; error?: string };
-    setStatus(response.ok ? "Saved" : payload.error ?? "Could not save");
-    if (response.ok) onChanged(payload.code?.boundEmail ?? null);
-  }
-  return <div className={styles.modalScrim}><section className={styles.personCard}>
-    <header><div><b>{person.split(/\s+/).map((part) => part[0]).join("").slice(0, 2).toUpperCase()}</b><span><small>{relationship.joined ? "MEMBER · CONNECTED" : "INVITED · NOT YET JOINED"}</small><h2>{person}</h2>{handle && <p>@{handle}</p>}</span></div><button type="button" onClick={onClose}>×</button></header>
-    <div className={styles.profileFacts}><div><small>RELATIONSHIP</small><strong>{relationship.joined ? "Active" : "Invitation open"}</strong></div><div><small>TRUST</small><strong>{relationship.trustLevel ?? "medium"}</strong></div><div><small>WISDOM</small><strong>{relationship.entries.length} insight{relationship.entries.length === 1 ? "" : "s"}</strong></div></div>
-    {relationship.code && <div className={styles.profileCode}><small>KINSHIP CODE</small><strong>{relationship.code}</strong><button type="button" onClick={async () => { await navigator.clipboard.writeText(relationship.code ?? ""); setCopied(true); }}>{copied ? "Copied" : "Copy / resend"}</button></div>}
-    {!relationship.joined && relationship.viewerRole === "owner" && <label className={styles.profileEmail}><span>Email binding <small>optional</small></span><div><input value={email} onChange={(event) => setEmail(event.target.value)} placeholder="Leave blank so the first person can claim it"/><button type="button" onClick={() => void saveEmail()}>Save</button></div>{status && <small>{status}</small>}</label>}
-    <div className={styles.profileWisdom}><small>RELATIONSHIP ABSTRACT</small><p>{relationship.entries[0]?.content ?? `No relationship insight has been added for ${person} yet.`}</p>{relationship.entries.length > 1 && <details><summary>View {relationship.entries.length - 1} more insights</summary>{relationship.entries.slice(1).map((entry) => <p key={entry.id}>{entry.content}</p>)}</details>}</div>
-    <footer><button type="button" onClick={onClose}>Close</button><button type="button" onClick={onAdd}>Add or edit profile wisdom</button></footer>
+function CodeCenter({ codes, onClose, onCreate }: { codes: CreatedCode[]; onClose: () => void; onCreate: () => void }) {
+  const [copied, setCopied] = useState("");
+  const [openedAt] = useState(() => Date.now());
+  const usable = (code: CreatedCode) => code.status === "active" && !(code.maxUses !== null && (code.usesCount ?? 0) >= code.maxUses) && (!code.redeemBy || new Date(code.redeemBy).getTime() > openedAt);
+  return <div className={styles.modalScrim}><section className={styles.codeCenter}>
+    <header><span><small>KINSHIP CODES</small><h2>Your Codes</h2><p>Active invitations and their lineage history.</p></span><button type="button" onClick={onClose}>×</button></header>
+    <button className={styles.createCodeAction} type="button" onClick={onCreate}>Create a new Code with Ki <span>→</span></button>
+    <div className={styles.codeLedger}>{codes.length ? codes.map((code) => <article key={code.id ?? code.code} className={!usable(code) ? styles.usedCode : ""}>
+      <div><i /><span><strong>{code.boundName || (code.audience === "open" ? "Open invitation" : "Personal invitation")}</strong><small>{usable(code) ? "AVAILABLE" : "USED OR CLOSED"} · {code.trustLevel} trust</small></span></div>
+      {usable(code) ? <div className={styles.liveCode}><code>{code.code}</code><button type="button" onClick={async () => { await navigator.clipboard.writeText(code.code); setCopied(code.code); }}>{copied === code.code ? "Copied" : "Copy"}</button></div> : <p>The single-use Code is no longer valid. Its use remains in the lineage record.</p>}
+    </article>) : <p className={styles.emptyLedger}>You haven’t created a Code yet.</p>}</div>
   </section></div>;
 }
 
-function DunaCreator({ onClose, onCreated }: { onClose: () => void; onCreated: (organization: Organization) => void }) {
-  const [error, setError] = useState("");
-  async function create(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault(); setError("");
-    const response = await fetch("/api/organizations", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(Object.fromEntries(new FormData(event.currentTarget))) });
-    const payload = await response.json() as { organization?: Organization; error?: string };
-    if (!response.ok || !payload.organization) { setError(payload.error ?? "The Duna could not be created."); return; }
-    onCreated(payload.organization);
+function relativePresence(relationship: RelationshipNamespace, now: number) {
+  if (relationship.isOnline) return "Online now";
+  if (!relationship.lastSeenAt) return "Not online yet";
+  const minutes = Math.max(1, Math.round((now - new Date(relationship.lastSeenAt).getTime()) / 60_000));
+  if (minutes < 60) return `Last online ${minutes}m ago`;
+  const hours = Math.round(minutes / 60); if (hours < 24) return `Last online ${hours}h ago`;
+  return `Last online ${Math.round(hours / 24)}d ago`;
+}
+
+function PersonCard({ relationship, onClose, onAction, onTrustChanged }: { relationship: RelationshipNamespace; onClose: () => void; onAction: (prompt: string) => void; onTrustChanged: (trust: string) => void }) {
+  const person = relationship.viewerRole === "subject" ? relationship.ownerName : relationship.subjectName;
+  const handle = relationship.viewerRole === "subject" ? relationship.ownerHandle : relationship.subjectHandle;
+  const [trust, setTrust] = useState(relationship.trustLevel ?? "medium");
+  const [openedAt] = useState(() => Date.now());
+  const [status, setStatus] = useState("");
+  const fileRef = useRef<HTMLInputElement>(null);
+  async function changeTrust(nextTrust: string) {
+    setTrust(nextTrust); setStatus("Saving…");
+    const response = await fetch("/api/relationships", { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ namespaceId: relationship.id, trustLevel: nextTrust }) });
+    const payload = await response.json() as { error?: string };
+    setStatus(response.ok ? "Trust updated" : payload.error ?? "Could not update trust");
+    if (response.ok) onTrustChanged(nextTrust);
   }
-  return <div className={styles.modalScrim}><form className={styles.dunaCreator} onSubmit={create}><header><span><small>NEW ORGANIZATION</small><h2>Create a Duna</h2></span><button type="button" onClick={onClose}>×</button></header><label>Name<input name="name" required placeholder="Example: Studio Makers Duna"/></label><label>Registered organization ID<input name="orgId" required placeholder="WV Org ID or other registration"/></label><label>Purpose<textarea name="description" placeholder="What is this Duna here to make possible?"/></label>{error && <p>{error}</p>}<footer><button type="button" onClick={onClose}>Cancel</button><button type="submit">Create Duna</button></footer></form></div>;
+  async function prepareFiles(list: FileList | null) {
+    if (!list?.length) return;
+    const files = Array.from(list).sort((a, b) => Number(b.name.toLowerCase() === "kiduna.md") - Number(a.name.toLowerCase() === "kiduna.md"));
+    const instructions = files[0]?.name.toLowerCase() === "kiduna.md" ? (await files[0].text()).slice(0, 1200).trim() : "";
+    const names = files.map((file) => file.name).join(", ");
+    onAction(`I want to share these files with ${person}: ${names}.${instructions ? ` Read kiduna.md first. Its instructions begin: ${instructions}` : " There is no kiduna.md in this drop."} Help me review access and send them.`);
+  }
+  return <div className={styles.modalScrim}><section className={styles.personCard} onDragOver={(event) => event.preventDefault()} onDrop={(event) => { event.preventDefault(); void prepareFiles(event.dataTransfer.files); }}>
+    <header><div><b>{person.split(/\s+/).map((part) => part[0]).join("").slice(0, 2).toUpperCase()}</b><span><small>RELATIONSHIP</small><h2>{person}</h2><p>{handle && `@${handle} · `}<i className={relationship.isOnline ? styles.onlineDot : styles.offlineDot} />{relativePresence(relationship, openedAt)}</p></span></div><button type="button" onClick={onClose}>×</button></header>
+    <div className={styles.relationshipActions}>
+      <button type="button" onClick={() => onAction(`Help me send ${person} a message about `)}><b>Message</b><span>Start with Ki</span></button>
+      <button type="button" onClick={() => onAction(`Invite ${person} to a `)}><b>Invite to…</b><span>Duna, Alliance, Project, Community, or Institution</span></button>
+      <button className={styles.dropAction} type="button" onClick={() => fileRef.current?.click()}><b>Drop files</b><span>kiduna.md is read first when present</span></button>
+      <button type="button" onClick={() => onAction(`Help me add to or edit my relationship with ${person}: `)}><b>Add or edit relationship</b><span>Shape what Ki understands</span></button>
+      <input ref={fileRef} hidden multiple type="file" onChange={(event) => void prepareFiles(event.target.files)} />
+    </div>
+    <div className={styles.profileWisdom}><small>WHAT YOU UNDERSTAND ABOUT THIS RELATIONSHIP</small><p>{relationship.entries[0]?.content ?? `You haven’t added your perspective on ${person} yet.`}</p><button type="button" onClick={() => onAction(`Help me add or edit profile Wisdom about ${person}: `)}>Add or edit profile Wisdom</button></div>
+    <details className={styles.relationshipDetails}><summary>Relationship details</summary><label><span>Your trust in {person}</span><select value={trust} onChange={(event) => void changeTrust(event.target.value)}><option value="high">High</option><option value="medium">Medium</option><option value="low">Low</option></select></label>{status && <small>{status}</small>}<p>{relationship.joined ? "Connected through a Kinship Code." : "Invitation not yet accepted."}</p></details>
+    <footer><button type="button" onClick={onClose}>Close</button></footer>
+  </section></div>;
 }
 
 function RelationshipWisdom({ namespace, startOpen, onAdded }: { namespace: RelationshipNamespace; startOpen: boolean; onAdded: (entry: RelationshipNamespace["entries"][number]) => void }) {

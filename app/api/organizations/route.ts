@@ -35,14 +35,15 @@ export async function POST(request: Request) {
   const orgId = body.orgId?.trim() ?? "";
   const description = body.description?.trim() ?? "";
   if (name.length < 2 || name.length > 100) return Response.json({ error: "Give the Duna a name." }, { status: 400 });
-  if (orgId.length < 2 || orgId.length > 100) return Response.json({ error: "Add its registered organization ID." }, { status: 400 });
+  if (orgId.length > 100) return Response.json({ error: "That organization ID is too long." }, { status: 400 });
+  const storedOrgId = orgId || `PENDING-WV-${Date.now().toString(36).toUpperCase()}`;
   const id = randomUUID();
   try {
     await sqlClient.begin(async (tx) => {
-      await tx`insert into prototype_organizations (id, name, org_id, description, created_by_user_id) values (${id}, ${name}, ${orgId}, ${description}, ${account.id})`;
+      await tx`insert into prototype_organizations (id, name, org_id, description, created_by_user_id) values (${id}, ${name}, ${storedOrgId}, ${description}, ${account.id})`;
       await tx`insert into prototype_organization_members (id, organization_id, user_id, role) values (${randomUUID()}, ${id}, ${account.id}, 'Steward')`;
     });
-    return Response.json({ organization: { id, name, orgId, description, role: "Steward", memberCount: 1 } }, { status: 201 });
+    return Response.json({ organization: { id, name, orgId: storedOrgId, description, role: "Steward", memberCount: 1 } }, { status: 201 });
   } catch (error) {
     console.error("Duna creation failed", error);
     return Response.json({ error: "That organization ID is already registered, or the Duna could not be created." }, { status: 400 });

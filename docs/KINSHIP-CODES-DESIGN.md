@@ -7,6 +7,8 @@ Source basis: *Kinship Codes - Kidunas* (Kinship Systems, June 2026), the Genesi
 
 A Kinship Code is a portable trust envelope. It can invite a person, identify the issuer and their Ally, state the intended relationship and landing context, convey bounded authority or benefits, carry lineage, limit redemption, and define how long the resulting access persists.
 
+In the member experience, available and historical Codes live in a Code ledger opened from Ki's focused panel. A redeemed single-use Code remains a lineage event but is no longer shown as a reusable credential, and it never remains on the recipient's Relationship card. "Create a new Code" resumes Ki with the invitation conversation already begun.
+
 The long-term system treats the Code as verifiable and the delivery channel as untrusted. Email, text, social media, chat, MCP, and websites can carry a Code; none of those channels make it authentic. Cryptographic verification against the issuer's registered identity is the authority boundary.
 
 The prototype implements the social and state semantics now. It does not pretend that a human-readable prototype token is a production cryptographic credential.

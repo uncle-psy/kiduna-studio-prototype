@@ -69,6 +69,9 @@ export async function getCurrentAccount(): Promise<CurrentAccount | null> {
     limit 1
   `;
   if (!user) return null;
+  // In the prototype, authenticated activity is the presence heartbeat. This lets
+  // relationships show "online now" or a meaningful last-seen value.
+  await sqlClient`update prototype_sessions set created_at = now() where id = ${tokenHash(token)}`;
   const personas = await sqlClient<AccountPersona[]>`
     select id, name, handle, initials, role, is_default as "isDefault"
     from prototype_personas where user_id = ${user.id}

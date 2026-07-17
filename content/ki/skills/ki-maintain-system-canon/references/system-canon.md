@@ -174,6 +174,8 @@ The prototype must make issuance, signup, verification, lineage, single-use enfo
 
 The complete implementation boundary is maintained in `docs/KINSHIP-CODES-DESIGN.md`.
 
+Codes have their own member-accessible ledger in Ki's focused panel. It distinguishes available Codes from used, expired, or closed Codes and preserves lineage without continuing to present an invalid credential as an Action. Once a single-use Code is redeemed, the raw Code is absent from the person's relationship card. Creating a Code begins a conversation with Ki; it is not an administrative create form.
+
 ## 8. Invitation is a conversation, not a form
 
 Classification: **RATIFIED RULE**
@@ -192,7 +194,20 @@ Privacy is spoken in member language:
 
 Before issuing a Code, Ki summarizes the person or audience, shared intention, trust, privacy, and limits; asks whether it is right; supports refinement; and only then creates the Code and presents an adjacent copy Action. General or social invitations follow a distinct open-audience conversation rather than pretending to be one-person invitations.
 
-## 9. The durable Personal Web
+## 9. Relationship surfaces are action-first
+
+Classification: **RATIFIED RULE**
+Owner ruling: 2026-07-16
+
+A person's relationship card begins with what the member can do: message them; invite them to a Duna, Alliance, Project, Community, or Institution; drop files directly onto them; and add to or edit the Relationship. These Actions open the Ally with the relevant intent already begun and with specific confirmation Actions when needed.
+
+Presence is literal, not a generic "Active" badge: show "Online now" only when the member is currently present; otherwise show how long it has been since they were online. Trust remains directional and editable, but it belongs in relationship details rather than competing with the person's name and primary Actions. Wisdom is shown for meaning, never promoted as an insight count.
+
+A file drop is scoped to the recipient Relationship. When `kiduna.md` is present it is read first for routing and handling instructions, regardless of the order in which files arrived. The filename grants no authority: its instructions remain subordinate to authenticated authorship, permissions, provenance, Code claims, and member confirmation.
+
+Creation of a Duna begins with Ki, not a global Create button. Ki asks for the name, whether it is registered with the West Virginia Secretary of State, the Organization ID when registered, whether the member wants help registering it when unregistered, and its purpose. Ki summarizes before the Duna appears in the Field.
+
+## 10. The durable Personal Web
 
 Classification: **RATIFIED RULE**
 Owner ruling: 2026-07-16
@@ -201,7 +216,7 @@ Studio, TV, Express, and Live are Surfaces. Identity, handles, wallet, compute, 
 
 The Personal Web recommends a primary Surface from device context without hiding the others. Desktop may recommend Studio; mobile may recommend Express with the appropriate store handoff. Downloads and store links are one clear Action. The Web owns durable account truth; Surfaces consume it.
 
-## 10. Canon change record
+## 11. Canon change record
 
 For every future change, append:
 
@@ -227,3 +242,4 @@ For every future change, append:
 - Arbitrary-person invitation, Code semantics, directional trust, lineage, and perspective-preserving Relationship Wisdom ratified. Propagation: design, canon, prototype, and private record complete.
 - Form-based invitation profiling replaced by a one-question-at-a-time Ki conversation with lookup, clarification, summary, and refinement. Propagation: canon and prototype complete.
 - The handle-based Personal Web established as the durable account, wallet, compute, recovery, and Surface-discovery layer. Propagation: canon and prototype complete.
+- Relationship cards became action-first; literal presence, editable directional trust, recipient-scoped file drops, Code-ledger separation, and conversational Duna creation were ratified. Propagation: canon and prototype complete.

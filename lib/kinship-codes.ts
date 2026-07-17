@@ -88,7 +88,7 @@ export async function issueKinshipCode(issuer: { id: string; lineage: string[] }
       (id, namespace_id, author_user_id, perspective, content, access_level, access_grants, provenance, embedding)
       values (${wisdomId}, ${namespaceId}, ${issuer.id}, 'owner_belief', ${wisdomContent}, ${input.accessLevel}, ${JSON.stringify(accessGrants)}::jsonb, ${JSON.stringify({ source: "kinship_code_issuance", codeId: id, transformed: true })}::jsonb, ${embedding}::vector)`;
   });
-  return { ...input, id, code, namespaceId, lineage, maxUses, boundEmail };
+  return { ...input, id, code, namespaceId, lineage, maxUses, boundEmail, usesCount: 0, status: "active", createdAt: new Date() };
 }
 
 export async function redeemKinshipCode(rawCode: string, user: { id: string; email: string; name: string }) {
