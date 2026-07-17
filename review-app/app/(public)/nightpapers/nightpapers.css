@@ -1,5 +1,0 @@
-/* ── Nightpapers page ──
-   The page-hero, section, h1, eyebrow, inline-cta, etc. all come from the real
-   site.css (ported into dunathon-landing.css). The only page-specific tweak the
-   reference makes is centering the intro prose block. */
-.nightpapers-page .lead-prose { margin: 0 auto; }
