@@ -263,7 +263,7 @@ const inferredPages: ReviewPage[] = sourceRoutes
     const head = slug.split("/")[0];
     const group = (head === "active" ? "Active" : head === "public" ? "Public" : head === "studio" ? "Studio" : head === "market" ? "Market" : "Standalone") as ReviewGroup;
     let sourceRoute = head === "market" ? `/${slug}` : `/${slug.split("/").slice(1).join("/")}`;
-    if (slug === "public/home") sourceRoute = "/";
+    if (slug === "public/home") sourceRoute = "/review-home";
     if (slug === "market/home") sourceRoute = "/market";
     if (slug.startsWith("studio/launchpad-legacy")) sourceRoute = sourceRoute.replace("/launchpad-legacy", "/launchpad_");
     if (slug === "studio/chat-deprecated") sourceRoute = "/chat_deprecated";
