@@ -460,7 +460,7 @@ export default function StudioPage({ account }: { account: Account }) {
       }
       if (/(?:invite someone|invite a person|create|make|new).*(?:kinship )?code|^invite someone[.!]?$/i.test(message)) {
         const flow = blankInvite(activeOrgId);
-        setInviteFlow(flow); setSuggestedPrompts(["A specific person", "A group or social audience"]); setPrimaryAction(null);
+        setInviteFlow(flow); setSuggestedPrompts(["Create a general invitation instead"]); setPrimaryAction(null);
         const reply = "Who would you like to invite?";
         setMessages([...history, { id: crypto.randomUUID(), role: "ki", body: reply }]);
         if (fromVoice) speakReply(reply);
