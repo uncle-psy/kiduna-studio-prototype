@@ -63,7 +63,7 @@ export function journeyStory(persona: PersonaKey, step: JourneyStepId) {
       eyebrow: `Step 4 · ${name}’s Story`,
       title: `${name} finds his first organizations`,
       role: "Founding Member in Onboarding",
-      body: `${name} has an authoritative receipt for the successful checkout outcome and is now a Founding Member completing onboarding. Kinship Duna is already included as his founding home. He can explore the 31 Genesis Organizations, search and filter them, and draft the additional organizations he wants to join. Card selection changes only this onboarding draft; it does not silently grant organization membership, permissions, governance rights, Source access, or authority.`,
+      body: `${name} has an authoritative receipt for the successful checkout outcome and is now a Founding Member completing onboarding. Kinship Duna is already included as his founding home. He can explore 31 powerful movements, compare their activity and communities, and draft the additional organizations he wants to join. Card selection changes only this onboarding draft; it does not silently grant organization membership, permissions, governance rights, Source access, or authority.`,
       moment: `${name} begins turning broad belonging into specific community choices, while the system keeps the consequences visible and reversible until he explicitly continues.`,
     };
   }
@@ -142,16 +142,17 @@ const ENGINEERING_NOTES = {
   "organization-selection": {
     eyebrow: "Step 4 · Engineering Notes",
     title: "Organization Selection — Onboarding",
-    source: "Supplied Organization selection onboarding.zip",
+    source: "Supplied Organization selection onboarding (2).zip",
     sourceHref: null,
     notes: [
-      "Preserve the supplied organization-selection composition, 31-organization catalog, search, category filters, sorting, member counts, multi-selection, fixed selection tray, responsive behavior, and visual hierarchy.",
+      "Preserve the revised organization-selection composition, movement framing and hero copy, 31-organization catalog, search, category filters, sorting, Compute activity, member counts, West Virginia registration metadata, multi-selection, fixed selection tray, responsive behavior, and visual hierarchy.",
       "Step 4 assumes an authoritative successful-checkout receipt. Do not enter this state from a client redirect, wallet connection, or unverified payment-provider callback alone.",
       "Kinship Duna is David’s included founding home and cannot be deselected in this step. Its inclusion, and any future rule that changes it, must come from server-provided membership policy.",
       "Organization cards create a reversible onboarding draft only. Selection must not itself grant membership, permissions, governance rights, Source access, roles, Compute authority, or other organizational powers.",
       "In production, Continue must preview the exact requested memberships, applicable terms and consent, eligibility or approval requirements, and resulting consequences before an authoritative commit and inspectable receipt.",
       "Skip for now preserves Kinship Duna and records no additional organization requests. The user must be able to revisit organization discovery later.",
-      "Organization names, descriptions, categories, member counts, availability, joining rules, and entitlements are governed server data. Do not treat the reference catalog or counts as permanent hard-coded truth.",
+      "Organization names, descriptions, categories, member counts, Compute activity, registration identifiers and dates, availability, joining rules, and entitlements are governed server data. Do not treat the reference catalog, metrics, or legal metadata as permanent hard-coded truth.",
+      "Most active is the revised default sort and uses the supplied Compute values. Production must define the time window, unit, freshness, and provenance of activity rather than presenting an unexplained ranking.",
       "Handle unavailable, archived, invite-only, approval-required, age- or geography-restricted, capacity-limited, and failed-membership states without discarding the rest of the user’s draft.",
       "This Design Lab scene is non-consequential: Continue and Skip for now show prototype feedback but do not create, remove, or modify memberships.",
     ],
