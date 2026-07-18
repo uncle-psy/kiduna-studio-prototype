@@ -26,6 +26,7 @@ const runtimeFiles = [
   join(root, "app", "page.tsx"),
   join(root, "app", "StudioV0.tsx"),
   join(root, "lib", "v0-model.ts"),
+  join(root, "lib", "persona-journey.ts"),
 ];
 const forbiddenRuntimePatterns = [
   ["network request", /\bfetch\s*\(|XMLHttpRequest|WebSocket\s*\(/],

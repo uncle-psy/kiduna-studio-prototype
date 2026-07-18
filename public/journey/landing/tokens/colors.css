@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Kidunaverse — Color tokens
+   Deep-umber dark UI. Sky-blue primary. Camel warmth. Gold + cream from the
+   Kiduna mark. Mint reserved for rare emergence.
+   ========================================================================== */
+
+:root {
+  /* ---- Brand palette -------------------------------------------------- */
+
+  /* PRIMARY — sky blue is the brand action color */
+  --kin-skyblue:       #03CCD9;
+  --kin-skyblue-hover: #2FE0EA;
+  --kin-skyblue-soft:  rgba(3, 204, 217, 0.14);
+
+  /* EARTH — warm browns carry the surfaces */
+  --kin-camel:         #C19A6B;
+  --kin-chocolate:     #6F4A2E;
+  --kin-darkumber:     #4E3629;
+  --kin-espresso:      #1C140D;
+  --kin-aubergine:     #2A1A2B;
+
+  /* KIDUNA MARK — sun + moon */
+  --kid-sun-gold:      #EAAA00;
+  --kid-moon-cream:    #FFF6D5;
+
+  /* MAGIC — mint sparks; reserved + rare */
+  --kin-mint:          #8FE6C6;
+  --kin-mint-soft:     rgba(143, 230, 198, 0.16);
+
+  /* Retained brand colors (supporting roles) */
+  --kin-navyblue:      #100E59;
+  --kin-darkblue:      #09073A;
+  --kin-orange:        #F7941D;
+  --kin-gold:          #FFCA05;
+  --kin-lime:          #BEEF00;
+  --kin-magenta:       #EC008C;
+  --kin-cream-white:   #FFFFE6;
+  --kin-cream:         #F9DDB7;
+  --kin-black:         #1E1F20;
+
+  /* Extended accents */
+  --kin-accent-purple:       #6536BB;
+  --kin-accent-purple-scn:   #3F2270;
+  --kin-accent-chocobrown:   #5D4037;
+  --kin-accent-rusticbrown:  #8B4513;
+  --kin-accent-chestnut:     #7B3F00;
+  --kin-grey:                #9094A3;
+
+  /* Feedback */
+  --kin-error:       #FF3A3A;
+  --kin-error-tob:   #AF0E0E;
+  --kin-complete:    #00EB75;
+  --kin-warning:     #FFCA05;
+
+  /* Brand gradients */
+  --kin-gradient-brand: linear-gradient(120deg, #03CCD9 0%, #2FB4E0 38%, #6536BB 100%); /* @kind other */
+  --kin-gradient-mint:  linear-gradient(120deg, #03CCD9 0%, #8FE6C6 100%); /* @kind other */
+
+  /* ---- Semantic tokens — dark theme (default) -------------------------- */
+
+  --bg:             var(--kin-espresso);
+  --bg-deep:        #120C07;
+  --surface:        #271B11;
+  --surface-elev:   #33251A;
+  --surface-muted:  rgba(255, 248, 240, 0.04);
+
+  --fg:             #FFFBF5;
+  --fg-muted:       #E0D3C4;
+  --fg-soft:        rgba(255, 251, 245, 0.60);
+  --fg-dim:         rgba(255, 251, 245, 0.35);
+
+  --border:         rgba(255, 248, 240, 0.12);
+  --border-strong:  rgba(255, 248, 240, 0.22);
+  --hairline:       rgba(193, 154, 107, 0.30);
+
+  --accent:         var(--kin-skyblue);
+  --accent-hover:   var(--kin-skyblue-hover);
+  --accent-soft:    var(--kin-skyblue-soft);
+
+  --accent-warm:      var(--kin-camel);
+  --accent-warm-soft: rgba(193, 154, 107, 0.16);
+
+  --link:           var(--kin-skyblue);
+  --success:        var(--kin-complete);
+  --danger:         var(--kin-error);
+}

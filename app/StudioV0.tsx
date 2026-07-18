@@ -4,6 +4,13 @@ import Image from "next/image";
 import { CSSProperties, FormEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import capabilityRows from "@/lib/capabilities.json";
 import {
+  JOURNEY_ENGINEERING_NOTES,
+  PERSONA_JOURNEY_STEPS,
+  JourneyPanel,
+  JourneyStepId,
+  journeyStory,
+} from "@/lib/persona-journey";
+import {
   FIXTURES,
   PERSONAS,
   STATE_PLATES,
@@ -148,6 +155,8 @@ export default function StudioV0() {
   const [pending, setPending] = useState<GuidedAction | null>(null);
   const [structured, setStructured] = useState(false);
   const [reduced, setReduced] = useState(false);
+  const [journeyStep, setJourneyStep] = useState<JourneyStepId | null>("landing");
+  const [journeyPanel, setJourneyPanel] = useState<JourneyPanel | null>(null);
   const [atlasOpen, setAtlasOpen] = useState(false);
   const [atlasFilter, setAtlasFilter] = useState<"all" | CapabilityRow["v0Coverage"]>("all");
   const [atlasQuery, setAtlasQuery] = useState("");
@@ -193,6 +202,8 @@ export default function StudioV0() {
     url.searchParams.set("persona", next);
     window.history.replaceState({}, "", url);
     setPending(null);
+    setJourneyStep("landing");
+    setJourneyPanel(null);
     setToast(`${PERSONAS[next].firstName} session active · independent local focus`);
   };
 
@@ -265,6 +276,8 @@ export default function StudioV0() {
 
   const openPlate = (plateId: string) => {
     if (!plateId) return;
+    setJourneyStep(null);
+    setJourneyPanel(null);
     replaceState(createPlateState(plateId), `State plate loaded · ${STATE_PLATES.find((plate) => plate.id === plateId)?.title}`);
     if (plateId === "structured") setStructured(true);
     if (plateId === "constellation") setDistance("far");
@@ -287,10 +300,18 @@ export default function StudioV0() {
         setStructured={setStructured}
         reduced={reduced}
         setReduced={setReduced}
-        onScenario={(id) => replaceState(createFixtureState(id), `Deterministic fixture loaded · ${id}`)}
+        journeyStep={journeyStep}
+        journeyPanel={journeyPanel}
+        onJourneyStep={(id) => { setJourneyStep(id); setJourneyPanel(null); setToast(`${PERSONAS[persona].firstName} · Step 1 active`); }}
+        onJourneyPanel={(panel) => setJourneyPanel((current) => current === panel ? null : panel)}
+        onScenario={(id) => { setJourneyStep(null); setJourneyPanel(null); replaceState(createFixtureState(id), `Deterministic fixture loaded · ${id}`); }}
         onPlate={openPlate}
-        onReset={() => replaceState(createInitialState(), "Clean deterministic reset")}
+        onReset={() => { setJourneyStep("landing"); setJourneyPanel(null); replaceState(createInitialState(), "Clean deterministic reset · Step 1 active"); }}
       />
+
+      {journeyStep && <JourneyScene step={journeyStep} persona={persona} panel={journeyPanel} reduced={reduced} onClosePanel={() => setJourneyPanel(null)} />}
+
+      <div className={journeyStep ? styles.fieldLayerHidden : styles.fieldLayer} aria-hidden={journeyStep ? true : undefined}>
 
       <header className={styles.contextAnchor} aria-label="Current context">
         <button onClick={() => { setSelectedId("organization-kinship"); setHudRest(hudRest === "focus" ? "context" : "focus"); }}>
@@ -367,11 +388,41 @@ export default function StudioV0() {
         <p>{journey}; revision {state.revision}; {ledgerConserves(state) ? "Compute ledger reconciles" : "Compute ledger needs review"}.</p>
         <ul>{nodes.filter((node) => node.visible).map((node) => <li key={node.id}>{node.kind}: {node.title}; {node.state}</li>)}</ul>
       </div>
+      </div>
     </main>
   );
 }
 
-function LabDock({ persona, switchPersona, state, structured, setStructured, reduced, setReduced, onScenario, onPlate, onReset }: {
+function JourneyScene({ step, persona, panel, reduced, onClosePanel }: {
+  step: JourneyStepId;
+  persona: PersonaKey;
+  panel: JourneyPanel | null;
+  reduced: boolean;
+  onClosePanel: () => void;
+}) {
+  const journey = PERSONA_JOURNEY_STEPS.find((candidate) => candidate.id === step) ?? PERSONA_JOURNEY_STEPS[0];
+  const story = journeyStory(persona);
+  return <section className={styles.journeyScene} aria-label={`${journey.label} for ${PERSONAS[persona].firstName}`}>
+    <iframe src={`${journey.route}${reduced ? "?reduced=1" : ""}`} title={journey.label} />
+    {panel && <aside className={styles.journeyPanel} aria-label={panel === "story" ? story.eyebrow : JOURNEY_ENGINEERING_NOTES.eyebrow}>
+      <button className={styles.journeyPanelClose} onClick={onClosePanel} aria-label="Close journey notes">×</button>
+      {panel === "story" ? <>
+        <small>{story.eyebrow}</small>
+        <h1>{story.title}</h1>
+        <p className={styles.journeyRole}><b>Role</b><span>{story.role}</span></p>
+        <p>{story.body}</p>
+        <blockquote>{story.moment}</blockquote>
+      </> : <>
+        <small>{JOURNEY_ENGINEERING_NOTES.eyebrow}</small>
+        <h1>{JOURNEY_ENGINEERING_NOTES.title}</h1>
+        <p className={styles.journeySource}><b>Source of truth</b><a href={JOURNEY_ENGINEERING_NOTES.source} target="_blank" rel="noreferrer">{JOURNEY_ENGINEERING_NOTES.source} ↗</a></p>
+        <ol>{JOURNEY_ENGINEERING_NOTES.notes.map((note) => <li key={note}>{note}</li>)}</ol>
+      </>}
+    </aside>}
+  </section>;
+}
+
+function LabDock({ persona, switchPersona, state, structured, setStructured, reduced, setReduced, journeyStep, journeyPanel, onJourneyStep, onJourneyPanel, onScenario, onPlate, onReset }: {
   persona: PersonaKey;
   switchPersona: (persona: PersonaKey) => void;
   state: StudioState;
@@ -379,17 +430,23 @@ function LabDock({ persona, switchPersona, state, structured, setStructured, red
   setStructured: (value: boolean) => void;
   reduced: boolean;
   setReduced: (value: boolean) => void;
+  journeyStep: JourneyStepId | null;
+  journeyPanel: JourneyPanel | null;
+  onJourneyStep: (id: JourneyStepId) => void;
+  onJourneyPanel: (panel: JourneyPanel) => void;
   onScenario: (id: FixtureId) => void;
   onPlate: (id: string) => void;
   onReset: () => void;
 }) {
   const [open, setOpen] = useState(false);
   return <aside className={`${styles.labDock} ${open ? styles.labOpen : ""}`} aria-label="Design lab utilities">
-    <button className={styles.labToggle} onClick={() => setOpen((value) => !value)} aria-expanded={open}><i /> DESIGN LAB <span>{state.scenario === "clean" ? `R${state.revision}` : state.scenario}</span></button>
+    <button className={styles.labToggle} onClick={() => setOpen((value) => !value)} aria-expanded={open}><i /> DESIGN LAB <span>{journeyStep ? "STEP 1" : state.scenario === "clean" ? `R${state.revision}` : state.scenario}</span></button>
     {open && <div className={styles.labBody}>
       <p>Utilities are outside canonical Member UI. All consequences are deterministic simulation.</p>
       <fieldset><legend>Independent session</legend><button className={persona === "david" ? styles.labActive : ""} onClick={() => switchPersona("david")}>David</button><button className={persona === "matt" ? styles.labActive : ""} onClick={() => switchPersona("matt")}>Matt</button></fieldset>
       <div className={styles.pairedLinks}><a href="?persona=david" target="_blank" rel="noreferrer">Open David ↗</a><a href="?persona=matt" target="_blank" rel="noreferrer">Open Matt ↗</a></div>
+      <label>Persona Journey<select value={journeyStep ?? ""} onChange={(event) => onJourneyStep(event.target.value as JourneyStepId)}><option value="" disabled>Current Studio scenario</option>{PERSONA_JOURNEY_STEPS.map((step) => <option value={step.id} key={step.id}>{step.label}</option>)}</select></label>
+      {journeyStep && <div className={styles.journeyButtons}><button className={journeyPanel === "story" ? styles.labActive : ""} onClick={() => onJourneyPanel("story")}>{PERSONAS[persona].firstName}’s Story</button><button className={journeyPanel === "engineering" ? styles.labActive : ""} onClick={() => onJourneyPanel("engineering")}>Engineering Notes</button></div>}
       <label>State plate<select defaultValue="" onChange={(event) => { onPlate(event.target.value); event.target.value = ""; }}><option value="" disabled>Choose one of 15…</option>{STATE_PLATES.map((plate) => <option value={plate.id} key={plate.id}>{plate.title}</option>)}</select></label>
       <label>P0 fixture<select defaultValue="" onChange={(event) => { onScenario(event.target.value as FixtureId); event.target.value = ""; }}><option value="" disabled>Inject deterministic state…</option>{FIXTURES.filter((fixture) => fixture.priority === "P0").map((fixture) => <option value={fixture.id} key={fixture.id}>{fixture.journey} · {fixture.title}</option>)}</select></label>
       <fieldset><legend>Access view</legend><button className={structured ? styles.labActive : ""} onClick={() => setStructured(!structured)}>Structured</button><button className={reduced ? styles.labActive : ""} onClick={() => setReduced(!reduced)}>Reduced motion</button></fieldset>

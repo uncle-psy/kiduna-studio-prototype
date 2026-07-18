@@ -57,7 +57,27 @@
 .labBody fieldset button, .pairedLinks a { min-height: 30px; display: grid; place-items: center; border: 1px solid rgba(255, 248, 237, .11); border-radius: 7px; background: transparent; color: rgba(255, 248, 237, .58); font-size: 8px; text-decoration: none; cursor: pointer; }
 .labBody fieldset .labActive { border-color: rgba(59,212,220,.42); background: rgba(59,212,220,.09); color: var(--sky); }
 .pairedLinks { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.journeyButtons { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.journeyButtons button { min-height: 34px; padding: 5px 7px; border: 1px solid rgba(59,212,220,.2); border-radius: 7px; background: rgba(59,212,220,.035); color: rgba(255,248,237,.72); font-size: 8px; line-height: 1.25; cursor: pointer; }
+.journeyButtons .labActive { border-color: rgba(59,212,220,.5); background: rgba(59,212,220,.11); color: var(--sky); }
 .resetButton { min-height: 32px; border: 1px solid rgba(255, 98, 89, .25); border-radius: 7px; background: rgba(255,98,89,.04); color: #ffaaa5 !important; font-size: 8px; cursor: pointer; }
+
+.fieldLayer { display: contents; }
+.fieldLayerHidden { display: none; }
+.journeyScene { position: absolute; z-index: 1; inset: 0; overflow: hidden; background: #120c07; }
+.journeyScene > iframe { display: block; width: 100%; height: 100%; border: 0; background: #120c07; }
+.journeyPanel { position: absolute; z-index: 145; top: 16px; left: 274px; width: min(520px, calc(100vw - 300px)); max-height: calc(100dvh - 32px); overflow: auto; padding: 29px 31px 31px; border: 1px solid rgba(255,248,237,.15); border-radius: 18px; background: linear-gradient(150deg, rgba(51,37,26,.98), rgba(20,13,8,.985)); box-shadow: 0 34px 100px rgba(0,0,0,.62); color: var(--cream); font-family: "Avenir", sans-serif; backdrop-filter: blur(28px); animation: panelIn .26s cubic-bezier(.2,.8,.2,1); }
+.journeyPanelClose { position: absolute; top: 12px; right: 14px; width: 32px; height: 32px; border: 0; background: transparent; color: rgba(255,248,237,.5) !important; font-size: 25px; cursor: pointer; }
+.journeyPanel > small { color: var(--camel); font-size: 8px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+.journeyPanel h1 { max-width: 430px; margin: 10px 0 18px; font-family: "Goudy Heavyface", Georgia, serif; font-size: clamp(34px, 4vw, 54px); font-weight: 400; line-height: .96; }
+.journeyPanel > p { margin: 13px 0 0; color: rgba(255,248,237,.74); font-size: 12px; line-height: 1.65; }
+.journeyPanel blockquote { margin: 22px 0 0; padding: 15px 17px; border-left: 2px solid var(--sky); background: rgba(59,212,220,.045); color: rgba(255,248,237,.72); font-family: "Goudy Heavyface", Georgia, serif; font-size: 18px; line-height: 1.35; }
+.journeyPanel .journeyRole, .journeyPanel .journeySource { display: grid; grid-template-columns: 112px 1fr; gap: 12px; padding: 12px 0; border-top: 1px solid rgba(255,248,237,.08); border-bottom: 1px solid rgba(255,248,237,.08); }
+.journeyRole b, .journeySource b { color: rgba(255,248,237,.45); font-size: 8px; letter-spacing: .12em; text-transform: uppercase; }
+.journeyRole span { color: var(--mint); font-size: 11px; font-weight: 800; }
+.journeySource a { color: var(--sky); font-size: 10px; text-decoration: none; }
+.journeyPanel ol { display: grid; gap: 11px; margin: 18px 0 0; padding-left: 20px; color: rgba(255,248,237,.74); font-size: 11px; line-height: 1.55; }
+.journeyPanel li::marker { color: var(--camel); }
 
 .contextAnchor { position: absolute; z-index: 60; top: 17px; left: 50%; transform: translateX(-50%); }
 .contextAnchor button { min-width: 310px; display: grid; justify-items: center; gap: 2px; padding: 7px 32px 8px; border: 0; background: transparent; cursor: pointer; }
@@ -370,6 +390,7 @@
   .groundMark { min-width: 350px; min-height: 350px; }
   .atlas { inset: 7px; padding: 18px; }
   .atlasControls { grid-template-columns: 1fr; }
+  .journeyPanel { left: 214px; width: calc(100vw - 224px); }
 }
 
 @media (max-width: 600px) {
@@ -410,6 +431,9 @@
   .atlasRows { grid-template-columns: 1fr; }
   .atlasControls > div { overflow-x: auto; }
   .atlasControls button { white-space: nowrap; }
+  .journeyPanel { z-index: 170; inset: 8px; width: auto; max-height: calc(100dvh - 16px); padding: 28px 23px; }
+  .journeyPanel h1 { font-size: 38px; }
+  .journeyPanel .journeyRole, .journeyPanel .journeySource { grid-template-columns: 86px 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {

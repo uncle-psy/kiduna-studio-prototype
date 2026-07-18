@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Kidunaverse — Typography tokens
+   Goudy Heavyface display · Avenir sans · IBM Plex Sans callout · monospace
+   ========================================================================== */
+
+:root {
+  /* ---- Font stacks ---------------------------------------------------- */
+  --font-display:   "Goudy Heavyface", "Goudy Old Style", Georgia, serif;
+  --font-sans:      "Avenir", "Avenir Next", ui-sans-serif, system-ui, sans-serif;
+  --font-callout:   "IBM Plex Sans", "Avenir", ui-sans-serif, system-ui, sans-serif;
+  --font-mono:      ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* ---- Size scale ----------------------------------------------------- */
+  --fs-xs:   12px;
+  --fs-sm:   14px;
+  --fs-base: 16px;
+  --fs-lg:   18px;
+  --fs-xl:   20px;
+  --fs-2xl:  24px;
+  --fs-3xl:  30px;
+  --fs-4xl:  40px;
+  --fs-5xl:  54px;
+  --fs-6xl:  72px;
+
+  /* ---- Line heights --------------------------------------------------- */
+  --lh-tight:  1.05; /* @kind other */
+  --lh-snug:   1.2;  /* @kind other */
+  --lh-body:   1.5;  /* @kind other */
+  --lh-loose:  1.7;  /* @kind other */
+
+  /* ---- Tracking ------------------------------------------------------- */
+  --tracking-caps: 0.16em;
+}
