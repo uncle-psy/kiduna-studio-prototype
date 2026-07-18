@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Choose your organizations · Kiduna</title>
+  <title>Choose your movements · Kiduna</title>
   <link rel="stylesheet" href="/journey/landing/styles.css">
   <style>
     :root { color-scheme: dark; }
@@ -74,8 +74,12 @@
     .org-desc { flex: 1; margin: 0; color: var(--fg-soft); font-size: 12.5px; line-height: 1.55; }
     .org-meta { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
     .org-tags { color: var(--kin-camel); font-size: 10.5px; font-weight: 800; letter-spacing: .04em; }
-    .members { color: var(--fg-dim); font-size: 11px; white-space: nowrap; }
-    .members strong { color: var(--fg-muted); font-family: var(--font-display); font-size: 14px; font-weight: 400; }
+    .org-metrics { display: flex; align-items: center; gap: 10px; white-space: nowrap; }
+    .compute, .members { color: var(--fg-dim); font-size: 11px; }
+    .compute strong, .members strong { font-family: var(--font-display); font-size: 14px; font-weight: 400; }
+    .compute strong { color: var(--accent); }
+    .members strong { color: var(--fg-muted); }
+    .reg-line { padding-top: 9px; border-top: 1px solid rgba(255,248,240,.07); color: var(--fg-dim); font-size: 9.5px; letter-spacing: .05em; }
     .empty { display: none; padding: 64px 24px; text-align: center; }
     .empty.visible { display: block; }
     .empty h2 { margin: 0 0 8px; color: var(--fg-muted); font-size: 22px; }
@@ -117,16 +121,16 @@
         <img src="/journey/landing/assets/kiduna-logo-linear-skyblue.svg" alt="Kiduna">
       </a>
       <div class="header-actions">
-        <span class="header-label">Choose your organizations</span>
+        <span class="header-label">Choose your movements</span>
         <button class="text-action" id="skip" type="button">Skip for now <span class="arrow">→</span></button>
       </div>
     </header>
 
     <main class="content">
       <section class="hero" aria-labelledby="page-title">
-        <div class="eyebrow"><span>31 Genesis Organizations</span><span class="spark">✦</span></div>
-        <h1 id="page-title">Find <em>Your People</em></h1>
-        <p>Join as many organizations as you like — you can always join more later. Kinship Duna is home for every member.</p>
+        <div class="eyebrow"><span>31 Powerful Movements</span><span class="spark">✦</span></div>
+        <h1 id="page-title">Put Your Good <em>Where It Does The Most</em></h1>
+        <p>Join as many movements as you like — you can always join more later... or build your own! Kinship Duna is home to everyone.</p>
       </section>
 
       <div class="controls">
@@ -134,6 +138,7 @@
         <input class="search" id="search" type="search" placeholder="Search organizations…" autocomplete="off">
         <label class="sr-only" for="sort">Sort organizations</label>
         <select class="sort" id="sort">
+          <option value="active">Most active</option>
           <option value="members">Most members</option>
           <option value="az">A – Z</option>
           <option value="newest">Newest</option>
@@ -197,8 +202,10 @@
       { name: "Wokelord", desc: "Taking back social media — memes with meaning, countering disinformation, making healthy social media fun again.", tags: ["Activism", "Culture & Play"], members: 205 }
     ];
 
+    const compute = [52400000, 3800000, 2400000, 640000, 5100000, 1200000, 890000, 310000, 1700000, 220000, 760000, 12800000, 4300000, 6200000, 2900000, 9400000, 180000, 1400000, 96000, 420000, 2100000, 530000, 3200000, 15600000, 980000, 7800000, 11200000, 8700000, 350000, 5600000, 4700000];
+    const registrations = [[628407, "Jun 2"], [628411, "Jun 3"], [628415, "Jun 4"], [628422, "Jun 5"], [628428, "Jun 6"], [628433, "Jun 8"], [628439, "Jun 9"], [628444, "Jun 10"], [628450, "Jun 11"], [628457, "Jun 12"], [628463, "Jun 15"], [628470, "Jun 16"], [628476, "Jun 17"], [628481, "Jun 18"], [628488, "Jun 19"], [628494, "Jun 22"], [628501, "Jun 23"], [628507, "Jun 24"], [628514, "Jun 25"], [628520, "Jun 26"], [628527, "Jun 29"], [628534, "Jun 30"], [628541, "Jul 1"], [628548, "Jul 2"], [628556, "Jul 6"], [628563, "Jul 7"], [628571, "Jul 8"], [628580, "Jul 9"], [628588, "Jul 13"], [628595, "Jul 15"], [628602, "Jul 17"]];
     const tags = ["All", "Community", "Culture & Play", "Activism", "Finance", "Work & Business", "Place-Based", "Climate & Land", "Relationships", "Health & Wellbeing", "Consciousness"];
-    const state = { query: "", tag: "All", sort: "members", selected: new Set(["Kinship Duna"]) };
+    const state = { query: "", tag: "All", sort: "active", selected: new Set(["Kinship Duna"]) };
     const grid = document.getElementById("grid");
     const count = document.getElementById("count");
     const chips = document.getElementById("chips");
@@ -229,14 +236,15 @@
 
     const filteredOrganizations = () => {
       const query = state.query.trim().toLowerCase();
-      const list = organizations.map((org, index) => ({ ...org, index })).filter((org) => {
+      const list = organizations.map((org, index) => ({ ...org, index, compute: compute[index], registration: registrations[index] })).filter((org) => {
         const tagMatch = state.tag === "All" || org.tags.includes(state.tag);
         const queryMatch = !query || `${org.name} ${org.desc} ${org.tags.join(" ")}`.toLowerCase().includes(query);
         return tagMatch && queryMatch;
       });
       if (state.sort === "az") list.sort((a, b) => a.name.localeCompare(b.name));
       else if (state.sort === "newest") list.sort((a, b) => b.index - a.index);
-      else list.sort((a, b) => b.members - a.members);
+      else if (state.sort === "members") list.sort((a, b) => b.members - a.members);
+      else list.sort((a, b) => b.compute - a.compute);
       return list;
     };
 
@@ -258,9 +266,13 @@
       const desc = document.createElement("span"); desc.className = "org-desc"; desc.textContent = org.desc; card.append(desc);
       const meta = document.createElement("span"); meta.className = "org-meta";
       const tagLine = document.createElement("span"); tagLine.className = "org-tags"; tagLine.textContent = org.tags.join(" · ").toUpperCase();
+      const metrics = document.createElement("span"); metrics.className = "org-metrics";
+      const computeAmount = document.createElement("span"); computeAmount.className = "compute";
+      const computeNumber = document.createElement("strong"); computeNumber.textContent = org.compute >= 1e6 ? `${Math.round(org.compute / 1e5) / 10}M` : `${Math.round(org.compute / 1e3)}K`; computeAmount.append(computeNumber, " compute");
       const members = document.createElement("span"); members.className = "members";
       const memberNumber = document.createElement("strong"); memberNumber.textContent = org.members.toLocaleString(); members.append(memberNumber, " members");
-      meta.append(tagLine, members); card.append(meta);
+      metrics.append(computeAmount, members); meta.append(tagLine, metrics); card.append(meta);
+      const registration = document.createElement("span"); registration.className = "reg-line"; registration.textContent = `WV Org. ID ${org.registration[0]} · Registered ${org.registration[1]}, 2026`; card.append(registration);
 
       if (!org.locked) card.addEventListener("click", () => {
         if (state.selected.has(org.name)) state.selected.delete(org.name); else state.selected.add(org.name);

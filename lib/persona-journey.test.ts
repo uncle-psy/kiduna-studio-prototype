@@ -51,6 +51,7 @@ describe("persona journey", () => {
     expect(story.role).toBe("Founding Member in Onboarding");
     expect(story.body).toContain("authoritative receipt");
     expect(story.body).toContain("does not silently grant organization membership");
+    expect(story.body).toContain("31 powerful movements");
   });
 
   it.each(["david", "matt"] as const)("makes %s a Visitor without implied authority at Step 1", (persona) => {
@@ -93,6 +94,8 @@ describe("persona journey", () => {
     expect(notes).toContain("reversible onboarding draft");
     expect(notes).toContain("governed server data");
     expect(notes).toContain("Continue and Skip for now");
+    expect(notes).toContain("Most active");
+    expect(notes).toContain("registration identifiers and dates");
   });
 
   it("produces complete plain-text Story and Engineering Notes cards", () => {
