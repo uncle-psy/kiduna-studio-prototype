@@ -1,0 +1,2822 @@
+[
+  {
+    "id": "ID-001",
+    "capability": "Browse public Kidunaverse and Organization material as Visitor",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "N",
+    "authority": "Public policy",
+    "sources": "S-001, S-004, S-010",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ID-002",
+    "capability": "Discover Studio capabilities without exposing protected graph state",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Public policy",
+    "sources": "S-002, S-004",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "ID-003",
+    "capability": "Create Account and authenticated Persona",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "C",
+    "authority": "Persona with identity proof",
+    "sources": "S-004, S-010, S-014",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ID-004",
+    "capability": "Verify email/contact/handle evidence",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "C",
+    "authority": "Persona + verification service",
+    "sources": "S-004, S-014",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ID-005",
+    "capability": "Authenticate, end sessions and review active sessions",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "N/C",
+    "authority": "Persona",
+    "sources": "S-010, S-014",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ID-006",
+    "capability": "Recover Account without weakening protected access",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Persona + fresh identity proof",
+    "sources": "S-010, S-004",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "ID-007",
+    "capability": "Export Account, profile, Wisdom and Records within policy",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C",
+    "authority": "Persona/Organization policy",
+    "sources": "S-020, S-004",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "ID-008",
+    "capability": "Request deletion and understand retained Records/legal holds",
+    "status": "EXISTING surface → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Persona + policy",
+    "sources": "S-010, S-004",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "ID-009",
+    "capability": "Maintain Persona profile and approved public claims",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "G/C",
+    "authority": "Persona",
+    "sources": "S-004, S-010, S-014",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ID-010",
+    "capability": "Review and accept/reject inviter-supplied profile claims",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C",
+    "authority": "Invitee Persona",
+    "sources": "S-004 §2.7/§6.7",
+    "prototype": "J1",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ID-011",
+    "capability": "See Visitor/Guest/Member state for current Organization",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Derived from verified state",
+    "sources": "S-001, S-002, S-004",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ID-012",
+    "capability": "Switch Organization capacity without changing stable Persona",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Persona + active grants/Membership",
+    "sources": "S-002, S-004",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ID-013",
+    "capability": "Begin Genesis conversation with Ki",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "A",
+    "authority": "Persona as Source",
+    "sources": "S-030, S-032",
+    "prototype": "J1",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "ID-014",
+    "capability": "Name and shape personal Ally through conversation",
+    "status": "EXISTING form-based → PROPOSED",
+    "actionClass": "G/C",
+    "authority": "Persona as sole Source",
+    "sources": "S-001, S-010, S-011, S-032",
+    "prototype": "J1",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "ID-015",
+    "capability": "Inspect Ally identity, Contract, Grounding, Reach and Acts",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Persona/grant-filtered",
+    "sources": "S-002 §6.5, S-004",
+    "prototype": "J1/R",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "ID-016",
+    "capability": "Change Ally Stance with verbatim readback/version",
+    "status": "MISSING + INHERITED",
+    "actionClass": "A/C",
+    "authority": "Source Persona only",
+    "sources": "S-002, S-004 §3.4",
+    "prototype": "J1",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "ID-017",
+    "capability": "Select accessible defaults for motion, density, voice and non-spatial mode",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C",
+    "authority": "Persona",
+    "sources": "S-002 §§6.11, 13.4",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ID-018",
+    "capability": "Connect wallet/financial authorization identity on approved surface",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Persona + fresh proof",
+    "sources": "S-003, S-004, S-010",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "REL-001",
+    "capability": "Ask Ally to prepare an invitation for a named purpose/scope",
+    "status": "EXISTING partial → INHERITED",
+    "actionClass": "A/G",
+    "authority": "Inviter Persona",
+    "sources": "S-004 §6.7, S-011",
+    "prototype": "J1",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "REL-002",
+    "capability": "Create purpose-limited InvitationProspect and RelationshipIntent",
+    "status": "MISSING + INHERITED",
+    "actionClass": "G",
+    "authority": "Inviter Persona; Profiler limited",
+    "sources": "S-004 §2.7/§6.7",
+    "prototype": "J1",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "REL-003",
+    "capability": "Record inviter-authored claims with uncertainty/source/expiry",
+    "status": "MISSING + INHERITED",
+    "actionClass": "G",
+    "authority": "Inviter; Profiler attribution",
+    "sources": "S-004 §2.7",
+    "prototype": "J1",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "REL-004",
+    "capability": "Create recipient-bound, signed, expiring single-use Code",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "C",
+    "authority": "CodeManager under exact grant",
+    "sources": "S-004, S-011, S-014",
+    "prototype": "J1",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "REL-005",
+    "capability": "Create generalized Code with explicit target/uses/expiry",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "C",
+    "authority": "Authorized issuer",
+    "sources": "S-004, S-011",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "REL-006",
+    "capability": "Deliver unregistered-person Code out of band",
+    "status": "CONFLICTED implementation → INHERITED rule",
+    "actionClass": "C",
+    "authority": "Inviter, not platform",
+    "sources": "S-004 §2.7, S-011",
+    "prototype": "J1",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "REL-007",
+    "capability": "Send signed in-system invitation to registered Persona",
+    "status": "EXISTING partial → INHERITED",
+    "actionClass": "C",
+    "authority": "Inviter/Organization authority",
+    "sources": "S-004, S-011",
+    "prototype": "J1",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "REL-008",
+    "capability": "Preview Code without leaking secret/private context",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "N",
+    "authority": "Recipient proof + policy",
+    "sources": "S-004, S-011",
+    "prototype": "J1",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "REL-009",
+    "capability": "Redeem/reject/expire/revoke Code with replay protection",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "C",
+    "authority": "Recipient/issuer/policy by transition",
+    "sources": "S-004, S-011, S-014",
+    "prototype": "J1",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "REL-010",
+    "capability": "Accept/decline Relationship, Project, Membership and grants independently",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C",
+    "authority": "Invitee Persona",
+    "sources": "S-004 §6.7",
+    "prototype": "J1",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "REL-011",
+    "capability": "Form per-Organization Relationship after mutual consent",
+    "status": "EXISTING noncanonical → INHERITED",
+    "actionClass": "C",
+    "authority": "Both Personas",
+    "sources": "S-004, S-014",
+    "prototype": "J1",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "REL-012",
+    "capability": "Inspect Relationship Lens/chamber and shared context",
+    "status": "EXISTING thin → INHERITED",
+    "actionClass": "N",
+    "authority": "Each Persona under grants",
+    "sources": "S-002 §6.4, S-015",
+    "prototype": "J1",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "REL-013",
+    "capability": "Set/change own directional trust with basis/visibility",
+    "status": "EXISTING thin → INHERITED",
+    "actionClass": "C",
+    "authority": "Declaring Persona",
+    "sources": "S-002, S-004",
+    "prototype": "J1",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "REL-014",
+    "capability": "Keep trust separate from registration and authority",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N/rule",
+    "authority": "Deterministic projection",
+    "sources": "S-001, S-002, S-004",
+    "prototype": "J1/R",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "REL-015",
+    "capability": "Propose, accept, narrow, expire or revoke Relationship grant",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C",
+    "authority": "Grantor; grantee acceptance if needed",
+    "sources": "S-004 §5",
+    "prototype": "J1/J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "REL-016",
+    "capability": "Share selected artifact/package through Relationship",
+    "status": "MISSING + INHERITED",
+    "actionClass": "G/C",
+    "authority": "Artifact controller + recipient policy",
+    "sources": "S-002 §6.10",
+    "prototype": "J1/J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "REL-017",
+    "capability": "Route external communication through both Allies",
+    "status": "MISSING + PROPOSED/INHERITED",
+    "actionClass": "A/C",
+    "authority": "Sender Persona; recipient filters",
+    "sources": "S-001, S-030–S-032",
+    "prototype": "J1",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "REL-018",
+    "capability": "Request verbatim delivery while honoring recipient delivery policy",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "A/C",
+    "authority": "Sender asks; recipient boundary controls",
+    "sources": "S-030",
+    "prototype": "J1",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "REL-019",
+    "capability": "Open explicit live human channel with participant/mic/record state",
+    "status": "EXISTING technical → DEFERRED/INHERITED design",
+    "actionClass": "C",
+    "authority": "All participants/room policy",
+    "sources": "S-002 §5.5, S-011",
+    "prototype": "R/—",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "REL-020",
+    "capability": "Turn transcript into artifact only through separate consented act",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C-S",
+    "authority": "Participants/room policy",
+    "sources": "S-002 §5.5",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "REL-021",
+    "capability": "Mute, hide, block, report and seek safety support",
+    "status": "EXISTING hide only → INHERITED",
+    "actionClass": "C",
+    "authority": "Persona/policy",
+    "sources": "S-011, S-004 §17",
+    "prototype": "J1 exception",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "REL-022",
+    "capability": "End Relationship without erasing historical Records",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C-S",
+    "authority": "Either Persona within policy",
+    "sources": "S-004 §2.3/§3.2",
+    "prototype": "J1 exception",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ORG-001",
+    "capability": "Discover and inspect public Organization purpose/status",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "N",
+    "authority": "Public policy/verified registry",
+    "sources": "S-004, S-010",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ORG-002",
+    "capability": "Create personal draft Organization workspace without claiming legal status",
+    "status": "MISSING + INHERITED",
+    "actionClass": "G",
+    "authority": "Authenticated Guest",
+    "sources": "S-004 §6",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ORG-003",
+    "capability": "Assemble Registration Offering and formation checklist",
+    "status": "EXISTING fragments → INHERITED",
+    "actionClass": "G/A",
+    "authority": "Authorized founders/Registrar",
+    "sources": "S-004 §6, S-021",
+    "prototype": "J2/J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "ORG-004",
+    "capability": "Collect formation Sources, identities, consents and legal evidence",
+    "status": "MISSING + INHERITED",
+    "actionClass": "G/C",
+    "authority": "Founders/Registrar/credentialed humans",
+    "sources": "S-004, S-020–S-023",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "ORG-005",
+    "capability": "Produce versioned Formation Package",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "G/A",
+    "authority": "Project team/Actors",
+    "sources": "S-032",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "ORG-006",
+    "capability": "Review/diff/accept Formation Package independently",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "C-S",
+    "authority": "David and Matt separately",
+    "sources": "S-032",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "ORG-007",
+    "capability": "Request Kinship Duna launch authorization",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "C-S",
+    "authority": "Authorized founders/Ally",
+    "sources": "S-032",
+    "prototype": "J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "ORG-008",
+    "capability": "Configure launch min/max, Compute multiple and lineage terms",
+    "status": "EXISTING historical → CONFLICTED",
+    "actionClass": "G/C-S",
+    "authority": "Forum/authorized policy",
+    "sources": "S-004 §6–7, S-010, S-032",
+    "prototype": "J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "ORG-009",
+    "capability": "Authorize treasury purchase of Organization Compute",
+    "status": "EXISTING primitives → PROPOSED",
+    "actionClass": "C-S",
+    "authority": "Treasury authority",
+    "sources": "S-004, S-010, S-032",
+    "prototype": "J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "ORG-010",
+    "capability": "Open verified Organization after external legal evidence",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C-S",
+    "authority": "Registrar + verified evidence",
+    "sources": "S-004 §6",
+    "prototype": "J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "ORG-011",
+    "capability": "Add WV Organization ID to decentralized registry",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "C-S",
+    "authority": "Registrar/registry command",
+    "sources": "S-004, S-032",
+    "prototype": "J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "ORG-012",
+    "capability": "Derive Organization status from registration/lifecycle",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Deterministic service",
+    "sources": "S-004 §2.4/§6",
+    "prototype": "J3/R",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "ORG-013",
+    "capability": "Inspect Organization configuration, policies and Records",
+    "status": "EXISTING fragments → INHERITED",
+    "actionClass": "N",
+    "authority": "Public/member/role grants",
+    "sources": "S-004, S-010",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ORG-014",
+    "capability": "Apply for/accept/decline Membership",
+    "status": "EXISTING fragments → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Persona + Organization admission authority",
+    "sources": "S-004 §3.1/§6.7",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ORG-015",
+    "capability": "Admit, suspend, withdraw or expel Membership",
+    "status": "EXISTING fragments → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Exact Organization authority",
+    "sources": "S-004 §7.2",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ORG-016",
+    "capability": "Assign/revoke Organization role or credential",
+    "status": "EXISTING partial → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Role/Policy/credential authority",
+    "sources": "S-004 §5, S-011",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ORG-017",
+    "capability": "Create Community from 3+ Personas and purpose",
+    "status": "EXISTING thin → INHERITED",
+    "actionClass": "G/C",
+    "authority": "Participants/authorized creator",
+    "sources": "S-002 §6.7, S-014",
+    "prototype": "J1",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ORG-018",
+    "capability": "Join/leave and govern Community sharing scope",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C",
+    "authority": "Persona/Community policy",
+    "sources": "S-002, S-004",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ORG-019",
+    "capability": "Formalize Community as Alliance without losing continuity",
+    "status": "MISSING + INHERITED",
+    "actionClass": "G/C-S",
+    "authority": "Members + Organization authority",
+    "sources": "S-002 §6.7",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ORG-020",
+    "capability": "Create/manage Alliance charter, roles and membership",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "G/C",
+    "authority": "Alliance/Organization policy",
+    "sources": "S-004, S-010",
+    "prototype": "J1/R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ORG-021",
+    "capability": "Give Alliance optional wallet/treasury authority",
+    "status": "EXISTING fragments → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Organization/treasury policy",
+    "sources": "S-004 §3.2, S-010",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ORG-022",
+    "capability": "Sponsor multiple Projects from Alliance",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C",
+    "authority": "Alliance role/policy",
+    "sources": "S-004 §3.2/§9",
+    "prototype": "J2/R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ORG-023",
+    "capability": "Configure Founding Alliance recurring support",
+    "status": "EXISTING primitives → CONFLICTED",
+    "actionClass": "G/C-S",
+    "authority": "Forum/treasury policy",
+    "sources": "S-004 §7.6",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ORG-024",
+    "capability": "Register/verify outside Institution and delegate chain",
+    "status": "MISSING + INHERITED",
+    "actionClass": "G/C-S",
+    "authority": "Institution proof/delegates",
+    "sources": "S-004 §3.2/§5",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "ORG-025",
+    "capability": "Create/manage Institution Agreement without conferring Membership",
+    "status": "MISSING + INHERITED",
+    "actionClass": "G/C-S",
+    "authority": "Institution + Organization delegates",
+    "sources": "S-004",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "ORG-026",
+    "capability": "Switch among Organizations/Projects while preserving active work",
+    "status": "MISSING + PROPOSED/INHERITED",
+    "actionClass": "N",
+    "authority": "Persona",
+    "sources": "S-002 §5.6, S-032",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "ORG-027",
+    "capability": "Express bounded Organization identity within one Kidunaverse grammar",
+    "status": "EXISTING separate brands → PROPOSED",
+    "actionClass": "N",
+    "authority": "Organization tokens under system constraints",
+    "sources": "S-020, S-025, S-032",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-001",
+    "capability": "Create Project inside exactly one accountable Organization",
+    "status": "EXISTING thin → INHERITED",
+    "actionClass": "G/C",
+    "authority": "Member/role/Guest allowlist",
+    "sources": "S-004 §9, S-013, S-014",
+    "prototype": "J1",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-002",
+    "capability": "Define purpose, success criteria, scope and constraints",
+    "status": "MISSING + INHERITED",
+    "actionClass": "G/C",
+    "authority": "Project authority",
+    "sources": "S-004 §9",
+    "prototype": "J1/J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-003",
+    "capability": "Invite/accept Project participants separately from Membership",
+    "status": "EXISTING fragments → INHERITED",
+    "actionClass": "C",
+    "authority": "Project role + invitee consent",
+    "sources": "S-004 §6.7/§9",
+    "prototype": "J1",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-004",
+    "capability": "Assign/revoke Project roles and grants",
+    "status": "EXISTING partial → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Project/Organization role",
+    "sources": "S-004 §5/§9",
+    "prototype": "J1/J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "PRJ-005",
+    "capability": "Attach sponsoring Alliance/Institution/Engagement",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C",
+    "authority": "Authorized principals",
+    "sources": "S-004 §9",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "PRJ-006",
+    "capability": "Establish Project Field address/Scene",
+    "status": "EXISTING context → INHERITED",
+    "actionClass": "C",
+    "authority": "Project authority/system",
+    "sources": "S-002, S-004 §9",
+    "prototype": "J1",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-007",
+    "capability": "Return to last active Project with object-linked recap",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Persona/grant-filtered",
+    "sources": "S-002 §6.3",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "PRJ-008",
+    "capability": "Bring people, Sources, artifacts and Actors into Gather Ring",
+    "status": "EXISTING thin → INHERITED",
+    "actionClass": "G",
+    "authority": "Persona; no authority mutation",
+    "sources": "S-002 §5.2, S-014",
+    "prototype": "J1/J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-009",
+    "capability": "Stage Incoming Material before upload/share/agent access",
+    "status": "MISSING + INHERITED",
+    "actionClass": "G",
+    "authority": "Persona",
+    "sources": "S-002 §5.3",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-010",
+    "capability": "Add permitted Source/artifact to Project",
+    "status": "EXISTING fragments → INHERITED",
+    "actionClass": "C",
+    "authority": "Resource controller + Project authority",
+    "sources": "S-004 §9, S-010–S-013",
+    "prototype": "J1/J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-011",
+    "capability": "Create milestone, WorkItem and dependency",
+    "status": "EXISTING objectives only → INHERITED",
+    "actionClass": "G/C",
+    "authority": "Project role/Actor proposal",
+    "sources": "S-004 §9.2",
+    "prototype": "J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "PRJ-012",
+    "capability": "Assign/reassign/decline WorkItem",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C",
+    "authority": "Project role + assignee acceptance where required",
+    "sources": "S-004 Appendix A",
+    "prototype": "J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "PRJ-013",
+    "capability": "Record human or Actor Contribution with provenance",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C",
+    "authority": "Contributor/runtime",
+    "sources": "S-004 §9.2",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-014",
+    "capability": "Track derived Project state, blockers and waiting Actions",
+    "status": "EXISTING cosmetic → INHERITED",
+    "actionClass": "N",
+    "authority": "Derived graph service",
+    "sources": "S-004 §9.1",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-015",
+    "capability": "Collaborate asynchronously with handoff and attention",
+    "status": "EXISTING fragments → PROPOSED",
+    "actionClass": "A/C",
+    "authority": "Participant grants",
+    "sources": "S-030–S-032",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-016",
+    "capability": "Collaborate synchronously with visible presence and acts",
+    "status": "EXISTING game runtime → PROPOSED",
+    "actionClass": "N/A/C",
+    "authority": "Participant grants",
+    "sources": "S-012, S-030",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-017",
+    "capability": "Mention/request/reply without granting new authority",
+    "status": "EXISTING chat → INHERITED",
+    "actionClass": "A",
+    "authority": "Participant",
+    "sources": "S-004 authority invariants",
+    "prototype": "J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "PRJ-018",
+    "capability": "Create artifact draft from conversation/Actor work",
+    "status": "EXISTING domain-specific → INHERITED",
+    "actionClass": "G/A",
+    "authority": "Persona/Actor under grant",
+    "sources": "S-004, S-012, S-014",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-019",
+    "capability": "Compare artifacts or versions in place",
+    "status": "EXISTING thin → INHERITED",
+    "actionClass": "N/G",
+    "authority": "Project grants",
+    "sources": "S-002, S-014",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-020",
+    "capability": "Propose change with cited Sources and Actor contribution",
+    "status": "MISSING + INHERITED",
+    "actionClass": "G/A",
+    "authority": "Contributor/Actor",
+    "sources": "S-004 §3.5/§9",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-021",
+    "capability": "Resolve simultaneous edits/stale versions/merge conflict",
+    "status": "MISSING + INHERITED",
+    "actionClass": "G/C",
+    "authority": "Contributors/reviewer",
+    "sources": "S-004 optimistic concurrency",
+    "prototype": "J2 exception",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-022",
+    "capability": "Request review from named people/roles",
+    "status": "EXISTING approval primitive → INHERITED",
+    "actionClass": "C",
+    "authority": "Project role",
+    "sources": "S-004 §9",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-023",
+    "capability": "Comment, request changes, approve or reject version",
+    "status": "EXISTING fragments → INHERITED",
+    "actionClass": "C",
+    "authority": "Reviewer role",
+    "sources": "S-004 §9",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-024",
+    "capability": "Independently accept exact artifact version",
+    "status": "MISSING + PROPOSED/INHERITED",
+    "actionClass": "C-S",
+    "authority": "Each named accepting authority",
+    "sources": "S-004, S-032",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-025",
+    "capability": "Freeze accepted version while allowing successor drafts",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C",
+    "authority": "Acceptance command",
+    "sources": "S-004 §2.3/§9",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-026",
+    "capability": "Create package with manifest, permissions and source-file limits",
+    "status": "MISSING + INHERITED",
+    "actionClass": "G/C",
+    "authority": "Artifact controller",
+    "sources": "S-002 §6.10",
+    "prototype": "J1/J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-027",
+    "capability": "Transfer/quarantine package and record both ends",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C",
+    "authority": "Sender/recipient policies",
+    "sources": "S-002 §6.10",
+    "prototype": "J1/J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "PRJ-028",
+    "capability": "Define Project Compute budget/Actor limits",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "G/C",
+    "authority": "Project/budget authority",
+    "sources": "S-031, S-032",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-029",
+    "capability": "Pause/cancel/retry background Project work",
+    "status": "EXISTING agent partial → INHERITED",
+    "actionClass": "C",
+    "authority": "Requester/role/policy",
+    "sources": "S-011, S-031",
+    "prototype": "J2 exception",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "PRJ-030",
+    "capability": "Close/archive/reopen Project with retention and Records",
+    "status": "EXISTING thin → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Project/Organization authority",
+    "sources": "S-004 §9",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "PRJ-031",
+    "capability": "Create/manage Engagement, milestones and compensation terms",
+    "status": "MISSING + INHERITED",
+    "actionClass": "G/C-S",
+    "authority": "Contracting principals",
+    "sources": "S-004 §3.2/§9.3",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "PRJ-032",
+    "capability": "Invoice/pay split only after agreed acceptance/settlement",
+    "status": "EXISTING treasury fragments → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Engagement/treasury authority",
+    "sources": "S-004 §9.3",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "SRC-001",
+    "capability": "Create WisdomDrop as permission/namespace boundary",
+    "status": "EXISTING knowledge-base analog → INHERITED",
+    "actionClass": "C",
+    "authority": "Owner principal",
+    "sources": "S-004 §3.5, S-011/S-012",
+    "prototype": "J2/R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "SRC-002",
+    "capability": "Add file, text, URL, external document, dataset or media item",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "G/C",
+    "authority": "Resource controller",
+    "sources": "S-010–S-013",
+    "prototype": "J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "SRC-003",
+    "capability": "Record owner, credited supplier and provenance separately",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C",
+    "authority": "Ingestion command",
+    "sources": "S-004 §3.5",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SRC-004",
+    "capability": "Assign public/private/secret/personal access",
+    "status": "EXISTING partial → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Owner/policy; personal never grantable",
+    "sources": "S-004 §2.2/§3.5",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SRC-005",
+    "capability": "Set purpose tags, retention, legal class and Organization",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C",
+    "authority": "Owner/policy",
+    "sources": "S-004 §3.5",
+    "prototype": "J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "SRC-006",
+    "capability": "Grant/revoke retrieval by Persona/Relationship/role/Project/Agreement",
+    "status": "EXISTING partial → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Owner/grant authority",
+    "sources": "S-004 §5/§3.5",
+    "prototype": "J1/J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SRC-007",
+    "capability": "Authorize before graph/vector retrieval",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N/rule",
+    "authority": "Policy engine",
+    "sources": "S-004 §2.2/§5.6",
+    "prototype": "J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "SRC-008",
+    "capability": "Search permitted Wisdom with secret non-disclosure",
+    "status": "EXISTING search → INHERITED",
+    "actionClass": "N",
+    "authority": "Persona/agent grant",
+    "sources": "S-004, S-011/S-012",
+    "prototype": "J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "SRC-009",
+    "capability": "Cite exact Sources/chunks in agent answer or artifact",
+    "status": "EXISTING partial → INHERITED",
+    "actionClass": "N/G",
+    "authority": "Runtime/provenance service",
+    "sources": "S-004",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SRC-010",
+    "capability": "Version/supersede Wisdom and invalidate caches",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C",
+    "authority": "Owner/policy",
+    "sources": "S-004 §3.5",
+    "prototype": "J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "SRC-011",
+    "capability": "Quarantine malicious, mismatched or untrusted material",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C",
+    "authority": "Safety/policy",
+    "sources": "S-002 §6.10, S-004 §17",
+    "prototype": "J2 exception",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SRC-012",
+    "capability": "Inspect external live-link vs snapshot and permission proof",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Grant-filtered",
+    "sources": "S-002 §6.8",
+    "prototype": "J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "SRC-013",
+    "capability": "Ask for external access; grant Actor read/comment/edit narrowly",
+    "status": "EXISTING OAuth fragments → INHERITED",
+    "actionClass": "C-S",
+    "authority": "External owner + local grant",
+    "sources": "S-002 §6.8",
+    "prototype": "J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "SRC-014",
+    "capability": "Unlink local artifact without deleting external source",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C",
+    "authority": "Local controller",
+    "sources": "S-002 §6.8",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "SRC-015",
+    "capability": "Create artifact with kind/provenance/scope/state/relations",
+    "status": "EXISTING fragmented → INHERITED",
+    "actionClass": "G/C",
+    "authority": "Creator/runtime",
+    "sources": "S-002 §4.5",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SRC-016",
+    "capability": "Inspect artifact lifecycle: incoming/draft/snapshot/accepted/published/quarantined",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Grant-filtered",
+    "sources": "S-002 §4.5",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SRC-017",
+    "capability": "Attach license/rights/attribution and permitted uses",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C",
+    "authority": "Rights holder/policy",
+    "sources": "S-020–S-024, S-004",
+    "prototype": "J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "SRC-018",
+    "capability": "Correct/supersede without rewriting historical Record",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C-S",
+    "authority": "Authorized editor",
+    "sources": "S-004 §2.3",
+    "prototype": "J2/J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SRC-019",
+    "capability": "Export/share/package with manifest and redaction",
+    "status": "MISSING + INHERITED",
+    "actionClass": "G/C",
+    "authority": "Resource controller",
+    "sources": "S-002 §6.10",
+    "prototype": "J1/J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "SRC-020",
+    "capability": "Delete/archive under retention, legal hold and external-system rules",
+    "status": "EXISTING CRUD → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Owner/policy",
+    "sources": "S-004 §17",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "AG-001",
+    "capability": "Maintain exactly one active Ally identity per authenticated Persona",
+    "status": "EXISTING noncanonical → INHERITED",
+    "actionClass": "N/C",
+    "authority": "Persona/system invariant",
+    "sources": "S-004 §3.3, S-011",
+    "prototype": "J1",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "AG-002",
+    "capability": "Keep Ally Source-directed across all channels",
+    "status": "MISSING + INHERITED",
+    "actionClass": "rule/A",
+    "authority": "Source Persona only",
+    "sources": "S-001, S-004 §2.1",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "AG-003",
+    "capability": "Treat external messages/pages/agents as context or request, never instruction",
+    "status": "MISSING + INHERITED",
+    "actionClass": "rule",
+    "authority": "Runtime/policy",
+    "sources": "S-002 §13.1, S-004 §2.1",
+    "prototype": "J1/J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "AG-004",
+    "capability": "Inspect why/for whom/authority/Sources/outcome before model details",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Grant-filtered",
+    "sources": "S-002 bet 4",
+    "prototype": "J1/J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "AG-005",
+    "capability": "Create typed Actor from versioned manifest",
+    "status": "EXISTING worker analog → INHERITED",
+    "actionClass": "G/C",
+    "authority": "Organization/Project authority",
+    "sources": "S-004 §3.3, S-011",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "AG-006",
+    "capability": "Bind Actor function, owner, contexts, tools, budgets, duration and command allowlist",
+    "status": "EXISTING fragments → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Commissioning authority",
+    "sources": "S-004 §2.1/§3.3",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "AG-007",
+    "capability": "Invoke Actor for specific work without granting sovereignty",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "A/C",
+    "authority": "Persona/role/policy",
+    "sources": "S-004",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "AG-008",
+    "capability": "Delegate Ally→Actor with visible scope and contribution provenance",
+    "status": "EXISTING orchestration → INHERITED",
+    "actionClass": "A/C",
+    "authority": "Persona request + grants",
+    "sources": "S-004 §13.2",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "AG-009",
+    "capability": "Present unified Organization Actor façade",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "A",
+    "authority": "Member’s Ally mediates; Organization policy directs Actor",
+    "sources": "S-031/S-032",
+    "prototype": "J1/J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "AG-010",
+    "capability": "Inspect Organization Actor’s internal delegation on demand",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "N",
+    "authority": "Grant-filtered",
+    "sources": "S-031",
+    "prototype": "R",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "AG-011",
+    "capability": "Create/use Sentinel warnings without hidden social scoring",
+    "status": "EXISTING HEARTS/safety fragments → INHERITED",
+    "actionClass": "N/C",
+    "authority": "Policy; hard denials non-waivable",
+    "sources": "S-004 §3.3/§17",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "AG-012",
+    "capability": "Use Envoy only to carry typed ballot/position instruction",
+    "status": "EXISTING elector analog → INHERITED",
+    "actionClass": "A/C-S",
+    "authority": "Member instruction",
+    "sources": "S-004 §8",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "AG-013",
+    "capability": "Use Operator for Forum mechanics without choosing intent",
+    "status": "EXISTING operator analog → INHERITED",
+    "actionClass": "A/C",
+    "authority": "Forum policy",
+    "sources": "S-004 §3.3/§8",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "AG-014",
+    "capability": "Use Profiler for prospect/onboarding evidence only",
+    "status": "MISSING + INHERITED",
+    "actionClass": "G/A",
+    "authority": "Inviter/Persona/policy",
+    "sources": "S-004 §3.3/§6.7",
+    "prototype": "J1",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "AG-015",
+    "capability": "Use CodeManager for Code lifecycle",
+    "status": "EXISTING backend → INHERITED",
+    "actionClass": "C",
+    "authority": "Exact issuer grant",
+    "sources": "S-004, S-011",
+    "prototype": "J1",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "AG-016",
+    "capability": "Use Registrar for registration evidence and monitoring",
+    "status": "MISSING + INHERITED",
+    "actionClass": "G/A",
+    "authority": "Founders/Organization policy",
+    "sources": "S-004",
+    "prototype": "J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "AG-017",
+    "capability": "Use Researcher to Gather Sources/create draft Wisdom",
+    "status": "EXISTING generic worker → INHERITED",
+    "actionClass": "G/A",
+    "authority": "Requester/grant",
+    "sources": "S-004",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "AG-018",
+    "capability": "Use Project Steward to derive work state/offer next Actions",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N/A",
+    "authority": "Project policy",
+    "sources": "S-004",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "AG-019",
+    "capability": "Attach Wisdom with Inform operation",
+    "status": "EXISTING KB mapping → INHERITED",
+    "actionClass": "C",
+    "authority": "Owner/grant authority",
+    "sources": "S-004 §3.4",
+    "prototype": "J1/J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "AG-020",
+    "capability": "Attach Stance with Instruct operation",
+    "status": "EXISTING prompt/tone analog → INHERITED",
+    "actionClass": "C",
+    "authority": "Source or Actor owner/policy",
+    "sources": "S-004 §3.4",
+    "prototype": "J1",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "AG-021",
+    "capability": "Attach scoped external Connection with Empower operation",
+    "status": "EXISTING tools/OAuth → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Account owner + grant",
+    "sources": "S-004 §3.4, S-011",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "AG-022",
+    "capability": "Attach trigger-to-Action Automation with Enable operation",
+    "status": "EXISTING skill scheduler analog → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Persona/Policy",
+    "sources": "S-004 §3.4",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "AG-023",
+    "capability": "Attach versioned Skill with Impart operation",
+    "status": "EXISTING skill analog → INHERITED",
+    "actionClass": "C",
+    "authority": "Source/owner/policy",
+    "sources": "S-004 §3.4, S-011",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "AG-024",
+    "capability": "Test Skill/Actor in simulation incapable of real rails",
+    "status": "EXISTING test primitives → INHERITED",
+    "actionClass": "G/A",
+    "authority": "Creator/policy",
+    "sources": "S-004 §2.6",
+    "prototype": "R",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "AG-025",
+    "capability": "Estimate/reserve/limit/attribute Compute for agent work",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "N/C",
+    "authority": "Budget authority/runtime",
+    "sources": "S-031/S-032",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "AG-026",
+    "capability": "Stream progress, pause, cancel, retry and return partial result",
+    "status": "EXISTING partial → INHERITED",
+    "actionClass": "N/C",
+    "authority": "Requester/policy",
+    "sources": "S-011, S-031",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "AG-027",
+    "capability": "Handle low confidence, contradictory Sources and handoff to human",
+    "status": "MISSING + INHERITED",
+    "actionClass": "A/C",
+    "authority": "Runtime/policy/human",
+    "sources": "S-004 §17",
+    "prototype": "J2 exception",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "AG-028",
+    "capability": "Preserve privacy-safe execution trace and receipt",
+    "status": "EXISTING partial → INHERITED",
+    "actionClass": "N",
+    "authority": "Runtime/Record policy",
+    "sources": "S-004 §18, S-011",
+    "prototype": "J2/J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "AG-029",
+    "capability": "Pause/revoke/archive Actor without erasing Records",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "C",
+    "authority": "Commissioning authority",
+    "sources": "S-011, S-004",
+    "prototype": "J2 exception",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "AG-030",
+    "capability": "Distinguish service principals and bootstrap Mage from social agents",
+    "status": "MISSING + INHERITED",
+    "actionClass": "rule/N",
+    "authority": "Architecture",
+    "sources": "S-004 §3.3",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "COL-001",
+    "capability": "Show compatible shared state with permission-different projections",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Projection/policy engine",
+    "sources": "S-002 §3.1",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "COL-002",
+    "capability": "Show person’s position and act rather than cursor surveillance",
+    "status": "EXISTING game presence analog → INHERITED",
+    "actionClass": "N",
+    "authority": "Participant consent/policy",
+    "sources": "S-002 §6.10",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "COL-003",
+    "capability": "Enter/leave live collaboration explicitly",
+    "status": "EXISTING runtime analog → INHERITED",
+    "actionClass": "C",
+    "authority": "Participant",
+    "sources": "S-002, S-012",
+    "prototype": "J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "COL-004",
+    "capability": "Maintain separate David/Matt session state and causality",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "N/C",
+    "authority": "Each Persona",
+    "sources": "S-032",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "COL-005",
+    "capability": "Deliver state arrival to the affected object",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Event/projection service",
+    "sources": "S-002 bets/§12",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "COL-006",
+    "capability": "Summarize absence as calm object-linked recap",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Ally/projection",
+    "sources": "S-002 §6.3",
+    "prototype": "J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "COL-007",
+    "capability": "Maintain Attention queue as pending Actions/requests, not badge feed",
+    "status": "EXISTING notification analog → PROPOSED/INHERITED",
+    "actionClass": "N/C",
+    "authority": "Persona/grants",
+    "sources": "S-002, S-031",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "COL-008",
+    "capability": "Mark read/defer/decline/resolve without losing Record",
+    "status": "EXISTING notification primitive → INHERITED",
+    "actionClass": "C",
+    "authority": "Persona",
+    "sources": "S-011, S-004",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "COL-009",
+    "capability": "Hand work to another person/Ally/Actor with scope and due state",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C",
+    "authority": "Project role/recipient acceptance",
+    "sources": "S-030, S-004",
+    "prototype": "J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "COL-010",
+    "capability": "See pending requests at person, Relationship, Project or artifact",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Grant-filtered",
+    "sources": "S-002",
+    "prototype": "J1/J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "COL-011",
+    "capability": "Detect and reconcile stale cross-session state",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N/C",
+    "authority": "System + participants",
+    "sources": "S-004 concurrency",
+    "prototype": "J2 exception",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "COL-012",
+    "capability": "Remain productive offline/temporarily disconnected where safe",
+    "status": "MISSING + INHERITED",
+    "actionClass": "G",
+    "authority": "Persona/local client",
+    "sources": "S-002 “weather”",
+    "prototype": "J2 exception",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "COL-013",
+    "capability": "Show reconnection and reconcile queued intent safely",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N/C",
+    "authority": "System/Persona",
+    "sources": "S-002, S-004 idempotency",
+    "prototype": "J2 exception",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "COL-014",
+    "capability": "Provide structured non-spatial list of Scene and pending work",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Persona preference",
+    "sources": "S-002 §13.4",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "GOV-001",
+    "capability": "Create multiple purpose-specific Forums per Organization",
+    "status": "EXISTING market analog → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Organization constitutional authority",
+    "sources": "S-004 §8",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "GOV-002",
+    "capability": "Configure eligibility, quorum, duration, conflicts, appeals and emergency rules",
+    "status": "EXISTING fragments → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Forum/constitutional policy",
+    "sources": "S-004 §8.1",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "GOV-003",
+    "capability": "Draft proposal as exact versioned Commands",
+    "status": "EXISTING typed proposals → INHERITED",
+    "actionClass": "G",
+    "authority": "Eligible Member/role",
+    "sources": "S-004 §8.3, S-010",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "GOV-004",
+    "capability": "Validate parameters, authority, dependencies and conflicts",
+    "status": "EXISTING partial → INHERITED",
+    "actionClass": "N/G",
+    "authority": "Command/policy service",
+    "sources": "S-004 §8.3",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "GOV-005",
+    "capability": "Render honest consequence receipt before opening",
+    "status": "EXISTING fragments → INHERITED",
+    "actionClass": "N",
+    "authority": "Machine renderer",
+    "sources": "S-004 §2.3/§8.3",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "GOV-006",
+    "capability": "Deliberate with versioned evidence/Wisdom",
+    "status": "EXISTING discussion fragments → INHERITED",
+    "actionClass": "A",
+    "authority": "Eligible participants",
+    "sources": "S-004 §8.3",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "GOV-007",
+    "capability": "Cast one equal ballot per eligible Member",
+    "status": "EXISTING vote analog → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Member",
+    "sources": "S-004 §2.5/§8.2",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "GOV-008",
+    "capability": "Independently authorize optional decision-market position",
+    "status": "EXISTING → CONFLICTED/DISABLED live",
+    "actionClass": "C-S",
+    "authority": "Member via Envoy + market policy",
+    "sources": "S-004 §8.2, S-010",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "GOV-009",
+    "capability": "Close/tally/resolve deterministically",
+    "status": "EXISTING fragments → INHERITED",
+    "actionClass": "C",
+    "authority": "Operator/resolution service",
+    "sources": "S-004 §8.3",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "GOV-010",
+    "capability": "Execute passed Commands and track external settlement separately",
+    "status": "EXISTING build/submit → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Forum result + action authority",
+    "sources": "S-004 §8.3",
+    "prototype": "J3/R",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "GOV-011",
+    "capability": "Create effective versioned Policy from enacted result",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C-S",
+    "authority": "Enactment command",
+    "sources": "S-004 §3.2/§8",
+    "prototype": "J3/R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "GOV-012",
+    "capability": "Withdraw/cancel/supersede/reconsider/appeal with Records",
+    "status": "EXISTING partial → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Forum policy",
+    "sources": "S-004 §8.4",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "GOV-013",
+    "capability": "Expose permission-filtered complete receipt chain",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Member/public policy",
+    "sources": "S-004 §8.3",
+    "prototype": "J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "GOV-014",
+    "capability": "Prevent conflict/recused principal from affected authority path",
+    "status": "MISSING + INHERITED",
+    "actionClass": "rule/C",
+    "authority": "Policy engine",
+    "sources": "S-004 §5.5",
+    "prototype": "J3 exception",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "GOV-015",
+    "capability": "Keep historical Market/DAO/Movement terms out of current generic grammar",
+    "status": "HISTORICAL mapping",
+    "actionClass": "rule",
+    "authority": "Product/canon",
+    "sources": "S-001, S-010, S-020–S-025",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "CMP-001",
+    "capability": "Inspect Compute as prepaid usage credits powering intelligent agents",
+    "status": "EXISTING usage fragments → INHERITED",
+    "actionClass": "N",
+    "authority": "Account/grant",
+    "sources": "S-003, S-004 §7",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "CMP-002",
+    "capability": "Show collapsed balance, USDC equivalent, live consumption and Project allocation",
+    "status": "MISSING + PROPOSED/CONFLICTED",
+    "actionClass": "N",
+    "authority": "Persona/grant-filtered",
+    "sources": "S-031/S-032, C-001",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "CMP-003",
+    "capability": "Signal Compute activity outside current context",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "N",
+    "authority": "Persona/grant-filtered",
+    "sources": "S-032",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "CMP-004",
+    "capability": "Zoom to consumption by Ally, Actor, Project and Organization",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "N",
+    "authority": "Account/Organization grants",
+    "sources": "S-031/S-032",
+    "prototype": "R",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "CMP-005",
+    "capability": "Create/inspect ComputeDefinition and pricing policy version",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N/C-S",
+    "authority": "Organization/Forum",
+    "sources": "S-004 §7",
+    "prototype": "J3/R",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "CMP-006",
+    "capability": "Maintain ComputeAccount by owner/Organization/restrictions",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Ledger",
+    "sources": "S-004 §7.1",
+    "prototype": "J2/R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "CMP-007",
+    "capability": "Purchase Compute through approved external rail",
+    "status": "EXISTING market/checkout fragments → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Purchaser + rail",
+    "sources": "S-004 §7.1/§7.2",
+    "prototype": "J3 simulated",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "CMP-008",
+    "capability": "Grant Compute under Agreement/Policy",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C-S",
+    "authority": "Institution/Organization authority",
+    "sources": "S-004 §7.1",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "CMP-009",
+    "capability": "Issue Compute only through authorized command/Policy",
+    "status": "EXISTING mint analog → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Forum/issuer authority",
+    "sources": "S-004 §7.1",
+    "prototype": "—",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "CMP-010",
+    "capability": "Allocate/deallocate Project/Actor/Automation budget",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "C",
+    "authority": "Persona/Project/Organization budget authority",
+    "sources": "S-031",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "CMP-011",
+    "capability": "Estimate expensive work where useful and warn before commitment",
+    "status": "EXISTING token UI mock → PROPOSED",
+    "actionClass": "N/C",
+    "authority": "Runtime/budget policy",
+    "sources": "S-031",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "CMP-012",
+    "capability": "Reserve Compute before work and release/settle accurately",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C",
+    "authority": "Ledger/runtime",
+    "sources": "S-004 §7/§13.7",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "CMP-013",
+    "capability": "Attribute consumption to Action, Project, agent, model/tool and policy",
+    "status": "EXISTING message usage partial → INHERITED",
+    "actionClass": "N/C",
+    "authority": "Runtime/ledger",
+    "sources": "S-004 §7.1",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "CMP-014",
+    "capability": "Enforce per-job, daily, Project, Actor and Organization limits",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "C/rule",
+    "authority": "Budget authority/policy",
+    "sources": "S-031",
+    "prototype": "J2 exception",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "CMP-015",
+    "capability": "Pause/stop/return partial result on low Compute or overrun",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "C",
+    "authority": "Runtime/policy/Persona",
+    "sources": "S-031",
+    "prototype": "J2 exception",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "CMP-016",
+    "capability": "Show provider cost, applicable multiple/fixed charges and final charge",
+    "status": "MISSING + INHERITED/CONFLICTED",
+    "actionClass": "N",
+    "authority": "Pricing policy/receipt",
+    "sources": "S-004 §7.3, C-001",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "CMP-017",
+    "capability": "Show Agency Premium without implying investment return",
+    "status": "MISSING + PROPOSED/CONFLICTED",
+    "actionClass": "N",
+    "authority": "Approved policy/copy",
+    "sources": "S-004 §7.3, S-031",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "CMP-018",
+    "capability": "Inspect supply/demand only under approved definition/data",
+    "status": "MISSING + PROPOSED/CONFLICTED",
+    "actionClass": "N",
+    "authority": "Approved policy/data",
+    "sources": "S-031",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "CMP-019",
+    "capability": "Define/display Organization effectiveness without hidden Member score",
+    "status": "MISSING + PROPOSED/OPEN",
+    "actionClass": "N",
+    "authority": "Approved outcome model",
+    "sources": "S-024, S-031",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "CMP-020",
+    "capability": "Create frozen lineage snapshot only for settled Compute purchase",
+    "status": "EXISTING lineage fragments → INHERITED/CONFLICTED live",
+    "actionClass": "C",
+    "authority": "Purchase settlement service",
+    "sources": "S-004 §7.4–7.5",
+    "prototype": "J3/R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "CMP-021",
+    "capability": "Calculate versioned waterfall/fallbacks summing to 100%",
+    "status": "EXISTING historical primitives → INHERITED/CONFLICTED live",
+    "actionClass": "C-S",
+    "authority": "Policy/ledger",
+    "sources": "S-004 §7.4",
+    "prototype": "J3 represented",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "CMP-022",
+    "capability": "Keep Offerings/work/votes/grants from triggering lineage",
+    "status": "MISSING + INHERITED rule",
+    "actionClass": "rule",
+    "authority": "Ledger/policy",
+    "sources": "S-004 §2.5",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "CMP-023",
+    "capability": "Inspect treasury balances from double-entry ledger/verified rail",
+    "status": "EXISTING treasury surface → INHERITED",
+    "actionClass": "N",
+    "authority": "Treasury grants",
+    "sources": "S-004 §2.5, S-010",
+    "prototype": "J3",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "CMP-024",
+    "capability": "Prepare/approve/execute/reconcile treasury movement",
+    "status": "EXISTING build/submit → INHERITED",
+    "actionClass": "G/C-S",
+    "authority": "Treasury policy/threshold",
+    "sources": "S-004, S-010",
+    "prototype": "J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "CMP-025",
+    "capability": "Handle pending, duplicate, partial, failed and reversed settlement",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N/C",
+    "authority": "Ledger/reconciler/authority",
+    "sources": "S-004 §2.3",
+    "prototype": "J3 exception",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "CMP-026",
+    "capability": "Gate transferable/DEX/lineage/liquidity live value independently",
+    "status": "EXISTING technical → INHERITED disabled",
+    "actionClass": "C-S/rule",
+    "authority": "Feature gate + counsel/operator sign-off",
+    "sources": "S-004 §7.7–7.8",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "CMP-027",
+    "capability": "Keep actual USD↔USDC and Compute↔USDC exchange outside Studio",
+    "status": "OWNER DIRECTION",
+    "actionClass": "rule",
+    "authority": "Approved web/rail surface",
+    "sources": "S-031",
+    "prototype": "R",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "DOM-001",
+    "capability": "Install/version/disable DomainPackage without changing kernel",
+    "status": "EXISTING domain code → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Ecosystem/Organization policy",
+    "sources": "S-004 §9.4",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "DOM-002",
+    "capability": "Define domain ResourceTypes, Actions, roles, credentials, Skills and Actors",
+    "status": "EXISTING fragmented → INHERITED",
+    "actionClass": "G/C-S",
+    "authority": "Package authority",
+    "sources": "S-004 §9.4",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "DOM-003",
+    "capability": "Activate commands individually by Organization/jurisdiction/version",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C-S",
+    "authority": "Policy/feature gate",
+    "sources": "S-004 §9.6",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "DOM-004",
+    "capability": "Create/manage generic artifact/asset metadata and rights",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "G/C",
+    "authority": "Resource controller",
+    "sources": "S-010–S-013",
+    "prototype": "J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "DOM-005",
+    "capability": "Create/edit/version/validate Scene",
+    "status": "EXISTING",
+    "actionClass": "G/C",
+    "authority": "Project/domain role",
+    "sources": "S-010–S-013",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "DOM-006",
+    "capability": "Generate/refine Scene with Sources, Actor and Compute receipt",
+    "status": "EXISTING partial → INHERITED",
+    "actionClass": "A/G/C",
+    "authority": "Project authority",
+    "sources": "S-012",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "DOM-007",
+    "capability": "Create/edit/version NPC, challenge, Quest and Route",
+    "status": "EXISTING",
+    "actionClass": "G/C",
+    "authority": "Domain role",
+    "sources": "S-010–S-013",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "DOM-008",
+    "capability": "Plan/generate/edit/undo/redo/validate game",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "A/G/C",
+    "authority": "Project role",
+    "sources": "S-012",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "DOM-009",
+    "capability": "Playtest/publish/archive game version",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "G/C-S",
+    "authority": "Project/publishing authority",
+    "sources": "S-010–S-013",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "DOM-010",
+    "capability": "Operate synchronous game Scene and runtime dialogue",
+    "status": "EXISTING",
+    "actionClass": "A/C",
+    "authority": "Player/domain policy",
+    "sources": "S-012",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "DOM-011",
+    "capability": "Track explicit game score/achievement/progress without global social rank",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "N/C",
+    "authority": "Game policy",
+    "sources": "S-012/S-013, S-004 §2.6",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "DOM-012",
+    "capability": "Build/publish website/blog/media artifact",
+    "status": "EXISTING partial → INHERITED",
+    "actionClass": "G/C-S",
+    "authority": "Project/publishing authority",
+    "sources": "S-010",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "DOM-013",
+    "capability": "Create Support domain workflow/package",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "A/G/C",
+    "authority": "Service Alliance policy/credentialed humans",
+    "sources": "S-020, S-022",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "DOM-014",
+    "capability": "Create Connection domain workflow/package",
+    "status": "EXISTING fragments → PROPOSED",
+    "actionClass": "A/G/C",
+    "authority": "Service Alliance/Alliance roles",
+    "sources": "S-020–S-024",
+    "prototype": "J1/J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "DOM-015",
+    "capability": "Create History domain workflow/package",
+    "status": "EXISTING assets/knowledge fragments → PROPOSED",
+    "actionClass": "A/G/C",
+    "authority": "Archive stewards/rights holders",
+    "sources": "S-020–S-023",
+    "prototype": "J2/R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "DOM-016",
+    "capability": "Roll Call: migrate/manage association membership, communications and events",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "G/C",
+    "authority": "Organization/Alliance roles",
+    "sources": "S-020/S-023",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "DOM-017",
+    "capability": "LegacyLog: scan/ingest/describe/verify/archive material",
+    "status": "EXISTING primitives → PROPOSED",
+    "actionClass": "G/A/C",
+    "authority": "Archive stewards",
+    "sources": "S-020/S-022",
+    "prototype": "J2/R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "DOM-018",
+    "capability": "Veteran Voices: consented oral-history interview/transcript/storyboard",
+    "status": "EXISTING primitives → PROPOSED",
+    "actionClass": "A/G/C-S",
+    "authority": "Participant/interviewer/policy",
+    "sources": "S-020",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "DOM-019",
+    "capability": "Service Connected: benefits/support/referral/Safe Harbor workflow",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "A/G/C-S",
+    "authority": "Member + credentialed/human support",
+    "sources": "S-020/S-022",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "DOM-020",
+    "capability": "Campaign: sourced historical map/Scene/personal overlay",
+    "status": "EXISTING primitives → PROPOSED",
+    "actionClass": "N/G",
+    "authority": "Archive steward/Persona",
+    "sources": "S-020/S-022",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "DOM-021",
+    "capability": "Wall of Honor: memorial submission/provenance/family correction",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "G/C-S",
+    "authority": "Family/steward/policy",
+    "sources": "S-020",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "DOM-022",
+    "capability": "Into the Breach: career translation/referral/application preparation",
+    "status": "EXISTING primitives → PROPOSED",
+    "actionClass": "A/G/C-S",
+    "authority": "Member; external submission explicit",
+    "sources": "S-020/S-024",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "DOM-023",
+    "capability": "The Forge: mentor/cohort/leadership/speaking workflows",
+    "status": "EXISTING primitives → PROPOSED",
+    "actionClass": "A/G/C",
+    "authority": "Participants/Organization roles",
+    "sources": "S-020/S-024",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "DOM-024",
+    "capability": "Archive migration with counts, mapping, duplicate/rights/completeness proof",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "G/C-S",
+    "authority": "Source Organization/archive steward",
+    "sources": "S-022/S-023",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "DOM-025",
+    "capability": "Track domain outcomes without hidden behavioral scoring",
+    "status": "MISSING + PROPOSED/INHERITED",
+    "actionClass": "N",
+    "authority": "Organization policy/consent",
+    "sources": "S-024, S-004 §2.6",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "UX-001",
+    "capability": "Render whole application window as Field",
+    "status": "EXISTING thin → INHERITED",
+    "actionClass": "N",
+    "authority": "Projection service",
+    "sources": "S-002",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-002",
+    "capability": "Orient in far Constellation",
+    "status": "EXISTING world map thin → INHERITED",
+    "actionClass": "N",
+    "authority": "Persona/grants",
+    "sources": "S-002",
+    "prototype": "R",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-003",
+    "capability": "Inhabit middle Relational Terrain",
+    "status": "EXISTING thin → INHERITED",
+    "actionClass": "N",
+    "authority": "Persona/grants",
+    "sources": "S-002",
+    "prototype": "J1/J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-004",
+    "capability": "Make in near Living Workbench",
+    "status": "EXISTING editor/prototype thin → INHERITED",
+    "actionClass": "N/G/A/C",
+    "authority": "Persona/grants",
+    "sources": "S-002",
+    "prototype": "J2",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-005",
+    "capability": "Keep Organization ground and Project worksite spatially legible",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Projection service",
+    "sources": "S-002",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-006",
+    "capability": "Inspect node through presence/relationship/capability/authority/history",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Grant-filtered",
+    "sources": "S-002 §3.2",
+    "prototype": "J1–J3",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "UX-007",
+    "capability": "Use Clear, Context and Focus semantic HUD rests",
+    "status": "EXISTING visual analog → INHERITED",
+    "actionClass": "N",
+    "authority": "Persona",
+    "sources": "S-002 §4.2",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-008",
+    "capability": "Persist Self/Ally anchor",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "N/A",
+    "authority": "Persona",
+    "sources": "S-031",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-009",
+    "capability": "Persist current-context anchor",
+    "status": "EXISTING container analog → PROPOSED",
+    "actionClass": "N",
+    "authority": "Persona",
+    "sources": "S-031",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-010",
+    "capability": "Persist Compute anchor",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "N",
+    "authority": "Persona/grants",
+    "sources": "S-031/S-032",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-011",
+    "capability": "Persist Attention anchor",
+    "status": "EXISTING notification analog → PROPOSED",
+    "actionClass": "N/C",
+    "authority": "Persona",
+    "sources": "S-031",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-012",
+    "capability": "Persist Find/approach-anything anchor",
+    "status": "EXISTING search analog → PROPOSED",
+    "actionClass": "N",
+    "authority": "Persona/grants",
+    "sources": "S-031",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-013",
+    "capability": "Search brings permitted node near instead of opening detached page",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Persona/grants",
+    "sources": "S-002 §5.1",
+    "prototype": "J1/R",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-014",
+    "capability": "Gather by pointer/keyboard/voice without committing",
+    "status": "EXISTING thin → INHERITED",
+    "actionClass": "G",
+    "authority": "Persona",
+    "sources": "S-002 §5.2",
+    "prototype": "J1/J2",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "UX-015",
+    "capability": "Offer only type-valid and authority-valid contextual verbs",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N/G/A/C",
+    "authority": "Command/policy service",
+    "sources": "S-002 §5.2, S-004",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-016",
+    "capability": "Preserve context while crossing Portal/surface/Organization",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Persona/grants",
+    "sources": "S-002 §5.6",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "UX-017",
+    "capability": "Anchor conversation to visible context object",
+    "status": "MISSING + PROPOSED/INHERITED",
+    "actionClass": "A",
+    "authority": "Persona/Ally",
+    "sources": "S-002, S-030",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-018",
+    "capability": "Identify speaker, mediator, audience, Sources, scope and authority",
+    "status": "MISSING + PROPOSED/INHERITED",
+    "actionClass": "N",
+    "authority": "Runtime/projection",
+    "sources": "S-001, S-030–S-032",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-019",
+    "capability": "Show suggestion vs preparation vs instruction vs commitment",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "N",
+    "authority": "Action state",
+    "sources": "S-031",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-020",
+    "capability": "Preview exact consequence before Commit",
+    "status": "EXISTING fragments → INHERITED",
+    "actionClass": "N/C",
+    "authority": "Machine receipt renderer",
+    "sources": "S-002 §5.4, S-004",
+    "prototype": "J2/J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-021",
+    "capability": "Use one primary safe touch; gold only for authoritative Record acts",
+    "status": "EXISTING visual fragments → INHERITED",
+    "actionClass": "N",
+    "authority": "Design system/action state",
+    "sources": "S-002 §11",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-022",
+    "capability": "Use motion only to explain state/arrival/transition/consequence",
+    "status": "EXISTING fragments → INHERITED",
+    "actionClass": "N",
+    "authority": "Design system",
+    "sources": "S-002 §12",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-023",
+    "capability": "Apply reduced-motion equivalents and interruptible transitions",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Persona/system",
+    "sources": "S-002 §12",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-024",
+    "capability": "Apply unified espresso/dark/magical/friendly visual atmosphere",
+    "status": "EXISTING partial → PROPOSED",
+    "actionClass": "N",
+    "authority": "Shared design system",
+    "sources": "S-010/S-015, S-030/S-032",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-025",
+    "capability": "Apply bounded Organization tokens without theme fragmentation",
+    "status": "MISSING + PROPOSED",
+    "actionClass": "N",
+    "authority": "Shared system + Organization policy",
+    "sources": "S-032",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "UX-026",
+    "capability": "Provide keyboard, pointer, voice-compatible and screen-reader grammar",
+    "status": "EXISTING inconsistent → INHERITED",
+    "actionClass": "N/G/A/C",
+    "authority": "Persona",
+    "sources": "S-002 §6.11/§13.4",
+    "prototype": "J1–J3",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "SYS-001",
+    "capability": "Register versioned ActionDefinition with schema/risk/authority/handler",
+    "status": "MISSING + INHERITED",
+    "actionClass": "rule",
+    "authority": "Ecosystem/Organization policy",
+    "sources": "S-004 §4.2",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "SYS-002",
+    "capability": "Create ActionRequest from language/UI/Automation/Actor/Forum/event",
+    "status": "EXISTING fragments → INHERITED",
+    "actionClass": "G/A",
+    "authority": "Authenticated requester/policy",
+    "sources": "S-004 §4.3",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SYS-003",
+    "capability": "Resolve exact Organization and authority class",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N/rule",
+    "authority": "Policy engine",
+    "sources": "S-004 §2.1/§4.4",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SYS-004",
+    "capability": "Authorize with principal, role, grant, context, purpose, state and conflicts",
+    "status": "EXISTING partial → INHERITED",
+    "actionClass": "N/rule",
+    "authority": "Policy engine",
+    "sources": "S-004 §5.1",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SYS-005",
+    "capability": "Default deny ambiguous identity/context/policy/state/authority",
+    "status": "MISSING + INHERITED",
+    "actionClass": "rule",
+    "authority": "Policy engine",
+    "sources": "S-004 §2.1",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SYS-006",
+    "capability": "Render exact confirmation mode by risk",
+    "status": "EXISTING approval fragments → INHERITED",
+    "actionClass": "C/C-S",
+    "authority": "Persona/role/Forum/treasury",
+    "sources": "S-004 §4.2/§5.8",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SYS-007",
+    "capability": "Require explicit sovereign confirmation for payment/signature/vote/agreement/publish/access/deploy",
+    "status": "MISSING + PROPOSED/INHERITED",
+    "actionClass": "C-S",
+    "authority": "Sovereign principal",
+    "sources": "S-031, S-004",
+    "prototype": "J2/J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SYS-008",
+    "capability": "Execute idempotent named Command with expected versions",
+    "status": "EXISTING fragments → INHERITED",
+    "actionClass": "C",
+    "authority": "Authorized command service",
+    "sources": "S-004 §2.3/§4",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SYS-009",
+    "capability": "Track ActionRun and delegated performer",
+    "status": "EXISTING traces partial → INHERITED",
+    "actionClass": "N/C",
+    "authority": "Runtime",
+    "sources": "S-004 §4.7",
+    "prototype": "J2/J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SYS-010",
+    "capability": "Track ExternalOperation as saga with pending/terminal states",
+    "status": "EXISTING on-chain partial → INHERITED",
+    "actionClass": "N/C",
+    "authority": "Reconciler/authorized service",
+    "sources": "S-004 §2.3/§4.7",
+    "prototype": "J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SYS-011",
+    "capability": "Produce immutable permission-filtered Record/receipt",
+    "status": "EXISTING receipts partial → INHERITED",
+    "actionClass": "N/C",
+    "authority": "Runtime/Record service",
+    "sources": "S-004 §4.8",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SYS-012",
+    "capability": "Correct by superseding, never rewriting history",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C-S",
+    "authority": "Authorized principal",
+    "sources": "S-004 §2.3",
+    "prototype": "J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SYS-013",
+    "capability": "Compensate/rollback only where command defines it",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C-S",
+    "authority": "Exact authority",
+    "sources": "S-004 §4.2",
+    "prototype": "J3 exception",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "SYS-014",
+    "capability": "Separate simulation resources from real rails structurally",
+    "status": "MISSING + INHERITED",
+    "actionClass": "rule",
+    "authority": "Architecture/feature gate",
+    "sources": "S-004 §2.6",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SYS-015",
+    "capability": "Audit permission/access/agent/Compute/treasury/registry changes",
+    "status": "EXISTING fragments → INHERITED",
+    "actionClass": "N",
+    "authority": "Grant-filtered",
+    "sources": "S-004 §18",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SYS-016",
+    "capability": "Expose Member-visible Vigil without raw private prompts",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N",
+    "authority": "Persona/Organization grants",
+    "sources": "S-003/S-004 §18.2",
+    "prototype": "R",
+    "v0Coverage": "represented"
+  },
+  {
+    "id": "SYS-017",
+    "capability": "Log IDs/reasons/versions/latency/cost/error, not raw secrets",
+    "status": "EXISTING traces → INHERITED",
+    "actionClass": "rule",
+    "authority": "Operations policy",
+    "sources": "S-004 §2.6/§18",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "SYS-018",
+    "capability": "Support retention, legal hold and purpose-limited deletion",
+    "status": "MISSING + INHERITED",
+    "actionClass": "C-S",
+    "authority": "Policy/credentialed authority",
+    "sources": "S-004 §17",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "SYS-019",
+    "capability": "Handle injection/manipulation/coercion with visible refusal/escalation",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N/C",
+    "authority": "Policy/Sentinel/human",
+    "sources": "S-002 §13, S-004 §17",
+    "prototype": "J1/J2 exception",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SYS-020",
+    "capability": "Prevent hidden global trust/reputation/productivity/behavior score",
+    "status": "MISSING + INHERITED rule",
+    "actionClass": "rule",
+    "authority": "Architecture",
+    "sources": "S-004 §2.6, S-002 §13.3",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SYS-021",
+    "capability": "Provide admin/operational controls without general superuser",
+    "status": "EXISTING admin → INHERITED",
+    "actionClass": "C-S",
+    "authority": "Scoped role/Mage/ServicePrincipal",
+    "sources": "S-004 §3.3",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "SYS-022",
+    "capability": "Monitor service health, queues, reconciliation and feature gates",
+    "status": "EXISTING → INHERITED",
+    "actionClass": "N/C",
+    "authority": "Service principals/operators",
+    "sources": "S-011–S-013, S-004 §18",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "SYS-023",
+    "capability": "Export/OpenAPI/event contracts for production handoff",
+    "status": "EXISTING partial → INHERITED",
+    "actionClass": "N",
+    "authority": "Engineering/operations",
+    "sources": "S-010–S-013",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "SYS-024",
+    "capability": "Meet keyboard, screen reader, contrast, zoom, reduced motion and low-bandwidth requirements",
+    "status": "MISSING + INHERITED",
+    "actionClass": "rule",
+    "authority": "Product/engineering",
+    "sources": "S-002",
+    "prototype": "J1–J3",
+    "v0Coverage": "demonstrated"
+  },
+  {
+    "id": "SYS-025",
+    "capability": "Preserve localization/time-zone/date/currency/number semantics",
+    "status": "MISSING + completeness proposal",
+    "actionClass": "N/C",
+    "authority": "Persona/Organization policy",
+    "sources": "Completeness audit",
+    "prototype": "—",
+    "v0Coverage": "catalog-only"
+  },
+  {
+    "id": "SYS-026",
+    "capability": "Detect duplicate, stale, partial and uncertain external outcomes",
+    "status": "MISSING + INHERITED",
+    "actionClass": "N/C",
+    "authority": "Reconciler/authority",
+    "sources": "S-004 §2.3",
+    "prototype": "J3 exception",
+    "v0Coverage": "demonstrated"
+  }
+]

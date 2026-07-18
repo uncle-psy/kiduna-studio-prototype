@@ -3,7 +3,10 @@
 @font-face { font-family: "Avenir"; src: url("/fonts/avenir-heavy.ttf") format("truetype"); font-weight: 700; font-display: swap; }
 
 * { box-sizing: border-box; }
-html, body { width: 100%; min-height: 100%; margin: 0; background: #0d0805; }
-body { overflow: hidden; -webkit-font-smoothing: antialiased; }
-button, input { font: inherit; }
+html, body { width: 100%; min-height: 100%; margin: 0; background: #0b0705; }
+html { color-scheme: dark; }
+body { overflow: hidden; color: #f4eadb; font-family: "Avenir", ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+button, input, select { color: inherit; font: inherit; }
+button { border: 0; }
+button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible { outline: 2px solid #7ddae4; outline-offset: 3px; }
 ::selection { background: #35d8e5; color: #09282a; }

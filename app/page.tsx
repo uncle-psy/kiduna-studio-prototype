@@ -1,9 +1,5 @@
-import { getCurrentAccount } from "@/lib/auth";
-import HomeClient from "./HomeClient";
+import StudioV0 from "./StudioV0";
 
-export const dynamic = "force-dynamic";
-
-export default async function HomePage({ searchParams }: { searchParams: Promise<{ verification?: string }> }) {
-  const [account, query] = await Promise.all([getCurrentAccount(), searchParams]);
-  return <HomeClient account={account ? { name: account.name, handle: account.handle, email: account.email } : null} verification={query.verification ?? null} />;
+export default function StudioPrototypePage() {
+  return <StudioV0 />;
 }
