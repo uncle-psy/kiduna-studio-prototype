@@ -54,8 +54,13 @@ type FieldNodeData = { id: string; kind: NodeKind; title: string; meta: string; 
 
 async function copyJourneyText(text: string) {
   if (navigator.clipboard?.writeText) {
-    await navigator.clipboard.writeText(text);
-    return;
+    try {
+      await navigator.clipboard.writeText(text);
+      return;
+    } catch {
+      // Fall through to the selection-based copy method when clipboard
+      // permissions are unavailable in the current browser context.
+    }
   }
   const textarea = document.createElement("textarea");
   textarea.value = text;
