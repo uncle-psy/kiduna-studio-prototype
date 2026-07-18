@@ -4,11 +4,12 @@ import Image from "next/image";
 import { CSSProperties, FormEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import capabilityRows from "@/lib/capabilities.json";
 import {
-  JOURNEY_ENGINEERING_NOTES,
   PERSONA_JOURNEY_STEPS,
   JourneyPanel,
   JourneyStepId,
+  journeyEngineeringNotes,
   journeyStory,
+  personaJourneySteps,
 } from "@/lib/persona-journey";
 import {
   FIXTURES,
@@ -302,7 +303,7 @@ export default function StudioV0() {
         setReduced={setReduced}
         journeyStep={journeyStep}
         journeyPanel={journeyPanel}
-        onJourneyStep={(id) => { setJourneyStep(id); setJourneyPanel(null); setToast(`${PERSONAS[persona].firstName} · Step 1 active`); }}
+        onJourneyStep={(id) => { const stepNumber = PERSONA_JOURNEY_STEPS.find((step) => step.id === id)?.number ?? 1; setJourneyStep(id); setJourneyPanel(null); setToast(`${PERSONAS[persona].firstName} · Step ${stepNumber} active`); }}
         onJourneyPanel={(panel) => setJourneyPanel((current) => current === panel ? null : panel)}
         onScenario={(id) => { setJourneyStep(null); setJourneyPanel(null); replaceState(createFixtureState(id), `Deterministic fixture loaded · ${id}`); }}
         onPlate={openPlate}
@@ -401,10 +402,12 @@ function JourneyScene({ step, persona, panel, reduced, onClosePanel }: {
   onClosePanel: () => void;
 }) {
   const journey = PERSONA_JOURNEY_STEPS.find((candidate) => candidate.id === step) ?? PERSONA_JOURNEY_STEPS[0];
-  const story = journeyStory(persona);
+  const story = journeyStory(persona, step);
+  const engineeringNotes = journeyEngineeringNotes(step);
+  const reducedSuffix = journey.route.includes("?") ? "&reduced=1" : "?reduced=1";
   return <section className={styles.journeyScene} aria-label={`${journey.label} for ${PERSONAS[persona].firstName}`}>
-    <iframe src={`${journey.route}${reduced ? "?reduced=1" : ""}`} title={journey.label} />
-    {panel && <aside className={styles.journeyPanel} aria-label={panel === "story" ? story.eyebrow : JOURNEY_ENGINEERING_NOTES.eyebrow}>
+    <iframe src={`${journey.route}${reduced ? reducedSuffix : ""}`} title={journey.label} />
+    {panel && <aside className={styles.journeyPanel} aria-label={panel === "story" ? story.eyebrow : engineeringNotes.eyebrow}>
       <button className={styles.journeyPanelClose} onClick={onClosePanel} aria-label="Close journey notes">×</button>
       {panel === "story" ? <>
         <small>{story.eyebrow}</small>
@@ -413,10 +416,10 @@ function JourneyScene({ step, persona, panel, reduced, onClosePanel }: {
         <p>{story.body}</p>
         <blockquote>{story.moment}</blockquote>
       </> : <>
-        <small>{JOURNEY_ENGINEERING_NOTES.eyebrow}</small>
-        <h1>{JOURNEY_ENGINEERING_NOTES.title}</h1>
-        <p className={styles.journeySource}><b>Source of truth</b><a href={JOURNEY_ENGINEERING_NOTES.source} target="_blank" rel="noreferrer">{JOURNEY_ENGINEERING_NOTES.source} ↗</a></p>
-        <ol>{JOURNEY_ENGINEERING_NOTES.notes.map((note) => <li key={note}>{note}</li>)}</ol>
+        <small>{engineeringNotes.eyebrow}</small>
+        <h1>{engineeringNotes.title}</h1>
+        <p className={styles.journeySource}><b>{engineeringNotes.sourceHref ? "Source of truth" : "Reference"}</b>{engineeringNotes.sourceHref ? <a href={engineeringNotes.sourceHref} target="_blank" rel="noreferrer">{engineeringNotes.source} ↗</a> : <span>{engineeringNotes.source}</span>}</p>
+        <ol>{engineeringNotes.notes.map((note) => <li key={note}>{note}</li>)}</ol>
       </>}
     </aside>}
   </section>;
@@ -439,13 +442,15 @@ function LabDock({ persona, switchPersona, state, structured, setStructured, red
   onReset: () => void;
 }) {
   const [open, setOpen] = useState(false);
+  const journeyOptions = personaJourneySteps(persona);
+  const activeJourney = PERSONA_JOURNEY_STEPS.find((step) => step.id === journeyStep);
   return <aside className={`${styles.labDock} ${open ? styles.labOpen : ""}`} aria-label="Design lab utilities">
-    <button className={styles.labToggle} onClick={() => setOpen((value) => !value)} aria-expanded={open}><i /> DESIGN LAB <span>{journeyStep ? "STEP 1" : state.scenario === "clean" ? `R${state.revision}` : state.scenario}</span></button>
+    <button className={styles.labToggle} onClick={() => setOpen((value) => !value)} aria-expanded={open}><i /> DESIGN LAB <span>{activeJourney ? `STEP ${activeJourney.number}` : state.scenario === "clean" ? `R${state.revision}` : state.scenario}</span></button>
     {open && <div className={styles.labBody}>
       <p>Utilities are outside canonical Member UI. All consequences are deterministic simulation.</p>
       <fieldset><legend>Independent session</legend><button className={persona === "david" ? styles.labActive : ""} onClick={() => switchPersona("david")}>David</button><button className={persona === "matt" ? styles.labActive : ""} onClick={() => switchPersona("matt")}>Matt</button></fieldset>
       <div className={styles.pairedLinks}><a href="?persona=david" target="_blank" rel="noreferrer">Open David ↗</a><a href="?persona=matt" target="_blank" rel="noreferrer">Open Matt ↗</a></div>
-      <label>Persona Journey<select value={journeyStep ?? ""} onChange={(event) => onJourneyStep(event.target.value as JourneyStepId)}><option value="" disabled>Current Studio scenario</option>{PERSONA_JOURNEY_STEPS.map((step) => <option value={step.id} key={step.id}>{step.label}</option>)}</select></label>
+      <label>Persona Journey<select value={journeyStep ?? ""} onChange={(event) => onJourneyStep(event.target.value as JourneyStepId)}><option value="" disabled>Current Studio scenario</option>{journeyOptions.map((step) => <option value={step.id} key={step.id}>{step.label}</option>)}</select></label>
       {journeyStep && <div className={styles.journeyButtons}><button className={journeyPanel === "story" ? styles.labActive : ""} onClick={() => onJourneyPanel("story")}>{PERSONAS[persona].firstName}’s Story</button><button className={journeyPanel === "engineering" ? styles.labActive : ""} onClick={() => onJourneyPanel("engineering")}>Engineering Notes</button></div>}
       <label>State plate<select defaultValue="" onChange={(event) => { onPlate(event.target.value); event.target.value = ""; }}><option value="" disabled>Choose one of 15…</option>{STATE_PLATES.map((plate) => <option value={plate.id} key={plate.id}>{plate.title}</option>)}</select></label>
       <label>P0 fixture<select defaultValue="" onChange={(event) => { onScenario(event.target.value as FixtureId); event.target.value = ""; }}><option value="" disabled>Inject deterministic state…</option>{FIXTURES.filter((fixture) => fixture.priority === "P0").map((fixture) => <option value={fixture.id} key={fixture.id}>{fixture.journey} · {fixture.title}</option>)}</select></label>
