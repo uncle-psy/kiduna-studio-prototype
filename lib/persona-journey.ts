@@ -9,7 +9,7 @@ export const PERSONA_JOURNEY_STEPS = [
     number: 1,
     title: "Landing Page — Outside The Field",
     label: "1. Landing Page — Outside The Field",
-    route: "/journey/landing/index.html",
+    route: "/journey/landing",
   },
 ];
 

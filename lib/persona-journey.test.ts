@@ -8,7 +8,7 @@ describe("persona journey", () => {
       id: "landing",
       number: 1,
       label: "1. Landing Page — Outside The Field",
-      route: "/journey/landing/index.html",
+      route: "/journey/landing",
     });
   });
 
