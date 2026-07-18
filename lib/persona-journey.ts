@@ -1,6 +1,6 @@
 import type { PersonaKey } from "./v0-model";
 
-export type JourneyStepId = "landing" | "signup-start";
+export type JourneyStepId = "landing" | "signup-start" | "checkout";
 export type JourneyPanel = "story" | "engineering";
 
 type JourneyStep = {
@@ -29,6 +29,14 @@ export const PERSONA_JOURNEY_STEPS: readonly JourneyStep[] = [
     route: "/journey/signup?inviter=The%20Genesis%20Ecosystem",
     personas: ["david"],
   },
+  {
+    id: "checkout",
+    number: 3,
+    title: "Checkout — Outside the Field",
+    label: "3. Checkout — Outside the Field",
+    route: "/journey/checkout",
+    personas: ["david"],
+  },
 ];
 
 const PERSONA_NAMES: Record<PersonaKey, string> = {
@@ -42,6 +50,15 @@ export function personaJourneySteps(persona: PersonaKey) {
 
 export function journeyStory(persona: PersonaKey, step: JourneyStepId) {
   const name = PERSONA_NAMES[persona];
+  if (step === "checkout") {
+    return {
+      eyebrow: `Step 3 · ${name}’s Story`,
+      title: `${name} reaches the founding checkout`,
+      role: "Prospective Founding Member",
+      body: `${name} has completed the preceding invitation and sign-up sequence and now reaches a consequential choice: whether to purchase 100 USDC of Compute by card or through a Solana wallet. ${name} is a Prospective Founding Member, not yet a Founding Member. Viewing this page, choosing a payment path, or connecting a wallet must not itself create a purchase, membership, Compute balance, or entry into the Field.`,
+      moment: `${name} can understand the offer and choose a payment path, but membership and Compute require an explicit purchase, authoritative settlement, and an inspectable receipt.`,
+    };
+  }
   if (step === "signup-start") {
     return {
       eyebrow: `Step 2 · ${name}’s Story`,
@@ -90,6 +107,21 @@ const ENGINEERING_NOTES = {
       "Do not reveal whether an invalid code once existed, who created it, or other inviter details on the invalid-code state.",
     ],
   },
+  checkout: {
+    eyebrow: "Step 3 · Engineering Notes",
+    title: "Checkout — Outside the Field",
+    source: "Supplied checkout.html reference",
+    sourceHref: null,
+    notes: [
+      "Preserve the supplied checkout.html composition, purchase-path comparison, responsive behavior, and visual hierarchy for this prototype step.",
+      "This Design Lab scene is non-transactional: Buy 100 USDC and Connect Solana Wallet must not initiate a real payment, wallet connection, Compute purchase, or membership change.",
+      "In production, model checkout as preview → explicit confirmation → external settlement → authoritative receipt. Cancellation, decline, timeout, partial settlement, duplicate submission, and receipt failure require distinct recoverable states.",
+      "Card purchase and Solana wallet transfer are separate Actions. Never auto-connect a wallet, auto-select an account, or treat connection as consent to transfer.",
+      "The price, currency, Compute quantity, supply policy, and Founding Member entitlement must be server-provided policy variables. The reference page’s $100 / 100 USDC and lifetime-membership claims require product, treasury, and legal validation before production use.",
+      "David remains outside the Field as a Prospective Founding Member until the system has authoritative evidence of the required outcome. A client redirect or payment-provider callback alone is not sufficient.",
+      "Never place payment credentials, wallet secrets, signing material, or treasury authority in the browser client.",
+    ],
+  },
 } satisfies Record<JourneyStepId, {
   eyebrow: string;
   title: string;
@@ -100,4 +132,15 @@ const ENGINEERING_NOTES = {
 
 export function journeyEngineeringNotes(step: JourneyStepId) {
   return ENGINEERING_NOTES[step];
+}
+
+export function journeyStoryCopyText(persona: PersonaKey, step: JourneyStepId) {
+  const story = journeyStory(persona, step);
+  return [story.eyebrow, story.title, `Role: ${story.role}`, story.body, `Moment: ${story.moment}`].join("\n\n");
+}
+
+export function journeyEngineeringCopyText(step: JourneyStepId) {
+  const notes = journeyEngineeringNotes(step);
+  const numberedNotes = notes.notes.map((note, index) => `${index + 1}. ${note}`).join("\n");
+  return [notes.eyebrow, notes.title, `Reference: ${notes.source}`, numberedNotes].join("\n\n");
 }

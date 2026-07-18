@@ -1,8 +1,10 @@
 import { describe, expect, it } from "vitest";
 import {
   PERSONA_JOURNEY_STEPS,
+  journeyEngineeringCopyText,
   journeyEngineeringNotes,
   journeyStory,
+  journeyStoryCopyText,
   personaJourneySteps,
 } from "./persona-journey";
 
@@ -17,13 +19,25 @@ describe("persona journey", () => {
   });
 
   it("adds sign-up start as David’s second outside-the-Field step", () => {
-    expect(personaJourneySteps("david")).toHaveLength(2);
+    expect(personaJourneySteps("david")).toHaveLength(3);
     expect(personaJourneySteps("david")[1]).toMatchObject({
       id: "signup-start",
       number: 2,
       label: "2. Sign-up Start — Outside the Field",
     });
     expect(personaJourneySteps("matt")).toHaveLength(1);
+  });
+
+  it("adds checkout as David’s third outside-the-Field step", () => {
+    expect(personaJourneySteps("david")[2]).toMatchObject({
+      id: "checkout",
+      number: 3,
+      label: "3. Checkout — Outside the Field",
+      route: "/journey/checkout",
+    });
+    const story = journeyStory("david", "checkout");
+    expect(story.role).toBe("Prospective Founding Member");
+    expect(story.body).toContain("not yet a Founding Member");
   });
 
   it.each(["david", "matt"] as const)("makes %s a Visitor without implied authority at Step 1", (persona) => {
@@ -52,5 +66,24 @@ describe("persona journey", () => {
     expect(notes).toContain("kiduna.design/join/[kinship-code]");
     expect(notes).toContain("kiduna.design/join/ without a code");
     expect(notes).toContain("invalid-code page");
+  });
+
+  it("keeps Step 3 non-transactional and policy-driven", () => {
+    const notes = journeyEngineeringNotes("checkout").notes.join(" ");
+    expect(notes).toContain("non-transactional");
+    expect(notes).toContain("server-provided policy variables");
+    expect(notes).toContain("Prospective Founding Member");
+  });
+
+  it("produces complete plain-text Story and Engineering Notes cards", () => {
+    const storyCopy = journeyStoryCopyText("david", "checkout");
+    expect(storyCopy).toContain("Step 3 · David’s Story");
+    expect(storyCopy).toContain("Role: Prospective Founding Member");
+    expect(storyCopy).toContain("Moment:");
+
+    const notesCopy = journeyEngineeringCopyText("checkout");
+    expect(notesCopy).toContain("Step 3 · Engineering Notes");
+    expect(notesCopy).toContain("Reference: Supplied checkout.html reference");
+    expect(notesCopy).toContain("1. Preserve the supplied checkout.html composition");
   });
 });
