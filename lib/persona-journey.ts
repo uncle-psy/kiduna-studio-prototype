@@ -1,6 +1,6 @@
 import type { PersonaKey } from "./v0-model";
 
-export type JourneyStepId = "landing" | "signup-start" | "checkout";
+export type JourneyStepId = "landing" | "signup-start" | "checkout" | "organization-selection";
 export type JourneyPanel = "story" | "engineering";
 
 type JourneyStep = {
@@ -37,6 +37,14 @@ export const PERSONA_JOURNEY_STEPS: readonly JourneyStep[] = [
     route: "/journey/checkout",
     personas: ["david"],
   },
+  {
+    id: "organization-selection",
+    number: 4,
+    title: "Organization Selection — Onboarding",
+    label: "4. Organization Selection — Onboarding",
+    route: "/journey/organization-selection",
+    personas: ["david"],
+  },
 ];
 
 const PERSONA_NAMES: Record<PersonaKey, string> = {
@@ -50,6 +58,15 @@ export function personaJourneySteps(persona: PersonaKey) {
 
 export function journeyStory(persona: PersonaKey, step: JourneyStepId) {
   const name = PERSONA_NAMES[persona];
+  if (step === "organization-selection") {
+    return {
+      eyebrow: `Step 4 · ${name}’s Story`,
+      title: `${name} finds his first organizations`,
+      role: "Founding Member in Onboarding",
+      body: `${name} has an authoritative receipt for the successful checkout outcome and is now a Founding Member completing onboarding. Kinship Duna is already included as his founding home. He can explore the 31 Genesis Organizations, search and filter them, and draft the additional organizations he wants to join. Card selection changes only this onboarding draft; it does not silently grant organization membership, permissions, governance rights, Source access, or authority.`,
+      moment: `${name} begins turning broad belonging into specific community choices, while the system keeps the consequences visible and reversible until he explicitly continues.`,
+    };
+  }
   if (step === "checkout") {
     return {
       eyebrow: `Step 3 · ${name}’s Story`,
@@ -120,6 +137,23 @@ const ENGINEERING_NOTES = {
       "The price, currency, Compute quantity, supply policy, and Founding Member entitlement must be server-provided policy variables. The reference page’s $100 / 100 USDC and lifetime-membership claims require product, treasury, and legal validation before production use.",
       "David remains outside the Field as a Prospective Founding Member until the system has authoritative evidence of the required outcome. A client redirect or payment-provider callback alone is not sufficient.",
       "Never place payment credentials, wallet secrets, signing material, or treasury authority in the browser client.",
+    ],
+  },
+  "organization-selection": {
+    eyebrow: "Step 4 · Engineering Notes",
+    title: "Organization Selection — Onboarding",
+    source: "Supplied Organization selection onboarding.zip",
+    sourceHref: null,
+    notes: [
+      "Preserve the supplied organization-selection composition, 31-organization catalog, search, category filters, sorting, member counts, multi-selection, fixed selection tray, responsive behavior, and visual hierarchy.",
+      "Step 4 assumes an authoritative successful-checkout receipt. Do not enter this state from a client redirect, wallet connection, or unverified payment-provider callback alone.",
+      "Kinship Duna is David’s included founding home and cannot be deselected in this step. Its inclusion, and any future rule that changes it, must come from server-provided membership policy.",
+      "Organization cards create a reversible onboarding draft only. Selection must not itself grant membership, permissions, governance rights, Source access, roles, Compute authority, or other organizational powers.",
+      "In production, Continue must preview the exact requested memberships, applicable terms and consent, eligibility or approval requirements, and resulting consequences before an authoritative commit and inspectable receipt.",
+      "Skip for now preserves Kinship Duna and records no additional organization requests. The user must be able to revisit organization discovery later.",
+      "Organization names, descriptions, categories, member counts, availability, joining rules, and entitlements are governed server data. Do not treat the reference catalog or counts as permanent hard-coded truth.",
+      "Handle unavailable, archived, invite-only, approval-required, age- or geography-restricted, capacity-limited, and failed-membership states without discarding the rest of the user’s draft.",
+      "This Design Lab scene is non-consequential: Continue and Skip for now show prototype feedback but do not create, remove, or modify memberships.",
     ],
   },
 } satisfies Record<JourneyStepId, {
