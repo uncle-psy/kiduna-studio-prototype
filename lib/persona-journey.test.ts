@@ -19,7 +19,7 @@ describe("persona journey", () => {
   });
 
   it("adds sign-up start as David’s second outside-the-Field step", () => {
-    expect(personaJourneySteps("david")).toHaveLength(3);
+    expect(personaJourneySteps("david")).toHaveLength(4);
     expect(personaJourneySteps("david")[1]).toMatchObject({
       id: "signup-start",
       number: 2,
@@ -38,6 +38,19 @@ describe("persona journey", () => {
     const story = journeyStory("david", "checkout");
     expect(story.role).toBe("Prospective Founding Member");
     expect(story.body).toContain("not yet a Founding Member");
+  });
+
+  it("adds organization selection as David’s fourth onboarding step", () => {
+    expect(personaJourneySteps("david")[3]).toMatchObject({
+      id: "organization-selection",
+      number: 4,
+      label: "4. Organization Selection — Onboarding",
+      route: "/journey/organization-selection",
+    });
+    const story = journeyStory("david", "organization-selection");
+    expect(story.role).toBe("Founding Member in Onboarding");
+    expect(story.body).toContain("authoritative receipt");
+    expect(story.body).toContain("does not silently grant organization membership");
   });
 
   it.each(["david", "matt"] as const)("makes %s a Visitor without implied authority at Step 1", (persona) => {
@@ -73,6 +86,13 @@ describe("persona journey", () => {
     expect(notes).toContain("non-transactional");
     expect(notes).toContain("server-provided policy variables");
     expect(notes).toContain("Prospective Founding Member");
+  });
+
+  it("keeps Step 4 selection reversible and non-consequential", () => {
+    const notes = journeyEngineeringNotes("organization-selection").notes.join(" ");
+    expect(notes).toContain("reversible onboarding draft");
+    expect(notes).toContain("governed server data");
+    expect(notes).toContain("Continue and Skip for now");
   });
 
   it("produces complete plain-text Story and Engineering Notes cards", () => {
