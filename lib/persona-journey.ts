@@ -48,8 +48,8 @@ export const PERSONA_JOURNEY_STEPS: readonly JourneyStep[] = [
   {
     id: "resources",
     number: 5,
-    title: "Resources — Inside the Field",
-    label: "5. Resources — Inside the Field",
+    title: "Resources — Outside the Field",
+    label: "5. Resources — Outside the Field",
     route: "/journey/resources",
     personas: ["david", "matt"],
   },
@@ -72,16 +72,16 @@ export function journeyStory(persona: PersonaKey, step: JourneyStepId) {
         eyebrow: "Step 5 · Matt’s Story",
         title: "Matt returns to the resources behind his work",
         role: "Organizer across 4 Organizations",
-        body: "Matt is inside the Field as a returning Organizer working across Kinship Duna, Service Alliance, Black Love, and Soul Kitchen. His Resources view brings together a 1.24M Compute balance, a $22,610 USDC earnings summary, paid roles, connected accounts, and a 214-person team spanning four generations. These values are persona fixtures for the prototype—not authoritative balances, payouts, memberships, roles, or lineage records. Matt can ask Ki about what he sees, but no simulated response or button silently spends Compute, moves funds, connects an account, changes a role, or acts for an organization.",
-        moment: "Matt sees one coherent picture of the resources flowing into and out of his work, with Ki present in context and every consequential action still requiring visible authority and confirmation.",
+        body: "Matt remains outside the Field in the Web Resources experience as a returning Organizer working across Kinship Duna, Service Alliance, Black Love, and Soul Kitchen. His Resources view brings together a 1.24M Compute balance, a $22,610 USDC earnings summary, paid roles, connected accounts, and a 214-person team spanning four generations. These values are persona fixtures for the prototype—not authoritative balances, payouts, memberships, roles, or lineage records. Matt can ask Ki about what he sees, but no simulated response or button silently spends Compute, moves funds, connects an account, changes a role, or acts for an organization.",
+        moment: "From the Web, outside the Field, Matt sees one coherent picture of the resources flowing into and out of his work, with Ki present in context and every consequential action still requiring visible authority and confirmation.",
       };
     }
     return {
       eyebrow: "Step 5 · David’s Story",
       title: "David meets the resources of membership",
       role: "New Founding Member",
-      body: "David is now inside the Field as a new Founding Member of Kinship Duna. His Resources view introduces 100 $KIDUNA of Compute, the founding-round context, his Kinship link, account connections, and the roles through which organizations may pay members in USDC. He has no paid role or earnings yet. The page helps him understand what is available and lets him talk with Ki in context, while all balances, purchases, connections, memberships, roles, payments, and agent actions remain non-consequential prototype fixtures.",
-      moment: "David’s abstract membership becomes tangible: he can see the resources he may use, the work he may take on, and the Ally who can help—without mistaking a prototype interaction for an executed action.",
+      body: "David remains outside the Field in the Web Resources experience as a new Founding Member of Kinship Duna. His Resources view introduces 100 $KIDUNA of Compute, the founding-round context, his Kinship link, account connections, and the roles through which organizations may pay members in USDC. He has no paid role or earnings yet. The page helps him understand what is available and lets him talk with Ki in context, while all balances, purchases, connections, memberships, roles, payments, and agent actions remain non-consequential prototype fixtures.",
+      moment: "From the Web, outside the Field, David’s abstract membership becomes tangible: he can see the resources he may use, the work he may take on, and the Ally who can help—without mistaking a prototype interaction for an executed action.",
     };
   }
   if (step === "organization-selection") {
@@ -185,11 +185,12 @@ const ENGINEERING_NOTES = {
   },
   resources: {
     eyebrow: "Step 5 · Engineering Notes",
-    title: "Resources — Inside the Field",
+    title: "Resources — Outside the Field",
     source: "Supplied Organization selection onboarding (4).zip · Resources.dc.html",
     sourceHref: null,
     notes: [
       "Implement Resources.dc.html as the Step 5 reference for both David and Matt. Preserve its rich dark composition, responsive hierarchy, Compute purchase area, persona-specific founding-round or earnings state, work and earnings, team lineage, account connections, Nightpapers entry, and in-context Ki conversation.",
+      "Resources is a Web experience outside the Field. David and Matt may hold membership and organizational roles while using it, but this page does not place either persona spatially inside the Field.",
       "The package also contains Hearth.dc.html. The supplied package thumbnail selects Resources, so Hearth remains an alternate reference and is not silently merged into this step.",
       "David is a new Founding Member with 100 $KIDUNA, no paid roles, and no earnings. Matt is an Organizer across four organizations with 1.24M $KIDUNA, $22,610 lifetime USDC earnings, and a 214-person team across four generations. These are deterministic persona fixtures for Design Lab review, not production claims.",
       "The ?persona=david|matt query selects a Design Lab fixture only. Production identity, organizations, roles, balances, earnings, permissions, and agent authority must come from authenticated, authorized server state—not a URL parameter or client-side switch.",
