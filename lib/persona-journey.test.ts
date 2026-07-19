@@ -19,13 +19,13 @@ describe("persona journey", () => {
   });
 
   it("adds sign-up start as David’s second outside-the-Field step", () => {
-    expect(personaJourneySteps("david")).toHaveLength(4);
+    expect(personaJourneySteps("david")).toHaveLength(5);
     expect(personaJourneySteps("david")[1]).toMatchObject({
       id: "signup-start",
       number: 2,
       label: "2. Sign-up Start — Outside the Field",
     });
-    expect(personaJourneySteps("matt")).toHaveLength(1);
+    expect(personaJourneySteps("matt")).toHaveLength(2);
   });
 
   it("adds checkout as David’s third outside-the-Field step", () => {
@@ -96,6 +96,31 @@ describe("persona journey", () => {
     expect(notes).toContain("Continue and Skip for now");
     expect(notes).toContain("Most active");
     expect(notes).toContain("registration identifiers and dates");
+  });
+
+  it("adds persona-specific Resources as Step 5 inside the Field", () => {
+    expect(personaJourneySteps("david")[4]).toMatchObject({
+      id: "resources",
+      number: 5,
+      label: "5. Resources — Inside the Field",
+      route: "/journey/resources",
+    });
+    expect(personaJourneySteps("matt")[1]).toMatchObject({ id: "resources" });
+    const david = journeyStory("david", "resources");
+    const matt = journeyStory("matt", "resources");
+    expect(david.role).toBe("New Founding Member");
+    expect(david.body).toContain("no paid role or earnings yet");
+    expect(matt.role).toBe("Organizer across 4 Organizations");
+    expect(matt.body).toContain("$22,610 USDC");
+  });
+
+  it("records Step 5 fixture, authority, economic, and alternate-reference boundaries", () => {
+    const notes = journeyEngineeringNotes("resources").notes.join(" ");
+    expect(notes).toContain("Hearth.dc.html");
+    expect(notes).toContain("deterministic persona fixtures");
+    expect(notes).toContain("non-consequential");
+    expect(notes).toContain("treasury, governance, and legal validation");
+    expect(notes).toContain("Conversation alone is not consent");
   });
 
   it("produces complete plain-text Story and Engineering Notes cards", () => {

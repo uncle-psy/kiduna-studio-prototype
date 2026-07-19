@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resources · Kiduna</title>
+  <link rel="stylesheet" href="/journey/landing/styles.css">
+  <link rel="stylesheet" href="/journey/resources/styles.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="header">
+      <div class="brand">
+        <a href="/" target="_top" aria-label="Kiduna home"><img src="/journey/landing/assets/kiduna-logo-linear-skyblue.svg" alt="Kiduna"></a>
+        <span class="rule"></span><span class="section-name">Resources</span>
+      </div>
+      <div class="header-actions">
+        <button class="view-as" id="view-as" type="button"></button>
+        <button class="ask-ki" id="ask-ki" type="button"><span></span>Ask Ki</button>
+        <div class="avatar" id="avatar" aria-hidden="true"></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="atmosphere"></div>
+      <section class="welcome reveal">
+        <div>
+          <p class="eyebrow" id="eyebrow"></p>
+          <h1><span id="welcome-prefix"></span> <em id="name"></em></h1>
+          <p class="headline" id="headline"></p>
+        </div>
+        <div class="studio-entry">
+          <button class="primary" id="studio-cta" type="button"></button>
+          <small id="studio-note"></small>
+        </div>
+      </section>
+
+      <section class="top-grid reveal delay-1">
+        <article class="panel compute-panel">
+          <p class="overline">Your Compute <button class="info" title="Compute is the fuel of the Kidunaverse, denominated in $KIDUNA. Earnings are shown separately in USDC.">ⓘ</button></p>
+          <div class="balance"><strong id="compute"></strong><b>$KIDUNA</b><span id="compute-usd"></span></div>
+          <div class="buy-box">
+            <div class="buy-heading"><h2>Buy compute</h2><span>Any amount, $20 or more</span></div>
+            <div class="buy-row">
+              <label class="amount"><span>$</span><input id="amount" inputmode="decimal" value="100" aria-label="Compute purchase amount"></label>
+              <button class="amount-chip" data-amount="20" type="button">$20</button>
+              <button class="amount-chip selected" data-amount="100" type="button">$100</button>
+              <button class="amount-chip" data-amount="500" type="button">$500</button>
+              <span class="spacer"></span>
+              <button class="primary compact" data-notice="Card checkout is simulated in this design prototype." type="button">Pay with card →</button>
+              <button class="wallet compact" data-notice="Wallet connection is simulated in this design prototype." type="button">Connect wallet</button>
+            </div>
+            <p class="buy-note" id="buy-note">Minimum $20 · Card via Stripe, or transfer USDC from any wallet · Compute is priced in $KIDUNA.</p>
+          </div>
+        </article>
+
+        <article class="panel side-summary" id="side-summary"></article>
+      </section>
+
+      <section class="panel work reveal delay-2">
+        <div class="section-heading">
+          <div><p class="overline mint">Work &amp; Earnings <span class="paid-pill">Paid in USDC</span></p><p>You can work for these organizations, and they pay you — by role, in USDC. Recruiting distributions count as organizer pay. $KIDUNA is only for compute.</p></div>
+          <div class="total"><small>Total earned</small><strong id="work-total"></strong></div>
+        </div>
+        <div id="earnings-body"></div>
+      </section>
+
+      <section class="middle-grid reveal delay-3">
+        <article class="panel team">
+          <p class="overline">Build Your Team <button class="info" title="The reference describes four generations of member and Compute distributions.">ⓘ</button></p>
+          <p id="team-line"></p>
+          <button class="kinship-link" id="copy-link" type="button"><span>kiduna.ai/join/KIN-74HR92BD</span><b id="copy-label">Copy link</b></button>
+          <div class="distribution" aria-label="Reference distribution percentages">
+            <div></div><b>Gen 1</b><b>Gen 2</b><b>Gen 3</b><b>Gen 4</b><b>Total</b>
+            <span>Membership</span><em>20%</em><em>5%</em><em>3%</em><em>2%</em><strong>30%</strong>
+            <span>Compute · life</span><em>12%</em><em>3%</em><em>2%</em><em>1%</em><strong>18%</strong>
+          </div>
+          <div class="why"><p class="overline gold">Why We Pay You To Recruit</p><p>This is organizing, not advertising. Bringing people in is important work — so we pay <b>you</b>, not the online advertising platforms that harvest attention, extract and exploit.</p></div>
+        </article>
+
+        <article class="panel accounts">
+          <p class="overline">Connect Your Accounts</p>
+          <p>Join us on these platforms to organize in the open.</p>
+          <div id="accounts"></div>
+          <small>Connected accounts let your agents post, monitor, and organize on your behalf — always with your approval.</small>
+        </article>
+      </section>
+
+      <section class="panel nightpapers reveal delay-4">
+        <h2>The <em>Nightpapers</em></h2>
+        <p>Where we share how the Kidunaverse works — governance, economics, culture, technology, and everything in between.</p>
+        <button class="text-link" data-notice="The Nightpapers link is simulated in this design prototype." type="button">Read the Nightpapers →</button>
+      </section>
+      <footer>Powered by <span>Kinship Systems</span></footer>
+    </main>
+
+    <aside class="chat" id="chat" aria-label="Chat with Ki" aria-hidden="true">
+      <header>
+        <div class="ki-mark">Ki</div><div><h2>Ki · Your Ally</h2><p><span></span>Knows this page’s prototype context</p></div>
+        <button id="close-chat" type="button" aria-label="Close Ki chat">×</button>
+      </header>
+      <div class="messages" id="messages" aria-live="polite"></div>
+      <div class="composer">
+        <div class="quick">
+          <button type="button" data-prompt="Buy compute">Buy compute</button>
+          <button type="button" data-prompt="My earnings">My earnings</button>
+          <button type="button" data-prompt="Connect accounts">Connect accounts</button>
+          <button type="button" data-prompt="The Nightpapers">The Nightpapers</button>
+        </div>
+        <form id="chat-form"><input id="chat-input" placeholder="Ask Ki anything, or say what you need…" autocomplete="off"><button type="submit" aria-label="Send message">↑</button></form>
+      </div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+  <script src="/journey/resources/script.js"></script>
+</body>
+</html>

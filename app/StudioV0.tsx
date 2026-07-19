@@ -429,7 +429,10 @@ function JourneyScene({ step, persona, panel, reduced, onClosePanel }: {
   const journey = PERSONA_JOURNEY_STEPS.find((candidate) => candidate.id === step) ?? PERSONA_JOURNEY_STEPS[0];
   const story = journeyStory(persona, step);
   const engineeringNotes = journeyEngineeringNotes(step);
-  const reducedSuffix = journey.route.includes("?") ? "&reduced=1" : "?reduced=1";
+  const sceneParams = new URLSearchParams();
+  if (step === "resources") sceneParams.set("persona", persona);
+  if (reduced) sceneParams.set("reduced", "1");
+  const sceneRoute = `${journey.route}${sceneParams.size ? `?${sceneParams.toString()}` : ""}`;
   const copyCard = async (card: JourneyPanel) => {
     const key = `${persona}:${step}:${card}`;
     const text = card === "story" ? journeyStoryCopyText(persona, step) : journeyEngineeringCopyText(step);
@@ -442,7 +445,7 @@ function JourneyScene({ step, persona, panel, reduced, onClosePanel }: {
     window.setTimeout(() => setCopyStatus((current) => current?.key === key ? null : current), 1800);
   };
   return <section className={styles.journeyScene} aria-label={`${journey.label} for ${PERSONAS[persona].firstName}`}>
-    <iframe src={`${journey.route}${reduced ? reducedSuffix : ""}`} title={journey.label} />
+    <iframe src={sceneRoute} title={journey.label} />
     {panel && <aside className={styles.journeyPanel} aria-label={panel === "story" ? story.eyebrow : engineeringNotes.eyebrow}>
       <button className={styles.journeyCopy} onClick={() => void copyCard(panel)} aria-label={`Copy entire ${panel === "story" ? "Story" : "Engineering Notes"} card`}>
         <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="6" y="5" width="9" height="11" rx="1.5"/><path d="M4 13V4.5C4 3.7 4.7 3 5.5 3H12"/></svg>
