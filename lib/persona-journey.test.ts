@@ -98,25 +98,28 @@ describe("persona journey", () => {
     expect(notes).toContain("registration identifiers and dates");
   });
 
-  it("adds persona-specific Resources as Step 5 inside the Field", () => {
+  it("adds persona-specific Web Resources as Step 5 outside the Field", () => {
     expect(personaJourneySteps("david")[4]).toMatchObject({
       id: "resources",
       number: 5,
-      label: "5. Resources — Inside the Field",
+      label: "5. Resources — Outside the Field",
       route: "/journey/resources",
     });
     expect(personaJourneySteps("matt")[1]).toMatchObject({ id: "resources" });
     const david = journeyStory("david", "resources");
     const matt = journeyStory("matt", "resources");
     expect(david.role).toBe("New Founding Member");
+    expect(david.body).toContain("outside the Field in the Web Resources experience");
     expect(david.body).toContain("no paid role or earnings yet");
     expect(matt.role).toBe("Organizer across 4 Organizations");
+    expect(matt.body).toContain("outside the Field in the Web Resources experience");
     expect(matt.body).toContain("$22,610 USDC");
   });
 
   it("records Step 5 fixture, authority, economic, and alternate-reference boundaries", () => {
     const notes = journeyEngineeringNotes("resources").notes.join(" ");
     expect(notes).toContain("Hearth.dc.html");
+    expect(notes).toContain("Web experience outside the Field");
     expect(notes).toContain("deterministic persona fixtures");
     expect(notes).toContain("non-consequential");
     expect(notes).toContain("treasury, governance, and legal validation");
