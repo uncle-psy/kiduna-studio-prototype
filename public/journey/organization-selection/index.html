@@ -80,6 +80,7 @@
     .compute strong { color: var(--accent); }
     .members strong { color: var(--fg-muted); }
     .reg-line { padding-top: 9px; border-top: 1px solid rgba(255,248,240,.07); color: var(--fg-dim); font-size: 9.5px; letter-spacing: .05em; }
+    .reg-line.proposed { color: var(--kid-sun-gold); }
     .empty { display: none; padding: 64px 24px; text-align: center; }
     .empty.visible { display: block; }
     .empty h2 { margin: 0 0 8px; color: var(--fg-muted); font-size: 22px; }
@@ -128,7 +129,7 @@
 
     <main class="content">
       <section class="hero" aria-labelledby="page-title">
-        <div class="eyebrow"><span>31 Powerful Movements</span><span class="spark">✦</span></div>
+        <div class="eyebrow"><span>32 Powerful Movements</span><span class="spark">✦</span></div>
         <h1 id="page-title">Put Your Good <em>Where It Does The Most</em></h1>
         <p>Join as many movements as you like — you can always join more later... or build your own! Kinship Duna is home to everyone.</p>
       </section>
@@ -142,6 +143,8 @@
           <option value="members">Most members</option>
           <option value="az">A – Z</option>
           <option value="newest">Newest</option>
+          <option value="registered">Registered</option>
+          <option value="proposed">Proposed</option>
         </select>
       </div>
 
@@ -199,11 +202,12 @@
       { name: "The Fellowship of Play", desc: "Designers, publishers, and gamers in one Duna — funding, buying, and playing games of every kind.", tags: ["Culture & Play"], members: 329 },
       { name: "The Long Drum", desc: "Non-extractive support for entrepreneurs and ecosystems in the global south — starting with Nigeria and Indonesia.", tags: ["Activism", "Finance"], members: 117 },
       { name: "Vibe Coast", desc: "The Southern California ecosystem — culture, tech, hospitality, health, and fashion from Venice to San Diego.", tags: ["Place-Based", "Culture & Play"], members: 244 },
-      { name: "Wokelord", desc: "Taking back social media — memes with meaning, countering disinformation, making healthy social media fun again.", tags: ["Activism", "Culture & Play"], members: 205 }
+      { name: "Wokelord", desc: "Taking back social media — memes with meaning, countering disinformation, making healthy social media fun again.", tags: ["Activism", "Culture & Play"], members: 205 },
+      { name: "The Nature of Work", desc: "Organizational development, leadership training, and corporate transformation — helping organizations change how people lead, collaborate, and work together.", tags: ["Work & Business"], members: 1, status: "proposed" }
     ];
 
-    const compute = [52400000, 3800000, 2400000, 640000, 5100000, 1200000, 890000, 310000, 1700000, 220000, 760000, 12800000, 4300000, 6200000, 2900000, 9400000, 180000, 1400000, 96000, 420000, 2100000, 530000, 3200000, 15600000, 980000, 7800000, 11200000, 8700000, 350000, 5600000, 4700000];
-    const registrations = [[628407, "Jun 2"], [628411, "Jun 3"], [628415, "Jun 4"], [628422, "Jun 5"], [628428, "Jun 6"], [628433, "Jun 8"], [628439, "Jun 9"], [628444, "Jun 10"], [628450, "Jun 11"], [628457, "Jun 12"], [628463, "Jun 15"], [628470, "Jun 16"], [628476, "Jun 17"], [628481, "Jun 18"], [628488, "Jun 19"], [628494, "Jun 22"], [628501, "Jun 23"], [628507, "Jun 24"], [628514, "Jun 25"], [628520, "Jun 26"], [628527, "Jun 29"], [628534, "Jun 30"], [628541, "Jul 1"], [628548, "Jul 2"], [628556, "Jul 6"], [628563, "Jul 7"], [628571, "Jul 8"], [628580, "Jul 9"], [628588, "Jul 13"], [628595, "Jul 15"], [628602, "Jul 17"]];
+    const compute = [52400000, 3800000, 2400000, 640000, 5100000, 1200000, 890000, 310000, 1700000, 220000, 760000, 12800000, 4300000, 6200000, 2900000, 9400000, 180000, 1400000, 96000, 420000, 2100000, 530000, 3200000, 15600000, 980000, 7800000, 11200000, 8700000, 350000, 5600000, 4700000, 0];
+    const registrations = [[628407, "Jun 2"], [628411, "Jun 3"], [628415, "Jun 4"], [628422, "Jun 5"], [628428, "Jun 6"], [628433, "Jun 8"], [628439, "Jun 9"], [628444, "Jun 10"], [628450, "Jun 11"], [628457, "Jun 12"], [628463, "Jun 15"], [628470, "Jun 16"], [628476, "Jun 17"], [628481, "Jun 18"], [628488, "Jun 19"], [628494, "Jun 22"], [628501, "Jun 23"], [628507, "Jun 24"], [628514, "Jun 25"], [628520, "Jun 26"], [628527, "Jun 29"], [628534, "Jun 30"], [628541, "Jul 1"], [628548, "Jul 2"], [628556, "Jul 6"], [628563, "Jul 7"], [628571, "Jul 8"], [628580, "Jul 9"], [628588, "Jul 13"], [628595, "Jul 15"], [628602, "Jul 17"], null];
     const tags = ["All", "Community", "Culture & Play", "Activism", "Finance", "Work & Business", "Place-Based", "Climate & Land", "Relationships", "Health & Wellbeing", "Consciousness"];
     const state = { query: "", tag: "All", sort: "active", selected: new Set(["Kinship Duna"]) };
     const grid = document.getElementById("grid");
@@ -236,14 +240,16 @@
 
     const filteredOrganizations = () => {
       const query = state.query.trim().toLowerCase();
-      const list = organizations.map((org, index) => ({ ...org, index, compute: compute[index], registration: registrations[index] })).filter((org) => {
+      const list = organizations.map((org, index) => ({ ...org, index, compute: compute[index], registration: registrations[index], status: org.status || "registered" })).filter((org) => {
         const tagMatch = state.tag === "All" || org.tags.includes(state.tag);
         const queryMatch = !query || `${org.name} ${org.desc} ${org.tags.join(" ")}`.toLowerCase().includes(query);
-        return tagMatch && queryMatch;
+        const statusMatch = !["registered", "proposed"].includes(state.sort) || org.status === state.sort;
+        return tagMatch && queryMatch && statusMatch;
       });
       if (state.sort === "az") list.sort((a, b) => a.name.localeCompare(b.name));
       else if (state.sort === "newest") list.sort((a, b) => b.index - a.index);
       else if (state.sort === "members") list.sort((a, b) => b.members - a.members);
+      else if (state.sort === "proposed") list.sort((a, b) => b.index - a.index);
       else list.sort((a, b) => b.compute - a.compute);
       return list;
     };
@@ -272,7 +278,7 @@
       const members = document.createElement("span"); members.className = "members";
       const memberNumber = document.createElement("strong"); memberNumber.textContent = org.members.toLocaleString(); members.append(memberNumber, " members");
       metrics.append(computeAmount, members); meta.append(tagLine, metrics); card.append(meta);
-      const registration = document.createElement("span"); registration.className = "reg-line"; registration.textContent = `WV Org. ID ${org.registration[0]} · Registered ${org.registration[1]}, 2026`; card.append(registration);
+      const registration = document.createElement("span"); registration.className = `reg-line${org.status === "proposed" ? " proposed" : ""}`; registration.textContent = org.status === "proposed" ? "Proposed · Not yet registered · No Org ID" : `WV Org. ID ${org.registration[0]} · Registered ${org.registration[1]}, 2026`; card.append(registration);
 
       if (!org.locked) card.addEventListener("click", () => {
         if (state.selected.has(org.name)) state.selected.delete(org.name); else state.selected.add(org.name);

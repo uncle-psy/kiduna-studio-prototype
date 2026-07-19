@@ -207,6 +207,8 @@ A file drop is scoped to the recipient Relationship. When `kiduna.md` is present
 
 Creation of a Duna begins with Ki, not a global Create button. Ki asks for the name, whether it is registered with the West Virginia Secretary of State, the Organization ID when registered, whether the member wants help registering it when unregistered, and its purpose. Ki summarizes before the Duna appears in the Field.
 
+Organization registration is explicit. **Registered** Organizations may display their verified registration metadata. **Proposed** Organizations are legitimate proposals but are not registered and therefore have no Org ID. The interface must never fabricate an Org ID to fill that absence. Organization discovery may filter the catalog by Registered or Proposed while retaining Newest as a chronological view.
+
 ## 10. The durable Personal Web
 
 Classification: **RATIFIED RULE**
@@ -243,3 +245,7 @@ For every future change, append:
 - Form-based invitation profiling replaced by a one-question-at-a-time Ki conversation with lookup, clarification, summary, and refinement. Propagation: canon and prototype complete.
 - The handle-based Personal Web established as the durable account, wallet, compute, recovery, and Surface-discovery layer. Propagation: canon and prototype complete.
 - Relationship cards became action-first; literal presence, editable directional trust, recipient-scoped file drops, Code-ledger separation, and conversational Duna creation were ratified. Propagation: canon and prototype complete.
+
+### 2026-07-19 entries
+
+- Registered and Proposed became explicit Organization discovery states. Proposed Organizations carry no Org ID. “The Nature of Work” entered the prototype as the sole Proposed Organization, focused on organizational development, leadership training, and corporate transformation. Propagation: organization-selection prototype, engineering notes, and canon complete.

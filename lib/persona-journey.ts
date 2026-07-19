@@ -171,7 +171,7 @@ const ENGINEERING_NOTES = {
     source: "Supplied Organization selection onboarding (2).zip",
     sourceHref: null,
     notes: [
-      "Preserve the revised organization-selection composition, movement framing and hero copy, 31-organization catalog, search, category filters, sorting, Compute activity, member counts, West Virginia registration metadata, multi-selection, fixed selection tray, responsive behavior, and visual hierarchy.",
+      "Preserve the revised organization-selection composition, movement framing and hero copy, 32-organization catalog, search, category filters, sorting, Compute activity, member counts, explicit Registered and Proposed states, West Virginia registration metadata where present, multi-selection, fixed selection tray, responsive behavior, and visual hierarchy.",
       "Step 4 assumes an authoritative successful-checkout receipt. Do not enter this state from a client redirect, wallet connection, or unverified payment-provider callback alone.",
       "Kinship Duna is David’s included founding home and cannot be deselected in this step. Its inclusion, and any future rule that changes it, must come from server-provided membership policy.",
       "Organization cards create a reversible onboarding draft only. Selection must not itself grant membership, permissions, governance rights, Source access, roles, Compute authority, or other organizational powers.",
@@ -179,6 +179,7 @@ const ENGINEERING_NOTES = {
       "Skip for now preserves Kinship Duna and records no additional organization requests. The user must be able to revisit organization discovery later.",
       "Organization names, descriptions, categories, member counts, Compute activity, registration identifiers and dates, availability, joining rules, and entitlements are governed server data. Do not treat the reference catalog, metrics, or legal metadata as permanent hard-coded truth.",
       "Most active is the revised default sort and uses the supplied Compute values. Production must define the time window, unit, freshness, and provenance of activity rather than presenting an unexplained ranking.",
+      "Registered and Proposed are status filters within the sorting control. Proposed Organizations must not display or fabricate an Org ID; The Nature of Work is the only proposed fixture in this scene.",
       "Handle unavailable, archived, invite-only, approval-required, age- or geography-restricted, capacity-limited, and failed-membership states without discarding the rest of the user’s draft.",
       "This Design Lab scene is non-consequential: Continue and Skip for now show prototype feedback but do not create, remove, or modify memberships.",
     ],
