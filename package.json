@@ -9,7 +9,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --ignore-pattern .next",
+    "lint": "eslint app lib next.config.ts eslint.config.mjs",
     "test": "vitest run",
     "audit:isolation": "node scripts/audit-v0-isolation.mjs",
     "check": "npm run lint && npm run test && npm run audit:isolation && npm run build"

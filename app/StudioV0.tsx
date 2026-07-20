@@ -4,6 +4,14 @@ import Image from "next/image";
 import { CSSProperties, FormEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import capabilityRows from "@/lib/capabilities.json";
 import {
+  INSIDE_STUDIO_STEPS,
+  InsideStudioPanel,
+  InsideStudioStepId,
+  insideStudioEngineeringCopyText,
+  insideStudioStep,
+  insideStudioStoryCopyText,
+} from "@/lib/inside-studio";
+import {
   PERSONA_JOURNEY_STEPS,
   JourneyPanel,
   JourneyStepId,
@@ -14,17 +22,12 @@ import {
   personaJourneySteps,
 } from "@/lib/persona-journey";
 import {
-  FIXTURES,
   PERSONAS,
-  STATE_PLATES,
-  FixtureId,
   GuidedAction,
   PersonaKey,
   StudioAction,
   StudioState,
-  createFixtureState,
   createInitialState,
-  createPlateState,
   deriveJourney,
   deriveStage,
   interpretUtterance,
@@ -182,6 +185,7 @@ export default function StudioV0() {
   const [reduced, setReduced] = useState(false);
   const [journeyStep, setJourneyStep] = useState<JourneyStepId | null>("landing");
   const [journeyPanel, setJourneyPanel] = useState<JourneyPanel | null>(null);
+  const [insideStep, setInsideStep] = useState<InsideStudioStepId | null>(null);
   const [atlasOpen, setAtlasOpen] = useState(false);
   const [atlasFilter, setAtlasFilter] = useState<"all" | CapabilityRow["v0Coverage"]>("all");
   const [atlasQuery, setAtlasQuery] = useState("");
@@ -228,6 +232,7 @@ export default function StudioV0() {
     window.history.replaceState({}, "", url);
     setPending(null);
     setJourneyStep("landing");
+    setInsideStep(null);
     setJourneyPanel(null);
     setToast(`${PERSONAS[next].firstName} session active · independent local focus`);
   };
@@ -299,16 +304,6 @@ export default function StudioV0() {
     form.reset();
   };
 
-  const openPlate = (plateId: string) => {
-    if (!plateId) return;
-    setJourneyStep(null);
-    setJourneyPanel(null);
-    replaceState(createPlateState(plateId), `State plate loaded · ${STATE_PLATES.find((plate) => plate.id === plateId)?.title}`);
-    if (plateId === "structured") setStructured(true);
-    if (plateId === "constellation") setDistance("far");
-    if (plateId === "compute-expanded") { setSelectedId("compute-project"); setHudRest("focus"); }
-  };
-
   if (!ready) return <main className={styles.loading}><Image src="/ki-avatar-glyph.png" alt="" width={76} height={76} priority /><p>Restoring the deterministic Field…</p></main>;
 
   return (
@@ -326,17 +321,18 @@ export default function StudioV0() {
         reduced={reduced}
         setReduced={setReduced}
         journeyStep={journeyStep}
+        insideStep={insideStep}
         journeyPanel={journeyPanel}
-        onJourneyStep={(id) => { const stepNumber = PERSONA_JOURNEY_STEPS.find((step) => step.id === id)?.number ?? 1; setJourneyStep(id); setJourneyPanel(null); setToast(`${PERSONAS[persona].firstName} · Step ${stepNumber} active`); }}
+        onJourneyStep={(id) => { const stepNumber = PERSONA_JOURNEY_STEPS.find((step) => step.id === id)?.number ?? 1; setJourneyStep(id); setInsideStep(null); setJourneyPanel(null); setToast(`${PERSONAS[persona].firstName} · Outside Step ${stepNumber} active`); }}
+        onInsideStep={(id) => { const stepNumber = insideStudioStep(id).number; setInsideStep(id); setJourneyStep(null); setJourneyPanel(null); setToast(`Inside the Studio · Design ${stepNumber} active`); }}
         onJourneyPanel={(panel) => setJourneyPanel((current) => current === panel ? null : panel)}
-        onScenario={(id) => { setJourneyStep(null); setJourneyPanel(null); replaceState(createFixtureState(id), `Deterministic fixture loaded · ${id}`); }}
-        onPlate={openPlate}
-        onReset={() => { setJourneyStep("landing"); setJourneyPanel(null); replaceState(createInitialState(), "Clean deterministic reset · Step 1 active"); }}
+        onReset={() => { setJourneyStep("landing"); setInsideStep(null); setJourneyPanel(null); replaceState(createInitialState(), "Clean deterministic reset · Outside Step 1 active"); }}
       />
 
       {journeyStep && <JourneyScene step={journeyStep} persona={persona} panel={journeyPanel} reduced={reduced} onClosePanel={() => setJourneyPanel(null)} />}
+      {insideStep && <InsideStudioScene step={insideStep} panel={journeyPanel as InsideStudioPanel | null} reduced={reduced} onClosePanel={() => setJourneyPanel(null)} />}
 
-      <div className={journeyStep ? styles.fieldLayerHidden : styles.fieldLayer} aria-hidden={journeyStep ? true : undefined}>
+      <div className={journeyStep || insideStep ? styles.fieldLayerHidden : styles.fieldLayer} aria-hidden={journeyStep || insideStep ? true : undefined}>
 
       <header className={styles.contextAnchor} aria-label="Current context">
         <button onClick={() => { setSelectedId("organization-kinship"); setHudRest(hudRest === "focus" ? "context" : "focus"); }}>
@@ -468,7 +464,53 @@ function JourneyScene({ step, persona, panel, reduced, onClosePanel }: {
   </section>;
 }
 
-function LabDock({ persona, switchPersona, state, structured, setStructured, reduced, setReduced, journeyStep, journeyPanel, onJourneyStep, onJourneyPanel, onScenario, onPlate, onReset }: {
+function InsideStudioScene({ step, panel, reduced, onClosePanel }: {
+  step: InsideStudioStepId;
+  panel: InsideStudioPanel | null;
+  reduced: boolean;
+  onClosePanel: () => void;
+}) {
+  const [copyStatus, setCopyStatus] = useState<{ key: string; state: "copied" | "error" } | null>(null);
+  const design = insideStudioStep(step);
+  const sceneRoute = reduced ? `${design.route}&reduced=1` : design.route;
+  const copyCard = async (card: InsideStudioPanel) => {
+    const key = `inside:${step}:${card}`;
+    const text = card === "story" ? insideStudioStoryCopyText(step) : insideStudioEngineeringCopyText(step);
+    try {
+      await copyJourneyText(text);
+      setCopyStatus({ key, state: "copied" });
+    } catch {
+      setCopyStatus({ key, state: "error" });
+    }
+    window.setTimeout(() => setCopyStatus((current) => current?.key === key ? null : current), 1800);
+  };
+  return <section className={styles.journeyScene} aria-label={`${design.label} · ${design.presence}`}>
+    <iframe src={sceneRoute} title={design.label} />
+    {panel && <aside className={styles.journeyPanel} aria-label={panel === "story" ? "Presence Story" : "Engineering Notes"}>
+      <button className={styles.journeyCopy} onClick={() => void copyCard(panel)} aria-label={`Copy entire ${panel === "story" ? "Presence Story" : "Engineering Notes"} card`}>
+        <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="6" y="5" width="9" height="11" rx="1.5"/><path d="M4 13V4.5C4 3.7 4.7 3 5.5 3H12"/></svg>
+        <span>{copyStatus?.key === `inside:${step}:${panel}` ? copyStatus.state === "copied" ? "Copied" : "Copy unavailable" : "Copy"}</span>
+      </button>
+      <button className={styles.journeyPanelClose} onClick={onClosePanel} aria-label="Close design notes">×</button>
+      {panel === "story" ? <>
+        <small>Inside the Studio · {design.number} · Presence Story</small>
+        <h1>{design.storyTitle}</h1>
+        <p className={styles.journeyRole}><b>Presence</b><span>{design.presence}</span></p>
+        <p className={styles.journeyRole}><b>Role</b><span>{design.role}</span></p>
+        <p className={styles.journeyRole}><b>Realm</b><span>{design.realm}</span></p>
+        <p>{design.story}</p>
+        <blockquote>{design.moment}</blockquote>
+      </> : <>
+        <small>Inside the Studio · {design.number} · Engineering Notes</small>
+        <h1>{design.title}</h1>
+        <p className={styles.journeySource}><b>Reference</b><span>{design.reference}</span></p>
+        <ol>{design.notes.map((note) => <li key={note}>{note}</li>)}</ol>
+      </>}
+    </aside>}
+  </section>;
+}
+
+function LabDock({ persona, switchPersona, state, structured, setStructured, reduced, setReduced, journeyStep, insideStep, journeyPanel, onJourneyStep, onInsideStep, onJourneyPanel, onReset }: {
   persona: PersonaKey;
   switchPersona: (persona: PersonaKey) => void;
   state: StudioState;
@@ -477,26 +519,27 @@ function LabDock({ persona, switchPersona, state, structured, setStructured, red
   reduced: boolean;
   setReduced: (value: boolean) => void;
   journeyStep: JourneyStepId | null;
+  insideStep: InsideStudioStepId | null;
   journeyPanel: JourneyPanel | null;
   onJourneyStep: (id: JourneyStepId) => void;
+  onInsideStep: (id: InsideStudioStepId) => void;
   onJourneyPanel: (panel: JourneyPanel) => void;
-  onScenario: (id: FixtureId) => void;
-  onPlate: (id: string) => void;
   onReset: () => void;
 }) {
   const [open, setOpen] = useState(false);
   const journeyOptions = personaJourneySteps(persona);
   const activeJourney = PERSONA_JOURNEY_STEPS.find((step) => step.id === journeyStep);
+  const activeInside = insideStep ? insideStudioStep(insideStep) : null;
   return <aside className={`${styles.labDock} ${open ? styles.labOpen : ""}`} aria-label="Design lab utilities">
-    <button className={styles.labToggle} onClick={() => setOpen((value) => !value)} aria-expanded={open}><i /> DESIGN LAB <span>{activeJourney ? `STEP ${activeJourney.number}` : state.scenario === "clean" ? `R${state.revision}` : state.scenario}</span></button>
+    <button className={styles.labToggle} onClick={() => setOpen((value) => !value)} aria-expanded={open}><i /> DESIGN LAB <span>{activeJourney ? `OUT ${activeJourney.number}` : activeInside ? `IN ${activeInside.number}` : state.scenario === "clean" ? `R${state.revision}` : state.scenario}</span></button>
     {open && <div className={styles.labBody}>
       <p>Utilities are outside canonical Member UI. All consequences are deterministic simulation.</p>
       <fieldset><legend>Independent session</legend><button className={persona === "david" ? styles.labActive : ""} onClick={() => switchPersona("david")}>David</button><button className={persona === "matt" ? styles.labActive : ""} onClick={() => switchPersona("matt")}>Matt</button></fieldset>
       <div className={styles.pairedLinks}><a href="?persona=david" target="_blank" rel="noreferrer">Open David ↗</a><a href="?persona=matt" target="_blank" rel="noreferrer">Open Matt ↗</a></div>
-      <label>Persona Journey<select value={journeyStep ?? ""} onChange={(event) => onJourneyStep(event.target.value as JourneyStepId)}><option value="" disabled>Current Studio scenario</option>{journeyOptions.map((step) => <option value={step.id} key={step.id}>{step.label}</option>)}</select></label>
+      <label>Outside the Studio<select value={journeyStep ?? ""} onChange={(event) => onJourneyStep(event.target.value as JourneyStepId)}><option value="" disabled>Select an outside-Studio design…</option>{journeyOptions.map((step) => <option value={step.id} key={step.id}>{step.label}</option>)}</select></label>
       {journeyStep && <div className={styles.journeyButtons}><button className={journeyPanel === "story" ? styles.labActive : ""} onClick={() => onJourneyPanel("story")}>{PERSONAS[persona].firstName}’s Story</button><button className={journeyPanel === "engineering" ? styles.labActive : ""} onClick={() => onJourneyPanel("engineering")}>Engineering Notes</button></div>}
-      <label>State plate<select defaultValue="" onChange={(event) => { onPlate(event.target.value); event.target.value = ""; }}><option value="" disabled>Choose one of 15…</option>{STATE_PLATES.map((plate) => <option value={plate.id} key={plate.id}>{plate.title}</option>)}</select></label>
-      <label>P0 fixture<select defaultValue="" onChange={(event) => { onScenario(event.target.value as FixtureId); event.target.value = ""; }}><option value="" disabled>Inject deterministic state…</option>{FIXTURES.filter((fixture) => fixture.priority === "P0").map((fixture) => <option value={fixture.id} key={fixture.id}>{fixture.journey} · {fixture.title}</option>)}</select></label>
+      <label>Inside the Studio<select value={insideStep ?? ""} onChange={(event) => onInsideStep(event.target.value as InsideStudioStepId)}><option value="" disabled>Select an inside-Studio design…</option>{INSIDE_STUDIO_STEPS.map((step) => <option value={step.id} key={step.id}>{step.label}</option>)}</select></label>
+      {insideStep && <div className={styles.journeyButtons}><button className={journeyPanel === "story" ? styles.labActive : ""} onClick={() => onJourneyPanel("story")}>Presence Story</button><button className={journeyPanel === "engineering" ? styles.labActive : ""} onClick={() => onJourneyPanel("engineering")}>Engineering Notes</button></div>}
       <fieldset><legend>Access view</legend><button className={structured ? styles.labActive : ""} onClick={() => setStructured(!structured)}>Structured</button><button className={reduced ? styles.labActive : ""} onClick={() => setReduced(!reduced)}>Reduced motion</button></fieldset>
       <button className={styles.resetButton} onClick={onReset}>Reset both sessions</button>
     </div>}
