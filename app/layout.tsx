@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Kiduna Studio v0 · Service Alliance Formation",
-  description: "An isolated, deterministic design lab for the Kiduna Studio Field.",
+  title: "Kiduna Design · Conceptual Prototypes",
+  description: "Conceptual prototypes for designing Kiduna and its Surfaces.",
   icons: { icon: "/favicon.svg" },
 };
 

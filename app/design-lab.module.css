@@ -1,0 +1,22 @@
+.shell { min-height: 100svh; background: #070e0f; color: #e8f3ed; display: grid; grid-template-rows: auto minmax(0, 1fr); }
+.lab { min-height: 70px; display: flex; align-items: center; gap: 28px; padding: 10px 20px; background: rgba(5, 13, 14, .98); border-bottom: 1px solid rgba(134, 199, 178, .2); box-shadow: 0 12px 35px rgba(0,0,0,.28); z-index: 30; }
+.brand { display: flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; min-width: 176px; }
+.brand i { width: 25px; height: 25px; border: 1px solid #7fd1bd; border-radius: 50%; box-shadow: inset 0 0 12px #2a8c80, 0 0 10px rgba(91, 208, 185, .32); position: relative; }
+.brand i::after { content: ""; position: absolute; inset: 8px; border-radius: 50%; background: #bfe8f2; box-shadow: 0 0 8px #90e0d0; }
+.brand span { display: grid; gap: 2px; }
+.brand b { font: 600 12px/1 system-ui, sans-serif; letter-spacing: .18em; }
+.brand small { color: #87a59d; font: 600 8px/1 system-ui, sans-serif; letter-spacing: .11em; }
+.controls { flex: 1; display: grid; grid-template-columns: minmax(180px, .8fr) minmax(240px, 1.4fr) minmax(150px, .7fr); gap: 10px; max-width: 980px; }
+.controls label { min-width: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 8px; }
+.controls span { color: #87a59d; font: 600 9px/1 system-ui, sans-serif; letter-spacing: .1em; text-transform: uppercase; }
+.controls select { width: 100%; min-width: 0; height: 38px; color: #e9f4ef; background: #102021; border: 1px solid rgba(129, 192, 172, .26); border-radius: 6px; padding: 0 31px 0 10px; font: 500 12px/1 system-ui, sans-serif; }
+.stage { min-height: 0; position: relative; overflow: hidden; }
+.stage > iframe { display: block; width: 100%; height: 100%; min-height: calc(100svh - 70px); border: 0; background: #081011; }
+.stage > :global(main) { min-height: calc(100svh - 70px); }
+@media (max-width: 760px) {
+  .lab { align-items: stretch; flex-direction: column; gap: 8px; padding: 10px 12px; }
+  .brand { min-width: 0; }
+  .controls { width: 100%; grid-template-columns: 1fr; gap: 6px; }
+  .controls label { grid-template-columns: 58px minmax(0, 1fr); }
+  .stage > iframe { min-height: calc(100svh - 215px); }
+}

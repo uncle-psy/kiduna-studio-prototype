@@ -174,7 +174,7 @@ function alternateGuidedActions(state: StudioState, persona: PersonaKey): Guided
   return actions;
 }
 
-export default function StudioV0() {
+export default function StudioV0({ embedded = false }: { embedded?: boolean }) {
   const { state, ready, dispatch, publish } = useSharedStudioState();
   const [persona, setPersona] = useState<PersonaKey>("david");
   const [hudRest, setHudRest] = useState<HudRest>("clear");
@@ -183,7 +183,7 @@ export default function StudioV0() {
   const [pending, setPending] = useState<GuidedAction | null>(null);
   const [structured, setStructured] = useState(false);
   const [reduced, setReduced] = useState(false);
-  const [journeyStep, setJourneyStep] = useState<JourneyStepId | null>("landing");
+  const [journeyStep, setJourneyStep] = useState<JourneyStepId | null>(embedded ? null : "landing");
   const [journeyPanel, setJourneyPanel] = useState<JourneyPanel | null>(null);
   const [insideStep, setInsideStep] = useState<InsideStudioStepId | null>(null);
   const [atlasOpen, setAtlasOpen] = useState(false);
@@ -231,7 +231,7 @@ export default function StudioV0() {
     url.searchParams.set("persona", next);
     window.history.replaceState({}, "", url);
     setPending(null);
-    setJourneyStep("landing");
+    if (!embedded) setJourneyStep("landing");
     setInsideStep(null);
     setJourneyPanel(null);
     setToast(`${PERSONAS[next].firstName} session active · independent local focus`);
@@ -312,7 +312,7 @@ export default function StudioV0() {
       <div className={styles.ambient} aria-hidden="true"><i /><i /><i /><i /></div>
       <div className={styles.grain} aria-hidden="true" />
 
-      <LabDock
+      {!embedded && <LabDock
         persona={persona}
         switchPersona={switchPersona}
         state={state}
@@ -327,7 +327,7 @@ export default function StudioV0() {
         onInsideStep={(id) => { const stepNumber = insideStudioStep(id).number; setInsideStep(id); setJourneyStep(null); setJourneyPanel(null); setToast(`Inside the Studio · Design ${stepNumber} active`); }}
         onJourneyPanel={(panel) => setJourneyPanel((current) => current === panel ? null : panel)}
         onReset={() => { setJourneyStep("landing"); setInsideStep(null); setJourneyPanel(null); replaceState(createInitialState(), "Clean deterministic reset · Outside Step 1 active"); }}
-      />
+      />}
 
       {journeyStep && <JourneyScene step={journeyStep} persona={persona} panel={journeyPanel} reduced={reduced} onClosePanel={() => setJourneyPanel(null)} />}
       {insideStep && <InsideStudioScene step={insideStep} panel={journeyPanel as InsideStudioPanel | null} reduced={reduced} onClosePanel={() => setJourneyPanel(null)} />}
