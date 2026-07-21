@@ -16,11 +16,11 @@ export const LAB_SURFACES: readonly { id: LabSurface; label: string; description
 ] as const;
 
 export const OUTSIDE_VIEWS: readonly LabView[] = [
-  { id: "landing", label: "1. Welcome and sign in", href: "/outside/landing", source: "/journey/landing/index.html" },
-  { id: "signup", label: "2. Create a Kinship account", href: "/outside/signup", source: "/journey/signup/index.html?inviter=david-nikzad&code=KD-DAVID-MOTO-7K4Q" },
-  { id: "checkout", label: "3. Compute checkout", href: "/outside/checkout", source: "/journey/checkout/index.html" },
-  { id: "organization-selection", label: "4. Organization selection", href: "/outside/organization-selection", source: "/journey/organization-selection/index.html" },
-  { id: "resources", label: "5. Resources", href: "/outside/resources", source: "/journey/resources/index.html" },
+  { id: "landing", label: "1. Welcome and sign in", href: "/outside/landing", source: "/journey/landing" },
+  { id: "signup", label: "2. Create a Kinship account", href: "/outside/signup", source: "/journey/signup?inviter=david-nikzad&code=KD-DAVID-MOTO-7K4Q" },
+  { id: "checkout", label: "3. Compute checkout", href: "/outside/checkout", source: "/journey/checkout" },
+  { id: "organization-selection", label: "4. Organization selection", href: "/outside/organization-selection", source: "/journey/organization-selection" },
+  { id: "resources", label: "5. Resources", href: "/outside/resources", source: "/journey/resources" },
 ] as const;
 
 export const STUDIO_VIEWS: readonly LabView[] = [
