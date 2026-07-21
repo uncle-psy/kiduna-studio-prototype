@@ -9,8 +9,8 @@ export type LabView = {
 
 export const LAB_SURFACES: readonly { id: LabSurface; label: string; description: string; href?: string }[] = [
   { id: "outside", label: "Outside the Field", description: "Web content outside the Kiduna apps", href: "/outside/landing" },
-  { id: "studio", label: "Kiduna Studio", description: "Desktop and laptop · macOS, Windows, ChromeOS", href: "/studio/field" },
-  { id: "live", label: "Kiduna Live", description: "Mobile app" },
+  { id: "studio", label: "Kiduna Studio", description: "Desktop and laptop · macOS, Windows, ChromeOS", href: "/studio/the-field" },
+  { id: "live", label: "Kiduna Live", description: "Mobile app", href: "/live/the-field" },
   { id: "express", label: "Kiduna Express", description: "Chrome extension" },
   { id: "tv", label: "Kiduna TV", description: "Large-format CTV · Android TV, Google TV" },
 ] as const;
@@ -24,22 +24,29 @@ export const OUTSIDE_VIEWS: readonly LabView[] = [
 ] as const;
 
 export const STUDIO_VIEWS: readonly LabView[] = [
-  { id: "field", label: "Studio Field · working prototype", href: "/studio/field" },
-  { id: "calm-realm-start", label: "1. Calm Realm start", href: "/studio/calm-realm-start", source: "/inside-studio/gate-1?scene=0&embed=1" },
-  { id: "scheduling-instrument", label: "2. Scheduling in conversation", href: "/studio/scheduling-instrument", source: "/inside-studio/gate-1?scene=1&embed=1" },
-  { id: "palo-alto-project", label: "3. Palo Alto project with Matt", href: "/studio/palo-alto-project", source: "/inside-studio/gate-1?scene=2&embed=1" },
-  { id: "inner-clinic", label: "4. Inner Clinic", href: "/studio/inner-clinic", source: "/inside-studio/gate-2b1?scene=0&embed=1" },
-  { id: "nature-of-work", label: "5. The Nature of Work", href: "/studio/nature-of-work", source: "/inside-studio/gate-2b1?scene=1&embed=1" },
-  { id: "second-cavalry", label: "6. 2nd Cavalry oral history", href: "/studio/second-cavalry", source: "/inside-studio/gate-2b1?scene=2&embed=1" },
+  { id: "the-field", label: "M0 · The Field", href: "/studio/the-field" },
+  { id: "create-course", label: "M1 · Create a course", href: "/studio/create-course" },
+  { id: "learn-contribute", label: "M2 · Learn & contribute", href: "/studio/learn-contribute" },
+  { id: "catalyst-bench", label: "M3 · Catalyst’s bench", href: "/studio/catalyst-bench" },
+  { id: "month-close", label: "M4 · Month Close", href: "/studio/month-close" },
+  { id: "scene-portal", label: "M5 · Scene Portal", href: "/studio/scene-portal" },
 ] as const;
+
+export const LIVE_VIEWS: readonly LabView[] = STUDIO_VIEWS.map((view) => ({
+  ...view,
+  href: view.href.replace("/studio/", "/live/"),
+}));
 
 export const LAB_PERSONAS = [
   { id: "david", label: "David Nikzad" },
   { id: "matt", label: "Matt Simon" },
+  { id: "moto", label: "Moto" },
+  { id: "aashik", label: "Aashik" },
 ] as const;
 
 export function viewsFor(surface: LabSurface) {
   if (surface === "outside") return OUTSIDE_VIEWS;
   if (surface === "studio") return STUDIO_VIEWS;
+  if (surface === "live") return LIVE_VIEWS;
   return [];
 }

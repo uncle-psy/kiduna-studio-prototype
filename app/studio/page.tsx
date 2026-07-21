@@ -1,2 +1,2 @@
 import StudioPrototype from "../StudioPrototype";
-export default function Page() { return <StudioPrototype view="field" />; }
+export default function Page() { return <StudioPrototype view="the-field" />; }
