@@ -1,0 +1,332 @@
+[
+  {
+    "id": "decorative_items_master",
+    "slug": "decorative-items-master",
+    "name": "Items enamel study",
+    "originalName": "Items enamel study",
+    "category": "decorative",
+    "family": "marketing",
+    "class": null,
+    "court": null,
+    "type": "Decorative",
+    "timing": [],
+    "abilities": [],
+    "effect": [],
+    "digitalCopy": {
+      "name": "Items enamel study",
+      "type": "Decorative",
+      "keywords": [],
+      "effect": []
+    },
+    "printedTextVerbatim": [
+      "Items enamel study"
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "decorative",
+    "mappingStatus": "decorative",
+    "mappingConfidence": "verified-final",
+    "copyStatus": "verified",
+    "requiresHumanCopyReview": false,
+    "conflicts": [],
+    "notes": [
+      "Approved presentation asset. It is not a playable card or game component."
+    ],
+    "legacy": null,
+    "final": {
+      "sourcePath": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/items-master.png",
+      "publicPath": "/assets/library/final/decorative/decorative_items_master.png",
+      "filename": "items-master.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "fileSize": 2880745,
+      "sha256": "e62384ba9cbc63472a3aeffb58a720cc90dde100fa1607b3d64a0d6cc4b87b8d"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": null,
+    "finalArtwork": "/assets/library/final/decorative/decorative_items_master.png",
+    "thumbnail": "/assets/library/thumbs/decorative_items_master.webp",
+    "provenance": {
+      "legacySource": null,
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/items-master.png",
+      "structuredSource": null
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "decorative_identity_master",
+    "slug": "decorative-identity-master",
+    "name": "Royals & Rogues identity master",
+    "originalName": "Royals & Rogues identity master",
+    "category": "decorative",
+    "family": "marketing",
+    "class": null,
+    "court": null,
+    "type": "Decorative",
+    "timing": [],
+    "abilities": [],
+    "effect": [],
+    "digitalCopy": {
+      "name": "Royals & Rogues identity master",
+      "type": "Decorative",
+      "keywords": [],
+      "effect": []
+    },
+    "printedTextVerbatim": [
+      "Royals & Rogues identity master"
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "decorative",
+    "mappingStatus": "decorative",
+    "mappingConfidence": "verified-final",
+    "copyStatus": "verified",
+    "requiresHumanCopyReview": false,
+    "conflicts": [],
+    "notes": [
+      "Approved presentation asset. It is not a playable card or game component."
+    ],
+    "legacy": null,
+    "final": {
+      "sourcePath": "core/Royals-and-Rogues-Kit-v2.0.0/design-system/identity/royals-and-rogues-key-art-master.png",
+      "publicPath": "/assets/library/final/decorative/decorative_identity_master.png",
+      "filename": "royals-and-rogues-key-art-master.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "fileSize": 2699646,
+      "sha256": "d2367833ddb309d35b1107a257bd665cc8244a973334938e3c8ce6d4e81f6a52"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": null,
+    "finalArtwork": "/assets/library/final/decorative/decorative_identity_master.png",
+    "thumbnail": "/assets/library/thumbs/decorative_identity_master.webp",
+    "provenance": {
+      "legacySource": null,
+      "finalSource": "core/Royals-and-Rogues-Kit-v2.0.0/design-system/identity/royals-and-rogues-key-art-master.png",
+      "structuredSource": null
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "decorative_key_art",
+    "slug": "decorative-key-art",
+    "name": "Royals & Rogues key art",
+    "originalName": "Royals & Rogues key art",
+    "category": "decorative",
+    "family": "marketing",
+    "class": null,
+    "court": null,
+    "type": "Decorative",
+    "timing": [],
+    "abilities": [],
+    "effect": [],
+    "digitalCopy": {
+      "name": "Royals & Rogues key art",
+      "type": "Decorative",
+      "keywords": [],
+      "effect": []
+    },
+    "printedTextVerbatim": [
+      "Royals & Rogues key art"
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "decorative",
+    "mappingStatus": "decorative",
+    "mappingConfidence": "verified-final",
+    "copyStatus": "verified",
+    "requiresHumanCopyReview": false,
+    "conflicts": [],
+    "notes": [
+      "Approved presentation asset. It is not a playable card or game component."
+    ],
+    "legacy": null,
+    "final": {
+      "sourcePath": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/system/key-art.png",
+      "publicPath": "/assets/library/final/decorative/decorative_key_art.png",
+      "filename": "key-art.png",
+      "width": 1024,
+      "height": 1536,
+      "format": "PNG",
+      "fileSize": 2609282,
+      "sha256": "10e49b981f01515bcf6794b15be98bf73048c6e426923d4dc75f85a105e2cefc"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": null,
+    "finalArtwork": "/assets/library/final/decorative/decorative_key_art.png",
+    "thumbnail": "/assets/library/thumbs/decorative_key_art.webp",
+    "provenance": {
+      "legacySource": null,
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/system/key-art.png",
+      "structuredSource": null
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "decorative_logo",
+    "slug": "decorative-logo",
+    "name": "Royals & Rogues logo",
+    "originalName": "Royals & Rogues logo",
+    "category": "decorative",
+    "family": "marketing",
+    "class": null,
+    "court": null,
+    "type": "Decorative",
+    "timing": [],
+    "abilities": [],
+    "effect": [],
+    "digitalCopy": {
+      "name": "Royals & Rogues logo",
+      "type": "Decorative",
+      "keywords": [],
+      "effect": []
+    },
+    "printedTextVerbatim": [
+      "Royals & Rogues logo"
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "decorative",
+    "mappingStatus": "decorative",
+    "mappingConfidence": "verified-final",
+    "copyStatus": "verified",
+    "requiresHumanCopyReview": false,
+    "conflicts": [],
+    "notes": [
+      "Approved presentation asset. It is not a playable card or game component."
+    ],
+    "legacy": null,
+    "final": {
+      "sourcePath": "core/Royals-and-Rogues-Kit-v2.0.0/design-system/identity/royals-and-rogues-logo-primary.png",
+      "publicPath": "/assets/library/final/decorative/decorative_logo.png",
+      "filename": "royals-and-rogues-logo-primary.png",
+      "width": 1800,
+      "height": 620,
+      "format": "PNG",
+      "fileSize": 73726,
+      "sha256": "f79d25b5506a2293ccf57adbb0a1ea388a369af9b6b60ca02d9960dcb76c5adc"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": null,
+    "finalArtwork": "/assets/library/final/decorative/decorative_logo.png",
+    "thumbnail": "/assets/library/thumbs/decorative_logo.webp",
+    "provenance": {
+      "legacySource": null,
+      "finalSource": "core/Royals-and-Rogues-Kit-v2.0.0/design-system/identity/royals-and-rogues-logo-primary.png",
+      "structuredSource": null
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "decorative_mark",
+    "slug": "decorative-mark",
+    "name": "Royals & Rogues mark",
+    "originalName": "Royals & Rogues mark",
+    "category": "decorative",
+    "family": "marketing",
+    "class": null,
+    "court": null,
+    "type": "Decorative",
+    "timing": [],
+    "abilities": [],
+    "effect": [],
+    "digitalCopy": {
+      "name": "Royals & Rogues mark",
+      "type": "Decorative",
+      "keywords": [],
+      "effect": []
+    },
+    "printedTextVerbatim": [
+      "Royals & Rogues mark"
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "decorative",
+    "mappingStatus": "decorative",
+    "mappingConfidence": "verified-final",
+    "copyStatus": "verified",
+    "requiresHumanCopyReview": false,
+    "conflicts": [],
+    "notes": [
+      "Approved presentation asset. It is not a playable card or game component."
+    ],
+    "legacy": null,
+    "final": {
+      "sourcePath": "core/Royals-and-Rogues-Kit-v2.0.0/design-system/identity/royals-and-rogues-mark.png",
+      "publicPath": "/assets/library/final/decorative/decorative_mark.png",
+      "filename": "royals-and-rogues-mark.png",
+      "width": 640,
+      "height": 640,
+      "format": "PNG",
+      "fileSize": 9120,
+      "sha256": "77e924ad0218355a14e4a47edfa75252a98c754a484ee784c7a84f1fe95d945c"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": null,
+    "finalArtwork": "/assets/library/final/decorative/decorative_mark.png",
+    "thumbnail": "/assets/library/thumbs/decorative_mark.webp",
+    "provenance": {
+      "legacySource": null,
+      "finalSource": "core/Royals-and-Rogues-Kit-v2.0.0/design-system/identity/royals-and-rogues-mark.png",
+      "structuredSource": null
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "decorative_title_card",
+    "slug": "decorative-title-card",
+    "name": "Royals & Rogues title card",
+    "originalName": "Royals & Rogues title card",
+    "category": "decorative",
+    "family": "marketing",
+    "class": null,
+    "court": null,
+    "type": "Decorative",
+    "timing": [],
+    "abilities": [],
+    "effect": [],
+    "digitalCopy": {
+      "name": "Royals & Rogues title card",
+      "type": "Decorative",
+      "keywords": [],
+      "effect": []
+    },
+    "printedTextVerbatim": [
+      "Royals & Rogues title card"
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "decorative",
+    "mappingStatus": "decorative",
+    "mappingConfidence": "verified-final",
+    "copyStatus": "verified",
+    "requiresHumanCopyReview": false,
+    "conflicts": [],
+    "notes": [
+      "Approved presentation asset. It is not a playable card or game component."
+    ],
+    "legacy": null,
+    "final": {
+      "sourcePath": "core/Royals-and-Rogues-Kit-v2.0.0/design-system/identity/royals-and-rogues-title-card.jpg",
+      "publicPath": "/assets/library/final/decorative/decorative_title_card.jpg",
+      "filename": "royals-and-rogues-title-card.jpg",
+      "width": 1920,
+      "height": 1080,
+      "format": "JPEG",
+      "fileSize": 562110,
+      "sha256": "8d0b70d97e86d3197fc80bd096e581d8dc4b664b0235fc9f46e66ddd8cc67fd2"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": null,
+    "finalArtwork": "/assets/library/final/decorative/decorative_title_card.jpg",
+    "thumbnail": "/assets/library/thumbs/decorative_title_card.webp",
+    "provenance": {
+      "legacySource": null,
+      "finalSource": "core/Royals-and-Rogues-Kit-v2.0.0/design-system/identity/royals-and-rogues-title-card.jpg",
+      "structuredSource": null
+    },
+    "inclusionStatus": "included"
+  }
+]

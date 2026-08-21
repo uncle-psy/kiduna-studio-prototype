@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "catalogRecords": 196,
+  "sourceFiles": 666,
+  "confirmedPairs": 180,
+  "pixelChecks": 58,
+  "packages": 8,
+  "failures": []
+}

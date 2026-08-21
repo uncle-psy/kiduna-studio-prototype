@@ -1,0 +1,1479 @@
+[
+  {
+    "id": "counterfeit_ace",
+    "slug": "counterfeit-ace",
+    "name": "Counterfeit Ace",
+    "originalName": "Counterfeit Ace",
+    "category": "item",
+    "family": "rogue",
+    "class": null,
+    "court": null,
+    "type": "Item",
+    "timing": [],
+    "abilities": [],
+    "effect": [
+      "Rogue Item",
+      "Counterfeit Ace counts as an",
+      "Ace of Spades.",
+      "If the real Ace of Spades or another",
+      "Counterfeit Hee is exposed along",
+      "with this card, place Counterfeit Ace",
+      "in the bank, and fold your hand."
+    ],
+    "digitalCopy": {
+      "name": "Counterfeit Ace",
+      "type": "Item",
+      "keywords": [],
+      "effect": [
+        "Rogue Item",
+        "Counterfeit Ace counts as an",
+        "Ace of Spades.",
+        "If the real Ace of Spades or another",
+        "Counterfeit Hee is exposed along",
+        "with this card, place Counterfeit Ace",
+        "in the bank, and fold your hand."
+      ]
+    },
+    "printedTextVerbatim": [
+      "Counterfeit Ace",
+      "Rogue Item",
+      "Counterfeit Ace counts as an",
+      "Ace of Spades.",
+      "If the real Ace of Spades or another",
+      "Counterfeit Hee is exposed along",
+      "with this card, place Counterfeit Ace",
+      "in the bank, and fold your hand."
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "confirmed-pair",
+    "mappingConfidence": "high",
+    "copyStatus": "provisional",
+    "requiresHumanCopyReview": true,
+    "conflicts": [],
+    "notes": [
+      "The authoritative legacy face is supplied as a standalone original image; no complete legacy card-sheet PDF was present, so that image also serves as the original crop."
+    ],
+    "legacy": {
+      "sourcePath": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/16 - Counterfeit Ace - Rogue Item.png",
+      "publicPath": "/assets/library/legacy/item/counterfeit_ace.png",
+      "filename": "16 - Counterfeit Ace - Rogue Item.png",
+      "width": 750,
+      "height": 1050,
+      "format": "PNG",
+      "fileSize": 573566,
+      "sha256": "df95bd56d1193c24aaa4797ca4e2d7dde50b9e626862a02260c53550fdc06f14"
+    },
+    "final": {
+      "sourcePath": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/counterfeit_ace.png",
+      "publicPath": "/assets/library/final/item/counterfeit_ace.png",
+      "filename": "counterfeit_ace.png",
+      "width": 1060,
+      "height": 1484,
+      "format": "PNG",
+      "fileSize": 2064991,
+      "sha256": "1796f3d83c0e878b0feee0e326f9ec5407296f269b99803fb39e78e4af3167d7"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": "/assets/library/legacy/item/counterfeit_ace.png",
+    "finalArtwork": "/assets/library/final/item/counterfeit_ace.png",
+    "thumbnail": "/assets/library/thumbs/counterfeit_ace.webp",
+    "provenance": {
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/16 - Counterfeit Ace - Rogue Item.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/counterfeit_ace.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/16 - Counterfeit Ace - Rogue Item.png"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "fools_gold",
+    "slug": "fools-gold",
+    "name": "Fool's Gold",
+    "originalName": "Fool's Gold",
+    "category": "item",
+    "family": "merchant",
+    "class": null,
+    "court": null,
+    "type": "Item",
+    "timing": [],
+    "abilities": [
+      "Tilted"
+    ],
+    "effect": [
+      "Merchant Item",
+      "When you bet or call, you may",
+      "use fool's Gold as a 1o coin chip.",
+      "Put it in the pot.)",
+      "When a player wins a pot with",
+      "Fool's Gold in it, discard it to the",
+      "bank and that player is now TILTED."
+    ],
+    "digitalCopy": {
+      "name": "Fool's Gold",
+      "type": "Item",
+      "keywords": [
+        "Tilted"
+      ],
+      "effect": [
+        "Merchant Item",
+        "When you bet or call, you may",
+        "use fool's Gold as a 1o coin chip.",
+        "Put it in the pot.)",
+        "When a player wins a pot with",
+        "Fool's Gold in it, discard it to the",
+        "bank and that player is now TILTED."
+      ]
+    },
+    "printedTextVerbatim": [
+      "Fool's Gold",
+      "Merchant Item",
+      "When you bet or call, you may",
+      "use fool's Gold as a 1o coin chip.",
+      "Put it in the pot.)",
+      "When a player wins a pot with",
+      "Fool's Gold in it, discard it to the",
+      "bank and that player is now TILTED."
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "confirmed-pair",
+    "mappingConfidence": "high",
+    "copyStatus": "provisional",
+    "requiresHumanCopyReview": true,
+    "conflicts": [],
+    "notes": [
+      "The authoritative legacy face is supplied as a standalone original image; no complete legacy card-sheet PDF was present, so that image also serves as the original crop."
+    ],
+    "legacy": {
+      "sourcePath": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/5 - Fool_s Gold - Merchant Item.png",
+      "publicPath": "/assets/library/legacy/item/fools_gold.png",
+      "filename": "5 - Fool_s Gold - Merchant Item.png",
+      "width": 750,
+      "height": 1050,
+      "format": "PNG",
+      "fileSize": 1082866,
+      "sha256": "13b0a561c328676e3d4c922bac422e0187068e2681c2168f8e082e9de20f7b8e"
+    },
+    "final": {
+      "sourcePath": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/fools_gold.png",
+      "publicPath": "/assets/library/final/item/fools_gold.png",
+      "filename": "fools_gold.png",
+      "width": 1060,
+      "height": 1484,
+      "format": "PNG",
+      "fileSize": 2539171,
+      "sha256": "474df57e3bbabb5471744ba6d11194e1f0e7582617ee352eb2c64e11c3e97f13"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": "/assets/library/legacy/item/fools_gold.png",
+    "finalArtwork": "/assets/library/final/item/fools_gold.png",
+    "thumbnail": "/assets/library/thumbs/fools_gold.webp",
+    "provenance": {
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/5 - Fool_s Gold - Merchant Item.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/fools_gold.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/5 - Fool_s Gold - Merchant Item.png"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "grappling_hook",
+    "slug": "grappling-hook",
+    "name": "Grappling Hook",
+    "originalName": "Grappling Hook",
+    "category": "item",
+    "family": "rogue",
+    "class": null,
+    "court": null,
+    "type": "Item",
+    "timing": [],
+    "abilities": [
+      "Tilted"
+    ],
+    "effect": [
+      "Rogue Item",
+      "Choose one:",
+      "1.) Add a hole card from the burn",
+      "to your hand.",
+      "2) Choose a TILTED opponent.",
+      "Steal a random hole card from",
+      "their hand."
+    ],
+    "digitalCopy": {
+      "name": "Grappling Hook",
+      "type": "Item",
+      "keywords": [
+        "Tilted"
+      ],
+      "effect": [
+        "Rogue Item",
+        "Choose one:",
+        "1.) Add a hole card from the burn",
+        "to your hand.",
+        "2) Choose a TILTED opponent.",
+        "Steal a random hole card from",
+        "their hand."
+      ]
+    },
+    "printedTextVerbatim": [
+      "Grappling Hook",
+      "Rogue Item",
+      "Choose one:",
+      "1.) Add a hole card from the burn",
+      "to your hand.",
+      "2) Choose a TILTED opponent.",
+      "Steal a random hole card from",
+      "their hand."
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "confirmed-pair",
+    "mappingConfidence": "high",
+    "copyStatus": "provisional",
+    "requiresHumanCopyReview": true,
+    "conflicts": [],
+    "notes": [
+      "The authoritative legacy face is supplied as a standalone original image; no complete legacy card-sheet PDF was present, so that image also serves as the original crop."
+    ],
+    "legacy": {
+      "sourcePath": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/7 - Grappling Hook - Rogue Item.png",
+      "publicPath": "/assets/library/legacy/item/grappling_hook.png",
+      "filename": "7 - Grappling Hook - Rogue Item.png",
+      "width": 750,
+      "height": 1050,
+      "format": "PNG",
+      "fileSize": 1074624,
+      "sha256": "37b6e8f4eba3740cacff0f204a11fdb48883d8114c9e4c8932c7c3ebd2a92273"
+    },
+    "final": {
+      "sourcePath": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/grappling_hook.png",
+      "publicPath": "/assets/library/final/item/grappling_hook.png",
+      "filename": "grappling_hook.png",
+      "width": 1060,
+      "height": 1484,
+      "format": "PNG",
+      "fileSize": 2048450,
+      "sha256": "f3c5838572abe953ed2c5265210157b90698fdea658418cc0b15108cf3cc8eac"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": "/assets/library/legacy/item/grappling_hook.png",
+    "finalArtwork": "/assets/library/final/item/grappling_hook.png",
+    "thumbnail": "/assets/library/thumbs/grappling_hook.webp",
+    "provenance": {
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/7 - Grappling Hook - Rogue Item.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/grappling_hook.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/7 - Grappling Hook - Rogue Item.png"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "healing_potion",
+    "slug": "healing-potion",
+    "name": "Healing Potion",
+    "originalName": "Healing Potion",
+    "category": "item",
+    "family": "rogue",
+    "class": null,
+    "court": null,
+    "type": "Item",
+    "timing": [],
+    "abilities": [
+      "Draw",
+      "Flex",
+      "Rummage",
+      "Tilted",
+      "Heating Up"
+    ],
+    "effect": [
+      "Rogue _tem",
+      "RUMMAGE",
+      "Draw 1.",
+      "If you're TILTED, draw 2 instead",
+      "and you're HEATING UP!"
+    ],
+    "digitalCopy": {
+      "name": "Healing Potion",
+      "type": "Item",
+      "keywords": [
+        "Draw",
+        "Flex",
+        "Rummage",
+        "Tilted",
+        "Heating Up"
+      ],
+      "effect": [
+        "Rogue _tem",
+        "RUMMAGE",
+        "Draw 1.",
+        "If you're TILTED, draw 2 instead",
+        "and you're HEATING UP!"
+      ]
+    },
+    "printedTextVerbatim": [
+      "Healing Potion",
+      "Rogue _tem",
+      "RUMMAGE",
+      "FLEX",
+      "Draw 1.",
+      "If you're TILTED, draw 2 instead",
+      "and you're HEATING UP!"
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "confirmed-pair",
+    "mappingConfidence": "high",
+    "copyStatus": "provisional",
+    "requiresHumanCopyReview": true,
+    "conflicts": [],
+    "notes": [
+      "The authoritative legacy face is supplied as a standalone original image; no complete legacy card-sheet PDF was present, so that image also serves as the original crop."
+    ],
+    "legacy": {
+      "sourcePath": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/9 - Healing Potion - Rogue Item.png",
+      "publicPath": "/assets/library/legacy/item/healing_potion.png",
+      "filename": "9 - Healing Potion - Rogue Item.png",
+      "width": 750,
+      "height": 1050,
+      "format": "PNG",
+      "fileSize": 993618,
+      "sha256": "74004f4b774627a0ecd51f27cefaa89327540c8ae59eccbb4ab5c881e19894fd"
+    },
+    "final": {
+      "sourcePath": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/healing_potion.png",
+      "publicPath": "/assets/library/final/item/healing_potion.png",
+      "filename": "healing_potion.png",
+      "width": 1060,
+      "height": 1484,
+      "format": "PNG",
+      "fileSize": 2135016,
+      "sha256": "6d7a026a6878d29c5778d9d1ae89108ca4e97eca222b5e34dc103c65cada75d7"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": "/assets/library/legacy/item/healing_potion.png",
+    "finalArtwork": "/assets/library/final/item/healing_potion.png",
+    "thumbnail": "/assets/library/thumbs/healing_potion.webp",
+    "provenance": {
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/9 - Healing Potion - Rogue Item.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/healing_potion.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/9 - Healing Potion - Rogue Item.png"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "lucky_charm",
+    "slug": "lucky-charm",
+    "name": "Lucky Charm",
+    "originalName": "Lucky Charm",
+    "category": "item",
+    "family": "merchant",
+    "class": null,
+    "court": null,
+    "type": "Showdown",
+    "timing": [
+      "Showdown"
+    ],
+    "abilities": [
+      "Heating Up"
+    ],
+    "effect": [
+      "Merchant Item",
+      "When you reveal Lucky Charm",
+      "during Showdown, gain 2 hole",
+      "cards.",
+      "If you fold, reveal Lucky Charm from",
+      "your hand. You're HEATING UP!"
+    ],
+    "digitalCopy": {
+      "name": "Lucky Charm",
+      "type": "Showdown",
+      "keywords": [
+        "Heating Up"
+      ],
+      "effect": [
+        "Merchant Item",
+        "When you reveal Lucky Charm",
+        "during Showdown, gain 2 hole",
+        "cards.",
+        "If you fold, reveal Lucky Charm from",
+        "your hand. You're HEATING UP!"
+      ]
+    },
+    "printedTextVerbatim": [
+      "Lucky Charm",
+      "Merchant Item",
+      "When you reveal Lucky Charm",
+      "during Showdown, gain 2 hole",
+      "cards.",
+      "If you fold, reveal Lucky Charm from",
+      "your hand. You're HEATING UP!"
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "confirmed-pair",
+    "mappingConfidence": "high",
+    "copyStatus": "provisional",
+    "requiresHumanCopyReview": true,
+    "conflicts": [],
+    "notes": [
+      "The authoritative legacy face is supplied as a standalone original image; no complete legacy card-sheet PDF was present, so that image also serves as the original crop."
+    ],
+    "legacy": {
+      "sourcePath": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/3 - Lucky Charm - Merchant Item.png",
+      "publicPath": "/assets/library/legacy/item/lucky_charm.png",
+      "filename": "3 - Lucky Charm - Merchant Item.png",
+      "width": 750,
+      "height": 1050,
+      "format": "PNG",
+      "fileSize": 1423615,
+      "sha256": "e445d1c030d43ab71ccec4f51dd6c8606e8574747cd755ef0d9fd8919d8998f6"
+    },
+    "final": {
+      "sourcePath": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/lucky_charm.png",
+      "publicPath": "/assets/library/final/item/lucky_charm.png",
+      "filename": "lucky_charm.png",
+      "width": 1060,
+      "height": 1484,
+      "format": "PNG",
+      "fileSize": 2435159,
+      "sha256": "55c1d5fec05acd33ab0c857fa8d2225d667ebd88ba6bec85bf816325965b60ce"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": "/assets/library/legacy/item/lucky_charm.png",
+    "finalArtwork": "/assets/library/final/item/lucky_charm.png",
+    "thumbnail": "/assets/library/thumbs/lucky_charm.webp",
+    "provenance": {
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/3 - Lucky Charm - Merchant Item.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/lucky_charm.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/3 - Lucky Charm - Merchant Item.png"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "monkey_paw",
+    "slug": "monkey-paw",
+    "name": "Monkey Paw",
+    "originalName": "Monkey Paw",
+    "category": "item",
+    "family": "magic",
+    "class": null,
+    "court": null,
+    "type": "Item",
+    "timing": [],
+    "abilities": [
+      "Draw",
+      "Tilted"
+    ],
+    "effect": [
+      "Magic Item",
+      "Choose one.",
+      "1.) Gain a hole card.",
+      "Discard a Power Card.",
+      "2) Draw 2 Power Cards.",
+      "Discard a hole card.",
+      "3. Gain 3o coins. You're TILTED."
+    ],
+    "digitalCopy": {
+      "name": "Monkey Paw",
+      "type": "Item",
+      "keywords": [
+        "Draw",
+        "Tilted"
+      ],
+      "effect": [
+        "Magic Item",
+        "Choose one.",
+        "1.) Gain a hole card.",
+        "Discard a Power Card.",
+        "2) Draw 2 Power Cards.",
+        "Discard a hole card.",
+        "3. Gain 3o coins. You're TILTED."
+      ]
+    },
+    "printedTextVerbatim": [
+      "Monkey Paw",
+      "Magic Item",
+      "Choose one.",
+      "1.) Gain a hole card.",
+      "Discard a Power Card.",
+      "2) Draw 2 Power Cards.",
+      "Discard a hole card.",
+      "3. Gain 3o coins. You're TILTED."
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "confirmed-pair",
+    "mappingConfidence": "high",
+    "copyStatus": "provisional",
+    "requiresHumanCopyReview": true,
+    "conflicts": [],
+    "notes": [
+      "The authoritative legacy face is supplied as a standalone original image; no complete legacy card-sheet PDF was present, so that image also serves as the original crop."
+    ],
+    "legacy": {
+      "sourcePath": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/1 - Monkey Paw - Magic Item.png",
+      "publicPath": "/assets/library/legacy/item/monkey_paw.png",
+      "filename": "1 - Monkey Paw - Magic Item.png",
+      "width": 750,
+      "height": 1050,
+      "format": "PNG",
+      "fileSize": 1150417,
+      "sha256": "4cf72fa522d7dd260ba09f6583e8c0280132f949e337d1978e9030319428e4ff"
+    },
+    "final": {
+      "sourcePath": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/monkey_paw.png",
+      "publicPath": "/assets/library/final/item/monkey_paw.png",
+      "filename": "monkey_paw.png",
+      "width": 1060,
+      "height": 1484,
+      "format": "PNG",
+      "fileSize": 2513209,
+      "sha256": "30091f2d4c0465297db329620883877c2d1ccc4a42043c45f04cdf0ccc1e103a"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": "/assets/library/legacy/item/monkey_paw.png",
+    "finalArtwork": "/assets/library/final/item/monkey_paw.png",
+    "thumbnail": "/assets/library/thumbs/monkey_paw.webp",
+    "provenance": {
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/1 - Monkey Paw - Magic Item.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/monkey_paw.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/1 - Monkey Paw - Magic Item.png"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "rabbit_foot",
+    "slug": "rabbit-foot",
+    "name": "Rabbit Foot",
+    "originalName": "Rabbit Foot",
+    "category": "item",
+    "family": "magic",
+    "class": null,
+    "court": null,
+    "type": "Item",
+    "timing": [],
+    "abilities": [
+      "Mulligan"
+    ],
+    "effect": [
+      "Magic Item",
+      "Gain a hole card.",
+      "Then, you may Mulligan a board",
+      "card with a value of 2-9."
+    ],
+    "digitalCopy": {
+      "name": "Rabbit Foot",
+      "type": "Item",
+      "keywords": [
+        "Mulligan"
+      ],
+      "effect": [
+        "Magic Item",
+        "Gain a hole card.",
+        "Then, you may Mulligan a board",
+        "card with a value of 2-9."
+      ]
+    },
+    "printedTextVerbatim": [
+      "Rabbit Foot",
+      "Magic Item",
+      "Gain a hole card.",
+      "Then, you may Mulligan a board",
+      "card with a value of 2-9."
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "confirmed-pair",
+    "mappingConfidence": "high",
+    "copyStatus": "provisional",
+    "requiresHumanCopyReview": true,
+    "conflicts": [],
+    "notes": [
+      "The authoritative legacy face is supplied as a standalone original image; no complete legacy card-sheet PDF was present, so that image also serves as the original crop."
+    ],
+    "legacy": {
+      "sourcePath": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/2 - Rabbit Foot - Magic Item.png",
+      "publicPath": "/assets/library/legacy/item/rabbit_foot.png",
+      "filename": "2 - Rabbit Foot - Magic Item.png",
+      "width": 750,
+      "height": 1050,
+      "format": "PNG",
+      "fileSize": 1043704,
+      "sha256": "de57679eaf66b9ce719c4722f7dfa69de6d334385ab851d93db0160174b8b6c3"
+    },
+    "final": {
+      "sourcePath": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/rabbit_foot.png",
+      "publicPath": "/assets/library/final/item/rabbit_foot.png",
+      "filename": "rabbit_foot.png",
+      "width": 1060,
+      "height": 1484,
+      "format": "PNG",
+      "fileSize": 2715671,
+      "sha256": "a932e6063f8e85b7c033a8cf2935b6256bd89bff58e2a0b3dfff8a1ffbff0810"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": "/assets/library/legacy/item/rabbit_foot.png",
+    "finalArtwork": "/assets/library/final/item/rabbit_foot.png",
+    "thumbnail": "/assets/library/thumbs/rabbit_foot.webp",
+    "provenance": {
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/2 - Rabbit Foot - Magic Item.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/rabbit_foot.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/2 - Rabbit Foot - Magic Item.png"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "smoke_bomb",
+    "slug": "smoke-bomb",
+    "name": "Smoke Bomb",
+    "originalName": "Smoke Bomb",
+    "category": "item",
+    "family": "rogue",
+    "class": null,
+    "court": null,
+    "type": "All",
+    "timing": [
+      "All"
+    ],
+    "abilities": [
+      "Stealthed",
+      "Heating Up"
+    ],
+    "effect": [
+      "Rogue Item",
+      "Fold your hole cards.",
+      "All opponents who aren't HEATING UP",
+      "discard a Power Card.",
+      "You're Stealthed."
+    ],
+    "digitalCopy": {
+      "name": "Smoke Bomb",
+      "type": "All",
+      "keywords": [
+        "Stealthed",
+        "Heating Up"
+      ],
+      "effect": [
+        "Rogue Item",
+        "Fold your hole cards.",
+        "All opponents who aren't HEATING UP",
+        "discard a Power Card.",
+        "You're Stealthed."
+      ]
+    },
+    "printedTextVerbatim": [
+      "Smoke Bomb",
+      "Rogue Item",
+      "Fold your hole cards.",
+      "All opponents who aren't HEATING UP",
+      "discard a Power Card.",
+      "You're Stealthed."
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "confirmed-pair",
+    "mappingConfidence": "high",
+    "copyStatus": "provisional",
+    "requiresHumanCopyReview": true,
+    "conflicts": [],
+    "notes": [
+      "The authoritative legacy face is supplied as a standalone original image; no complete legacy card-sheet PDF was present, so that image also serves as the original crop."
+    ],
+    "legacy": {
+      "sourcePath": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/8 - Smoke Bomb - Rogue Item.png",
+      "publicPath": "/assets/library/legacy/item/smoke_bomb.png",
+      "filename": "8 - Smoke Bomb - Rogue Item.png",
+      "width": 750,
+      "height": 1050,
+      "format": "PNG",
+      "fileSize": 1006202,
+      "sha256": "9f123aaaad004fee5f993edeb38a5fa62a725511be3d9aea66595a4a380e3ada"
+    },
+    "final": {
+      "sourcePath": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/smoke_bomb.png",
+      "publicPath": "/assets/library/final/item/smoke_bomb.png",
+      "filename": "smoke_bomb.png",
+      "width": 1060,
+      "height": 1484,
+      "format": "PNG",
+      "fileSize": 2560535,
+      "sha256": "04aa9e935a8c74ea3e149100b7cd6c94727e4f7e459c53e084d976d8cd7914bd"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": "/assets/library/legacy/item/smoke_bomb.png",
+    "finalArtwork": "/assets/library/final/item/smoke_bomb.png",
+    "thumbnail": "/assets/library/thumbs/smoke_bomb.webp",
+    "provenance": {
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/8 - Smoke Bomb - Rogue Item.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/smoke_bomb.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/8 - Smoke Bomb - Rogue Item.png"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "snake_oil",
+    "slug": "snake-oil",
+    "name": "Snake Oil",
+    "originalName": "Snake Oil",
+    "category": "item",
+    "family": "merchant",
+    "class": null,
+    "court": null,
+    "type": "Showdown",
+    "timing": [
+      "Showdown"
+    ],
+    "abilities": [
+      "Draw",
+      "Rummage",
+      "Tilted",
+      "Heating Up"
+    ],
+    "effect": [
+      "Merchant Item",
+      "RUMMAGE",
+      "When you win a Showdown with",
+      "Snake Oil in your hand, draw 2",
+      "2.",
+      "If you Rummage Snake Oil,",
+      "you're TILTED. If you're HEATING UP,",
+      "then Cool Off instead."
+    ],
+    "digitalCopy": {
+      "name": "Snake Oil",
+      "type": "Showdown",
+      "keywords": [
+        "Draw",
+        "Rummage",
+        "Tilted",
+        "Heating Up"
+      ],
+      "effect": [
+        "Merchant Item",
+        "RUMMAGE",
+        "When you win a Showdown with",
+        "Snake Oil in your hand, draw 2",
+        "2.",
+        "If you Rummage Snake Oil,",
+        "you're TILTED. If you're HEATING UP,",
+        "then Cool Off instead."
+      ]
+    },
+    "printedTextVerbatim": [
+      "Snake Oil",
+      "Merchant Item",
+      "RUMMAGE",
+      "When you win a Showdown with",
+      "Snake Oil in your hand, draw 2",
+      "2.",
+      "If you Rummage Snake Oil,",
+      "you're TILTED. If you're HEATING UP,",
+      "then Cool Off instead."
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "confirmed-pair",
+    "mappingConfidence": "high",
+    "copyStatus": "provisional",
+    "requiresHumanCopyReview": true,
+    "conflicts": [],
+    "notes": [
+      "The authoritative legacy face is supplied as a standalone original image; no complete legacy card-sheet PDF was present, so that image also serves as the original crop."
+    ],
+    "legacy": {
+      "sourcePath": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/4 - Snake Oil - Merchant Item.png",
+      "publicPath": "/assets/library/legacy/item/snake_oil.png",
+      "filename": "4 - Snake Oil - Merchant Item.png",
+      "width": 750,
+      "height": 1050,
+      "format": "PNG",
+      "fileSize": 1428948,
+      "sha256": "debfdac37d557225f546268788bc19820ad71be6ed8ca86e00df5d7f8a948e7a"
+    },
+    "final": {
+      "sourcePath": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/snake_oil.png",
+      "publicPath": "/assets/library/final/item/snake_oil.png",
+      "filename": "snake_oil.png",
+      "width": 1060,
+      "height": 1484,
+      "format": "PNG",
+      "fileSize": 2305182,
+      "sha256": "af45fa0b2581c3585e377761e2829c73ef8433ed0b6a76d6082753a923778d62"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": "/assets/library/legacy/item/snake_oil.png",
+    "finalArtwork": "/assets/library/final/item/snake_oil.png",
+    "thumbnail": "/assets/library/thumbs/snake_oil.webp",
+    "provenance": {
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/4 - Snake Oil - Merchant Item.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/snake_oil.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/4 - Snake Oil - Merchant Item.png"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "spare_change",
+    "slug": "spare-change",
+    "name": "Spare Change",
+    "originalName": "Spare Change",
+    "category": "item",
+    "family": "noble",
+    "class": null,
+    "court": null,
+    "type": "Item",
+    "timing": [],
+    "abilities": [
+      "Draw"
+    ],
+    "effect": [
+      "Noble Item",
+      "When you draw Spare Change,",
+      "immedíately discard it to the bank",
+      "and gain 5 coins./If you're a Merchant",
+      "or Noble, gain 1o coins instead.",
+      "If Spare Change is dealt to the board,",
+      "add s coins to the pot."
+    ],
+    "digitalCopy": {
+      "name": "Spare Change",
+      "type": "Item",
+      "keywords": [
+        "Draw"
+      ],
+      "effect": [
+        "Noble Item",
+        "When you draw Spare Change,",
+        "immedíately discard it to the bank",
+        "and gain 5 coins./If you're a Merchant",
+        "or Noble, gain 1o coins instead.",
+        "If Spare Change is dealt to the board,",
+        "add s coins to the pot."
+      ]
+    },
+    "printedTextVerbatim": [
+      "Spare Change",
+      "Noble Item",
+      "When you draw Spare Change,",
+      "immedíately discard it to the bank",
+      "and gain 5 coins./If you're a Merchant",
+      "or Noble, gain 1o coins instead.",
+      "If Spare Change is dealt to the board,",
+      "add s coins to the pot."
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "confirmed-pair",
+    "mappingConfidence": "high",
+    "copyStatus": "provisional",
+    "requiresHumanCopyReview": true,
+    "conflicts": [],
+    "notes": [
+      "The authoritative legacy face is supplied as a standalone original image; no complete legacy card-sheet PDF was present, so that image also serves as the original crop."
+    ],
+    "legacy": {
+      "sourcePath": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/6 - Spare Change - Noble Item.png",
+      "publicPath": "/assets/library/legacy/item/spare_change.png",
+      "filename": "6 - Spare Change - Noble Item.png",
+      "width": 750,
+      "height": 1050,
+      "format": "PNG",
+      "fileSize": 1388959,
+      "sha256": "c8380a12a1836066def17b71ae56099b23f90c8e14659413b727ee9224883ef8"
+    },
+    "final": {
+      "sourcePath": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/spare_change.png",
+      "publicPath": "/assets/library/final/item/spare_change.png",
+      "filename": "spare_change.png",
+      "width": 1060,
+      "height": 1484,
+      "format": "PNG",
+      "fileSize": 2905500,
+      "sha256": "59625d7f99b3b50bbe6066929be99ef77bc389978d4fb2c17c38a353643c1a35"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": "/assets/library/legacy/item/spare_change.png",
+    "finalArtwork": "/assets/library/final/item/spare_change.png",
+    "thumbnail": "/assets/library/thumbs/spare_change.webp",
+    "provenance": {
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/6 - Spare Change - Noble Item.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/spare_change.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/6 - Spare Change - Noble Item.png"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "crystal_ball",
+    "slug": "crystal-ball",
+    "name": "Crystal Ball",
+    "originalName": "Crystal Ball",
+    "category": "token",
+    "family": "merchant_token",
+    "class": null,
+    "court": null,
+    "type": "Token",
+    "timing": [],
+    "abilities": [
+      "Draw",
+      "Peek",
+      "Token"
+    ],
+    "effect": [
+      "Merchant Token",
+      "You may PEEK at the top card",
+      "of your Power Deck at any time.",
+      "When you draw your first card",
+      "of the turn, you may shuffle your",
+      "deck first."
+    ],
+    "digitalCopy": {
+      "name": "Crystal Ball",
+      "type": "Token",
+      "keywords": [
+        "Draw",
+        "Peek",
+        "Token"
+      ],
+      "effect": [
+        "Merchant Token",
+        "You may PEEK at the top card",
+        "of your Power Deck at any time.",
+        "When you draw your first card",
+        "of the turn, you may shuffle your",
+        "deck first."
+      ]
+    },
+    "printedTextVerbatim": [
+      "Crystal Ball",
+      "Merchant Token",
+      "You may PEEK at the top card",
+      "of your Power Deck at any time.",
+      "When you draw your first card",
+      "of the turn, you may shuffle your",
+      "deck first."
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "confirmed-pair",
+    "mappingConfidence": "high",
+    "copyStatus": "provisional",
+    "requiresHumanCopyReview": true,
+    "conflicts": [],
+    "notes": [
+      "Tokens persist across hands; Items are played and resolved as one-shot game components.",
+      "The authoritative legacy face is supplied as a standalone original image; no complete legacy card-sheet PDF was present, so that image also serves as the original crop."
+    ],
+    "legacy": {
+      "sourcePath": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/13 - Crystal Ball - Merchant Token.png",
+      "publicPath": "/assets/library/legacy/token/crystal_ball.png",
+      "filename": "13 - Crystal Ball - Merchant Token.png",
+      "width": 900,
+      "height": 1500,
+      "format": "PNG",
+      "fileSize": 2224810,
+      "sha256": "cb979ee9a6ffe79ed94323d6324873c0b23a9390a5e981e79f7f3123d10785b1"
+    },
+    "final": {
+      "sourcePath": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/tokens/crystal_ball.png",
+      "publicPath": "/assets/library/final/token/crystal_ball.png",
+      "filename": "crystal_ball.png",
+      "width": 1060,
+      "height": 1484,
+      "format": "PNG",
+      "fileSize": 2395296,
+      "sha256": "922779635903ca62f7bdfad01ec42e53fc505c414709e5f4eaa2adceaed52042"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": "/assets/library/legacy/token/crystal_ball.png",
+    "finalArtwork": "/assets/library/final/token/crystal_ball.png",
+    "thumbnail": "/assets/library/thumbs/crystal_ball.webp",
+    "provenance": {
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/13 - Crystal Ball - Merchant Token.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/tokens/crystal_ball.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/13 - Crystal Ball - Merchant Token.png"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "cursed_amulet",
+    "slug": "cursed-amulet",
+    "name": "Cursed Amulet",
+    "originalName": "Cursed Amulet",
+    "category": "token",
+    "family": "merchant_token",
+    "class": null,
+    "court": null,
+    "type": "Setup",
+    "timing": [
+      "Setup"
+    ],
+    "abilities": [
+      "Fire",
+      "Tilted",
+      "Token"
+    ],
+    "effect": [
+      "Merchant Token",
+      "You can play Fire Cards if",
+      "you're TILTED.",
+      "If you're TILTED during Setup,",
+      "gain an extra hole card."
+    ],
+    "digitalCopy": {
+      "name": "Cursed Amulet",
+      "type": "Setup",
+      "keywords": [
+        "Fire",
+        "Tilted",
+        "Token"
+      ],
+      "effect": [
+        "Merchant Token",
+        "You can play Fire Cards if",
+        "you're TILTED.",
+        "If you're TILTED during Setup,",
+        "gain an extra hole card."
+      ]
+    },
+    "printedTextVerbatim": [
+      "Cursed Amulet",
+      "Merchant Token",
+      "You can play Fire Cards if",
+      "you're TILTED.",
+      "If you're TILTED during Setup,",
+      "gain an extra hole card."
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "confirmed-pair",
+    "mappingConfidence": "high",
+    "copyStatus": "provisional",
+    "requiresHumanCopyReview": true,
+    "conflicts": [],
+    "notes": [
+      "Tokens persist across hands; Items are played and resolved as one-shot game components.",
+      "The authoritative legacy face is supplied as a standalone original image; no complete legacy card-sheet PDF was present, so that image also serves as the original crop."
+    ],
+    "legacy": {
+      "sourcePath": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/14 - Cursed Amulet - Merchant Token.png",
+      "publicPath": "/assets/library/legacy/token/cursed_amulet.png",
+      "filename": "14 - Cursed Amulet - Merchant Token.png",
+      "width": 900,
+      "height": 1500,
+      "format": "PNG",
+      "fileSize": 1862202,
+      "sha256": "579209429f50ece0349cbb1c4f40413d5bf12332ba4b11067576cbefd1a4d93a"
+    },
+    "final": {
+      "sourcePath": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/tokens/cursed_amulet.png",
+      "publicPath": "/assets/library/final/token/cursed_amulet.png",
+      "filename": "cursed_amulet.png",
+      "width": 1060,
+      "height": 1484,
+      "format": "PNG",
+      "fileSize": 2342082,
+      "sha256": "a8e81d3ca89cf3c3a5fae6760231569384931a185bfbfb21e966d40ee8aebf1f"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": "/assets/library/legacy/token/cursed_amulet.png",
+    "finalArtwork": "/assets/library/final/token/cursed_amulet.png",
+    "thumbnail": "/assets/library/thumbs/cursed_amulet.webp",
+    "provenance": {
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/14 - Cursed Amulet - Merchant Token.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/tokens/cursed_amulet.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/14 - Cursed Amulet - Merchant Token.png"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "inside_connections",
+    "slug": "inside-connections",
+    "name": "Inside Connections",
+    "originalName": "Inside Connections",
+    "category": "token",
+    "family": "token",
+    "class": null,
+    "court": null,
+    "type": "Token",
+    "timing": [],
+    "abilities": [
+      "Token"
+    ],
+    "effect": [
+      "When an Item is Rummaged,",
+      "it is added to the pot instead",
+      "of the muck. When a player wins a",
+      "pot, you may pay them 5 coins to",
+      "add an item from the pot to your",
+      "hand. If 2 or more Merchants want",
+      "the same item, start a bidding war."
+    ],
+    "digitalCopy": {
+      "name": "Inside Connections",
+      "type": "Token",
+      "keywords": [
+        "Token"
+      ],
+      "effect": [
+        "When an Item is Rummaged,",
+        "it is added to the pot instead",
+        "of the muck. When a player wins a",
+        "pot, you may pay them 5 coins to",
+        "add an item from the pot to your",
+        "hand. If 2 or more Merchants want",
+        "the same item, start a bidding war."
+      ]
+    },
+    "printedTextVerbatim": [
+      "Inside Connections",
+      "Token",
+      "When an Item is Rummaged,",
+      "it is added to the pot instead",
+      "of the muck. When a player wins a",
+      "pot, you may pay them 5 coins to",
+      "add an item from the pot to your",
+      "hand. If 2 or more Merchants want",
+      "the same item, start a bidding war."
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "confirmed-pair",
+    "mappingConfidence": "high",
+    "copyStatus": "provisional",
+    "requiresHumanCopyReview": true,
+    "conflicts": [
+      {
+        "id": "inside_connections_effect",
+        "assetId": "inside_connections",
+        "status": "conflict",
+        "requiresHumanReview": true,
+        "candidateCurrent": "If an Item would go to the bank, you may pay 5 coins and add it to your hand instead. If two or more merchants want the same item, start a Bidding War.",
+        "alternatives": [
+          "When you win a pot, gain a Merchant Item"
+        ],
+        "evidence": [
+          "Decklists and Changelog for Demo/Changelog for MP demo.docx",
+          "Historical Asset Specs PDF"
+        ]
+      }
+    ],
+    "notes": [
+      "Tokens persist across hands; Items are played and resolved as one-shot game components.",
+      "The authoritative legacy face is supplied as a standalone original image; no complete legacy card-sheet PDF was present, so that image also serves as the original crop."
+    ],
+    "legacy": {
+      "sourcePath": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/12 - Inside Connections - Token.png",
+      "publicPath": "/assets/library/legacy/token/inside_connections.png",
+      "filename": "12 - Inside Connections - Token.png",
+      "width": 900,
+      "height": 1500,
+      "format": "PNG",
+      "fileSize": 2027788,
+      "sha256": "53e17ebecbd7188998e1e69635f7587879e7e8e43bf777104392eb6d83ce0f71"
+    },
+    "final": {
+      "sourcePath": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/tokens/inside_connections.png",
+      "publicPath": "/assets/library/final/token/inside_connections.png",
+      "filename": "inside_connections.png",
+      "width": 1060,
+      "height": 1484,
+      "format": "PNG",
+      "fileSize": 2893392,
+      "sha256": "5092b68cc893b0adaf2d047b1545ba0f9d87aa87ed7303b15a13c74e76bec5a9"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": "/assets/library/legacy/token/inside_connections.png",
+    "finalArtwork": "/assets/library/final/token/inside_connections.png",
+    "thumbnail": "/assets/library/thumbs/inside_connections.webp",
+    "provenance": {
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/12 - Inside Connections - Token.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/tokens/inside_connections.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/12 - Inside Connections - Token.png"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "merch_stockpile",
+    "slug": "merch-stockpile",
+    "name": "Merch Stockpile",
+    "originalName": "Merch Stockpile",
+    "category": "token",
+    "family": "token",
+    "class": null,
+    "court": null,
+    "type": "Setup",
+    "timing": [
+      "Setup"
+    ],
+    "abilities": [
+      "Token"
+    ],
+    "effect": [
+      "During Setup, add a random",
+      "Merchant Item from the",
+      "bank to your hand."
+    ],
+    "digitalCopy": {
+      "name": "Merch Stockpile",
+      "type": "Setup",
+      "keywords": [
+        "Token"
+      ],
+      "effect": [
+        "During Setup, add a random",
+        "Merchant Item from the",
+        "bank to your hand."
+      ]
+    },
+    "printedTextVerbatim": [
+      "Merch Stockpile",
+      "Token",
+      "During Setup, add a random",
+      "Merchant Item from the",
+      "bank to your hand."
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "confirmed-pair",
+    "mappingConfidence": "high",
+    "copyStatus": "provisional",
+    "requiresHumanCopyReview": true,
+    "conflicts": [],
+    "notes": [
+      "Tokens persist across hands; Items are played and resolved as one-shot game components.",
+      "The authoritative legacy face is supplied as a standalone original image; no complete legacy card-sheet PDF was present, so that image also serves as the original crop."
+    ],
+    "legacy": {
+      "sourcePath": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/11 - Merch Stockpile - Token.png",
+      "publicPath": "/assets/library/legacy/token/merch_stockpile.png",
+      "filename": "11 - Merch Stockpile - Token.png",
+      "width": 900,
+      "height": 1500,
+      "format": "PNG",
+      "fileSize": 2085036,
+      "sha256": "ab4a120ba8d86ca55d11f3b4a5cb8affbc38c33dacd834829331f25f9d9581b3"
+    },
+    "final": {
+      "sourcePath": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/tokens/merch_stockpile.png",
+      "publicPath": "/assets/library/final/token/merch_stockpile.png",
+      "filename": "merch_stockpile.png",
+      "width": 1060,
+      "height": 1484,
+      "format": "PNG",
+      "fileSize": 2547323,
+      "sha256": "a19bd8a137441e76f7449f589e3969345a26c097ba441ced5423baaed75840b3"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": "/assets/library/legacy/token/merch_stockpile.png",
+    "finalArtwork": "/assets/library/final/token/merch_stockpile.png",
+    "thumbnail": "/assets/library/thumbs/merch_stockpile.webp",
+    "provenance": {
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/11 - Merch Stockpile - Token.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/tokens/merch_stockpile.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/11 - Merch Stockpile - Token.png"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "wanted",
+    "slug": "wanted",
+    "name": "Most Wanted",
+    "originalName": "Most Wanted",
+    "category": "token",
+    "family": "token",
+    "class": null,
+    "court": null,
+    "type": "Showdown / All",
+    "timing": [
+      "Showdown",
+      "All"
+    ],
+    "abilities": [
+      "Draw",
+      "Token"
+    ],
+    "effect": [
+      "When you lose a Showdown,",
+      "discard Most Wanted.",
+      "When Most Wanted is discarded,",
+      "- the player who won the pot gains",
+      "20 coins from the bank.",
+      "Then, all opponents draw T."
+    ],
+    "digitalCopy": {
+      "name": "Most Wanted",
+      "type": "Showdown / All",
+      "keywords": [
+        "Draw",
+        "Token"
+      ],
+      "effect": [
+        "When you lose a Showdown,",
+        "discard Most Wanted.",
+        "When Most Wanted is discarded,",
+        "- the player who won the pot gains",
+        "20 coins from the bank.",
+        "Then, all opponents draw T."
+      ]
+    },
+    "printedTextVerbatim": [
+      "Most Wanted",
+      "Token",
+      "When you lose a Showdown,",
+      "discard Most Wanted.",
+      "When Most Wanted is discarded,",
+      "- the player who won the pot gains",
+      "20 coins from the bank.",
+      "Then, all opponents draw T."
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "confirmed-pair",
+    "mappingConfidence": "high",
+    "copyStatus": "provisional",
+    "requiresHumanCopyReview": true,
+    "conflicts": [],
+    "notes": [
+      "Tokens persist across hands; Items are played and resolved as one-shot game components.",
+      "The authoritative legacy face is supplied as a standalone original image; no complete legacy card-sheet PDF was present, so that image also serves as the original crop."
+    ],
+    "legacy": {
+      "sourcePath": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/10 - Wanted Token.png",
+      "publicPath": "/assets/library/legacy/token/wanted.png",
+      "filename": "10 - Wanted Token.png",
+      "width": 900,
+      "height": 1500,
+      "format": "PNG",
+      "fileSize": 2091801,
+      "sha256": "fab1274481ff740e7b6fa85e482225be4d48d98cf81eb5d46d013ca117efc854"
+    },
+    "final": {
+      "sourcePath": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/tokens/wanted.png",
+      "publicPath": "/assets/library/final/token/wanted.png",
+      "filename": "wanted.png",
+      "width": 1060,
+      "height": 1484,
+      "format": "PNG",
+      "fileSize": 3005775,
+      "sha256": "2541cd0dcda03978df553533ec18bff83b310d4fe8a8675831513c546ff0d832"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": "/assets/library/legacy/token/wanted.png",
+    "finalArtwork": "/assets/library/final/token/wanted.png",
+    "thumbnail": "/assets/library/thumbs/wanted.webp",
+    "provenance": {
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/10 - Wanted Token.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/tokens/wanted.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/10 - Wanted Token.png"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "treasure_goblin",
+    "slug": "treasure-goblin",
+    "name": "Treasure Goblin",
+    "originalName": "Treasure Goblin",
+    "category": "token",
+    "family": "merchant_token",
+    "class": null,
+    "court": null,
+    "type": "Token",
+    "timing": [],
+    "abilities": [
+      "Mulligan",
+      "Heating Up",
+      "Token"
+    ],
+    "effect": [
+      "Merchant Token",
+      "When a pot is awarded, muck",
+      "a Spare Change Noble Item Card",
+      "During your turn, you may pay",
+      "10 coins to the bank to reveal",
+      "and Mulligan a heart hole card.",
+      "You're HEATING UP!"
+    ],
+    "digitalCopy": {
+      "name": "Treasure Goblin",
+      "type": "Token",
+      "keywords": [
+        "Mulligan",
+        "Heating Up",
+        "Token"
+      ],
+      "effect": [
+        "Merchant Token",
+        "When a pot is awarded, muck",
+        "a Spare Change Noble Item Card",
+        "During your turn, you may pay",
+        "10 coins to the bank to reveal",
+        "and Mulligan a heart hole card.",
+        "You're HEATING UP!"
+      ]
+    },
+    "printedTextVerbatim": [
+      "Treasure Goblin",
+      "Merchant Token",
+      "When a pot is awarded, muck",
+      "a Spare Change Noble Item Card",
+      "During your turn, you may pay",
+      "10 coins to the bank to reveal",
+      "and Mulligan a heart hole card.",
+      "You're HEATING UP!"
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "confirmed-pair",
+    "mappingConfidence": "high",
+    "copyStatus": "provisional",
+    "requiresHumanCopyReview": true,
+    "conflicts": [],
+    "notes": [
+      "Tokens persist across hands; Items are played and resolved as one-shot game components.",
+      "The authoritative legacy face is supplied as a standalone original image; no complete legacy card-sheet PDF was present, so that image also serves as the original crop."
+    ],
+    "legacy": {
+      "sourcePath": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/15 - Treasure Goblin - Merchant Token.png",
+      "publicPath": "/assets/library/legacy/token/treasure_goblin.png",
+      "filename": "15 - Treasure Goblin - Merchant Token.png",
+      "width": 900,
+      "height": 1500,
+      "format": "PNG",
+      "fileSize": 2132227,
+      "sha256": "41cdb72922d240b0cbecea67dbcf93f2f47a2ca8ea2f982011d937d90757ee09"
+    },
+    "final": {
+      "sourcePath": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/tokens/treasure_goblin.png",
+      "publicPath": "/assets/library/final/token/treasure_goblin.png",
+      "filename": "treasure_goblin.png",
+      "width": 1060,
+      "height": 1484,
+      "format": "PNG",
+      "fileSize": 2173020,
+      "sha256": "394bcbc42b108e41e3647f5b6dd57c31b8a2627b0e28c0af007a4cc3b6d81dfd"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": "/assets/library/legacy/token/treasure_goblin.png",
+    "finalArtwork": "/assets/library/final/token/treasure_goblin.png",
+    "thumbnail": "/assets/library/thumbs/treasure_goblin.webp",
+    "provenance": {
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/15 - Treasure Goblin - Merchant Token.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/tokens/treasure_goblin.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/15 - Treasure Goblin - Merchant Token.png"
+    },
+    "inclusionStatus": "included"
+  }
+]

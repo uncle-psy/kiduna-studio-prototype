@@ -1,0 +1,1200 @@
+{
+  "generatedAt": "2026-08-21T03:10:43.448383+00:00",
+  "sourcePrecedence": [
+    "Original cards and official Changing Vegas rulebook",
+    "Final quiet-enamel Power Art and World Art",
+    "Verified Core structured data",
+    "Existing design site as presentation reference only",
+    "Reference Art only after independent verification"
+  ],
+  "archives": [
+    "DUNA Changing Vegas -20260821T015758Z-1-001.zip",
+    "Royals-and-Rogues-Kit-v2.0.0-01-Core.zip",
+    "Royals-and-Rogues-Kit-v2.0.0-02-Power-Art-01.zip",
+    "Royals-and-Rogues-Kit-v2.0.0-03-Power-Art-02.zip",
+    "Royals-and-Rogues-Kit-v2.0.0-04-Power-Art-03.zip",
+    "Royals-and-Rogues-Kit-v2.0.0-05-Power-Art-04.zip",
+    "Royals-and-Rogues-Kit-v2.0.0-06-Power-Art-05.zip",
+    "Royals-and-Rogues-Kit-v2.0.0-07-World-Art.zip",
+    "Royals-and-Rogues-Kit-v2.0.0-08-Reference-Art.zip"
+  ],
+  "recordCount": 196,
+  "records": [
+    {
+      "id": "class_merchant",
+      "legacySource": null,
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/class-merchant.png",
+      "structuredSource": "Core data/classes.json"
+    },
+    {
+      "id": "class_noble",
+      "legacySource": null,
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/class-noble.png",
+      "structuredSource": "Core data/classes.json"
+    },
+    {
+      "id": "class_rogue",
+      "legacySource": null,
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/class-rogue.png",
+      "structuredSource": "Core data/classes.json"
+    },
+    {
+      "id": "class_warrior",
+      "legacySource": null,
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/class-warrior.png",
+      "structuredSource": "Core data/classes.json"
+    },
+    {
+      "id": "court_jack",
+      "legacySource": null,
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/court-jack.png",
+      "structuredSource": "Core data/courts.json"
+    },
+    {
+      "id": "court_joker",
+      "legacySource": null,
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/court-joker.png",
+      "structuredSource": "Core data/courts.json"
+    },
+    {
+      "id": "court_king",
+      "legacySource": null,
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/court-king.png",
+      "structuredSource": "Core data/courts.json"
+    },
+    {
+      "id": "court_queen",
+      "legacySource": null,
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/court-queen.png",
+      "structuredSource": "Core data/courts.json"
+    },
+    {
+      "id": "decorative_items_master",
+      "legacySource": null,
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/items-master.png",
+      "structuredSource": null
+    },
+    {
+      "id": "decorative_identity_master",
+      "legacySource": null,
+      "finalSource": "core/Royals-and-Rogues-Kit-v2.0.0/design-system/identity/royals-and-rogues-key-art-master.png",
+      "structuredSource": null
+    },
+    {
+      "id": "decorative_key_art",
+      "legacySource": null,
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/system/key-art.png",
+      "structuredSource": null
+    },
+    {
+      "id": "decorative_logo",
+      "legacySource": null,
+      "finalSource": "core/Royals-and-Rogues-Kit-v2.0.0/design-system/identity/royals-and-rogues-logo-primary.png",
+      "structuredSource": null
+    },
+    {
+      "id": "decorative_mark",
+      "legacySource": null,
+      "finalSource": "core/Royals-and-Rogues-Kit-v2.0.0/design-system/identity/royals-and-rogues-mark.png",
+      "structuredSource": null
+    },
+    {
+      "id": "decorative_title_card",
+      "legacySource": null,
+      "finalSource": "core/Royals-and-Rogues-Kit-v2.0.0/design-system/identity/royals-and-rogues-title-card.jpg",
+      "structuredSource": null
+    },
+    {
+      "id": "counterfeit_ace",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/16 - Counterfeit Ace - Rogue Item.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/counterfeit_ace.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/16 - Counterfeit Ace - Rogue Item.png"
+    },
+    {
+      "id": "fools_gold",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/5 - Fool_s Gold - Merchant Item.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/fools_gold.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/5 - Fool_s Gold - Merchant Item.png"
+    },
+    {
+      "id": "grappling_hook",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/7 - Grappling Hook - Rogue Item.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/grappling_hook.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/7 - Grappling Hook - Rogue Item.png"
+    },
+    {
+      "id": "healing_potion",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/9 - Healing Potion - Rogue Item.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/healing_potion.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/9 - Healing Potion - Rogue Item.png"
+    },
+    {
+      "id": "lucky_charm",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/3 - Lucky Charm - Merchant Item.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/lucky_charm.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/3 - Lucky Charm - Merchant Item.png"
+    },
+    {
+      "id": "monkey_paw",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/1 - Monkey Paw - Magic Item.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/monkey_paw.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/1 - Monkey Paw - Magic Item.png"
+    },
+    {
+      "id": "rabbit_foot",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/2 - Rabbit Foot - Magic Item.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/rabbit_foot.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/2 - Rabbit Foot - Magic Item.png"
+    },
+    {
+      "id": "smoke_bomb",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/8 - Smoke Bomb - Rogue Item.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/smoke_bomb.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/8 - Smoke Bomb - Rogue Item.png"
+    },
+    {
+      "id": "snake_oil",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/4 - Snake Oil - Merchant Item.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/snake_oil.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/4 - Snake Oil - Merchant Item.png"
+    },
+    {
+      "id": "spare_change",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/6 - Spare Change - Noble Item.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/items/spare_change.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/6 - Spare Change - Noble Item.png"
+    },
+    {
+      "id": "poker_back",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Card Backs Silver.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/back.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Card Backs Silver.png"
+    },
+    {
+      "id": "poker_clubs_A",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Club 1.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/clubs_A.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Club 1.png"
+    },
+    {
+      "id": "poker_clubs_10",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /CLub 10.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/clubs_10.png",
+      "structuredSource": "GAME CARDS/Poker Cards /CLub 10.png"
+    },
+    {
+      "id": "poker_clubs_2",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Club 2.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/clubs_2.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Club 2.png"
+    },
+    {
+      "id": "poker_clubs_3",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Club 3.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/clubs_3.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Club 3.png"
+    },
+    {
+      "id": "poker_clubs_4",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Club 4.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/clubs_4.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Club 4.png"
+    },
+    {
+      "id": "poker_clubs_5",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Club 5.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/clubs_5.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Club 5.png"
+    },
+    {
+      "id": "poker_clubs_6",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Club 6.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/clubs_6.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Club 6.png"
+    },
+    {
+      "id": "poker_clubs_7",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Club 7.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/clubs_7.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Club 7.png"
+    },
+    {
+      "id": "poker_clubs_8",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Club 8.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/clubs_8.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Club 8.png"
+    },
+    {
+      "id": "poker_clubs_9",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Club 9.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/clubs_9.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Club 9.png"
+    },
+    {
+      "id": "poker_clubs_Q",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Club Queen.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/clubs_Q.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Club Queen.png"
+    },
+    {
+      "id": "poker_clubs_J",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Clubs Jack.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/clubs_J.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Clubs Jack.png"
+    },
+    {
+      "id": "poker_clubs_K",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Clubs King.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/clubs_K.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Clubs King.png"
+    },
+    {
+      "id": "poker_diamonds_A",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Diamond 1.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/diamonds_A.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Diamond 1.png"
+    },
+    {
+      "id": "poker_diamonds_10",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Diamond 10.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/diamonds_10.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Diamond 10.png"
+    },
+    {
+      "id": "poker_diamonds_2",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Diamond 2.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/diamonds_2.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Diamond 2.png"
+    },
+    {
+      "id": "poker_diamonds_3",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Diamond 3.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/diamonds_3.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Diamond 3.png"
+    },
+    {
+      "id": "poker_diamonds_4",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Diamond 4.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/diamonds_4.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Diamond 4.png"
+    },
+    {
+      "id": "poker_diamonds_5",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Diamond 5.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/diamonds_5.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Diamond 5.png"
+    },
+    {
+      "id": "poker_diamonds_6",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Diamond 6.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/diamonds_6.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Diamond 6.png"
+    },
+    {
+      "id": "poker_diamonds_7",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Diamond 7.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/diamonds_7.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Diamond 7.png"
+    },
+    {
+      "id": "poker_diamonds_8",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Diamond 8.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/diamonds_8.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Diamond 8.png"
+    },
+    {
+      "id": "poker_diamonds_9",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Diamond 9.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/diamonds_9.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Diamond 9.png"
+    },
+    {
+      "id": "poker_diamonds_J",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Diamond Jack.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/diamonds_J.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Diamond Jack.png"
+    },
+    {
+      "id": "poker_diamonds_K",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Diamond King.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/diamonds_K.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Diamond King.png"
+    },
+    {
+      "id": "poker_diamonds_Q",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Diamond Queen.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/diamonds_Q.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Diamond Queen.png"
+    },
+    {
+      "id": "poker_hearts_A",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Heart 1.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/hearts_A.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Heart 1.png"
+    },
+    {
+      "id": "poker_hearts_10",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Heart 10.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/hearts_10.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Heart 10.png"
+    },
+    {
+      "id": "poker_hearts_2",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Heart 2.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/hearts_2.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Heart 2.png"
+    },
+    {
+      "id": "poker_hearts_3",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Heart 3.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/hearts_3.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Heart 3.png"
+    },
+    {
+      "id": "poker_hearts_4",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Heart 4.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/hearts_4.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Heart 4.png"
+    },
+    {
+      "id": "poker_hearts_5",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Heart 5.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/hearts_5.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Heart 5.png"
+    },
+    {
+      "id": "poker_hearts_6",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Heart 6.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/hearts_6.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Heart 6.png"
+    },
+    {
+      "id": "poker_hearts_7",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Heart 7.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/hearts_7.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Heart 7.png"
+    },
+    {
+      "id": "poker_hearts_8",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Heart 8.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/hearts_8.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Heart 8.png"
+    },
+    {
+      "id": "poker_hearts_9",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Heart 9.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/hearts_9.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Heart 9.png"
+    },
+    {
+      "id": "poker_hearts_J",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Heart Jack.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/hearts_J.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Heart Jack.png"
+    },
+    {
+      "id": "poker_hearts_K",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Heart King.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/hearts_K.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Heart King.png"
+    },
+    {
+      "id": "poker_hearts_Q",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Heart Queen.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/hearts_Q.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Heart Queen.png"
+    },
+    {
+      "id": "poker_joker",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Joker.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/joker.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Joker.png"
+    },
+    {
+      "id": "poker_spades_A",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Spade 1.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/spades_A.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Spade 1.png"
+    },
+    {
+      "id": "poker_spades_10",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Spade 10.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/spades_10.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Spade 10.png"
+    },
+    {
+      "id": "poker_spades_2",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Spade 2.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/spades_2.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Spade 2.png"
+    },
+    {
+      "id": "poker_spades_3",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Spade 3.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/spades_3.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Spade 3.png"
+    },
+    {
+      "id": "poker_spades_4",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Spade 4.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/spades_4.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Spade 4.png"
+    },
+    {
+      "id": "poker_spades_5",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Spade 5.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/spades_5.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Spade 5.png"
+    },
+    {
+      "id": "poker_spades_6",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Spade 6.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/spades_6.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Spade 6.png"
+    },
+    {
+      "id": "poker_spades_7",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Spade 7.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/spades_7.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Spade 7.png"
+    },
+    {
+      "id": "poker_spades_8",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Spade 8.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/spades_8.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Spade 8.png"
+    },
+    {
+      "id": "poker_spades_9",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Spade 9.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/spades_9.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Spade 9.png"
+    },
+    {
+      "id": "poker_spades_J",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Spade Jack.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/spades_J.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Spade Jack.png"
+    },
+    {
+      "id": "poker_spades_K",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Spade King.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/spades_K.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Spade King.png"
+    },
+    {
+      "id": "poker_spades_Q",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Poker Cards /Spade Queen.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/cards/spades_Q.png",
+      "structuredSource": "GAME CARDS/Poker Cards /Spade Queen.png"
+    },
+    {
+      "id": "power_back",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Card Backs.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/system/power-back.png",
+      "structuredSource": "GAME CARDS/Power Cards/Card Backs.png"
+    },
+    {
+      "id": "rogue_ace_up_the_sleeve",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Rogue/12 - Ace Up the Sleeve - Showdown.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/rogue_ace_up_the_sleeve.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Rogue/12 - Ace Up the Sleeve - Showdown.png"
+    },
+    {
+      "id": "jack_adaptive_playstyle",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Jack/8 - Adaptive Playstyle.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/jack-adaptive-playstyle.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Jack/8 - Adaptive Playstyle.png"
+    },
+    {
+      "id": "add_on",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/3 - Add On - Setup.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/add_on.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/3 - Add On - Setup.png"
+    },
+    {
+      "id": "queen_adored",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Queen/Adored 2.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/queen_adored.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Queen/Adored 2.png"
+    },
+    {
+      "id": "noble_alms_for_the_poor",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Noble/2 - Alms for the Poor - Round.png",
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/noble_alms_for_the_poor.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Noble/2 - Alms for the Poor - Round.png"
+    },
+    {
+      "id": "rogue_ambush",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Rogue/8 - Ambush - Counter.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/rogue_ambush.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Rogue/8 - Ambush - Counter.png"
+    },
+    {
+      "id": "jack_bachelor",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Jack/Bachelor 2.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/jack-bachelor.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Jack/Bachelor 2.png"
+    },
+    {
+      "id": "rogue_back_alley_deal",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Rogue/2 - Back Alley Deal - Round TT.png",
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/rogue_back_alley_deal.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Rogue/2 - Back Alley Deal - Round TT.png"
+    },
+    {
+      "id": "rogue_bag_o_tricks",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Rogue/9 - Bag O_ Tricks - Round.png",
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/rogue_bag_o_tricks.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Rogue/9 - Bag O_ Tricks - Round.png"
+    },
+    {
+      "id": "noble_bankroll_backer",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Noble/6 - Bankroll Backer - Setup.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/noble_bankroll_backer.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Noble/6 - Bankroll Backer - Setup.png"
+    },
+    {
+      "id": "merchant_bargain_bin",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Merchant/4 - Bargain Bin - Round.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/merchant_bargain_bin.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Merchant/4 - Bargain Bin - Round.png"
+    },
+    {
+      "id": "warrior_berserker_rage",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Warrior/10 - Berserker Rage - Showdown.png",
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/warrior_berserker_rage.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Warrior/10 - Berserker Rage - Showdown.png"
+    },
+    {
+      "id": "king_bomb_pot",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/King/9 - Bomb Pot - Secret Rare.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/king_bomb_pot.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/King/9 - Bomb Pot - Secret Rare.png"
+    },
+    {
+      "id": "queen_brilliant_strategist",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Queen/6 - Brilliant Strategist - NEW.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/queen_brilliant_strategist.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Queen/6 - Brilliant Strategist - NEW.png"
+    },
+    {
+      "id": "burst_of_confidence",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/8 - Burst of Confidence - Round.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/burst_of_confidence.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/8 - Burst of Confidence - Round.png"
+    },
+    {
+      "id": "cash_out",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/5 - Cash Out - Round.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/cash_out.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/5 - Cash Out - Round.png"
+    },
+    {
+      "id": "joker_chance",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Joker/Chance 2.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/joker_chance.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Joker/Chance 2.png"
+    },
+    {
+      "id": "warrior_check_it_down",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Warrior/4 - Check it Down - Round.png",
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/warrior_check_it_down.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Warrior/4 - Check it Down - Round.png"
+    },
+    {
+      "id": "counterplay",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/19 - Counterplay - Counter.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/counterplay.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/19 - Counterplay - Counter.png"
+    },
+    {
+      "id": "king_crown",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/King/Crown 2.png",
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/king_crown.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/King/Crown 2.png"
+    },
+    {
+      "id": "noble_curry_favor",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Noble/1 - Curry Favor - Round.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/noble_curry_favor.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Noble/1 - Curry Favor - Round.png"
+    },
+    {
+      "id": "merchant_deal_of_a_lifetime",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Merchant/11 - Deal of a Lifetime!.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/merchant_deal_of_a_lifetime.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Merchant/11 - Deal of a Lifetime!.png"
+    },
+    {
+      "id": "noble_diplomatic_immunity",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Noble/4 - Diplomatic Immunity - Counter.png",
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/noble_diplomatic_immunity.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Noble/4 - Diplomatic Immunity - Counter.png"
+    },
+    {
+      "id": "jack_double_attack",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Jack/5 - Double Attack - NEW.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/jack_double_attack.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Jack/5 - Double Attack - NEW.png"
+    },
+    {
+      "id": "rogue_dramatic_reversal",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Rogue/1 -Dramatic Reversal - TILT Round.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/rogue_dramatic_reversal.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Rogue/1 -Dramatic Reversal - TILT Round.png"
+    },
+    {
+      "id": "joker_drunken",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Joker/Drunken 2.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/joker_drunken.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Joker/Drunken 2.png"
+    },
+    {
+      "id": "rogue_dual_wielding",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Rogue/10 - Dual Wielding - Setup.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/rogue_dual_wielding.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Rogue/10 - Dual Wielding - Setup.png"
+    },
+    {
+      "id": "merchant_expansion_plans",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Merchant/8 - Expansion Plans - Setup.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/merchant_expansion_plans.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Merchant/8 - Expansion Plans - Setup.png"
+    },
+    {
+      "id": "noble_exquisite_bounty",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Noble/8 - Exquisite Bounty - Setup.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/noble_exquisite_bounty.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Noble/8 - Exquisite Bounty - Setup.png"
+    },
+    {
+      "id": "queen_favorite",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Queen/Favorite 2.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/queen_favorite.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Queen/Favorite 2.png"
+    },
+    {
+      "id": "feign_weakness",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/21 - Feign Weakness - Counter.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/feign_weakness.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/21 - Feign Weakness - Counter.png"
+    },
+    {
+      "id": "queen_fighter",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Queen/Fighter 2.png",
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/queen_fighter.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Queen/Fighter 2.png"
+    },
+    {
+      "id": "joker_fire_juggler",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Joker/9 - Fire Juggler - Secret Rare.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/joker_fire_juggler.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Joker/9 - Fire Juggler - Secret Rare.png"
+    },
+    {
+      "id": "merchant_fire_sale",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Merchant/1 - Fire Sale - Round.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/merchant_fire_sale.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Merchant/1 - Fire Sale - Round.png"
+    },
+    {
+      "id": "noble_friendly_chop",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Noble/12 - Friendly Chop - Showdown.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/noble_friendly_chop.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Noble/12 - Friendly Chop - Showdown.png"
+    },
+    {
+      "id": "king_gold",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/King/Gold 2.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/king_gold.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/King/Gold 2.png"
+    },
+    {
+      "id": "jack_guerilla",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Jack/Guerilla 2.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/jack_guerilla.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Jack/Guerilla 2.png"
+    },
+    {
+      "id": "merchant_hidden_gems",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Merchant/7 - Hidden Gems - Showdown.png",
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/merchant_hidden_gems.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Merchant/7 - Hidden Gems - Showdown.png"
+    },
+    {
+      "id": "joker_highlander_poker",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Joker/5 - Highlander Poker - NEW.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/joker_highlander_poker.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Joker/5 - Highlander Poker - NEW.png"
+    },
+    {
+      "id": "merchant_hired_muscle",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Merchant/12 - Hired Muscle.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/merchant_hired_muscle.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Merchant/12 - Hired Muscle.png"
+    },
+    {
+      "id": "jack_hit_the_flop",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Jack/9 - Hit the Flop - Secret Rare.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/jack_hit_the_flop.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Jack/9 - Hit the Flop - Secret Rare.png"
+    },
+    {
+      "id": "warrior_honorable_combat",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Warrior/3 - Honorable Combat - Counter.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/warrior_honorable_combat.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Warrior/3 - Honorable Combat - Counter.png"
+    },
+    {
+      "id": "rogue_hot_dice",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Rogue/6 - Hot Dice - Round FIRE.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/rogue_hot_dice.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Rogue/6 - Hot Dice - Round FIRE.png"
+    },
+    {
+      "id": "merchant_hot_tip",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Merchant/10 - Hot Tip! - Setup.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/merchant_hot_tip.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Merchant/10 - Hot Tip! - Setup.png"
+    },
+    {
+      "id": "king_i_o_u",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/King/5 - I.O.U - Round Fire.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/king_i_o_u.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/King/5 - I.O.U - Round Fire.png"
+    },
+    {
+      "id": "warrior_inferno_strike",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Warrior/9 - Inferno Strike - Round FIRE.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/warrior_inferno_strike.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Warrior/9 - Inferno Strike - Round FIRE.png"
+    },
+    {
+      "id": "noble_inheritance",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Noble/11 - Inheritance - Setup.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/noble_inheritance.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Noble/11 - Inheritance - Setup.png"
+    },
+    {
+      "id": "warrior_intimidate",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Warrior/1 - Intimidate - Counter.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/warrior_intimidate.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Warrior/1 - Intimidate - Counter.png"
+    },
+    {
+      "id": "merchant_irresistible_offer",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Merchant/2 - Irresistible Offer - Round.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/merchant_irresistible_offer.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Merchant/2 - Irresistible Offer - Round.png"
+    },
+    {
+      "id": "know_when_to_hold",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/9 - Know When to Hold - Hidden Quest Promo.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/know_when_to_hold.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/9 - Know When to Hold - Hidden Quest Promo.png"
+    },
+    {
+      "id": "joker_life",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Joker/Life 2.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/joker_life.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Joker/Life 2.png"
+    },
+    {
+      "id": "warrior_low_ball",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Warrior/2 - Low Ball - Setup.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/warrior_low_ball.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Warrior/2 - Low Ball - Setup.png"
+    },
+    {
+      "id": "warrior_mad_money",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Warrior/7 - Mad Money - Round.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/warrior_mad_money.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Warrior/7 - Mad Money - Round.png"
+    },
+    {
+      "id": "king_might",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/King/Might 2.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/king_might.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/King/Might 2.png"
+    },
+    {
+      "id": "warrior_mighty_blow",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Warrior/11 - Mighty Blow - Round TILT.png",
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/warrior_mighty_blow.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Warrior/11 - Mighty Blow - Round TILT.png"
+    },
+    {
+      "id": "rogue_misdirection",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Rogue/7 - Misdirection - Counter.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/rogue_misdirection.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Rogue/7 - Misdirection - Counter.png"
+    },
+    {
+      "id": "jack_mithril",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Jack/Mithril 2.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/jack-mithril.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Jack/Mithril 2.png"
+    },
+    {
+      "id": "monkey",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/18 - Monkey! - Counter.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/monkey.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/18 - Monkey! - Counter.png"
+    },
+    {
+      "id": "merchant_mystical_wares",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Merchant/9 - Mystical Wares - Setup.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/merchant_mystical_wares.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Merchant/9 - Mystical Wares - Setup.png"
+    },
+    {
+      "id": "one_tough_cookie",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/15 - One Tough Cookie - Hot Streak EDIT BEFORE FINAL ORDER.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/one_tough_cookie.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/15 - One Tough Cookie - Hot Streak EDIT BEFORE FINAL ORDER.png"
+    },
+    {
+      "id": "pocket_protector",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/13 - Pocket Protector - Showdown.png",
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/pocket_protector.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/13 - Pocket Protector - Showdown.png"
+    },
+    {
+      "id": "poor_winner",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/12 - Poor Winner - Showdown.png",
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/poor_winner.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/12 - Poor Winner - Showdown.png"
+    },
+    {
+      "id": "noble_powerful_friends",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Noble/10 - Powerful Friends - Round FIRE.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/noble_powerful_friends.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Noble/10 - Powerful Friends - Round FIRE.png"
+    },
+    {
+      "id": "jack_press",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Jack/Press 2.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/jack-press.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Jack/Press 2.png"
+    },
+    {
+      "id": "joker_quick_change_artist",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Joker/7 - Quick Change Artist.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/joker_quick_change_artist.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Joker/7 - Quick Change Artist.png"
+    },
+    {
+      "id": "warrior_ready_to_rumble",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Warrior/5 - Ready to Rumble - Round.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/warrior_ready_to_rumble.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Warrior/5 - Ready to Rumble - Round.png"
+    },
+    {
+      "id": "regain_composure",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/10 - Regain Composure - Round.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/regain_composure.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/10 - Regain Composure - Round.png"
+    },
+    {
+      "id": "ride_the_wave",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/11 - Ride the Wave - Showdown.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/ride_the_wave.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/11 - Ride the Wave - Showdown.png"
+    },
+    {
+      "id": "queen_ring",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Queen/Ring 2.png",
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/queen_ring.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Queen/Ring 2.png"
+    },
+    {
+      "id": "river_rat",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/17 - River Rat - Counter.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/river_rat.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/17 - River Rat - Counter.png"
+    },
+    {
+      "id": "rock_solid",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/7 - Rock Solid - Round.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/rock_solid.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/7 - Rock Solid - Round.png"
+    },
+    {
+      "id": "merchant_rotate_merchandise",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Merchant/5 - Rotate Merchandise - Showdown.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/merchant_rotate_merchandise.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Merchant/5 - Rotate Merchandise - Showdown.png"
+    },
+    {
+      "id": "queen_royal_charm",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Queen/8 - Royal Charm - NEW.png",
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/queen_royal_charm.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Queen/8 - Royal Charm - NEW.png"
+    },
+    {
+      "id": "noble_royal_decree",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Noble/7 - Royal Decree - Setup.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/noble_royal_decree.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Noble/7 - Royal Decree - Setup.png"
+    },
+    {
+      "id": "king_royal_re_buy",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/King/7 - Royal Re-Buy - Counter.png",
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/king_royal_re_buy.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/King/7 - Royal Re-Buy - Counter.png"
+    },
+    {
+      "id": "jack_royal_skill",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Jack/7 - Royal Skill - NEW.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/jack-royal-skill.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Jack/7 - Royal Skill - NEW.png"
+    },
+    {
+      "id": "joker_royal_wild",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Joker/8 - Royal Wild.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/joker_royal_wild.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Joker/8 - Royal Wild.png"
+    },
+    {
+      "id": "run_good",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/20 - Run Good - Counter.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/run_good.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/20 - Run Good - Counter.png"
+    },
+    {
+      "id": "run_the_table",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/2 - Run the Table - Setup FIRE.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/run_the_table.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/2 - Run the Table - Setup FIRE.png"
+    },
+    {
+      "id": "noble_shiny_distraction",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Noble/3 - Shiny Distraction - Counter.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/noble_shiny_distraction.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Noble/3 - Shiny Distraction - Counter.png"
+    },
+    {
+      "id": "shopping_spree",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/1 - Shopping Spree - Setup.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/shopping_spree.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/1 - Shopping Spree - Setup.png"
+    },
+    {
+      "id": "show_mercy",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/16 - Show Mercy - Counter.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/show_mercy.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/16 - Show Mercy - Counter.png"
+    },
+    {
+      "id": "warrior_show_of_strength",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Warrior/12 - Show of Strength - Round TILT.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/warrior_show_of_strength.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Warrior/12 - Show of Strength - Round TILT.png"
+    },
+    {
+      "id": "queen_sick_laydown",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Queen/7 - Sick Laydown - NEW.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/queen_sick_laydown.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Queen/7 - Sick Laydown - NEW.png"
+    },
+    {
+      "id": "rogue_sleight_of_hand",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Rogue/4 - Sleight of Hand - Round NEW.png",
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/rogue_sleight_of_hand.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Rogue/4 - Sleight of Hand - Round NEW.png"
+    },
+    {
+      "id": "snap_call",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/6 - Snap Call - Round.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/snap_call.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/6 - Snap Call - Round.png"
+    },
+    {
+      "id": "merchant_special_delivery",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Merchant/3 - Special Delivery! - Round.png",
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/merchant_special_delivery.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Merchant/3 - Special Delivery! - Round.png"
+    },
+    {
+      "id": "rogue_splash_the_pot",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Rogue/5 - Splash the Pot - Round.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/rogue_splash_the_pot.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Rogue/5 - Splash the Pot - Round.png"
+    },
+    {
+      "id": "joker_split_personality",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Joker/6 - Split Personality.png",
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/joker_split_personality.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Joker/6 - Split Personality.png"
+    },
+    {
+      "id": "queen_spot_the_tell",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Queen/5 - Spot the Tell - NEW.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/queen_spot_the_tell.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Queen/5 - Spot the Tell - NEW.png"
+    },
+    {
+      "id": "rogue_stealth",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Rogue/11 - Stealth - Setup.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/rogue_stealth.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Rogue/11 - Stealth - Setup.png"
+    },
+    {
+      "id": "king_stimulus",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/King/Stimulus 2.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/king_stimulus.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/King/Stimulus 2.png"
+    },
+    {
+      "id": "queen_table_flirt",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Queen/9 - Table Flirt - Secret Rare.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/queen_table_flirt.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Queen/9 - Table Flirt - Secret Rare.png"
+    },
+    {
+      "id": "warrior_table_taunts",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Warrior/8 - Table Taunts - Round.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/warrior_table_taunts.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Warrior/8 - Table Taunts - Round.png"
+    },
+    {
+      "id": "jack_tactical_retreat",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Jack/6 - Tactical Retreat - NEW.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/jack-tactical-retreat.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Jack/6 - Tactical Retreat - NEW.png"
+    },
+    {
+      "id": "noble_tax_the_rich",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Noble/9 - Tax the Rich - Round.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/noble_tax_the_rich.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Noble/9 - Tax the Rich - Round.png"
+    },
+    {
+      "id": "king_tip_the_dealer",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/King/6 - Tip the Dealer - Round.png",
+      "finalSource": "power-art-05/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/king_tip_the_dealer.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/King/6 - Tip the Dealer - Round.png"
+    },
+    {
+      "id": "top_up",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/14 - Top Up - Showdown.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/top_up.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/14 - Top Up - Showdown.png"
+    },
+    {
+      "id": "joker_trade",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/Joker/Trade 2.png",
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/joker_trade.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/Joker/Trade 2.png"
+    },
+    {
+      "id": "warrior_training_montage",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Warrior/6 - Training Montage - Round.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/warrior_training_montage.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Warrior/6 - Training Montage - Round.png"
+    },
+    {
+      "id": "trash_talker",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Neutrals/4 - Trash Talker - Round.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/trash_talker.png",
+      "structuredSource": "GAME CARDS/Power Cards/Neutrals/4 - Trash Talker - Round.png"
+    },
+    {
+      "id": "noble_trust_fund",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Noble/5 -Trust Fund - Setup.png",
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/noble_trust_fund.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Noble/5 -Trust Fund - Setup.png"
+    },
+    {
+      "id": "rogue_twist_of_fate",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Rogue/3 - Twist of Fate - Round.png",
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/rogue_twist_of_fate.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Rogue/3 - Twist of Fate - Round.png"
+    },
+    {
+      "id": "king_vip_treatment",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Court Cards/King/8 - VIP Treatment - Setup.png",
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/king_vip_treatment.png",
+      "structuredSource": "GAME CARDS/Power Cards/Court Cards/King/8 - VIP Treatment - Setup.png"
+    },
+    {
+      "id": "merchant_wheel_and_deal",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Power Cards/Class Cards/Merchant/6 - Wheel and Deal - Round.png",
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/cards/merchant_wheel_and_deal.png",
+      "structuredSource": "GAME CARDS/Power Cards/Class Cards/Merchant/6 - Wheel and Deal - Round.png"
+    },
+    {
+      "id": "reference_abilities",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME RULES/Abilities.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/reference/abilities.png",
+      "structuredSource": "GAME RULES/Abilities.png"
+    },
+    {
+      "id": "reference_game_terms",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME RULES/Game Terms.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/reference/game_terms.png",
+      "structuredSource": "GAME RULES/Game Terms.png"
+    },
+    {
+      "id": "reference_hand_rankings",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME RULES/Hand Rankings.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/reference/hand_rankings.png",
+      "structuredSource": "GAME RULES/Hand Rankings.png"
+    },
+    {
+      "id": "reference_poker_terms",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME RULES/Poker Terms.png",
+      "finalSource": "reference-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/gallery/reference/poker_terms.png",
+      "structuredSource": "GAME RULES/Poker Terms.png"
+    },
+    {
+      "id": "heating_up",
+      "legacySource": null,
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/tokens/heating-up.png",
+      "structuredSource": null
+    },
+    {
+      "id": "tilted",
+      "legacySource": null,
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/tokens/tilted.png",
+      "structuredSource": null
+    },
+    {
+      "id": "crystal_ball",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/13 - Crystal Ball - Merchant Token.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/tokens/crystal_ball.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/13 - Crystal Ball - Merchant Token.png"
+    },
+    {
+      "id": "cursed_amulet",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/14 - Cursed Amulet - Merchant Token.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/tokens/cursed_amulet.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/14 - Cursed Amulet - Merchant Token.png"
+    },
+    {
+      "id": "inside_connections",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/12 - Inside Connections - Token.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/tokens/inside_connections.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/12 - Inside Connections - Token.png"
+    },
+    {
+      "id": "merch_stockpile",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/11 - Merch Stockpile - Token.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/tokens/merch_stockpile.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/11 - Merch Stockpile - Token.png"
+    },
+    {
+      "id": "wanted",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/10 - Wanted Token.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/tokens/wanted.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/10 - Wanted Token.png"
+    },
+    {
+      "id": "treasure_goblin",
+      "legacySource": "changing-vegas/DUNA Changing Vegas /GAME CARDS/Items - Tokens/15 - Treasure Goblin - Merchant Token.png",
+      "finalSource": "world-art/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/tokens/treasure_goblin.png",
+      "structuredSource": "GAME CARDS/Items - Tokens/15 - Treasure Goblin - Merchant Token.png"
+    }
+  ]
+}

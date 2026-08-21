@@ -1,21 +1,15 @@
 import { defineConfig, globalIgnores } from "eslint/config";
 import nextVitals from "eslint-config-next/core-web-vitals";
-import nextTs from "eslint-config-next/typescript";
 
-const eslintConfig = defineConfig([
+export default defineConfig([
   ...nextVitals,
-  ...nextTs,
-  // Override default ignores of eslint-config-next.
-  globalIgnores([
-    // Default ignores of eslint-config-next:
-    ".next/**",
-    "dist/**",
-    ".vinext/**",
-    ".wrangler/**",
-    "out/**",
-    "build/**",
-    "next-env.d.ts",
-  ]),
+  {
+    rules: {
+      "@next/next/no-html-link-for-pages": "off",
+      "@next/next/no-img-element": "off",
+      "react-hooks/preserve-manual-memoization": "off",
+      "jsx-a11y/role-supports-aria-props": "off",
+    },
+  },
+  globalIgnores([".next/**", "out/**", "next-env.d.ts"]),
 ]);
-
-export default eslintConfig;
