@@ -1,0 +1,482 @@
+[
+  {
+    "id": "class_merchant",
+    "slug": "class-merchant",
+    "name": "Merchant",
+    "originalName": "Merchant",
+    "category": "class-identity",
+    "family": "merchant",
+    "class": "merchant",
+    "court": null,
+    "type": "Class Identity",
+    "timing": [],
+    "abilities": [],
+    "effect": [
+      "Build resources, trade items, and convert patient advantage into explosive turns."
+    ],
+    "digitalCopy": {
+      "name": "Merchant",
+      "type": "Class Identity",
+      "keywords": [],
+      "effect": [
+        "Build resources, trade items, and convert patient advantage into explosive turns."
+      ]
+    },
+    "printedTextVerbatim": [
+      "Merchant",
+      "Build resources, trade items, and convert patient advantage into explosive turns."
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "final-only",
+    "mappingConfidence": "verified-final",
+    "copyStatus": "verified",
+    "requiresHumanCopyReview": false,
+    "conflicts": [],
+    "notes": [
+      "Adaptive / Midrange"
+    ],
+    "legacy": null,
+    "final": {
+      "sourcePath": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/class-merchant.png",
+      "publicPath": "/assets/library/final/class-identity/class_merchant.png",
+      "filename": "class-merchant.png",
+      "width": 1024,
+      "height": 1536,
+      "format": "PNG",
+      "fileSize": 3376938,
+      "sha256": "10b72b12133c1822f22e5de504f22b0c1cbca1d1d9a35007e9a25026f7603628"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": null,
+    "finalArtwork": "/assets/library/final/class-identity/class_merchant.png",
+    "thumbnail": "/assets/library/thumbs/class_merchant.webp",
+    "provenance": {
+      "legacySource": null,
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/class-merchant.png",
+      "structuredSource": "Core data/classes.json"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "class_noble",
+    "slug": "class-noble",
+    "name": "Noble",
+    "originalName": "Noble",
+    "category": "class-identity",
+    "family": "noble",
+    "class": "noble",
+    "court": null,
+    "type": "Class Identity",
+    "timing": [],
+    "abilities": [],
+    "effect": [
+      "Protect the stack, shape the table, and turn social leverage into control."
+    ],
+    "digitalCopy": {
+      "name": "Noble",
+      "type": "Class Identity",
+      "keywords": [],
+      "effect": [
+        "Protect the stack, shape the table, and turn social leverage into control."
+      ]
+    },
+    "printedTextVerbatim": [
+      "Noble",
+      "Protect the stack, shape the table, and turn social leverage into control."
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "final-only",
+    "mappingConfidence": "verified-final",
+    "copyStatus": "verified",
+    "requiresHumanCopyReview": false,
+    "conflicts": [],
+    "notes": [
+      "Tight / Control"
+    ],
+    "legacy": null,
+    "final": {
+      "sourcePath": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/class-noble.png",
+      "publicPath": "/assets/library/final/class-identity/class_noble.png",
+      "filename": "class-noble.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "fileSize": 3741049,
+      "sha256": "d99637973d56abbf5f6e29c68d0fff0cd534d0fe21e72739f778cf7927d67afe"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": null,
+    "finalArtwork": "/assets/library/final/class-identity/class_noble.png",
+    "thumbnail": "/assets/library/thumbs/class_noble.webp",
+    "provenance": {
+      "legacySource": null,
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/class-noble.png",
+      "structuredSource": "Core data/classes.json"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "class_rogue",
+    "slug": "class-rogue",
+    "name": "Rogue",
+    "originalName": "Rogue",
+    "category": "class-identity",
+    "family": "rogue",
+    "class": "rogue",
+    "court": null,
+    "type": "Class Identity",
+    "timing": [],
+    "abilities": [],
+    "effect": [
+      "Steal tempo, manipulate the deck, and spring sharp reversals."
+    ],
+    "digitalCopy": {
+      "name": "Rogue",
+      "type": "Class Identity",
+      "keywords": [],
+      "effect": [
+        "Steal tempo, manipulate the deck, and spring sharp reversals."
+      ]
+    },
+    "printedTextVerbatim": [
+      "Rogue",
+      "Steal tempo, manipulate the deck, and spring sharp reversals."
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "final-only",
+    "mappingConfidence": "verified-final",
+    "copyStatus": "verified",
+    "requiresHumanCopyReview": false,
+    "conflicts": [],
+    "notes": [
+      "Tight / Aggressive"
+    ],
+    "legacy": null,
+    "final": {
+      "sourcePath": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/class-rogue.png",
+      "publicPath": "/assets/library/final/class-identity/class_rogue.png",
+      "filename": "class-rogue.png",
+      "width": 1024,
+      "height": 1536,
+      "format": "PNG",
+      "fileSize": 2587444,
+      "sha256": "d98329bfbee58ce0118162c084d29d71e311e255667b7dbf7037cd676ff967aa"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": null,
+    "finalArtwork": "/assets/library/final/class-identity/class_rogue.png",
+    "thumbnail": "/assets/library/thumbs/class_rogue.webp",
+    "provenance": {
+      "legacySource": null,
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/class-rogue.png",
+      "structuredSource": "Core data/classes.json"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "class_warrior",
+    "slug": "class-warrior",
+    "name": "Warrior",
+    "originalName": "Warrior",
+    "category": "class-identity",
+    "family": "warrior",
+    "class": "warrior",
+    "court": null,
+    "type": "Class Identity",
+    "timing": [],
+    "abilities": [],
+    "effect": [
+      "Force the pace, break board certainty, and attack the stack directly."
+    ],
+    "digitalCopy": {
+      "name": "Warrior",
+      "type": "Class Identity",
+      "keywords": [],
+      "effect": [
+        "Force the pace, break board certainty, and attack the stack directly."
+      ]
+    },
+    "printedTextVerbatim": [
+      "Warrior",
+      "Force the pace, break board certainty, and attack the stack directly."
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "final-only",
+    "mappingConfidence": "verified-final",
+    "copyStatus": "verified",
+    "requiresHumanCopyReview": false,
+    "conflicts": [],
+    "notes": [
+      "Loose / Aggressive"
+    ],
+    "legacy": null,
+    "final": {
+      "sourcePath": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/class-warrior.png",
+      "publicPath": "/assets/library/final/class-identity/class_warrior.png",
+      "filename": "class-warrior.png",
+      "width": 1024,
+      "height": 1536,
+      "format": "PNG",
+      "fileSize": 3222096,
+      "sha256": "00a73d73fe3ade069922348bc25d65f0cbb95afaa4c909ae149b4e5815b875bc"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": null,
+    "finalArtwork": "/assets/library/final/class-identity/class_warrior.png",
+    "thumbnail": "/assets/library/thumbs/class_warrior.webp",
+    "provenance": {
+      "legacySource": null,
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/class-warrior.png",
+      "structuredSource": "Core data/classes.json"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "court_jack",
+    "slug": "court-jack",
+    "name": "Jack",
+    "originalName": "Jack",
+    "category": "court-identity",
+    "family": "jack",
+    "class": null,
+    "court": "jack",
+    "type": "Court Identity",
+    "timing": [],
+    "abilities": [],
+    "effect": [
+      "Skill"
+    ],
+    "digitalCopy": {
+      "name": "Jack",
+      "type": "Court Identity",
+      "keywords": [],
+      "effect": [
+        "Skill"
+      ]
+    },
+    "printedTextVerbatim": [
+      "Jack",
+      "Skill"
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "final-only",
+    "mappingConfidence": "verified-final",
+    "copyStatus": "verified",
+    "requiresHumanCopyReview": false,
+    "conflicts": [],
+    "notes": [
+      "Court trait: Skill"
+    ],
+    "legacy": null,
+    "final": {
+      "sourcePath": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/court-jack.png",
+      "publicPath": "/assets/library/final/court-identity/court_jack.png",
+      "filename": "court-jack.png",
+      "width": 1024,
+      "height": 1536,
+      "format": "PNG",
+      "fileSize": 3044197,
+      "sha256": "d412b47f04952a5466664d66999625a38a960bdd481efc7aeb248b7327c1f7fc"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": null,
+    "finalArtwork": "/assets/library/final/court-identity/court_jack.png",
+    "thumbnail": "/assets/library/thumbs/court_jack.webp",
+    "provenance": {
+      "legacySource": null,
+      "finalSource": "power-art-02/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/court-jack.png",
+      "structuredSource": "Core data/courts.json"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "court_joker",
+    "slug": "court-joker",
+    "name": "Joker",
+    "originalName": "Joker",
+    "category": "court-identity",
+    "family": "joker",
+    "class": null,
+    "court": "joker",
+    "type": "Court Identity",
+    "timing": [],
+    "abilities": [],
+    "effect": [
+      "Craftiness"
+    ],
+    "digitalCopy": {
+      "name": "Joker",
+      "type": "Court Identity",
+      "keywords": [],
+      "effect": [
+        "Craftiness"
+      ]
+    },
+    "printedTextVerbatim": [
+      "Joker",
+      "Craftiness"
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "final-only",
+    "mappingConfidence": "verified-final",
+    "copyStatus": "verified",
+    "requiresHumanCopyReview": false,
+    "conflicts": [],
+    "notes": [
+      "Court trait: Craftiness"
+    ],
+    "legacy": null,
+    "final": {
+      "sourcePath": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/court-joker.png",
+      "publicPath": "/assets/library/final/court-identity/court_joker.png",
+      "filename": "court-joker.png",
+      "width": 1024,
+      "height": 1536,
+      "format": "PNG",
+      "fileSize": 2947080,
+      "sha256": "337e0b355449b0ccc579e13ad746292f522f04c639310c46d3bdb98479817f31"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": null,
+    "finalArtwork": "/assets/library/final/court-identity/court_joker.png",
+    "thumbnail": "/assets/library/thumbs/court_joker.webp",
+    "provenance": {
+      "legacySource": null,
+      "finalSource": "power-art-03/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/court-joker.png",
+      "structuredSource": "Core data/courts.json"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "court_king",
+    "slug": "court-king",
+    "name": "King",
+    "originalName": "King",
+    "category": "court-identity",
+    "family": "king",
+    "class": null,
+    "court": "king",
+    "type": "Court Identity",
+    "timing": [],
+    "abilities": [],
+    "effect": [
+      "Wealth"
+    ],
+    "digitalCopy": {
+      "name": "King",
+      "type": "Court Identity",
+      "keywords": [],
+      "effect": [
+        "Wealth"
+      ]
+    },
+    "printedTextVerbatim": [
+      "King",
+      "Wealth"
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "final-only",
+    "mappingConfidence": "verified-final",
+    "copyStatus": "verified",
+    "requiresHumanCopyReview": false,
+    "conflicts": [],
+    "notes": [
+      "Court trait: Wealth"
+    ],
+    "legacy": null,
+    "final": {
+      "sourcePath": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/court-king.png",
+      "publicPath": "/assets/library/final/court-identity/court_king.png",
+      "filename": "court-king.png",
+      "width": 1024,
+      "height": 1536,
+      "format": "PNG",
+      "fileSize": 3234884,
+      "sha256": "d8eafcf14df90c9004ba6aa315515b30031e6cc34ae3dd6481d7f47dccc469f2"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": null,
+    "finalArtwork": "/assets/library/final/court-identity/court_king.png",
+    "thumbnail": "/assets/library/thumbs/court_king.webp",
+    "provenance": {
+      "legacySource": null,
+      "finalSource": "power-art-01/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/court-king.png",
+      "structuredSource": "Core data/courts.json"
+    },
+    "inclusionStatus": "included"
+  },
+  {
+    "id": "court_queen",
+    "slug": "court-queen",
+    "name": "Queen",
+    "originalName": "Queen",
+    "category": "court-identity",
+    "family": "queen",
+    "class": null,
+    "court": "queen",
+    "type": "Court Identity",
+    "timing": [],
+    "abilities": [],
+    "effect": [
+      "Intellect"
+    ],
+    "digitalCopy": {
+      "name": "Queen",
+      "type": "Court Identity",
+      "keywords": [],
+      "effect": [
+        "Intellect"
+      ]
+    },
+    "printedTextVerbatim": [
+      "Queen",
+      "Intellect"
+    ],
+    "rulesNotes": [],
+    "gameplayOrDecorative": "gameplay",
+    "mappingStatus": "final-only",
+    "mappingConfidence": "verified-final",
+    "copyStatus": "verified",
+    "requiresHumanCopyReview": false,
+    "conflicts": [],
+    "notes": [
+      "Court trait: Intellect"
+    ],
+    "legacy": null,
+    "final": {
+      "sourcePath": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/court-queen.png",
+      "publicPath": "/assets/library/final/court-identity/court_queen.png",
+      "filename": "court-queen.png",
+      "width": 1024,
+      "height": 1536,
+      "format": "PNG",
+      "fileSize": 3479468,
+      "sha256": "372196c60df281546c0b2c0cc11a97f6d4fc3e31a94cc36abe6fb568f08b891f"
+    },
+    "originalPdf": null,
+    "originalPdfPage": null,
+    "originalCrop": null,
+    "finalArtwork": "/assets/library/final/court-identity/court_queen.png",
+    "thumbnail": "/assets/library/thumbs/court_queen.webp",
+    "provenance": {
+      "legacySource": null,
+      "finalSource": "power-art-04/Royals-and-Rogues-Kit-v2.0.0/assets/royals-and-rogues/v2/art/power/court-queen.png",
+      "structuredSource": "Core data/courts.json"
+    },
+    "inclusionStatus": "included"
+  }
+]
