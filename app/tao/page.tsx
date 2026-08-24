@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Tao — Enamel Oracle System",
     description: "Seventy-five symbolic windows into the movement of reality, connected by 302 typed relationships.",
-    images: ["/tao/tao-enamel-proof-sheet.png"],
+    images: ["/tao/tao-75-enamel-contact-sheet.webp"],
   },
 };
 
@@ -57,13 +57,13 @@ export default function TaoPage() {
             <h1>The <em>Tao</em></h1>
             <p className={styles.lede}>Seventy-five small enamel windows into the movement of reality—where form and emptiness, stillness and motion, yielding and resistance continually become one another.</p>
             <blockquote>“The Tao is not a set of answers. It is the pattern through which opposites continually become one another.”</blockquote>
-            <div className={styles.actions}><a className={styles.primaryButton} href="#tiles">Enter the 75 tiles</a><a href="/downloads/Tao-Enamel-Oracle-Complete-v1.0.0.zip" download>Download complete system ↓</a></div>
+            <div className={styles.actions}><a className={styles.primaryButton} href="#tiles">Enter the 75 tiles</a><a href="/downloads/Tao-Enamel-Oracle-Complete-v1.1.0.zip" download>Download complete system ↓</a></div>
             <div className={styles.metrics}><div><b>75</b><span>unique tiles</span></div><div><b>5</b><span>cosmological levels</span></div><div><b>302</b><span>typed relations</span></div></div>
           </div>
           <figure className={styles.heroArt}>
             <span className={styles.orbitOne}/><span className={styles.orbitTwo}/>
-            <img src="/tao/tao-enamel-proof-sheet.png" alt="Nine enamel oracle tiles showing Tao, Wu Wei, an empty vessel, water, mountain, return, Qian, Kun, and Wood" width={1254} height={1254}/>
-            <figcaption><b>Material proof</b><span>Nine faces establish void, line, enamel, and asymmetry.</span></figcaption>
+            <img src="/tao/tao-75-enamel-contact-sheet.webp" alt="The complete collection of 75 hand-worked enamel Tao oracle tiles" width={1972} height={1876}/>
+            <figcaption><b>Complete first edition</b><span>Seventy-five distinct faces in one material language.</span></figcaption>
           </figure>
         </section>
 
@@ -103,7 +103,7 @@ export default function TaoPage() {
         <section className={styles.librarySection} id="library">
           <div><p className={styles.eyebrow}>COMPLETE WORKING LIBRARY</p><h2>Carry the whole system.</h2><p>The preserved edition includes the manual, all 75 individual Markdown tile records, visual grammar, generation prompt, full relationship graph, validation report, and the enamel proof sheet.</p></div>
           <div className={styles.downloads}>
-            <a href="/downloads/Tao-Enamel-Oracle-Complete-v1.0.0.zip" download><small>COMPLETE EDITION · 2.9 MB</small><h3>Tao Enamel Oracle v1.0.0</h3><p>Every authored tile, manual chapter, graph record, production direction, source note, and visual proof.</p><b>Download ZIP ↓</b></a>
+            <a href="/downloads/Tao-Enamel-Oracle-Complete-v1.1.0.zip" download><small>COMPLETE EDITION · 16 MB</small><h3>Tao Enamel Oracle v1.1.0</h3><p>All 75 finished tile artworks, every authored dossier, the complete manual, graph records, production direction, source notes, and visual proofs.</p><b>Download ZIP ↓</b></a>
             <a href="/tao/TAO-ENAMEL-ORACLE-MANUAL.md"><small>READABLE SOURCE</small><h3>Complete Markdown manual</h3><p>Foundations, polarity, phases, trigrams, reading method, spreads, graph semantics, ethics, and visual philosophy.</p><b>Open manual ↗</b></a>
           </div>
         </section>

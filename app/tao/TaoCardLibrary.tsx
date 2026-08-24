@@ -21,6 +21,10 @@ function relationId(name: string) {
   return cards.find((card) => card.name === name)?.slug;
 }
 
+function artworkPath(card: Card) {
+  return `/tao/tiles/art/${card.id.slice(-3)}-${card.slug}.webp`;
+}
+
 export default function TaoCardLibrary() {
   const [family, setFamily] = useState<Family>("All");
   const [query, setQuery] = useState("");
@@ -55,9 +59,15 @@ export default function TaoCardLibrary() {
         {visible.map((card) => (
           <details className={styles.tile} id={card.slug} key={card.id} data-family={familyKey(card)}>
             <summary>
-              <div className={styles.tileFace} aria-hidden="true">
-                <i /><i /><i />
-                {card.trigram.length ? <b>{card.trigram.find((item) => item.label === "Glyph")?.value}</b> : <b>○</b>}
+              <div className={styles.tileFace}>
+                <img
+                  src={artworkPath(card)}
+                  alt={`${card.name} hand-worked enamel oracle tile`}
+                  width={960}
+                  height={960}
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
               <div className={styles.tileIntro}>
                 <small>{card.number} · {card.families.join(" + ")}</small>
