@@ -19,7 +19,7 @@ const narrativeBlocks = {
   "card-047": [0], "card-048": [0], "card-049": [0], "card-050": [0],
 };
 
-const photographed = new Set(["card-027", "card-029", "card-030", "card-031", "card-035", "card-036", "card-041", "card-042", "card-043"]);
+const photographed = new Set(["card-007", "card-027", "card-029", "card-030", "card-031", "card-035", "card-036", "card-037", "card-039", "card-041", "card-042", "card-043"]);
 
 const fieldOverrides = {
   "card-009": { gifts: ["Adaptability", "Diplomacy", "Equanimity"] },
@@ -34,23 +34,109 @@ const fieldOverrides = {
   "card-050": { gifts: ["Leadership", "Ability to see both sides of a problem", "Management", "Delegation of duties"] },
 };
 
-const partial = {
-  "card-007": ["No card-specific extended narrative, gifts, or wounds were recovered."],
-  "card-037": ["Gifts and wounds were not recovered."],
-  "card-039": ["The narrative ends mid-reading; astrological balance and Stone of Destiny were not recovered."],
-};
+const partial = {};
 
 function clean(value) {
   return value
     .replace(/-\s*\n\s*(?=[a-z])/g, "")
     .replace(/\[(?:gasp|sigh|sniff|breath)[^\]]*\]/gi, "")
+    .replace(/\[[^\]]*\]/g, "")
     .replace(/\b(?:I'm going to|I’m going to|I'm gonna|I’m gonna) pause[^.]*\.?/gi, "")
     .replace(/\bAnd after you record this,? pause[^.]*\.?/gi, "")
     .replace(/\bPause (?:again )?(?:for|here for)[^.]*\.?/gi, "")
     .replace(/\bLet me know when[^.]*\.?/gi, "")
+    .replace(/\bThe illustration is from[^.]*we don't need that\.?/gi, "")
+    .replace(/\b(?:Now,?\s*)?we (?:are|'re) going to (?:go through|read)[^.]*\.?/gi, "")
+    .replace(/\bOkay,?\s*(?:we(?:'re| are) now going to[^.]*|let's read[^.]*|next)\.?/gi, "")
+    .replace(/\bNo,?\s*let me[^.]*\.?/gi, "")
+    .replace(/\bwe don't need that\.?/gi, "")
+    .replace(/There are great things ahead of you[^.]*continuing\.?/gi, "There are great things ahead of you.")
+    .replace(/Yet the feeling is one of comple-?,?\s*Yet the feeling is one of completeness\./gi, "Yet the feeling is one of completeness.")
+    .replace(/In doing so,+\s*pause\s*…?progress\./gi, "In doing so, you support progress.")
+    .replace(/The main illustration is from[\s\S]{0,120}?the secondary illustration,? whatever\.?/gi, "")
+    .replace(/Actually,? these are all Mercury[^.]*\.?/gi, "")
+    .replace(/\buh-?\s*/gi, "")
+    .replace(/fourteenth century ivory,?\s*fourteenth century-?\s*ivory/gi, "a fourteenth-century ivory")
+    .replace(/ro-?\s*rider/gi, "rider")
+    .replace(/push inside the past/gi, "push aside the past")
+    .replace(/urina-\s*Puriorum/gi, "urina puriorum")
+    .replace(/practi-\s*cality/gi, "practicality")
+    .replace(/spouting-s\s+a sprouting seed/gi, "a sprouting seed")
+    .replace(/This may, however, they may, however,/gi, "They may, however,")
+    .replace(/shows a four stages/gi, "shows four stages")
+    .replace(/flasks on their head/gi, "flasks on their heads")
+    .replace(/Each stand on/gi, "Each stands on")
+    .replace(/\b[A-Za-z]{1,14}-(?:,\s*|\s+)(?=[A-Za-z])/g, "")
+    .replace(/\band\s+and\b/gi, "and")
+    .replace(/\bYour (creative|practical)\b/gi, "You're $1")
+    .replace(/\bthere likely\b/gi, "they're likely")
+    .replace(/([.!?])\s+([a-z])/g, (_match, punctuation, letter) => `${punctuation} ${letter.toUpperCase()}`)
+    .replace(/Since the moon is a masculine energy and the moon since the sun is a masculine energy and the moon a feminine one/gi, "Since the Sun is a masculine energy and the Moon a feminine one")
+    .replace(/\b(?:Okay|Right)\.?\s+(?=[A-Z])/g, "")
+    .replace(/\b(?:Oh|Uh|Um)\.?\s*/g, "")
+    .replace(/\b([A-Za-z]+)-(?:\s*)\1\b/gi, "$1")
+    .replace(/\b(\w+)\s+\1\b/gi, "$1")
+    .replace(/\s+([,.;:!?])/g, "$1")
     .replace(/^…/, "")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function readingText(value, card) {
+  const keyword = escapeRegExp(card.keyword);
+  const markers = [
+    new RegExp(`\\b${keyword} is the keyword\\b`, "i"),
+    new RegExp(`\\b${keyword} means\\b`, "i"),
+    new RegExp(`\\bTo ${keyword.toLowerCase()} is\\b`, "i"),
+    /\bThis card indicates\b/i,
+  ];
+  const starts = markers.map((marker) => value.search(marker)).filter((index) => index >= 0);
+  return starts.length ? value.slice(Math.min(...starts)) : value;
+}
+
+function editorialParagraphs(value, card) {
+  const normalized = clean(readingText(value, card))
+    .replace(/\bAstrological balance\s*[,.:]?\s*/gi, "\n\nPlanetary conjunction: ")
+    .replace(/\bStone of destiny\s*[,.:]?\s*/gi, "\n\nStone: ")
+    .replace(/\bGrade\s*[,.:]?\s*(?=(?:this card|the card|Puffer|Initiate|Adept|Philosopher))/gi, "\n\nGrade: ")
+    .replace(/\bRuling planet,?\s*Mercury\b/gi, "Mercury correspondence:")
+    .replace(/\bguardian angel higher self spirit guide\b/gi, "guardian angel, higher self, or spirit guide")
+    .replace(/Ending brings new beginnings It is renewal/gi, "Ending brings new beginnings. It is renewal")
+    .replace(/\bin the drawing of this wild card will determine that\b/gi, "drawing this Wild Card indicates that")
+    .replace(/\bthe complexity of the wiring in automobile\b/gi, "the complexity of an automobile's wiring")
+    .replace(/\bThe (?:picture|illustration) (?:shows|depicts|contains)\b/gi, (match) => `\n\n${match}`)
+    .replace(/\s*\n\s*/g, "\n")
+    .trim();
+  if (!normalized) return [];
+
+  const sections = normalized.split(/\n+/).map((section) => section.trim()).filter(Boolean);
+  const paragraphs = [];
+  const seenSentences = new Set();
+  for (const section of sections) {
+    const sentences = section.split(/(?<=[.!?])\s+(?=[A-Z“])/).filter(Boolean);
+    let paragraph = "";
+    for (const sentence of sentences) {
+      if (/^(?:Let me know|Pause|I'm going|I’m going|So that is it)/i.test(sentence)) continue;
+      if (/^Card (?:\w+|\d+),?\s+\w+\.?$/i.test(sentence)) continue;
+      if (/^Grade:\s*(?:Puffer|Initiate|Adept|Philosopher)\.?$/i.test(sentence)) continue;
+      if (/^(?:Keyword|Gifts?|Challenges?),/i.test(sentence)) continue;
+      if (/\bkeyword\b.*\bgifts?\b.*\bchallenges?\b/i.test(sentence)) continue;
+      const sentenceKey = sentence.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+      if (seenSentences.has(sentenceKey)) continue;
+      seenSentences.add(sentenceKey);
+      if (paragraph && paragraph.length + sentence.length > 620) {
+        paragraphs.push(paragraph.trim());
+        paragraph = "";
+      }
+      paragraph += `${paragraph ? " " : ""}${sentence}`;
+    }
+    if (paragraph.trim()) paragraphs.push(paragraph.trim());
+  }
+  return paragraphs;
 }
 
 function mergeBlocks(blocks) {
@@ -73,23 +159,31 @@ function titleCase(value) {
 
 function cleanList(value) {
   if (!Array.isArray(value)) return [];
-  return value.filter(Boolean).map(titleCase);
+  return value
+    .filter(Boolean)
+    .flatMap((item) => String(item).split(/\.\s+(?=[A-Z])/))
+    .map(clean)
+    .map(titleCase)
+    .filter(Boolean);
 }
 
 async function recoveredNarrative(card, evidence) {
+  if (Array.isArray(card.editorial_narrative) && card.editorial_narrative.length) {
+    return card.editorial_narrative.map(clean);
+  }
   const blocks = splitBlocks(evidence);
-  if (photographed.has(card.card_id)) return mergeBlocks(blocks);
+  if (photographed.has(card.card_id)) return editorialParagraphs(mergeBlocks(blocks), card);
   if (card.card_id === "card-037") {
     const page = await readFile(join(sourceRoot, "sources", "original-transcriptions", "thread-pages", "page-011.txt"), "utf8");
     const match = page.match(/<transcript_delta>(…ustration is from- no, forget that\.[\s\S]*?Grade\. This card is in the Puffer grade)/);
-    return match ? clean(match[1]) : "";
+    return match ? editorialParagraphs(match[1], card) : [];
   }
   if (card.card_id === "card-046") {
     const recovered = await readFile(join(sourceRoot, "sources", "original-transcriptions", "recovered-user-inputs.txt"), "utf8");
     const line = recovered.split("\n").find((entry) => entry.includes("The first wild card is Execute."));
-    return line ? clean(line) : "";
+    return line ? editorialParagraphs(line, card) : [];
   }
-  return mergeBlocks((narrativeBlocks[card.card_id] ?? []).map((index) => blocks[index]).filter(Boolean));
+  return editorialParagraphs(mergeBlocks((narrativeBlocks[card.card_id] ?? []).map((index) => blocks[index]).filter(Boolean)), card);
 }
 
 const output = [];
@@ -99,6 +193,10 @@ for (const card of metadata) {
   const evidence = await readFile(evidencePath, "utf8");
   const override = fieldOverrides[card.card_id] ?? {};
   const element = card.element ?? (card.suit_key === "wild" ? card.elements_or_numbers?.[0] ?? null : null);
+  const challenges = cleanList(card.wounds).map((item) => item.replace(/\s+The main$/i, ""));
+  const sourceChallenges = challenges.filter((item) => !/^The main$/i.test(item));
+  const narrativeParagraphs = await recoveredNarrative(card, evidence);
+  const planetaryConjunction = override.astrologicalBalance ?? card.astrological_balance ?? null;
   output.push({
     id: card.card_id,
     number: card.card_number,
@@ -110,14 +208,19 @@ for (const card of metadata) {
     suitRuler: card.suit_ruler,
     grade: card.grade,
     gifts: override.gifts ?? cleanList(card.gifts),
-    wounds: cleanList(card.wounds).map((item) => item.replace(/\s+The main$/i, "")),
-    astrologicalBalance: override.astrologicalBalance ?? card.astrological_balance ?? null,
+    challenges: sourceChallenges,
+    wounds: sourceChallenges,
+    planetaryConjunction,
+    astrologicalBalance: planetaryConjunction,
     stone: override.stone ?? (card.suit_key === "wild" ? null : card.stone_of_destiny ?? null),
     element,
     numbersAndElements: card.elements_or_numbers ?? [],
     description: clean(card.visual_description_raw ?? ""),
-    narrative: await recoveredNarrative(card, evidence),
+    narrative: narrativeParagraphs.join("\n\n"),
+    narrativeParagraphs,
     sourceStatus: card.source_status,
+    sourceEvidenceFile: card.source_evidence_file ?? null,
+    visualSourcePages: card.visual_source_pages ?? [],
     contentStatus: partial[card.card_id] ? "incomplete-source" : "source-backed",
     missing: partial[card.card_id] ?? [],
   });

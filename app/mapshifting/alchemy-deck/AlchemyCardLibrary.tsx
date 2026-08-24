@@ -20,9 +20,8 @@ function assetPath(card: Card, orientation: "landscape" | "portrait") {
   return `/mapshifting/alchemy/cards/${card.id}-${slug}-${orientation}-w${width}.webp`;
 }
 
-function TextList({ values, empty }: { values: string[]; empty: string }) {
-  if (!values.length) return <p className="alchemy-dossier-empty">{empty}</p>;
-  return <ul>{values.map((value) => <li key={value}>{value}</li>)}</ul>;
+function listValue(values: string[]) {
+  return values.length ? values.join(" · ") : "Not assigned";
 }
 
 export default function AlchemyCardLibrary() {
@@ -96,7 +95,10 @@ export default function AlchemyCardLibrary() {
                           <dl>
                             <div><dt>Suit</dt><dd>{card.suit}</dd></div>
                             <div><dt>Current</dt><dd>{card.suitMeaning}</dd></div>
-                            <div><dt>Ruler</dt><dd>{card.suitRuler}</dd></div>
+                            <div><dt>Gifts</dt><dd>{listValue(card.gifts)}</dd></div>
+                            <div><dt>Challenges<br />&amp; wounds</dt><dd>{listValue(card.challenges)}</dd></div>
+                            <div><dt>Stone</dt><dd>{card.stone ?? "Not assigned"}</dd></div>
+                            <div><dt>Planetary<br />conjunction</dt><dd>{card.planetaryConjunction ?? "Not assigned"}</dd></div>
                           </dl>
                           <button className="alchemy-card-cta" type="button" aria-haspopup="dialog" onClick={(event) => openCard(card, event.currentTarget)}>
                             Read the complete card <span aria-hidden="true">↗</span>
@@ -122,21 +124,25 @@ export default function AlchemyCardLibrary() {
             <div className="alchemy-dossier-scroll">
               <aside className="alchemy-dossier-card">
                 <img src={assetPath(selected, "portrait")} alt={`${selected.name} portrait card`} width={540} height={960} />
-                <div><span>{selected.keyword}</span><small>{selected.suitMeaning} · {selected.suitRuler}</small></div>
+                <div><span>{selected.keyword}</span><small>{selected.stone ?? "No stone"} · {selected.planetaryConjunction ?? "No conjunction"}</small></div>
               </aside>
               <article className="alchemy-dossier-content">
                 <p className="deck-eyebrow">{selected.suit} · {selected.suitMeaning}</p>
                 <h2 id={`${selected.id}-dossier-title`}>{selected.name}</h2>
                 {selected.missing.length ? <div className="alchemy-source-gap"><b>Source recovery note</b>{selected.missing.map((note) => <p key={note}>{note}</p>)}</div> : null}
 
-                <div className="alchemy-dossier-dual">
-                  <section><h3>Gifts</h3><TextList values={selected.gifts} empty="No gifts were recovered in the current source." /></section>
-                  <section><h3>Wounds</h3><TextList values={selected.wounds} empty="No wounds were recovered in the current source." /></section>
-                </div>
+                <dl className="alchemy-dossier-summary" aria-label={`${selected.name} card summary`}>
+                  <div><dt>Suit</dt><dd>{selected.suit}</dd></div>
+                  <div><dt>Current</dt><dd>{selected.suitMeaning}</dd></div>
+                  <div><dt>Gifts</dt><dd>{listValue(selected.gifts)}</dd></div>
+                  <div><dt>Challenges &amp; wounds</dt><dd>{listValue(selected.challenges)}</dd></div>
+                  <div><dt>Stone</dt><dd>{selected.stone ?? "Not assigned"}</dd></div>
+                  <div><dt>Planetary conjunction</dt><dd>{selected.planetaryConjunction ?? "Not assigned"}</dd></div>
+                </dl>
 
                 <section className="alchemy-dossier-section">
-                  <h3>The complete recovered narrative</h3>
-                  {selected.narrative ? selected.narrative.split("\n\n").map((paragraph) => <p key={paragraph.slice(0, 90)}>{paragraph}</p>) : <p className="alchemy-dossier-empty">No extended narrative was recovered for this card.</p>}
+                  <h3>The complete card narrative</h3>
+                  {selected.narrativeParagraphs.length ? selected.narrativeParagraphs.map((paragraph) => <p key={paragraph.slice(0, 90)}>{paragraph}</p>) : <p className="alchemy-dossier-empty">No extended narrative was recovered for this card.</p>}
                 </section>
 
                 <section className="alchemy-dossier-section">
@@ -149,16 +155,11 @@ export default function AlchemyCardLibrary() {
                   <dl className="alchemy-dossier-facts">
                     <div><dt>Keyword</dt><dd>{selected.keyword}</dd></div>
                     <div><dt>Grade</dt><dd>{selected.grade}</dd></div>
-                    <div><dt>Suit</dt><dd>{selected.suit}</dd></div>
-                    <div><dt>Current</dt><dd>{selected.suitMeaning}</dd></div>
-                    <div><dt>Ruler</dt><dd>{selected.suitRuler}</dd></div>
-                    {selected.astrologicalBalance ? <div><dt>Astrological balance</dt><dd>{selected.astrologicalBalance}</dd></div> : null}
-                    {selected.stone ? <div><dt>Stone of Destiny</dt><dd>{selected.stone}</dd></div> : null}
                     {selected.element ? <div><dt>Element</dt><dd>{selected.element}</dd></div> : null}
                     {selected.numbersAndElements.length ? <div><dt>Numbers &amp; elements</dt><dd>{selected.numbersAndElements.join(" · ")}</dd></div> : null}
                   </dl>
                 </section>
-                <p className="alchemy-dossier-provenance">Source-backed from the maintained Mapshifting Alchemy transcription and photographed-guidebook evidence. Dictation and OCR wording is preserved where no reconciled editorial text exists.</p>
+                <p className="alchemy-dossier-provenance">Source-backed from the maintained Mapshifting Alchemy transcription and photographed-guidebook evidence. The narrative is editorially clarified for readability; the source meaning, correspondences, and symbolic relationships are preserved.</p>
               </article>
             </div>
           </section>

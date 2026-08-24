@@ -5,7 +5,7 @@ import AlchemyCardLibrary from "./AlchemyCardLibrary";
 export const metadata: Metadata = {
   title: "Mapshifting Alchemy Deck · Complete Card Library",
   description:
-    "All 50 source-backed Alchemy card dossiers with gifts, wounds, correspondences, narratives, descriptions, and 100 finished compositions.",
+    "All 50 source-backed Alchemy card dossiers with gifts, challenges and wounds, stones, planetary conjunctions, clarified narratives, descriptions, and 100 finished compositions.",
 };
 
 export default function AlchemyDeckPage() {
@@ -69,7 +69,7 @@ export default function AlchemyDeckPage() {
             <div><p className="deck-eyebrow">COMPLETE ART LIBRARY</p><h2>Fifty cards. One hundred finished works.</h2></div>
             <p>
               The card order is preserved across five nine-card suits and five Wild Cards. Open either artwork at
-              web resolution, or choose “Read the complete card” for its gifts, wounds, narrative, description, and correspondences.
+              web resolution, or choose “Read the complete card” for its gifts, challenges and wounds, stone, planetary conjunction, narrative, and description.
             </p>
           </div>
 
@@ -94,8 +94,8 @@ export default function AlchemyDeckPage() {
         </section>
 
         <section className="alchemy-production">
-          <div><p className="deck-eyebrow">COMPLETE CARD RELEASE</p><h2>Art and recovered meaning, together.</h2><p>The site carries all 100 approved compositions plus a source-backed dossier for every card. Each dossier brings together gifts, wounds, correspondences, the recovered narrative, and the complete visual description while keeping unresolved source gaps visible.</p></div>
-          <ol><li><span>01</span><p>50 portrait masters reviewed as full compositions.</p></li><li><span>02</span><p>50 landscape masters reviewed independently—not cropped from portrait.</p></li><li><span>03</span><p>Each card opens into one scrollable information dossier.</p></li><li><span>04</span><p>Unrecovered information is identified explicitly rather than silently reconstructed.</p></li></ol>
+          <div><p className="deck-eyebrow">COMPLETE CARD RELEASE</p><h2>Art and recovered meaning, together.</h2><p>The site carries all 100 approved compositions plus a source-backed dossier for every card. Each dossier brings together gifts, challenges and wounds, stone, planetary conjunction, a clarified narrative, and the complete visual description.</p></div>
+          <ol><li><span>01</span><p>50 portrait masters reviewed as full compositions.</p></li><li><span>02</span><p>50 landscape masters reviewed independently—not cropped from portrait.</p></li><li><span>03</span><p>Each card opens into one scrollable information dossier.</p></li><li><span>04</span><p>All previously incomplete source records are now reconciled.</p></li></ol>
         </section>
 
         <section className="deck-downloads" id="downloads">

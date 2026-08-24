@@ -7,33 +7,29 @@ Scope: 50-card Mapshifting Alchemy public library
 
 - 50 of 50 cards have a public card dossier.
 - 50 of 50 include a portrait thumbnail and complete recovered visual description.
-- 50 of 50 explicitly represent Gifts and Wounds, including an unrecovered-state message where evidence is absent.
-- 50 of 50 include all currently recovered correspondences.
-- 47 of 50 have no known source-field gap.
-- 3 of 50 retain explicit source gaps and are labeled in both the public data and the dossier interface.
+- 50 of 50 explicitly represent Gifts and Challenges / Wounds.
+- 45 suited cards include a source-backed Stone and Planetary Conjunction.
+- 5 Wild Cards explicitly show those two fields as **Not assigned** rather than inventing correspondences.
+- 50 of 50 include structured, readable narrative paragraphs and a distinct visual description.
+- 50 of 50 have no known source-field gap.
 
-## Incomplete source records
+## Resolved source records
 
 ### Card 007 · Unite
 
-- Missing: card-specific extended narrative.
-- Missing: Gifts.
-- Missing: Wounds.
-- Available: identity, suit, grade, keyword, astrological balance, Stone of Destiny, full recovered visual description, and finished art.
+- Resolved from `IMG_4448`–`IMG_4450`.
+- Added the full Gifts and Challenges / Wounds, Venus–Sun conjunction, Beryl, symbolism, grade reading, and clarified complete narrative.
 
 ### Card 037 · Mature
 
-- Missing: Gifts.
-- Missing: Wounds.
-- Available: extended narrative, identity, suit, grade, keyword, astrological balance, Stone of Destiny, numbers, full recovered visual description, and finished art.
+- Resolved from `IMG_4451` and the retained source narrative.
+- Added the missing Gifts and Challenges / Wounds while preserving Mars–Pluto, Agate, and the complete reading.
 
 ### Card 039 · Diversify
 
-- Missing: latter portion of the extended narrative; the retained dictation ends mid-reading.
-- Missing: astrological balance.
-- Missing: Stone of Destiny.
-- Available: Gifts, Wounds, identity, suit, grade, keyword, numbers, full recovered visual description, and finished art.
+- Resolved from `IMG_4452`–`IMG_4455`.
+- Added the complete ending, Mars–Neptune conjunction, Jasper, full symbolic structure, grade reading, and clarified complete narrative.
 
 ## Publication rule
 
-No missing field is inferred. Every missing source is disclosed in the relevant card dossier with a source-recovery note. When better evidence is supplied, update the maintained Alchemy source kit first and regenerate the public records with `scripts/generate-alchemy-card-content.mjs`.
+No missing field may be inferred. Update the maintained Alchemy source kit first, then regenerate the public records with `scripts/generate-alchemy-card-content.mjs`. Challenges are the guidebook wording; Wounds is the Mapshifting presentation of that same source list until a distinct, approved Wounds layer exists.
