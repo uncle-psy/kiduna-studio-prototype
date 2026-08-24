@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "ref-01",
+    "artifactId": "architectures--monolith",
+    "name": "Monolith",
+    "category": "architectures",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-01.png",
+    "sitePath": "assets/references/reference-01.png",
+    "vectorPath": "reference-artifacts/svg/reference-01.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Architecture Plate",
+      "aspectRatio": "4:3",
+      "composition": "a legible sectional system diagram with luminous paths",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Ancient Center",
+        "centralized-distributed",
+        "architecture"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-02",
+    "artifactId": "architectures--microservices",
+    "name": "Microservices",
+    "category": "architectures",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-02.png",
+    "sitePath": "assets/references/reference-02.png",
+    "vectorPath": "reference-artifacts/svg/reference-02.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Architecture Plate",
+      "aspectRatio": "4:3",
+      "composition": "a legible sectional system diagram with luminous paths",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Federation",
+        "centralized-distributed",
+        "architecture"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-03",
+    "artifactId": "architectures--event-driven-architecture",
+    "name": "Event-Driven Architecture",
+    "category": "architectures",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-03.png",
+    "sitePath": "assets/references/reference-03.png",
+    "vectorPath": "reference-artifacts/svg/reference-03.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Architecture Plate",
+      "aspectRatio": "4:3",
+      "composition": "a legible sectional system diagram with luminous paths",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Waiting Line",
+        "synchronous-asynchronous",
+        "architecture"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-04",
+    "artifactId": "architectures--zero-trust-architecture",
+    "name": "Zero Trust Architecture",
+    "category": "architectures",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-04.png",
+    "sitePath": "assets/references/reference-04.png",
+    "vectorPath": "reference-artifacts/svg/reference-04.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Architecture Plate",
+      "aspectRatio": "4:3",
+      "composition": "a legible sectional system diagram with luminous paths",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Threshold Keeper",
+        "open-closed",
+        "architecture"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-05",
+    "artifactId": "architectures--strangler-fig-migration",
+    "name": "Strangler Fig Migration",
+    "category": "architectures",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-05.png",
+    "sitePath": "assets/references/reference-05.png",
+    "vectorPath": "reference-artifacts/svg/reference-05.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Architecture Plate",
+      "aspectRatio": "4:3",
+      "composition": "a legible sectional system diagram with luminous paths",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Caravan",
+        "plan-adaptation",
+        "architecture"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-06",
+    "artifactId": "operating-systems--unix",
+    "name": "Unix",
+    "category": "software",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-06.png",
+    "sitePath": "assets/references/reference-06.png",
+    "vectorPath": "reference-artifacts/svg/reference-06.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Software Tile",
+      "aspectRatio": "1:1",
+      "composition": "nested symbolic layers rendered as a working luminous instrument",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Common Measure",
+        "standardization-customization",
+        "software"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-07",
+    "artifactId": "software-development--git",
+    "name": "Git",
+    "category": "software",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-07.png",
+    "sitePath": "assets/references/reference-07.png",
+    "vectorPath": "reference-artifacts/svg/reference-07.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Software Tile",
+      "aspectRatio": "1:1",
+      "composition": "nested symbolic layers rendered as a working luminous instrument",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Federation",
+        "centralized-distributed",
+        "software"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-08",
+    "artifactId": "software-development--continuous-integration",
+    "name": "Continuous Integration",
+    "category": "software",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-08.png",
+    "sitePath": "assets/references/reference-08.png",
+    "vectorPath": "reference-artifacts/svg/reference-08.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Architecture Plate",
+      "aspectRatio": "4:3",
+      "composition": "a legible sectional system diagram with luminous paths",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Returning Signal",
+        "plan-adaptation",
+        "architecture"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-09",
+    "artifactId": "enterprise-systems--relational-database",
+    "name": "Relational Database",
+    "category": "software",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-09.png",
+    "sitePath": "assets/references/reference-09.png",
+    "vectorPath": "reference-artifacts/svg/reference-09.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Architecture Plate",
+      "aspectRatio": "4:3",
+      "composition": "a legible sectional system diagram with luminous paths",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Common Measure",
+        "standardization-customization",
+        "architecture"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-10",
+    "artifactId": "operations--infrastructure-as-code",
+    "name": "Infrastructure as Code",
+    "category": "software",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-10.png",
+    "sitePath": "assets/references/reference-10.png",
+    "vectorPath": "reference-artifacts/svg/reference-10.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Software Tile",
+      "aspectRatio": "1:1",
+      "composition": "nested symbolic layers rendered as a working luminous instrument",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Stone Ledger",
+        "security-convenience",
+        "software"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-11",
+    "artifactId": "organization-forms--bureaucracy",
+    "name": "Bureaucracy",
+    "category": "organizations",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-11.png",
+    "sitePath": "assets/references/reference-11.png",
+    "vectorPath": "reference-artifacts/svg/reference-11.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Organization Card",
+      "aspectRatio": "16:10",
+      "composition": "a chamber of roles, authority lines, and a central charter",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Endless Office",
+        "standardization-customization",
+        "organization"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-12",
+    "artifactId": "organization-forms--matrix-organization",
+    "name": "Matrix Organization",
+    "category": "organizations",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-12.png",
+    "sitePath": "assets/references/reference-12.png",
+    "vectorPath": "reference-artifacts/svg/reference-12.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Organization Card",
+      "aspectRatio": "16:10",
+      "composition": "a chamber of roles, authority lines, and a central charter",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Crossed Loom",
+        "centralized-distributed",
+        "organization"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-13",
+    "artifactId": "organization-forms--cooperative",
+    "name": "Cooperative",
+    "category": "organizations",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-13.png",
+    "sitePath": "assets/references/reference-13.png",
+    "vectorPath": "reference-artifacts/svg/reference-13.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Organization Card",
+      "aspectRatio": "16:10",
+      "composition": "a chamber of roles, authority lines, and a central charter",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Common Well",
+        "ownership-access",
+        "organization"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-14",
+    "artifactId": "organization-forms--platform-organization",
+    "name": "Platform Organization",
+    "category": "organizations",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-14.png",
+    "sitePath": "assets/references/reference-14.png",
+    "vectorPath": "reference-artifacts/svg/reference-14.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Organization Card",
+      "aspectRatio": "16:10",
+      "composition": "a chamber of roles, authority lines, and a central charter",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Hosted City",
+        "centralized-distributed",
+        "organization"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-15",
+    "artifactId": "crypto-web3--dao",
+    "name": "DAO",
+    "category": "organizations",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-15.png",
+    "sitePath": "assets/references/reference-15.png",
+    "vectorPath": "reference-artifacts/svg/reference-15.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Organization Card",
+      "aspectRatio": "16:10",
+      "composition": "a chamber of roles, authority lines, and a central charter",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Common Ledger",
+        "centralized-distributed",
+        "organization"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-16",
+    "artifactId": "accounting-capital--double-entry-bookkeeping",
+    "name": "Double-Entry Bookkeeping",
+    "category": "finance",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-16.png",
+    "sitePath": "assets/references/reference-16.png",
+    "vectorPath": "reference-artifacts/svg/reference-16.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Protocol Token",
+      "aspectRatio": "1:1",
+      "composition": "concentric gates, exchanged marks, and a visible rule path",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Returning Signal",
+        "plan-adaptation",
+        "protocol"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-17",
+    "artifactId": "markets-instruments--derivative",
+    "name": "Derivative",
+    "category": "finance",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-17.png",
+    "sitePath": "assets/references/reference-17.png",
+    "vectorPath": "reference-artifacts/svg/reference-17.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Relic",
+      "aspectRatio": "4:3",
+      "composition": "a preserved document or device bearing traces of use",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Counterweight",
+        "efficiency-resilience",
+        "relic"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-18",
+    "artifactId": "markets-instruments--market-maker",
+    "name": "Market Maker",
+    "category": "finance",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-18.png",
+    "sitePath": "assets/references/reference-18.png",
+    "vectorPath": "reference-artifacts/svg/reference-18.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Portrait Card",
+      "aspectRatio": "3:4",
+      "composition": "a centered figure or role-mask inside a celestial enamel frame",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Market River",
+        "ownership-access",
+        "archetype"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-19",
+    "artifactId": "markets-instruments--securitization",
+    "name": "Securitization",
+    "category": "finance",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-19.png",
+    "sitePath": "assets/references/reference-19.png",
+    "vectorPath": "reference-artifacts/svg/reference-19.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Architecture Plate",
+      "aspectRatio": "4:3",
+      "composition": "a legible sectional system diagram with luminous paths",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Veil",
+        "abstraction-control",
+        "architecture"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-20",
+    "artifactId": "markets-instruments--flash-crash",
+    "name": "Flash Crash",
+    "category": "finance",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-20.png",
+    "sitePath": "assets/references/reference-20.png",
+    "vectorPath": "reference-artifacts/svg/reference-20.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Event Tableau",
+      "aspectRatio": "16:9",
+      "composition": "one decisive historical moment with before-and-after tension",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Returning Signal",
+        "plan-adaptation",
+        "event"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-21",
+    "artifactId": "venture-startups--founder",
+    "name": "Founder",
+    "category": "startups",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-21.png",
+    "sitePath": "assets/references/reference-21.png",
+    "vectorPath": "reference-artifacts/svg/reference-21.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Portrait Card",
+      "aspectRatio": "3:4",
+      "composition": "a centered figure or role-mask inside a celestial enamel frame",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Glamour",
+        "vision-execution",
+        "archetype"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-22",
+    "artifactId": "venture-startups--venture-capital-fund",
+    "name": "Venture Capital Fund",
+    "category": "startups",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-22.png",
+    "sitePath": "assets/references/reference-22.png",
+    "vectorPath": "reference-artifacts/svg/reference-22.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Organization Card",
+      "aspectRatio": "16:10",
+      "composition": "a chamber of roles, authority lines, and a central charter",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Treasurer",
+        "capital-labor",
+        "organization"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-23",
+    "artifactId": "venture-startups--term-sheet",
+    "name": "Term Sheet",
+    "category": "startups",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-23.png",
+    "sitePath": "assets/references/reference-23.png",
+    "vectorPath": "reference-artifacts/svg/reference-23.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Relic",
+      "aspectRatio": "4:3",
+      "composition": "a preserved document or device bearing traces of use",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Threshold Keeper",
+        "open-closed",
+        "relic"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-24",
+    "artifactId": "venture-startups--product-market-fit",
+    "name": "Product–Market Fit",
+    "category": "startups",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-24.png",
+    "sitePath": "assets/references/reference-24.png",
+    "vectorPath": "reference-artifacts/svg/reference-24.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Force Coin",
+      "aspectRatio": "1:1",
+      "composition": "an elemental pressure represented by orbit, weight, or current",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Returning Signal",
+        "plan-adaptation",
+        "force"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-25",
+    "artifactId": "venture-startups--webvan",
+    "name": "Webvan",
+    "category": "startups",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-25.png",
+    "sitePath": "assets/references/reference-25.png",
+    "vectorPath": "reference-artifacts/svg/reference-25.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Event Tableau",
+      "aspectRatio": "16:9",
+      "composition": "one decisive historical moment with before-and-after tension",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The City Before Its People",
+        "growth-sustainability",
+        "event"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-26",
+    "artifactId": "institutions-ghosts--xerox-parc",
+    "name": "Xerox PARC",
+    "category": "institutions",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-26.png",
+    "sitePath": "assets/references/reference-26.png",
+    "vectorPath": "reference-artifacts/svg/reference-26.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Place Card",
+      "aspectRatio": "16:10",
+      "composition": "an inhabited institutional landscape with paths and thresholds",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Unclaimed Invention",
+        "vision-execution",
+        "place"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-27",
+    "artifactId": "institutions-ghosts--fairchild-semiconductor",
+    "name": "Fairchild Semiconductor",
+    "category": "institutions",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-27.png",
+    "sitePath": "assets/references/reference-27.png",
+    "vectorPath": "reference-artifacts/svg/reference-27.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Organization Card",
+      "aspectRatio": "16:10",
+      "composition": "a chamber of roles, authority lines, and a central charter",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Broken Orchard",
+        "centralized-distributed",
+        "organization"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-28",
+    "artifactId": "institutions-ghosts--bell-labs",
+    "name": "Bell Labs",
+    "category": "institutions",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-28.png",
+    "sitePath": "assets/references/reference-28.png",
+    "vectorPath": "reference-artifacts/svg/reference-28.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Place Card",
+      "aspectRatio": "16:10",
+      "composition": "an inhabited institutional landscape with paths and thresholds",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Common Well",
+        "ownership-access",
+        "place"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-29",
+    "artifactId": "institutions-ghosts--well-community",
+    "name": "WELL Community",
+    "category": "institutions",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-29.png",
+    "sitePath": "assets/references/reference-29.png",
+    "vectorPath": "reference-artifacts/svg/reference-29.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Place Card",
+      "aspectRatio": "16:10",
+      "composition": "an inhabited institutional landscape with paths and thresholds",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Common Well",
+        "ownership-access",
+        "place"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-30",
+    "artifactId": "institutions-ghosts--burning-man",
+    "name": "Burning Man",
+    "category": "institutions",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-30.png",
+    "sitePath": "assets/references/reference-30.png",
+    "vectorPath": "reference-artifacts/svg/reference-30.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Place Card",
+      "aspectRatio": "16:10",
+      "composition": "an inhabited institutional landscape with paths and thresholds",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The City of Ash",
+        "plan-adaptation",
+        "place"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-31",
+    "artifactId": "institutions-ghosts--the-alto",
+    "name": "The Alto",
+    "category": "ghosts",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-31.png",
+    "sitePath": "assets/references/reference-31.png",
+    "vectorPath": "reference-artifacts/svg/reference-31.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Machine Tile",
+      "aspectRatio": "1:1",
+      "composition": "a precise instrument shown as a self-contained enamel mechanism",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Unclaimed Invention",
+        "vision-execution",
+        "machine"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-32",
+    "artifactId": "institutions-ghosts--mother-of-all-demos",
+    "name": "Mother of All Demos",
+    "category": "ghosts",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-32.png",
+    "sitePath": "assets/references/reference-32.png",
+    "vectorPath": "reference-artifacts/svg/reference-32.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Event Tableau",
+      "aspectRatio": "16:9",
+      "composition": "one decisive historical moment with before-and-after tension",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The City Before Its People",
+        "growth-sustainability",
+        "event"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-33",
+    "artifactId": "institutions-ghosts--dynabook",
+    "name": "Dynabook",
+    "category": "ghosts",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-33.png",
+    "sitePath": "assets/references/reference-33.png",
+    "vectorPath": "reference-artifacts/svg/reference-33.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Relic",
+      "aspectRatio": "4:3",
+      "composition": "a preserved document or device bearing traces of use",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Unopened Door",
+        "plan-adaptation",
+        "relic"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-34",
+    "artifactId": "institutions-ghosts--general-magic",
+    "name": "General Magic",
+    "category": "ghosts",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-34.png",
+    "sitePath": "assets/references/reference-34.png",
+    "vectorPath": "reference-artifacts/svg/reference-34.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Organization Card",
+      "aspectRatio": "16:10",
+      "composition": "a chamber of roles, authority lines, and a central charter",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The City Before Its People",
+        "growth-sustainability",
+        "organization"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-35",
+    "artifactId": "institutions-ghosts--ghost-feature",
+    "name": "Ghost Feature",
+    "category": "ghosts",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-35.png",
+    "sitePath": "assets/references/reference-35.png",
+    "vectorPath": "reference-artifacts/svg/reference-35.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Shadow Card",
+      "aspectRatio": "3:4",
+      "composition": "a fractured or occluded mechanism with one surviving warning light",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Ancient Machine",
+        "plan-adaptation",
+        "failure"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-36",
+    "artifactId": "hacker-culture--phone-phreaking",
+    "name": "Phone Phreaking",
+    "category": "weird-culture",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-36.png",
+    "sitePath": "assets/references/reference-36.png",
+    "vectorPath": "reference-artifacts/svg/reference-36.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Event Tableau",
+      "aspectRatio": "16:9",
+      "composition": "one decisive historical moment with before-and-after tension",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Threshold Keeper",
+        "open-closed",
+        "event"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-37",
+    "artifactId": "hacker-culture--2600-magazine",
+    "name": "2600 Magazine",
+    "category": "weird-culture",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-37.png",
+    "sitePath": "assets/references/reference-37.png",
+    "vectorPath": "reference-artifacts/svg/reference-37.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Relic",
+      "aspectRatio": "4:3",
+      "composition": "a preserved document or device bearing traces of use",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Common Well",
+        "ownership-access",
+        "relic"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-38",
+    "artifactId": "hacker-culture--def-con",
+    "name": "DEF CON",
+    "category": "weird-culture",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-38.png",
+    "sitePath": "assets/references/reference-38.png",
+    "vectorPath": "reference-artifacts/svg/reference-38.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Place Card",
+      "aspectRatio": "16:10",
+      "composition": "an inhabited institutional landscape with paths and thresholds",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The City of Ash",
+        "plan-adaptation",
+        "place"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-39",
+    "artifactId": "institutions-ghosts--survival-research-laboratories",
+    "name": "Survival Research Laboratories",
+    "category": "weird-culture",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-39.png",
+    "sitePath": "assets/references/reference-39.png",
+    "vectorPath": "reference-artifacts/svg/reference-39.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Organization Card",
+      "aspectRatio": "16:10",
+      "composition": "a chamber of roles, authority lines, and a central charter",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Useless Engine",
+        "mission-metric",
+        "organization"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  },
+  {
+    "id": "ref-40",
+    "artifactId": "hacker-culture--glitch-art",
+    "name": "Glitch Art",
+    "category": "weird-culture",
+    "format": "png",
+    "path": "reference-artifacts/png/reference-40.png",
+    "sitePath": "assets/references/reference-40.png",
+    "vectorPath": "reference-artifacts/svg/reference-40.svg",
+    "status": "high-fidelity-enamel-reference",
+    "direction": {
+      "family": "Event Tableau",
+      "aspectRatio": "16:9",
+      "composition": "one decisive historical moment with before-and-after tension",
+      "palette": [
+        "midnight navy",
+        "charcoal black",
+        "warm gold",
+        "aged brass",
+        "domain enamel accent"
+      ],
+      "materials": [
+        "hard enamel",
+        "engraved brass",
+        "oxidized metal",
+        "subtle celestial grain"
+      ],
+      "iconography": [
+        "The Return",
+        "efficiency-resilience",
+        "event"
+      ],
+      "constraints": [
+        "no text embedded in art",
+        "readable at 96 px",
+        "one dominant silhouette",
+        "transparent export where applicable"
+      ]
+    }
+  }
+]

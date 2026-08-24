@@ -1,0 +1,142 @@
+[
+  {
+    "id": "computing-origins",
+    "name": "Origins of Computing",
+    "question": "What was computation before it became invisible?",
+    "description": "Foundational machines and conceptual breakthroughs that turned calculation into a programmable medium.",
+    "artifactCount": 18
+  },
+  {
+    "id": "hardware",
+    "name": "Hardware and Machines",
+    "question": "Where does abstract intention meet physical constraint?",
+    "description": "Physical substrates, processors, memory systems, and devices that give software consequence.",
+    "artifactCount": 18
+  },
+  {
+    "id": "operating-systems",
+    "name": "Operating Systems",
+    "question": "Who governs the machine between every program and every resource?",
+    "description": "Kernels, process models, interfaces, and operating environments that allocate physical capacity and define software possibility.",
+    "artifactCount": 18
+  },
+  {
+    "id": "software-development",
+    "name": "Software Development",
+    "question": "How is change made repeatable without making it rigid?",
+    "description": "Languages, practices, tools, and artifacts that turn intention into executable and maintainable systems.",
+    "artifactCount": 18
+  },
+  {
+    "id": "architectures",
+    "name": "System Architectures",
+    "question": "What arrangement makes the whole possible—and what does it quietly forbid?",
+    "description": "Recurring arrangements of components, responsibilities, state, and communication.",
+    "artifactCount": 18
+  },
+  {
+    "id": "networks-protocols",
+    "name": "Networks and Protocols",
+    "question": "What minimum agreement lets strangers exchange meaning?",
+    "description": "Standards and infrastructures that move data, resolve identity, and make independent systems interoperable.",
+    "artifactCount": 18
+  },
+  {
+    "id": "internet-culture",
+    "name": "Internet Culture",
+    "question": "What does connection make possible before power learns to contain it?",
+    "description": "Communities, media forms, rituals, and institutions native to networked social life.",
+    "artifactCount": 18
+  },
+  {
+    "id": "hacker-culture",
+    "name": "Hacker and Weird Tech Culture",
+    "question": "What can be learned by opening the machine and refusing its official purpose?",
+    "description": "Exploratory, adversarial, artistic, and communal traditions around repurposing technology.",
+    "artifactCount": 18
+  },
+  {
+    "id": "enterprise-systems",
+    "name": "Enterprise Systems",
+    "question": "When does coordination infrastructure become the institution itself?",
+    "description": "Large-scale information systems that standardize work, records, customers, supply, and managerial control.",
+    "artifactCount": 18
+  },
+  {
+    "id": "product-design",
+    "name": "Product and Design",
+    "question": "How does an imagined capability become a usable lived experience?",
+    "description": "Methods, roles, and artifacts that connect needs, interfaces, products, and adoption.",
+    "artifactCount": 18
+  },
+  {
+    "id": "operations",
+    "name": "Operations and Reliability",
+    "question": "How does a system keep its promise under ordinary pressure and extraordinary failure?",
+    "description": "Practices and infrastructures for deployment, observation, incident response, capacity, and recovery.",
+    "artifactCount": 18
+  },
+  {
+    "id": "management-theory",
+    "name": "Management Theory",
+    "question": "How do people coordinate effort without reducing life to machinery?",
+    "description": "Influential theories and practices for planning, quality, learning, motivation, and institutional performance.",
+    "artifactCount": 18
+  },
+  {
+    "id": "organization-forms",
+    "name": "Organizational Forms",
+    "question": "Which container fits the work, the people, and the power?",
+    "description": "Recurring structures for authority, ownership, coordination, participation, and institutional continuity.",
+    "artifactCount": 18
+  },
+  {
+    "id": "organizational-pathology",
+    "name": "Organizational Pathologies",
+    "question": "What pattern is the institution producing despite everyone’s stated intent?",
+    "description": "Systemic failures in authority, information, incentives, identity, scale, and institutional learning.",
+    "artifactCount": 18
+  },
+  {
+    "id": "accounting-capital",
+    "name": "Accounting and Capital",
+    "question": "What story of value becomes governable once it is entered in the ledger?",
+    "description": "Records, statements, controls, claims, and allocation practices that represent and direct economic resources.",
+    "artifactCount": 18
+  },
+  {
+    "id": "markets-instruments",
+    "name": "Markets and Instruments",
+    "question": "Which risk is being transferred, to whom, and under what illusion of price?",
+    "description": "Exchange mechanisms and financial instruments that coordinate capital, ownership, time, and uncertainty.",
+    "artifactCount": 18
+  },
+  {
+    "id": "venture-startups",
+    "name": "Venture and Startups",
+    "question": "Which future is being financed before it becomes evidence?",
+    "description": "Actors, instruments, myths, and failure patterns of high-growth company formation.",
+    "artifactCount": 18
+  },
+  {
+    "id": "crypto-web3",
+    "name": "Crypto and Web3",
+    "question": "What changes when trust becomes executable—and what new trust hides beneath it?",
+    "description": "Distributed ledgers, cryptographic assets, governance mechanisms, and characteristic failures.",
+    "artifactCount": 18
+  },
+  {
+    "id": "ai-agentic",
+    "name": "AI and Agentic Systems",
+    "question": "What authority should a model receive when its fluency exceeds its understanding?",
+    "description": "Statistical learning, generative models, agents, evaluation, and sociotechnical risk.",
+    "artifactCount": 18
+  },
+  {
+    "id": "institutions-ghosts",
+    "name": "Institutions, Places, and Ghosts",
+    "question": "Which absent future still shapes the present system?",
+    "description": "Influential labs, temporary cities, institutional lineages, forgotten inventions, and productive hauntings.",
+    "artifactCount": 18
+  }
+]

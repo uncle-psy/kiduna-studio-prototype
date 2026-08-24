@@ -1,0 +1,46 @@
+[
+  {
+    "id": "architecture-duel",
+    "name": "Architecture Duel",
+    "players": "2–4",
+    "duration": "30–50 minutes",
+    "premise": "Competing teams answer the same scenario by assembling a system from artifact cards.",
+    "setup": "Deal seven artifacts to each player. Reveal a scenario, two constraints, and one failure condition.",
+    "turn": "Play one artifact, name its real mechanism, and connect it to the shared graph. Unsupported buzzword play is invalid.",
+    "scoring": "Gain structure points for typed connections, resilience points for credible counterforces, and lose points when another player exposes an unhandled shadow.",
+    "testedExample": "A city needs a benefits system during disasters. Client–Server plus Identity and Access Management creates a center; Mesh Network and Disaster Recovery counter outage risk; Principal–Agent Problem exposes outsourced eligibility decisions. The distributed design wins only after naming reconciliation and appeal."
+  },
+  {
+    "id": "venture-runway",
+    "name": "Venture Runway",
+    "players": "2–5",
+    "duration": "35–60 minutes",
+    "premise": "Build a venture without letting story, capital, or scale outrun evidence.",
+    "setup": "Each player receives a Founder, three Option tokens, twelve Runway, and five random artifacts.",
+    "turn": "Spend Runway to test, build, hire, or finance. Every growth move adds a Shadow card unless supported by evidence.",
+    "scoring": "Survive six cycles with Product–Market Fit evidence, a credible institution, and at least three Runway. Highest valuation does not win.",
+    "testedExample": "A logistics founder takes Venture Capital Fund and builds Data Center before a Usability Test. Premature Scaling triggers; a Pivot preserves the routing capability, but the player survives only by discarding the Founder Myth and funding a smaller verified market."
+  },
+  {
+    "id": "protocol-council",
+    "name": "Protocol Council",
+    "players": "3–7",
+    "duration": "45–75 minutes",
+    "premise": "Independent factions must create a shared protocol without surrendering incompatible interests.",
+    "setup": "Each player draws a stakeholder mandate, private risk, and veto. Reveal one shared resource.",
+    "turn": "Propose clauses using Protocol and Force artifacts. Every clause must name state, authority, exception, and exit.",
+    "scoring": "The protocol succeeds if it survives three adversarial events and no participant is forced below its legitimacy threshold.",
+    "testedExample": "A shared AI evidence network uses Standard, Oracle Network, and Audit. A vendor proposes one central model; the council adds Fork and Multiple Sources. Consensus is slower but survives a poisoned-source event."
+  },
+  {
+    "id": "institutional-memory",
+    "name": "Institutional Memory",
+    "players": "1–6",
+    "duration": "25–45 minutes",
+    "premise": "Reconstruct why a failing institution works the way it does before changing it.",
+    "setup": "Lay one Legacy, one Failure, and one Place face up. Shuffle remaining cards by era.",
+    "turn": "Players add predecessors, promises, and consequences to a shared lineage. A redesign cannot erase a promise that has not been named.",
+    "scoring": "Earn continuity for preserved obligations, release for retired assumptions, and repair for tested migration paths.",
+    "testedExample": "A hospital scheduling system looks like Vendor Lock-In. The group traces it through Mainframe, Transaction Processing, and Internal Control; the redesign keeps auditability while replacing the interface in reversible stages."
+  }
+]

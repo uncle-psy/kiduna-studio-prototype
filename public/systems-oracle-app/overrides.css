@@ -1,0 +1,37 @@
+.artifact {
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+}
+
+.artifact:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--cyan);
+  outline-offset: 3px;
+}
+
+.card[href] {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+dialog a,
+section a:not(.card) {
+  color: var(--cyan);
+}
+
+.kiduna-return {
+  color: var(--cyan);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@media (max-width: 980px) {
+  .kiduna-return { display: none; }
+}

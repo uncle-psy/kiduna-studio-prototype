@@ -1,0 +1,196 @@
+[
+  {
+    "id": "lineage-computation",
+    "name": "From Calculation to Personal Medium",
+    "thesis": "From Calculation to Personal Medium is not a progress story. It traces how one solved constraint creates the next field of dependence, authority, and possibility.",
+    "artifactIds": [
+      "computing-origins--abacus",
+      "computing-origins--jacquard-loom",
+      "computing-origins--analytical-engine",
+      "computing-origins--turing-machine",
+      "computing-origins--stored-program-computer",
+      "computing-origins--microprocessor",
+      "computing-origins--personal-computer",
+      "computing-origins--graphical-user-interface",
+      "computing-origins--smartphone"
+    ],
+    "reading": "Read left to right for emergence, right to left for buried assumptions, or draw any adjacent pair as inheritance and consequence."
+  },
+  {
+    "id": "lineage-machine-governance",
+    "name": "The Operating System Becomes a Governor",
+    "thesis": "The Operating System Becomes a Governor is not a progress story. It traces how one solved constraint creates the next field of dependence, authority, and possibility.",
+    "artifactIds": [
+      "operating-systems--batch-processing",
+      "operating-systems--time-sharing",
+      "operating-systems--unix",
+      "operating-systems--process",
+      "operating-systems--virtual-memory",
+      "operating-systems--shell",
+      "operating-systems--gnu-project",
+      "operating-systems--linux-kernel",
+      "operating-systems--container-runtime"
+    ],
+    "reading": "Read left to right for emergence, right to left for buried assumptions, or draw any adjacent pair as inheritance and consequence."
+  },
+  {
+    "id": "lineage-software-freedom",
+    "name": "Source, Freedom, and Distributed Change",
+    "thesis": "Source, Freedom, and Distributed Change is not a progress story. It traces how one solved constraint creates the next field of dependence, authority, and possibility.",
+    "artifactIds": [
+      "software-development--c-language",
+      "software-development--open-source",
+      "software-development--version-control",
+      "software-development--git",
+      "software-development--code-review",
+      "software-development--continuous-integration"
+    ],
+    "reading": "Read left to right for emergence, right to left for buried assumptions, or draw any adjacent pair as inheritance and consequence."
+  },
+  {
+    "id": "lineage-network",
+    "name": "Packet to Web",
+    "thesis": "Packet to Web is not a progress story. It traces how one solved constraint creates the next field of dependence, authority, and possibility.",
+    "artifactIds": [
+      "networks-protocols--packet-switching",
+      "networks-protocols--arpanet",
+      "networks-protocols--internet-protocol",
+      "networks-protocols--tcp",
+      "networks-protocols--domain-name-system",
+      "networks-protocols--http",
+      "networks-protocols--url",
+      "networks-protocols--world-wide-web",
+      "networks-protocols--tls"
+    ],
+    "reading": "Read left to right for emergence, right to left for buried assumptions, or draw any adjacent pair as inheritance and consequence."
+  },
+  {
+    "id": "lineage-architecture",
+    "name": "From Center to Cells",
+    "thesis": "From Center to Cells is not a progress story. It traces how one solved constraint creates the next field of dependence, authority, and possibility.",
+    "artifactIds": [
+      "architectures--monolith",
+      "architectures--client-server",
+      "architectures--three-tier-architecture",
+      "architectures--service-oriented-architecture",
+      "architectures--microservices",
+      "architectures--event-driven-architecture"
+    ],
+    "reading": "Read left to right for emergence, right to left for buried assumptions, or draw any adjacent pair as inheritance and consequence."
+  },
+  {
+    "id": "lineage-quality",
+    "name": "Work Learns to See Itself",
+    "thesis": "Work Learns to See Itself is not a progress story. It traces how one solved constraint creates the next field of dependence, authority, and possibility.",
+    "artifactIds": [
+      "management-theory--scientific-management",
+      "management-theory--statistical-process-control",
+      "management-theory--plan-do-study-act",
+      "management-theory--toyota-production-system",
+      "management-theory--kaizen",
+      "management-theory--systems-thinking",
+      "management-theory--learning-organization"
+    ],
+    "reading": "Read left to right for emergence, right to left for buried assumptions, or draw any adjacent pair as inheritance and consequence."
+  },
+  {
+    "id": "lineage-ledger",
+    "name": "Ledger to Capital Allocation",
+    "thesis": "Ledger to Capital Allocation is not a progress story. It traces how one solved constraint creates the next field of dependence, authority, and possibility.",
+    "artifactIds": [
+      "accounting-capital--double-entry-bookkeeping",
+      "accounting-capital--general-ledger",
+      "accounting-capital--balance-sheet",
+      "accounting-capital--cash-flow-statement",
+      "accounting-capital--audit",
+      "accounting-capital--budget",
+      "accounting-capital--cost-of-capital",
+      "accounting-capital--capital-allocation"
+    ],
+    "reading": "Read left to right for emergence, right to left for buried assumptions, or draw any adjacent pair as inheritance and consequence."
+  },
+  {
+    "id": "lineage-risk",
+    "name": "Claims on an Uncertain Future",
+    "thesis": "Claims on an Uncertain Future is not a progress story. It traces how one solved constraint creates the next field of dependence, authority, and possibility.",
+    "artifactIds": [
+      "markets-instruments--bond",
+      "markets-instruments--futures-contract",
+      "markets-instruments--option-contract",
+      "markets-instruments--stock-exchange",
+      "markets-instruments--market-maker",
+      "markets-instruments--derivative",
+      "markets-instruments--securitization",
+      "markets-instruments--flash-crash"
+    ],
+    "reading": "Read left to right for emergence, right to left for buried assumptions, or draw any adjacent pair as inheritance and consequence."
+  },
+  {
+    "id": "lineage-venture",
+    "name": "Financing the Unproven",
+    "thesis": "Financing the Unproven is not a progress story. It traces how one solved constraint creates the next field of dependence, authority, and possibility.",
+    "artifactIds": [
+      "venture-startups--angel-investor",
+      "venture-startups--venture-capital-fund",
+      "venture-startups--term-sheet",
+      "venture-startups--convertible-note",
+      "venture-startups--safe",
+      "venture-startups--accelerator",
+      "venture-startups--product-market-fit",
+      "venture-startups--premature-scaling",
+      "venture-startups--webvan"
+    ],
+    "reading": "Read left to right for emergence, right to left for buried assumptions, or draw any adjacent pair as inheritance and consequence."
+  },
+  {
+    "id": "lineage-executable-trust",
+    "name": "Executable Trust and Its Hidden Oracles",
+    "thesis": "Executable Trust and Its Hidden Oracles is not a progress story. It traces how one solved constraint creates the next field of dependence, authority, and possibility.",
+    "artifactIds": [
+      "crypto-web3--bitcoin",
+      "crypto-web3--blockchain",
+      "crypto-web3--proof-of-work",
+      "crypto-web3--smart-contract",
+      "crypto-web3--token",
+      "crypto-web3--decentralized-exchange",
+      "crypto-web3--dao",
+      "crypto-web3--oracle-network",
+      "crypto-web3--the-dao-hack"
+    ],
+    "reading": "Read left to right for emergence, right to left for buried assumptions, or draw any adjacent pair as inheritance and consequence."
+  },
+  {
+    "id": "lineage-agent",
+    "name": "Model to Actor",
+    "thesis": "Model to Actor is not a progress story. It traces how one solved constraint creates the next field of dependence, authority, and possibility.",
+    "artifactIds": [
+      "ai-agentic--perceptron",
+      "ai-agentic--neural-network",
+      "ai-agentic--transformer",
+      "ai-agentic--foundation-model",
+      "ai-agentic--large-language-model",
+      "ai-agentic--retrieval-augmented-generation",
+      "ai-agentic--tool-use",
+      "ai-agentic--ai-agent",
+      "ai-agentic--alignment-problem"
+    ],
+    "reading": "Read left to right for emergence, right to left for buried assumptions, or draw any adjacent pair as inheritance and consequence."
+  },
+  {
+    "id": "lineage-unrecognized",
+    "name": "The Unrecognized Future",
+    "thesis": "The Unrecognized Future is not a progress story. It traces how one solved constraint creates the next field of dependence, authority, and possibility.",
+    "artifactIds": [
+      "institutions-ghosts--memex",
+      "institutions-ghosts--mother-of-all-demos",
+      "institutions-ghosts--xerox-parc",
+      "institutions-ghosts--the-alto",
+      "institutions-ghosts--dynabook",
+      "institutions-ghosts--fairchild-semiconductor",
+      "institutions-ghosts--the-fairchildren",
+      "institutions-ghosts--general-magic",
+      "institutions-ghosts--ghost-feature"
+    ],
+    "reading": "Read left to right for emergence, right to left for buried assumptions, or draw any adjacent pair as inheritance and consequence."
+  }
+]

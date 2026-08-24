@@ -1,0 +1,187 @@
+[
+  {
+    "id": "architecture-reading",
+    "name": "Architecture Reading",
+    "positions": [
+      "The load-bearing center",
+      "The hidden boundary",
+      "The accumulating state",
+      "The likely failure path",
+      "The smallest viable redesign"
+    ],
+    "purpose": "Diagnose the real constitution of a technical or institutional system.",
+    "drawRule": "Draw five artifacts; privilege architectures, protocols, organizations, and failures.",
+    "synthesis": "Read positions 1–3 as present structure and 4–5 as consequence and intervention.",
+    "testedExample": "Test case: a public benefits platform drew Mainframe, Identity and Access Management, Queue, Normalization of Deviance, and Strangler Fig Migration. The reading showed that auditability—not old code—was the promise at the center. The practical move was a reversible intake-service migration with an explicit appeal path and reconciliation measure."
+  },
+  {
+    "id": "failure-reading",
+    "name": "Failure Reading",
+    "positions": [
+      "The visible incident",
+      "The normalized deviation",
+      "The missing signal",
+      "The protected assumption",
+      "The recovery that changes the system"
+    ],
+    "purpose": "Move from blame to structural learning.",
+    "drawRule": "Place a Failure card first, then draw four across different domains.",
+    "synthesis": "The fourth position is usually the hardest truth; the fifth must be an actionable structural change.",
+    "testedExample": "Test case: an AI support incident drew Hallucination, Alert Fatigue, Evaluation Harness, Story over Proof, and Postmortem. The failure was not one false answer but a system that hid uncertainty while responders ignored noisy alerts. Recovery required source display, abstention thresholds, and an incident review tied to a model-release gate."
+  },
+  {
+    "id": "founder-reading",
+    "name": "Founder Reading",
+    "positions": [
+      "The originating gift",
+      "The story outrunning proof",
+      "The authority that cannot be delegated",
+      "The evidence being avoided",
+      "The institution beyond the founder"
+    ],
+    "purpose": "Examine a founder’s productive force and governance shadow.",
+    "drawRule": "Include one Archetype, one Force, one Organization, one Measure, and one Counterforce.",
+    "synthesis": "Do not pathologize personality; translate traits into roles, rights, and feedback.",
+    "testedExample": "Test case: a growing cooperative drew Founder, Enchanted Story, Founder Syndrome, Audit, and Matrix Organization. The reading protected the founder’s originating insight while separating narrative authority, budget authority, and final operational decisions. A ninety-day delegation experiment became the practical move."
+  },
+  {
+    "id": "organizational-diagnosis",
+    "name": "Organizational Diagnosis",
+    "positions": [
+      "Stated purpose",
+      "Operating incentive",
+      "Actual decision center",
+      "Information that cannot travel",
+      "Repairable interface",
+      "Pattern to retire"
+    ],
+    "purpose": "Reveal the organization produced by incentives and boundaries.",
+    "drawRule": "Draw six and connect every pair sharing an axis.",
+    "synthesis": "Where stated purpose and operating incentive conflict, treat behavior—not language—as evidence.",
+    "testedExample": "Test case: a nonprofit drew Nonprofit, Incentive, Central Bank, Information Hoarding, API Gateway, and Mission Drift. The grant metric had become the real decision center, and program knowledge could not cross into finance. The repair was a shared case-outcome review and published exception path, not another reorganization."
+  },
+  {
+    "id": "capital-reading",
+    "name": "Capital Reading",
+    "positions": [
+      "Source of force",
+      "Claim on the future",
+      "Hidden covenant",
+      "Who absorbs downside",
+      "Exit under stress",
+      "Enough"
+    ],
+    "purpose": "Read financing as a system of time, permission, and consequence.",
+    "drawRule": "Use at least two Force or Relic artifacts from Accounting, Markets, Venture, or Crypto.",
+    "synthesis": "End by defining “enough”; otherwise every answer defaults to more.",
+    "testedExample": "Test case: a venture drew Venture Capital Fund, Debt, Liquidation Preference, Limited Partner, Liquidity Trap, and Budget. The reading revealed that apparent runway depended on a follow-on market and that common holders carried the downside. The group defined a no-new-capital operating plan and a date for changing course."
+  },
+  {
+    "id": "protocol-reading",
+    "name": "Protocol Reading",
+    "positions": [
+      "Participants",
+      "Minimum agreement",
+      "State that must be shared",
+      "Exception path",
+      "Capture risk",
+      "Legitimate fork"
+    ],
+    "purpose": "Design or evaluate rules for coordination among independent parties.",
+    "drawRule": "Draw six Protocol, Architecture, Gate, or Commons artifacts.",
+    "synthesis": "A protocol is incomplete until contradiction, exception, and exit are explicit.",
+    "testedExample": "Test case: a shared-data consortium drew Public Agency, Standard, Immutable Record, Oracle Network, Regulatory Capture, and Fork. The protocol worked only after adding multiple evidence sources, correction rights, an auditable exception, and a legitimate exit. The fork became a safety property rather than a threat."
+  },
+  {
+    "id": "legacy-reading",
+    "name": "Legacy Reading",
+    "positions": [
+      "Promise still being kept",
+      "Knowledge trapped in the old form",
+      "Cost of coexistence",
+      "Reversible crossing",
+      "What must not migrate"
+    ],
+    "purpose": "Guide a migration without treating history as mere obstruction.",
+    "drawRule": "Place a Legacy-pattern artifact first; draw a Migration, Boundary, Test, and Recovery around it.",
+    "synthesis": "Preserve the promise, not necessarily the implementation.",
+    "testedExample": "Test case: a hospital drew Mainframe, Institutional Archive, Technical Debt, Anti-Corruption Layer, and Ghost Feature. The ancient scheduling system still preserved legal audit trails and shift rules nobody had documented. The migration began by encoding those obligations as tests before replacing the interface."
+  },
+  {
+    "id": "ai-authority-reading",
+    "name": "AI Authority Reading",
+    "positions": [
+      "Goal given",
+      "Evidence available",
+      "Tool boundary",
+      "Action without review",
+      "Failure not visible to the model",
+      "Human return point"
+    ],
+    "purpose": "Bound an AI system before granting it continuing action.",
+    "drawRule": "Use AI artifacts plus at least two from Protocols, Operations, or Organization Pathology.",
+    "synthesis": "Translate every abstract risk into a tool, permission, duration, budget, or escalation rule.",
+    "testedExample": "Test case: an autonomous procurement helper drew System Prompt, Retrieval-Augmented Generation, Tool Use, AI Agent, Principal–Agent Problem, and Incident Command. The model could draft and compare but not purchase, change vendors, or suppress conflicts. Tool scopes, a spending ceiling, provenance, and human return points made the boundary executable."
+  },
+  {
+    "id": "institutional-ghost",
+    "name": "Institutional Ghost Reading",
+    "positions": [
+      "The abandoned invention",
+      "Institution that could not value it",
+      "Descendant carrying the seed",
+      "Myth hiding the loss",
+      "Practice to recover"
+    ],
+    "purpose": "Use unrealized history without romanticizing it.",
+    "drawRule": "Start with a Place, Relic, or Event from Institutions and Ghosts.",
+    "synthesis": "Recover a practice or structure—not nostalgia for the vanished institution.",
+    "testedExample": "Test case: a research lab drew Dynabook, Xerox PARC, Fairchild Semiconductor, Founder Myth, and Community of Practice. The ghost was a participatory learning medium repeatedly reduced to a device. The recovered practice was a protected translation team that paired researchers with distribution and stewardship from the beginning."
+  },
+  {
+    "id": "strategic-crossroads",
+    "name": "Strategic Crossroads",
+    "positions": [
+      "Current constraint",
+      "Path of concentration",
+      "Path of distribution",
+      "Irreversible commitment",
+      "Option worth preserving",
+      "Decision date"
+    ],
+    "purpose": "Compare strategies through their structural commitments.",
+    "drawRule": "Draw counterforces into positions 2 and 3 whenever possible.",
+    "synthesis": "Name what must be true for each path and what evidence changes the decision.",
+    "testedExample": "Test case: a community network drew Bottleneck, Mainframe, Mesh Network, Immutable Record, Option Contract, and Decision Log. Centralization simplified identity but created an outage and legitimacy center; distribution improved resilience but required reconciliation. The team preserved a mesh pilot and set evidence thresholds before committing."
+  },
+  {
+    "id": "system-shadow",
+    "name": "System Shadow",
+    "positions": [
+      "Gift everyone sees",
+      "Cost someone else carries",
+      "Metric replacing purpose",
+      "Boundary with no appeal",
+      "Counterforce already emerging"
+    ],
+    "purpose": "Expose externalized and invisible consequences.",
+    "drawRule": "Draw across at least four domains; do not redraw an uncomfortable card.",
+    "synthesis": "The final card is evidence of system adaptation, not automatically a solution.",
+    "testedExample": "Test case: a creator platform drew Network Effect, Content Moderation, Algorithmic Recommendation, Gate, and Right to Repair. Users received reach while moderators and communities absorbed harm, and engagement replaced wellbeing. The emerging counterforce was portable identity and community-governed ranking rather than a better engagement score."
+  },
+  {
+    "id": "lineage-reading",
+    "name": "Lineage Reading",
+    "positions": [
+      "Ancestor",
+      "Inherited promise",
+      "Break with tradition",
+      "Forgotten sibling",
+      "Possible descendant"
+    ],
+    "purpose": "Locate a current system inside a historical family.",
+    "drawRule": "Choose one lineage and draw near its artifact sequence.",
+    "synthesis": "Ask which present choice future descendants will misremember as inevitable.",
+    "testedExample": "Test case: a new agent platform drew Expert System, Transformer, Tool Use, Forgotten Protocol, and Multi-Agent System. The inherited promise was delegated expertise; the break was probabilistic generation with external tools. The forgotten sibling was capability-based security, suggesting that the descendant should inherit narrow authority rather than only more intelligence."
+  }
+]
