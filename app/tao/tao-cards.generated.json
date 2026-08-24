@@ -1,0 +1,4831 @@
+[
+  {
+    "number": "001",
+    "id": "S-001",
+    "name": "Tao (Dao)",
+    "slug": "tao",
+    "families": [
+      "The Source"
+    ],
+    "essence": "The way before definition: source, course, and unpossessed order.",
+    "image": "A blue-black field; a circular current appears only in raking light; one gold thread remains open.",
+    "movement": "Form arises without exhausting its source.",
+    "gift": "Orientation without fixation.",
+    "shadow": "The nameless way is reduced to a doctrine, brand, or answer.",
+    "excess": "Vagueness becomes an excuse to evade particulars.",
+    "deficiency": "Every event is treated as isolated and controllable.",
+    "return": "Release the need to name the whole; follow the next true contour.",
+    "divination": "The situation is larger than the frame being used. Attend to its course before choosing a position.",
+    "question": "What changes when I stop demanding that the whole be nameable?",
+    "action": "Delay the verdict. Observe one full cycle before intervening.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Generates",
+        "value": "One"
+      },
+      {
+        "label": "Holds",
+        "value": "Mystery (Xuan)"
+      },
+      {
+        "label": "Expresses",
+        "value": "Wu Wei"
+      },
+      {
+        "label": "Completes",
+        "value": "Ten Thousand Things"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blue-black void, cloud white, moon silver, one restrained gold thread."
+      },
+      {
+        "label": "Composition",
+        "value": "A blue-black field; a circular current appears only in raking light; one gold thread remains open."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "002",
+    "id": "S-002",
+    "name": "Wu — Not-Having",
+    "slug": "wu",
+    "families": [
+      "The Source"
+    ],
+    "essence": "Absence as an active condition: what is not possessed, imposed, or occupied.",
+    "image": "Exposed blackened silver surrounds an enamel opening that refuses a center.",
+    "movement": "A claim, object, or intention withdraws and capacity appears.",
+    "gift": "Freedom from capture.",
+    "shadow": "Absence is mistaken for nihilism or neglect.",
+    "excess": "Erasure strips away necessary form and care.",
+    "deficiency": "No room remains for emergence.",
+    "return": "Remove only what blocks responsiveness; keep the vessel.",
+    "divination": "What is missing may be the operative fact—or the needed opening.",
+    "question": "What am I trying to possess that must remain open?",
+    "action": "Unclench one claim, schedule, role, or interpretation.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Generates",
+        "value": "Non-Being (Wu)"
+      },
+      {
+        "label": "Supports",
+        "value": "Emptiness"
+      },
+      {
+        "label": "Balances",
+        "value": "Being (You)"
+      },
+      {
+        "label": "Expresses",
+        "value": "Empty Vessel"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blue-black void, cloud white, moon silver, one restrained gold thread."
+      },
+      {
+        "label": "Composition",
+        "value": "Exposed blackened silver surrounds an enamel opening that refuses a center."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "003",
+    "id": "S-003",
+    "name": "Being (You)",
+    "slug": "being",
+    "families": [
+      "The Source"
+    ],
+    "essence": "Manifest presence: the named, formed, available face of reality.",
+    "image": "One white-jade form condenses from a dark field, its boundary still porous.",
+    "movement": "Potential takes shape and becomes encounterable.",
+    "gift": "Specificity, contact, and usable form.",
+    "shadow": "Form mistakes itself for the whole.",
+    "excess": "Accumulation and display crowd out relation.",
+    "deficiency": "Possibility never takes a form that can be met.",
+    "return": "Let form serve its use, then loosen it.",
+    "divination": "Something must become concrete now, but it need not become permanent.",
+    "question": "What form is ready to be inhabited rather than merely imagined?",
+    "action": "Give the next step a name, boundary, and duration.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Non-Being (Wu)"
+      },
+      {
+        "label": "Generates",
+        "value": "Ten Thousand Things"
+      },
+      {
+        "label": "Supports",
+        "value": "One"
+      },
+      {
+        "label": "Arises from",
+        "value": "Wu — Not-Having"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blue-black void, cloud white, moon silver, one restrained gold thread."
+      },
+      {
+        "label": "Composition",
+        "value": "One white-jade form condenses from a dark field, its boundary still porous."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "004",
+    "id": "S-004",
+    "name": "Non-Being (Wu)",
+    "slug": "non-being",
+    "families": [
+      "The Source"
+    ],
+    "essence": "The unmanifest pole from which forms become possible and to which they cease.",
+    "image": "A cloud-white edge dissolves into a deep void; the unseen center carries the composition.",
+    "movement": "Definition recedes before another form appears.",
+    "gift": "Renewal through unfixing.",
+    "shadow": "The unmanifest is romanticized as superior to embodied life.",
+    "excess": "Dissolution consumes distinctions that still matter.",
+    "deficiency": "Nothing is allowed to end, empty, or become unknown.",
+    "return": "Permit a clean ending without calling it failure.",
+    "divination": "A form has completed its usefulness; its absence may be generative.",
+    "question": "Which ending am I misreading as mere loss?",
+    "action": "Stop maintaining one expired form.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Being (You)"
+      },
+      {
+        "label": "Arises from",
+        "value": "Wu — Not-Having"
+      },
+      {
+        "label": "Supports",
+        "value": "Return"
+      },
+      {
+        "label": "Opens",
+        "value": "Gate"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blue-black void, cloud white, moon silver, one restrained gold thread."
+      },
+      {
+        "label": "Composition",
+        "value": "A cloud-white edge dissolves into a deep void; the unseen center carries the composition."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "005",
+    "id": "S-005",
+    "name": "One",
+    "slug": "one",
+    "families": [
+      "The Source"
+    ],
+    "essence": "Undivided coherence before polarity, not sameness imposed upon difference.",
+    "image": "A single irregular silver ring, almost closed, holds black and pearl currents without separating them.",
+    "movement": "Many tensions gather into one field.",
+    "gift": "Coherence and common ground.",
+    "shadow": "Unity becomes conformity.",
+    "excess": "A totalizing story absorbs every difference.",
+    "deficiency": "Fragmentation prevents any shared course.",
+    "return": "Find the relation that can hold differences without erasing them.",
+    "divination": "The reading asks for the whole pattern, not victory for one part.",
+    "question": "What belongs to the same field even though it is not the same?",
+    "action": "Name the shared condition beneath the dispute.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Arises from",
+        "value": "Tao (Dao)"
+      },
+      {
+        "label": "Generates",
+        "value": "Two"
+      },
+      {
+        "label": "Supports",
+        "value": "Center"
+      },
+      {
+        "label": "Completes",
+        "value": "Mirror"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blue-black void, cloud white, moon silver, one restrained gold thread."
+      },
+      {
+        "label": "Composition",
+        "value": "A single irregular silver ring, almost closed, holds black and pearl currents without separating them."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "006",
+    "id": "S-006",
+    "name": "Two",
+    "slug": "two",
+    "families": [
+      "The Source"
+    ],
+    "essence": "Differentiation through which relation, polarity, and change become visible.",
+    "image": "Two unequal enamel currents approach, part, and exchange a single metal filament.",
+    "movement": "The one articulates itself as complementary tendencies.",
+    "gift": "Discernment through contrast.",
+    "shadow": "Difference hardens into opposition.",
+    "excess": "Binary thinking excludes the middle and the change between poles.",
+    "deficiency": "Distinctions blur until no response can be chosen.",
+    "return": "Ask how each pole makes the other legible and what each is becoming.",
+    "divination": "A real polarity is active. Hold both sides long enough to see the exchange.",
+    "question": "What does each side reveal that the other cannot?",
+    "action": "State both truths without ranking them.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Arises from",
+        "value": "One"
+      },
+      {
+        "label": "Generates",
+        "value": "Ten Thousand Things"
+      },
+      {
+        "label": "Expresses",
+        "value": "Yin"
+      },
+      {
+        "label": "Expresses",
+        "value": "Yang"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blue-black void, cloud white, moon silver, one restrained gold thread."
+      },
+      {
+        "label": "Composition",
+        "value": "Two unequal enamel currents approach, part, and exchange a single metal filament."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "007",
+    "id": "S-007",
+    "name": "Ten Thousand Things",
+    "slug": "ten-thousand-things",
+    "families": [
+      "The Source"
+    ],
+    "essence": "The inexhaustible multiplicity of beings, events, names, and relations.",
+    "image": "A sparse constellation of unlike enamel seeds expands beyond the tile edges.",
+    "movement": "Differentiation proliferates into a living world.",
+    "gift": "Diversity, surprise, and innumerable pathways.",
+    "shadow": "Multiplicity becomes noise, inventory, or consumption.",
+    "excess": "More options destroy attention and consequence.",
+    "deficiency": "Complexity is denied in favor of one elegant abstraction.",
+    "return": "Trace one relation back toward its source and forward toward its effects.",
+    "divination": "Many conditions are interacting; simplify the next act, not the world.",
+    "question": "Which relation matters now among all that could be followed?",
+    "action": "Choose one thread and follow it faithfully.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Arises from",
+        "value": "Two"
+      },
+      {
+        "label": "Returns to",
+        "value": "Tao (Dao)"
+      },
+      {
+        "label": "Supports",
+        "value": "Branch"
+      },
+      {
+        "label": "Expresses",
+        "value": "Ziran — Self-So"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blue-black void, cloud white, moon silver, one restrained gold thread."
+      },
+      {
+        "label": "Composition",
+        "value": "A sparse constellation of unlike enamel seeds expands beyond the tile edges."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "008",
+    "id": "S-008",
+    "name": "Return",
+    "slug": "return",
+    "families": [
+      "The Source"
+    ],
+    "essence": "Reversal is the movement of the Way: outward unfolding bends back toward root.",
+    "image": "A river-season ring turns inward but does not close; a green shoot begins at the fading edge.",
+    "movement": "Expansion reaches a limit and changes direction.",
+    "gift": "Renewal, recollection, and restored proportion.",
+    "shadow": "Return becomes nostalgia or forced restoration.",
+    "excess": "Retreat refuses the world and repeats the past.",
+    "deficiency": "Momentum continues after its season has ended.",
+    "return": "Return to conditions, not appearances; recover the root, not the replica.",
+    "divination": "The present course is curving back. Notice what must be recovered and what must be shed.",
+    "question": "What is the living root beneath what I want restored?",
+    "action": "Revisit the first condition and make one different choice.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Returns to",
+        "value": "Tao (Dao)"
+      },
+      {
+        "label": "Supports",
+        "value": "Root"
+      },
+      {
+        "label": "Transforms into",
+        "value": "Sprout"
+      },
+      {
+        "label": "Completes",
+        "value": "Decay"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blue-black void, cloud white, moon silver, one restrained gold thread."
+      },
+      {
+        "label": "Composition",
+        "value": "A river-season ring turns inward but does not close; a green shoot begins at the fading edge."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "009",
+    "id": "S-009",
+    "name": "Emptiness",
+    "slug": "emptiness",
+    "families": [
+      "The Source"
+    ],
+    "essence": "Usable capacity created by what is not filled.",
+    "image": "A broad cloud-white enamel field is interrupted by one small open socket of dark metal.",
+    "movement": "Content withdraws; function becomes possible.",
+    "gift": "Room, listening, and uncommitted potential.",
+    "shadow": "Emptiness becomes sterility, dissociation, or aesthetic purity.",
+    "excess": "Clearing removes nourishment, memory, and relationship.",
+    "deficiency": "Crowding leaves no interval in which change can occur.",
+    "return": "Empty enough for use; retain the rim, relation, and care.",
+    "divination": "The missing space is part of the solution. Do not rush to occupy it.",
+    "question": "What could enter only if I stopped filling this space?",
+    "action": "Leave one interval unscheduled, unanswered, or undecorated.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Arises from",
+        "value": "Wu — Not-Having"
+      },
+      {
+        "label": "Expresses",
+        "value": "Empty Vessel"
+      },
+      {
+        "label": "Supports",
+        "value": "Silence"
+      },
+      {
+        "label": "Balances",
+        "value": "Ten Thousand Things"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blue-black void, cloud white, moon silver, one restrained gold thread."
+      },
+      {
+        "label": "Composition",
+        "value": "A broad cloud-white enamel field is interrupted by one small open socket of dark metal."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "010",
+    "id": "S-010",
+    "name": "Mystery (Xuan)",
+    "slug": "mystery",
+    "families": [
+      "The Source"
+    ],
+    "essence": "The shared depth where named and unnamed remain one source under different aspects.",
+    "image": "Two dark mineral glazes meet at a gate whose interior is deeper than either field.",
+    "movement": "Knowledge reaches its honest edge and becomes attentive.",
+    "gift": "Wonder disciplined by humility.",
+    "shadow": "Mystery is used to conceal weak claims or claim secret authority.",
+    "excess": "Obscurity becomes prestige and inquiry is discouraged.",
+    "deficiency": "Only the measurable is permitted to matter.",
+    "return": "Mark what is observed, inferred, and unknown; keep all three in relation.",
+    "divination": "Do not force closure. The unknown is active, but it is not permission to invent certainty.",
+    "question": "Can I remain exact at the edge of what I cannot know?",
+    "action": "Write three lines: known, inferred, unknown.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Held by",
+        "value": "Tao (Dao)"
+      },
+      {
+        "label": "Opens",
+        "value": "Gate"
+      },
+      {
+        "label": "Supports",
+        "value": "Mist"
+      },
+      {
+        "label": "Balances",
+        "value": "Light"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blue-black void, cloud white, moon silver, one restrained gold thread."
+      },
+      {
+        "label": "Composition",
+        "value": "Two dark mineral glazes meet at a gate whose interior is deeper than either field."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "011",
+    "id": "P-011",
+    "name": "Yin",
+    "slug": "yin",
+    "families": [
+      "The Great Polarity"
+    ],
+    "essence": "The receptive, inward, cooling, darkening tendency within change.",
+    "image": "Moon-silver pools below a dark ivory arc; the open side receives a descending thread.",
+    "movement": "Energy gathers, cools, shelters, and descends.",
+    "gift": "Incubation, receptivity, and depth.",
+    "shadow": "Receptivity collapses into passivity or concealment.",
+    "excess": "Withdrawal becomes stagnation and unreachability.",
+    "deficiency": "No inwardness, rest, or gestation is allowed.",
+    "return": "Receive until the next response becomes clear; then let yin turn.",
+    "divination": "Conditions favor listening, storing, and allowing. This is a phase, not a permanent identity.",
+    "question": "What needs to be received before it can be answered?",
+    "action": "Lower the pace and make room for what is arriving.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Yang"
+      },
+      {
+        "label": "Supports",
+        "value": "Receptivity"
+      },
+      {
+        "label": "Expresses",
+        "value": "Dark"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Kun — Earth"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "ivory, black, moon silver, antique gold, with one force-specific mineral accent."
+      },
+      {
+        "label": "Composition",
+        "value": "Moon-silver pools below a dark ivory arc; the open side receives a descending thread."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "012",
+    "id": "P-012",
+    "name": "Yang",
+    "slug": "yang",
+    "families": [
+      "The Great Polarity"
+    ],
+    "essence": "The active, outward, warming, brightening tendency within change.",
+    "image": "A restrained gold current rises from ivory enamel, its brightest edge already bending inward.",
+    "movement": "Energy expands, warms, reveals, and initiates.",
+    "gift": "Clarity, expression, and momentum.",
+    "shadow": "Initiative becomes domination or exposure without shelter.",
+    "excess": "Expansion burns through limits and relationship.",
+    "deficiency": "No signal, decision, or outward movement can emerge.",
+    "return": "Act clearly, then relinquish the center and let yang turn.",
+    "divination": "Conditions favor declaration and movement, provided action remains responsive.",
+    "question": "What is ready to be expressed without being imposed?",
+    "action": "Make one clean move, then watch the response.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Yin"
+      },
+      {
+        "label": "Supports",
+        "value": "Initiative"
+      },
+      {
+        "label": "Expresses",
+        "value": "Light"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Qian — Heaven"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "ivory, black, moon silver, antique gold, with one force-specific mineral accent."
+      },
+      {
+        "label": "Composition",
+        "value": "A restrained gold current rises from ivory enamel, its brightest edge already bending inward."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "013",
+    "id": "P-013",
+    "name": "Stillness",
+    "slug": "stillness",
+    "families": [
+      "The Great Polarity"
+    ],
+    "essence": "The capacity to cease motion long enough for pattern and limit to appear.",
+    "image": "A dark-jade plane meets mist; one suspended silver bead has not yet fallen.",
+    "movement": "Motion settles and hidden structure becomes perceptible.",
+    "gift": "Concentration, recovery, and boundary.",
+    "shadow": "Stillness hardens into refusal or numbness.",
+    "excess": "The pause becomes obstruction and stored pressure.",
+    "deficiency": "Restlessness prevents settling and perception.",
+    "return": "Stay until the signal clarifies, then permit movement.",
+    "divination": "Do not confuse delay with failure. The field may be settling before the next true motion.",
+    "question": "Am I resting, listening, or refusing to move?",
+    "action": "Hold position for one deliberate interval, then reassess.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Movement"
+      },
+      {
+        "label": "Supports",
+        "value": "Still Point"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Gen — Mountain"
+      },
+      {
+        "label": "Expresses",
+        "value": "Mountain"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "ivory, black, moon silver, antique gold, with one force-specific mineral accent."
+      },
+      {
+        "label": "Composition",
+        "value": "A dark-jade plane meets mist; one suspended silver bead has not yet fallen."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "014",
+    "id": "P-014",
+    "name": "Movement",
+    "slug": "movement",
+    "families": [
+      "The Great Polarity"
+    ],
+    "essence": "The activation through which conditions meet, separate, and transform.",
+    "image": "A cinnabar pulse travels along a crooked brass filament, waking small green currents.",
+    "movement": "Stored tension becomes event.",
+    "gift": "Initiation, circulation, and encounter.",
+    "shadow": "Motion becomes agitation, flight, or compulsion.",
+    "excess": "Speed outruns feedback and scatters coherence.",
+    "deficiency": "Inertia keeps change below the threshold of effect.",
+    "return": "Move only enough to restore circulation; let response set the next pace.",
+    "divination": "Something must move for the pattern to reveal itself. Choose a reversible first motion.",
+    "question": "What smallest movement would make the real conditions visible?",
+    "action": "Shift one element and observe what follows.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Stillness"
+      },
+      {
+        "label": "Supports",
+        "value": "Flow"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Zhen — Thunder"
+      },
+      {
+        "label": "Supports",
+        "value": "Threshold"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "ivory, black, moon silver, antique gold, with one force-specific mineral accent."
+      },
+      {
+        "label": "Composition",
+        "value": "A cinnabar pulse travels along a crooked brass filament, waking small green currents."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "015",
+    "id": "P-015",
+    "name": "Receptivity",
+    "slug": "receptivity",
+    "families": [
+      "The Great Polarity"
+    ],
+    "essence": "The strength to be shaped by contact without surrendering discernment.",
+    "image": "A low jade basin receives rain; one channel remains closed.",
+    "movement": "Incoming influence meets a form capable of holding it.",
+    "gift": "Learning, hospitality, and adaptive response.",
+    "shadow": "Openness becomes indiscriminate absorption.",
+    "excess": "Boundaries dissolve under every demand or mood.",
+    "deficiency": "Defense prevents nourishment, correction, and intimacy.",
+    "return": "Open selectively; let what enters be tested by the vessel.",
+    "divination": "Receive before answering, but notice what the situation cannot safely hold.",
+    "question": "What can I welcome, and what requires a boundary?",
+    "action": "Listen fully once before deciding.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Initiative"
+      },
+      {
+        "label": "Supported by",
+        "value": "Yin"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Kun — Earth"
+      },
+      {
+        "label": "Expresses",
+        "value": "Valley"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "ivory, black, moon silver, antique gold, with one force-specific mineral accent."
+      },
+      {
+        "label": "Composition",
+        "value": "A low jade basin receives rain; one channel remains closed."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "016",
+    "id": "P-016",
+    "name": "Initiative",
+    "slug": "initiative",
+    "families": [
+      "The Great Polarity"
+    ],
+    "essence": "The force that begins, names, or enters before conditions organize themselves.",
+    "image": "A gold shoot crosses an unmarked threshold; its root remains visible behind it.",
+    "movement": "Potential commits to a direction.",
+    "gift": "Agency, courage, and generative first motion.",
+    "shadow": "Beginning becomes conquest or attachment to authorship.",
+    "excess": "Action multiplies before the field can answer.",
+    "deficiency": "Waiting hides fear of consequence.",
+    "return": "Begin from contact, not fantasy; adapt after the first reply.",
+    "divination": "A beginning is needed. Its wisdom will be measured by responsiveness, not force.",
+    "question": "What can I begin without pretending to control the outcome?",
+    "action": "Make the smallest consequential start.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Receptivity"
+      },
+      {
+        "label": "Supported by",
+        "value": "Yang"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Qian — Heaven"
+      },
+      {
+        "label": "Supports",
+        "value": "Seed"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "ivory, black, moon silver, antique gold, with one force-specific mineral accent."
+      },
+      {
+        "label": "Composition",
+        "value": "A gold shoot crosses an unmarked threshold; its root remains visible behind it."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "017",
+    "id": "P-017",
+    "name": "Soft",
+    "slug": "soft",
+    "families": [
+      "The Great Polarity"
+    ],
+    "essence": "What yields, bends, or enters without losing continuity.",
+    "image": "A pale river-green filament curves through a narrow brass gate without breaking.",
+    "movement": "Pressure is redirected through flexibility.",
+    "gift": "Adaptation, intimacy, and persistence.",
+    "shadow": "Softness avoids necessary resistance or truth.",
+    "excess": "Yielding becomes appeasement and loss of form.",
+    "deficiency": "Rigidity breaks where bending could preserve the whole.",
+    "return": "Yield around what cannot move; become firm where integrity requires it.",
+    "divination": "Direct force will not solve this. Find the path that preserves contact.",
+    "question": "Where would bending increase rather than reduce my strength?",
+    "action": "Change angle, pace, or method before adding force.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Hard"
+      },
+      {
+        "label": "Supports",
+        "value": "Yielding"
+      },
+      {
+        "label": "Expresses",
+        "value": "Water"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Xun — Wind / Wood"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "ivory, black, moon silver, antique gold, with one force-specific mineral accent."
+      },
+      {
+        "label": "Composition",
+        "value": "A pale river-green filament curves through a narrow brass gate without breaking."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "018",
+    "id": "P-018",
+    "name": "Hard",
+    "slug": "hard",
+    "families": [
+      "The Great Polarity"
+    ],
+    "essence": "What holds shape, resists pressure, cuts, or bears weight.",
+    "image": "A blackened-silver ridge interrupts a flowing green line and gives it a new course.",
+    "movement": "A boundary concentrates force and establishes form.",
+    "gift": "Protection, precision, and endurance.",
+    "shadow": "Strength becomes brittleness, domination, or injury.",
+    "excess": "Resistance continues after its purpose is gone.",
+    "deficiency": "No structure survives contact or carries weight.",
+    "return": "Keep the necessary edge; soften the attachment to its form.",
+    "divination": "A real limit matters here. The question is whether it protects life or merely resists change.",
+    "question": "What must hold, and what may bend around it?",
+    "action": "State one boundary in plain language.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Soft"
+      },
+      {
+        "label": "Supports",
+        "value": "Mountain"
+      },
+      {
+        "label": "Expresses",
+        "value": "Metal (Jin)"
+      },
+      {
+        "label": "Balances",
+        "value": "Yielding"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "ivory, black, moon silver, antique gold, with one force-specific mineral accent."
+      },
+      {
+        "label": "Composition",
+        "value": "A blackened-silver ridge interrupts a flowing green line and gives it a new course."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "019",
+    "id": "P-019",
+    "name": "Dark",
+    "slug": "dark",
+    "families": [
+      "The Great Polarity"
+    ],
+    "essence": "The concealed, cooling field where forms withdraw from immediate view.",
+    "image": "Blue-black enamel holds a barely perceptible moon arc below the surface.",
+    "movement": "Visibility decreases; interior processes continue.",
+    "gift": "Privacy, gestation, and relief from display.",
+    "shadow": "Concealment protects deception or fear.",
+    "excess": "Secrecy isolates the pattern from needed response.",
+    "deficiency": "Relentless exposure prevents rest and interiority.",
+    "return": "Keep what needs shelter; reveal what relationship requires.",
+    "divination": "Not all relevant activity is visible. Respect hidden development without inventing its contents.",
+    "question": "What needs privacy, and what has merely gone unexamined?",
+    "action": "Reduce exposure and check one hidden assumption.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Light"
+      },
+      {
+        "label": "Supported by",
+        "value": "Yin"
+      },
+      {
+        "label": "Supports",
+        "value": "Mystery (Xuan)"
+      },
+      {
+        "label": "Expresses",
+        "value": "Moon"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "ivory, black, moon silver, antique gold, with one force-specific mineral accent."
+      },
+      {
+        "label": "Composition",
+        "value": "Blue-black enamel holds a barely perceptible moon arc below the surface."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "020",
+    "id": "P-020",
+    "name": "Light",
+    "slug": "light",
+    "families": [
+      "The Great Polarity"
+    ],
+    "essence": "The revealing, warming field in which distinctions become visible.",
+    "image": "Cloud-white enamel opens under a thin sun-gold ray; one edge remains in shadow.",
+    "movement": "What was hidden becomes encounterable.",
+    "gift": "Clarity, recognition, and orientation.",
+    "shadow": "Illumination becomes surveillance, certainty, or glare.",
+    "excess": "Exposure bleaches nuance and exhausts what it reveals.",
+    "deficiency": "Confusion persists because nothing is named or seen.",
+    "return": "Illuminate enough to act; retain shade for depth and renewal.",
+    "divination": "Bring the decisive fact into view, but do not claim that visibility is total knowledge.",
+    "question": "What needs to be seen—and what should not be exposed?",
+    "action": "Name the clearest observable fact.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Dark"
+      },
+      {
+        "label": "Supported by",
+        "value": "Yang"
+      },
+      {
+        "label": "Supports",
+        "value": "Mirror"
+      },
+      {
+        "label": "Expresses",
+        "value": "Sun"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "ivory, black, moon silver, antique gold, with one force-specific mineral accent."
+      },
+      {
+        "label": "Composition",
+        "value": "Cloud-white enamel opens under a thin sun-gold ray; one edge remains in shadow."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "021",
+    "id": "P-021",
+    "name": "Valley",
+    "slug": "valley",
+    "families": [
+      "The Great Polarity"
+    ],
+    "essence": "Low receptive form that gathers flows, relation, and fertility.",
+    "image": "Two dark forms leave a luminous low passage; mist gathers rather than rises.",
+    "movement": "What descends is collected and joined.",
+    "gift": "Humility, convergence, and generative receptivity.",
+    "shadow": "Lowliness becomes self-erasure or accumulated burden.",
+    "excess": "The basin accepts more than it can circulate.",
+    "deficiency": "Pride or elevation leaves no place for arrival.",
+    "return": "Remain low enough to receive, open enough to release.",
+    "divination": "Take the lower position if it increases contact and circulation—not as submission.",
+    "question": "What would gather here if I stopped trying to stand above it?",
+    "action": "Create a low, quiet place for inputs to meet.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Mountain"
+      },
+      {
+        "label": "Supports",
+        "value": "Valley Spirit"
+      },
+      {
+        "label": "Expresses",
+        "value": "Receptivity"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Kun — Earth"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "ivory, black, moon silver, antique gold, with one force-specific mineral accent."
+      },
+      {
+        "label": "Composition",
+        "value": "Two dark forms leave a luminous low passage; mist gathers rather than rises."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "022",
+    "id": "P-022",
+    "name": "Mountain",
+    "slug": "mountain",
+    "families": [
+      "The Great Polarity"
+    ],
+    "essence": "Concentrated stillness: boundary, endurance, stopping, and obstructive mass.",
+    "image": "An asymmetrical dark-jade mass rises from cloud-white mist with one exposed metal face.",
+    "movement": "Movement meets a limit and turns inward or around.",
+    "gift": "Meditation, protection, and stable form.",
+    "shadow": "Boundary becomes refusal, isolation, or obstacle.",
+    "excess": "Immobility stores pressure and blocks necessary passage.",
+    "deficiency": "Nothing holds long enough to mature or protect.",
+    "return": "Stop what should stop; open a pass for what must continue.",
+    "divination": "A boundary is active. Determine whether it is a refuge, a teacher, or an obstruction.",
+    "question": "What is this boundary protecting, and what is it preventing?",
+    "action": "Stop one motion; open one deliberate passage.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Valley"
+      },
+      {
+        "label": "Supports",
+        "value": "Stillness"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Gen — Mountain"
+      },
+      {
+        "label": "Balances",
+        "value": "Zhen — Thunder"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "ivory, black, moon silver, antique gold, with one force-specific mineral accent."
+      },
+      {
+        "label": "Composition",
+        "value": "An asymmetrical dark-jade mass rises from cloud-white mist with one exposed metal face."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "023",
+    "id": "W-023",
+    "name": "Wood (Mu)",
+    "slug": "wood",
+    "families": [
+      "The Five Phases"
+    ],
+    "essence": "Rising, branching life that seeks room, direction, and flexible extension.",
+    "image": "Blue-green roots and a young shoot rise eastward; a small ember waits at the tip.",
+    "movement": "Stored potential pushes upward and outward, testing pathways.",
+    "gift": "Vision, flexibility, initiative, and renewal.",
+    "shadow": "Growth becomes impatience, invasion, or frustrated anger.",
+    "excess": "Expansion overreaches support and crowds other forms.",
+    "deficiency": "Direction fails; possibility remains cramped or inert.",
+    "return": "Prune toward the viable path; root before extending again.",
+    "divination": "Growth wants direction. Help it branch without demanding that every branch survive.",
+    "question": "What wants to grow, and what structure would let it bend?",
+    "action": "Choose one direction; prune one competing reach.",
+    "phase": [
+      {
+        "label": "Season",
+        "value": "spring"
+      },
+      {
+        "label": "Direction",
+        "value": "east"
+      },
+      {
+        "label": "Motion",
+        "value": "rising and spreading"
+      },
+      {
+        "label": "Organ resonance",
+        "value": "liver and gallbladder (traditional correspondence; not medical diagnosis)"
+      },
+      {
+        "label": "Emotional resonance",
+        "value": "anger as mobilizing force; frustration when blocked"
+      },
+      {
+        "label": "Material",
+        "value": "wood, green jade, living fiber"
+      },
+      {
+        "label": "Animal emblem",
+        "value": "Azure Dragon"
+      },
+      {
+        "label": "Generates",
+        "value": "Fire"
+      },
+      {
+        "label": "Controls",
+        "value": "Earth"
+      },
+      {
+        "label": "Transformation onward",
+        "value": "Growth feeds radiance; Wood becomes Fire through offering fuel."
+      }
+    ],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Generated by",
+        "value": "Water"
+      },
+      {
+        "label": "Generates",
+        "value": "Fire"
+      },
+      {
+        "label": "Controls",
+        "value": "Earth (Tu)"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Zhen — Thunder"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blue-green jade, spring green, dark wood, antique brass, one cinnabar ember."
+      },
+      {
+        "label": "Composition",
+        "value": "Blue-green roots and a young shoot rise eastward; a small ember waits at the tip."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "024",
+    "id": "W-024",
+    "name": "Fire",
+    "slug": "fire",
+    "families": [
+      "The Great Polarity",
+      "The Five Phases"
+    ],
+    "essence": "Radiant transformation that warms, reveals, attaches, consumes, and spreads.",
+    "image": "Cinnabar enamel rises around a dark hollow; a gold flame-line divides and rejoins.",
+    "movement": "Stored material becomes heat, light, signal, and ash.",
+    "gift": "Warmth, visibility, connection, and rapid change.",
+    "shadow": "Illumination clings to appearances; warmth becomes hunger.",
+    "excess": "Burnout, contagion, or spectacle consumes the field.",
+    "deficiency": "No heat gathers; relation and transformation remain inert.",
+    "return": "Feed only what should continue; contain the flame and accept the ash.",
+    "divination": "Energy and visibility are increasing. Clarify what they serve before adding fuel.",
+    "question": "What am I feeding, and what will remain after it burns?",
+    "action": "Reduce or add fuel deliberately; define the firebreak.",
+    "phase": [
+      {
+        "label": "Season",
+        "value": "summer"
+      },
+      {
+        "label": "Direction",
+        "value": "south"
+      },
+      {
+        "label": "Motion",
+        "value": "rising, radiating, and spreading"
+      },
+      {
+        "label": "Organ resonance",
+        "value": "heart and small intestine (traditional correspondence; not medical diagnosis)"
+      },
+      {
+        "label": "Emotional resonance",
+        "value": "joy and excitement"
+      },
+      {
+        "label": "Material",
+        "value": "copper, cinnabar enamel, ash"
+      },
+      {
+        "label": "Animal emblem",
+        "value": "Vermilion Bird"
+      },
+      {
+        "label": "Generates",
+        "value": "Earth"
+      },
+      {
+        "label": "Controls",
+        "value": "Metal"
+      },
+      {
+        "label": "Transformation onward",
+        "value": "Combustion settles as ash and becomes Earth."
+      }
+    ],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Water"
+      },
+      {
+        "label": "Supports",
+        "value": "Sun"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Li — Fire"
+      },
+      {
+        "label": "Generates",
+        "value": "Earth (Tu)"
+      },
+      {
+        "label": "Controls",
+        "value": "Metal (Jin)"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "cinnabar, vermilion, antique gold, charcoal, a restrained cloud-white core."
+      },
+      {
+        "label": "Composition",
+        "value": "Cinnabar enamel rises around a dark hollow; a gold flame-line divides and rejoins."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "025",
+    "id": "W-025",
+    "name": "Earth (Tu)",
+    "slug": "earth",
+    "families": [
+      "The Five Phases"
+    ],
+    "essence": "Centering transformation that receives, composts, nourishes, and redistributes.",
+    "image": "Ochre and yellow-jade terraces hold a dark seed and a pale grain; five paths meet off-center.",
+    "movement": "What has burned or fallen is integrated into usable ground.",
+    "gift": "Nourishment, mediation, steadiness, and belonging.",
+    "shadow": "Care becomes worry, overholding, or refusal to differentiate.",
+    "excess": "Accumulation turns heavy, sticky, and stagnant.",
+    "deficiency": "No center can digest experience or sustain continuity.",
+    "return": "Digest before giving; redistribute what the center has held.",
+    "divination": "The field needs integration, nourishment, or a shared center—not another input.",
+    "question": "What can be digested now, and what must be returned to the ground?",
+    "action": "Complete one unfinished cycle of receiving, sorting, and giving.",
+    "phase": [
+      {
+        "label": "Season",
+        "value": "late summer and seasonal transitions"
+      },
+      {
+        "label": "Direction",
+        "value": "center"
+      },
+      {
+        "label": "Motion",
+        "value": "centering, stabilizing, and transforming"
+      },
+      {
+        "label": "Organ resonance",
+        "value": "spleen and stomach (traditional correspondence; not medical diagnosis)"
+      },
+      {
+        "label": "Emotional resonance",
+        "value": "pensiveness and worry"
+      },
+      {
+        "label": "Material",
+        "value": "clay, loam, yellow jade, brass"
+      },
+      {
+        "label": "Animal emblem",
+        "value": "Yellow Dragon of the center"
+      },
+      {
+        "label": "Generates",
+        "value": "Metal"
+      },
+      {
+        "label": "Controls",
+        "value": "Water"
+      },
+      {
+        "label": "Transformation onward",
+        "value": "Compression and clarification within Earth precipitate Metal."
+      }
+    ],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Generated by",
+        "value": "Fire"
+      },
+      {
+        "label": "Generates",
+        "value": "Metal (Jin)"
+      },
+      {
+        "label": "Controls",
+        "value": "Water"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Center"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "yellow ochre, honey enamel, brown-black earth, cloud white, antique brass."
+      },
+      {
+        "label": "Composition",
+        "value": "Ochre and yellow-jade terraces hold a dark seed and a pale grain; five paths meet off-center."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "026",
+    "id": "W-026",
+    "name": "Metal (Jin)",
+    "slug": "metal",
+    "families": [
+      "The Five Phases"
+    ],
+    "essence": "Contracting clarity that forms boundaries, condenses value, and releases what is finished.",
+    "image": "Moon-silver arcs condense from ochre ground; one clean edge lets a white leaf fall.",
+    "movement": "Diffuse material draws inward, hardens, sorts, and cuts away.",
+    "gift": "Discernment, integrity, completion, and release.",
+    "shadow": "Precision becomes grief-bound rigidity, judgment, or severance.",
+    "excess": "Contraction cuts living relation and worships purity.",
+    "deficiency": "Weak boundaries leak value and prolong endings.",
+    "return": "Keep the true edge; release the attachment to control.",
+    "divination": "Clarify what belongs, what is complete, and what can be let go.",
+    "question": "What ending would create a cleaner breath?",
+    "action": "Finish, name, and release one thing.",
+    "phase": [
+      {
+        "label": "Season",
+        "value": "autumn"
+      },
+      {
+        "label": "Direction",
+        "value": "west"
+      },
+      {
+        "label": "Motion",
+        "value": "contracting and condensing"
+      },
+      {
+        "label": "Organ resonance",
+        "value": "lungs and large intestine (traditional correspondence; not medical diagnosis)"
+      },
+      {
+        "label": "Emotional resonance",
+        "value": "grief"
+      },
+      {
+        "label": "Material",
+        "value": "silver, bronze, mineral crystal"
+      },
+      {
+        "label": "Animal emblem",
+        "value": "White Tiger"
+      },
+      {
+        "label": "Generates",
+        "value": "Water"
+      },
+      {
+        "label": "Controls",
+        "value": "Wood"
+      },
+      {
+        "label": "Transformation onward",
+        "value": "Condensation and release become the downward storage of Water."
+      }
+    ],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Generated by",
+        "value": "Earth (Tu)"
+      },
+      {
+        "label": "Generates",
+        "value": "Water"
+      },
+      {
+        "label": "Controls",
+        "value": "Wood (Mu)"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Hard"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "cloud white, moon silver, pale gold, charcoal, a trace of autumn ochre."
+      },
+      {
+        "label": "Composition",
+        "value": "Moon-silver arcs condense from ochre ground; one clean edge lets a white leaf fall."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "027",
+    "id": "W-027",
+    "name": "Water",
+    "slug": "water",
+    "families": [
+      "The Great Polarity",
+      "The Five Phases"
+    ],
+    "essence": "Yielding power that descends, nourishes, seeks the low place, and reshapes resistance.",
+    "image": "A thin silver-blue current occupies the tile’s lowest edge and wears a passage through stone.",
+    "movement": "Flow follows contour, accumulates, erodes, floods, freezes, or disappears.",
+    "gift": "Adaptation, depth, persistence, and nourishment.",
+    "shadow": "Yielding becomes evasion; depth becomes danger or concealment.",
+    "excess": "Flooding overwhelms boundaries, or erosion continues unseen.",
+    "deficiency": "Depletion leaves no reserve or connecting flow.",
+    "return": "Descend to the actual contour; gather, then move through the available channel.",
+    "divination": "Use responsiveness rather than direct force. Also check for overwhelm, leakage, or hidden depth.",
+    "question": "Where is the lowest true path—not merely the easiest escape?",
+    "action": "Follow the contour and protect the banks.",
+    "phase": [
+      {
+        "label": "Season",
+        "value": "winter"
+      },
+      {
+        "label": "Direction",
+        "value": "north"
+      },
+      {
+        "label": "Motion",
+        "value": "descending, storing, and flowing"
+      },
+      {
+        "label": "Organ resonance",
+        "value": "kidneys and bladder (traditional correspondence; not medical diagnosis)"
+      },
+      {
+        "label": "Emotional resonance",
+        "value": "fear and deep caution"
+      },
+      {
+        "label": "Material",
+        "value": "blackened silver, deep-blue enamel, wet stone"
+      },
+      {
+        "label": "Animal emblem",
+        "value": "Black Tortoise entwined with a serpent"
+      },
+      {
+        "label": "Generates",
+        "value": "Wood"
+      },
+      {
+        "label": "Controls",
+        "value": "Fire"
+      },
+      {
+        "label": "Transformation onward",
+        "value": "Stored depth germinates as Wood."
+      }
+    ],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Fire"
+      },
+      {
+        "label": "Supports",
+        "value": "River"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Kan — Water"
+      },
+      {
+        "label": "Generates",
+        "value": "Wood (Mu)"
+      },
+      {
+        "label": "Controls",
+        "value": "Fire"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blue-black, deep indigo, river green, moon silver, minimal cloud white."
+      },
+      {
+        "label": "Composition",
+        "value": "A thin silver-blue current occupies the tile’s lowest edge and wears a passage through stone."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "028",
+    "id": "T-028",
+    "name": "Qian — Heaven",
+    "slug": "qian",
+    "families": [
+      "The Eight Trigrams"
+    ],
+    "essence": "Unbroken creative force: initiating, enduring, and responsible for what it sets in motion.",
+    "image": "Exactly three unbroken gold lines widen into an imperfect celestial circuit.",
+    "movement": "Continuous strength advances without internal break.",
+    "gift": "Creative initiative and constancy.",
+    "shadow": "Strength becomes command, pride, or action without receptivity.",
+    "excess": "Unbroken force exhausts the field it intends to lead.",
+    "deficiency": "Purpose and upward movement collapse.",
+    "return": "Consult Kun: let conditions receive, shape, and complete the impulse.",
+    "divination": "Initiate with clarity, then remain accountable to what follows.",
+    "question": "What am I setting in motion, and can I sustain its consequences?",
+    "action": "Begin one worthy motion and establish its feedback.",
+    "phase": [],
+    "trigram": [
+      {
+        "label": "Glyph",
+        "value": "☰"
+      },
+      {
+        "label": "Lines, bottom → top",
+        "value": "solid · solid · solid"
+      },
+      {
+        "label": "Image",
+        "value": "heaven"
+      },
+      {
+        "label": "Motion",
+        "value": "creative, ascending, persistent"
+      },
+      {
+        "label": "Direction",
+        "value": "northwest"
+      },
+      {
+        "label": "Family role",
+        "value": "father"
+      },
+      {
+        "label": "Archetype",
+        "value": "the Creative"
+      },
+      {
+        "label": "Pairing",
+        "value": "Kun receives and completes what Qian initiates"
+      }
+    ],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Kun — Earth"
+      },
+      {
+        "label": "Supports",
+        "value": "Initiative"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Yang"
+      },
+      {
+        "label": "Balances",
+        "value": "Xun — Wind / Wood"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique gold geometry, deep mineral enamel keyed to the trigram image."
+      },
+      {
+        "label": "Composition",
+        "value": "Exactly three unbroken gold lines widen into an imperfect celestial circuit."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "029",
+    "id": "T-029",
+    "name": "Kun — Earth",
+    "slug": "kun",
+    "families": [
+      "The Eight Trigrams"
+    ],
+    "essence": "Broken receptive force: bearing, nourishing, and completing without claiming authorship.",
+    "image": "Exactly three broken brass lines become terraces around an open central path.",
+    "movement": "Open lines receive influence and carry it into form.",
+    "gift": "Devotion, capacity, and completion.",
+    "shadow": "Service becomes self-erasure, inertia, or indiscriminate compliance.",
+    "excess": "Bearing everything compacts the field.",
+    "deficiency": "Nothing can be received, held, or brought to completion.",
+    "return": "Consult Qian: choose the impulse that deserves support.",
+    "divination": "Make conditions in which the right thing can grow; do not confuse receptivity with surrender.",
+    "question": "What am I willing and able to carry to completion?",
+    "action": "Prepare the ground and define its carrying limit.",
+    "phase": [],
+    "trigram": [
+      {
+        "label": "Glyph",
+        "value": "☷"
+      },
+      {
+        "label": "Lines, bottom → top",
+        "value": "broken · broken · broken"
+      },
+      {
+        "label": "Image",
+        "value": "earth"
+      },
+      {
+        "label": "Motion",
+        "value": "receptive, descending, completing"
+      },
+      {
+        "label": "Direction",
+        "value": "southwest"
+      },
+      {
+        "label": "Family role",
+        "value": "mother"
+      },
+      {
+        "label": "Archetype",
+        "value": "the Receptive"
+      },
+      {
+        "label": "Pairing",
+        "value": "Qian initiates what Kun bears into manifestation"
+      }
+    ],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Qian — Heaven"
+      },
+      {
+        "label": "Supports",
+        "value": "Receptivity"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Yin"
+      },
+      {
+        "label": "Balances",
+        "value": "Kan — Water"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique gold geometry, deep mineral enamel keyed to the trigram image."
+      },
+      {
+        "label": "Composition",
+        "value": "Exactly three broken brass lines become terraces around an open central path."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "030",
+    "id": "T-030",
+    "name": "Zhen — Thunder",
+    "slug": "zhen",
+    "families": [
+      "The Eight Trigrams"
+    ],
+    "essence": "Arousing shock: the first decisive movement that breaks stillness.",
+    "image": "A solid lowest line sends a cinnabar pulse through two broken upper lines like thunder entering cloud.",
+    "movement": "Energy erupts from below and awakens the field.",
+    "gift": "Courage, beginning, and release from inertia.",
+    "shadow": "Shock becomes panic, impulsiveness, or repeated disruption.",
+    "excess": "Constant arousal prevents rooting and completion.",
+    "deficiency": "The first signal is suppressed until pressure becomes dangerous.",
+    "return": "After the shock, breathe, orient, and give the movement a channel.",
+    "divination": "A beginning or surprise is real. Respond to the first fact, not the imagined cascade.",
+    "question": "What has actually changed, and what remains unchanged?",
+    "action": "Ground your feet; take one immediate, proportionate step.",
+    "phase": [],
+    "trigram": [
+      {
+        "label": "Glyph",
+        "value": "☳"
+      },
+      {
+        "label": "Lines, bottom → top",
+        "value": "solid · broken · broken"
+      },
+      {
+        "label": "Image",
+        "value": "thunder"
+      },
+      {
+        "label": "Motion",
+        "value": "arousing, eruptive, beginning"
+      },
+      {
+        "label": "Direction",
+        "value": "east"
+      },
+      {
+        "label": "Family role",
+        "value": "eldest son"
+      },
+      {
+        "label": "Archetype",
+        "value": "the Arousing"
+      },
+      {
+        "label": "Pairing",
+        "value": "Xun distributes and penetrates what Zhen sets in motion"
+      }
+    ],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Xun — Wind / Wood"
+      },
+      {
+        "label": "Supports",
+        "value": "Movement"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Wood (Mu)"
+      },
+      {
+        "label": "Balances",
+        "value": "Gen — Mountain"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique gold geometry, deep mineral enamel keyed to the trigram image."
+      },
+      {
+        "label": "Composition",
+        "value": "A solid lowest line sends a cinnabar pulse through two broken upper lines like thunder entering cloud."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "031",
+    "id": "T-031",
+    "name": "Xun — Wind / Wood",
+    "slug": "xun",
+    "families": [
+      "The Eight Trigrams"
+    ],
+    "essence": "Gentle penetration: influence that enters by continuity, adaptation, and repeated contact.",
+    "image": "A broken lowest line becomes two unbroken currents of wind threading through tall bamboo.",
+    "movement": "Subtle influence enters from below and spreads through the whole.",
+    "gift": "Persuasion, responsiveness, and gradual reach.",
+    "shadow": "Gentleness becomes indecision, insinuation, or invisible pressure.",
+    "excess": "Diffusion loses center and never arrives.",
+    "deficiency": "No permeability; influence cannot enter or circulate.",
+    "return": "Clarify direction, then continue lightly and repeatedly.",
+    "divination": "Progress comes through patient entry, not impact. Watch whether subtlety is becoming avoidance.",
+    "question": "What can enter only through consistency rather than force?",
+    "action": "Repeat one small aligned action.",
+    "phase": [],
+    "trigram": [
+      {
+        "label": "Glyph",
+        "value": "☴"
+      },
+      {
+        "label": "Lines, bottom → top",
+        "value": "broken · solid · solid"
+      },
+      {
+        "label": "Image",
+        "value": "wind and wood"
+      },
+      {
+        "label": "Motion",
+        "value": "penetrating, dispersing, gradual"
+      },
+      {
+        "label": "Direction",
+        "value": "southeast"
+      },
+      {
+        "label": "Family role",
+        "value": "eldest daughter"
+      },
+      {
+        "label": "Archetype",
+        "value": "the Gentle / Penetrating"
+      },
+      {
+        "label": "Pairing",
+        "value": "Zhen initiates what Xun distributes"
+      }
+    ],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Zhen — Thunder"
+      },
+      {
+        "label": "Supports",
+        "value": "Soft"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Wood (Mu)"
+      },
+      {
+        "label": "Balances",
+        "value": "Qian — Heaven"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique gold geometry, deep mineral enamel keyed to the trigram image."
+      },
+      {
+        "label": "Composition",
+        "value": "A broken lowest line becomes two unbroken currents of wind threading through tall bamboo."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "032",
+    "id": "T-032",
+    "name": "Kan — Water",
+    "slug": "kan",
+    "families": [
+      "The Eight Trigrams"
+    ],
+    "essence": "A true current carried through danger: depth, ravine, repetition, and practiced passage.",
+    "image": "A solid middle line flows within broken banks, becoming a dark river through a ravine.",
+    "movement": "Continuity moves inside danger rather than eliminating it.",
+    "gift": "Depth, adaptability, and skill learned by repetition.",
+    "shadow": "Danger fascinates; depth becomes secrecy or habitual crisis.",
+    "excess": "One abyss follows another because no bank or lesson is retained.",
+    "deficiency": "Fear avoids necessary passage and dries the current.",
+    "return": "Keep the inner line true; proceed by tested steps and visible banks.",
+    "divination": "Risk is present. Do not dramatize or deny it; find the practiced path through.",
+    "question": "What must remain continuous while I cross this danger?",
+    "action": "Define the banks, then take the next tested step.",
+    "phase": [],
+    "trigram": [
+      {
+        "label": "Glyph",
+        "value": "☵"
+      },
+      {
+        "label": "Lines, bottom → top",
+        "value": "broken · solid · broken"
+      },
+      {
+        "label": "Image",
+        "value": "water and ravine"
+      },
+      {
+        "label": "Motion",
+        "value": "descending, flowing through danger"
+      },
+      {
+        "label": "Direction",
+        "value": "north"
+      },
+      {
+        "label": "Family role",
+        "value": "middle son"
+      },
+      {
+        "label": "Archetype",
+        "value": "the Abysmal"
+      },
+      {
+        "label": "Pairing",
+        "value": "Li illuminates and attaches where Kan deepens and passes through"
+      }
+    ],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Li — Fire"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Water"
+      },
+      {
+        "label": "Supports",
+        "value": "River"
+      },
+      {
+        "label": "Balances",
+        "value": "Kun — Earth"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique gold geometry, deep mineral enamel keyed to the trigram image."
+      },
+      {
+        "label": "Composition",
+        "value": "A solid middle line flows within broken banks, becoming a dark river through a ravine."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "033",
+    "id": "T-033",
+    "name": "Li — Fire",
+    "slug": "li",
+    "families": [
+      "The Eight Trigrams"
+    ],
+    "essence": "Illumination that depends on what it clings to: radiance, discernment, and attachment.",
+    "image": "A broken middle line forms a dark hollow held by two solid cinnabar-gold flame lines.",
+    "movement": "Light spreads by attaching to fuel, surface, and attention.",
+    "gift": "Clarity, culture, warmth, and articulate relation.",
+    "shadow": "Brightness clings to image, validation, or consuming fuel.",
+    "excess": "Exposure and excitement burn through their support.",
+    "deficiency": "No attachment sustains clarity or shared signal.",
+    "return": "Choose worthy fuel; preserve a dark center that prevents glare.",
+    "divination": "What is becoming visible depends on what attention feeds. Examine the attachment.",
+    "question": "What am I illuminating, and what sustains the light?",
+    "action": "Withdraw fuel from spectacle; feed one clarifying relation.",
+    "phase": [],
+    "trigram": [
+      {
+        "label": "Glyph",
+        "value": "☲"
+      },
+      {
+        "label": "Lines, bottom → top",
+        "value": "solid · broken · solid"
+      },
+      {
+        "label": "Image",
+        "value": "fire and sun"
+      },
+      {
+        "label": "Motion",
+        "value": "radiating, clinging, clarifying"
+      },
+      {
+        "label": "Direction",
+        "value": "south"
+      },
+      {
+        "label": "Family role",
+        "value": "middle daughter"
+      },
+      {
+        "label": "Archetype",
+        "value": "the Clinging"
+      },
+      {
+        "label": "Pairing",
+        "value": "Kan carries continuity through depth; Li makes relation visible"
+      }
+    ],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Kan — Water"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Fire"
+      },
+      {
+        "label": "Supports",
+        "value": "Light"
+      },
+      {
+        "label": "Balances",
+        "value": "Dui — Lake"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique gold geometry, deep mineral enamel keyed to the trigram image."
+      },
+      {
+        "label": "Composition",
+        "value": "A broken middle line forms a dark hollow held by two solid cinnabar-gold flame lines."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "034",
+    "id": "T-034",
+    "name": "Gen — Mountain",
+    "slug": "gen",
+    "families": [
+      "The Eight Trigrams"
+    ],
+    "essence": "Keeping still at the proper limit: stopping, boundary, completion, and renewed beginning.",
+    "image": "A solid upper line becomes a jade summit above two broken mist-bands.",
+    "movement": "Movement rises to a limit and comes to rest.",
+    "gift": "Meditation, containment, and timely stopping.",
+    "shadow": "Stillness becomes obstruction, stubbornness, or isolation.",
+    "excess": "The stop persists after the threshold has changed.",
+    "deficiency": "No limit allows completion, recovery, or new beginning.",
+    "return": "Stop the part that should stop; let the rest of the body remain alive.",
+    "divination": "The wisdom is in a precise stop, not universal immobility.",
+    "question": "Exactly what must stop here?",
+    "action": "Name the boundary, stop at it, and release everything else.",
+    "phase": [],
+    "trigram": [
+      {
+        "label": "Glyph",
+        "value": "☶"
+      },
+      {
+        "label": "Lines, bottom → top",
+        "value": "broken · broken · solid"
+      },
+      {
+        "label": "Image",
+        "value": "mountain"
+      },
+      {
+        "label": "Motion",
+        "value": "stopping, completing, turning"
+      },
+      {
+        "label": "Direction",
+        "value": "northeast"
+      },
+      {
+        "label": "Family role",
+        "value": "youngest son"
+      },
+      {
+        "label": "Archetype",
+        "value": "Keeping Still"
+      },
+      {
+        "label": "Pairing",
+        "value": "Dui opens exchange where Gen establishes the limit"
+      }
+    ],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Dui — Lake"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Mountain"
+      },
+      {
+        "label": "Supports",
+        "value": "Stillness"
+      },
+      {
+        "label": "Balances",
+        "value": "Zhen — Thunder"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique gold geometry, deep mineral enamel keyed to the trigram image."
+      },
+      {
+        "label": "Composition",
+        "value": "A solid upper line becomes a jade summit above two broken mist-bands."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "035",
+    "id": "T-035",
+    "name": "Dui — Lake",
+    "slug": "dui",
+    "families": [
+      "The Eight Trigrams"
+    ],
+    "essence": "Joyous exchange at an open surface: pleasure, speech, reflection, and mutual influence.",
+    "image": "A broken upper line opens above two solid silver-blue lake-bands; one ripple reaches the rim.",
+    "movement": "Contained depth opens upward into exchange.",
+    "gift": "Joy, conversation, ease, and shared refreshment.",
+    "shadow": "Pleasure flatters, leaks, or avoids necessary depth.",
+    "excess": "Stimulation and talk drain the reservoir.",
+    "deficiency": "Closure prevents delight, feedback, and social flow.",
+    "return": "Let joy arise from a held depth; close what only leaks.",
+    "divination": "An opening for exchange is present. Enjoy it without making pleasure the sole test of truth.",
+    "question": "What wants to be shared, and what must remain held?",
+    "action": "Offer one honest word and receive the reply.",
+    "phase": [],
+    "trigram": [
+      {
+        "label": "Glyph",
+        "value": "☱"
+      },
+      {
+        "label": "Lines, bottom → top",
+        "value": "solid · solid · broken"
+      },
+      {
+        "label": "Image",
+        "value": "lake and marsh"
+      },
+      {
+        "label": "Motion",
+        "value": "opening, reflecting, exchanging"
+      },
+      {
+        "label": "Direction",
+        "value": "west"
+      },
+      {
+        "label": "Family role",
+        "value": "youngest daughter"
+      },
+      {
+        "label": "Archetype",
+        "value": "the Joyous"
+      },
+      {
+        "label": "Pairing",
+        "value": "Gen contains and stops where Dui opens and communicates"
+      }
+    ],
+    "relations": [
+      {
+        "label": "Complements",
+        "value": "Gen — Mountain"
+      },
+      {
+        "label": "Supports",
+        "value": "Sound"
+      },
+      {
+        "label": "Supports",
+        "value": "Mirror"
+      },
+      {
+        "label": "Balances",
+        "value": "Li — Fire"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique gold geometry, deep mineral enamel keyed to the trigram image."
+      },
+      {
+        "label": "Composition",
+        "value": "A broken upper line opens above two solid silver-blue lake-bands; one ripple reaches the rim."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "036",
+    "id": "L-036",
+    "name": "Wu Wei",
+    "slug": "wu-wei",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Action free of coercive strain: responding so closely to conditions that force is not wasted.",
+    "image": "A branch bends over running water while a leaf passes around a stone.",
+    "movement": "Intention releases its grip and joins an existing current.",
+    "gift": "Efficacy, ease, timing, and non-contention.",
+    "shadow": "Non-forcing is confused with passivity, neglect, or spiritual superiority.",
+    "excess": "Endless optimization tries to manufacture effortlessness.",
+    "deficiency": "Nothing is done even when relationship calls for action.",
+    "return": "Find what is already moving; act at the point of least unnecessary resistance.",
+    "divination": "You may be forcing what cannot respond—or overlooking the action that fits naturally.",
+    "question": "Where am I adding strain that the situation does not require?",
+    "action": "Stop one forced motion and join one existing current.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Expresses",
+        "value": "Tao (Dao)"
+      },
+      {
+        "label": "Supported by",
+        "value": "Ziran — Self-So"
+      },
+      {
+        "label": "Supports",
+        "value": "Flow"
+      },
+      {
+        "label": "Balances",
+        "value": "Initiative"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A branch bends over running water while a leaf passes around a stone."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "037",
+    "id": "L-037",
+    "name": "De — Immanent Power",
+    "slug": "de",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "The particular efficacy by which a being follows the Way as itself.",
+    "image": "A small jade form casts a wider gold influence without leaving its place.",
+    "movement": "Inner integrity becomes unforced effect.",
+    "gift": "Presence, trustworthiness, and fitting power.",
+    "shadow": "Virtue becomes reputation, moral display, or a claim to superiority.",
+    "excess": "Charisma seeks control and consumes its source.",
+    "deficiency": "Potential is denied, dispersed, or imitated from elsewhere.",
+    "return": "Return to the specific nature and responsibility of this form.",
+    "divination": "Influence should arise from alignment, not performance. Ask what quality is actually yours to embody.",
+    "question": "What power appears when I stop performing someone else’s form?",
+    "action": "Practice one quality without announcing it.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Arises from",
+        "value": "Tao (Dao)"
+      },
+      {
+        "label": "Supports",
+        "value": "Ziran — Self-So"
+      },
+      {
+        "label": "Expresses",
+        "value": "One"
+      },
+      {
+        "label": "Balances",
+        "value": "Shadow"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A small jade form casts a wider gold influence without leaving its place."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "038",
+    "id": "L-038",
+    "name": "Ziran — Self-So",
+    "slug": "ziran",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "The spontaneous suchness by which things unfold from their own conditions, not an external mold.",
+    "image": "Unequal mineral forms grow at their own angles from one shared dark ground.",
+    "movement": "Each form becomes itself through relation to its actual conditions.",
+    "gift": "Authenticity, adaptation, and uncontrived order.",
+    "shadow": "Spontaneity excuses impulse, habit, or avoidance of craft.",
+    "excess": "“Natural” is used to freeze whatever already exists.",
+    "deficiency": "External demands sever a form from its own pace and contour.",
+    "return": "Remove the imposed pattern; then notice what the real conditions produce.",
+    "divination": "Let the situation disclose its own organization before applying a template.",
+    "question": "What is trying to become itself here?",
+    "action": "Remove one unnecessary instruction and observe.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Expresses",
+        "value": "Ten Thousand Things"
+      },
+      {
+        "label": "Supports",
+        "value": "Wu Wei"
+      },
+      {
+        "label": "Supported by",
+        "value": "De — Immanent Power"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Pu — Simplicity"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "Unequal mineral forms grow at their own angles from one shared dark ground."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "039",
+    "id": "L-039",
+    "name": "Pu — Simplicity",
+    "slug": "pu",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Original simplicity: unadorned sufficiency before value is inflated by display and division.",
+    "image": "A plain pale-wood enamel field bears one irregular grain and no border ornament.",
+    "movement": "Complexity settles until essential contour remains.",
+    "gift": "Directness, sufficiency, and freedom from display.",
+    "shadow": "Simplicity becomes naïveté, anti-intellectualism, or purity theater.",
+    "excess": "Reduction cuts away necessary history and relation.",
+    "deficiency": "Ornament, explanation, and appetite obscure use.",
+    "return": "Keep what serves the living whole; remove what serves only status.",
+    "divination": "The answer may be simpler, but simplicity must preserve the real complexity of consequences.",
+    "question": "What remains when display and comparison fall away?",
+    "action": "Remove one nonessential layer.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Resonates with",
+        "value": "Uncarved Block"
+      },
+      {
+        "label": "Supports",
+        "value": "Ziran — Self-So"
+      },
+      {
+        "label": "Balances",
+        "value": "Ten Thousand Things"
+      },
+      {
+        "label": "Expresses",
+        "value": "Wu — Not-Having"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A plain pale-wood enamel field bears one irregular grain and no border ornament."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "040",
+    "id": "L-040",
+    "name": "Uncarved Block",
+    "slug": "uncarved-block",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Potential before imposed use: a form not yet narrowed to one identity or function.",
+    "image": "An irregular pale block sits inside a ring of elaborate tools that remain untouched.",
+    "movement": "Possibility waits before selection and shaping.",
+    "gift": "Adaptability, latent capacity, and freedom from premature definition.",
+    "shadow": "Unformed potential becomes an excuse never to commit.",
+    "excess": "Protection of possibility prevents all use and relationship.",
+    "deficiency": "External carving fixes identity before the material is known.",
+    "return": "Handle the material before designing its final purpose.",
+    "divination": "Do not decide too early what this must become. But notice when openness is avoiding a necessary cut.",
+    "question": "Which possibility needs protection, and which now needs form?",
+    "action": "Test the material with one reversible mark.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Resonates with",
+        "value": "Pu — Simplicity"
+      },
+      {
+        "label": "Supports",
+        "value": "Seed"
+      },
+      {
+        "label": "Balances",
+        "value": "Being (You)"
+      },
+      {
+        "label": "Opens",
+        "value": "Threshold"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "An irregular pale block sits inside a ring of elaborate tools that remain untouched."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "041",
+    "id": "L-041",
+    "name": "Empty Vessel",
+    "slug": "empty-vessel",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Usefulness created by the shaped absence within a form.",
+    "image": "A dark ceramic-enamel vessel is defined almost entirely by its luminous empty interior.",
+    "movement": "A boundary holds open space so something may enter, mix, or be poured out.",
+    "gift": "Capacity, hospitality, and renewal.",
+    "shadow": "Emptiness becomes vacancy, self-negation, or ornamental minimalism.",
+    "excess": "The vessel is endlessly emptied and never nourished.",
+    "deficiency": "Fullness prevents use, exchange, and transformation.",
+    "return": "Empty with purpose; keep the vessel sound and available.",
+    "divination": "Capacity matters more than additional content. Check the rim as carefully as the space.",
+    "question": "What must leave, and what boundary must remain?",
+    "action": "Pour out one stale content; repair one edge.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Expresses",
+        "value": "Emptiness"
+      },
+      {
+        "label": "Supported by",
+        "value": "Wu — Not-Having"
+      },
+      {
+        "label": "Supports",
+        "value": "Receptivity"
+      },
+      {
+        "label": "Balances",
+        "value": "Ten Thousand Things"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A dark ceramic-enamel vessel is defined almost entirely by its luminous empty interior."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "042",
+    "id": "L-042",
+    "name": "Valley Spirit",
+    "slug": "valley-spirit",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Receptive generativity that remains low, open, and inexhaustibly available.",
+    "image": "A misted valley glows subtly from within while dark ridges remain unlit.",
+    "movement": "What descends into openness is gathered and transformed into new life.",
+    "gift": "Fertility, continuity, and power without display.",
+    "shadow": "Receptivity is fetishized as endless availability or gendered submission.",
+    "excess": "The valley bears every runoff until it becomes poisoned or flooded.",
+    "deficiency": "Elevation and closure cut the field off from renewing inputs.",
+    "return": "Clear the channel; protect the low place from exploitation.",
+    "divination": "The generative center may be quiet and low. Nourish it without demanding performance.",
+    "question": "What quiet opening keeps creating more than force can make?",
+    "action": "Protect one receptive space and remove one blockage.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Arises from",
+        "value": "Valley"
+      },
+      {
+        "label": "Supports",
+        "value": "Receptivity"
+      },
+      {
+        "label": "Opens",
+        "value": "Gate"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Kun — Earth"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A misted valley glows subtly from within while dark ridges remain unlit."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "043",
+    "id": "L-043",
+    "name": "Returning",
+    "slug": "returning",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "The lived act of noticing deviation and turning back before distance becomes destiny.",
+    "image": "A single footprint turns beside a river bend; the earlier track fades rather than reverses exactly.",
+    "movement": "Attention recognizes drift and changes course.",
+    "gift": "Correction, humility, and renewed contact.",
+    "shadow": "Return becomes self-punishment, regression, or obsessive checking.",
+    "excess": "Constant reversal prevents any path from developing.",
+    "deficiency": "Pride keeps a mistaken course in motion.",
+    "return": "Turn toward the root with new information; do not reenact the past.",
+    "divination": "A modest correction now is wiser than defending momentum.",
+    "question": "What signal have I already received that asks me to turn?",
+    "action": "Make one visible course correction today.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Expresses",
+        "value": "Return"
+      },
+      {
+        "label": "Supports",
+        "value": "Root"
+      },
+      {
+        "label": "Balances",
+        "value": "Movement"
+      },
+      {
+        "label": "Transforms into",
+        "value": "Threshold"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A single footprint turns beside a river bend; the earlier track fades rather than reverses exactly."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "044",
+    "id": "L-044",
+    "name": "Yielding",
+    "slug": "yielding",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Responsive giving-way that preserves continuity while redirecting force.",
+    "image": "A bamboo arc bends under rain and clears a path for the descending water.",
+    "movement": "Pressure passes through a flexible form and changes its angle.",
+    "gift": "Resilience, diplomacy, and survival without direct contest.",
+    "shadow": "Yielding becomes appeasement, collapse, or fear of necessary conflict.",
+    "excess": "Everything is conceded until no integrity remains.",
+    "deficiency": "Resistance turns every contact into damage.",
+    "return": "Yield in method, not in the essential relation or boundary.",
+    "divination": "A softer response may carry more strength. Identify what must remain intact while the form changes.",
+    "question": "What can give way without being given up?",
+    "action": "Change posture or sequence; keep the essential boundary.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Supported by",
+        "value": "Soft"
+      },
+      {
+        "label": "Supports",
+        "value": "Flow"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Bamboo"
+      },
+      {
+        "label": "Balances",
+        "value": "Hard"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A bamboo arc bends under rain and clears a path for the descending water."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "045",
+    "id": "L-045",
+    "name": "Flow",
+    "slug": "flow",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Continuous responsive movement through changing constraints.",
+    "image": "Three river-green currents braid, separate around stone, and rejoin without symmetry.",
+    "movement": "Movement adjusts to contour while maintaining connection.",
+    "gift": "Continuity, adaptation, and circulation.",
+    "shadow": "Flow becomes aimlessness, avoidance of commitment, or romanticized ease.",
+    "excess": "Speed and volume erase banks and destinations.",
+    "deficiency": "Blockage prevents exchange and causes pressure or decay.",
+    "return": "Restore the channel, bank, and rhythm; then let movement resume.",
+    "divination": "Follow what is genuinely moving, but distinguish current from drift.",
+    "question": "What carries continuity through these changing conditions?",
+    "action": "Clear one blockage and mark one bank.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Supported by",
+        "value": "Wu Wei"
+      },
+      {
+        "label": "Expresses",
+        "value": "Water"
+      },
+      {
+        "label": "Supports",
+        "value": "River"
+      },
+      {
+        "label": "Balances",
+        "value": "Still Point"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "Three river-green currents braid, separate around stone, and rejoin without symmetry."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "046",
+    "id": "L-046",
+    "name": "Still Point",
+    "slug": "still-point",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "A relative center of quiet within motion from which changing directions can be perceived.",
+    "image": "A silver pin remains quiet while two offset currents orbit without closing.",
+    "movement": "Motion organizes around a calm reference.",
+    "gift": "Orientation, poise, and responsive timing.",
+    "shadow": "Centeredness becomes detachment, control, or refusal to be affected.",
+    "excess": "Holding the center freezes the whole field.",
+    "deficiency": "Without a reference, motion becomes disorienting and reactive.",
+    "return": "Let the center be porous; use it to sense motion, not command it.",
+    "divination": "Pause at the center long enough to distinguish movement from noise.",
+    "question": "What remains quiet enough to orient me without becoming rigid?",
+    "action": "Take three breaths before the next response.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Arises from",
+        "value": "Stillness"
+      },
+      {
+        "label": "Supports",
+        "value": "Center"
+      },
+      {
+        "label": "Balances",
+        "value": "Flow"
+      },
+      {
+        "label": "Resonates with",
+        "value": "One"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A silver pin remains quiet while two offset currents orbit without closing."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "047",
+    "id": "L-047",
+    "name": "Center",
+    "slug": "center",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "The relational middle where forces can be integrated without being flattened.",
+    "image": "Five unequal paths meet around an empty ochre circle; none reaches its exact middle.",
+    "movement": "Dispersed inputs gather, exchange, and redistribute.",
+    "gift": "Integration, mediation, and proportion.",
+    "shadow": "The center claims neutrality while hiding its power.",
+    "excess": "Everything is centralized and peripheral intelligence is starved.",
+    "deficiency": "No shared place exists for coordination or digestion.",
+    "return": "Create a center that circulates rather than hoards.",
+    "divination": "A shared organizing point is needed, but it must remain answerable to the edges.",
+    "question": "What belongs at the center, and what must remain distributed?",
+    "action": "Gather the essential inputs, decide, then return resources outward.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Supported by",
+        "value": "Still Point"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Earth (Tu)"
+      },
+      {
+        "label": "Balances",
+        "value": "Branch"
+      },
+      {
+        "label": "Expresses",
+        "value": "One"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "Five unequal paths meet around an empty ochre circle; none reaches its exact middle."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "048",
+    "id": "L-048",
+    "name": "Threshold",
+    "slug": "threshold",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "The charged interval where one condition has ended but another is not yet established.",
+    "image": "Two metal fields almost meet; mist crosses the narrow seam before any figure does.",
+    "movement": "Identity and rule loosen during passage.",
+    "gift": "Choice, initiation, and transformed relation.",
+    "shadow": "Liminality is prolonged to avoid commitment or romanticized as inherently profound.",
+    "excess": "Repeated crossing destabilizes all shelter and continuity.",
+    "deficiency": "Fear keeps the old state intact after it has ceased to fit.",
+    "return": "Mark the crossing, carry only what belongs, and accept altered conditions.",
+    "divination": "You are between forms. Do not demand the certainties of either side.",
+    "question": "What must be left behind for the crossing to be real?",
+    "action": "Name the before and after; make one crossing act.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Opened by",
+        "value": "Uncarved Block"
+      },
+      {
+        "label": "Opens",
+        "value": "Gate"
+      },
+      {
+        "label": "Transforms into",
+        "value": "Sprout"
+      },
+      {
+        "label": "Balances",
+        "value": "Root"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "Two metal fields almost meet; mist crosses the narrow seam before any figure does."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "049",
+    "id": "L-049",
+    "name": "Root",
+    "slug": "root",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Hidden anchoring through reciprocal contact with the ground that feeds and resists.",
+    "image": "Dark roots negotiate between jade stones and small pockets of water below an open field.",
+    "movement": "The visible form descends, senses, exchanges, and stabilizes.",
+    "gift": "Grounding, nourishment, continuity, and unseen relation.",
+    "shadow": "Rootedness becomes entrenchment, possession, or hidden extraction.",
+    "excess": "Attachment grips depleted ground and crowds neighboring life.",
+    "deficiency": "No support reaches the visible branch; effort becomes brittle.",
+    "return": "Renew exchange with the actual ground; release roots that only bind.",
+    "divination": "Look below the visible issue for the relationships that feed and hold it.",
+    "question": "What am I drawing from, and what am I returning?",
+    "action": "Map one hidden support and reciprocate it.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Supports",
+        "value": "Branch"
+      },
+      {
+        "label": "Supported by",
+        "value": "Return"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Earth (Tu)"
+      },
+      {
+        "label": "Balances",
+        "value": "Threshold"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "Dark roots negotiate between jade stones and small pockets of water below an open field."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "050",
+    "id": "L-050",
+    "name": "Branch",
+    "slug": "branch",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Differentiated reach: one source exploring several directions without ceasing to be related.",
+    "image": "A jade-gold branch divides irregularly; one twig ends, two continue beyond the frame.",
+    "movement": "Rooted continuity tests multiple paths.",
+    "gift": "Experiment, distribution, and plural possibility.",
+    "shadow": "Branching becomes distraction, hierarchy, or unchecked proliferation.",
+    "excess": "Too many extensions starve the trunk and one another.",
+    "deficiency": "A single route bears all risk and cannot adapt.",
+    "return": "Prune by vitality and relation, not by symmetry.",
+    "divination": "Several paths are possible; not all require equal investment.",
+    "question": "Which branch is alive, and which only preserves an option?",
+    "action": "Feed one branch, prune one, leave one to observe.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Arises from",
+        "value": "Root"
+      },
+      {
+        "label": "Supports",
+        "value": "Blossom"
+      },
+      {
+        "label": "Balances",
+        "value": "Center"
+      },
+      {
+        "label": "Expresses",
+        "value": "Ten Thousand Things"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A jade-gold branch divides irregularly; one twig ends, two continue beyond the frame."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "051",
+    "id": "L-051",
+    "name": "Gate",
+    "slug": "gate",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "A selective opening that regulates passage between fields.",
+    "image": "Two dark brass leaves form an off-center opening filled with mist, not a door.",
+    "movement": "Boundary becomes passage under particular conditions.",
+    "gift": "Access, discernment, protection, and transition.",
+    "shadow": "Guardianship becomes exclusion, secrecy, or control of others’ movement.",
+    "excess": "Too many conditions make passage impossible.",
+    "deficiency": "No threshold protects context, privacy, or sequence.",
+    "return": "Open for the fitting passage; close without contempt when conditions fail.",
+    "divination": "The issue is not simply open or closed, but who or what may pass, when, and why.",
+    "question": "What condition makes this passage fitting?",
+    "action": "Write one clear entry condition and one clear refusal.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Opened by",
+        "value": "Mystery (Xuan)"
+      },
+      {
+        "label": "Supported by",
+        "value": "Threshold"
+      },
+      {
+        "label": "Supports",
+        "value": "Breath (Qi image)"
+      },
+      {
+        "label": "Balances",
+        "value": "Empty Vessel"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "Two dark brass leaves form an off-center opening filled with mist, not a door."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "052",
+    "id": "L-052",
+    "name": "Breath (Qi image)",
+    "slug": "breath",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Rhythmic exchange that joins inner and outer without making them identical.",
+    "image": "A cloud-white current enters a dark vessel and leaves as a thinner gold-green line.",
+    "movement": "Receiving and releasing alternate; neither can be held indefinitely.",
+    "gift": "Regulation, renewal, presence, and connection.",
+    "shadow": "Breath is mystified into a cure-all or used to bypass material conditions.",
+    "excess": "Control tightens the rhythm until ease is lost.",
+    "deficiency": "Exchange becomes shallow, interrupted, or one-sided.",
+    "return": "Lengthen the release; allow the next intake to arrive.",
+    "divination": "Return to rhythm before interpretation. This is grounding, not diagnosis or treatment.",
+    "question": "What am I taking in, and what am I refusing to release?",
+    "action": "Take three unforced breaths; then answer once.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Passes through",
+        "value": "Gate"
+      },
+      {
+        "label": "Supports",
+        "value": "Sound"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Xun — Wind / Wood"
+      },
+      {
+        "label": "Balances",
+        "value": "Still Point"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A cloud-white current enters a dark vessel and leaves as a thinner gold-green line."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "053",
+    "id": "L-053",
+    "name": "River",
+    "slug": "river",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "A path made by moving relation: source, bank, obstacle, confluence, and destination continually reshape one another.",
+    "image": "A silver-blue river enters from one corner, divides around stone, joins rain, and exits lower than it began.",
+    "movement": "Flow follows gravity while erosion and sediment remake the route.",
+    "gift": "Continuity, adaptation, connection, and carried memory.",
+    "shadow": "The current carries contamination, cuts banks, or makes inevitability of its own habit.",
+    "excess": "Flooding erases distinctions and downstream choice.",
+    "deficiency": "Disconnection from source leaves a dry channel and stranded banks.",
+    "return": "Restore source, banks, and confluences; release what should not be carried.",
+    "divination": "Read the whole course, especially upstream causes and downstream receivers.",
+    "question": "What am I carrying that belongs upstream—or must be released before it travels farther?",
+    "action": "Trace one consequence from source to downstream edge.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Arises from",
+        "value": "Water"
+      },
+      {
+        "label": "Supported by",
+        "value": "Flow"
+      },
+      {
+        "label": "Receives",
+        "value": "Rain"
+      },
+      {
+        "label": "Transforms into",
+        "value": "Mist"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A silver-blue river enters from one corner, divides around stone, joins rain, and exits lower than it began."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "054",
+    "id": "L-054",
+    "name": "Rain",
+    "slug": "rain",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Distributed descent that nourishes, reveals saturation, and links sky to ground.",
+    "image": "Fine silver droplets fall unevenly into jade earth; one basin overflows while another remains dry.",
+    "movement": "Condensed cloud returns as many small impacts.",
+    "gift": "Relief, replenishment, and shared nourishment.",
+    "shadow": "Blessing language ignores flood, timing, inequity, or damaged ground.",
+    "excess": "Excess overwhelms absorption and carries the soil away.",
+    "deficiency": "Withholding leaves seeds dormant and channels empty.",
+    "return": "Match the giving to the ground’s capacity; redistribute where possible.",
+    "divination": "Something is arriving across the field. Notice unequal reception and saturation.",
+    "question": "Where can this offering be absorbed, and where will it run off?",
+    "action": "Reduce concentration; spread one resource toward dry ground.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Descends from",
+        "value": "Cloud"
+      },
+      {
+        "label": "Feeds",
+        "value": "River"
+      },
+      {
+        "label": "Supports",
+        "value": "Sprout"
+      },
+      {
+        "label": "Balances",
+        "value": "Fire"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "Fine silver droplets fall unevenly into jade earth; one basin overflows while another remains dry."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "055",
+    "id": "L-055",
+    "name": "Cloud",
+    "slug": "cloud",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Form held temporarily in suspension: gathering, obscuring, carrying, and preparing release.",
+    "image": "A deep-blue enamel cloud gathers around an exposed silver void; one edge begins to rain.",
+    "movement": "Invisible vapor condenses into a mobile body.",
+    "gift": "Incubation, shade, transport, and approaching change.",
+    "shadow": "Ambiguity becomes evasion, mood becomes authority, or gathering never releases.",
+    "excess": "Accumulation darkens the field and delays necessary discharge.",
+    "deficiency": "Nothing gathers long enough to become rain or signal.",
+    "return": "Let conditions condense; release before the load becomes destructive.",
+    "divination": "The situation is forming but not settled. Read density, direction, and readiness to release.",
+    "question": "What is gathering, and what would tell me it is ready to fall?",
+    "action": "Wait for one concrete sign, then act.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Transforms into",
+        "value": "Rain"
+      },
+      {
+        "label": "Arises from",
+        "value": "Mist"
+      },
+      {
+        "label": "Supports",
+        "value": "Dark"
+      },
+      {
+        "label": "Balances",
+        "value": "Sun"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A deep-blue enamel cloud gathers around an exposed silver void; one edge begins to rain."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "056",
+    "id": "L-056",
+    "name": "Mist",
+    "slug": "mist",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Partial visibility that softens fixed edges and makes distance uncertain.",
+    "image": "Cloud-white enamel drifts across dark jade forms, revealing one contour while dissolving another.",
+    "movement": "Water and air mingle near the ground; boundaries appear and vanish.",
+    "gift": "Gentleness, patience, and freedom from premature certainty.",
+    "shadow": "Ambiguity shelters projection, avoidance, or covert action.",
+    "excess": "Obscurity becomes disorientation and prevents consent.",
+    "deficiency": "Harsh certainty fixes contours that have not yet resolved.",
+    "return": "Slow down; move by near landmarks and disclose uncertainty.",
+    "divination": "Only the next distance is visible. Proceed without inventing the far view.",
+    "question": "What is actually visible from here?",
+    "action": "Name the nearest landmark and take one careful step.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Arises from",
+        "value": "River"
+      },
+      {
+        "label": "Transforms into",
+        "value": "Cloud"
+      },
+      {
+        "label": "Supports",
+        "value": "Mystery (Xuan)"
+      },
+      {
+        "label": "Balances",
+        "value": "Light"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "Cloud-white enamel drifts across dark jade forms, revealing one contour while dissolving another."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "057",
+    "id": "L-057",
+    "name": "Bamboo",
+    "slug": "bamboo",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Hollow-jointed resilience: flexible because strength is segmented and the center is open.",
+    "image": "Two green bamboo culms bend differently under rain; gold nodes punctuate their hollow lengths.",
+    "movement": "Pressure travels through flexible spans and articulated joints.",
+    "gift": "Resilience, growth, community, and disciplined emptiness.",
+    "shadow": "Flexibility performs grace while damage accumulates at the joints.",
+    "excess": "Endless bending produces collapse or silent resentment.",
+    "deficiency": "Rigidity or weak joints prevent recovery after force.",
+    "return": "Strengthen the nodes; keep the intervals hollow enough to move.",
+    "divination": "Adapt, but inspect the points where pressure concentrates.",
+    "question": "Which joint needs reinforcement before I bend again?",
+    "action": "Support one transition point and release one rigid span.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Resonates with",
+        "value": "Yielding"
+      },
+      {
+        "label": "Supports",
+        "value": "Breath (Qi image)"
+      },
+      {
+        "label": "Expresses",
+        "value": "Empty Vessel"
+      },
+      {
+        "label": "Balances",
+        "value": "Pine"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "Two green bamboo culms bend differently under rain; gold nodes punctuate their hollow lengths."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "058",
+    "id": "L-058",
+    "name": "Pine",
+    "slug": "pine",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Endurance through seasons: conserving life without pretending winter is summer.",
+    "image": "A dark-green pine leans from black rock; sparse needles remain under silver snow.",
+    "movement": "Growth slows, structure holds, and life is rationed through hardship.",
+    "gift": "Constancy, memory, and winter resilience.",
+    "shadow": "Endurance becomes pride in deprivation or refusal of help.",
+    "excess": "Survival mode persists and excludes renewal.",
+    "deficiency": "Commitment collapses at the first cold season.",
+    "return": "Conserve what is alive; accept support and resume growth when conditions change.",
+    "divination": "The task may be to endure without hardening into identity.",
+    "question": "What must be conserved, and what help would keep endurance alive?",
+    "action": "Protect the living core and ask for one form of support.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Supports",
+        "value": "Root"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Water"
+      },
+      {
+        "label": "Balances",
+        "value": "Bamboo"
+      },
+      {
+        "label": "Completes",
+        "value": "Decay"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A dark-green pine leans from black rock; sparse needles remain under silver snow."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "059",
+    "id": "L-059",
+    "name": "Crane",
+    "slug": "crane",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Measured elevation: patient stillness that becomes precise movement and long passage.",
+    "image": "A spare white crane stands in shallow dark water, one leg lifted, with a wide empty sky above.",
+    "movement": "Waiting concentrates attention; a single movement crosses distance.",
+    "gift": "Perspective, timing, dignity, and migration.",
+    "shadow": "Elevation becomes aloofness, omen-making, or superiority.",
+    "excess": "Distance severs the bird from ground, flock, and season.",
+    "deficiency": "No vantage or patience precedes action.",
+    "return": "Return the high view to the wet ground and the right moment.",
+    "divination": "Step back far enough to see timing, then make one precise move.",
+    "question": "What becomes visible only with distance—and what detail might distance conceal?",
+    "action": "Take a higher view, verify one ground fact, then act once.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Supports",
+        "value": "Stillness"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Light"
+      },
+      {
+        "label": "Balances",
+        "value": "Turtle"
+      },
+      {
+        "label": "Supports",
+        "value": "Threshold"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A spare white crane stands in shallow dark water, one leg lifted, with a wide empty sky above."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "060",
+    "id": "L-060",
+    "name": "Turtle",
+    "slug": "turtle",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Protected longevity: carrying a boundary while moving at the pace continuity requires.",
+    "image": "A black-jade turtle crosses a shallow silver current; its shell echoes a dark sky pattern without inscription.",
+    "movement": "A vulnerable life advances within a portable enclosure.",
+    "gift": "Patience, protection, continuity, and measured response.",
+    "shadow": "Protection becomes withdrawal, fatalism, or false claims of prediction.",
+    "excess": "The shell closes against nourishment and change.",
+    "deficiency": "Exposure and haste sacrifice continuity.",
+    "return": "Open only enough for movement and exchange; keep the shell proportionate.",
+    "divination": "Choose the pace and protection that allow the journey to continue.",
+    "question": "What boundary would let me keep moving rather than disappear?",
+    "action": "Slow the pace and strengthen one protective condition.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Supports",
+        "value": "Hard"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Water"
+      },
+      {
+        "label": "Balances",
+        "value": "Crane"
+      },
+      {
+        "label": "Supports",
+        "value": "Returning"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A black-jade turtle crosses a shallow silver current; its shell echoes a dark sky pattern without inscription."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "061",
+    "id": "L-061",
+    "name": "Dragon",
+    "slug": "dragon",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Latent transformative potency moving between depth, cloud, rain, and emergence.",
+    "image": "A single abstract jade-gold serpentine current joins river to cloud; no heraldic beast or face.",
+    "movement": "Hidden force rises, changes medium, and alters the weather of the field.",
+    "gift": "Transformation, vitality, scale-shifting, and catalytic presence.",
+    "shadow": "Power becomes grandiosity, spectacle, or borrowed cultural exoticism.",
+    "excess": "Uncontained potency dominates every relation.",
+    "deficiency": "Vital force remains buried, fragmented, or denied.",
+    "return": "Let power change form and serve the field; refuse the demand to perform magnificence.",
+    "divination": "A strong transformative current is present. Give it a channel and a responsibility.",
+    "question": "What would this power serve if it did not need to impress?",
+    "action": "Choose one accountable channel for the strongest energy.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Supports",
+        "value": "Cloud"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Zhen — Thunder"
+      },
+      {
+        "label": "Balances",
+        "value": "Tiger"
+      },
+      {
+        "label": "Transforms into",
+        "value": "Rain"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A single abstract jade-gold serpentine current joins river to cloud; no heraldic beast or face."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "062",
+    "id": "L-062",
+    "name": "Tiger",
+    "slug": "tiger",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Focused boundary power: embodied presence, decisive protection, and dangerous appetite.",
+    "image": "A white-metal tiger stripe and paw trace enter from the tile edge; the animal remains mostly in shadow.",
+    "movement": "Stored strength gathers at an edge and can spring.",
+    "gift": "Courage, protection, precision, and embodied limit.",
+    "shadow": "Protection becomes threat, domination, or predation.",
+    "excess": "Force patrols every boundary and creates the danger it expects.",
+    "deficiency": "Fear or dissociation leaves the boundary undefended.",
+    "return": "Use only the force the boundary requires; stand down when passage is safe.",
+    "divination": "Power and risk are close. Determine whether force protects relation or feeds appetite.",
+    "question": "What exactly requires protection, and how much force is enough?",
+    "action": "Name the boundary and choose the least force that can hold it.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Supports",
+        "value": "Hard"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Metal (Jin)"
+      },
+      {
+        "label": "Balances",
+        "value": "Dragon"
+      },
+      {
+        "label": "Supports",
+        "value": "Gate"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A white-metal tiger stripe and paw trace enter from the tile edge; the animal remains mostly in shadow."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "063",
+    "id": "L-063",
+    "name": "Moon",
+    "slug": "moon",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Borrowed light and rhythmic change: visibility that waxes, wanes, and depends on relation.",
+    "image": "A moon-silver disc is mostly absent; its thin lit edge is reflected in dark water.",
+    "movement": "Light changes with position; absence becomes phase rather than failure.",
+    "gift": "Reflection, rhythm, inward vision, and patience.",
+    "shadow": "Indirectness becomes projection, secrecy, or dependence on another’s light.",
+    "excess": "Cycles govern every choice and delay necessary constancy.",
+    "deficiency": "No reflection or darkness allows subtle pattern to emerge.",
+    "return": "Read the phase without worshiping it; use the available light.",
+    "divination": "Conditions are cyclical and partially lit. Work with the present phase, not the imagined full view.",
+    "question": "What is visible in this phase, and what must wait?",
+    "action": "Act within the available light; set a time to review.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Expresses",
+        "value": "Dark"
+      },
+      {
+        "label": "Reflects",
+        "value": "Sun"
+      },
+      {
+        "label": "Supports",
+        "value": "Mirror"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Water"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A moon-silver disc is mostly absent; its thin lit edge is reflected in dark water."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "064",
+    "id": "L-064",
+    "name": "Sun",
+    "slug": "sun",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Direct radiance that reveals, warms, organizes rhythm, and can scorch.",
+    "image": "An off-center gold disc opens a cloud-white field; its lower rim darkens into heat.",
+    "movement": "Light and heat spread outward without selecting recipients.",
+    "gift": "Clarity, vitality, rhythm, and public presence.",
+    "shadow": "Brightness becomes exposure, centrality, or demand for constant positivity.",
+    "excess": "Heat dries the field and erases shade.",
+    "deficiency": "No signal or warmth organizes growth and activity.",
+    "return": "Create shade, accept setting, and share the center.",
+    "divination": "Visibility is high. Use it to clarify and nourish, not to dominate or overexpose.",
+    "question": "What deserves light, and what needs shade?",
+    "action": "Illuminate one issue and protect one private space.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Expresses",
+        "value": "Light"
+      },
+      {
+        "label": "Reflected by",
+        "value": "Moon"
+      },
+      {
+        "label": "Supports",
+        "value": "Sprout"
+      },
+      {
+        "label": "Balances",
+        "value": "Cloud"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "An off-center gold disc opens a cloud-white field; its lower rim darkens into heat."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "065",
+    "id": "L-065",
+    "name": "Star",
+    "slug": "star",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Distant orientation: a small steady relation that helps position without dictating the path.",
+    "image": "One pale-gold star sits in a large blue-black field; three faint points form an incomplete relation.",
+    "movement": "A remote signal becomes a reference across distance and time.",
+    "gift": "Orientation, perspective, and long continuity.",
+    "shadow": "Guidance becomes destiny, abstraction, or escape from local evidence.",
+    "excess": "The distant ideal overrides terrain and present need.",
+    "deficiency": "Without any reference, local motion loses direction.",
+    "return": "Use the star to orient; use the ground to travel.",
+    "divination": "A long-range value can guide the next step, but it cannot replace local conditions.",
+    "question": "What distant reference helps me orient without controlling the route?",
+    "action": "Name one guiding value and one ground fact.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Supports",
+        "value": "Qian — Heaven"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Crane"
+      },
+      {
+        "label": "Balances",
+        "value": "Root"
+      },
+      {
+        "label": "Supports",
+        "value": "Seed"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "One pale-gold star sits in a large blue-black field; three faint points form an incomplete relation."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "066",
+    "id": "L-066",
+    "name": "Seed",
+    "slug": "seed",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Concentrated future held in a protected form, dependent on conditions it cannot command.",
+    "image": "A small dark seed with a gold seam rests in open earth beneath an absent sun.",
+    "movement": "Potential waits, absorbs, and eventually breaks its own enclosure.",
+    "gift": "Readiness, inheritance, patience, and compact possibility.",
+    "shadow": "Potential is romanticized without regard for soil, season, or viability.",
+    "excess": "Protection prevents germination; expectation burdens the future form.",
+    "deficiency": "No reserve or coherent possibility survives the present.",
+    "return": "Test conditions; open only when moisture, warmth, and space can support emergence.",
+    "divination": "Potential is real but conditional. Attend to the field, not only the promise.",
+    "question": "Which condition—not intention—is missing for germination?",
+    "action": "Provide one necessary condition and stop handling the seed.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Supported by",
+        "value": "Uncarved Block"
+      },
+      {
+        "label": "Supported by",
+        "value": "Root"
+      },
+      {
+        "label": "Transforms into",
+        "value": "Sprout"
+      },
+      {
+        "label": "Balances",
+        "value": "Fruit"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A small dark seed with a gold seam rests in open earth beneath an absent sun."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "067",
+    "id": "L-067",
+    "name": "Sprout",
+    "slug": "sprout",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Vulnerable emergence: life crossing from protected potential into exposed growth.",
+    "image": "A single river-green shoot splits dark earth; its curve leans toward partial light.",
+    "movement": "The enclosure breaks and a new form tests direction.",
+    "gift": "Courage, renewal, learning, and responsive beginning.",
+    "shadow": "Newness demands protection from all friction or seeks praise before rooting.",
+    "excess": "Growth stretches too fast and exhausts the seed.",
+    "deficiency": "Emergence is delayed by fear, depleted ground, or absent light.",
+    "return": "Shelter without smothering; strengthen root as the shoot reaches.",
+    "divination": "Something new is visible and fragile. Support its conditions rather than announcing its destiny.",
+    "question": "What does this beginning need before it can bear weight?",
+    "action": "Protect the next growth interval and reduce one demand.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Arises from",
+        "value": "Seed"
+      },
+      {
+        "label": "Supported by",
+        "value": "Rain"
+      },
+      {
+        "label": "Transforms into",
+        "value": "Blossom"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Wood (Mu)"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A single river-green shoot splits dark earth; its curve leans toward partial light."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "068",
+    "id": "L-068",
+    "name": "Blossom",
+    "slug": "blossom",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Brief visible opening that invites exchange and cannot be kept.",
+    "image": "An asymmetrical pale blossom opens on one branch; a few petals already loosen.",
+    "movement": "Accumulated growth becomes attraction, signaling, and exchange.",
+    "gift": "Beauty, invitation, recognition, and timely openness.",
+    "shadow": "Appearance is confused with maturity, worth, or guaranteed fruit.",
+    "excess": "Display consumes the plant and seeks permanent spring.",
+    "deficiency": "Closedness prevents exchange and recognition.",
+    "return": "Open for the season; release the bloom when its work is done.",
+    "divination": "A visible opening can invite relation, but it is a moment, not the final result.",
+    "question": "What is ready to be shown without being mistaken for completion?",
+    "action": "Share the work at its present stage; name what is still becoming.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Arises from",
+        "value": "Sprout"
+      },
+      {
+        "label": "Supported by",
+        "value": "Branch"
+      },
+      {
+        "label": "Transforms into",
+        "value": "Fruit"
+      },
+      {
+        "label": "Balances",
+        "value": "Decay"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "An asymmetrical pale blossom opens on one branch; a few petals already loosen."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "069",
+    "id": "L-069",
+    "name": "Fruit",
+    "slug": "fruit",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Ripened consequence: nourishment and seed carried together at the end of a growth cycle.",
+    "image": "A single jade-and-cinnabar fruit hangs low; one cut reveals a dark seed inside.",
+    "movement": "Growth concentrates into an offering that also carries another beginning.",
+    "gift": "Harvest, generosity, consequence, and continuation.",
+    "shadow": "Outcome becomes possession, status, or proof of personal control.",
+    "excess": "Ripeness turns to hoarding and rot because nothing is shared.",
+    "deficiency": "The cycle is harvested too early or never allowed to mature.",
+    "return": "Take what nourishes, distribute the surplus, and return the seed.",
+    "divination": "A consequence is ready to be received. Ask who is fed and what future it carries.",
+    "question": "What part is nourishment, and what part must be replanted?",
+    "action": "Harvest, share, and save one seed.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Arises from",
+        "value": "Blossom"
+      },
+      {
+        "label": "Contains",
+        "value": "Seed"
+      },
+      {
+        "label": "Transforms into",
+        "value": "Decay"
+      },
+      {
+        "label": "Balances",
+        "value": "Root"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A single jade-and-cinnabar fruit hangs low; one cut reveals a dark seed inside."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "070",
+    "id": "L-070",
+    "name": "Decay",
+    "slug": "decay",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Form loosening into smaller relations so stored material can re-enter the world.",
+    "image": "A dark fruit skin opens into gold-brown fragments, fungi-like enamel dots, and exposed earth.",
+    "movement": "Structure breaks down; boundaries soften; nutrients and memory redistribute.",
+    "gift": "Release, humility, decomposition, and transition.",
+    "shadow": "Loss is aestheticized or used to excuse preventable neglect.",
+    "excess": "Breakdown outruns containment and spreads harm.",
+    "deficiency": "Nothing is allowed to end, soften, or return its materials.",
+    "return": "Contain what can harm; let completed form enter a new cycle.",
+    "divination": "An ending is materially active. Grieve, protect, and allow transformation.",
+    "question": "What is finished, and what can it now feed?",
+    "action": "Stop preserving one dead form; place its useful parts into a new context.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Arises from",
+        "value": "Fruit"
+      },
+      {
+        "label": "Supports",
+        "value": "Compost"
+      },
+      {
+        "label": "Transforms into",
+        "value": "Return"
+      },
+      {
+        "label": "Balances",
+        "value": "Blossom"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A dark fruit skin opens into gold-brown fragments, fungi-like enamel dots, and exposed earth."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "071",
+    "id": "L-071",
+    "name": "Compost",
+    "slug": "compost",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Collaborative transformation of discarded matter into fertile, altered ground.",
+    "image": "Layered brown, green, and black enamel fragments warm around a small gold core; steam rises.",
+    "movement": "Many remnants break down together through time, moisture, heat, and air.",
+    "gift": "Regeneration, integration, and value recovered from endings.",
+    "shadow": "“Everything is useful” denies grief, toxicity, or what must be discarded safely.",
+    "excess": "The heap overheats, putrefies, or receives material it cannot transform.",
+    "deficiency": "Sterility and separation prevent any remnant from becoming nourishment.",
+    "return": "Balance the mixture; aerate; remove what the process cannot safely hold.",
+    "divination": "The question is not how to restore the old form, but how its remnants can become ground.",
+    "question": "What can be transformed here, and what requires separate handling?",
+    "action": "Sort the remnants; combine only what can change together.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Arises from",
+        "value": "Decay"
+      },
+      {
+        "label": "Supports",
+        "value": "Earth (Tu)"
+      },
+      {
+        "label": "Feeds",
+        "value": "Root"
+      },
+      {
+        "label": "Transforms into",
+        "value": "Seed"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "Layered brown, green, and black enamel fragments warm around a small gold core; steam rises."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "072",
+    "id": "L-072",
+    "name": "Silence",
+    "slug": "silence",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "An interval without imposed speech in which subtler signals can appear.",
+    "image": "A wide black enamel field holds one fading silver vibration near the rim.",
+    "movement": "Expression ceases; attention changes scale.",
+    "gift": "Listening, rest, privacy, and unforced understanding.",
+    "shadow": "Silence conceals harm, withholds needed truth, or imposes exclusion.",
+    "excess": "Absence of speech becomes control and isolates the unheard.",
+    "deficiency": "Continuous noise prevents reflection and reception.",
+    "return": "Keep silence where it makes room; break it where relationship or safety requires truth.",
+    "divination": "Do not fill the interval automatically. Also ask whose silence is chosen and whose is enforced.",
+    "question": "What becomes audible here, and what truth is being withheld?",
+    "action": "Hold one quiet interval; then say the one necessary thing.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Supported by",
+        "value": "Emptiness"
+      },
+      {
+        "label": "Complements",
+        "value": "Sound"
+      },
+      {
+        "label": "Supports",
+        "value": "Mist"
+      },
+      {
+        "label": "Balances",
+        "value": "Initiative"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A wide black enamel field holds one fading silver vibration near the rim."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "073",
+    "id": "L-073",
+    "name": "Sound",
+    "slug": "sound",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Vibration made shareable: expression traveling through a medium and altering what receives it.",
+    "image": "One brass line leaves a dark bell-like hollow and becomes widening uneven ripples.",
+    "movement": "Stored breath becomes tone, message, resonance, and fading.",
+    "gift": "Communication, warning, music, and mutual attunement.",
+    "shadow": "Expression becomes noise, performance, manipulation, or echo.",
+    "excess": "Volume overwhelms meaning and erases response.",
+    "deficiency": "A needed signal never reaches the field.",
+    "return": "Sound once, then listen for what the medium returns.",
+    "divination": "A message matters, but its effect depends on tone, timing, medium, and reception.",
+    "question": "What needs to be voiced once and then allowed to resonate?",
+    "action": "Say it plainly; do not repeat until you have listened.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Arises from",
+        "value": "Breath (Qi image)"
+      },
+      {
+        "label": "Complements",
+        "value": "Silence"
+      },
+      {
+        "label": "Resonates with",
+        "value": "Dui — Lake"
+      },
+      {
+        "label": "Supports",
+        "value": "Mirror"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "One brass line leaves a dark bell-like hollow and becomes widening uneven ripples."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "074",
+    "id": "L-074",
+    "name": "Shadow",
+    "slug": "shadow",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Evidence of relation between light, form, and position: neither substance nor mere absence.",
+    "image": "An unseen form is known only by a soft black shape crossing moon-white enamel.",
+    "movement": "Illumination meets an obstacle and reveals its contour indirectly.",
+    "gift": "Depth, contrast, privacy, and recognition of what a self-image excludes.",
+    "shadow": "The unknown is treated as evil, or projection is mistaken for fact.",
+    "excess": "Suspicion fills every dark shape with invented motive.",
+    "deficiency": "Flat self-certainty denies consequence, occlusion, and unseen parts.",
+    "return": "Move the light, inspect the form, and own the projection.",
+    "divination": "Something is being inferred from indirect evidence. Separate contour from story.",
+    "question": "What do I observe, and what am I projecting into it?",
+    "action": "Write the observation without motive; change the angle of light.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Arises from",
+        "value": "Light"
+      },
+      {
+        "label": "Supported by",
+        "value": "Dark"
+      },
+      {
+        "label": "Balances",
+        "value": "De — Immanent Power"
+      },
+      {
+        "label": "Supports",
+        "value": "Mirror"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "An unseen form is known only by a soft black shape crossing moon-white enamel."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  },
+  {
+    "number": "075",
+    "id": "L-075",
+    "name": "Mirror",
+    "slug": "mirror",
+    "families": [
+      "The Living Patterns"
+    ],
+    "essence": "Reflective relation that reveals a view, reverses it, and never contains the whole thing reflected.",
+    "image": "A dark silver mirror holds half a moon and an open edge; its surface includes one deliberate distortion.",
+    "movement": "An image returns through angle, surface, and light.",
+    "gift": "Self-recognition, feedback, comparison, and reversal of view.",
+    "shadow": "Reflection becomes vanity, surveillance, imitation, or mistaken identity.",
+    "excess": "The image replaces the living relation and endless checking prevents action.",
+    "deficiency": "Feedback is refused; blind spots remain protected.",
+    "return": "Use reflection as information, then turn back toward the world.",
+    "divination": "A reflection is offering useful feedback, but it is partial and reversed.",
+    "question": "What does this reflection reveal—and what can it never show?",
+    "action": "Receive one piece of feedback; verify it in lived conditions.",
+    "phase": [],
+    "trigram": [],
+    "relations": [
+      {
+        "label": "Reflects",
+        "value": "Moon"
+      },
+      {
+        "label": "Supported by",
+        "value": "Light"
+      },
+      {
+        "label": "Supported by",
+        "value": "Shadow"
+      },
+      {
+        "label": "Completes",
+        "value": "One"
+      }
+    ],
+    "enamel": [
+      {
+        "label": "Palette",
+        "value": "blackened metal, antique brass, jade, river green, deep blue, cloud white, restrained cinnabar."
+      },
+      {
+        "label": "Composition",
+        "value": "A dark silver mirror holds half a moon and an open edge; its surface includes one deliberate distortion."
+      },
+      {
+        "label": "Material behavior",
+        "value": "Fired vitreous enamel, fine cloisonné wire, selective exposed blackened metal, slight hand-made irregularity, strong negative space."
+      },
+      {
+        "label": "Production constraint",
+        "value": "Symbolic rather than illustrative; no text on the face; no generic yin-yang logo; no decorative pseudo-calligraphy; no claim of ancient provenance."
+      }
+    ]
+  }
+]

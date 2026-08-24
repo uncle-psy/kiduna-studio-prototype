@@ -1,0 +1,3025 @@
+{
+  "schema": "tao-enamel-oracle.graph.v1",
+  "title": "The Tao — Enamel Oracle System",
+  "version": "1.0.0",
+  "nodes": [
+    {
+      "id": "tao",
+      "number": "001",
+      "name": "Tao (Dao)",
+      "families": [
+        "The Source"
+      ],
+      "essence": "The way before definition: source, course, and unpossessed order.",
+      "gift": "Orientation without fixation.",
+      "shadow": "The nameless way is reduced to a doctrine, brand, or answer.",
+      "file": "cards/001-tao.md"
+    },
+    {
+      "id": "wu",
+      "number": "002",
+      "name": "Wu — Not-Having",
+      "families": [
+        "The Source"
+      ],
+      "essence": "Absence as an active condition: what is not possessed, imposed, or occupied.",
+      "gift": "Freedom from capture.",
+      "shadow": "Absence is mistaken for nihilism or neglect.",
+      "file": "cards/002-wu.md"
+    },
+    {
+      "id": "being",
+      "number": "003",
+      "name": "Being (You)",
+      "families": [
+        "The Source"
+      ],
+      "essence": "Manifest presence: the named, formed, available face of reality.",
+      "gift": "Specificity, contact, and usable form.",
+      "shadow": "Form mistakes itself for the whole.",
+      "file": "cards/003-being.md"
+    },
+    {
+      "id": "non-being",
+      "number": "004",
+      "name": "Non-Being (Wu)",
+      "families": [
+        "The Source"
+      ],
+      "essence": "The unmanifest pole from which forms become possible and to which they cease.",
+      "gift": "Renewal through unfixing.",
+      "shadow": "The unmanifest is romanticized as superior to embodied life.",
+      "file": "cards/004-non-being.md"
+    },
+    {
+      "id": "one",
+      "number": "005",
+      "name": "One",
+      "families": [
+        "The Source"
+      ],
+      "essence": "Undivided coherence before polarity, not sameness imposed upon difference.",
+      "gift": "Coherence and common ground.",
+      "shadow": "Unity becomes conformity.",
+      "file": "cards/005-one.md"
+    },
+    {
+      "id": "two",
+      "number": "006",
+      "name": "Two",
+      "families": [
+        "The Source"
+      ],
+      "essence": "Differentiation through which relation, polarity, and change become visible.",
+      "gift": "Discernment through contrast.",
+      "shadow": "Difference hardens into opposition.",
+      "file": "cards/006-two.md"
+    },
+    {
+      "id": "ten-thousand-things",
+      "number": "007",
+      "name": "Ten Thousand Things",
+      "families": [
+        "The Source"
+      ],
+      "essence": "The inexhaustible multiplicity of beings, events, names, and relations.",
+      "gift": "Diversity, surprise, and innumerable pathways.",
+      "shadow": "Multiplicity becomes noise, inventory, or consumption.",
+      "file": "cards/007-ten-thousand-things.md"
+    },
+    {
+      "id": "return",
+      "number": "008",
+      "name": "Return",
+      "families": [
+        "The Source"
+      ],
+      "essence": "Reversal is the movement of the Way: outward unfolding bends back toward root.",
+      "gift": "Renewal, recollection, and restored proportion.",
+      "shadow": "Return becomes nostalgia or forced restoration.",
+      "file": "cards/008-return.md"
+    },
+    {
+      "id": "emptiness",
+      "number": "009",
+      "name": "Emptiness",
+      "families": [
+        "The Source"
+      ],
+      "essence": "Usable capacity created by what is not filled.",
+      "gift": "Room, listening, and uncommitted potential.",
+      "shadow": "Emptiness becomes sterility, dissociation, or aesthetic purity.",
+      "file": "cards/009-emptiness.md"
+    },
+    {
+      "id": "mystery",
+      "number": "010",
+      "name": "Mystery (Xuan)",
+      "families": [
+        "The Source"
+      ],
+      "essence": "The shared depth where named and unnamed remain one source under different aspects.",
+      "gift": "Wonder disciplined by humility.",
+      "shadow": "Mystery is used to conceal weak claims or claim secret authority.",
+      "file": "cards/010-mystery.md"
+    },
+    {
+      "id": "yin",
+      "number": "011",
+      "name": "Yin",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "The receptive, inward, cooling, darkening tendency within change.",
+      "gift": "Incubation, receptivity, and depth.",
+      "shadow": "Receptivity collapses into passivity or concealment.",
+      "file": "cards/011-yin.md"
+    },
+    {
+      "id": "yang",
+      "number": "012",
+      "name": "Yang",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "The active, outward, warming, brightening tendency within change.",
+      "gift": "Clarity, expression, and momentum.",
+      "shadow": "Initiative becomes domination or exposure without shelter.",
+      "file": "cards/012-yang.md"
+    },
+    {
+      "id": "stillness",
+      "number": "013",
+      "name": "Stillness",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "The capacity to cease motion long enough for pattern and limit to appear.",
+      "gift": "Concentration, recovery, and boundary.",
+      "shadow": "Stillness hardens into refusal or numbness.",
+      "file": "cards/013-stillness.md"
+    },
+    {
+      "id": "movement",
+      "number": "014",
+      "name": "Movement",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "The activation through which conditions meet, separate, and transform.",
+      "gift": "Initiation, circulation, and encounter.",
+      "shadow": "Motion becomes agitation, flight, or compulsion.",
+      "file": "cards/014-movement.md"
+    },
+    {
+      "id": "receptivity",
+      "number": "015",
+      "name": "Receptivity",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "The strength to be shaped by contact without surrendering discernment.",
+      "gift": "Learning, hospitality, and adaptive response.",
+      "shadow": "Openness becomes indiscriminate absorption.",
+      "file": "cards/015-receptivity.md"
+    },
+    {
+      "id": "initiative",
+      "number": "016",
+      "name": "Initiative",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "The force that begins, names, or enters before conditions organize themselves.",
+      "gift": "Agency, courage, and generative first motion.",
+      "shadow": "Beginning becomes conquest or attachment to authorship.",
+      "file": "cards/016-initiative.md"
+    },
+    {
+      "id": "soft",
+      "number": "017",
+      "name": "Soft",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "What yields, bends, or enters without losing continuity.",
+      "gift": "Adaptation, intimacy, and persistence.",
+      "shadow": "Softness avoids necessary resistance or truth.",
+      "file": "cards/017-soft.md"
+    },
+    {
+      "id": "hard",
+      "number": "018",
+      "name": "Hard",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "What holds shape, resists pressure, cuts, or bears weight.",
+      "gift": "Protection, precision, and endurance.",
+      "shadow": "Strength becomes brittleness, domination, or injury.",
+      "file": "cards/018-hard.md"
+    },
+    {
+      "id": "dark",
+      "number": "019",
+      "name": "Dark",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "The concealed, cooling field where forms withdraw from immediate view.",
+      "gift": "Privacy, gestation, and relief from display.",
+      "shadow": "Concealment protects deception or fear.",
+      "file": "cards/019-dark.md"
+    },
+    {
+      "id": "light",
+      "number": "020",
+      "name": "Light",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "The revealing, warming field in which distinctions become visible.",
+      "gift": "Clarity, recognition, and orientation.",
+      "shadow": "Illumination becomes surveillance, certainty, or glare.",
+      "file": "cards/020-light.md"
+    },
+    {
+      "id": "valley",
+      "number": "021",
+      "name": "Valley",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "Low receptive form that gathers flows, relation, and fertility.",
+      "gift": "Humility, convergence, and generative receptivity.",
+      "shadow": "Lowliness becomes self-erasure or accumulated burden.",
+      "file": "cards/021-valley.md"
+    },
+    {
+      "id": "mountain",
+      "number": "022",
+      "name": "Mountain",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "Concentrated stillness: boundary, endurance, stopping, and obstructive mass.",
+      "gift": "Meditation, protection, and stable form.",
+      "shadow": "Boundary becomes refusal, isolation, or obstacle.",
+      "file": "cards/022-mountain.md"
+    },
+    {
+      "id": "wood",
+      "number": "023",
+      "name": "Wood (Mu)",
+      "families": [
+        "The Five Phases"
+      ],
+      "essence": "Rising, branching life that seeks room, direction, and flexible extension.",
+      "gift": "Vision, flexibility, initiative, and renewal.",
+      "shadow": "Growth becomes impatience, invasion, or frustrated anger.",
+      "file": "cards/023-wood.md"
+    },
+    {
+      "id": "fire",
+      "number": "024",
+      "name": "Fire",
+      "families": [
+        "The Great Polarity",
+        "The Five Phases"
+      ],
+      "essence": "Radiant transformation that warms, reveals, attaches, consumes, and spreads.",
+      "gift": "Warmth, visibility, connection, and rapid change.",
+      "shadow": "Illumination clings to appearances; warmth becomes hunger.",
+      "file": "cards/024-fire.md"
+    },
+    {
+      "id": "earth",
+      "number": "025",
+      "name": "Earth (Tu)",
+      "families": [
+        "The Five Phases"
+      ],
+      "essence": "Centering transformation that receives, composts, nourishes, and redistributes.",
+      "gift": "Nourishment, mediation, steadiness, and belonging.",
+      "shadow": "Care becomes worry, overholding, or refusal to differentiate.",
+      "file": "cards/025-earth.md"
+    },
+    {
+      "id": "metal",
+      "number": "026",
+      "name": "Metal (Jin)",
+      "families": [
+        "The Five Phases"
+      ],
+      "essence": "Contracting clarity that forms boundaries, condenses value, and releases what is finished.",
+      "gift": "Discernment, integrity, completion, and release.",
+      "shadow": "Precision becomes grief-bound rigidity, judgment, or severance.",
+      "file": "cards/026-metal.md"
+    },
+    {
+      "id": "water",
+      "number": "027",
+      "name": "Water",
+      "families": [
+        "The Great Polarity",
+        "The Five Phases"
+      ],
+      "essence": "Yielding power that descends, nourishes, seeks the low place, and reshapes resistance.",
+      "gift": "Adaptation, depth, persistence, and nourishment.",
+      "shadow": "Yielding becomes evasion; depth becomes danger or concealment.",
+      "file": "cards/027-water.md"
+    },
+    {
+      "id": "qian",
+      "number": "028",
+      "name": "Qian — Heaven",
+      "families": [
+        "The Eight Trigrams"
+      ],
+      "essence": "Unbroken creative force: initiating, enduring, and responsible for what it sets in motion.",
+      "gift": "Creative initiative and constancy.",
+      "shadow": "Strength becomes command, pride, or action without receptivity.",
+      "file": "cards/028-qian.md"
+    },
+    {
+      "id": "kun",
+      "number": "029",
+      "name": "Kun — Earth",
+      "families": [
+        "The Eight Trigrams"
+      ],
+      "essence": "Broken receptive force: bearing, nourishing, and completing without claiming authorship.",
+      "gift": "Devotion, capacity, and completion.",
+      "shadow": "Service becomes self-erasure, inertia, or indiscriminate compliance.",
+      "file": "cards/029-kun.md"
+    },
+    {
+      "id": "zhen",
+      "number": "030",
+      "name": "Zhen — Thunder",
+      "families": [
+        "The Eight Trigrams"
+      ],
+      "essence": "Arousing shock: the first decisive movement that breaks stillness.",
+      "gift": "Courage, beginning, and release from inertia.",
+      "shadow": "Shock becomes panic, impulsiveness, or repeated disruption.",
+      "file": "cards/030-zhen.md"
+    },
+    {
+      "id": "xun",
+      "number": "031",
+      "name": "Xun — Wind / Wood",
+      "families": [
+        "The Eight Trigrams"
+      ],
+      "essence": "Gentle penetration: influence that enters by continuity, adaptation, and repeated contact.",
+      "gift": "Persuasion, responsiveness, and gradual reach.",
+      "shadow": "Gentleness becomes indecision, insinuation, or invisible pressure.",
+      "file": "cards/031-xun.md"
+    },
+    {
+      "id": "kan",
+      "number": "032",
+      "name": "Kan — Water",
+      "families": [
+        "The Eight Trigrams"
+      ],
+      "essence": "A true current carried through danger: depth, ravine, repetition, and practiced passage.",
+      "gift": "Depth, adaptability, and skill learned by repetition.",
+      "shadow": "Danger fascinates; depth becomes secrecy or habitual crisis.",
+      "file": "cards/032-kan.md"
+    },
+    {
+      "id": "li",
+      "number": "033",
+      "name": "Li — Fire",
+      "families": [
+        "The Eight Trigrams"
+      ],
+      "essence": "Illumination that depends on what it clings to: radiance, discernment, and attachment.",
+      "gift": "Clarity, culture, warmth, and articulate relation.",
+      "shadow": "Brightness clings to image, validation, or consuming fuel.",
+      "file": "cards/033-li.md"
+    },
+    {
+      "id": "gen",
+      "number": "034",
+      "name": "Gen — Mountain",
+      "families": [
+        "The Eight Trigrams"
+      ],
+      "essence": "Keeping still at the proper limit: stopping, boundary, completion, and renewed beginning.",
+      "gift": "Meditation, containment, and timely stopping.",
+      "shadow": "Stillness becomes obstruction, stubbornness, or isolation.",
+      "file": "cards/034-gen.md"
+    },
+    {
+      "id": "dui",
+      "number": "035",
+      "name": "Dui — Lake",
+      "families": [
+        "The Eight Trigrams"
+      ],
+      "essence": "Joyous exchange at an open surface: pleasure, speech, reflection, and mutual influence.",
+      "gift": "Joy, conversation, ease, and shared refreshment.",
+      "shadow": "Pleasure flatters, leaks, or avoids necessary depth.",
+      "file": "cards/035-dui.md"
+    },
+    {
+      "id": "wu-wei",
+      "number": "036",
+      "name": "Wu Wei",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Action free of coercive strain: responding so closely to conditions that force is not wasted.",
+      "gift": "Efficacy, ease, timing, and non-contention.",
+      "shadow": "Non-forcing is confused with passivity, neglect, or spiritual superiority.",
+      "file": "cards/036-wu-wei.md"
+    },
+    {
+      "id": "de",
+      "number": "037",
+      "name": "De — Immanent Power",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "The particular efficacy by which a being follows the Way as itself.",
+      "gift": "Presence, trustworthiness, and fitting power.",
+      "shadow": "Virtue becomes reputation, moral display, or a claim to superiority.",
+      "file": "cards/037-de.md"
+    },
+    {
+      "id": "ziran",
+      "number": "038",
+      "name": "Ziran — Self-So",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "The spontaneous suchness by which things unfold from their own conditions, not an external mold.",
+      "gift": "Authenticity, adaptation, and uncontrived order.",
+      "shadow": "Spontaneity excuses impulse, habit, or avoidance of craft.",
+      "file": "cards/038-ziran.md"
+    },
+    {
+      "id": "pu",
+      "number": "039",
+      "name": "Pu — Simplicity",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Original simplicity: unadorned sufficiency before value is inflated by display and division.",
+      "gift": "Directness, sufficiency, and freedom from display.",
+      "shadow": "Simplicity becomes naïveté, anti-intellectualism, or purity theater.",
+      "file": "cards/039-pu.md"
+    },
+    {
+      "id": "uncarved-block",
+      "number": "040",
+      "name": "Uncarved Block",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Potential before imposed use: a form not yet narrowed to one identity or function.",
+      "gift": "Adaptability, latent capacity, and freedom from premature definition.",
+      "shadow": "Unformed potential becomes an excuse never to commit.",
+      "file": "cards/040-uncarved-block.md"
+    },
+    {
+      "id": "empty-vessel",
+      "number": "041",
+      "name": "Empty Vessel",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Usefulness created by the shaped absence within a form.",
+      "gift": "Capacity, hospitality, and renewal.",
+      "shadow": "Emptiness becomes vacancy, self-negation, or ornamental minimalism.",
+      "file": "cards/041-empty-vessel.md"
+    },
+    {
+      "id": "valley-spirit",
+      "number": "042",
+      "name": "Valley Spirit",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Receptive generativity that remains low, open, and inexhaustibly available.",
+      "gift": "Fertility, continuity, and power without display.",
+      "shadow": "Receptivity is fetishized as endless availability or gendered submission.",
+      "file": "cards/042-valley-spirit.md"
+    },
+    {
+      "id": "returning",
+      "number": "043",
+      "name": "Returning",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "The lived act of noticing deviation and turning back before distance becomes destiny.",
+      "gift": "Correction, humility, and renewed contact.",
+      "shadow": "Return becomes self-punishment, regression, or obsessive checking.",
+      "file": "cards/043-returning.md"
+    },
+    {
+      "id": "yielding",
+      "number": "044",
+      "name": "Yielding",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Responsive giving-way that preserves continuity while redirecting force.",
+      "gift": "Resilience, diplomacy, and survival without direct contest.",
+      "shadow": "Yielding becomes appeasement, collapse, or fear of necessary conflict.",
+      "file": "cards/044-yielding.md"
+    },
+    {
+      "id": "flow",
+      "number": "045",
+      "name": "Flow",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Continuous responsive movement through changing constraints.",
+      "gift": "Continuity, adaptation, and circulation.",
+      "shadow": "Flow becomes aimlessness, avoidance of commitment, or romanticized ease.",
+      "file": "cards/045-flow.md"
+    },
+    {
+      "id": "still-point",
+      "number": "046",
+      "name": "Still Point",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "A relative center of quiet within motion from which changing directions can be perceived.",
+      "gift": "Orientation, poise, and responsive timing.",
+      "shadow": "Centeredness becomes detachment, control, or refusal to be affected.",
+      "file": "cards/046-still-point.md"
+    },
+    {
+      "id": "center",
+      "number": "047",
+      "name": "Center",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "The relational middle where forces can be integrated without being flattened.",
+      "gift": "Integration, mediation, and proportion.",
+      "shadow": "The center claims neutrality while hiding its power.",
+      "file": "cards/047-center.md"
+    },
+    {
+      "id": "threshold",
+      "number": "048",
+      "name": "Threshold",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "The charged interval where one condition has ended but another is not yet established.",
+      "gift": "Choice, initiation, and transformed relation.",
+      "shadow": "Liminality is prolonged to avoid commitment or romanticized as inherently profound.",
+      "file": "cards/048-threshold.md"
+    },
+    {
+      "id": "root",
+      "number": "049",
+      "name": "Root",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Hidden anchoring through reciprocal contact with the ground that feeds and resists.",
+      "gift": "Grounding, nourishment, continuity, and unseen relation.",
+      "shadow": "Rootedness becomes entrenchment, possession, or hidden extraction.",
+      "file": "cards/049-root.md"
+    },
+    {
+      "id": "branch",
+      "number": "050",
+      "name": "Branch",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Differentiated reach: one source exploring several directions without ceasing to be related.",
+      "gift": "Experiment, distribution, and plural possibility.",
+      "shadow": "Branching becomes distraction, hierarchy, or unchecked proliferation.",
+      "file": "cards/050-branch.md"
+    },
+    {
+      "id": "gate",
+      "number": "051",
+      "name": "Gate",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "A selective opening that regulates passage between fields.",
+      "gift": "Access, discernment, protection, and transition.",
+      "shadow": "Guardianship becomes exclusion, secrecy, or control of others’ movement.",
+      "file": "cards/051-gate.md"
+    },
+    {
+      "id": "breath",
+      "number": "052",
+      "name": "Breath (Qi image)",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Rhythmic exchange that joins inner and outer without making them identical.",
+      "gift": "Regulation, renewal, presence, and connection.",
+      "shadow": "Breath is mystified into a cure-all or used to bypass material conditions.",
+      "file": "cards/052-breath.md"
+    },
+    {
+      "id": "river",
+      "number": "053",
+      "name": "River",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "A path made by moving relation: source, bank, obstacle, confluence, and destination continually reshape one another.",
+      "gift": "Continuity, adaptation, connection, and carried memory.",
+      "shadow": "The current carries contamination, cuts banks, or makes inevitability of its own habit.",
+      "file": "cards/053-river.md"
+    },
+    {
+      "id": "rain",
+      "number": "054",
+      "name": "Rain",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Distributed descent that nourishes, reveals saturation, and links sky to ground.",
+      "gift": "Relief, replenishment, and shared nourishment.",
+      "shadow": "Blessing language ignores flood, timing, inequity, or damaged ground.",
+      "file": "cards/054-rain.md"
+    },
+    {
+      "id": "cloud",
+      "number": "055",
+      "name": "Cloud",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Form held temporarily in suspension: gathering, obscuring, carrying, and preparing release.",
+      "gift": "Incubation, shade, transport, and approaching change.",
+      "shadow": "Ambiguity becomes evasion, mood becomes authority, or gathering never releases.",
+      "file": "cards/055-cloud.md"
+    },
+    {
+      "id": "mist",
+      "number": "056",
+      "name": "Mist",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Partial visibility that softens fixed edges and makes distance uncertain.",
+      "gift": "Gentleness, patience, and freedom from premature certainty.",
+      "shadow": "Ambiguity shelters projection, avoidance, or covert action.",
+      "file": "cards/056-mist.md"
+    },
+    {
+      "id": "bamboo",
+      "number": "057",
+      "name": "Bamboo",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Hollow-jointed resilience: flexible because strength is segmented and the center is open.",
+      "gift": "Resilience, growth, community, and disciplined emptiness.",
+      "shadow": "Flexibility performs grace while damage accumulates at the joints.",
+      "file": "cards/057-bamboo.md"
+    },
+    {
+      "id": "pine",
+      "number": "058",
+      "name": "Pine",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Endurance through seasons: conserving life without pretending winter is summer.",
+      "gift": "Constancy, memory, and winter resilience.",
+      "shadow": "Endurance becomes pride in deprivation or refusal of help.",
+      "file": "cards/058-pine.md"
+    },
+    {
+      "id": "crane",
+      "number": "059",
+      "name": "Crane",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Measured elevation: patient stillness that becomes precise movement and long passage.",
+      "gift": "Perspective, timing, dignity, and migration.",
+      "shadow": "Elevation becomes aloofness, omen-making, or superiority.",
+      "file": "cards/059-crane.md"
+    },
+    {
+      "id": "turtle",
+      "number": "060",
+      "name": "Turtle",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Protected longevity: carrying a boundary while moving at the pace continuity requires.",
+      "gift": "Patience, protection, continuity, and measured response.",
+      "shadow": "Protection becomes withdrawal, fatalism, or false claims of prediction.",
+      "file": "cards/060-turtle.md"
+    },
+    {
+      "id": "dragon",
+      "number": "061",
+      "name": "Dragon",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Latent transformative potency moving between depth, cloud, rain, and emergence.",
+      "gift": "Transformation, vitality, scale-shifting, and catalytic presence.",
+      "shadow": "Power becomes grandiosity, spectacle, or borrowed cultural exoticism.",
+      "file": "cards/061-dragon.md"
+    },
+    {
+      "id": "tiger",
+      "number": "062",
+      "name": "Tiger",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Focused boundary power: embodied presence, decisive protection, and dangerous appetite.",
+      "gift": "Courage, protection, precision, and embodied limit.",
+      "shadow": "Protection becomes threat, domination, or predation.",
+      "file": "cards/062-tiger.md"
+    },
+    {
+      "id": "moon",
+      "number": "063",
+      "name": "Moon",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Borrowed light and rhythmic change: visibility that waxes, wanes, and depends on relation.",
+      "gift": "Reflection, rhythm, inward vision, and patience.",
+      "shadow": "Indirectness becomes projection, secrecy, or dependence on another’s light.",
+      "file": "cards/063-moon.md"
+    },
+    {
+      "id": "sun",
+      "number": "064",
+      "name": "Sun",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Direct radiance that reveals, warms, organizes rhythm, and can scorch.",
+      "gift": "Clarity, vitality, rhythm, and public presence.",
+      "shadow": "Brightness becomes exposure, centrality, or demand for constant positivity.",
+      "file": "cards/064-sun.md"
+    },
+    {
+      "id": "star",
+      "number": "065",
+      "name": "Star",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Distant orientation: a small steady relation that helps position without dictating the path.",
+      "gift": "Orientation, perspective, and long continuity.",
+      "shadow": "Guidance becomes destiny, abstraction, or escape from local evidence.",
+      "file": "cards/065-star.md"
+    },
+    {
+      "id": "seed",
+      "number": "066",
+      "name": "Seed",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Concentrated future held in a protected form, dependent on conditions it cannot command.",
+      "gift": "Readiness, inheritance, patience, and compact possibility.",
+      "shadow": "Potential is romanticized without regard for soil, season, or viability.",
+      "file": "cards/066-seed.md"
+    },
+    {
+      "id": "sprout",
+      "number": "067",
+      "name": "Sprout",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Vulnerable emergence: life crossing from protected potential into exposed growth.",
+      "gift": "Courage, renewal, learning, and responsive beginning.",
+      "shadow": "Newness demands protection from all friction or seeks praise before rooting.",
+      "file": "cards/067-sprout.md"
+    },
+    {
+      "id": "blossom",
+      "number": "068",
+      "name": "Blossom",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Brief visible opening that invites exchange and cannot be kept.",
+      "gift": "Beauty, invitation, recognition, and timely openness.",
+      "shadow": "Appearance is confused with maturity, worth, or guaranteed fruit.",
+      "file": "cards/068-blossom.md"
+    },
+    {
+      "id": "fruit",
+      "number": "069",
+      "name": "Fruit",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Ripened consequence: nourishment and seed carried together at the end of a growth cycle.",
+      "gift": "Harvest, generosity, consequence, and continuation.",
+      "shadow": "Outcome becomes possession, status, or proof of personal control.",
+      "file": "cards/069-fruit.md"
+    },
+    {
+      "id": "decay",
+      "number": "070",
+      "name": "Decay",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Form loosening into smaller relations so stored material can re-enter the world.",
+      "gift": "Release, humility, decomposition, and transition.",
+      "shadow": "Loss is aestheticized or used to excuse preventable neglect.",
+      "file": "cards/070-decay.md"
+    },
+    {
+      "id": "compost",
+      "number": "071",
+      "name": "Compost",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Collaborative transformation of discarded matter into fertile, altered ground.",
+      "gift": "Regeneration, integration, and value recovered from endings.",
+      "shadow": "“Everything is useful” denies grief, toxicity, or what must be discarded safely.",
+      "file": "cards/071-compost.md"
+    },
+    {
+      "id": "silence",
+      "number": "072",
+      "name": "Silence",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "An interval without imposed speech in which subtler signals can appear.",
+      "gift": "Listening, rest, privacy, and unforced understanding.",
+      "shadow": "Silence conceals harm, withholds needed truth, or imposes exclusion.",
+      "file": "cards/072-silence.md"
+    },
+    {
+      "id": "sound",
+      "number": "073",
+      "name": "Sound",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Vibration made shareable: expression traveling through a medium and altering what receives it.",
+      "gift": "Communication, warning, music, and mutual attunement.",
+      "shadow": "Expression becomes noise, performance, manipulation, or echo.",
+      "file": "cards/073-sound.md"
+    },
+    {
+      "id": "shadow",
+      "number": "074",
+      "name": "Shadow",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Evidence of relation between light, form, and position: neither substance nor mere absence.",
+      "gift": "Depth, contrast, privacy, and recognition of what a self-image excludes.",
+      "shadow": "The unknown is treated as evil, or projection is mistaken for fact.",
+      "file": "cards/074-shadow.md"
+    },
+    {
+      "id": "mirror",
+      "number": "075",
+      "name": "Mirror",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Reflective relation that reveals a view, reverses it, and never contains the whole thing reflected.",
+      "gift": "Self-recognition, feedback, comparison, and reversal of view.",
+      "shadow": "Reflection becomes vanity, surveillance, imitation, or mistaken identity.",
+      "file": "cards/075-mirror.md"
+    }
+  ],
+  "edges": [
+    {
+      "id": "tao--generates--one--1",
+      "source": "tao",
+      "target": "one",
+      "type": "generates",
+      "directed": true
+    },
+    {
+      "id": "tao--holds--mystery--2",
+      "source": "tao",
+      "target": "mystery",
+      "type": "holds",
+      "directed": true
+    },
+    {
+      "id": "tao--expresses--wu-wei--3",
+      "source": "tao",
+      "target": "wu-wei",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "tao--completes--ten-thousand-things--4",
+      "source": "tao",
+      "target": "ten-thousand-things",
+      "type": "completes",
+      "directed": true
+    },
+    {
+      "id": "wu--generates--non-being--1",
+      "source": "wu",
+      "target": "non-being",
+      "type": "generates",
+      "directed": true
+    },
+    {
+      "id": "wu--supports--emptiness--2",
+      "source": "wu",
+      "target": "emptiness",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "wu--balances--being--3",
+      "source": "wu",
+      "target": "being",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "wu--expresses--empty-vessel--4",
+      "source": "wu",
+      "target": "empty-vessel",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "being--complements--non-being--1",
+      "source": "being",
+      "target": "non-being",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "being--generates--ten-thousand-things--2",
+      "source": "being",
+      "target": "ten-thousand-things",
+      "type": "generates",
+      "directed": true
+    },
+    {
+      "id": "being--supports--one--3",
+      "source": "being",
+      "target": "one",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "being--arises-from--wu--4",
+      "source": "being",
+      "target": "wu",
+      "type": "arises-from",
+      "directed": true
+    },
+    {
+      "id": "non-being--complements--being--1",
+      "source": "non-being",
+      "target": "being",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "non-being--arises-from--wu--2",
+      "source": "non-being",
+      "target": "wu",
+      "type": "arises-from",
+      "directed": true
+    },
+    {
+      "id": "non-being--supports--return--3",
+      "source": "non-being",
+      "target": "return",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "non-being--opens--gate--4",
+      "source": "non-being",
+      "target": "gate",
+      "type": "opens",
+      "directed": true
+    },
+    {
+      "id": "one--arises-from--tao--1",
+      "source": "one",
+      "target": "tao",
+      "type": "arises-from",
+      "directed": true
+    },
+    {
+      "id": "one--generates--two--2",
+      "source": "one",
+      "target": "two",
+      "type": "generates",
+      "directed": true
+    },
+    {
+      "id": "one--supports--center--3",
+      "source": "one",
+      "target": "center",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "one--completes--mirror--4",
+      "source": "one",
+      "target": "mirror",
+      "type": "completes",
+      "directed": true
+    },
+    {
+      "id": "two--arises-from--one--1",
+      "source": "two",
+      "target": "one",
+      "type": "arises-from",
+      "directed": true
+    },
+    {
+      "id": "two--generates--ten-thousand-things--2",
+      "source": "two",
+      "target": "ten-thousand-things",
+      "type": "generates",
+      "directed": true
+    },
+    {
+      "id": "two--expresses--yin--3",
+      "source": "two",
+      "target": "yin",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "two--expresses--yang--4",
+      "source": "two",
+      "target": "yang",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "ten-thousand-things--arises-from--two--1",
+      "source": "ten-thousand-things",
+      "target": "two",
+      "type": "arises-from",
+      "directed": true
+    },
+    {
+      "id": "ten-thousand-things--returns-to--tao--2",
+      "source": "ten-thousand-things",
+      "target": "tao",
+      "type": "returns-to",
+      "directed": true
+    },
+    {
+      "id": "ten-thousand-things--supports--branch--3",
+      "source": "ten-thousand-things",
+      "target": "branch",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "ten-thousand-things--expresses--ziran--4",
+      "source": "ten-thousand-things",
+      "target": "ziran",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "return--returns-to--tao--1",
+      "source": "return",
+      "target": "tao",
+      "type": "returns-to",
+      "directed": true
+    },
+    {
+      "id": "return--supports--root--2",
+      "source": "return",
+      "target": "root",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "return--transforms-into--sprout--3",
+      "source": "return",
+      "target": "sprout",
+      "type": "transforms-into",
+      "directed": true
+    },
+    {
+      "id": "return--completes--decay--4",
+      "source": "return",
+      "target": "decay",
+      "type": "completes",
+      "directed": true
+    },
+    {
+      "id": "emptiness--arises-from--wu--1",
+      "source": "emptiness",
+      "target": "wu",
+      "type": "arises-from",
+      "directed": true
+    },
+    {
+      "id": "emptiness--expresses--empty-vessel--2",
+      "source": "emptiness",
+      "target": "empty-vessel",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "emptiness--supports--silence--3",
+      "source": "emptiness",
+      "target": "silence",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "emptiness--balances--ten-thousand-things--4",
+      "source": "emptiness",
+      "target": "ten-thousand-things",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "mystery--held-by--tao--1",
+      "source": "mystery",
+      "target": "tao",
+      "type": "held-by",
+      "directed": true
+    },
+    {
+      "id": "mystery--opens--gate--2",
+      "source": "mystery",
+      "target": "gate",
+      "type": "opens",
+      "directed": true
+    },
+    {
+      "id": "mystery--supports--mist--3",
+      "source": "mystery",
+      "target": "mist",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "mystery--balances--light--4",
+      "source": "mystery",
+      "target": "light",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "yin--complements--yang--1",
+      "source": "yin",
+      "target": "yang",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "yin--supports--receptivity--2",
+      "source": "yin",
+      "target": "receptivity",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "yin--expresses--dark--3",
+      "source": "yin",
+      "target": "dark",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "yin--resonates-with--kun--4",
+      "source": "yin",
+      "target": "kun",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "yang--complements--yin--1",
+      "source": "yang",
+      "target": "yin",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "yang--supports--initiative--2",
+      "source": "yang",
+      "target": "initiative",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "yang--expresses--light--3",
+      "source": "yang",
+      "target": "light",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "yang--resonates-with--qian--4",
+      "source": "yang",
+      "target": "qian",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "stillness--complements--movement--1",
+      "source": "stillness",
+      "target": "movement",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "stillness--supports--still-point--2",
+      "source": "stillness",
+      "target": "still-point",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "stillness--resonates-with--gen--3",
+      "source": "stillness",
+      "target": "gen",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "stillness--expresses--mountain--4",
+      "source": "stillness",
+      "target": "mountain",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "movement--complements--stillness--1",
+      "source": "movement",
+      "target": "stillness",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "movement--supports--flow--2",
+      "source": "movement",
+      "target": "flow",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "movement--resonates-with--zhen--3",
+      "source": "movement",
+      "target": "zhen",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "movement--supports--threshold--4",
+      "source": "movement",
+      "target": "threshold",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "receptivity--complements--initiative--1",
+      "source": "receptivity",
+      "target": "initiative",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "receptivity--supported-by--yin--2",
+      "source": "receptivity",
+      "target": "yin",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "receptivity--resonates-with--kun--3",
+      "source": "receptivity",
+      "target": "kun",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "receptivity--expresses--valley--4",
+      "source": "receptivity",
+      "target": "valley",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "initiative--complements--receptivity--1",
+      "source": "initiative",
+      "target": "receptivity",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "initiative--supported-by--yang--2",
+      "source": "initiative",
+      "target": "yang",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "initiative--resonates-with--qian--3",
+      "source": "initiative",
+      "target": "qian",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "initiative--supports--seed--4",
+      "source": "initiative",
+      "target": "seed",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "soft--complements--hard--1",
+      "source": "soft",
+      "target": "hard",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "soft--supports--yielding--2",
+      "source": "soft",
+      "target": "yielding",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "soft--expresses--water--3",
+      "source": "soft",
+      "target": "water",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "soft--resonates-with--xun--4",
+      "source": "soft",
+      "target": "xun",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "hard--complements--soft--1",
+      "source": "hard",
+      "target": "soft",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "hard--supports--mountain--2",
+      "source": "hard",
+      "target": "mountain",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "hard--expresses--metal--3",
+      "source": "hard",
+      "target": "metal",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "hard--balances--yielding--4",
+      "source": "hard",
+      "target": "yielding",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "dark--complements--light--1",
+      "source": "dark",
+      "target": "light",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "dark--supported-by--yin--2",
+      "source": "dark",
+      "target": "yin",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "dark--supports--mystery--3",
+      "source": "dark",
+      "target": "mystery",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "dark--expresses--moon--4",
+      "source": "dark",
+      "target": "moon",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "light--complements--dark--1",
+      "source": "light",
+      "target": "dark",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "light--supported-by--yang--2",
+      "source": "light",
+      "target": "yang",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "light--supports--mirror--3",
+      "source": "light",
+      "target": "mirror",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "light--expresses--sun--4",
+      "source": "light",
+      "target": "sun",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "valley--complements--mountain--1",
+      "source": "valley",
+      "target": "mountain",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "valley--supports--valley-spirit--2",
+      "source": "valley",
+      "target": "valley-spirit",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "valley--expresses--receptivity--3",
+      "source": "valley",
+      "target": "receptivity",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "valley--resonates-with--kun--4",
+      "source": "valley",
+      "target": "kun",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "mountain--complements--valley--1",
+      "source": "mountain",
+      "target": "valley",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "mountain--supports--stillness--2",
+      "source": "mountain",
+      "target": "stillness",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "mountain--resonates-with--gen--3",
+      "source": "mountain",
+      "target": "gen",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "mountain--balances--zhen--4",
+      "source": "mountain",
+      "target": "zhen",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "wood--generated-by--water--1",
+      "source": "wood",
+      "target": "water",
+      "type": "generated-by",
+      "directed": true
+    },
+    {
+      "id": "wood--generates--fire--2",
+      "source": "wood",
+      "target": "fire",
+      "type": "generates",
+      "directed": true
+    },
+    {
+      "id": "wood--controls--earth--3",
+      "source": "wood",
+      "target": "earth",
+      "type": "controls",
+      "directed": true
+    },
+    {
+      "id": "wood--resonates-with--zhen--4",
+      "source": "wood",
+      "target": "zhen",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "fire--complements--water--1",
+      "source": "fire",
+      "target": "water",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "fire--supports--sun--2",
+      "source": "fire",
+      "target": "sun",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "fire--resonates-with--li--3",
+      "source": "fire",
+      "target": "li",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "fire--generates--earth--4",
+      "source": "fire",
+      "target": "earth",
+      "type": "generates",
+      "directed": true
+    },
+    {
+      "id": "fire--controls--metal--5",
+      "source": "fire",
+      "target": "metal",
+      "type": "controls",
+      "directed": true
+    },
+    {
+      "id": "earth--generated-by--fire--1",
+      "source": "earth",
+      "target": "fire",
+      "type": "generated-by",
+      "directed": true
+    },
+    {
+      "id": "earth--generates--metal--2",
+      "source": "earth",
+      "target": "metal",
+      "type": "generates",
+      "directed": true
+    },
+    {
+      "id": "earth--controls--water--3",
+      "source": "earth",
+      "target": "water",
+      "type": "controls",
+      "directed": true
+    },
+    {
+      "id": "earth--resonates-with--center--4",
+      "source": "earth",
+      "target": "center",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "metal--generated-by--earth--1",
+      "source": "metal",
+      "target": "earth",
+      "type": "generated-by",
+      "directed": true
+    },
+    {
+      "id": "metal--generates--water--2",
+      "source": "metal",
+      "target": "water",
+      "type": "generates",
+      "directed": true
+    },
+    {
+      "id": "metal--controls--wood--3",
+      "source": "metal",
+      "target": "wood",
+      "type": "controls",
+      "directed": true
+    },
+    {
+      "id": "metal--resonates-with--hard--4",
+      "source": "metal",
+      "target": "hard",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "water--complements--fire--1",
+      "source": "water",
+      "target": "fire",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "water--supports--river--2",
+      "source": "water",
+      "target": "river",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "water--resonates-with--kan--3",
+      "source": "water",
+      "target": "kan",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "water--generates--wood--4",
+      "source": "water",
+      "target": "wood",
+      "type": "generates",
+      "directed": true
+    },
+    {
+      "id": "water--controls--fire--5",
+      "source": "water",
+      "target": "fire",
+      "type": "controls",
+      "directed": true
+    },
+    {
+      "id": "qian--complements--kun--1",
+      "source": "qian",
+      "target": "kun",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "qian--supports--initiative--2",
+      "source": "qian",
+      "target": "initiative",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "qian--resonates-with--yang--3",
+      "source": "qian",
+      "target": "yang",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "qian--balances--xun--4",
+      "source": "qian",
+      "target": "xun",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "kun--complements--qian--1",
+      "source": "kun",
+      "target": "qian",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "kun--supports--receptivity--2",
+      "source": "kun",
+      "target": "receptivity",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "kun--resonates-with--yin--3",
+      "source": "kun",
+      "target": "yin",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "kun--balances--kan--4",
+      "source": "kun",
+      "target": "kan",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "zhen--complements--xun--1",
+      "source": "zhen",
+      "target": "xun",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "zhen--supports--movement--2",
+      "source": "zhen",
+      "target": "movement",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "zhen--resonates-with--wood--3",
+      "source": "zhen",
+      "target": "wood",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "zhen--balances--gen--4",
+      "source": "zhen",
+      "target": "gen",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "xun--complements--zhen--1",
+      "source": "xun",
+      "target": "zhen",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "xun--supports--soft--2",
+      "source": "xun",
+      "target": "soft",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "xun--resonates-with--wood--3",
+      "source": "xun",
+      "target": "wood",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "xun--balances--qian--4",
+      "source": "xun",
+      "target": "qian",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "kan--complements--li--1",
+      "source": "kan",
+      "target": "li",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "kan--resonates-with--water--2",
+      "source": "kan",
+      "target": "water",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "kan--supports--river--3",
+      "source": "kan",
+      "target": "river",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "kan--balances--kun--4",
+      "source": "kan",
+      "target": "kun",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "li--complements--kan--1",
+      "source": "li",
+      "target": "kan",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "li--resonates-with--fire--2",
+      "source": "li",
+      "target": "fire",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "li--supports--light--3",
+      "source": "li",
+      "target": "light",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "li--balances--dui--4",
+      "source": "li",
+      "target": "dui",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "gen--complements--dui--1",
+      "source": "gen",
+      "target": "dui",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "gen--resonates-with--mountain--2",
+      "source": "gen",
+      "target": "mountain",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "gen--supports--stillness--3",
+      "source": "gen",
+      "target": "stillness",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "gen--balances--zhen--4",
+      "source": "gen",
+      "target": "zhen",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "dui--complements--gen--1",
+      "source": "dui",
+      "target": "gen",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "dui--supports--sound--2",
+      "source": "dui",
+      "target": "sound",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "dui--supports--mirror--3",
+      "source": "dui",
+      "target": "mirror",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "dui--balances--li--4",
+      "source": "dui",
+      "target": "li",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "wu-wei--expresses--tao--1",
+      "source": "wu-wei",
+      "target": "tao",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "wu-wei--supported-by--ziran--2",
+      "source": "wu-wei",
+      "target": "ziran",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "wu-wei--supports--flow--3",
+      "source": "wu-wei",
+      "target": "flow",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "wu-wei--balances--initiative--4",
+      "source": "wu-wei",
+      "target": "initiative",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "de--arises-from--tao--1",
+      "source": "de",
+      "target": "tao",
+      "type": "arises-from",
+      "directed": true
+    },
+    {
+      "id": "de--supports--ziran--2",
+      "source": "de",
+      "target": "ziran",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "de--expresses--one--3",
+      "source": "de",
+      "target": "one",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "de--balances--shadow--4",
+      "source": "de",
+      "target": "shadow",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "ziran--expresses--ten-thousand-things--1",
+      "source": "ziran",
+      "target": "ten-thousand-things",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "ziran--supports--wu-wei--2",
+      "source": "ziran",
+      "target": "wu-wei",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "ziran--supported-by--de--3",
+      "source": "ziran",
+      "target": "de",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "ziran--resonates-with--pu--4",
+      "source": "ziran",
+      "target": "pu",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "pu--resonates-with--uncarved-block--1",
+      "source": "pu",
+      "target": "uncarved-block",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "pu--supports--ziran--2",
+      "source": "pu",
+      "target": "ziran",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "pu--balances--ten-thousand-things--3",
+      "source": "pu",
+      "target": "ten-thousand-things",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "pu--expresses--wu--4",
+      "source": "pu",
+      "target": "wu",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "uncarved-block--resonates-with--pu--1",
+      "source": "uncarved-block",
+      "target": "pu",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "uncarved-block--supports--seed--2",
+      "source": "uncarved-block",
+      "target": "seed",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "uncarved-block--balances--being--3",
+      "source": "uncarved-block",
+      "target": "being",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "uncarved-block--opens--threshold--4",
+      "source": "uncarved-block",
+      "target": "threshold",
+      "type": "opens",
+      "directed": true
+    },
+    {
+      "id": "empty-vessel--expresses--emptiness--1",
+      "source": "empty-vessel",
+      "target": "emptiness",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "empty-vessel--supported-by--wu--2",
+      "source": "empty-vessel",
+      "target": "wu",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "empty-vessel--supports--receptivity--3",
+      "source": "empty-vessel",
+      "target": "receptivity",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "empty-vessel--balances--ten-thousand-things--4",
+      "source": "empty-vessel",
+      "target": "ten-thousand-things",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "valley-spirit--arises-from--valley--1",
+      "source": "valley-spirit",
+      "target": "valley",
+      "type": "arises-from",
+      "directed": true
+    },
+    {
+      "id": "valley-spirit--supports--receptivity--2",
+      "source": "valley-spirit",
+      "target": "receptivity",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "valley-spirit--opens--gate--3",
+      "source": "valley-spirit",
+      "target": "gate",
+      "type": "opens",
+      "directed": true
+    },
+    {
+      "id": "valley-spirit--resonates-with--kun--4",
+      "source": "valley-spirit",
+      "target": "kun",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "returning--expresses--return--1",
+      "source": "returning",
+      "target": "return",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "returning--supports--root--2",
+      "source": "returning",
+      "target": "root",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "returning--balances--movement--3",
+      "source": "returning",
+      "target": "movement",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "returning--transforms-into--threshold--4",
+      "source": "returning",
+      "target": "threshold",
+      "type": "transforms-into",
+      "directed": true
+    },
+    {
+      "id": "yielding--supported-by--soft--1",
+      "source": "yielding",
+      "target": "soft",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "yielding--supports--flow--2",
+      "source": "yielding",
+      "target": "flow",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "yielding--resonates-with--bamboo--3",
+      "source": "yielding",
+      "target": "bamboo",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "yielding--balances--hard--4",
+      "source": "yielding",
+      "target": "hard",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "flow--supported-by--wu-wei--1",
+      "source": "flow",
+      "target": "wu-wei",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "flow--expresses--water--2",
+      "source": "flow",
+      "target": "water",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "flow--supports--river--3",
+      "source": "flow",
+      "target": "river",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "flow--balances--still-point--4",
+      "source": "flow",
+      "target": "still-point",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "still-point--arises-from--stillness--1",
+      "source": "still-point",
+      "target": "stillness",
+      "type": "arises-from",
+      "directed": true
+    },
+    {
+      "id": "still-point--supports--center--2",
+      "source": "still-point",
+      "target": "center",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "still-point--balances--flow--3",
+      "source": "still-point",
+      "target": "flow",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "still-point--resonates-with--one--4",
+      "source": "still-point",
+      "target": "one",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "center--supported-by--still-point--1",
+      "source": "center",
+      "target": "still-point",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "center--resonates-with--earth--2",
+      "source": "center",
+      "target": "earth",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "center--balances--branch--3",
+      "source": "center",
+      "target": "branch",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "center--expresses--one--4",
+      "source": "center",
+      "target": "one",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "threshold--opened-by--uncarved-block--1",
+      "source": "threshold",
+      "target": "uncarved-block",
+      "type": "opened-by",
+      "directed": true
+    },
+    {
+      "id": "threshold--opens--gate--2",
+      "source": "threshold",
+      "target": "gate",
+      "type": "opens",
+      "directed": true
+    },
+    {
+      "id": "threshold--transforms-into--sprout--3",
+      "source": "threshold",
+      "target": "sprout",
+      "type": "transforms-into",
+      "directed": true
+    },
+    {
+      "id": "threshold--balances--root--4",
+      "source": "threshold",
+      "target": "root",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "root--supports--branch--1",
+      "source": "root",
+      "target": "branch",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "root--supported-by--return--2",
+      "source": "root",
+      "target": "return",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "root--resonates-with--earth--3",
+      "source": "root",
+      "target": "earth",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "root--balances--threshold--4",
+      "source": "root",
+      "target": "threshold",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "branch--arises-from--root--1",
+      "source": "branch",
+      "target": "root",
+      "type": "arises-from",
+      "directed": true
+    },
+    {
+      "id": "branch--supports--blossom--2",
+      "source": "branch",
+      "target": "blossom",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "branch--balances--center--3",
+      "source": "branch",
+      "target": "center",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "branch--expresses--ten-thousand-things--4",
+      "source": "branch",
+      "target": "ten-thousand-things",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "gate--opened-by--mystery--1",
+      "source": "gate",
+      "target": "mystery",
+      "type": "opened-by",
+      "directed": true
+    },
+    {
+      "id": "gate--supported-by--threshold--2",
+      "source": "gate",
+      "target": "threshold",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "gate--supports--breath--3",
+      "source": "gate",
+      "target": "breath",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "gate--balances--empty-vessel--4",
+      "source": "gate",
+      "target": "empty-vessel",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "breath--passes-through--gate--1",
+      "source": "breath",
+      "target": "gate",
+      "type": "passes-through",
+      "directed": true
+    },
+    {
+      "id": "breath--supports--sound--2",
+      "source": "breath",
+      "target": "sound",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "breath--resonates-with--xun--3",
+      "source": "breath",
+      "target": "xun",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "breath--balances--still-point--4",
+      "source": "breath",
+      "target": "still-point",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "river--arises-from--water--1",
+      "source": "river",
+      "target": "water",
+      "type": "arises-from",
+      "directed": true
+    },
+    {
+      "id": "river--supported-by--flow--2",
+      "source": "river",
+      "target": "flow",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "river--receives--rain--3",
+      "source": "river",
+      "target": "rain",
+      "type": "receives",
+      "directed": true
+    },
+    {
+      "id": "river--transforms-into--mist--4",
+      "source": "river",
+      "target": "mist",
+      "type": "transforms-into",
+      "directed": true
+    },
+    {
+      "id": "rain--descends-from--cloud--1",
+      "source": "rain",
+      "target": "cloud",
+      "type": "descends-from",
+      "directed": true
+    },
+    {
+      "id": "rain--feeds--river--2",
+      "source": "rain",
+      "target": "river",
+      "type": "feeds",
+      "directed": true
+    },
+    {
+      "id": "rain--supports--sprout--3",
+      "source": "rain",
+      "target": "sprout",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "rain--balances--fire--4",
+      "source": "rain",
+      "target": "fire",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "cloud--transforms-into--rain--1",
+      "source": "cloud",
+      "target": "rain",
+      "type": "transforms-into",
+      "directed": true
+    },
+    {
+      "id": "cloud--arises-from--mist--2",
+      "source": "cloud",
+      "target": "mist",
+      "type": "arises-from",
+      "directed": true
+    },
+    {
+      "id": "cloud--supports--dark--3",
+      "source": "cloud",
+      "target": "dark",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "cloud--balances--sun--4",
+      "source": "cloud",
+      "target": "sun",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "mist--arises-from--river--1",
+      "source": "mist",
+      "target": "river",
+      "type": "arises-from",
+      "directed": true
+    },
+    {
+      "id": "mist--transforms-into--cloud--2",
+      "source": "mist",
+      "target": "cloud",
+      "type": "transforms-into",
+      "directed": true
+    },
+    {
+      "id": "mist--supports--mystery--3",
+      "source": "mist",
+      "target": "mystery",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "mist--balances--light--4",
+      "source": "mist",
+      "target": "light",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "bamboo--resonates-with--yielding--1",
+      "source": "bamboo",
+      "target": "yielding",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "bamboo--supports--breath--2",
+      "source": "bamboo",
+      "target": "breath",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "bamboo--expresses--empty-vessel--3",
+      "source": "bamboo",
+      "target": "empty-vessel",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "bamboo--balances--pine--4",
+      "source": "bamboo",
+      "target": "pine",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "pine--supports--root--1",
+      "source": "pine",
+      "target": "root",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "pine--resonates-with--water--2",
+      "source": "pine",
+      "target": "water",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "pine--balances--bamboo--3",
+      "source": "pine",
+      "target": "bamboo",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "pine--completes--decay--4",
+      "source": "pine",
+      "target": "decay",
+      "type": "completes",
+      "directed": true
+    },
+    {
+      "id": "crane--supports--stillness--1",
+      "source": "crane",
+      "target": "stillness",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "crane--resonates-with--light--2",
+      "source": "crane",
+      "target": "light",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "crane--balances--turtle--3",
+      "source": "crane",
+      "target": "turtle",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "crane--supports--threshold--4",
+      "source": "crane",
+      "target": "threshold",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "turtle--supports--hard--1",
+      "source": "turtle",
+      "target": "hard",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "turtle--resonates-with--water--2",
+      "source": "turtle",
+      "target": "water",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "turtle--balances--crane--3",
+      "source": "turtle",
+      "target": "crane",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "turtle--supports--returning--4",
+      "source": "turtle",
+      "target": "returning",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "dragon--supports--cloud--1",
+      "source": "dragon",
+      "target": "cloud",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "dragon--resonates-with--zhen--2",
+      "source": "dragon",
+      "target": "zhen",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "dragon--balances--tiger--3",
+      "source": "dragon",
+      "target": "tiger",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "dragon--transforms-into--rain--4",
+      "source": "dragon",
+      "target": "rain",
+      "type": "transforms-into",
+      "directed": true
+    },
+    {
+      "id": "tiger--supports--hard--1",
+      "source": "tiger",
+      "target": "hard",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "tiger--resonates-with--metal--2",
+      "source": "tiger",
+      "target": "metal",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "tiger--balances--dragon--3",
+      "source": "tiger",
+      "target": "dragon",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "tiger--supports--gate--4",
+      "source": "tiger",
+      "target": "gate",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "moon--expresses--dark--1",
+      "source": "moon",
+      "target": "dark",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "moon--reflects--sun--2",
+      "source": "moon",
+      "target": "sun",
+      "type": "reflects",
+      "directed": true
+    },
+    {
+      "id": "moon--supports--mirror--3",
+      "source": "moon",
+      "target": "mirror",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "moon--resonates-with--water--4",
+      "source": "moon",
+      "target": "water",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "sun--expresses--light--1",
+      "source": "sun",
+      "target": "light",
+      "type": "expresses",
+      "directed": true
+    },
+    {
+      "id": "sun--reflected-by--moon--2",
+      "source": "sun",
+      "target": "moon",
+      "type": "reflected-by",
+      "directed": true
+    },
+    {
+      "id": "sun--supports--sprout--3",
+      "source": "sun",
+      "target": "sprout",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "sun--balances--cloud--4",
+      "source": "sun",
+      "target": "cloud",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "star--supports--qian--1",
+      "source": "star",
+      "target": "qian",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "star--resonates-with--crane--2",
+      "source": "star",
+      "target": "crane",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "star--balances--root--3",
+      "source": "star",
+      "target": "root",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "star--supports--seed--4",
+      "source": "star",
+      "target": "seed",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "seed--supported-by--uncarved-block--1",
+      "source": "seed",
+      "target": "uncarved-block",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "seed--supported-by--root--2",
+      "source": "seed",
+      "target": "root",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "seed--transforms-into--sprout--3",
+      "source": "seed",
+      "target": "sprout",
+      "type": "transforms-into",
+      "directed": true
+    },
+    {
+      "id": "seed--balances--fruit--4",
+      "source": "seed",
+      "target": "fruit",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "sprout--arises-from--seed--1",
+      "source": "sprout",
+      "target": "seed",
+      "type": "arises-from",
+      "directed": true
+    },
+    {
+      "id": "sprout--supported-by--rain--2",
+      "source": "sprout",
+      "target": "rain",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "sprout--transforms-into--blossom--3",
+      "source": "sprout",
+      "target": "blossom",
+      "type": "transforms-into",
+      "directed": true
+    },
+    {
+      "id": "sprout--resonates-with--wood--4",
+      "source": "sprout",
+      "target": "wood",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "blossom--arises-from--sprout--1",
+      "source": "blossom",
+      "target": "sprout",
+      "type": "arises-from",
+      "directed": true
+    },
+    {
+      "id": "blossom--supported-by--branch--2",
+      "source": "blossom",
+      "target": "branch",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "blossom--transforms-into--fruit--3",
+      "source": "blossom",
+      "target": "fruit",
+      "type": "transforms-into",
+      "directed": true
+    },
+    {
+      "id": "blossom--balances--decay--4",
+      "source": "blossom",
+      "target": "decay",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "fruit--arises-from--blossom--1",
+      "source": "fruit",
+      "target": "blossom",
+      "type": "arises-from",
+      "directed": true
+    },
+    {
+      "id": "fruit--contains--seed--2",
+      "source": "fruit",
+      "target": "seed",
+      "type": "contains",
+      "directed": true
+    },
+    {
+      "id": "fruit--transforms-into--decay--3",
+      "source": "fruit",
+      "target": "decay",
+      "type": "transforms-into",
+      "directed": true
+    },
+    {
+      "id": "fruit--balances--root--4",
+      "source": "fruit",
+      "target": "root",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "decay--arises-from--fruit--1",
+      "source": "decay",
+      "target": "fruit",
+      "type": "arises-from",
+      "directed": true
+    },
+    {
+      "id": "decay--supports--compost--2",
+      "source": "decay",
+      "target": "compost",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "decay--transforms-into--return--3",
+      "source": "decay",
+      "target": "return",
+      "type": "transforms-into",
+      "directed": true
+    },
+    {
+      "id": "decay--balances--blossom--4",
+      "source": "decay",
+      "target": "blossom",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "compost--arises-from--decay--1",
+      "source": "compost",
+      "target": "decay",
+      "type": "arises-from",
+      "directed": true
+    },
+    {
+      "id": "compost--supports--earth--2",
+      "source": "compost",
+      "target": "earth",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "compost--feeds--root--3",
+      "source": "compost",
+      "target": "root",
+      "type": "feeds",
+      "directed": true
+    },
+    {
+      "id": "compost--transforms-into--seed--4",
+      "source": "compost",
+      "target": "seed",
+      "type": "transforms-into",
+      "directed": true
+    },
+    {
+      "id": "silence--supported-by--emptiness--1",
+      "source": "silence",
+      "target": "emptiness",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "silence--complements--sound--2",
+      "source": "silence",
+      "target": "sound",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "silence--supports--mist--3",
+      "source": "silence",
+      "target": "mist",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "silence--balances--initiative--4",
+      "source": "silence",
+      "target": "initiative",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "sound--arises-from--breath--1",
+      "source": "sound",
+      "target": "breath",
+      "type": "arises-from",
+      "directed": true
+    },
+    {
+      "id": "sound--complements--silence--2",
+      "source": "sound",
+      "target": "silence",
+      "type": "complements",
+      "directed": false
+    },
+    {
+      "id": "sound--resonates-with--dui--3",
+      "source": "sound",
+      "target": "dui",
+      "type": "resonates-with",
+      "directed": false
+    },
+    {
+      "id": "sound--supports--mirror--4",
+      "source": "sound",
+      "target": "mirror",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "shadow--arises-from--light--1",
+      "source": "shadow",
+      "target": "light",
+      "type": "arises-from",
+      "directed": true
+    },
+    {
+      "id": "shadow--supported-by--dark--2",
+      "source": "shadow",
+      "target": "dark",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "shadow--balances--de--3",
+      "source": "shadow",
+      "target": "de",
+      "type": "balances",
+      "directed": false
+    },
+    {
+      "id": "shadow--supports--mirror--4",
+      "source": "shadow",
+      "target": "mirror",
+      "type": "supports",
+      "directed": true
+    },
+    {
+      "id": "mirror--reflects--moon--1",
+      "source": "mirror",
+      "target": "moon",
+      "type": "reflects",
+      "directed": true
+    },
+    {
+      "id": "mirror--supported-by--light--2",
+      "source": "mirror",
+      "target": "light",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "mirror--supported-by--shadow--3",
+      "source": "mirror",
+      "target": "shadow",
+      "type": "supported-by",
+      "directed": true
+    },
+    {
+      "id": "mirror--completes--one--4",
+      "source": "mirror",
+      "target": "one",
+      "type": "completes",
+      "directed": true
+    }
+  ]
+}
