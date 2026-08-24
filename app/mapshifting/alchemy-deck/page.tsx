@@ -1,27 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import cards from "./alchemy-cards.generated.json";
+import AlchemyCardLibrary from "./AlchemyCardLibrary";
 
 export const metadata: Metadata = {
-  title: "Mapshifting Alchemy Deck · Complete Art Library",
+  title: "Mapshifting Alchemy Deck · Complete Card Library",
   description:
-    "All 100 finished portrait and landscape compositions for the 50-card Mapshifting Alchemy visual library.",
+    "All 50 source-backed Alchemy card dossiers with gifts, wounds, correspondences, narratives, descriptions, and 100 finished compositions.",
 };
-
-const suits = [
-  { key: "alembic", name: "Alembic", meaning: "Love", ruler: "Venus", mark: "Ⅰ" },
-  { key: "tree", name: "Tree", meaning: "Health", ruler: "Sun", mark: "Ⅱ" },
-  { key: "retort", name: "Retort", meaning: "Wealth", ruler: "Jupiter", mark: "Ⅲ" },
-  { key: "egg", name: "Egg", meaning: "Protection", ruler: "Moon", mark: "Ⅳ" },
-  { key: "athanor", name: "Athanor", meaning: "Power", ruler: "Mars", mark: "Ⅴ" },
-  { key: "wild", name: "Wild Cards", meaning: "Supplemental force", ruler: "Mercury", mark: "✦" },
-] as const;
-
-function assetPath(card: (typeof cards)[number], orientation: "landscape" | "portrait") {
-  const width = orientation === "landscape" ? 960 : 540;
-  const slug = card.name.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-  return `/mapshifting/alchemy/cards/${card.id}-${slug}-${orientation}-w${width}.webp`;
-}
 
 export default function AlchemyDeckPage() {
   return (
@@ -43,7 +28,7 @@ export default function AlchemyDeckPage() {
         <section className="deck-hero alchemy-hero">
           <div className="deck-hero-copy">
             <p className="deck-eyebrow">THE BOOK OF ALCHEMY</p>
-            <span className="deck-status">Complete visual library · 2026 web edition</span>
+            <span className="deck-status">Complete card library · 2026 web edition</span>
             <h1>Mapshifting<em>Alchemy Deck</em></h1>
             <p>
               Fifty alchemical identities, each interpreted twice: a portrait card and an independently composed
@@ -83,62 +68,12 @@ export default function AlchemyDeckPage() {
           <div className="deck-section-heading">
             <div><p className="deck-eyebrow">COMPLETE ART LIBRARY</p><h2>Fifty cards. One hundred finished works.</h2></div>
             <p>
-              The card order is preserved across five nine-card suits and five Wild Cards. Select any artwork to
-              open its web-resolution file. Both orientation-specific compositions appear together below.
+              The card order is preserved across five nine-card suits and five Wild Cards. Open either artwork at
+              web resolution, or choose “Read the complete card” for its gifts, wounds, narrative, description, and correspondences.
             </p>
           </div>
 
-          <nav className="alchemy-suit-index" aria-label="Alchemy suits">
-            {suits.map((suit) => (
-              <a key={suit.key} href={`#${suit.key}`} data-suit={suit.key}>
-                <span>{suit.mark}</span><b>{suit.name}</b><small>{suit.meaning}</small>
-              </a>
-            ))}
-          </nav>
-
-          <div className="alchemy-suits">
-            {suits.map((suit) => {
-              const suitCards = cards.filter((card) => card.suitKey === suit.key);
-              return (
-                <section className="alchemy-suit" id={suit.key} key={suit.key} data-suit={suit.key}>
-                  <header>
-                    <span>{suit.mark}</span>
-                    <div><p className="deck-eyebrow">{suit.meaning} · Ruled by {suit.ruler}</p><h3>{suit.name}</h3></div>
-                    <small>{suitCards.length} cards · {suitCards.length * 2} works</small>
-                  </header>
-                  <div className="alchemy-card-grid">
-                    {suitCards.map((card) => {
-                      const landscape = assetPath(card, "landscape");
-                      const portrait = assetPath(card, "portrait");
-                      return (
-                        <article className="alchemy-art-card" id={card.id} key={card.id}>
-                          <a className="alchemy-landscape-art" href={landscape} target="_blank" rel="noreferrer" aria-label={`Open ${card.name} landscape artwork`}>
-                            <img src={landscape} alt={`${card.name} — landscape composition from the ${card.suit} suit`} width={960} height={540} loading="lazy" decoding="async" />
-                            <span>Landscape</span>
-                          </a>
-                          <div className="alchemy-card-lower">
-                            <a className="alchemy-portrait-art" href={portrait} target="_blank" rel="noreferrer" aria-label={`Open ${card.name} portrait artwork`}>
-                              <img src={portrait} alt={`${card.name} — portrait composition from the ${card.suit} suit`} width={540} height={960} loading="lazy" decoding="async" />
-                              <span>Portrait</span>
-                            </a>
-                            <div className="alchemy-card-copy">
-                              <small>{card.id.replace("card-", "")} · {card.grade}</small>
-                              <h4>{card.name}</h4>
-                              <dl>
-                                <div><dt>Suit</dt><dd>{card.suit}</dd></div>
-                                <div><dt>Current</dt><dd>{card.suitMeaning}</dd></div>
-                                <div><dt>Ruler</dt><dd>{card.suitRuler}</dd></div>
-                              </dl>
-                            </div>
-                          </div>
-                        </article>
-                      );
-                    })}
-                  </div>
-                </section>
-              );
-            })}
-          </div>
+          <AlchemyCardLibrary />
         </section>
 
         <section className="alchemy-contact-section" id="contact-sheets">
@@ -159,8 +94,8 @@ export default function AlchemyDeckPage() {
         </section>
 
         <section className="alchemy-production">
-          <div><p className="deck-eyebrow">VISUAL RELEASE</p><h2>Finished art, preserved at the right scale.</h2><p>The site carries all 100 approved compositions as optimized WebP artwork. Archival masters, production renditions, prompt history, checksums, and source evidence remain in the maintained card kit rather than being compressed into the public site.</p></div>
-          <ol><li><span>01</span><p>50 portrait masters reviewed as full compositions.</p></li><li><span>02</span><p>50 landscape masters reviewed independently—not cropped from portrait.</p></li><li><span>03</span><p>Structural validation reports zero errors across the visual suite.</p></li><li><span>04</span><p>Textual readings remain a separate editorial layer; this release publishes the finished art.</p></li></ol>
+          <div><p className="deck-eyebrow">COMPLETE CARD RELEASE</p><h2>Art and recovered meaning, together.</h2><p>The site carries all 100 approved compositions plus a source-backed dossier for every card. Each dossier brings together gifts, wounds, correspondences, the recovered narrative, and the complete visual description while keeping unresolved source gaps visible.</p></div>
+          <ol><li><span>01</span><p>50 portrait masters reviewed as full compositions.</p></li><li><span>02</span><p>50 landscape masters reviewed independently—not cropped from portrait.</p></li><li><span>03</span><p>Each card opens into one scrollable information dossier.</p></li><li><span>04</span><p>Unrecovered information is identified explicitly rather than silently reconstructed.</p></li></ol>
         </section>
 
         <section className="deck-downloads" id="downloads">
@@ -174,7 +109,7 @@ export default function AlchemyDeckPage() {
 
       <footer className="deck-footer">
         <img src="/assets/kiduna/mark.svg" alt="" width={26} height={26} />
-        <p>All 100 orientation-specific compositions are published here. Source evidence and readings remain distinct from the visual release.</p>
+        <p>All 100 orientation-specific compositions and all currently recovered card readings are published here.</p>
         <Link href="/">Kiduna.design →</Link>
       </footer>
     </div>

@@ -45,6 +45,11 @@ check(route.includes('/systems-oracle-app/index.html#home'), "Systems Oracle rou
 const alchemyCards = JSON.parse(await readFile(join(alchemy, "cards.json"), "utf8"));
 check(alchemyCards.length === 50, `Expected 50 Alchemy cards; found ${alchemyCards.length}`);
 for (const card of alchemyCards) {
+  check(Array.isArray(card.gifts), `Alchemy card lacks a gifts list: ${card.id}`);
+  check(Array.isArray(card.wounds), `Alchemy card lacks a wounds list: ${card.id}`);
+  check(typeof card.description === "string" && card.description.length > 20, `Alchemy card lacks its complete description: ${card.id}`);
+  check(typeof card.narrative === "string", `Alchemy card lacks a narrative field: ${card.id}`);
+  check(["source-backed", "incomplete-source"].includes(card.contentStatus), `Alchemy card lacks an explicit content status: ${card.id}`);
   const slug = card.name.toLowerCase().replace(/[^a-z0-9]+/g, "-");
   for (const [orientation, width] of [["landscape", 960], ["portrait", 540]]) {
     const name = `${card.id}-${slug}-${orientation}-w${width}.webp`;
@@ -53,6 +58,10 @@ for (const card of alchemyCards) {
     if (await exists(path)) check((await stat(path)).size > 40_000, `Alchemy artwork is unexpectedly small: ${name}`);
   }
 }
+check(alchemyCards.filter((card) => card.contentStatus === "incomplete-source").length === 3, "Expected exactly three explicitly incomplete Alchemy source records");
+const alchemyLibrary = await readFile(join(root, "app", "mapshifting", "alchemy-deck", "AlchemyCardLibrary.tsx"), "utf8");
+check(alchemyLibrary.includes("Read the complete card"), "Alchemy cards do not expose the complete-card call to action");
+check(alchemyLibrary.includes('role="dialog"'), "Alchemy complete-card experience is not exposed as an accessible dialog");
 for (const name of ["mapshifting-alchemy-landscape-contact-sheet.jpg", "mapshifting-alchemy-portrait-contact-sheet.jpg"]) {
   check(await exists(alchemy, "contact-sheets", name), `Missing Alchemy contact sheet: ${name}`);
 }
