@@ -1,0 +1,908 @@
+{
+  "schema": "tao-enamel-oracle.nodes.v1",
+  "count": 75,
+  "nodes": [
+    {
+      "id": "tao",
+      "number": "001",
+      "name": "Tao (Dao)",
+      "families": [
+        "The Source"
+      ],
+      "essence": "The way before definition: source, course, and unpossessed order.",
+      "gift": "Orientation without fixation.",
+      "shadow": "The nameless way is reduced to a doctrine, brand, or answer.",
+      "file": "cards/001-tao.md"
+    },
+    {
+      "id": "wu",
+      "number": "002",
+      "name": "Wu — Not-Having",
+      "families": [
+        "The Source"
+      ],
+      "essence": "Absence as an active condition: what is not possessed, imposed, or occupied.",
+      "gift": "Freedom from capture.",
+      "shadow": "Absence is mistaken for nihilism or neglect.",
+      "file": "cards/002-wu.md"
+    },
+    {
+      "id": "being",
+      "number": "003",
+      "name": "Being (You)",
+      "families": [
+        "The Source"
+      ],
+      "essence": "Manifest presence: the named, formed, available face of reality.",
+      "gift": "Specificity, contact, and usable form.",
+      "shadow": "Form mistakes itself for the whole.",
+      "file": "cards/003-being.md"
+    },
+    {
+      "id": "non-being",
+      "number": "004",
+      "name": "Non-Being (Wu)",
+      "families": [
+        "The Source"
+      ],
+      "essence": "The unmanifest pole from which forms become possible and to which they cease.",
+      "gift": "Renewal through unfixing.",
+      "shadow": "The unmanifest is romanticized as superior to embodied life.",
+      "file": "cards/004-non-being.md"
+    },
+    {
+      "id": "one",
+      "number": "005",
+      "name": "One",
+      "families": [
+        "The Source"
+      ],
+      "essence": "Undivided coherence before polarity, not sameness imposed upon difference.",
+      "gift": "Coherence and common ground.",
+      "shadow": "Unity becomes conformity.",
+      "file": "cards/005-one.md"
+    },
+    {
+      "id": "two",
+      "number": "006",
+      "name": "Two",
+      "families": [
+        "The Source"
+      ],
+      "essence": "Differentiation through which relation, polarity, and change become visible.",
+      "gift": "Discernment through contrast.",
+      "shadow": "Difference hardens into opposition.",
+      "file": "cards/006-two.md"
+    },
+    {
+      "id": "ten-thousand-things",
+      "number": "007",
+      "name": "Ten Thousand Things",
+      "families": [
+        "The Source"
+      ],
+      "essence": "The inexhaustible multiplicity of beings, events, names, and relations.",
+      "gift": "Diversity, surprise, and innumerable pathways.",
+      "shadow": "Multiplicity becomes noise, inventory, or consumption.",
+      "file": "cards/007-ten-thousand-things.md"
+    },
+    {
+      "id": "return",
+      "number": "008",
+      "name": "Return",
+      "families": [
+        "The Source"
+      ],
+      "essence": "Reversal is the movement of the Way: outward unfolding bends back toward root.",
+      "gift": "Renewal, recollection, and restored proportion.",
+      "shadow": "Return becomes nostalgia or forced restoration.",
+      "file": "cards/008-return.md"
+    },
+    {
+      "id": "emptiness",
+      "number": "009",
+      "name": "Emptiness",
+      "families": [
+        "The Source"
+      ],
+      "essence": "Usable capacity created by what is not filled.",
+      "gift": "Room, listening, and uncommitted potential.",
+      "shadow": "Emptiness becomes sterility, dissociation, or aesthetic purity.",
+      "file": "cards/009-emptiness.md"
+    },
+    {
+      "id": "mystery",
+      "number": "010",
+      "name": "Mystery (Xuan)",
+      "families": [
+        "The Source"
+      ],
+      "essence": "The shared depth where named and unnamed remain one source under different aspects.",
+      "gift": "Wonder disciplined by humility.",
+      "shadow": "Mystery is used to conceal weak claims or claim secret authority.",
+      "file": "cards/010-mystery.md"
+    },
+    {
+      "id": "yin",
+      "number": "011",
+      "name": "Yin",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "The receptive, inward, cooling, darkening tendency within change.",
+      "gift": "Incubation, receptivity, and depth.",
+      "shadow": "Receptivity collapses into passivity or concealment.",
+      "file": "cards/011-yin.md"
+    },
+    {
+      "id": "yang",
+      "number": "012",
+      "name": "Yang",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "The active, outward, warming, brightening tendency within change.",
+      "gift": "Clarity, expression, and momentum.",
+      "shadow": "Initiative becomes domination or exposure without shelter.",
+      "file": "cards/012-yang.md"
+    },
+    {
+      "id": "stillness",
+      "number": "013",
+      "name": "Stillness",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "The capacity to cease motion long enough for pattern and limit to appear.",
+      "gift": "Concentration, recovery, and boundary.",
+      "shadow": "Stillness hardens into refusal or numbness.",
+      "file": "cards/013-stillness.md"
+    },
+    {
+      "id": "movement",
+      "number": "014",
+      "name": "Movement",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "The activation through which conditions meet, separate, and transform.",
+      "gift": "Initiation, circulation, and encounter.",
+      "shadow": "Motion becomes agitation, flight, or compulsion.",
+      "file": "cards/014-movement.md"
+    },
+    {
+      "id": "receptivity",
+      "number": "015",
+      "name": "Receptivity",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "The strength to be shaped by contact without surrendering discernment.",
+      "gift": "Learning, hospitality, and adaptive response.",
+      "shadow": "Openness becomes indiscriminate absorption.",
+      "file": "cards/015-receptivity.md"
+    },
+    {
+      "id": "initiative",
+      "number": "016",
+      "name": "Initiative",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "The force that begins, names, or enters before conditions organize themselves.",
+      "gift": "Agency, courage, and generative first motion.",
+      "shadow": "Beginning becomes conquest or attachment to authorship.",
+      "file": "cards/016-initiative.md"
+    },
+    {
+      "id": "soft",
+      "number": "017",
+      "name": "Soft",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "What yields, bends, or enters without losing continuity.",
+      "gift": "Adaptation, intimacy, and persistence.",
+      "shadow": "Softness avoids necessary resistance or truth.",
+      "file": "cards/017-soft.md"
+    },
+    {
+      "id": "hard",
+      "number": "018",
+      "name": "Hard",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "What holds shape, resists pressure, cuts, or bears weight.",
+      "gift": "Protection, precision, and endurance.",
+      "shadow": "Strength becomes brittleness, domination, or injury.",
+      "file": "cards/018-hard.md"
+    },
+    {
+      "id": "dark",
+      "number": "019",
+      "name": "Dark",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "The concealed, cooling field where forms withdraw from immediate view.",
+      "gift": "Privacy, gestation, and relief from display.",
+      "shadow": "Concealment protects deception or fear.",
+      "file": "cards/019-dark.md"
+    },
+    {
+      "id": "light",
+      "number": "020",
+      "name": "Light",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "The revealing, warming field in which distinctions become visible.",
+      "gift": "Clarity, recognition, and orientation.",
+      "shadow": "Illumination becomes surveillance, certainty, or glare.",
+      "file": "cards/020-light.md"
+    },
+    {
+      "id": "valley",
+      "number": "021",
+      "name": "Valley",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "Low receptive form that gathers flows, relation, and fertility.",
+      "gift": "Humility, convergence, and generative receptivity.",
+      "shadow": "Lowliness becomes self-erasure or accumulated burden.",
+      "file": "cards/021-valley.md"
+    },
+    {
+      "id": "mountain",
+      "number": "022",
+      "name": "Mountain",
+      "families": [
+        "The Great Polarity"
+      ],
+      "essence": "Concentrated stillness: boundary, endurance, stopping, and obstructive mass.",
+      "gift": "Meditation, protection, and stable form.",
+      "shadow": "Boundary becomes refusal, isolation, or obstacle.",
+      "file": "cards/022-mountain.md"
+    },
+    {
+      "id": "wood",
+      "number": "023",
+      "name": "Wood (Mu)",
+      "families": [
+        "The Five Phases"
+      ],
+      "essence": "Rising, branching life that seeks room, direction, and flexible extension.",
+      "gift": "Vision, flexibility, initiative, and renewal.",
+      "shadow": "Growth becomes impatience, invasion, or frustrated anger.",
+      "file": "cards/023-wood.md"
+    },
+    {
+      "id": "fire",
+      "number": "024",
+      "name": "Fire",
+      "families": [
+        "The Great Polarity",
+        "The Five Phases"
+      ],
+      "essence": "Radiant transformation that warms, reveals, attaches, consumes, and spreads.",
+      "gift": "Warmth, visibility, connection, and rapid change.",
+      "shadow": "Illumination clings to appearances; warmth becomes hunger.",
+      "file": "cards/024-fire.md"
+    },
+    {
+      "id": "earth",
+      "number": "025",
+      "name": "Earth (Tu)",
+      "families": [
+        "The Five Phases"
+      ],
+      "essence": "Centering transformation that receives, composts, nourishes, and redistributes.",
+      "gift": "Nourishment, mediation, steadiness, and belonging.",
+      "shadow": "Care becomes worry, overholding, or refusal to differentiate.",
+      "file": "cards/025-earth.md"
+    },
+    {
+      "id": "metal",
+      "number": "026",
+      "name": "Metal (Jin)",
+      "families": [
+        "The Five Phases"
+      ],
+      "essence": "Contracting clarity that forms boundaries, condenses value, and releases what is finished.",
+      "gift": "Discernment, integrity, completion, and release.",
+      "shadow": "Precision becomes grief-bound rigidity, judgment, or severance.",
+      "file": "cards/026-metal.md"
+    },
+    {
+      "id": "water",
+      "number": "027",
+      "name": "Water",
+      "families": [
+        "The Great Polarity",
+        "The Five Phases"
+      ],
+      "essence": "Yielding power that descends, nourishes, seeks the low place, and reshapes resistance.",
+      "gift": "Adaptation, depth, persistence, and nourishment.",
+      "shadow": "Yielding becomes evasion; depth becomes danger or concealment.",
+      "file": "cards/027-water.md"
+    },
+    {
+      "id": "qian",
+      "number": "028",
+      "name": "Qian — Heaven",
+      "families": [
+        "The Eight Trigrams"
+      ],
+      "essence": "Unbroken creative force: initiating, enduring, and responsible for what it sets in motion.",
+      "gift": "Creative initiative and constancy.",
+      "shadow": "Strength becomes command, pride, or action without receptivity.",
+      "file": "cards/028-qian.md"
+    },
+    {
+      "id": "kun",
+      "number": "029",
+      "name": "Kun — Earth",
+      "families": [
+        "The Eight Trigrams"
+      ],
+      "essence": "Broken receptive force: bearing, nourishing, and completing without claiming authorship.",
+      "gift": "Devotion, capacity, and completion.",
+      "shadow": "Service becomes self-erasure, inertia, or indiscriminate compliance.",
+      "file": "cards/029-kun.md"
+    },
+    {
+      "id": "zhen",
+      "number": "030",
+      "name": "Zhen — Thunder",
+      "families": [
+        "The Eight Trigrams"
+      ],
+      "essence": "Arousing shock: the first decisive movement that breaks stillness.",
+      "gift": "Courage, beginning, and release from inertia.",
+      "shadow": "Shock becomes panic, impulsiveness, or repeated disruption.",
+      "file": "cards/030-zhen.md"
+    },
+    {
+      "id": "xun",
+      "number": "031",
+      "name": "Xun — Wind / Wood",
+      "families": [
+        "The Eight Trigrams"
+      ],
+      "essence": "Gentle penetration: influence that enters by continuity, adaptation, and repeated contact.",
+      "gift": "Persuasion, responsiveness, and gradual reach.",
+      "shadow": "Gentleness becomes indecision, insinuation, or invisible pressure.",
+      "file": "cards/031-xun.md"
+    },
+    {
+      "id": "kan",
+      "number": "032",
+      "name": "Kan — Water",
+      "families": [
+        "The Eight Trigrams"
+      ],
+      "essence": "A true current carried through danger: depth, ravine, repetition, and practiced passage.",
+      "gift": "Depth, adaptability, and skill learned by repetition.",
+      "shadow": "Danger fascinates; depth becomes secrecy or habitual crisis.",
+      "file": "cards/032-kan.md"
+    },
+    {
+      "id": "li",
+      "number": "033",
+      "name": "Li — Fire",
+      "families": [
+        "The Eight Trigrams"
+      ],
+      "essence": "Illumination that depends on what it clings to: radiance, discernment, and attachment.",
+      "gift": "Clarity, culture, warmth, and articulate relation.",
+      "shadow": "Brightness clings to image, validation, or consuming fuel.",
+      "file": "cards/033-li.md"
+    },
+    {
+      "id": "gen",
+      "number": "034",
+      "name": "Gen — Mountain",
+      "families": [
+        "The Eight Trigrams"
+      ],
+      "essence": "Keeping still at the proper limit: stopping, boundary, completion, and renewed beginning.",
+      "gift": "Meditation, containment, and timely stopping.",
+      "shadow": "Stillness becomes obstruction, stubbornness, or isolation.",
+      "file": "cards/034-gen.md"
+    },
+    {
+      "id": "dui",
+      "number": "035",
+      "name": "Dui — Lake",
+      "families": [
+        "The Eight Trigrams"
+      ],
+      "essence": "Joyous exchange at an open surface: pleasure, speech, reflection, and mutual influence.",
+      "gift": "Joy, conversation, ease, and shared refreshment.",
+      "shadow": "Pleasure flatters, leaks, or avoids necessary depth.",
+      "file": "cards/035-dui.md"
+    },
+    {
+      "id": "wu-wei",
+      "number": "036",
+      "name": "Wu Wei",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Action free of coercive strain: responding so closely to conditions that force is not wasted.",
+      "gift": "Efficacy, ease, timing, and non-contention.",
+      "shadow": "Non-forcing is confused with passivity, neglect, or spiritual superiority.",
+      "file": "cards/036-wu-wei.md"
+    },
+    {
+      "id": "de",
+      "number": "037",
+      "name": "De — Immanent Power",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "The particular efficacy by which a being follows the Way as itself.",
+      "gift": "Presence, trustworthiness, and fitting power.",
+      "shadow": "Virtue becomes reputation, moral display, or a claim to superiority.",
+      "file": "cards/037-de.md"
+    },
+    {
+      "id": "ziran",
+      "number": "038",
+      "name": "Ziran — Self-So",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "The spontaneous suchness by which things unfold from their own conditions, not an external mold.",
+      "gift": "Authenticity, adaptation, and uncontrived order.",
+      "shadow": "Spontaneity excuses impulse, habit, or avoidance of craft.",
+      "file": "cards/038-ziran.md"
+    },
+    {
+      "id": "pu",
+      "number": "039",
+      "name": "Pu — Simplicity",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Original simplicity: unadorned sufficiency before value is inflated by display and division.",
+      "gift": "Directness, sufficiency, and freedom from display.",
+      "shadow": "Simplicity becomes naïveté, anti-intellectualism, or purity theater.",
+      "file": "cards/039-pu.md"
+    },
+    {
+      "id": "uncarved-block",
+      "number": "040",
+      "name": "Uncarved Block",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Potential before imposed use: a form not yet narrowed to one identity or function.",
+      "gift": "Adaptability, latent capacity, and freedom from premature definition.",
+      "shadow": "Unformed potential becomes an excuse never to commit.",
+      "file": "cards/040-uncarved-block.md"
+    },
+    {
+      "id": "empty-vessel",
+      "number": "041",
+      "name": "Empty Vessel",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Usefulness created by the shaped absence within a form.",
+      "gift": "Capacity, hospitality, and renewal.",
+      "shadow": "Emptiness becomes vacancy, self-negation, or ornamental minimalism.",
+      "file": "cards/041-empty-vessel.md"
+    },
+    {
+      "id": "valley-spirit",
+      "number": "042",
+      "name": "Valley Spirit",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Receptive generativity that remains low, open, and inexhaustibly available.",
+      "gift": "Fertility, continuity, and power without display.",
+      "shadow": "Receptivity is fetishized as endless availability or gendered submission.",
+      "file": "cards/042-valley-spirit.md"
+    },
+    {
+      "id": "returning",
+      "number": "043",
+      "name": "Returning",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "The lived act of noticing deviation and turning back before distance becomes destiny.",
+      "gift": "Correction, humility, and renewed contact.",
+      "shadow": "Return becomes self-punishment, regression, or obsessive checking.",
+      "file": "cards/043-returning.md"
+    },
+    {
+      "id": "yielding",
+      "number": "044",
+      "name": "Yielding",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Responsive giving-way that preserves continuity while redirecting force.",
+      "gift": "Resilience, diplomacy, and survival without direct contest.",
+      "shadow": "Yielding becomes appeasement, collapse, or fear of necessary conflict.",
+      "file": "cards/044-yielding.md"
+    },
+    {
+      "id": "flow",
+      "number": "045",
+      "name": "Flow",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Continuous responsive movement through changing constraints.",
+      "gift": "Continuity, adaptation, and circulation.",
+      "shadow": "Flow becomes aimlessness, avoidance of commitment, or romanticized ease.",
+      "file": "cards/045-flow.md"
+    },
+    {
+      "id": "still-point",
+      "number": "046",
+      "name": "Still Point",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "A relative center of quiet within motion from which changing directions can be perceived.",
+      "gift": "Orientation, poise, and responsive timing.",
+      "shadow": "Centeredness becomes detachment, control, or refusal to be affected.",
+      "file": "cards/046-still-point.md"
+    },
+    {
+      "id": "center",
+      "number": "047",
+      "name": "Center",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "The relational middle where forces can be integrated without being flattened.",
+      "gift": "Integration, mediation, and proportion.",
+      "shadow": "The center claims neutrality while hiding its power.",
+      "file": "cards/047-center.md"
+    },
+    {
+      "id": "threshold",
+      "number": "048",
+      "name": "Threshold",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "The charged interval where one condition has ended but another is not yet established.",
+      "gift": "Choice, initiation, and transformed relation.",
+      "shadow": "Liminality is prolonged to avoid commitment or romanticized as inherently profound.",
+      "file": "cards/048-threshold.md"
+    },
+    {
+      "id": "root",
+      "number": "049",
+      "name": "Root",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Hidden anchoring through reciprocal contact with the ground that feeds and resists.",
+      "gift": "Grounding, nourishment, continuity, and unseen relation.",
+      "shadow": "Rootedness becomes entrenchment, possession, or hidden extraction.",
+      "file": "cards/049-root.md"
+    },
+    {
+      "id": "branch",
+      "number": "050",
+      "name": "Branch",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Differentiated reach: one source exploring several directions without ceasing to be related.",
+      "gift": "Experiment, distribution, and plural possibility.",
+      "shadow": "Branching becomes distraction, hierarchy, or unchecked proliferation.",
+      "file": "cards/050-branch.md"
+    },
+    {
+      "id": "gate",
+      "number": "051",
+      "name": "Gate",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "A selective opening that regulates passage between fields.",
+      "gift": "Access, discernment, protection, and transition.",
+      "shadow": "Guardianship becomes exclusion, secrecy, or control of others’ movement.",
+      "file": "cards/051-gate.md"
+    },
+    {
+      "id": "breath",
+      "number": "052",
+      "name": "Breath (Qi image)",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Rhythmic exchange that joins inner and outer without making them identical.",
+      "gift": "Regulation, renewal, presence, and connection.",
+      "shadow": "Breath is mystified into a cure-all or used to bypass material conditions.",
+      "file": "cards/052-breath.md"
+    },
+    {
+      "id": "river",
+      "number": "053",
+      "name": "River",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "A path made by moving relation: source, bank, obstacle, confluence, and destination continually reshape one another.",
+      "gift": "Continuity, adaptation, connection, and carried memory.",
+      "shadow": "The current carries contamination, cuts banks, or makes inevitability of its own habit.",
+      "file": "cards/053-river.md"
+    },
+    {
+      "id": "rain",
+      "number": "054",
+      "name": "Rain",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Distributed descent that nourishes, reveals saturation, and links sky to ground.",
+      "gift": "Relief, replenishment, and shared nourishment.",
+      "shadow": "Blessing language ignores flood, timing, inequity, or damaged ground.",
+      "file": "cards/054-rain.md"
+    },
+    {
+      "id": "cloud",
+      "number": "055",
+      "name": "Cloud",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Form held temporarily in suspension: gathering, obscuring, carrying, and preparing release.",
+      "gift": "Incubation, shade, transport, and approaching change.",
+      "shadow": "Ambiguity becomes evasion, mood becomes authority, or gathering never releases.",
+      "file": "cards/055-cloud.md"
+    },
+    {
+      "id": "mist",
+      "number": "056",
+      "name": "Mist",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Partial visibility that softens fixed edges and makes distance uncertain.",
+      "gift": "Gentleness, patience, and freedom from premature certainty.",
+      "shadow": "Ambiguity shelters projection, avoidance, or covert action.",
+      "file": "cards/056-mist.md"
+    },
+    {
+      "id": "bamboo",
+      "number": "057",
+      "name": "Bamboo",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Hollow-jointed resilience: flexible because strength is segmented and the center is open.",
+      "gift": "Resilience, growth, community, and disciplined emptiness.",
+      "shadow": "Flexibility performs grace while damage accumulates at the joints.",
+      "file": "cards/057-bamboo.md"
+    },
+    {
+      "id": "pine",
+      "number": "058",
+      "name": "Pine",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Endurance through seasons: conserving life without pretending winter is summer.",
+      "gift": "Constancy, memory, and winter resilience.",
+      "shadow": "Endurance becomes pride in deprivation or refusal of help.",
+      "file": "cards/058-pine.md"
+    },
+    {
+      "id": "crane",
+      "number": "059",
+      "name": "Crane",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Measured elevation: patient stillness that becomes precise movement and long passage.",
+      "gift": "Perspective, timing, dignity, and migration.",
+      "shadow": "Elevation becomes aloofness, omen-making, or superiority.",
+      "file": "cards/059-crane.md"
+    },
+    {
+      "id": "turtle",
+      "number": "060",
+      "name": "Turtle",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Protected longevity: carrying a boundary while moving at the pace continuity requires.",
+      "gift": "Patience, protection, continuity, and measured response.",
+      "shadow": "Protection becomes withdrawal, fatalism, or false claims of prediction.",
+      "file": "cards/060-turtle.md"
+    },
+    {
+      "id": "dragon",
+      "number": "061",
+      "name": "Dragon",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Latent transformative potency moving between depth, cloud, rain, and emergence.",
+      "gift": "Transformation, vitality, scale-shifting, and catalytic presence.",
+      "shadow": "Power becomes grandiosity, spectacle, or borrowed cultural exoticism.",
+      "file": "cards/061-dragon.md"
+    },
+    {
+      "id": "tiger",
+      "number": "062",
+      "name": "Tiger",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Focused boundary power: embodied presence, decisive protection, and dangerous appetite.",
+      "gift": "Courage, protection, precision, and embodied limit.",
+      "shadow": "Protection becomes threat, domination, or predation.",
+      "file": "cards/062-tiger.md"
+    },
+    {
+      "id": "moon",
+      "number": "063",
+      "name": "Moon",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Borrowed light and rhythmic change: visibility that waxes, wanes, and depends on relation.",
+      "gift": "Reflection, rhythm, inward vision, and patience.",
+      "shadow": "Indirectness becomes projection, secrecy, or dependence on another’s light.",
+      "file": "cards/063-moon.md"
+    },
+    {
+      "id": "sun",
+      "number": "064",
+      "name": "Sun",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Direct radiance that reveals, warms, organizes rhythm, and can scorch.",
+      "gift": "Clarity, vitality, rhythm, and public presence.",
+      "shadow": "Brightness becomes exposure, centrality, or demand for constant positivity.",
+      "file": "cards/064-sun.md"
+    },
+    {
+      "id": "star",
+      "number": "065",
+      "name": "Star",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Distant orientation: a small steady relation that helps position without dictating the path.",
+      "gift": "Orientation, perspective, and long continuity.",
+      "shadow": "Guidance becomes destiny, abstraction, or escape from local evidence.",
+      "file": "cards/065-star.md"
+    },
+    {
+      "id": "seed",
+      "number": "066",
+      "name": "Seed",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Concentrated future held in a protected form, dependent on conditions it cannot command.",
+      "gift": "Readiness, inheritance, patience, and compact possibility.",
+      "shadow": "Potential is romanticized without regard for soil, season, or viability.",
+      "file": "cards/066-seed.md"
+    },
+    {
+      "id": "sprout",
+      "number": "067",
+      "name": "Sprout",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Vulnerable emergence: life crossing from protected potential into exposed growth.",
+      "gift": "Courage, renewal, learning, and responsive beginning.",
+      "shadow": "Newness demands protection from all friction or seeks praise before rooting.",
+      "file": "cards/067-sprout.md"
+    },
+    {
+      "id": "blossom",
+      "number": "068",
+      "name": "Blossom",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Brief visible opening that invites exchange and cannot be kept.",
+      "gift": "Beauty, invitation, recognition, and timely openness.",
+      "shadow": "Appearance is confused with maturity, worth, or guaranteed fruit.",
+      "file": "cards/068-blossom.md"
+    },
+    {
+      "id": "fruit",
+      "number": "069",
+      "name": "Fruit",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Ripened consequence: nourishment and seed carried together at the end of a growth cycle.",
+      "gift": "Harvest, generosity, consequence, and continuation.",
+      "shadow": "Outcome becomes possession, status, or proof of personal control.",
+      "file": "cards/069-fruit.md"
+    },
+    {
+      "id": "decay",
+      "number": "070",
+      "name": "Decay",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Form loosening into smaller relations so stored material can re-enter the world.",
+      "gift": "Release, humility, decomposition, and transition.",
+      "shadow": "Loss is aestheticized or used to excuse preventable neglect.",
+      "file": "cards/070-decay.md"
+    },
+    {
+      "id": "compost",
+      "number": "071",
+      "name": "Compost",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Collaborative transformation of discarded matter into fertile, altered ground.",
+      "gift": "Regeneration, integration, and value recovered from endings.",
+      "shadow": "“Everything is useful” denies grief, toxicity, or what must be discarded safely.",
+      "file": "cards/071-compost.md"
+    },
+    {
+      "id": "silence",
+      "number": "072",
+      "name": "Silence",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "An interval without imposed speech in which subtler signals can appear.",
+      "gift": "Listening, rest, privacy, and unforced understanding.",
+      "shadow": "Silence conceals harm, withholds needed truth, or imposes exclusion.",
+      "file": "cards/072-silence.md"
+    },
+    {
+      "id": "sound",
+      "number": "073",
+      "name": "Sound",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Vibration made shareable: expression traveling through a medium and altering what receives it.",
+      "gift": "Communication, warning, music, and mutual attunement.",
+      "shadow": "Expression becomes noise, performance, manipulation, or echo.",
+      "file": "cards/073-sound.md"
+    },
+    {
+      "id": "shadow",
+      "number": "074",
+      "name": "Shadow",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Evidence of relation between light, form, and position: neither substance nor mere absence.",
+      "gift": "Depth, contrast, privacy, and recognition of what a self-image excludes.",
+      "shadow": "The unknown is treated as evil, or projection is mistaken for fact.",
+      "file": "cards/074-shadow.md"
+    },
+    {
+      "id": "mirror",
+      "number": "075",
+      "name": "Mirror",
+      "families": [
+        "The Living Patterns"
+      ],
+      "essence": "Reflective relation that reveals a view, reverses it, and never contains the whole thing reflected.",
+      "gift": "Self-recognition, feedback, comparison, and reversal of view.",
+      "shadow": "Reflection becomes vanity, surveillance, imitation, or mistaken identity.",
+      "file": "cards/075-mirror.md"
+    }
+  ]
+}

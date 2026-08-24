@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 const root = fileURLToPath(new URL("..", import.meta.url));
 const oracle = join(root, "public", "systems-oracle-app");
 const alchemy = join(root, "public", "mapshifting", "alchemy");
+const tao = join(root, "public", "tao");
 const failures = [];
 const check = (condition, message) => {
   if (!condition) failures.push(message);
@@ -77,9 +78,29 @@ const alchemyDownload = join(root, "public", "downloads", "Mapshifting-Alchemy-D
 check(await exists(alchemyDownload), "Missing complete Alchemy web-edition download");
 if (await exists(alchemyDownload)) check((await stat(alchemyDownload)).size > 30_000_000, "Alchemy web-edition download is unexpectedly small");
 
+const taoCards = JSON.parse(await readFile(join(root, "app", "tao", "tao-cards.generated.json"), "utf8"));
+const taoGraph = JSON.parse(await readFile(join(tao, "data", "graph.json"), "utf8"));
+check(taoCards.length === 75, `Expected 75 Tao tiles; found ${taoCards.length}`);
+check(taoGraph.nodes.length === 75, `Expected 75 Tao graph nodes; found ${taoGraph.nodes.length}`);
+check(taoGraph.edges.length === 302, `Expected 302 Tao graph edges; found ${taoGraph.edges.length}`);
+check(taoCards.filter((card) => card.phase.length).length === 5, "Expected five Tao phase tiles with full correspondences");
+check(taoCards.filter((card) => card.trigram.length).length === 8, "Expected eight Tao trigram tiles with full correspondences");
+check(taoCards.every((card) => card.essence && card.image && card.movement && card.gift && card.shadow && card.excess && card.deficiency && card.return && card.divination && card.question && card.action), "A Tao tile lacks a required meaning field");
+check(taoCards.every((card) => card.relations.length >= 4), "A Tao tile has fewer than four authored relations");
+const taoProof = join(tao, "tao-enamel-proof-sheet.png");
+check(await exists(taoProof), "Missing Tao enamel proof sheet");
+if (await exists(taoProof)) check((await stat(taoProof)).size > 1_000_000, "Tao proof sheet is unexpectedly small");
+check(await exists(tao, "TAO-ENAMEL-ORACLE-MANUAL.md"), "Missing Tao complete manual");
+const taoDownload = join(root, "public", "downloads", "Tao-Enamel-Oracle-Complete-v1.0.0.zip");
+check(await exists(taoDownload), "Missing complete Tao system download");
+if (await exists(taoDownload)) check((await stat(taoDownload)).size > 2_000_000, "Tao complete-system download is unexpectedly small");
+const taoPage = await readFile(join(root, "app", "tao", "page.tsx"), "utf8");
+check(taoPage.includes("TaoCardLibrary"), "Tao route does not expose the complete tile library");
+check(taoPage.includes("Tao-Enamel-Oracle-Complete-v1.0.0.zip"), "Tao route does not expose its complete archive");
+
 if (failures.length) {
   console.error(failures.map((failure) => `- ${failure}`).join("\n"));
   process.exit(1);
 }
 
-console.log(`Validated Kiduna Design: Systems Oracle has ${artifacts.length} artifacts and ${references.length} reference artworks; Alchemy has ${alchemyCards.length} cards and ${alchemyCards.length * 2} finished compositions.`);
+console.log(`Validated Kiduna Design: Systems Oracle has ${artifacts.length} artifacts and ${references.length} reference artworks; Alchemy has ${alchemyCards.length} cards and ${alchemyCards.length * 2} finished compositions; Tao has ${taoCards.length} tiles and ${taoGraph.edges.length} typed relations.`);

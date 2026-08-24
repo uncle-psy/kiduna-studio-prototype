@@ -13,8 +13,8 @@ export default function Home() {
     <main>
       <section className={styles.hero}>
         <p className={styles.eyebrow}>KIDUNA DESIGN · CONCEPTUAL PROTOTYPES</p>
-        <h1>Seven systems.<br /><span>Five living decks.</span></h1>
-        <p className={styles.intro}>Explore Kiduna’s spatial language, the complete Royals &amp; Rogues game library, a build-ready system for alignment without obedience, Bellwether’s playable Level 1 reference world, symbolic maps of biology, culture, and human-made systems, and three Mapshifting decks for reflection, discernment, and agency. These are design systems and working prototypes—not the production system.</p>
+        <h1>Eight systems.<br /><span>Five living decks.</span></h1>
+        <p className={styles.intro}>Explore Kiduna’s spatial language, the complete Royals &amp; Rogues game library, a build-ready system for alignment without obedience, Bellwether’s playable Level 1 reference world, symbolic maps of biology, culture, human-made systems, and the Tao, plus three Mapshifting decks for reflection, discernment, and agency. These are design systems and working prototypes—not the production system.</p>
       </section>
 
       <section className={styles.systems} aria-label="Kiduna design systems">
@@ -118,6 +118,20 @@ export default function Home() {
             <h2>Systems Oracle</h2>
             <span>A symbolic operating manual for the systems humans build: 360 canonical artifacts, lineages, relationships, spreads, games, and an enamel visual language.</span>
             <a className={styles.enter} href="/systems-oracle">Enter the oracle <b>→</b></a>
+          </div>
+        </article>
+
+        <article className={styles.systemCard}>
+          <a className={styles.visual} href="/tao" aria-label="Enter The Tao Enamel Oracle System">
+            <img src="/tao/tao-enamel-proof-sheet.png" alt="Nine jewel-like enamel tiles from The Tao oracle system" />
+            <span className={styles.number}>08</span>
+            <span className={styles.status}>ORACLE SYSTEM</span>
+          </a>
+          <div className={styles.cardCopy}>
+            <p>A COMPLETE ENAMEL COSMOLOGY</p>
+            <h2>The Tao</h2>
+            <span>Seventy-five symbolic windows into source, polarity, transformation, relation, and return—connected as one living graph rather than a deck of fixed answers.</span>
+            <a className={styles.enter} href="/tao">Enter the system <b>→</b></a>
           </div>
         </article>
       </section>

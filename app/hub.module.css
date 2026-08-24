@@ -14,7 +14,7 @@
 .primaryNav summary span{color:var(--gold);margin-left:6px}
 .primaryNav details{position:relative}
 .primaryNav details[open] summary,.primaryNav a:hover{color:var(--cream)}
-.menu{position:absolute;top:45px;left:50%;transform:translateX(-50%);width:min(1450px,96vw);display:grid;grid-template-columns:repeat(6,1fr);background:#130d09;border:1px solid rgba(234,170,0,.32);box-shadow:0 24px 80px rgba(0,0,0,.6)}
+.menu{position:absolute;top:45px;left:50%;transform:translateX(-50%);width:min(1280px,96vw);display:grid;grid-template-columns:repeat(4,1fr);background:#130d09;border:1px solid rgba(234,170,0,.32);box-shadow:0 24px 80px rgba(0,0,0,.6)}
 .menu a{padding:24px;display:grid;gap:7px;border-right:1px solid var(--line)}
 .menu a:last-child{border:0}
 .menu a:hover{background:rgba(234,170,0,.06)}

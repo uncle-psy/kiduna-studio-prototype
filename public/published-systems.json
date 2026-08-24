@@ -133,6 +133,18 @@
       "order": 11,
       "listedOnHome": true,
       "listedInSystemsMenu": false
+    },
+    {
+      "id": "tao-enamel-oracle",
+      "label": "The Tao — Enamel Oracle System",
+      "kind": "system",
+      "route": "/tao",
+      "firstPublishedAt": "2026-08-24",
+      "surface": "local-page",
+      "status": "active",
+      "order": 12,
+      "listedOnHome": true,
+      "listedInSystemsMenu": true
     }
   ]
 }
