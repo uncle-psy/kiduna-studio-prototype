@@ -1,0 +1,440 @@
+[
+  {
+    "id": "chm-timeline",
+    "title": "Timeline of Computer History",
+    "publisher": "Computer History Museum",
+    "url": "https://www.computerhistory.org/timeline/",
+    "kind": "documented-history",
+    "domains": [
+      "computing-origins",
+      "hardware",
+      "software-development",
+      "internet-culture"
+    ]
+  },
+  {
+    "id": "chm-software",
+    "title": "Software & Languages Timeline",
+    "publisher": "Computer History Museum",
+    "url": "https://www.computerhistory.org/timeline/software-languages/",
+    "kind": "documented-history",
+    "domains": [
+      "computing-origins",
+      "software-development"
+    ]
+  },
+  {
+    "id": "chm-network",
+    "title": "Networking & The Web Timeline",
+    "publisher": "Computer History Museum",
+    "url": "https://www.computerhistory.org/timeline/networking-the-web/",
+    "kind": "documented-history",
+    "domains": [
+      "networks-protocols",
+      "internet-culture"
+    ]
+  },
+  {
+    "id": "chm-parc",
+    "title": "Xerox Alto Source Code and History",
+    "publisher": "Computer History Museum",
+    "url": "https://computerhistory.org/blog/xerox-alto-source-code/",
+    "kind": "documented-history",
+    "domains": [
+      "computing-origins",
+      "institutions-ghosts"
+    ]
+  },
+  {
+    "id": "chm-fairchildren",
+    "title": "Fairchildren: The Family Tree of Silicon Valley",
+    "publisher": "Computer History Museum",
+    "url": "https://computerhistory.org/fairchildren/",
+    "kind": "documented-history",
+    "domains": [
+      "hardware",
+      "institutions-ghosts",
+      "venture-startups"
+    ]
+  },
+  {
+    "id": "darpa-arpanet",
+    "title": "ARPANET",
+    "publisher": "DARPA",
+    "url": "https://www.darpa.mil/news/features/arpanet",
+    "kind": "documented-history",
+    "domains": [
+      "networks-protocols",
+      "computing-origins"
+    ]
+  },
+  {
+    "id": "cern-web",
+    "title": "Where the Web Was Born",
+    "publisher": "CERN",
+    "url": "https://home.cern/science/computing/the-birth-of-the-web/where-web-was-born/",
+    "kind": "documented-history",
+    "domains": [
+      "internet-culture",
+      "networks-protocols"
+    ]
+  },
+  {
+    "id": "ietf-rfcs",
+    "title": "RFC Index",
+    "publisher": "Internet Engineering Task Force",
+    "url": "https://www.rfc-editor.org/rfc-index.html",
+    "kind": "technical-primary",
+    "domains": [
+      "networks-protocols",
+      "software-development"
+    ]
+  },
+  {
+    "id": "nist-glossary",
+    "title": "Computer Security Resource Center Glossary",
+    "publisher": "NIST",
+    "url": "https://csrc.nist.gov/glossary",
+    "kind": "technical-primary",
+    "domains": [
+      "hardware",
+      "software-development",
+      "networks-protocols",
+      "ai-agentic"
+    ]
+  },
+  {
+    "id": "nist-cloud",
+    "title": "The NIST Definition of Cloud Computing",
+    "publisher": "NIST",
+    "url": "https://csrc.nist.gov/pubs/sp/800/145/final",
+    "kind": "technical-primary",
+    "domains": [
+      "architectures",
+      "enterprise-systems"
+    ]
+  },
+  {
+    "id": "nist-ai",
+    "title": "AI Risk Management Framework: Generative AI Profile",
+    "publisher": "NIST",
+    "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+    "kind": "technical-primary",
+    "domains": [
+      "ai-agentic"
+    ]
+  },
+  {
+    "id": "opensource-definition",
+    "title": "The Open Source Definition",
+    "publisher": "Open Source Initiative",
+    "url": "https://opensource.org/osd",
+    "kind": "institutional-primary",
+    "domains": [
+      "software-development",
+      "institutions-ghosts"
+    ]
+  },
+  {
+    "id": "ethereum-docs",
+    "title": "Ethereum Developer Documentation",
+    "publisher": "ethereum.org",
+    "url": "https://ethereum.org/developers/docs/",
+    "kind": "technical-primary",
+    "domains": [
+      "crypto-web3"
+    ]
+  },
+  {
+    "id": "ethereum-contracts",
+    "title": "Introduction to Smart Contracts",
+    "publisher": "ethereum.org",
+    "url": "https://ethereum.org/developers/docs/smart-contracts/",
+    "kind": "technical-primary",
+    "domains": [
+      "crypto-web3"
+    ]
+  },
+  {
+    "id": "bitcoin-paper",
+    "title": "Bitcoin: A Peer-to-Peer Electronic Cash System",
+    "publisher": "bitcoin.org",
+    "url": "https://bitcoin.org/en/bitcoin-paper",
+    "kind": "technical-primary",
+    "domains": [
+      "crypto-web3"
+    ]
+  },
+  {
+    "id": "sec-investor",
+    "title": "Investor.gov Introduction to Investing",
+    "publisher": "U.S. Securities and Exchange Commission",
+    "url": "https://www.investor.gov/introduction-investing",
+    "kind": "regulatory-primary",
+    "domains": [
+      "accounting-capital",
+      "markets-instruments",
+      "venture-startups"
+    ]
+  },
+  {
+    "id": "sec-filings",
+    "title": "EDGAR Company Filings",
+    "publisher": "U.S. Securities and Exchange Commission",
+    "url": "https://www.sec.gov/edgar/search/",
+    "kind": "regulatory-primary",
+    "domains": [
+      "accounting-capital",
+      "markets-instruments",
+      "institutions-ghosts"
+    ]
+  },
+  {
+    "id": "sec-webvan",
+    "title": "Webvan Registration Revocation and Bankruptcy Record",
+    "publisher": "U.S. Securities and Exchange Commission",
+    "url": "https://www.sec.gov/file/34-50993pdf",
+    "kind": "regulatory-primary",
+    "domains": [
+      "institutions-ghosts",
+      "venture-startups"
+    ]
+  },
+  {
+    "id": "fed-history",
+    "title": "Federal Reserve History",
+    "publisher": "Federal Reserve System",
+    "url": "https://www.federalreservehistory.org/",
+    "kind": "documented-history",
+    "domains": [
+      "markets-instruments",
+      "accounting-capital"
+    ]
+  },
+  {
+    "id": "fed-glass-steagall",
+    "title": "Banking Act of 1933 (Glass-Steagall)",
+    "publisher": "Federal Reserve History",
+    "url": "https://www.federalreservehistory.org/essays/glass-steagall-act",
+    "kind": "documented-history",
+    "domains": [
+      "markets-instruments",
+      "accounting-capital"
+    ]
+  },
+  {
+    "id": "deming-sopk",
+    "title": "The Deming System of Profound Knowledge",
+    "publisher": "The W. Edwards Deming Institute",
+    "url": "https://deming.org/explore/sopk/",
+    "kind": "institutional-primary",
+    "domains": [
+      "management-theory",
+      "operations"
+    ]
+  },
+  {
+    "id": "lean-tps",
+    "title": "Toyota Production System",
+    "publisher": "Lean Enterprise Institute",
+    "url": "https://www.lean.org/lexicon-terms/toyota-production-system/",
+    "kind": "documented-history",
+    "domains": [
+      "management-theory",
+      "operations"
+    ]
+  },
+  {
+    "id": "drucker",
+    "title": "About Peter Drucker",
+    "publisher": "The Drucker Institute",
+    "url": "https://drucker.institute/about-peter-drucker/",
+    "kind": "institutional-primary",
+    "domains": [
+      "management-theory",
+      "organization-forms"
+    ]
+  },
+  {
+    "id": "yc-about",
+    "title": "What Happens at YC",
+    "publisher": "Y Combinator",
+    "url": "https://www.ycombinator.com/about",
+    "kind": "institutional-primary",
+    "domains": [
+      "venture-startups"
+    ]
+  },
+  {
+    "id": "yc-investors",
+    "title": "Resources for Investors",
+    "publisher": "Y Combinator",
+    "url": "https://www.ycombinator.com/investors",
+    "kind": "institutional-primary",
+    "domains": [
+      "venture-startups",
+      "markets-instruments"
+    ]
+  },
+  {
+    "id": "burning-principles",
+    "title": "The 10 Principles",
+    "publisher": "Burning Man Project",
+    "url": "https://burningman.org/about-us/10-principles/",
+    "kind": "institutional-primary",
+    "domains": [
+      "institutions-ghosts",
+      "internet-culture"
+    ]
+  },
+  {
+    "id": "srl-archive",
+    "title": "About Survival Research Laboratories",
+    "publisher": "Survival Research Laboratories Archive",
+    "url": "https://archive.srl.org/index.php/about/",
+    "kind": "institutional-primary",
+    "domains": [
+      "institutions-ghosts"
+    ]
+  },
+  {
+    "id": "well-archive",
+    "title": "The WELL by John Coate",
+    "publisher": "Computer History Museum Archive",
+    "url": "https://archive.computerhistory.org/resources/access/text/2024/05/102734481-05-0007-acc.pdf",
+    "kind": "archival-primary",
+    "domains": [
+      "internet-culture",
+      "institutions-ghosts"
+    ]
+  },
+  {
+    "id": "2600-index",
+    "title": "2600 Magazine Title Index, Volumes 1–10",
+    "publisher": "2600",
+    "url": "https://www.2600.com/magazine/title_index.html",
+    "kind": "archival-primary",
+    "domains": [
+      "hacker-culture"
+    ]
+  },
+  {
+    "id": "agile-manifesto",
+    "title": "Manifesto for Agile Software Development",
+    "publisher": "Agile Manifesto authors",
+    "url": "https://agilemanifesto.org/",
+    "kind": "historical-primary",
+    "domains": [
+      "software-development",
+      "management-theory"
+    ]
+  },
+  {
+    "id": "gnu-history",
+    "title": "Overview of the GNU System",
+    "publisher": "GNU Project",
+    "url": "https://www.gnu.org/gnu/gnu-history.html",
+    "kind": "historical-primary",
+    "domains": [
+      "software-development",
+      "institutions-ghosts"
+    ]
+  },
+  {
+    "id": "linux-git",
+    "title": "Git Source Repository",
+    "publisher": "Git project",
+    "url": "https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git",
+    "kind": "historical-primary",
+    "domains": [
+      "software-development"
+    ]
+  },
+  {
+    "id": "kubernetes-docs",
+    "title": "Kubernetes Documentation",
+    "publisher": "Kubernetes project",
+    "url": "https://kubernetes.io/docs/concepts/overview/",
+    "kind": "technical-primary",
+    "domains": [
+      "architectures",
+      "operations"
+    ]
+  },
+  {
+    "id": "aws-architecture",
+    "title": "AWS Well-Architected Framework",
+    "publisher": "Amazon Web Services",
+    "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "kind": "technical-primary",
+    "domains": [
+      "architectures",
+      "operations"
+    ]
+  },
+  {
+    "id": "postgres-docs",
+    "title": "PostgreSQL Documentation",
+    "publisher": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/current/",
+    "kind": "technical-primary",
+    "domains": [
+      "architectures",
+      "enterprise-systems"
+    ]
+  },
+  {
+    "id": "w3c-standards",
+    "title": "Web Standards",
+    "publisher": "World Wide Web Consortium",
+    "url": "https://www.w3.org/standards/",
+    "kind": "technical-primary",
+    "domains": [
+      "networks-protocols",
+      "product-design"
+    ]
+  },
+  {
+    "id": "ftc-antitrust",
+    "title": "The Antitrust Laws",
+    "publisher": "Federal Trade Commission",
+    "url": "https://www.ftc.gov/advice-guidance/competition-guidance/guide-antitrust-laws/antitrust-laws",
+    "kind": "regulatory-primary",
+    "domains": [
+      "organization-forms",
+      "organizational-pathology",
+      "institutions-ghosts"
+    ]
+  },
+  {
+    "id": "doj-theranos",
+    "title": "Theranos Founder Convicted of Investor Fraud",
+    "publisher": "U.S. Department of Justice",
+    "url": "https://www.justice.gov/usao-ndca/pr/theranos-founder-elizabeth-holmes-found-guilty-investor-fraud",
+    "kind": "legal-primary",
+    "domains": [
+      "institutions-ghosts",
+      "venture-startups"
+    ]
+  },
+  {
+    "id": "fca-markets",
+    "title": "Financial Markets",
+    "publisher": "Financial Conduct Authority",
+    "url": "https://www.fca.org.uk/markets",
+    "kind": "regulatory-primary",
+    "domains": [
+      "markets-instruments"
+    ]
+  },
+  {
+    "id": "fasb-codification",
+    "title": "Accounting Standards Codification",
+    "publisher": "Financial Accounting Standards Board",
+    "url": "https://asc.fasb.org/",
+    "kind": "standards-primary",
+    "domains": [
+      "accounting-capital"
+    ]
+  }
+]
