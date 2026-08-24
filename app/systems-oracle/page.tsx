@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import styles from "./oracle.module.css";
 
 export const metadata: Metadata = {
   title: { absolute: "Systems Oracle · Kiduna Design" },
@@ -12,15 +13,16 @@ export const metadata: Metadata = {
 
 export default function SystemsOraclePage() {
   return (
-    <main className="oracle-frame-shell">
-      <nav className="system-strip oracle-system-strip" aria-label="Kiduna systems">
-        <span className="system-strip-label">Kiduna systems</span>
-        <a className="system-chip" href="/">Royals &amp; Rogues</a>
-        <a className="system-chip active" href="/systems-oracle" aria-current="page">Systems Oracle <span aria-hidden="true">✦</span></a>
-        <a className="oracle-open" href="/systems-oracle-app/index.html#home" target="_blank" rel="noreferrer">Open full canvas ↗</a>
+    <main className={styles.shell}>
+      <nav className={styles.strip} aria-label="Kiduna systems">
+        <a className={styles.brand} href="/">Kiduna Design</a>
+        <span className={styles.label}>System 07</span>
+        <a className={styles.chip} href="/">All systems</a>
+        <a className={`${styles.chip} ${styles.active}`} href="/systems-oracle" aria-current="page">Systems Oracle <span aria-hidden="true">✦</span></a>
+        <a className={styles.open} href="/systems-oracle-app/index.html#home" target="_blank" rel="noreferrer">Open full canvas ↗</a>
       </nav>
       <iframe
-        className="oracle-frame"
+        className={styles.frame}
         src="/systems-oracle-app/index.html#home"
         title="Systems Oracle"
         allow="fullscreen"

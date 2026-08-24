@@ -1,0 +1,15 @@
+{
+  "schemaVersion":"1.0.0",
+  "components":[
+    {"id":"realm-breadcrumb","states":["default","long-path","restricted-parent"],"a11y":"navigation landmark and current item"},
+    {"id":"context-inspector","states":["compact","expanded","restricted","loading","stale"],"a11y":"definition list and focus restoration"},
+    {"id":"field-card","states":["rest","hover","focus","selected","active","disabled","restricted","empty"],"a11y":"semantic button or article"},
+    {"id":"ki-panel","states":["quiet","focused","gathering","listening","sending","disconnected","denied"],"a11y":"one labeled input and restrained live region"},
+    {"id":"participant-stack","states":["present","speaking","listening","muted","away","disconnected"],"a11y":"name and status text"},
+    {"id":"action-tray","states":["rest","active","confirming","pending","completed","unavailable"],"a11y":"DOM order equals visual order"},
+    {"id":"permission-gate","states":["allowed","confirmation","pending-approval","denied","expired"],"a11y":"reason and remedy announced"},
+    {"id":"realm-container","states":["open","selected","restricted","archived","proposed"],"a11y":"text and semantic hierarchy"},
+    {"id":"gameplay-state-rail","states":["past","current","next","optional","blocked"],"a11y":"ordered current step"},
+    {"id":"event-receipt","states":["pending","succeeded","failed","reversed","expired"],"a11y":"announced status and selectable ID"}
+  ]
+}

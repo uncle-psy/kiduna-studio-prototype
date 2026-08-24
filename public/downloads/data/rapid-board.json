@@ -1,0 +1,314 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-08-21T04:09:39.688Z",
+  "sourceFile": "k1yJTuTz - kiduna-ai-flow-board-🛠️.json",
+  "sourceBoardId": "6a85ca8e5b32c551dc97cdb6",
+  "boardName": "Kiduna AI Flow Board 🛠️",
+  "sourceUrl": "https://trello.com/b/k1yJTuTz/kiduna-ai-flow-board-%F0%9F%9B%A0%EF%B8%8F",
+  "normalizationNote": "All source card text and workflow placement are preserved. designHref, designAnswer, and template are added by the Kiduna Studio UI Plan.",
+  "lists": [
+    {
+      "sourceId": "6a85ca9a5b32c551dc97d90d",
+      "name": "📥 Backlog",
+      "closed": false,
+      "position": 1,
+      "cards": []
+    },
+    {
+      "sourceId": "6a85ca9a5b32c551dc97d92a",
+      "name": "✅ Ready",
+      "closed": false,
+      "position": 2,
+      "cards": [
+        {
+          "sourceId": "6a85d4dfb15d57804d95234e",
+          "id": 13,
+          "title": "Change out the Art",
+          "description": "As a player, I want the game to use the final Royals and Rogues enamel artwork so that the experience feels beautiful, coherent, and unmistakably Kiduna.\n\nDone when all temporary and outdated artwork has been replaced across the game without reducing image quality.\n\n[https://www.kiduna.design/royals-and-rogues#kit](https://www.kiduna.design/royals-and-rogues#kit \"smartCard-inline\")  – qa/qc\n\nI’m going through and fixing everything…",
+          "sourceUrl": "https://trello.com/c/porOsv9G/13-change-out-the-art",
+          "closed": false,
+          "position": 140737488355328,
+          "designHref": "/royals-and-rogues#design-system",
+          "designAnswer": "R&R Realm design boundary",
+          "template": false
+        },
+        {
+          "sourceId": "6a85d4e5ba3cc4a58dedff53",
+          "id": 14,
+          "title": "Integrate Ki",
+          "description": "As a player, I want to ask Ki questions while I play so that I can understand the rules, my options, and what is happening without leaving the game.\n\nDone when Ki can explain the current situation and offer relevant guidance without making decisions for me.\n\nEvery action that can be taken through a Menu can be done by talking with Ki – create a list of all Actions – and state which need confirmation, which Ki can do when asked, what need a button inside Ki etc.",
+          "sourceUrl": "https://trello.com/c/2haafc7q/14-integrate-ki",
+          "closed": false,
+          "position": 140737488371712,
+          "designHref": "/ki-allies-actors#gameplay",
+          "designAnswer": "Ki during gameplay",
+          "template": false
+        },
+        {
+          "sourceId": "6a85d4f0fb0899e22d0997bd",
+          "id": 15,
+          "title": "Integrate automations",
+          "description": "As a player, I want routine coordination to happen automatically so that games can form, continue, and conclude without someone managing every step.\n\nDone when approved automations can send notices, advance eligible game states, and stop or request confirmation when human direction is required.\n\nList the automations, how they’re going to work – everything being automated – inside games, joining games “find me the best match” – introduce me to… invite these friends from gmail – invite these people from my contacts – we will never send to a\n\nask – do you want me to go ahead and send, or present you with the draft?",
+          "sourceUrl": "https://trello.com/c/LxBW5Xny/15-integrate-automations",
+          "closed": false,
+          "position": 140737488388096,
+          "designHref": "/actions-permissions#automations",
+          "designAnswer": "Automation contract",
+          "template": false
+        },
+        {
+          "sourceId": "6a85d502683e61492d01b90b",
+          "id": 17,
+          "title": "Character creation -- Create Ally",
+          "description": "As a Source, I want to create and shape my Ally so that it can represent and assist me during Royals and Rogues.\n\nDone when I can name my Ally and configure its Wisdom, Presence, Connections, Automations, and Abilities, including skills that help it explain or suggest moves.\n\nI’ll send details of this – where it goes, how to get to it – send them through this first –\n\n‌\n\ncreate the type – FLOW will do character creation –\n\n[https://docs.google.com/document/d/187e9R9K-UfDDOrPWNTjx8M0cNvUm5lju/edit?usp=sharing&ouid=117810053970944880461&rtpof=true&sd=true](https://docs.google.com/document/d/187e9R9K-UfDDOrPWNTjx8M0cNvUm5lju/edit?usp=sharing&ouid=117810053970944880461&rtpof=true&sd=true \"smartCard-inline\")\n\n6 facets – Warrior, Noble, Rogue, Merchant\n\nAlchemist\n\nJester",
+          "sourceUrl": "https://trello.com/c/JFyHEPEY/17-character-creation-create-ally",
+          "closed": false,
+          "position": 140737488404480,
+          "designHref": "/ki-allies-actors#bring-ally",
+          "designAnswer": "Bring an Ally",
+          "template": false
+        },
+        {
+          "sourceId": "6a85d507c50249d21f7ace05",
+          "id": 18,
+          "title": "Create Cell",
+          "description": "As a player, I want to form a Cell with up to four people so that we have a lasting place to play Royals and Rogues together repeatedly.\n\nDone when the Cell has its own members, invitations, game history, shared context, and controls for starting another game.\n\nInstantiate the Game\n\nStanding Cell – catalyst can add wisdom, system prompts, etc to customize the game\n\nTemporary Cells open and close when games end\n\nGame can only be played inside a Cell\n\nRoyals & Rogues – I’m not in this Game – If I’m in once cell\n\nwaiting lists to play me\n\n‌\n\nGuests in a cell – if you’re my guest, you can only see my cards\n\n‌\n\nchat – what i say goes to everyone in the cell – whisper to …",
+          "sourceUrl": "https://trello.com/c/jA1GwPlx/18-create-cell",
+          "closed": false,
+          "position": 140737488420864,
+          "designHref": "/royals-and-rogues#create-cell",
+          "designAnswer": "Cell builder",
+          "template": false
+        },
+        {
+          "sourceId": "6a85d50d184b5b5776f061a6",
+          "id": 19,
+          "title": "Create Alliance",
+          "description": "As a player, I want to form or join an Alliance so that a larger group can play together, organize games, and manage shared Resources.\n\nDone when an Alliance can invite members, organize Cells, define roles, and use a shared wallet with clear authority and transaction history.\n\nIn Alliance I can assign Organizer role, Creator role",
+          "sourceUrl": "https://trello.com/c/lb6X6M3K/19-create-alliance",
+          "closed": false,
+          "position": 140737488437248,
+          "designHref": "/royals-and-rogues#create-alliance",
+          "designAnswer": "Alliance relationship",
+          "template": false
+        },
+        {
+          "sourceId": "6a85d516a2fd805c6fa74801",
+          "id": 21,
+          "title": "Buying KIDUNA -- Tokenomics",
+          "description": "As a member, I want a clear way to acquire and use KIDUNA so that I understand its value, purpose, cost, and consequences before making a purchase.\n\nDone when the interface clearly explains the amount, exchange value, fees, intended uses, custody, and confirmation required for every transaction.",
+          "sourceUrl": "https://trello.com/c/04kZLrU7/21-buying-kiduna-tokenomics",
+          "closed": false,
+          "position": 140737488470016,
+          "designHref": "/actions-permissions#resources",
+          "designAnswer": "Resources boundary",
+          "template": false
+        },
+        {
+          "sourceId": "6a85d5268ecba8e3a6ded588",
+          "id": 22,
+          "title": "Acquiring free Chips",
+          "description": "As a new player, I want to receive free play Chips so that I can begin playing without purchasing KIDUNA or risking real value.\n\nDone when eligible players can claim an explained amount of non-cash play Chips and clearly understand their limits and how they differ from KIDUNA.\n\nEconomy – you’re bags of coins – what type of coins they are – cash your chips for coins – buy with coins\n\nwhen you enter a game, everyone gets the same # of chips, at the end the winner can convert those to “coins”\n\n- White Chips (or the lowest denomination): Common Value: $1. ... Opal\n- Red Chips: Common Value: $5. ... Ruby\n- Green Chips: Common Value: $25. ... emerald\n- Black Chips: Common Value: $100. ... -- onyx\n- Purple or Blue Chips: Common Value: $500. -- Saffire...\n- Yellow Chips: Common Value: $1,000. -- gold",
+          "sourceUrl": "https://trello.com/c/DZQeEo6k/22-acquiring-free-chips",
+          "closed": false,
+          "position": 140737488486400,
+          "designHref": "/gameplay#table-economy",
+          "designAnswer": "Table economy",
+          "template": false
+        },
+        {
+          "sourceId": "6a85d52f0766f0fab091af18",
+          "id": 23,
+          "title": "Create tournaments and leaderboard",
+          "description": "As a player, I want to join tournaments and see game results so that I can participate in organized competition and understand how the tournament is progressing.\n\nDone when players can enter a tournament, follow its structure and results, and view a game-specific leaderboard that does not become a general measure of social worth.",
+          "sourceUrl": "https://trello.com/c/RUNlfv5B/23-create-tournaments-and-leaderboard",
+          "closed": false,
+          "position": 140737488502784,
+          "designHref": "/gameplay#tournaments",
+          "designAnswer": "Tournament extension",
+          "template": false
+        },
+        {
+          "sourceId": "6a85d539163a1df562c22127",
+          "id": 24,
+          "title": "Voice chat through Gemini Voice API",
+          "description": "As a player, I want to speak with the other participants during a game so that playing together feels immediate, social, and natural.\n\nDone when players can deliberately join, mute, leave, and control voice chat, with clear indicators showing when voice is active.",
+          "sourceUrl": "https://trello.com/c/cZL0THJ5/24-voice-chat-through-gemini-voice-api",
+          "closed": false,
+          "position": 140737488519168,
+          "designHref": "/ki-allies-actors#voice",
+          "designAnswer": "Voice gathering",
+          "template": false
+        },
+        {
+          "sourceId": "6a85d54152be976c547c2666",
+          "id": 25,
+          "title": "Coherence/alignment",
+          "description": "As a Realm steward, I want the game’s behavior to remain aligned with its Purpose and shared standards so that players and intelligent entities operate within clear boundaries.\n\nDone when Sentinels can apply visible principles, constraints, and guardrails; explain interventions; and allow authorized Sources to inspect and revise them.\n\ncome out of the character creation – becoming an alchemist – HEARTS",
+          "sourceUrl": "https://trello.com/c/Yio2M07n/25-coherence-alignment",
+          "closed": false,
+          "position": 140737488535552,
+          "designHref": "/actions-permissions#constraints",
+          "designAnswer": "System constraints",
+          "template": false
+        },
+        {
+          "sourceId": "6a85d4f6d5fe335cae5fa3b6",
+          "id": 16,
+          "title": "Set up matching system",
+          "description": "As a player, I want Kiduna to help me find compatible people and games so that I can play with people who fit what I am looking for.\n\nDone when I can set my matching preferences and Gravity, inspect why a match appeared, and accept, decline, or adjust it.\n\nGravity –",
+          "sourceUrl": "https://trello.com/c/uRb0Mijr/16-set-up-matching-system",
+          "closed": false,
+          "position": 140737488551936,
+          "designHref": "/royals-and-rogues#matching",
+          "designAnswer": "Matching specification",
+          "template": false
+        },
+        {
+          "sourceId": "6a86fce6ca481391a9f5aacf",
+          "id": 28,
+          "title": "Mage in the world",
+          "description": "can change wisdom, etc\n\nI can’t go inside a private realm without being invited – can’t read someone’s wisdom",
+          "sourceUrl": "https://trello.com/c/KI0n9m26/28-mage-in-the-world",
+          "closed": false,
+          "position": 140737488568320,
+          "designHref": "/kinship-duna#mage-boundary",
+          "designAnswer": "Mage boundary",
+          "template": false
+        }
+      ]
+    },
+    {
+      "sourceId": "6a85ca9a5b32c551dc97d949",
+      "name": "⚙️ In Progress",
+      "closed": false,
+      "position": 3,
+      "cards": [
+        {
+          "sourceId": "6a85caa25b32c551dc97e579",
+          "id": 7,
+          "title": "Implement the highest-priority feature",
+          "description": "Work on the most important feature slice first. Keep notes on the approach, any assumptions, and what still needs testing so the card is easy to review later.",
+          "sourceUrl": "https://trello.com/c/3BI5qLEW/7-implement-the-highest-priority-feature",
+          "closed": true,
+          "position": 1,
+          "designHref": "/implementation#delivery",
+          "designAnswer": "Delivery sequence",
+          "template": true
+        },
+        {
+          "sourceId": "6a85caa25b32c551dc97e6c6",
+          "id": 8,
+          "title": "Fix the most visible bug",
+          "description": "Use this for the issue that most affects users or slows down the team. Keep the reproduction steps, root cause, and verification notes on the card while you work.",
+          "sourceUrl": "https://trello.com/c/UwCPrGsM/8-fix-the-most-visible-bug",
+          "closed": true,
+          "position": 2,
+          "designHref": "/implementation#delivery",
+          "designAnswer": "Delivery sequence",
+          "template": true
+        },
+        {
+          "sourceId": "6a85caa35b32c551dc97e786",
+          "id": 9,
+          "title": "Update tests and clean up edge cases",
+          "description": "Add or adjust tests while the code is still fresh. If the change touches multiple paths, note the cases that must be checked before moving the card forward.",
+          "sourceUrl": "https://trello.com/c/OZeMO1Fk/9-update-tests-and-clean-up-edge-cases",
+          "closed": true,
+          "position": 3,
+          "designHref": "/implementation#delivery",
+          "designAnswer": "Verification phase",
+          "template": true
+        },
+        {
+          "sourceId": "6a85d50ff8cf0e239677c2f0",
+          "id": 20,
+          "title": "Invite & Onboarding",
+          "description": "Very important – when you create an invite, you should be able to create a unique one for a single person or a general one you can always use\n\nIt should give you a URL and a QR Code for your general one\n\nAlso multiple special purpose ones – so if you’re going to a conference for example – and you want to give away $KIDUNA/Compute\n\nWhen people register, they can already have STAKED $KIDUNA in their wallet – so they can’t sell it, but can use it.\n\nAs a new player, I want a short, welcoming introduction so that I can create my identity, understand the game, and begin playing without prior Kiduna knowledge.\n\nDone when a new Source can join, create an Ally, learn the essential rules, receive free Chips, and enter or form a game.",
+          "sourceUrl": "https://trello.com/c/pxdhMsN2/20-invite-onboarding",
+          "closed": false,
+          "position": 140737488338944,
+          "designHref": "/royals-and-rogues#invite",
+          "designAnswer": "Invite and onboarding",
+          "template": false
+        },
+        {
+          "sourceId": "6a85d546db7038a746baa10a",
+          "id": 26,
+          "title": "Desktop version",
+          "description": "As a desktop player, I want a complete Royals and Rogues experience designed for a larger screen so that I can comfortably play, inspect cards, communicate, and manage the game.\n\nDone when the current game works end to end on desktop and uses the latest Kiduna design system and quiet-enamel Royals and Rogues artwork.",
+          "sourceUrl": "https://trello.com/c/3LpK7dqs/26-desktop-version",
+          "closed": false,
+          "position": 140737488355328,
+          "designHref": "/standard-chrome",
+          "designAnswer": "Standard Studio chrome",
+          "template": false
+        }
+      ]
+    },
+    {
+      "sourceId": "6a85ca9a5b32c551dc97d96a",
+      "name": "👀 Review & Done",
+      "closed": false,
+      "position": 4,
+      "cards": [
+        {
+          "sourceId": "6a85caa35b32c551dc97e946",
+          "id": 10,
+          "title": "Review pull request",
+          "description": "Check the implementation against the acceptance criteria, verify test coverage, and leave clear feedback. Move the card on only after the review comments are resolved.",
+          "sourceUrl": "https://trello.com/c/ftbbW8Lg/10-review-pull-request",
+          "closed": true,
+          "position": 1,
+          "designHref": "/implementation#delivery",
+          "designAnswer": "Review gate",
+          "template": true
+        },
+        {
+          "sourceId": "6a85caa45b32c551dc97ea78",
+          "id": 11,
+          "title": "Verify in staging",
+          "description": "Confirm the change behaves correctly in a realistic environment before calling it done. Check the main user flow, any related edge cases, and whether the fix introduced regressions.",
+          "sourceUrl": "https://trello.com/c/FPgtIJRG/11-verify-in-staging",
+          "closed": true,
+          "position": 2,
+          "designHref": "/implementation#delivery",
+          "designAnswer": "Staging verification",
+          "template": true
+        },
+        {
+          "sourceId": "6a85caa55b32c551dc97ecc7",
+          "id": 12,
+          "title": "Ship and archive",
+          "description": "Once the work is approved and verified, mark it complete and archive the card. Keep this list as the final step so the board stays clean and current.",
+          "sourceUrl": "https://trello.com/c/FIaZts1I/12-ship-and-archive",
+          "closed": true,
+          "position": 3,
+          "designHref": "/downloads",
+          "designAnswer": "Handoff archive",
+          "template": true
+        }
+      ]
+    },
+    {
+      "sourceId": "6a86e331b9dc0191973980b9",
+      "name": "Resources",
+      "closed": false,
+      "position": 16388,
+      "cards": [
+        {
+          "sourceId": "6a86e343e09ffd8d1dac0566",
+          "id": 27,
+          "title": "Royals & Rogues Rules (Formerly Medieval Poker)",
+          "description": "[https://docs.google.com/document/d/1yhRRsfRDKg6e0OFy3qPjEfmSkCbzPE5Y_6QS0HCL7Qs/edit?usp=sharing](https://docs.google.com/document/d/1yhRRsfRDKg6e0OFy3qPjEfmSkCbzPE5Y_6QS0HCL7Qs/edit?usp=sharing \"smartCard-inline\")\n\n[https://drive.google.com/drive/folders/1e-Q23X7BB4ncNaBHWzTwa21MaEVK7Eq8?usp=drive_link](https://drive.google.com/drive/folders/1e-Q23X7BB4ncNaBHWzTwa21MaEVK7Eq8?usp=drive_link \"smartCard-inline\")\n\n@aashiksheikabdullah @eliasramirez @muthukrishnan3 @sriram20 @vijayoe @jeya2",
+          "sourceUrl": "https://trello.com/c/GYztW8FH/27-royals-rogues-rules-formerly-medieval-poker",
+          "closed": false,
+          "position": 140737488355328,
+          "designHref": "/gameplay#rules",
+          "designAnswer": "Rules in context",
+          "template": false
+        }
+      ]
+    }
+  ]
+}

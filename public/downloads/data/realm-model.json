@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0.0",
+  "canon": {"name":"Kiduna Taxonomy Canon","version":"V0.36","validatedSha256":"df2ead9b000482057b4f2ed909d1242e0cdfd32d0e8c3027807e309856a2a17c"},
+  "fixtures": {"sources":[{"id":"source-danny","name":"Danny","avatar":{"id":"avatar-moto","name":"Moto"}}]},
+  "realms": [
+    {"id":"realm-kinship-duna","name":"Kinship Duna","kind":"Duna","parentRealmId":null,"purpose":"People and their allies, organized around what matters most.","childRealmIds":["realm-fellowship-play"],"capabilityIds":["mage-kinship"]},
+    {"id":"realm-fellowship-play","name":"Fellowship of Play","kind":"Fellowship","parentRealmId":"realm-kinship-duna","purpose":"Cultivate play, belonging, learning, and shared practice.","childRealmIds":["realm-royals-rogues"]},
+    {"id":"realm-royals-rogues","name":"Royals & Rogues","kind":"Experience (prototype label)","parentRealmId":"realm-fellowship-play","purpose":"Gather for relational, strategic, power-inflected play.","childRealmIds":[]}
+  ],
+  "capabilities": [{"id":"mage-kinship","kind":"Mage","ownerRealmId":"realm-kinship-duna","may":["shape declared shared Realm capabilities","act within granted purpose","write auditable Realm events"],"mayNot":["enter private Realms without access","read private Wisdom","inherit authority from Realm nesting"]}],
+  "inheritance": {"mayInherit":["discoverable parent context","public purpose","visible relationship lineage","design shell"],"neverImplicitlyInherit":["private Wisdom","membership","role","permission","wallet authority","Actor capability"]}
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion":"1.0.0",
+  "machineId":"royals-rogues-demonstration",
+  "initial":"invitation-received",
+  "states":[
+    {"order":1,"id":"invitation-received","label":"Invitation received","next":["realm-preview"],"recovery":"request-new-invitation"},
+    {"order":2,"id":"realm-preview","label":"Realm preview","next":["handshake"],"recovery":"return-to-invitation"},
+    {"order":3,"id":"handshake","label":"Handshake","next":["great-hall"],"recovery":"explain-invalid-used-or-expired"},
+    {"order":4,"id":"great-hall","label":"Great Hall","next":["match-preferences","cell-gathering"],"recovery":"restore-arrival-state"},
+    {"order":5,"id":"match-preferences","label":"Match preferences","next":["match-proposed"],"recovery":"save-draft"},
+    {"order":6,"id":"match-proposed","label":"Match proposed","next":["cell-gathering","match-preferences"],"recovery":"alternative-proposal"},
+    {"order":7,"id":"cell-gathering","label":"Cell gathering","next":["table-setup"],"recovery":"reopen-seat"},
+    {"order":8,"id":"table-setup","label":"Table setup","next":["deal"],"recovery":"resolve-or-leave"},
+    {"order":9,"id":"deal","label":"Deal","next":["setup-powers"],"recovery":"reconnect-private-state"},
+    {"order":10,"id":"setup-powers","label":"Setup powers","next":["round"],"recovery":"preserve-selections"},
+    {"order":11,"id":"round","label":"Round","next":["round","counter","showdown"],"recovery":"timer-and-reconnect-policy"},
+    {"order":12,"id":"counter","label":"Counter","next":["round","showdown"],"recovery":"visible-timeout"},
+    {"order":13,"id":"showdown","label":"Showdown","next":["after-hand"],"recovery":"deterministic-event-replay"},
+    {"order":14,"id":"after-hand","label":"After the hand","next":["table-setup","realm-return"],"recovery":"save-table-state"},
+    {"order":15,"id":"realm-return","label":"Realm return","next":["great-hall"],"recovery":"restore-prior-focus"}
+  ],
+  "persistentContext":["sourceId","avatarId","realmPath","cellId","participants","voiceState","permissionSnapshot","kiConversationId","pendingConfirmations","eventCursor"],
+  "rulesFixture":{"base":"No-Limit Texas Hold’em with antes","deck":"52-card deck plus one Joker","holeCards":3,"powerDeckCards":40,"powerTiming":["Setup","Round","Showdown","Counter"],"playerStates":["Heating Up","Tilted"]}
+}

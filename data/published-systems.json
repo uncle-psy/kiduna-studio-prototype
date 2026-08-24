@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-24",
+  "systems": [
+    {
+      "id": "isometric-scene-system",
+      "label": "Isometric Scene System",
+      "kind": "system",
+      "route": "/isometric",
+      "firstPublishedAt": "2026-08-21",
+      "surface": "external-rewrite",
+      "status": "active",
+      "order": 1,
+      "listedOnHome": true,
+      "listedInSystemsMenu": true
+    },
+    {
+      "id": "royals-and-rogues",
+      "label": "Royals & Rogues",
+      "kind": "system",
+      "route": "/royals-and-rogues",
+      "firstPublishedAt": "2026-08-21",
+      "surface": "external-rewrite",
+      "status": "active",
+      "order": 2,
+      "listedOnHome": true,
+      "listedInSystemsMenu": true
+    },
+    {
+      "id": "kiduna-coherence",
+      "label": "Kiduna Coherence",
+      "kind": "system",
+      "route": "/coherence",
+      "firstPublishedAt": "2026-08-21",
+      "surface": "external-rewrite",
+      "status": "active",
+      "order": 3,
+      "listedOnHome": true,
+      "listedInSystemsMenu": true
+    },
+    {
+      "id": "bellwether",
+      "label": "Bellwether Reference Implementation",
+      "kind": "system",
+      "route": "/bellwether",
+      "firstPublishedAt": "2026-08-23",
+      "surface": "external-rewrite",
+      "status": "active",
+      "order": 4,
+      "listedOnHome": true,
+      "listedInSystemsMenu": true
+    },
+    {
+      "id": "biology-deck",
+      "label": "Biology Deck",
+      "kind": "system",
+      "route": "/biology-deck",
+      "firstPublishedAt": "2026-08-24",
+      "surface": "external-rewrite",
+      "status": "active",
+      "order": 5,
+      "listedOnHome": true,
+      "listedInSystemsMenu": true
+    },
+    {
+      "id": "pop-culture-deck",
+      "label": "Pop Culture Deck",
+      "kind": "system",
+      "route": "/pop-culture-deck",
+      "firstPublishedAt": "2026-08-24",
+      "surface": "external-rewrite",
+      "status": "active",
+      "order": 6,
+      "listedOnHome": true,
+      "listedInSystemsMenu": true
+    },
+    {
+      "id": "systems-oracle",
+      "label": "Systems Oracle",
+      "kind": "system",
+      "route": "/systems-oracle",
+      "firstPublishedAt": "2026-08-24",
+      "surface": "local-page",
+      "status": "active",
+      "order": 7,
+      "listedOnHome": true,
+      "listedInSystemsMenu": true
+    },
+    {
+      "id": "mapshifting",
+      "label": "Mapshifting",
+      "kind": "system-family",
+      "route": "/#mapshifting",
+      "firstPublishedAt": "2026-08-23",
+      "surface": "local-anchor",
+      "status": "active",
+      "order": 8,
+      "listedOnHome": true,
+      "listedInSystemsMenu": false
+    },
+    {
+      "id": "mapshifting-animal-deck",
+      "label": "Mapshifting Animal Deck",
+      "kind": "deck",
+      "route": "/mapshifting/animal-deck",
+      "firstPublishedAt": "2026-08-23",
+      "surface": "local-page",
+      "status": "active",
+      "order": 9,
+      "listedOnHome": true,
+      "listedInSystemsMenu": false
+    },
+    {
+      "id": "mapshifting-nature-deck",
+      "label": "Mapshifting Nature Deck",
+      "kind": "deck",
+      "route": "/mapshifting/nature-deck",
+      "firstPublishedAt": "2026-08-23",
+      "surface": "local-page",
+      "status": "active",
+      "order": 10,
+      "listedOnHome": true,
+      "listedInSystemsMenu": false
+    },
+    {
+      "id": "mapshifting-alchemy-deck",
+      "label": "Mapshifting Alchemy Deck",
+      "kind": "deck",
+      "route": "/mapshifting/alchemy-deck",
+      "firstPublishedAt": "2026-08-23",
+      "surface": "local-page",
+      "status": "active",
+      "order": 11,
+      "listedOnHome": true,
+      "listedInSystemsMenu": false
+    }
+  ]
+}

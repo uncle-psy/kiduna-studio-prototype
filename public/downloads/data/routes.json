@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-08-21T00:00:00-04:00",
+  "routes": [
+    {"path":"/","id":"overview","title":"System overview","anchors":["realm-model","principles"]},
+    {"path":"/standard-chrome","id":"standard-chrome","title":"Standard Studio chrome","anchors":[]},
+    {"path":"/kinship-duna","id":"kinship-duna","title":"Kinship Duna","anchors":["mage-boundary"]},
+    {"path":"/fellowship-of-play","id":"fellowship-of-play","title":"Fellowship of Play","anchors":[]},
+    {"path":"/royals-and-rogues","id":"royals-and-rogues","title":"Royals & Rogues","anchors":["design-system","matching","create-cell","create-alliance","invite","resources"]},
+    {"path":"/gameplay","id":"gameplay","title":"Gameplay","anchors":["state-01","state-02","state-03","state-04","state-05","state-06","state-07","state-08","state-09","state-10","state-11","state-12","state-13","state-14","state-15","rules","table-economy","tournaments"]},
+    {"path":"/ki-allies-actors","id":"ki-allies-actors","title":"Ki, Allies & Actors","anchors":["bring-ally","gameplay","voice","actors"]},
+    {"path":"/actions-permissions","id":"actions-permissions","title":"Actions & permissions","anchors":["automations","constraints","resources"]},
+    {"path":"/components-states","id":"components-states","title":"Components & states","anchors":[]},
+    {"path":"/implementation","id":"implementation","title":"Implementation plan","anchors":["delivery"]},
+    {"path":"/rapid-board","id":"rapid-board","title":"Rapid Board","anchors":[]},
+    {"path":"/downloads","id":"downloads","title":"Developer downloads","anchors":["rapid-board"]}
+  ]
+}

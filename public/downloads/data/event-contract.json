@@ -1,0 +1,24 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://kiduna.ai/schemas/studio-event-v1.json",
+  "title":"Kiduna Studio consequential event",
+  "type":"object",
+  "required":["eventId","schemaVersion","occurredAt","recordedAt","actor","action","scope","permissionDecision","summary","result"],
+  "properties":{
+    "eventId":{"type":"string"},
+    "schemaVersion":{"const":"1.0.0"},
+    "occurredAt":{"type":"string","format":"date-time"},
+    "recordedAt":{"type":"string","format":"date-time"},
+    "actor":{"type":"object","required":["kind","id"],"properties":{"kind":{"enum":["Source","Avatar","Ally","Actor","Mage","Automation","System"]},"id":{"type":"string"},"actingForSourceId":{"type":["string","null"]}}},
+    "action":{"type":"string"},
+    "scope":{"type":"object","required":["realmId"],"properties":{"realmId":{"type":"string"},"sceneId":{"type":["string","null"]},"objectIds":{"type":"array","items":{"type":"string"}}}},
+    "permissionDecision":{"type":"object","required":["decision","policyVersion"],"properties":{"decision":{"enum":["allowed","confirmation-required","denied","expired"]},"policyVersion":{"type":"string"},"reasonCode":{"type":["string","null"]}}},
+    "summary":{"type":"string"},
+    "inputReferences":{"type":"array","items":{"type":"string"}},
+    "outputReferences":{"type":"array","items":{"type":"string"}},
+    "lineage":{"type":"array","items":{"type":"string"}},
+    "result":{"enum":["pending","succeeded","failed","partially-completed","reversed","expired"]},
+    "correlationEventIds":{"type":"array","items":{"type":"string"}}
+  },
+  "additionalProperties":false
+}
