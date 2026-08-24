@@ -137,8 +137,8 @@ export default function Home() {
             <div><h3>Nature Deck</h3><p>Eighty-one patterns across nine scales—from photon to expanding universe—with nine illustrated calibration cards.</p><b>81 manual cards · 9 proofs</b><a href="/mapshifting/nature-deck">Enter the deck →</a></div>
           </article>
           <article className={styles.deckCard}>
-            <a className={`${styles.deckVisual} ${styles.alchemyVisual}`} href="/mapshifting/alchemy-deck" aria-label="Enter the Mapshifting Alchemy Deck"><i/><i/><i/><strong>◆</strong><span>03 · SOURCE RECOVERY</span></a>
-            <div><h3>Alchemy Deck</h3><p>The Book of Alchemy’s preserved suits, grades, planetary balances, stones, layouts, corrections, and recovery path.</p><b>Working library preserved</b><a href="/mapshifting/alchemy-deck">Enter the deck →</a></div>
+            <a className={styles.deckVisual} href="/mapshifting/alchemy-deck"><img src="/mapshifting/alchemy/cards/card-050-master-landscape-w960.webp" alt="Master card from the Mapshifting Alchemy Deck"/><span>03 · COMPLETE VISUAL LIBRARY</span></a>
+            <div><h3>Alchemy Deck</h3><p>Fifty alchemical identities across six visual families, each realized as an independent portrait card and landscape field.</p><b>50 cards · 100 finished works</b><a href="/mapshifting/alchemy-deck">Enter the deck →</a></div>
           </article>
         </div>
       </section>

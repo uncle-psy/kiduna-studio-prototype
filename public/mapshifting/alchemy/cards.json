@@ -1,0 +1,452 @@
+[
+  {
+    "id": "card-001",
+    "name": "Examine",
+    "suit": "Alembic",
+    "suitKey": "alembic",
+    "suitMeaning": "Love",
+    "suitRuler": "Venus",
+    "grade": "Puffer"
+  },
+  {
+    "id": "card-002",
+    "name": "Need",
+    "suit": "Alembic",
+    "suitKey": "alembic",
+    "suitMeaning": "Love",
+    "suitRuler": "Venus",
+    "grade": "Puffer"
+  },
+  {
+    "id": "card-003",
+    "name": "Desire",
+    "suit": "Alembic",
+    "suitKey": "alembic",
+    "suitMeaning": "Love",
+    "suitRuler": "Venus",
+    "grade": "Puffer"
+  },
+  {
+    "id": "card-004",
+    "name": "Reason",
+    "suit": "Alembic",
+    "suitKey": "alembic",
+    "suitMeaning": "Love",
+    "suitRuler": "Venus",
+    "grade": "Initiate"
+  },
+  {
+    "id": "card-005",
+    "name": "Finalize",
+    "suit": "Alembic",
+    "suitKey": "alembic",
+    "suitMeaning": "Love",
+    "suitRuler": "Venus",
+    "grade": "Initiate"
+  },
+  {
+    "id": "card-006",
+    "name": "Nurture",
+    "suit": "Alembic",
+    "suitKey": "alembic",
+    "suitMeaning": "Love",
+    "suitRuler": "Venus",
+    "grade": "Initiate"
+  },
+  {
+    "id": "card-007",
+    "name": "Unite",
+    "suit": "Alembic",
+    "suitKey": "alembic",
+    "suitMeaning": "Love",
+    "suitRuler": "Venus",
+    "grade": "Adept"
+  },
+  {
+    "id": "card-008",
+    "name": "Delight",
+    "suit": "Alembic",
+    "suitKey": "alembic",
+    "suitMeaning": "Love",
+    "suitRuler": "Venus",
+    "grade": "Adept"
+  },
+  {
+    "id": "card-009",
+    "name": "Transmute",
+    "suit": "Alembic",
+    "suitKey": "alembic",
+    "suitMeaning": "Love",
+    "suitRuler": "Venus",
+    "grade": "Adept"
+  },
+  {
+    "id": "card-010",
+    "name": "Transform",
+    "suit": "Tree",
+    "suitKey": "tree",
+    "suitMeaning": "Health",
+    "suitRuler": "Sun",
+    "grade": "Puffer"
+  },
+  {
+    "id": "card-011",
+    "name": "Revivify",
+    "suit": "Tree",
+    "suitKey": "tree",
+    "suitMeaning": "Health",
+    "suitRuler": "Sun",
+    "grade": "Puffer"
+  },
+  {
+    "id": "card-012",
+    "name": "Restore",
+    "suit": "Tree",
+    "suitKey": "tree",
+    "suitMeaning": "Health",
+    "suitRuler": "Sun",
+    "grade": "Puffer"
+  },
+  {
+    "id": "card-013",
+    "name": "Vitalize",
+    "suit": "Tree",
+    "suitKey": "tree",
+    "suitMeaning": "Health",
+    "suitRuler": "Sun",
+    "grade": "Initiate"
+  },
+  {
+    "id": "card-014",
+    "name": "Relieve",
+    "suit": "Tree",
+    "suitKey": "tree",
+    "suitMeaning": "Health",
+    "suitRuler": "Sun",
+    "grade": "Initiate"
+  },
+  {
+    "id": "card-015",
+    "name": "Sustain",
+    "suit": "Tree",
+    "suitKey": "tree",
+    "suitMeaning": "Health",
+    "suitRuler": "Sun",
+    "grade": "Initiate"
+  },
+  {
+    "id": "card-016",
+    "name": "Create",
+    "suit": "Tree",
+    "suitKey": "tree",
+    "suitMeaning": "Health",
+    "suitRuler": "Sun",
+    "grade": "Adept"
+  },
+  {
+    "id": "card-017",
+    "name": "Inundate",
+    "suit": "Tree",
+    "suitKey": "tree",
+    "suitMeaning": "Health",
+    "suitRuler": "Sun",
+    "grade": "Adept"
+  },
+  {
+    "id": "card-018",
+    "name": "Complete",
+    "suit": "Tree",
+    "suitKey": "tree",
+    "suitMeaning": "Health",
+    "suitRuler": "Sun",
+    "grade": "Adept"
+  },
+  {
+    "id": "card-019",
+    "name": "Prepare",
+    "suit": "Retort",
+    "suitKey": "retort",
+    "suitMeaning": "Wealth",
+    "suitRuler": "Jupiter",
+    "grade": "Puffer"
+  },
+  {
+    "id": "card-020",
+    "name": "Detail",
+    "suit": "Retort",
+    "suitKey": "retort",
+    "suitMeaning": "Wealth",
+    "suitRuler": "Jupiter",
+    "grade": "Puffer"
+  },
+  {
+    "id": "card-021",
+    "name": "Invest",
+    "suit": "Retort",
+    "suitKey": "retort",
+    "suitMeaning": "Wealth",
+    "suitRuler": "Jupiter",
+    "grade": "Puffer"
+  },
+  {
+    "id": "card-022",
+    "name": "Cultivate",
+    "suit": "Retort",
+    "suitKey": "retort",
+    "suitMeaning": "Wealth",
+    "suitRuler": "Jupiter",
+    "grade": "Initiate"
+  },
+  {
+    "id": "card-023",
+    "name": "Affiliate",
+    "suit": "Retort",
+    "suitKey": "retort",
+    "suitMeaning": "Wealth",
+    "suitRuler": "Jupiter",
+    "grade": "Initiate"
+  },
+  {
+    "id": "card-024",
+    "name": "Control",
+    "suit": "Retort",
+    "suitKey": "retort",
+    "suitMeaning": "Wealth",
+    "suitRuler": "Jupiter",
+    "grade": "Initiate"
+  },
+  {
+    "id": "card-025",
+    "name": "Attain",
+    "suit": "Retort",
+    "suitKey": "retort",
+    "suitMeaning": "Wealth",
+    "suitRuler": "Jupiter",
+    "grade": "Adept"
+  },
+  {
+    "id": "card-026",
+    "name": "Unify",
+    "suit": "Retort",
+    "suitKey": "retort",
+    "suitMeaning": "Wealth",
+    "suitRuler": "Jupiter",
+    "grade": "Adept"
+  },
+  {
+    "id": "card-027",
+    "name": "Culminate",
+    "suit": "Retort",
+    "suitKey": "retort",
+    "suitMeaning": "Wealth",
+    "suitRuler": "Jupiter",
+    "grade": "Adept"
+  },
+  {
+    "id": "card-028",
+    "name": "Protect",
+    "suit": "Egg",
+    "suitKey": "egg",
+    "suitMeaning": "Protection",
+    "suitRuler": "Moon",
+    "grade": "Puffer"
+  },
+  {
+    "id": "card-029",
+    "name": "Secrete",
+    "suit": "Egg",
+    "suitKey": "egg",
+    "suitMeaning": "Protection",
+    "suitRuler": "Moon",
+    "grade": "Puffer"
+  },
+  {
+    "id": "card-030",
+    "name": "Guard",
+    "suit": "Egg",
+    "suitKey": "egg",
+    "suitMeaning": "Protection",
+    "suitRuler": "Moon",
+    "grade": "Puffer"
+  },
+  {
+    "id": "card-031",
+    "name": "Shelter",
+    "suit": "Egg",
+    "suitKey": "egg",
+    "suitMeaning": "Protection",
+    "suitRuler": "Moon",
+    "grade": "Initiate"
+  },
+  {
+    "id": "card-032",
+    "name": "Fortify",
+    "suit": "Egg",
+    "suitKey": "egg",
+    "suitMeaning": "Protection",
+    "suitRuler": "Moon",
+    "grade": "Initiate"
+  },
+  {
+    "id": "card-033",
+    "name": "Energize",
+    "suit": "Egg",
+    "suitKey": "egg",
+    "suitMeaning": "Protection",
+    "suitRuler": "Moon",
+    "grade": "Initiate"
+  },
+  {
+    "id": "card-034",
+    "name": "Shield",
+    "suit": "Egg",
+    "suitKey": "egg",
+    "suitMeaning": "Protection",
+    "suitRuler": "Moon",
+    "grade": "Adept"
+  },
+  {
+    "id": "card-035",
+    "name": "Secure",
+    "suit": "Egg",
+    "suitKey": "egg",
+    "suitMeaning": "Protection",
+    "suitRuler": "Moon",
+    "grade": "Adept"
+  },
+  {
+    "id": "card-036",
+    "name": "Realize",
+    "suit": "Egg",
+    "suitKey": "egg",
+    "suitMeaning": "Protection",
+    "suitRuler": "Moon",
+    "grade": "Adept"
+  },
+  {
+    "id": "card-037",
+    "name": "Mature",
+    "suit": "Athanor",
+    "suitKey": "athanor",
+    "suitMeaning": "Power",
+    "suitRuler": "Mars",
+    "grade": "Puffer"
+  },
+  {
+    "id": "card-038",
+    "name": "Subdue",
+    "suit": "Athanor",
+    "suitKey": "athanor",
+    "suitMeaning": "Power",
+    "suitRuler": "Mars",
+    "grade": "Puffer"
+  },
+  {
+    "id": "card-039",
+    "name": "Diversify",
+    "suit": "Athanor",
+    "suitKey": "athanor",
+    "suitMeaning": "Power",
+    "suitRuler": "Mars",
+    "grade": "Puffer"
+  },
+  {
+    "id": "card-040",
+    "name": "Connect",
+    "suit": "Athanor",
+    "suitKey": "athanor",
+    "suitMeaning": "Power",
+    "suitRuler": "Mars",
+    "grade": "Initiate"
+  },
+  {
+    "id": "card-041",
+    "name": "Delegate",
+    "suit": "Athanor",
+    "suitKey": "athanor",
+    "suitMeaning": "Power",
+    "suitRuler": "Mars",
+    "grade": "Initiate"
+  },
+  {
+    "id": "card-042",
+    "name": "Arbitrate",
+    "suit": "Athanor",
+    "suitKey": "athanor",
+    "suitMeaning": "Power",
+    "suitRuler": "Mars",
+    "grade": "Initiate"
+  },
+  {
+    "id": "card-043",
+    "name": "Persevere",
+    "suit": "Athanor",
+    "suitKey": "athanor",
+    "suitMeaning": "Power",
+    "suitRuler": "Mars",
+    "grade": "Adept"
+  },
+  {
+    "id": "card-044",
+    "name": "Analyze",
+    "suit": "Athanor",
+    "suitKey": "athanor",
+    "suitMeaning": "Power",
+    "suitRuler": "Mars",
+    "grade": "Adept"
+  },
+  {
+    "id": "card-045",
+    "name": "Influence",
+    "suit": "Athanor",
+    "suitKey": "athanor",
+    "suitMeaning": "Power",
+    "suitRuler": "Mars",
+    "grade": "Adept"
+  },
+  {
+    "id": "card-046",
+    "name": "Execute",
+    "suit": "Wild Card",
+    "suitKey": "wild",
+    "suitMeaning": "Powerful supplemental force",
+    "suitRuler": "Mercury",
+    "grade": "Wild"
+  },
+  {
+    "id": "card-047",
+    "name": "Balance",
+    "suit": "Wild Card",
+    "suitKey": "wild",
+    "suitMeaning": "Powerful supplemental force",
+    "suitRuler": "Mercury",
+    "grade": "Wild"
+  },
+  {
+    "id": "card-048",
+    "name": "Observe",
+    "suit": "Wild Card",
+    "suitKey": "wild",
+    "suitMeaning": "Powerful supplemental force",
+    "suitRuler": "Mercury",
+    "grade": "Wild"
+  },
+  {
+    "id": "card-049",
+    "name": "Harmonize",
+    "suit": "Wild Card",
+    "suitKey": "wild",
+    "suitMeaning": "Powerful supplemental force",
+    "suitRuler": "Mercury",
+    "grade": "Wild"
+  },
+  {
+    "id": "card-050",
+    "name": "Master",
+    "suit": "Wild Card",
+    "suitKey": "wild",
+    "suitMeaning": "Powerful supplemental force",
+    "suitRuler": "Mercury",
+    "grade": "Wild"
+  }
+]

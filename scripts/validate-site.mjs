@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const oracle = join(root, "public", "systems-oracle-app");
+const alchemy = join(root, "public", "mapshifting", "alchemy");
 const failures = [];
 const check = (condition, message) => {
   if (!condition) failures.push(message);
@@ -41,9 +42,27 @@ check(app.includes(".webp"), "Systems Oracle does not point to optimized web art
 check(header.includes('href="/systems-oracle"'), "Kiduna Systems navigation does not link to Systems Oracle");
 check(route.includes('/systems-oracle-app/index.html#home'), "Systems Oracle route does not load the reference application");
 
+const alchemyCards = JSON.parse(await readFile(join(alchemy, "cards.json"), "utf8"));
+check(alchemyCards.length === 50, `Expected 50 Alchemy cards; found ${alchemyCards.length}`);
+for (const card of alchemyCards) {
+  const slug = card.name.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+  for (const [orientation, width] of [["landscape", 960], ["portrait", 540]]) {
+    const name = `${card.id}-${slug}-${orientation}-w${width}.webp`;
+    const path = join(alchemy, "cards", name);
+    check(await exists(path), `Missing Alchemy artwork: ${name}`);
+    if (await exists(path)) check((await stat(path)).size > 40_000, `Alchemy artwork is unexpectedly small: ${name}`);
+  }
+}
+for (const name of ["mapshifting-alchemy-landscape-contact-sheet.jpg", "mapshifting-alchemy-portrait-contact-sheet.jpg"]) {
+  check(await exists(alchemy, "contact-sheets", name), `Missing Alchemy contact sheet: ${name}`);
+}
+const alchemyDownload = join(root, "public", "downloads", "Mapshifting-Alchemy-Deck-Finished-Art-Web.zip");
+check(await exists(alchemyDownload), "Missing complete Alchemy web-edition download");
+if (await exists(alchemyDownload)) check((await stat(alchemyDownload)).size > 30_000_000, "Alchemy web-edition download is unexpectedly small");
+
 if (failures.length) {
   console.error(failures.map((failure) => `- ${failure}`).join("\n"));
   process.exit(1);
 }
 
-console.log(`Validated Kiduna Design with Systems Oracle: ${artifacts.length} artifacts, ${relationships.length} relationships, ${references.length} optimized reference artworks.`);
+console.log(`Validated Kiduna Design: Systems Oracle has ${artifacts.length} artifacts and ${references.length} reference artworks; Alchemy has ${alchemyCards.length} cards and ${alchemyCards.length * 2} finished compositions.`);
