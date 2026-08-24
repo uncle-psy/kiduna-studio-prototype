@@ -11,6 +11,7 @@
     "start": "next start",
     "lint": "eslint .",
     "test": "node scripts/validate-site.mjs",
+    "alchemy:content": "node scripts/generate-alchemy-card-content.mjs && node scripts/generate-alchemy-card-markdown.mjs",
     "audit:published-systems": "node scripts/audit-published-systems.mjs",
     "check": "npm run audit:published-systems && npm run lint && npm run test && npm run build"
   },

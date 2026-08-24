@@ -29,3 +29,19 @@
 
 @media(max-width:1050px){.alchemy-dossier-scroll{grid-template-columns:250px 1fr}.alchemy-dossier-card{padding:24px}.alchemy-dossier-content{padding:40px 34px 60px}}
 @media(max-width:700px){.alchemy-dossier-backdrop{padding:0}.alchemy-dossier{width:100%;height:100vh;border:0;border-radius:0}.alchemy-dossier-header{min-height:60px;padding:0 14px 0 18px}.alchemy-dossier-header>div{display:grid;gap:3px}.alchemy-dossier-header strong{font-size:17px}.alchemy-dossier-scroll{display:block}.alchemy-dossier-card{padding:24px 24px 8px;position:relative;display:grid;grid-template-columns:112px 1fr;gap:16px;align-items:end}.alchemy-dossier-card>div{display:grid;align-content:end}.alchemy-dossier-card small{text-align:left}.alchemy-dossier-content{padding:30px 24px 55px;border-left:0}.alchemy-dossier-content>h2{font-size:54px}.alchemy-dossier-dual,.alchemy-dossier-facts{grid-template-columns:1fr}.alchemy-dossier-facts div{grid-template-columns:112px 1fr}}
+
+/* Complete-card content standard: the compact card and dossier share one hierarchy. */
+.alchemy-card-lower{min-height:390px;grid-template-columns:150px 1fr}
+.alchemy-portrait-art{height:390px}
+.alchemy-card-copy{padding:25px 24px;display:flex;flex-direction:column}
+.alchemy-card-copy h4{margin:9px 0 18px}
+.alchemy-card-copy dl div{grid-template-columns:78px 1fr;gap:12px;padding:7px 0}
+.alchemy-card-copy dt{line-height:1.35}
+.alchemy-card-copy dd{line-height:1.4}
+.alchemy-card-cta{margin-top:auto}
+.alchemy-dossier-summary{margin:0 0 34px;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid color-mix(in srgb,var(--dossier-color) 34%,var(--line));border-bottom:1px solid var(--line)}
+.alchemy-dossier-summary div{min-height:70px;padding:15px 16px;border-bottom:1px solid var(--line-soft)}
+.alchemy-dossier-summary div:nth-child(odd){border-right:1px solid var(--line)}
+.alchemy-dossier-summary dt{margin-bottom:7px;color:var(--dossier-color);font-size:7px;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+.alchemy-dossier-summary dd{margin:0;color:#e0d3bf;font-size:11px;line-height:1.5}
+@media(max-width:700px){.alchemy-card-lower{min-height:360px;grid-template-columns:112px 1fr}.alchemy-portrait-art{height:360px}.alchemy-card-copy{padding:20px 16px}.alchemy-card-copy dl div{grid-template-columns:68px 1fr}.alchemy-dossier-summary{grid-template-columns:1fr}.alchemy-dossier-summary div:nth-child(odd){border-right:0}}

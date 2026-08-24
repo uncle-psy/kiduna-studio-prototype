@@ -46,9 +46,17 @@ const alchemyCards = JSON.parse(await readFile(join(alchemy, "cards.json"), "utf
 check(alchemyCards.length === 50, `Expected 50 Alchemy cards; found ${alchemyCards.length}`);
 for (const card of alchemyCards) {
   check(Array.isArray(card.gifts), `Alchemy card lacks a gifts list: ${card.id}`);
+  check(card.gifts.length > 0, `Alchemy card has no gifts: ${card.id}`);
+  check(Array.isArray(card.challenges) && card.challenges.length > 0, `Alchemy card has no challenges: ${card.id}`);
   check(Array.isArray(card.wounds), `Alchemy card lacks a wounds list: ${card.id}`);
+  check(JSON.stringify(card.challenges) === JSON.stringify(card.wounds), `Alchemy Challenges and Wounds have drifted: ${card.id}`);
   check(typeof card.description === "string" && card.description.length > 20, `Alchemy card lacks its complete description: ${card.id}`);
-  check(typeof card.narrative === "string", `Alchemy card lacks a narrative field: ${card.id}`);
+  check(typeof card.narrative === "string" && card.narrative.length > 80, `Alchemy card lacks a narrative field: ${card.id}`);
+  check(Array.isArray(card.narrativeParagraphs) && card.narrativeParagraphs.length > 0, `Alchemy card lacks structured narrative paragraphs: ${card.id}`);
+  if (card.suitKey !== "wild") {
+    check(typeof card.stone === "string" && card.stone.length > 0, `Alchemy card lacks its stone: ${card.id}`);
+    check(typeof card.planetaryConjunction === "string" && card.planetaryConjunction.length > 0, `Alchemy card lacks its planetary conjunction: ${card.id}`);
+  }
   check(["source-backed", "incomplete-source"].includes(card.contentStatus), `Alchemy card lacks an explicit content status: ${card.id}`);
   const slug = card.name.toLowerCase().replace(/[^a-z0-9]+/g, "-");
   for (const [orientation, width] of [["landscape", 960], ["portrait", 540]]) {
@@ -58,7 +66,7 @@ for (const card of alchemyCards) {
     if (await exists(path)) check((await stat(path)).size > 40_000, `Alchemy artwork is unexpectedly small: ${name}`);
   }
 }
-check(alchemyCards.filter((card) => card.contentStatus === "incomplete-source").length === 3, "Expected exactly three explicitly incomplete Alchemy source records");
+check(alchemyCards.filter((card) => card.contentStatus === "incomplete-source").length === 0, "Expected zero incomplete Alchemy source records");
 const alchemyLibrary = await readFile(join(root, "app", "mapshifting", "alchemy-deck", "AlchemyCardLibrary.tsx"), "utf8");
 check(alchemyLibrary.includes("Read the complete card"), "Alchemy cards do not expose the complete-card call to action");
 check(alchemyLibrary.includes('role="dialog"'), "Alchemy complete-card experience is not exposed as an accessible dialog");
