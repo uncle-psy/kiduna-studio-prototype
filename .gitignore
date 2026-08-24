@@ -43,3 +43,6 @@ yarn-error.log*
 /packages/
 /public/assets/library/final/
 /public/assets/library/legacy/
+
+# Local high-resolution production masters (web editions live in public/)
+/artifacts/

@@ -87,16 +87,24 @@ check(taoCards.filter((card) => card.phase.length).length === 5, "Expected five 
 check(taoCards.filter((card) => card.trigram.length).length === 8, "Expected eight Tao trigram tiles with full correspondences");
 check(taoCards.every((card) => card.essence && card.image && card.movement && card.gift && card.shadow && card.excess && card.deficiency && card.return && card.divination && card.question && card.action), "A Tao tile lacks a required meaning field");
 check(taoCards.every((card) => card.relations.length >= 4), "A Tao tile has fewer than four authored relations");
+for (const card of taoCards) {
+  const number = card.id.slice(-3);
+  const name = `${number}-${card.slug}.webp`;
+  const path = join(tao, "tiles", "art", name);
+  check(await exists(path), `Missing finished Tao tile artwork: ${name}`);
+  if (await exists(path)) check((await stat(path)).size > 50_000, `Tao tile artwork is unexpectedly small: ${name}`);
+}
+check(await exists(tao, "tao-75-enamel-contact-sheet.webp"), "Missing complete 75-tile Tao contact sheet");
 const taoProof = join(tao, "tao-enamel-proof-sheet.png");
 check(await exists(taoProof), "Missing Tao enamel proof sheet");
 if (await exists(taoProof)) check((await stat(taoProof)).size > 1_000_000, "Tao proof sheet is unexpectedly small");
 check(await exists(tao, "TAO-ENAMEL-ORACLE-MANUAL.md"), "Missing Tao complete manual");
-const taoDownload = join(root, "public", "downloads", "Tao-Enamel-Oracle-Complete-v1.0.0.zip");
+const taoDownload = join(root, "public", "downloads", "Tao-Enamel-Oracle-Complete-v1.1.0.zip");
 check(await exists(taoDownload), "Missing complete Tao system download");
-if (await exists(taoDownload)) check((await stat(taoDownload)).size > 2_000_000, "Tao complete-system download is unexpectedly small");
+if (await exists(taoDownload)) check((await stat(taoDownload)).size > 15_000_000, "Tao complete-system download is unexpectedly small");
 const taoPage = await readFile(join(root, "app", "tao", "page.tsx"), "utf8");
 check(taoPage.includes("TaoCardLibrary"), "Tao route does not expose the complete tile library");
-check(taoPage.includes("Tao-Enamel-Oracle-Complete-v1.0.0.zip"), "Tao route does not expose its complete archive");
+check(taoPage.includes("Tao-Enamel-Oracle-Complete-v1.1.0.zip"), "Tao route does not expose its complete archive");
 
 if (failures.length) {
   console.error(failures.map((failure) => `- ${failure}`).join("\n"));
