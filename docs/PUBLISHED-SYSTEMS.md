@@ -18,3 +18,5 @@
 3. Add it to the homepage and, when appropriate, the Systems menu.
 4. Run the local audit, full test suite, and build.
 5. Compare against production before publishing.
+
+Political Change intentionally uses protected ledger order `14`, reserving order `13` for the independently reviewed Real Estate & Mortgage release. Its visible homepage position reflects the systems currently live.

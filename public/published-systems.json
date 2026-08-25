@@ -145,6 +145,18 @@
       "order": 12,
       "listedOnHome": true,
       "listedInSystemsMenu": true
+    },
+    {
+      "id": "political-change-system",
+      "label": "Political Change System",
+      "kind": "system",
+      "route": "/political-change",
+      "firstPublishedAt": "2026-08-24",
+      "surface": "local-page",
+      "status": "active",
+      "order": 14,
+      "listedOnHome": true,
+      "listedInSystemsMenu": true
     }
   ]
 }
