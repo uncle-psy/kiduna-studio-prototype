@@ -7,6 +7,7 @@ const oracle = join(root, "public", "systems-oracle-app");
 const alchemy = join(root, "public", "mapshifting", "alchemy");
 const tao = join(root, "public", "tao");
 const political = join(root, "public", "political-change");
+const disclosure = join(root, "public", "science-fiction-disclosure");
 const failures = [];
 const check = (condition, message) => {
   if (!condition) failures.push(message);
@@ -129,9 +130,33 @@ const politicalPage = await readFile(join(root, "app", "political-change", "page
 check(politicalPage.includes("PoliticalChangeLibrary"), "Political Change route does not expose the complete node library");
 check(politicalPage.includes("Political-Change-System-Complete-v1.0.0.zip"), "Political Change route does not expose its complete archive");
 
+const disclosureCards = JSON.parse(await readFile(join(disclosure, "oracle", "downloads", "cards.json"), "utf8"));
+const disclosureEdges = JSON.parse(await readFile(join(disclosure, "oracle", "downloads", "relationships.json"), "utf8"));
+const disclosureLineages = JSON.parse(await readFile(join(disclosure, "oracle", "downloads", "lineages.json"), "utf8"));
+const disclosureSpreads = JSON.parse(await readFile(join(disclosure, "oracle", "downloads", "spreads.json"), "utf8"));
+const disclosureGames = JSON.parse(await readFile(join(disclosure, "oracle", "downloads", "games.json"), "utf8"));
+check(disclosureCards.length === 480, `Expected 480 Science Fiction & Disclosure Tiles; found ${disclosureCards.length}`);
+check(disclosureEdges.length === 2226, `Expected 2,226 Science Fiction & Disclosure relationships; found ${disclosureEdges.length}`);
+check(disclosureLineages.length === 14, `Expected 14 Science Fiction & Disclosure lineages; found ${disclosureLineages.length}`);
+check(disclosureSpreads.length === 12, `Expected 12 Science Fiction & Disclosure spreads; found ${disclosureSpreads.length}`);
+check(disclosureGames.length === 12, `Expected 12 Science Fiction & Disclosure games; found ${disclosureGames.length}`);
+check(disclosureCards.every((card) => card.id && card.title && card.class && card.epistemicLayers && card.sources && card.safety), "A Science Fiction & Disclosure Tile lacks identity, epistemic layers, sources, or safety controls");
+for (const slug of ["disclosure", "starseed", "secret-space-program", "space-memory-network", "structured-water"]) {
+  check(await exists(disclosure, "oracle", "assets", "reference-tiles", `sfoc-${slug === "disclosure" ? "events" : slug === "starseed" ? "beings" : slug === "secret-space-program" ? "programs" : slug === "space-memory-network" ? "cosmologies" : "technologies"}-${slug}.svg`), `Missing Science Fiction & Disclosure reference Tile: ${slug}`);
+}
+const disclosureHero = join(disclosure, "featured-enamel-network.png");
+check(await exists(disclosureHero), "Missing Science Fiction & Disclosure finished enamel hero");
+if (await exists(disclosureHero)) check((await stat(disclosureHero)).size > 1_000_000, "Science Fiction & Disclosure hero is unexpectedly small");
+const disclosureDownload = join(root, "public", "downloads", "Science-Fiction-Disclosure-System-Complete-v1.0.0.zip");
+check(await exists(disclosureDownload), "Missing complete Science Fiction & Disclosure system download");
+if (await exists(disclosureDownload)) check((await stat(disclosureDownload)).size > 50_000_000, "Science Fiction & Disclosure complete-system download is unexpectedly small");
+const disclosurePage = await readFile(join(root, "app", "science-fiction-disclosure", "page.tsx"), "utf8");
+check(disclosurePage.includes("/science-fiction-disclosure/oracle/index.html#home"), "Science Fiction & Disclosure route does not expose its interactive system");
+check(disclosurePage.includes("Science-Fiction-Disclosure-System-Complete-v1.0.0.zip"), "Science Fiction & Disclosure route does not expose its complete archive");
+
 if (failures.length) {
   console.error(failures.map((failure) => `- ${failure}`).join("\n"));
   process.exit(1);
 }
 
-console.log(`Validated Kiduna Design: Systems Oracle has ${artifacts.length} artifacts and ${references.length} reference artworks; Alchemy has ${alchemyCards.length} cards and ${alchemyCards.length * 2} finished compositions; Tao has ${taoCards.length} tiles and ${taoGraph.edges.length} typed relations; Political Change has ${politicalNodes.length} nodes, ${politicalEdges.length} typed relations, and ${politicalMapshifts.length} mapshifts.`);
+console.log(`Validated Kiduna Design: Systems Oracle has ${artifacts.length} artifacts and ${references.length} reference artworks; Alchemy has ${alchemyCards.length} cards and ${alchemyCards.length * 2} finished compositions; Tao has ${taoCards.length} tiles and ${taoGraph.edges.length} typed relations; Political Change has ${politicalNodes.length} nodes, ${politicalEdges.length} typed relations, and ${politicalMapshifts.length} mapshifts; Science Fiction & Disclosure has ${disclosureCards.length} Tiles and ${disclosureEdges.length} typed relations.`);

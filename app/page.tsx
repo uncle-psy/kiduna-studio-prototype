@@ -13,8 +13,8 @@ export default function Home() {
     <main>
       <section className={styles.hero}>
         <p className={styles.eyebrow}>KIDUNA DESIGN · CONCEPTUAL PROTOTYPES</p>
-        <h1>Nine systems.<br /><span>Five living decks.</span></h1>
-        <p className={styles.intro}>Explore Kiduna’s spatial language, the complete Royals &amp; Rogues game library, a build-ready system for alignment without obedience, Bellwether’s playable Level 1 reference world, symbolic maps of biology, culture, human-made systems, the Tao, and political change, plus three Mapshifting decks for reflection, discernment, and agency. These are design systems and working prototypes—not the production system.</p>
+        <h1>Ten systems.<br /><span>Five living decks.</span></h1>
+        <p className={styles.intro}>Explore Kiduna’s spatial language, the complete Royals &amp; Rogues game library, a build-ready system for alignment without obedience, Bellwether’s playable Level 1 reference world, symbolic maps of biology, culture, human-made systems, the Tao, political change, and science-fiction disclosure inquiry, plus three Mapshifting decks for reflection, discernment, and agency. These are design systems and working prototypes—not the production system.</p>
       </section>
 
       <section className={styles.systems} aria-label="Kiduna design systems">
@@ -146,6 +146,20 @@ export default function Home() {
             <h2>Political Change</h2>
             <span>A nonpartisan symbolic map of how power is acquired, exercised, resisted, legitimized, disrupted, reformed, captured, distributed, and transformed.</span>
             <a className={styles.enter} href="/political-change">Enter the system <b>→</b></a>
+          </div>
+        </article>
+
+        <article className={styles.systemCard}>
+          <a className={styles.visual} href="/science-fiction-disclosure" aria-label="Enter the Science Fiction and Disclosure System">
+            <img src="/science-fiction-disclosure/featured-enamel-network.png" alt="Five illuminated enamel inquiry tiles linked on an obsidian surface" />
+            <span className={styles.number}>10</span>
+            <span className={styles.status}>MAPSHIFTING SYSTEM</span>
+          </a>
+          <div className={styles.cardCopy}>
+            <p>FICTION · CLAIM · SYMBOL · EVIDENCE</p>
+            <h2>Science Fiction &amp; Disclosure</h2>
+            <span>An evidence-aware map of science fiction, disclosure narratives, starseed cosmologies, speculative technology, high strangeness, and cultural meaning.</span>
+            <a className={styles.enter} href="/science-fiction-disclosure">Enter the system <b>→</b></a>
           </div>
         </article>
       </section>

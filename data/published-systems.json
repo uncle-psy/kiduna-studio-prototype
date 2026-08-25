@@ -157,6 +157,18 @@
       "order": 14,
       "listedOnHome": true,
       "listedInSystemsMenu": true
+    },
+    {
+      "id": "science-fiction-disclosure",
+      "label": "Science Fiction & Disclosure",
+      "kind": "system",
+      "route": "/science-fiction-disclosure",
+      "firstPublishedAt": "2026-08-24",
+      "surface": "local-page",
+      "status": "active",
+      "order": 15,
+      "listedOnHome": true,
+      "listedInSystemsMenu": true
     }
   ]
 }

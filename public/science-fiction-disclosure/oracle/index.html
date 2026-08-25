@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta
+      name="description"
+      content="The interactive Science Fiction & Disclosure Mapshifting System: a provenance-aware atlas, oracle, graph, game library, and story laboratory."
+    />
+    <title>Science Fiction &amp; Disclosure — Interactive System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to the oracle</a>
+
+    <div class="ambient-field" aria-hidden="true">
+      <span class="star-field star-field--near"></span>
+      <span class="star-field star-field--far"></span>
+      <span class="horizon-glow"></span>
+    </div>
+
+    <div class="app-shell">
+      <header class="masthead">
+        <a class="brand" href="#home" aria-label="Science Fiction and Disclosure interactive system home">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="brand-copy">
+            <span class="eyebrow">Living reference system</span>
+            <strong>Science Fiction &amp; Disclosure</strong>
+          </span>
+        </a>
+
+        <div class="masthead-actions">
+          <a class="quiet-button" href="/science-fiction-disclosure">System overview</a>
+          <button class="quiet-button mobile-filter-toggle" id="mobile-filter-toggle" type="button" aria-controls="filter-rail" aria-expanded="false">
+            Filters
+          </button>
+          <button class="quiet-button" id="random-card-button" type="button">Surprise me</button>
+          <a class="primary-button" href="#divination">Draw an oracle</a>
+        </div>
+      </header>
+
+      <nav class="view-tabs" aria-label="Oracle sections" id="primary-navigation">
+        <a href="#home" data-route-link="home">Home</a>
+        <a href="#tiles" data-route-link="tiles">Tiles</a>
+        <a href="#graph" data-route-link="graph">Graph</a>
+        <a href="#lineages" data-route-link="lineages">Lineages</a>
+        <a href="#divination" data-route-link="divination">Divination</a>
+        <a href="#spreads" data-route-link="spreads">Spreads</a>
+        <a href="#games" data-route-link="games">Games</a>
+        <a href="#story" data-route-link="story">Story Lab</a>
+        <a href="#research" data-route-link="research">Research</a>
+        <a href="#visual" data-route-link="visual">Visual System</a>
+        <a href="#downloads" data-route-link="downloads">Downloads</a>
+      </nav>
+
+      <div class="workspace">
+        <aside class="filter-rail" id="filter-rail" aria-label="Search and filters">
+          <div class="rail-heading">
+            <div>
+              <span class="eyebrow">Inquiry console</span>
+              <h2>Find a signal</h2>
+            </div>
+            <button class="icon-button rail-close" id="rail-close" type="button" aria-label="Close filters">×</button>
+          </div>
+
+          <label class="search-box" for="global-search">
+            <span class="visually-hidden">Search the oracle</span>
+            <span aria-hidden="true">⌕</span>
+            <input
+              id="global-search"
+              type="search"
+              autocomplete="off"
+              placeholder="Search cards, themes, sources…"
+              role="combobox"
+              aria-haspopup="listbox"
+              aria-autocomplete="list"
+              aria-controls="search-results"
+              aria-expanded="false"
+              aria-activedescendant=""
+            />
+            <kbd>/</kbd>
+          </label>
+          <div class="search-results" id="search-results" role="listbox" aria-label="Search suggestions" hidden></div>
+
+          <div class="rail-section">
+            <div class="rail-section-heading">
+              <h3>Primary class</h3>
+              <button class="text-button" type="button" data-clear-filter="class">Clear</button>
+            </div>
+            <div class="filter-list" id="class-filters"></div>
+          </div>
+
+          <div class="rail-section">
+            <div class="rail-section-heading">
+              <h3>Inquiry domain</h3>
+              <button class="text-button" type="button" data-clear-filter="domain">Clear</button>
+            </div>
+            <div class="filter-list filter-list--compact" id="domain-filters"></div>
+          </div>
+
+          <div class="rail-section">
+            <div class="rail-section-heading">
+              <h3>Evidence state</h3>
+              <button class="text-button" type="button" data-clear-filter="evidence">Clear</button>
+            </div>
+            <div class="filter-list filter-list--compact" id="evidence-filters"></div>
+          </div>
+
+          <div class="rail-foot">
+            <span id="rail-card-count">0 cards</span>
+            <button class="text-button" id="clear-all-filters" type="button">Reset all</button>
+          </div>
+        </aside>
+
+        <main class="main-stage" id="main-content" tabindex="-1">
+          <div class="stage-status" id="stage-status" aria-live="polite"></div>
+          <section id="view-root" aria-live="off"></section>
+        </main>
+
+        <aside class="context-drawer" id="context-drawer" aria-label="Context panel" aria-hidden="true" inert>
+          <div class="drawer-handle" aria-hidden="true"></div>
+          <div class="drawer-topline">
+            <span class="eyebrow" id="drawer-kicker">Context</span>
+            <button class="icon-button" id="drawer-close" type="button" aria-label="Close context panel">×</button>
+          </div>
+          <div id="drawer-content"></div>
+        </aside>
+      </div>
+    </div>
+
+    <div class="command-hint" id="command-hint" role="status" aria-live="polite" hidden></div>
+
+    <noscript>
+      <div class="noscript-message">This reference library needs JavaScript to search, explore its graph, and draw cards.</div>
+    </noscript>
+
+    <script src="oracle-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
