@@ -13,8 +13,8 @@ export default function Home() {
     <main>
       <section className={styles.hero}>
         <p className={styles.eyebrow}>KIDUNA DESIGN · CONCEPTUAL PROTOTYPES</p>
-        <h1>Eight systems.<br /><span>Five living decks.</span></h1>
-        <p className={styles.intro}>Explore Kiduna’s spatial language, the complete Royals &amp; Rogues game library, a build-ready system for alignment without obedience, Bellwether’s playable Level 1 reference world, symbolic maps of biology, culture, human-made systems, and the Tao, plus three Mapshifting decks for reflection, discernment, and agency. These are design systems and working prototypes—not the production system.</p>
+        <h1>Nine systems.<br /><span>Five living decks.</span></h1>
+        <p className={styles.intro}>Explore Kiduna’s spatial language, the complete Royals &amp; Rogues game library, a build-ready system for alignment without obedience, Bellwether’s playable Level 1 reference world, symbolic maps of biology, culture, human-made systems, the Tao, and political change, plus three Mapshifting decks for reflection, discernment, and agency. These are design systems and working prototypes—not the production system.</p>
       </section>
 
       <section className={styles.systems} aria-label="Kiduna design systems">
@@ -132,6 +132,20 @@ export default function Home() {
             <h2>The Tao</h2>
             <span>Seventy-five symbolic windows into source, polarity, transformation, relation, and return—connected as one living graph rather than a deck of fixed answers.</span>
             <a className={styles.enter} href="/tao">Enter the system <b>→</b></a>
+          </div>
+        </article>
+
+        <article className={styles.systemCard}>
+          <a className={styles.visual} href="/political-change" aria-label="Enter the Political Change System">
+            <img src="/political-change/enamel-triptych.png" alt="Enamel reference cards from the Political Change System" />
+            <span className={styles.number}>09</span>
+            <span className={styles.status}>LIVING SYMBOLIC SYSTEM</span>
+          </a>
+          <div className={styles.cardCopy}>
+            <p>THE ARCHITECTURE OF POWER</p>
+            <h2>Political Change</h2>
+            <span>A nonpartisan symbolic map of how power is acquired, exercised, resisted, legitimized, disrupted, reformed, captured, distributed, and transformed.</span>
+            <a className={styles.enter} href="/political-change">Enter the system <b>→</b></a>
           </div>
         </article>
       </section>

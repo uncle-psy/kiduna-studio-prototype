@@ -1,0 +1,2192 @@
+[
+  {
+    "id": "handoff:kiduna:political-change:0001",
+    "subject_refs": [
+      "node:kiduna:political-change:authoritarian-extremist:fascism"
+    ],
+    "candidate_snapshot_hash": "75a8c0ff4b17b6e7dad0a3e09d2b6bbf092560fc978349e2d7a03c024cf49180",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "extremism",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "historical atrocity",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested application",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:authoritarian-extremist:fascism",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0002",
+    "subject_refs": [
+      "node:kiduna:political-change:authoritarian-extremist:domestic-violent-extremism"
+    ],
+    "candidate_snapshot_hash": "c21ac364927407e82913525a23c17ff4089c8a002e02acd68f07fa862dd21b7f",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "extremism",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "law enforcement category",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civil liberties",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:authoritarian-extremist:domestic-violent-extremism",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0003",
+    "subject_refs": [
+      "node:kiduna:political-change:populism-nationalism:donald-trump"
+    ],
+    "candidate_snapshot_hash": "578c4e445c79ff8add03110f031847464c6c50f01cc226437160760156545e45",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "current president",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "real person",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested political characterization",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "legal and factual claims require date and status",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:populism-nationalism:donald-trump",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0004",
+    "subject_refs": [
+      "node:kiduna:political-change:populism-nationalism:maga"
+    ],
+    "candidate_snapshot_hash": "6aa4d3de8054b82fe39bc5dbf47e8ad38fc4df6d403672fa689925985f0c83ad",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "current political movement",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "real person",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested characterization",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:populism-nationalism:maga",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0005",
+    "subject_refs": [
+      "node:kiduna:political-change:populism-nationalism:trumpism"
+    ],
+    "candidate_snapshot_hash": "b4db36c4ccf6aad113c116e8b85b7d994f0c146e8ed905cfec3261685a3c3cc5",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "current political movement",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "real person",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested analytical label",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:populism-nationalism:trumpism",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0006",
+    "subject_refs": [
+      "node:kiduna:political-change:conspiracy-radicalization:qanon"
+    ],
+    "candidate_snapshot_hash": "50b2b76dc4b0e978f71d9e89477ba6ae48b6319e85683fc218b52bce2c50fe8c",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "false claims",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "extremism",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "protected belief versus violence",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:conspiracy-radicalization:qanon",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0007",
+    "subject_refs": [
+      "node:kiduna:political-change:indigenous-decolonial:haudenosaunee-confederacy"
+    ],
+    "candidate_snapshot_hash": "d7f5ecf1c91ea6d01c1afff776bd0622e7f60c84c887f7e24744d869e65940f7",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "Indigenous sovereignty",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "cultural specificity",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested influence claim",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:indigenous-decolonial:haudenosaunee-confederacy",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0008",
+    "subject_refs": [
+      "node:kiduna:political-change:indigenous-decolonial:great-law-of-peace"
+    ],
+    "candidate_snapshot_hash": "76598fe675fa962cd996ef86ace1c9fb085c1d87f89f69148091ec987d9220c5",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "Indigenous authority",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "cultural specificity",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:indigenous-decolonial:great-law-of-peace",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0009",
+    "subject_refs": [
+      "node:kiduna:political-change:immigration-border:ice"
+    ],
+    "candidate_snapshot_hash": "dc197e8c056c87800202efd3db91cf2f01c59d9d555244423fdf81c760844ffb",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "current agency",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested enforcement",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "human rights",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:immigration-border:ice",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0010",
+    "subject_refs": [
+      "node:kiduna:political-change:immigration-border:anti-ice-activism"
+    ],
+    "candidate_snapshot_hash": "b764ca006df39ef42fe656f486148a7eab7ddd1ff9ef69f59d739e4f3fe3212d",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "current movement",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "legal risk",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "vulnerable people",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:immigration-border:anti-ice-activism",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0011",
+    "subject_refs": [
+      "node:kiduna:political-change:current-us-resistance:no-kings"
+    ],
+    "candidate_snapshot_hash": "76c7f81b08aecc171ad6f8226cfea0e1a0a015f8a51b8b9f89953faecf2b36b8",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "current movement",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested political characterization",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "crowd estimates",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:current-us-resistance:no-kings",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0012",
+    "subject_refs": [
+      "node:kiduna:political-change:current-us-resistance:indivisible"
+    ],
+    "candidate_snapshot_hash": "f8e0fc41136ceceb462988c4b7d939cc4cd9a3dd56b6782a57893ab4011164fc",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "current movement",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "organizational self-description",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:current-us-resistance:indivisible",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0013",
+    "subject_refs": [
+      "node:kiduna:political-change:american-1960s:weather-underground"
+    ],
+    "candidate_snapshot_hash": "2bcfaf39ec215aea2d2c82d38c06996fcab481f5591c26bd0de250114d729c49",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "political violence",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "real people",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested historical interpretation",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:american-1960s:weather-underground",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0014",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:israel-palestine"
+    ],
+    "candidate_snapshot_hash": "7f65f8ec92376dd90d0bfbfeabbfeb8d8254bbdc5110386ce794efad64e0932d",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "mass civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "antisemitism",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "anti-Palestinian racism",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested law and history",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:israel-palestine",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0015",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:zionism"
+    ],
+    "candidate_snapshot_hash": "b6baa330c48914c4a5e6b93c6427c6d790c90e09277cea6a68e281b5e636659e",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:zionism",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0016",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:palestinian-nationalism"
+    ],
+    "candidate_snapshot_hash": "f3a9e4b42f38c5abfc02b3da2dc2e4dcd1b5b7ff2d2d951b31892aedac994eaa",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:palestinian-nationalism",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0017",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:state-of-israel"
+    ],
+    "candidate_snapshot_hash": "72cbf77af8849c37ea817d3da3b570903f7d9613273a82dab4232690ed5c442b",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:state-of-israel",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0018",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:state-of-palestine"
+    ],
+    "candidate_snapshot_hash": "2efe4429be4383673bd3416b16ef34be01b5d129c01b698b3c8189f517c6baf0",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:state-of-palestine",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0019",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:british-mandate-palestine"
+    ],
+    "candidate_snapshot_hash": "6ef02cea56bcde221fdfc5df3bf178e522572269dd54f74a088050fa850fd055",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:british-mandate-palestine",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0020",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:un-partition-plan"
+    ],
+    "candidate_snapshot_hash": "4120019b4d461c06177546aa7a4022b327a4879298f5f2f11f8f4743a3b06af3",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:un-partition-plan",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0021",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:nakba"
+    ],
+    "candidate_snapshot_hash": "8c81321af16439e2cea6c254ca51bf794873af7549b009b72b5fa26348edb556",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:nakba",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0022",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:war-of-1948"
+    ],
+    "candidate_snapshot_hash": "93d26c785c08dd4d01f258fd931ee79576333c03d1ece212ae3ab137220dbeee",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:war-of-1948",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0023",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:green-line"
+    ],
+    "candidate_snapshot_hash": "1450ef0bceceb06f0b10f7b8733b2e03aa3e6ddb0c077c34faacb7ca4227e14d",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:green-line",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0024",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:six-day-war"
+    ],
+    "candidate_snapshot_hash": "7a1509584a3615ba1bc4237531161e78ccc83df975c06cad8ee8a4b3fc5cf107",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:six-day-war",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0025",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:occupation-of-1967"
+    ],
+    "candidate_snapshot_hash": "f90dd0e0b3506ffff2ff05593073bd1a6fbd6ab752075e06bb95312473c8c706",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:occupation-of-1967",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0026",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:west-bank"
+    ],
+    "candidate_snapshot_hash": "1b5c7b1b99c0f3547e91b8f49973afc58f2f63df772b7dc2d7f7e724a16e9fa8",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:west-bank",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0027",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:east-jerusalem"
+    ],
+    "candidate_snapshot_hash": "cbe943070860f23247bd16a168fd77f0b906a39144ae5c687ecf63eca6814402",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:east-jerusalem",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0028",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:gaza-strip"
+    ],
+    "candidate_snapshot_hash": "4a2138bc264215aad49d1890a19d3b51a99191ef4379e66d385d8bd22c294861",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:gaza-strip",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0029",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:israeli-settlement"
+    ],
+    "candidate_snapshot_hash": "a9cd69cb936df7b81b3ceeb11c2d1bb0b2f56968d13696d49834248b186c4bca",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:israeli-settlement",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0030",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:oslo-accords"
+    ],
+    "candidate_snapshot_hash": "6e07a8fe48358d5cee7396796f93c12dace22d67c4d56f0b0a9f546e60904a96",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:oslo-accords",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0031",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:palestine-liberation-organization"
+    ],
+    "candidate_snapshot_hash": "c4506dda15e961a9ff54fd831f64f7b22184e93531338578b70e48b9bd1ef16b",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:palestine-liberation-organization",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0032",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:palestinian-authority"
+    ],
+    "candidate_snapshot_hash": "e730cf9e24ba7958168b090e11b2b39e3cf1bd1c79b76cbe8fd39c60492fb165",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:palestinian-authority",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0033",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:hamas"
+    ],
+    "candidate_snapshot_hash": "124412c9c5ebbbdddcf14ef6a359dd2ab9e2e8c47bcdb67082631d703685e2ab",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "armed organization",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "terrorist designation varies by jurisdiction",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "mass killing and hostage-taking",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "do not conflate with Palestinians",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:hamas",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0034",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:october-7-attacks"
+    ],
+    "candidate_snapshot_hash": "4825add4d5e2b90a15af166f8894a96a469bd4d73c86d8579d999563a1b3fefc",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "mass killing",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "hostages",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "sexual violence allegations",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "trauma",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:october-7-attacks",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0035",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:israeli-hostages"
+    ],
+    "candidate_snapshot_hash": "e3cb03ebe4ede24177e1c389fd98ac56aab59db6a4f45322e553b50f92e104fd",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:israeli-hostages",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0036",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:gaza-war"
+    ],
+    "candidate_snapshot_hash": "f64ad46b236e2754177c10d5e9bfad6b887c53012491bf3eec2b42382ef49601",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "mass civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "hostages",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "war-crime and genocide allegations",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested casualty data",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:gaza-war",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0037",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:ceasefire-and-hostage-deal"
+    ],
+    "candidate_snapshot_hash": "14b988e1cebc7d052257dcd1c35e5037e524af59620e61f167f703d21402920f",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:ceasefire-and-hostage-deal",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0038",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:palestinian-right-of-return"
+    ],
+    "candidate_snapshot_hash": "d185739aaf3baee23b480de1716824a43f95897cce8d05bd2c196d9d714dd09b",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:palestinian-right-of-return",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0039",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:israeli-right-to-security"
+    ],
+    "candidate_snapshot_hash": "f30a280da774f26263c0a49078cecd69de0a1d302d5c689950a353d742d34fd3",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:israeli-right-to-security",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0040",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:palestinian-self-determination"
+    ],
+    "candidate_snapshot_hash": "571c413dff557c4e7981af14cc85788fbbe5250cdbcd558b93e188d54a086ddb",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:palestinian-self-determination",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0041",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:two-state-solution"
+    ],
+    "candidate_snapshot_hash": "a243d23437794c8088118ea18e61abd44c2977f8165a61d5f84feb50d6e27423",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:two-state-solution",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0042",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:one-state-solution"
+    ],
+    "candidate_snapshot_hash": "0de172dd13915514ba60957ba83f61650d71ab9bbbedca42c4cf0ff636613176",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:one-state-solution",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0043",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:bds-movement"
+    ],
+    "candidate_snapshot_hash": "5be19120a26f9e94fb9270e6f3c4c3902587261e54b5a0deb89d2a89925b6a23",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:bds-movement",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0044",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:antisemitism"
+    ],
+    "candidate_snapshot_hash": "ad4175de350cf3ba400b912c4a9a4d3007d897ee7426ad7452ef05d6ae4adb0c",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:antisemitism",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0045",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:anti-palestinian-racism"
+    ],
+    "candidate_snapshot_hash": "452974bbeb7ec9889ab69d9f773040f3f46cee9bca736f1ec0d45e555995cd61",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:anti-palestinian-racism",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0046",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:islamophobia"
+    ],
+    "candidate_snapshot_hash": "6634977118fc1101dce419656442be6c9c96e550064152880e6a696ea6af4705",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:islamophobia",
+      "derived_variant_refs": []
+    }
+  },
+  {
+    "id": "handoff:kiduna:political-change:0047",
+    "subject_refs": [
+      "node:kiduna:political-change:israel-palestine:international-humanitarian-law-in-gaza"
+    ],
+    "candidate_snapshot_hash": "53bd5b32bd870c291fc8504f25c127c0e764a0d86a577a9c1b56fe16d92728ad",
+    "requested_scope": "public educational, divinatory, strategic, and game expressions",
+    "realm": "Political Change System",
+    "audiences": [
+      "general public",
+      "educators",
+      "facilitators",
+      "designers"
+    ],
+    "requested_channels": [
+      "static package",
+      "interactive site"
+    ],
+    "factors": [
+      {
+        "factor": "active conflict",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "contested history and law",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      },
+      {
+        "factor": "civilian harm",
+        "note": "Contextual factor for review; not a quality penalty or deletion instruction."
+      }
+    ],
+    "requested_capabilities": [
+      "factual-context review",
+      "cultural and power-context review",
+      "audience and release review"
+    ],
+    "authority_assumed": false,
+    "consent_profile": null,
+    "disposition": "unassessed",
+    "outcome_refs": [],
+    "lineage": {
+      "engine_subject_ref": "node:kiduna:political-change:israel-palestine:international-humanitarian-law-in-gaza",
+      "derived_variant_refs": []
+    }
+  }
+]

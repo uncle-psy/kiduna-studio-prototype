@@ -1,0 +1,532 @@
+[
+  {
+    "id": "src-us-constitution",
+    "title": "Constitution of the United States",
+    "creator": "National Archives",
+    "year": "1787",
+    "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+    "type": "primary-law",
+    "scope": "Federal structure, separated powers, amendment, elections, and rights.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-federalist",
+    "title": "The Federalist Papers",
+    "creator": "Library of Congress",
+    "year": "1787–1788",
+    "url": "https://guides.loc.gov/federalist-papers/full-text",
+    "type": "primary-historical",
+    "scope": "Arguments for the U.S. constitutional design; read as advocacy, not neutral description.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-udhr",
+    "title": "Universal Declaration of Human Rights",
+    "creator": "United Nations",
+    "year": "1948",
+    "url": "https://www.un.org/en/about-us/universal-declaration-of-human-rights",
+    "type": "primary-law",
+    "scope": "International human-rights framework.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-un-charter",
+    "title": "Charter of the United Nations",
+    "creator": "United Nations",
+    "year": "1945",
+    "url": "https://www.un.org/en/about-us/un-charter/full-text",
+    "type": "primary-law",
+    "scope": "International institutional order, sovereignty, security, and cooperation.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-idea-electoral",
+    "title": "Electoral System Design: The New International IDEA Handbook",
+    "creator": "International IDEA",
+    "year": "2005",
+    "url": "https://www.idea.int/publications/catalogue/electoral-system-design-new-international-idea-handbook",
+    "type": "research-handbook",
+    "scope": "Comparative electoral-system design and consequences.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-ncsl-redistricting",
+    "title": "Redistricting Law 2020",
+    "creator": "National Conference of State Legislatures",
+    "year": "2020",
+    "url": "https://www.ncsl.org/redistricting-and-census/redistricting-law-2020",
+    "type": "legal-reference",
+    "scope": "U.S. redistricting institutions, rules, and litigation.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-fec-pac",
+    "title": "Understanding Ways to Support Federal Candidates",
+    "creator": "Federal Election Commission",
+    "year": "2024",
+    "url": "https://www.fec.gov/introduction-campaign-finance/understanding-ways-support-federal-candidates/",
+    "type": "official-guidance",
+    "scope": "Federal campaign committees, independent expenditures, and contribution rules.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-scotus-citizens",
+    "title": "Citizens United v. Federal Election Commission",
+    "creator": "Supreme Court of the United States",
+    "year": "2010",
+    "url": "https://supreme.justia.com/cases/federal/us/558/310/",
+    "type": "primary-law",
+    "scope": "Majority, concurrence, and dissent on independent political spending.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-oecd-capture",
+    "title": "Preventing Policy Capture",
+    "creator": "OECD",
+    "year": "2017",
+    "url": "https://www.oecd.org/en/publications/preventing-policy-capture_9789264065239-en.html",
+    "type": "research-report",
+    "scope": "Mechanisms and safeguards concerning capture of public decision-making.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-vdem",
+    "title": "V-Dem Dataset and Codebook",
+    "creator": "V-Dem Institute",
+    "year": "2026",
+    "url": "https://www.v-dem.net/data/the-v-dem-dataset/",
+    "type": "research-dataset",
+    "scope": "Comparative measurement of democratic institutions; indicators remain model-based measures.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-freedom-house",
+    "title": "Freedom in the World Methodology",
+    "creator": "Freedom House",
+    "year": "2026",
+    "url": "https://freedomhouse.org/reports/freedom-world/freedom-world-research-methodology",
+    "type": "research-method",
+    "scope": "A rights-and-liberties assessment framework; one institutional perspective among several.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-chenoweth-stephan",
+    "title": "Why Civil Resistance Works",
+    "creator": "Erica Chenoweth and Maria J. Stephan",
+    "year": "2011",
+    "url": "https://cup.columbia.edu/book/why-civil-resistance-works/9780231156820",
+    "type": "scholarship",
+    "scope": "Comparative study of violent and nonviolent campaigns, with scope and coding limits.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-chenoweth-35",
+    "title": "Questions, Answers, and Some Cautionary Updates Regarding the 3.5% Rule",
+    "creator": "Erica Chenoweth",
+    "year": "2020",
+    "url": "https://carrcenter.hks.harvard.edu/publications/questions-answers-and-some-cautionary-updates-regarding-35-rule",
+    "type": "scholarship",
+    "scope": "Clarifies that 3.5% is an observed pattern, not a universal threshold.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-sharp-methods",
+    "title": "198 Methods of Nonviolent Action",
+    "creator": "Albert Einstein Institution",
+    "year": "1973",
+    "url": "https://www.aeinstein.org/nonviolentaction/198-methods-of-nonviolent-action/",
+    "type": "research-catalog",
+    "scope": "Tactic taxonomy; inclusion does not imply effectiveness or ethical endorsement in every context.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-king-letter",
+    "title": "Letter from Birmingham Jail",
+    "creator": "Martin Luther King, Jr. Research and Education Institute",
+    "year": "1963",
+    "url": "https://kinginstitute.stanford.edu/king-papers/documents/letter-birmingham-jail",
+    "type": "primary-historical",
+    "scope": "Direct action, constructive tension, law, justice, and timing.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-gandhi-heritage",
+    "title": "Gandhi Heritage Portal",
+    "creator": "Sabarmati Ashram Preservation and Memorial Trust",
+    "year": "ongoing",
+    "url": "https://www.gandhiheritageportal.org/",
+    "type": "primary-archive",
+    "scope": "Digitized writings and historical materials; interpretations require context.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-loc-civil-rights",
+    "title": "Civil Rights History Project",
+    "creator": "Library of Congress and Smithsonian",
+    "year": "ongoing",
+    "url": "https://www.loc.gov/collections/civil-rights-history-project/",
+    "type": "oral-history-archive",
+    "scope": "Participant accounts of the U.S. civil-rights movement.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-port-huron",
+    "title": "The Port Huron Statement",
+    "creator": "Students for a Democratic Society",
+    "year": "1962",
+    "url": "https://history.hanover.edu/courses/excerpts/111huron.html",
+    "type": "primary-historical",
+    "scope": "New Left critique and participatory-democracy program.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-fbi-cointelpro",
+    "title": "COINTELPRO Records",
+    "creator": "Federal Bureau of Investigation Vault",
+    "year": "1956–1971",
+    "url": "https://vault.fbi.gov/cointel-pro",
+    "type": "primary-archive",
+    "scope": "Government records concerning covert disruption of political organizations.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-church-committee",
+    "title": "Church Committee Reports",
+    "creator": "U.S. Senate",
+    "year": "1975–1976",
+    "url": "https://www.senate.gov/about/powers-procedures/investigations/church-committee.htm",
+    "type": "official-history",
+    "scope": "Investigations of intelligence abuses and subsequent oversight reforms.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-nlra",
+    "title": "National Labor Relations Act",
+    "creator": "National Labor Relations Board",
+    "year": "1935",
+    "url": "https://www.nlrb.gov/guidance/key-reference-materials/national-labor-relations-act",
+    "type": "primary-law",
+    "scope": "U.S. collective-bargaining and protected concerted-activity framework.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-ilo-strike",
+    "title": "Freedom of Association",
+    "creator": "International Labour Organization",
+    "year": "ongoing",
+    "url": "https://www.ilo.org/topics-and-sectors/freedom-association-and-right-collective-bargaining",
+    "type": "institutional-reference",
+    "scope": "International labor principles and collective bargaining.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-haudenosaunee",
+    "title": "The Haudenosaunee Confederacy",
+    "creator": "Haudenosaunee Confederacy",
+    "year": "ongoing",
+    "url": "https://www.haudenosauneeconfederacy.com/",
+    "type": "community-source",
+    "scope": "Contemporary self-description of governance, nations, and the Great Law of Peace.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-senate-iroquois",
+    "title": "S. Con. Res. 76",
+    "creator": "U.S. Senate",
+    "year": "1988",
+    "url": "https://www.congress.gov/bill/100th-congress/senate-concurrent-resolution/76",
+    "type": "primary-legislative",
+    "scope": "Congressional acknowledgment of Haudenosaunee influence claims; not resolution of scholarly debate.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-icc-rome",
+    "title": "Rome Statute of the International Criminal Court",
+    "creator": "International Criminal Court",
+    "year": "1998",
+    "url": "https://www.icc-cpi.int/sites/default/files/Publications/Rome-Statute.pdf",
+    "type": "primary-law",
+    "scope": "International criminal jurisdiction and definitions.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-icj-palestine",
+    "title": "Advisory Opinion: Occupied Palestinian Territory",
+    "creator": "International Court of Justice",
+    "year": "2024",
+    "url": "https://www.icj-cij.org/case/186",
+    "type": "primary-law",
+    "scope": "Court record and advisory opinion; advisory rather than contentious judgment.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-un-palestine",
+    "title": "History of the Question of Palestine",
+    "creator": "United Nations",
+    "year": "2026",
+    "url": "https://www.un.org/unispal/history/",
+    "type": "institutional-history",
+    "scope": "UN-framed chronology and diplomatic record.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-israel-legal",
+    "title": "Hamas–Israel Conflict 2023: Key Legal Aspects",
+    "creator": "Israel Ministry of Foreign Affairs",
+    "year": "2023",
+    "url": "https://www.gov.il/en/pages/hamas-israel-conflict2023-key-legal-aspects",
+    "type": "government-position",
+    "scope": "Israeli government factual and legal position; explicitly labeled as a party perspective.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-un-ocha-opt",
+    "title": "Occupied Palestinian Territory",
+    "creator": "UN Office for the Coordination of Humanitarian Affairs",
+    "year": "ongoing",
+    "url": "https://www.ochaopt.org/",
+    "type": "humanitarian-data",
+    "scope": "UN humanitarian reporting and datasets; casualty sources and methods should remain visible.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-republican-platform",
+    "title": "2024 Republican Party Platform",
+    "creator": "Republican National Committee",
+    "year": "2024",
+    "url": "https://www.presidency.ucsb.edu/documents/2024-republican-party-platform",
+    "type": "party-primary",
+    "scope": "Party self-description and program; not an external assessment.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-trump-platform",
+    "title": "Donald J. Trump Platform",
+    "creator": "Donald J. Trump campaign",
+    "year": "2024",
+    "url": "https://www.donaldjtrump.com/platform",
+    "type": "campaign-primary",
+    "scope": "Campaign self-description and policy claims; claims require independent verification.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-democratic-platform",
+    "title": "2024 Democratic Party Platform",
+    "creator": "Democratic National Committee",
+    "year": "2024",
+    "url": "https://democrats.org/where-we-stand/party-platform/",
+    "type": "party-primary",
+    "scope": "Party self-description and program; not an external assessment.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-fbi-dt",
+    "title": "FBI–DHS Domestic Terrorism Strategic Report",
+    "creator": "FBI and DHS",
+    "year": "2022",
+    "url": "https://www.fbi.gov/file-repository/fbi-dhs-domestic-terrorism-strategic-report-2022.pdf",
+    "type": "official-report",
+    "scope": "Threat categories and incidents; agencies state protected political activity is not terrorism.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-fbi-extremism",
+    "title": "Violent Extremism and Domestic Terrorism in America",
+    "creator": "Federal Bureau of Investigation",
+    "year": "2021",
+    "url": "https://www.fbi.gov/news/speeches-and-testimony/violent-extremism-and-domestic-terrorism-in-america-the-role-and-response-of-the-department-of-justice",
+    "type": "official-testimony",
+    "scope": "Distinguishes protected belief and association from unlawful force or violence.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-csis-qanon",
+    "title": "Examining Extremism: QAnon",
+    "creator": "Center for Strategic and International Studies",
+    "year": "2021",
+    "url": "https://www.csis.org/blogs/examining-extremism/examining-extremism-qanon",
+    "type": "research-analysis",
+    "scope": "Origins, networked conspiracy claims, mobilization, and a violent subset.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-ushmm-fascism",
+    "title": "Fascism",
+    "creator": "United States Holocaust Memorial Museum",
+    "year": "2019",
+    "url": "https://encyclopedia.ushmm.org/content/en/article/fascism-1",
+    "type": "historical-reference",
+    "scope": "Historically bounded definition and features; avoid use as a generic insult.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-no-kings",
+    "title": "No Kings",
+    "creator": "No Kings coalition",
+    "year": "2026",
+    "url": "https://www.nokings.org/",
+    "type": "movement-primary",
+    "scope": "Movement self-description, principles, events, and participation claims; crowd estimates require independent corroboration.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-indivisible",
+    "title": "About Indivisible",
+    "creator": "Indivisible",
+    "year": "2026",
+    "url": "https://indivisible.org/about",
+    "type": "movement-primary",
+    "scope": "Organization self-description and distributed organizing model.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-ice-mission",
+    "title": "ICE Mission",
+    "creator": "U.S. Immigration and Customs Enforcement",
+    "year": "2025",
+    "url": "https://www.ice.gov/mission",
+    "type": "government-primary",
+    "scope": "Agency self-description of enforcement and investigative missions.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-aclu-ice",
+    "title": "Documented ICE Actions",
+    "creator": "American Civil Liberties Union",
+    "year": "2026",
+    "url": "https://www.aclu.org/news/immigrants-rights/we-documented-1200-actions-by-ice-heres-what-we-found",
+    "type": "advocacy-research",
+    "scope": "Civil-liberties organization findings and allegations; methodology and adversarial posture remain explicit.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-aclu-protest",
+    "title": "Know Your Rights: Protesters' Rights",
+    "creator": "American Civil Liberties Union",
+    "year": "ongoing",
+    "url": "https://www.aclu.org/know-your-rights/protesters-rights",
+    "type": "legal-guidance",
+    "scope": "U.S. protest-rights overview; local law and facts vary.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-supreme-dobbs",
+    "title": "Dobbs v. Jackson Women's Health Organization",
+    "creator": "Supreme Court of the United States",
+    "year": "2022",
+    "url": "https://supreme.justia.com/cases/federal/us/597/19-1392/",
+    "type": "primary-law",
+    "scope": "Majority, concurrences, and dissents on abortion regulation and constitutional interpretation.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-epa-justice40",
+    "title": "Environmental Justice",
+    "creator": "U.S. Environmental Protection Agency",
+    "year": "ongoing",
+    "url": "https://www.epa.gov/environmentaljustice",
+    "type": "government-reference",
+    "scope": "Environmental-justice concepts and federal activity; program names and status may change.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-un-women",
+    "title": "Women's Leadership and Political Participation",
+    "creator": "UN Women",
+    "year": "ongoing",
+    "url": "https://www.unwomen.org/en/what-we-do/leadership-and-political-participation",
+    "type": "institutional-reference",
+    "scope": "Comparative participation and representation.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-ohchr-indigenous",
+    "title": "UN Declaration on the Rights of Indigenous Peoples",
+    "creator": "United Nations",
+    "year": "2007",
+    "url": "https://www.ohchr.org/en/indigenous-peoples/un-declaration-rights-indigenous-peoples",
+    "type": "primary-law",
+    "scope": "International declaration concerning self-determination, culture, land, and participation.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-ipcc",
+    "title": "IPCC Sixth Assessment Synthesis Report",
+    "creator": "Intergovernmental Panel on Climate Change",
+    "year": "2023",
+    "url": "https://www.ipcc.ch/report/ar6/syr/",
+    "type": "scientific-assessment",
+    "scope": "Climate risks, mitigation, adaptation, and justice-relevant distributional consequences.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-platform-governance",
+    "title": "Guidance for Regulation of Digital Platforms",
+    "creator": "UNESCO",
+    "year": "2023",
+    "url": "https://unesdoc.unesco.org/ark:/48223/pf0000387339",
+    "type": "policy-guidance",
+    "scope": "Platform governance, expression, information integrity, and rights.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-britannica-revolution",
+    "title": "Revolution",
+    "creator": "Encyclopaedia Britannica",
+    "year": "ongoing",
+    "url": "https://www.britannica.com/topic/revolution-politics",
+    "type": "reference",
+    "scope": "Comparative conceptual background; supplement with case-specific scholarship.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-openstax-politics",
+    "title": "Introduction to Political Science",
+    "creator": "OpenStax",
+    "year": "2022",
+    "url": "https://openstax.org/details/books/introduction-political-science",
+    "type": "open-textbook",
+    "scope": "Comparative institutions, political behavior, and public policy foundations.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-crs-emergency",
+    "title": "National Emergency Powers",
+    "creator": "Congressional Research Service",
+    "year": "2024",
+    "url": "https://crsreports.congress.gov/product/pdf/RL/98-505",
+    "type": "nonpartisan-analysis",
+    "scope": "U.S. emergency authorities and congressional checks.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-un-peacekeeping",
+    "title": "United Nations Peacekeeping",
+    "creator": "United Nations",
+    "year": "ongoing",
+    "url": "https://peacekeeping.un.org/en",
+    "type": "institutional-primary",
+    "scope": "Mission, mandates, operations, and limitations from the institution's perspective.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-whitehouse-trump",
+    "title": "President Donald J. Trump",
+    "creator": "White House",
+    "year": "2026",
+    "url": "https://www.whitehouse.gov/administration/donald-j-trump/",
+    "type": "government-primary",
+    "scope": "Official biography and administration self-description; evaluative claims are attributed to the administration.",
+    "accessed_at": "2026-08-24"
+  },
+  {
+    "id": "src-state-fto",
+    "title": "Foreign Terrorist Organizations",
+    "creator": "U.S. Department of State",
+    "year": "2025",
+    "url": "https://2021-2025.state.gov/foreign-terrorist-organizations/",
+    "type": "government-legal-list",
+    "scope": "U.S. designation list; legal classification is jurisdiction-specific and does not describe every supporter or Palestinian political actor.",
+    "accessed_at": "2026-08-24"
+  }
+]
