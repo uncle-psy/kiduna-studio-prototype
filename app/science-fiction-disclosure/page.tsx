@@ -4,7 +4,7 @@ import { HubHeader } from "../ui/HubHeader";
 import styles from "./science-fiction-disclosure.module.css";
 
 export const metadata: Metadata = {
-  title: "Science Fiction & Disclosure — Kiduna Design",
+  title: { absolute: "Science Fiction & Disclosure — Kiduna Design" },
   description:
     "An evidence-aware Mapshifting system for exploring science fiction, disclosure narratives, starseed cosmologies, speculative technology, cultural myth, and symbolic meaning.",
 };
