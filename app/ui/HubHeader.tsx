@@ -49,6 +49,7 @@ export function HubHeader({ section }: { section?: "isometric" | "royals" }) {
             <a href="/pop-culture-deck"><small>06 · CULTURAL SYSTEM</small><b>Pop Culture Deck</b><span>210 cards, cultural lineages, divination, games, provenance, and complete developer packages.</span></a>
             <a href="/systems-oracle"><small>07 · SYMBOLIC SYSTEM</small><b>Systems Oracle</b><span>360 human-made systems, relationships, spreads, games, provenance, and an enamel visual language.</span></a>
             <a href="/tao"><small>08 · ORACLE SYSTEM</small><b>The Tao</b><span>75 enamel tiles, five cosmological levels, 302 relationships, complete manual, and production grammar.</span></a>
+            <a href="/real-estate-mortgage"><small>09 · PROPERTY SYSTEM</small><b>Real Estate &amp; Mortgage</b><span>659 enamel tiles, 1,302 typed relationships, complete dossiers, graph, games, provenance, and portable system.</span></a>
           </div>
         </details>
       </nav>

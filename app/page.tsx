@@ -13,8 +13,8 @@ export default function Home() {
     <main>
       <section className={styles.hero}>
         <p className={styles.eyebrow}>KIDUNA DESIGN · CONCEPTUAL PROTOTYPES</p>
-        <h1>Eight systems.<br /><span>Five living decks.</span></h1>
-        <p className={styles.intro}>Explore Kiduna’s spatial language, the complete Royals &amp; Rogues game library, a build-ready system for alignment without obedience, Bellwether’s playable Level 1 reference world, symbolic maps of biology, culture, human-made systems, and the Tao, plus three Mapshifting decks for reflection, discernment, and agency. These are design systems and working prototypes—not the production system.</p>
+        <h1>Nine systems.<br /><span>Five living decks.</span></h1>
+        <p className={styles.intro}>Explore Kiduna’s spatial language, the complete Royals &amp; Rogues game library, a build-ready system for alignment without obedience, Bellwether’s playable Level 1 reference world, symbolic maps of biology, culture, human-made systems, the Tao, and the complete machinery of real estate and mortgage finance—plus three Mapshifting decks for reflection, discernment, and agency. These are design systems and working prototypes—not the production system.</p>
       </section>
 
       <section className={styles.systems} aria-label="Kiduna design systems">
@@ -132,6 +132,20 @@ export default function Home() {
             <h2>The Tao</h2>
             <span>Seventy-five symbolic windows into source, polarity, transformation, relation, and return—connected as one living graph rather than a deck of fixed answers.</span>
             <a className={styles.enter} href="/tao">Enter the system <b>→</b></a>
+          </div>
+        </article>
+
+        <article className={styles.systemCard}>
+          <a className={styles.visual} href="/real-estate-mortgage" aria-label="Enter the Real Estate and Mortgage Enamel System">
+            <img src="/real-estate-mortgage/enamel-life-light-sample-01.png" alt="Luminous enamel tiles expressing land, home, mortgage, liquidity, development, and belonging" />
+            <span className={styles.number}>09</span>
+            <span className={styles.status}>PROPERTY SYSTEM</span>
+          </a>
+          <div className={styles.cardCopy}>
+            <p>LAND · SHELTER · CAPITAL · BELONGING</p>
+            <h2>Real Estate &amp; Mortgage</h2>
+            <span>A complete 659-tile enamel system connecting place, rights, title, mortgage finance, capital markets, development, construction, regulation, history, and lived consequence through 1,302 typed relationships.</span>
+            <a className={styles.enter} href="/real-estate-mortgage">Enter the system <b>→</b></a>
           </div>
         </article>
       </section>
