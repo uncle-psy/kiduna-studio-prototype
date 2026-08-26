@@ -1,0 +1,450 @@
+[
+  {
+    "id": "contact-horizon",
+    "title": "The Contact Horizon",
+    "thesis": "Contact becomes durable only when detection, interpretation, reciprocity, integration, and shared governance each receive their own threshold.",
+    "inquiryDomainId": "contact-communication",
+    "cardIds": [
+      "sfoc-events-signal-detected",
+      "sfoc-events-first-sighting",
+      "sfoc-events-close-encounter",
+      "sfoc-events-communication-established",
+      "sfoc-events-first-contact",
+      "sfoc-events-contact-integration",
+      "sfoc-events-cosmic-treaty",
+      "sfoc-events-federation-founding"
+    ],
+    "edgeIds": [
+      "edge--develops-into--sfoc-events-signal-detected--sfoc-events-first-sighting",
+      "edge--develops-into--sfoc-events-first-sighting--sfoc-events-close-encounter",
+      "edge--develops-into--sfoc-events-close-encounter--sfoc-events-communication-established",
+      "edge--develops-into--sfoc-events-communication-established--sfoc-events-first-contact",
+      "edge--develops-into--sfoc-events-first-contact--sfoc-events-contact-integration",
+      "edge--develops-into--sfoc-events-contact-integration--sfoc-events-cosmic-treaty",
+      "edge--develops-into--sfoc-events-cosmic-treaty--sfoc-events-federation-founding"
+    ],
+    "missingCardNames": [],
+    "reading": {
+      "forward": "Read as an unfolding sequence in which each threshold creates the problem addressed by the next.",
+      "reverse": "Read as an integration path that traces a present condition back toward its enabling assumptions.",
+      "diagnostic": "Stop where the sequence first feels implausible; that seam names the contested transition."
+    }
+  },
+  {
+    "id": "disclosure-cascade",
+    "title": "The Disclosure Cascade",
+    "thesis": "Revelation is not one moment but a contested sequence from acclimatization through institutional acknowledgment and social integration.",
+    "inquiryDomainId": "power-control",
+    "cardIds": [
+      "sfoc-programs-soft-disclosure",
+      "sfoc-programs-gradual-disclosure",
+      "sfoc-programs-controlled-disclosure",
+      "sfoc-events-disclosure",
+      "sfoc-programs-catastrophic-disclosure",
+      "sfoc-states-ontological-shock",
+      "sfoc-events-contact-integration"
+    ],
+    "edgeIds": [
+      "edge--develops-into--sfoc-programs-soft-disclosure--sfoc-programs-gradual-disclosure",
+      "edge--develops-into--sfoc-programs-gradual-disclosure--sfoc-programs-controlled-disclosure",
+      "edge--develops-into--sfoc-programs-controlled-disclosure--sfoc-events-disclosure",
+      "edge--develops-into--sfoc-events-disclosure--sfoc-programs-catastrophic-disclosure",
+      "edge--develops-into--sfoc-programs-catastrophic-disclosure--sfoc-states-ontological-shock",
+      "edge--develops-into--sfoc-states-ontological-shock--sfoc-events-contact-integration"
+    ],
+    "missingCardNames": [],
+    "reading": {
+      "forward": "Read as an unfolding sequence in which each threshold creates the problem addressed by the next.",
+      "reverse": "Read as an integration path that traces a present condition back toward its enabling assumptions.",
+      "diagnostic": "Stop where the sequence first feels implausible; that seam names the contested transition."
+    }
+  },
+  {
+    "id": "architecture-of-secrecy",
+    "title": "The Architecture of Secrecy",
+    "thesis": "A hidden operation persists by dividing knowledge before it can divide accountability.",
+    "inquiryDomainId": "power-control",
+    "cardIds": [
+      "sfoc-systems-classification",
+      "sfoc-systems-need-to-know",
+      "sfoc-systems-compartmentalization",
+      "sfoc-programs-special-access-program",
+      "sfoc-programs-waived-sap",
+      "sfoc-programs-black-project",
+      "sfoc-programs-crash-retrieval-program",
+      "sfoc-programs-reverse-engineering-program",
+      "sfoc-events-breakthrough"
+    ],
+    "edgeIds": [
+      "edge--develops-into--sfoc-systems-classification--sfoc-systems-need-to-know",
+      "edge--develops-into--sfoc-systems-need-to-know--sfoc-systems-compartmentalization",
+      "edge--develops-into--sfoc-systems-compartmentalization--sfoc-programs-special-access-program",
+      "edge--develops-into--sfoc-programs-special-access-program--sfoc-programs-waived-sap",
+      "edge--develops-into--sfoc-programs-waived-sap--sfoc-programs-black-project",
+      "edge--develops-into--sfoc-programs-black-project--sfoc-programs-crash-retrieval-program",
+      "edge--develops-into--sfoc-programs-crash-retrieval-program--sfoc-programs-reverse-engineering-program",
+      "edge--develops-into--sfoc-programs-reverse-engineering-program--sfoc-events-breakthrough"
+    ],
+    "missingCardNames": [],
+    "reading": {
+      "forward": "Read as an unfolding sequence in which each threshold creates the problem addressed by the next.",
+      "reverse": "Read as an integration path that traces a present condition back toward its enabling assumptions.",
+      "diagnostic": "Stop where the sequence first feels implausible; that seam names the contested transition."
+    }
+  },
+  {
+    "id": "off-world-civilization",
+    "title": "The Off-World Civilization",
+    "thesis": "A space civilization grows through a succession of increasingly independent habitats rather than one heroic leap.",
+    "inquiryDomainId": "civilization-ecology",
+    "cardIds": [
+      "sfoc-worlds-earth",
+      "sfoc-worlds-moon",
+      "sfoc-worlds-lunar-base",
+      "sfoc-worlds-mars",
+      "sfoc-worlds-mars-colony",
+      "sfoc-worlds-asteroid-belt",
+      "sfoc-worlds-ceres",
+      "sfoc-worlds-off-world-base",
+      "sfoc-worlds-orbital-habitat",
+      "sfoc-worlds-dyson-habitat"
+    ],
+    "edgeIds": [
+      "edge--develops-into--sfoc-worlds-earth--sfoc-worlds-moon",
+      "edge--develops-into--sfoc-worlds-moon--sfoc-worlds-lunar-base",
+      "edge--develops-into--sfoc-worlds-lunar-base--sfoc-worlds-mars",
+      "edge--develops-into--sfoc-worlds-mars--sfoc-worlds-mars-colony",
+      "edge--develops-into--sfoc-worlds-mars-colony--sfoc-worlds-asteroid-belt",
+      "edge--develops-into--sfoc-worlds-asteroid-belt--sfoc-worlds-ceres",
+      "edge--develops-into--sfoc-worlds-ceres--sfoc-worlds-off-world-base",
+      "edge--develops-into--sfoc-worlds-off-world-base--sfoc-worlds-orbital-habitat",
+      "edge--develops-into--sfoc-worlds-orbital-habitat--sfoc-worlds-dyson-habitat"
+    ],
+    "missingCardNames": [],
+    "reading": {
+      "forward": "Read as an unfolding sequence in which each threshold creates the problem addressed by the next.",
+      "reverse": "Read as an integration path that traces a present condition back toward its enabling assumptions.",
+      "diagnostic": "Stop where the sequence first feels implausible; that seam names the contested transition."
+    }
+  },
+  {
+    "id": "machine-threshold",
+    "title": "The Machine Threshold",
+    "thesis": "Capability, governance, recursive improvement, and post-biological continuity remain distinct steps in the machine-intelligence story.",
+    "inquiryDomainId": "technology-infrastructure",
+    "cardIds": [
+      "sfoc-technologies-ai-agent",
+      "sfoc-beings-artificial-general-intelligence",
+      "sfoc-technologies-alignment-protocol",
+      "sfoc-beings-superintelligence",
+      "sfoc-events-technological-singularity",
+      "sfoc-beings-post-biological-intelligence",
+      "sfoc-systems-post-scarcity"
+    ],
+    "edgeIds": [
+      "edge--develops-into--sfoc-technologies-ai-agent--sfoc-beings-artificial-general-intelligence",
+      "edge--develops-into--sfoc-beings-artificial-general-intelligence--sfoc-technologies-alignment-protocol",
+      "edge--develops-into--sfoc-technologies-alignment-protocol--sfoc-beings-superintelligence",
+      "edge--develops-into--sfoc-beings-superintelligence--sfoc-events-technological-singularity",
+      "edge--develops-into--sfoc-events-technological-singularity--sfoc-beings-post-biological-intelligence",
+      "edge--develops-into--sfoc-beings-post-biological-intelligence--sfoc-systems-post-scarcity"
+    ],
+    "missingCardNames": [],
+    "reading": {
+      "forward": "Read as an unfolding sequence in which each threshold creates the problem addressed by the next.",
+      "reverse": "Read as an integration path that traces a present condition back toward its enabling assumptions.",
+      "diagnostic": "Stop where the sequence first feels implausible; that seam names the contested transition."
+    }
+  },
+  {
+    "id": "memory-and-continuity",
+    "title": "Memory and Continuity",
+    "thesis": "Identity changes as memory moves from inheritance to intervention, erasure, and computational continuity.",
+    "inquiryDomainId": "memory-identity",
+    "cardIds": [
+      "sfoc-forces-memory",
+      "sfoc-states-genetic-memory",
+      "sfoc-states-ancestral-memory",
+      "sfoc-states-bloodline-memory",
+      "sfoc-states-implanted-memory",
+      "sfoc-states-false-memory",
+      "sfoc-states-memory-wipe",
+      "sfoc-states-amnesia",
+      "sfoc-states-digital-continuity"
+    ],
+    "edgeIds": [
+      "edge--develops-into--sfoc-forces-memory--sfoc-states-genetic-memory",
+      "edge--develops-into--sfoc-states-genetic-memory--sfoc-states-ancestral-memory",
+      "edge--develops-into--sfoc-states-ancestral-memory--sfoc-states-bloodline-memory",
+      "edge--develops-into--sfoc-states-bloodline-memory--sfoc-states-implanted-memory",
+      "edge--develops-into--sfoc-states-implanted-memory--sfoc-states-false-memory",
+      "edge--develops-into--sfoc-states-false-memory--sfoc-states-memory-wipe",
+      "edge--develops-into--sfoc-states-memory-wipe--sfoc-states-amnesia",
+      "edge--develops-into--sfoc-states-amnesia--sfoc-states-digital-continuity"
+    ],
+    "missingCardNames": [],
+    "reading": {
+      "forward": "Read as an unfolding sequence in which each threshold creates the problem addressed by the next.",
+      "reverse": "Read as an integration path that traces a present condition back toward its enabling assumptions.",
+      "diagnostic": "Stop where the sequence first feels implausible; that seam names the contested transition."
+    }
+  },
+  {
+    "id": "gnostic-escape",
+    "title": "The Gnostic Escape",
+    "thesis": "The enclosure story becomes useful when it moves from cosmic explanation toward discernment, agency, and liberation.",
+    "inquiryDomainId": "liberation-transcendence",
+    "cardIds": [
+      "sfoc-cosmologies-gnostic-cosmos",
+      "sfoc-beings-watcher",
+      "sfoc-cosmologies-reincarnation-cycle",
+      "sfoc-cosmologies-reincarnation-trap",
+      "sfoc-cosmologies-prison-planet",
+      "sfoc-systems-loosh-farm",
+      "sfoc-forces-liberation",
+      "sfoc-events-return-to-source"
+    ],
+    "edgeIds": [
+      "edge--develops-into--sfoc-cosmologies-gnostic-cosmos--sfoc-beings-watcher",
+      "edge--develops-into--sfoc-beings-watcher--sfoc-cosmologies-reincarnation-cycle",
+      "edge--develops-into--sfoc-cosmologies-reincarnation-cycle--sfoc-cosmologies-reincarnation-trap",
+      "edge--develops-into--sfoc-cosmologies-reincarnation-trap--sfoc-cosmologies-prison-planet",
+      "edge--develops-into--sfoc-cosmologies-prison-planet--sfoc-systems-loosh-farm",
+      "edge--develops-into--sfoc-systems-loosh-farm--sfoc-forces-liberation",
+      "edge--develops-into--sfoc-forces-liberation--sfoc-events-return-to-source"
+    ],
+    "missingCardNames": [],
+    "reading": {
+      "forward": "Read as an unfolding sequence in which each threshold creates the problem addressed by the next.",
+      "reverse": "Read as an integration path that traces a present condition back toward its enabling assumptions.",
+      "diagnostic": "Stop where the sequence first feels implausible; that seam names the contested transition."
+    }
+  },
+  {
+    "id": "trickster-inquiry",
+    "title": "The Trickster Inquiry",
+    "thesis": "Curiosity survives the rabbit hole when pattern recognition is paired with disconfirmation, tolerance for ambiguity, and revision.",
+    "inquiryDomainId": "mind-consciousness",
+    "cardIds": [
+      "sfoc-forces-wonder",
+      "sfoc-forces-synchronicity",
+      "sfoc-forces-apophenia",
+      "sfoc-states-rabbit-hole",
+      "sfoc-states-chapel-perilous",
+      "sfoc-states-cognitive-dissonance",
+      "sfoc-forces-discernment",
+      "sfoc-states-skeptical-suspension",
+      "sfoc-forces-meaning-making"
+    ],
+    "edgeIds": [
+      "edge--develops-into--sfoc-forces-wonder--sfoc-forces-synchronicity",
+      "edge--develops-into--sfoc-forces-synchronicity--sfoc-forces-apophenia",
+      "edge--develops-into--sfoc-forces-apophenia--sfoc-states-rabbit-hole",
+      "edge--develops-into--sfoc-states-rabbit-hole--sfoc-states-chapel-perilous",
+      "edge--develops-into--sfoc-states-chapel-perilous--sfoc-states-cognitive-dissonance",
+      "edge--develops-into--sfoc-states-cognitive-dissonance--sfoc-forces-discernment",
+      "edge--develops-into--sfoc-forces-discernment--sfoc-states-skeptical-suspension",
+      "edge--develops-into--sfoc-states-skeptical-suspension--sfoc-forces-meaning-making"
+    ],
+    "missingCardNames": [],
+    "reading": {
+      "forward": "Read as an unfolding sequence in which each threshold creates the problem addressed by the next.",
+      "reverse": "Read as an integration path that traces a present condition back toward its enabling assumptions.",
+      "diagnostic": "Stop where the sequence first feels implausible; that seam names the contested transition."
+    }
+  },
+  {
+    "id": "distant-witness",
+    "title": "The Distant Witness",
+    "thesis": "Experiential reports become inquiry when protocol, feedback, interpretation, and integration remain visible.",
+    "inquiryDomainId": "mind-consciousness",
+    "cardIds": [
+      "sfoc-states-lucid-dream",
+      "sfoc-states-out-of-body-experience",
+      "sfoc-states-astral-projection",
+      "sfoc-technologies-remote-viewing",
+      "sfoc-technologies-controlled-remote-viewing",
+      "sfoc-programs-project-stargate",
+      "sfoc-states-precognition",
+      "sfoc-events-life-review",
+      "sfoc-states-near-death-experience"
+    ],
+    "edgeIds": [
+      "edge--develops-into--sfoc-states-lucid-dream--sfoc-states-out-of-body-experience",
+      "edge--develops-into--sfoc-states-out-of-body-experience--sfoc-states-astral-projection",
+      "edge--develops-into--sfoc-states-astral-projection--sfoc-technologies-remote-viewing",
+      "edge--develops-into--sfoc-technologies-remote-viewing--sfoc-technologies-controlled-remote-viewing",
+      "edge--develops-into--sfoc-technologies-controlled-remote-viewing--sfoc-programs-project-stargate",
+      "edge--develops-into--sfoc-programs-project-stargate--sfoc-states-precognition",
+      "edge--develops-into--sfoc-states-precognition--sfoc-events-life-review",
+      "edge--develops-into--sfoc-events-life-review--sfoc-states-near-death-experience"
+    ],
+    "missingCardNames": [],
+    "reading": {
+      "forward": "Read as an unfolding sequence in which each threshold creates the problem addressed by the next.",
+      "reverse": "Read as an integration path that traces a present condition back toward its enabling assumptions.",
+      "diagnostic": "Stop where the sequence first feels implausible; that seam names the contested transition."
+    }
+  },
+  {
+    "id": "mythic-resistance",
+    "title": "Mythic Resistance",
+    "thesis": "The mythic-past story converts inheritance into agency by testing whether destiny can be chosen rather than obeyed.",
+    "inquiryDomainId": "origin-lineage",
+    "cardIds": [
+      "sfoc-myths-mythic-past",
+      "sfoc-myths-bloodline",
+      "sfoc-myths-hidden-heir",
+      "sfoc-myths-chosen-one",
+      "sfoc-factions-jedi-order",
+      "sfoc-factions-rebel-alliance",
+      "sfoc-factions-galactic-empire",
+      "sfoc-forces-resistance"
+    ],
+    "edgeIds": [
+      "edge--develops-into--sfoc-myths-mythic-past--sfoc-myths-bloodline",
+      "edge--develops-into--sfoc-myths-bloodline--sfoc-myths-hidden-heir",
+      "edge--develops-into--sfoc-myths-hidden-heir--sfoc-myths-chosen-one",
+      "edge--develops-into--sfoc-myths-chosen-one--sfoc-factions-jedi-order",
+      "edge--develops-into--sfoc-factions-jedi-order--sfoc-factions-rebel-alliance",
+      "edge--develops-into--sfoc-factions-rebel-alliance--sfoc-factions-galactic-empire",
+      "edge--develops-into--sfoc-factions-galactic-empire--sfoc-forces-resistance"
+    ],
+    "missingCardNames": [],
+    "reading": {
+      "forward": "Read as an unfolding sequence in which each threshold creates the problem addressed by the next.",
+      "reverse": "Read as an integration path that traces a present condition back toward its enabling assumptions.",
+      "diagnostic": "Stop where the sequence first feels implausible; that seam names the contested transition."
+    }
+  },
+  {
+    "id": "aspirational-contact",
+    "title": "Aspirational Contact",
+    "thesis": "An aspirational future requires civic institutions, ethical exploration, translation, treaty, and plural membership.",
+    "inquiryDomainId": "contact-communication",
+    "cardIds": [
+      "sfoc-myths-aspirational-future",
+      "sfoc-factions-starfleet",
+      "sfoc-factions-united-federation-of-planets",
+      "sfoc-programs-first-contact-mission",
+      "sfoc-events-first-contact",
+      "sfoc-technologies-universal-translator",
+      "sfoc-events-cosmic-treaty",
+      "sfoc-factions-galactic-federation"
+    ],
+    "edgeIds": [
+      "edge--develops-into--sfoc-myths-aspirational-future--sfoc-factions-starfleet",
+      "edge--develops-into--sfoc-factions-starfleet--sfoc-factions-united-federation-of-planets",
+      "edge--develops-into--sfoc-factions-united-federation-of-planets--sfoc-programs-first-contact-mission",
+      "edge--develops-into--sfoc-programs-first-contact-mission--sfoc-events-first-contact",
+      "edge--develops-into--sfoc-events-first-contact--sfoc-technologies-universal-translator",
+      "edge--develops-into--sfoc-technologies-universal-translator--sfoc-events-cosmic-treaty",
+      "edge--develops-into--sfoc-events-cosmic-treaty--sfoc-factions-galactic-federation"
+    ],
+    "missingCardNames": [],
+    "reading": {
+      "forward": "Read as an unfolding sequence in which each threshold creates the problem addressed by the next.",
+      "reverse": "Read as an integration path that traces a present condition back toward its enabling assumptions.",
+      "diagnostic": "Stop where the sequence first feels implausible; that seam names the contested transition."
+    }
+  },
+  {
+    "id": "scarcity-and-spice",
+    "title": "Scarcity and Spice",
+    "thesis": "A valuable resource reorganizes mobility, institutions, inheritance, resistance, and the meaning of abundance.",
+    "inquiryDomainId": "civilization-ecology",
+    "cardIds": [
+      "sfoc-forces-scarcity",
+      "sfoc-systems-resource-monopoly",
+      "sfoc-artifacts-spice",
+      "sfoc-factions-spacing-guild",
+      "sfoc-factions-great-houses",
+      "sfoc-factions-corporate-feudalism",
+      "sfoc-factions-resistance-network",
+      "sfoc-forces-liberation",
+      "sfoc-forces-abundance"
+    ],
+    "edgeIds": [
+      "edge--develops-into--sfoc-forces-scarcity--sfoc-systems-resource-monopoly",
+      "edge--develops-into--sfoc-systems-resource-monopoly--sfoc-artifacts-spice",
+      "edge--develops-into--sfoc-artifacts-spice--sfoc-factions-spacing-guild",
+      "edge--develops-into--sfoc-factions-spacing-guild--sfoc-factions-great-houses",
+      "edge--develops-into--sfoc-factions-great-houses--sfoc-factions-corporate-feudalism",
+      "edge--develops-into--sfoc-factions-corporate-feudalism--sfoc-factions-resistance-network",
+      "edge--develops-into--sfoc-factions-resistance-network--sfoc-forces-liberation",
+      "edge--develops-into--sfoc-forces-liberation--sfoc-forces-abundance"
+    ],
+    "missingCardNames": [],
+    "reading": {
+      "forward": "Read as an unfolding sequence in which each threshold creates the problem addressed by the next.",
+      "reverse": "Read as an integration path that traces a present condition back toward its enabling assumptions.",
+      "diagnostic": "Stop where the sequence first feels implausible; that seam names the contested transition."
+    }
+  },
+  {
+    "id": "surveillance-enclosure",
+    "title": "The Surveillance Enclosure",
+    "thesis": "Attention becomes a prison through a chain of capture, prediction, identity, scoring, automated rule, and self-policing.",
+    "inquiryDomainId": "power-control",
+    "cardIds": [
+      "sfoc-forces-attention",
+      "sfoc-systems-attention-economy",
+      "sfoc-systems-surveillance-capitalism",
+      "sfoc-systems-panopticon",
+      "sfoc-systems-digital-id",
+      "sfoc-systems-social-credit",
+      "sfoc-systems-algorithmic-governance",
+      "sfoc-systems-smart-prison",
+      "sfoc-forces-resistance"
+    ],
+    "edgeIds": [
+      "edge--develops-into--sfoc-forces-attention--sfoc-systems-attention-economy",
+      "edge--develops-into--sfoc-systems-attention-economy--sfoc-systems-surveillance-capitalism",
+      "edge--develops-into--sfoc-systems-surveillance-capitalism--sfoc-systems-panopticon",
+      "edge--develops-into--sfoc-systems-panopticon--sfoc-systems-digital-id",
+      "edge--develops-into--sfoc-systems-digital-id--sfoc-systems-social-credit",
+      "edge--develops-into--sfoc-systems-social-credit--sfoc-systems-algorithmic-governance",
+      "edge--develops-into--sfoc-systems-algorithmic-governance--sfoc-systems-smart-prison",
+      "edge--develops-into--sfoc-systems-smart-prison--sfoc-forces-resistance"
+    ],
+    "missingCardNames": [],
+    "reading": {
+      "forward": "Read as an unfolding sequence in which each threshold creates the problem addressed by the next.",
+      "reverse": "Read as an integration path that traces a present condition back toward its enabling assumptions.",
+      "diagnostic": "Stop where the sequence first feels implausible; that seam names the contested transition."
+    }
+  },
+  {
+    "id": "cosmic-silence",
+    "title": "The Politics of Cosmic Silence",
+    "thesis": "Silence supports multiple hypotheses whose consequences diverge sharply: hiding, observing, quarantining, and finally declaring.",
+    "inquiryDomainId": "intelligence-otherness",
+    "cardIds": [
+      "sfoc-hypotheses-dark-forest-hypothesis",
+      "sfoc-cosmologies-dark-forest-cosmos",
+      "sfoc-hypotheses-zoo-hypothesis",
+      "sfoc-cosmologies-zoo-cosmos",
+      "sfoc-hypotheses-earth-quarantine-hypothesis",
+      "sfoc-cosmologies-quarantine-earth",
+      "sfoc-programs-quarantine-protocol",
+      "sfoc-events-quarantine-declaration",
+      "sfoc-events-disclosure"
+    ],
+    "edgeIds": [
+      "edge--develops-into--sfoc-hypotheses-dark-forest-hypothesis--sfoc-cosmologies-dark-forest-cosmos",
+      "edge--develops-into--sfoc-cosmologies-dark-forest-cosmos--sfoc-hypotheses-zoo-hypothesis",
+      "edge--develops-into--sfoc-hypotheses-zoo-hypothesis--sfoc-cosmologies-zoo-cosmos",
+      "edge--develops-into--sfoc-cosmologies-zoo-cosmos--sfoc-hypotheses-earth-quarantine-hypothesis",
+      "edge--develops-into--sfoc-hypotheses-earth-quarantine-hypothesis--sfoc-cosmologies-quarantine-earth",
+      "edge--develops-into--sfoc-cosmologies-quarantine-earth--sfoc-programs-quarantine-protocol",
+      "edge--develops-into--sfoc-programs-quarantine-protocol--sfoc-events-quarantine-declaration",
+      "edge--develops-into--sfoc-events-quarantine-declaration--sfoc-events-disclosure"
+    ],
+    "missingCardNames": [],
+    "reading": {
+      "forward": "Read as an unfolding sequence in which each threshold creates the problem addressed by the next.",
+      "reverse": "Read as an integration path that traces a present condition back toward its enabling assumptions.",
+      "diagnostic": "Stop where the sequence first feels implausible; that seam names the contested transition."
+    }
+  }
+]

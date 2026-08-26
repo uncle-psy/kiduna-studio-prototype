@@ -1,0 +1,4065 @@
+[
+  {
+    "id": "rabbit-hole",
+    "title": "Rabbit Hole",
+    "players": [
+      1,
+      6
+    ],
+    "minutes": [
+      35,
+      90
+    ],
+    "mode": "cooperative inquiry",
+    "objective": "Reach a provisional model with four sourced connections before Evidence Debt reaches twelve.",
+    "resources": [
+      "clarity",
+      "trust",
+      "evidence-debt"
+    ],
+    "setup": [
+      {
+        "op": "draw",
+        "count": 1,
+        "from": {
+          "classes": [
+            "events",
+            "artifacts",
+            "states"
+          ]
+        },
+        "to": "anomaly"
+      },
+      {
+        "op": "draw",
+        "count": 5,
+        "from": {
+          "exclude": "anomaly"
+        },
+        "to": "inquiry-hand"
+      },
+      {
+        "op": "advance-track",
+        "track": "clarity",
+        "amount": 3
+      }
+    ],
+    "turn": [
+      {
+        "id": "observe",
+        "label": "Observe",
+        "cost": [],
+        "effects": [
+          {
+            "op": "draw",
+            "count": 1,
+            "from": {
+              "classes": [
+                "artifacts",
+                "events"
+              ]
+            },
+            "to": "inquiry-hand"
+          }
+        ]
+      },
+      {
+        "id": "connect",
+        "label": "Connect",
+        "cost": [],
+        "effects": [
+          {
+            "op": "connect",
+            "from": "hand-card",
+            "to": "inquiry-map",
+            "edgeType": "declared"
+          },
+          {
+            "op": "advance-track",
+            "track": "evidence-debt",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "source",
+        "label": "Source",
+        "cost": [],
+        "effects": [
+          {
+            "op": "cite-source",
+            "card": "connected-card",
+            "claim": "declared-claim"
+          },
+          {
+            "op": "retreat-track",
+            "track": "evidence-debt",
+            "amount": 1
+          },
+          {
+            "op": "gain",
+            "resource": "clarity",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "disconfirm",
+        "label": "Disconfirm",
+        "cost": [
+          {
+            "resource": "trust",
+            "amount": 1
+          }
+        ],
+        "effects": [
+          {
+            "op": "challenge-claim",
+            "card": "connected-card",
+            "stake": "trust"
+          },
+          {
+            "op": "gain",
+            "resource": "clarity",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "resolution": {
+      "win": "Four distinct edge families are sourced and Clarity is at least eight.",
+      "loss": "Evidence Debt reaches twelve or Trust reaches zero."
+    },
+    "resourceDefinitions": [
+      {
+        "id": "clarity",
+        "name": "Clarity",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Ability to separate observation, interpretation, and desire.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "trust",
+        "name": "Trust",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Relational permission to exchange uncertainty and influence.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "evidence-debt",
+        "name": "Evidence Debt",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Unsupported certainty accumulated by play.",
+        "kind": "resource",
+        "initial": 0
+      }
+    ],
+    "trackDefinitions": [
+      {
+        "id": "clarity",
+        "name": "Clarity",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Ability to separate observation, interpretation, and desire.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "trust",
+        "name": "Trust",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Relational permission to exchange uncertainty and influence.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "evidence-debt",
+        "name": "Evidence Debt",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Unsupported certainty accumulated by play.",
+        "kind": "resource",
+        "initial": 0
+      },
+      {
+        "id": "model-integrity",
+        "name": "Model Integrity",
+        "range": [
+          0,
+          12
+        ],
+        "initial": 0,
+        "kind": "progress"
+      }
+    ],
+    "zoneDefinitions": [
+      {
+        "id": "anomaly",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "connected-card",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "hand-card",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "inquiry-hand",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "inquiry-map",
+        "kind": "state-reference",
+        "initialCount": 0
+      }
+    ],
+    "edgeTypeDefinitions": [
+      "declared"
+    ],
+    "actionTrackDeltas": {
+      "source": {
+        "model-integrity": 2
+      },
+      "disconfirm": {
+        "model-integrity": 1
+      }
+    },
+    "resolutionPredicates": {
+      "win": {
+        "all": [
+          {
+            "track": "model-integrity",
+            "operator": ">=",
+            "value": 6
+          },
+          {
+            "track": "clarity",
+            "operator": ">=",
+            "value": 8
+          }
+        ]
+      },
+      "loss": {
+        "any": [
+          {
+            "track": "evidence-debt",
+            "operator": ">=",
+            "value": 12
+          },
+          {
+            "track": "trust",
+            "operator": "<=",
+            "value": 0
+          }
+        ]
+      }
+    },
+    "fixtures": {
+      "win": [
+        "connect",
+        "source",
+        "connect",
+        "source",
+        "connect",
+        "source"
+      ],
+      "loss": [
+        "connect",
+        "connect",
+        "connect",
+        "connect",
+        "connect",
+        "connect",
+        "connect",
+        "connect",
+        "connect",
+        "connect",
+        "connect",
+        "connect"
+      ]
+    }
+  },
+  {
+    "id": "ontology-war",
+    "title": "Ontology War",
+    "players": [
+      2,
+      5
+    ],
+    "minutes": [
+      45,
+      100
+    ],
+    "mode": "competitive model-building",
+    "objective": "Build the most explanatory, revisable model of a shared anomaly without exhausting collective Trust.",
+    "resources": [
+      "clarity",
+      "trust",
+      "evidence-debt"
+    ],
+    "setup": [
+      {
+        "op": "draw",
+        "count": 1,
+        "from": {
+          "classes": [
+            "events",
+            "states"
+          ]
+        },
+        "to": "shared-anomaly"
+      },
+      {
+        "op": "draw",
+        "count": 1,
+        "from": {
+          "classes": [
+            "hypotheses"
+          ]
+        },
+        "to": "each-player-lens"
+      },
+      {
+        "op": "draw",
+        "count": 4,
+        "from": {},
+        "to": "each-player-hand"
+      }
+    ],
+    "turn": [
+      {
+        "id": "explain",
+        "label": "Explain",
+        "cost": [],
+        "effects": [
+          {
+            "op": "place",
+            "card": "hand-card",
+            "zone": "model"
+          },
+          {
+            "op": "connect",
+            "from": "hand-card",
+            "to": "shared-anomaly",
+            "edgeType": "interpreted-through"
+          }
+        ]
+      },
+      {
+        "id": "cross-examine",
+        "label": "Cross-examine",
+        "cost": [
+          {
+            "resource": "trust",
+            "amount": 1
+          }
+        ],
+        "effects": [
+          {
+            "op": "challenge-claim",
+            "card": "opponent-model",
+            "stake": "clarity"
+          }
+        ]
+      },
+      {
+        "id": "revise",
+        "label": "Revise",
+        "cost": [],
+        "effects": [
+          {
+            "op": "swap",
+            "first": "model-card",
+            "second": "hand-card"
+          },
+          {
+            "op": "gain",
+            "resource": "trust",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "falsify",
+        "label": "Name Disconfirmation",
+        "cost": [],
+        "effects": [
+          {
+            "op": "cite-source",
+            "card": "lens",
+            "claim": "disconfirmation-condition"
+          },
+          {
+            "op": "retreat-track",
+            "track": "evidence-debt",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "resolution": {
+      "win": "After six rounds, score sourced edges + declared disconfirmations + revisions; ties favor higher Trust.",
+      "loss": "All players lose if collective Trust reaches zero."
+    },
+    "resourceDefinitions": [
+      {
+        "id": "clarity",
+        "name": "Clarity",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Ability to separate observation, interpretation, and desire.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "trust",
+        "name": "Trust",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Relational permission to exchange uncertainty and influence.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "evidence-debt",
+        "name": "Evidence Debt",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Unsupported certainty accumulated by play.",
+        "kind": "resource",
+        "initial": 0
+      }
+    ],
+    "trackDefinitions": [
+      {
+        "id": "clarity",
+        "name": "Clarity",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Ability to separate observation, interpretation, and desire.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "trust",
+        "name": "Trust",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Relational permission to exchange uncertainty and influence.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "evidence-debt",
+        "name": "Evidence Debt",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Unsupported certainty accumulated by play.",
+        "kind": "resource",
+        "initial": 0
+      },
+      {
+        "id": "model-quality",
+        "name": "Model Quality",
+        "range": [
+          0,
+          12
+        ],
+        "initial": 0,
+        "kind": "progress"
+      }
+    ],
+    "zoneDefinitions": [
+      {
+        "id": "each-player-hand",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "each-player-lens",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "hand-card",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "lens",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "model",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "model-card",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "opponent-model",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "shared-anomaly",
+        "kind": "state-reference",
+        "initialCount": 0
+      }
+    ],
+    "edgeTypeDefinitions": [
+      "declared",
+      "interpreted-through"
+    ],
+    "actionTrackDeltas": {
+      "revise": {
+        "model-quality": 1
+      },
+      "falsify": {
+        "model-quality": 2
+      }
+    },
+    "resolutionPredicates": {
+      "win": {
+        "all": [
+          {
+            "track": "model-quality",
+            "operator": ">=",
+            "value": 6
+          }
+        ]
+      },
+      "loss": {
+        "any": [
+          {
+            "track": "trust",
+            "operator": "<=",
+            "value": 0
+          }
+        ]
+      }
+    },
+    "fixtures": {
+      "win": [
+        "revise",
+        "revise",
+        "revise",
+        "revise",
+        "revise",
+        "revise"
+      ],
+      "loss": [
+        "cross-examine",
+        "cross-examine",
+        "cross-examine",
+        "cross-examine",
+        "cross-examine",
+        "cross-examine"
+      ]
+    }
+  },
+  {
+    "id": "first-contact",
+    "title": "First Contact",
+    "players": [
+      2,
+      8
+    ],
+    "minutes": [
+      40,
+      90
+    ],
+    "mode": "cooperative translation",
+    "objective": "Establish reciprocal communication before Fear or Projection overwhelms the encounter.",
+    "resources": [
+      "trust",
+      "clarity",
+      "stability"
+    ],
+    "setup": [
+      {
+        "op": "draw",
+        "count": 2,
+        "from": {
+          "classes": [
+            "beings"
+          ]
+        },
+        "to": "delegations"
+      },
+      {
+        "op": "draw",
+        "count": 1,
+        "from": {
+          "classes": [
+            "worlds"
+          ]
+        },
+        "to": "contact-site"
+      },
+      {
+        "op": "advance-track",
+        "track": "trust",
+        "amount": 3
+      },
+      {
+        "op": "advance-track",
+        "track": "stability",
+        "amount": 4
+      }
+    ],
+    "turn": [
+      {
+        "id": "signal",
+        "label": "Send Signal",
+        "cost": [],
+        "effects": [
+          {
+            "op": "draw",
+            "count": 1,
+            "from": {
+              "classes": [
+                "artifacts",
+                "technologies"
+              ]
+            },
+            "to": "medium"
+          }
+        ]
+      },
+      {
+        "id": "translate",
+        "label": "Translate",
+        "cost": [
+          {
+            "resource": "clarity",
+            "amount": 1
+          }
+        ],
+        "effects": [
+          {
+            "op": "connect",
+            "from": "medium",
+            "to": "other-delegation",
+            "edgeType": "enables"
+          },
+          {
+            "op": "gain",
+            "resource": "trust",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "set-boundary",
+        "label": "Set Boundary",
+        "cost": [],
+        "effects": [
+          {
+            "op": "lock",
+            "target": "one-contact-route"
+          },
+          {
+            "op": "gain",
+            "resource": "stability",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "exchange",
+        "label": "Exchange",
+        "cost": [
+          {
+            "resource": "trust",
+            "amount": 2
+          }
+        ],
+        "effects": [
+          {
+            "op": "reveal",
+            "target": "delegation-secret",
+            "count": 1
+          },
+          {
+            "op": "advance-track",
+            "track": "communication",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "resolution": {
+      "win": "Communication reaches ten with Trust and Stability above zero.",
+      "loss": "Projection reaches ten or either delegation loses all Trust."
+    },
+    "resourceDefinitions": [
+      {
+        "id": "clarity",
+        "name": "Clarity",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Ability to separate observation, interpretation, and desire.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "trust",
+        "name": "Trust",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Relational permission to exchange uncertainty and influence.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "stability",
+        "name": "Stability",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to integrate disruptive information without collapse.",
+        "kind": "resource",
+        "initial": 6
+      }
+    ],
+    "trackDefinitions": [
+      {
+        "id": "clarity",
+        "name": "Clarity",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Ability to separate observation, interpretation, and desire.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "trust",
+        "name": "Trust",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Relational permission to exchange uncertainty and influence.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "stability",
+        "name": "Stability",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to integrate disruptive information without collapse.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "communication",
+        "name": "Reciprocal Communication",
+        "range": [
+          0,
+          12
+        ],
+        "initial": 0,
+        "kind": "progress"
+      },
+      {
+        "id": "projection",
+        "name": "Projection",
+        "range": [
+          0,
+          12
+        ],
+        "initial": 0,
+        "kind": "risk"
+      }
+    ],
+    "zoneDefinitions": [
+      {
+        "id": "contact-site",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "delegation-secret",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "delegations",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "medium",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "one-contact-route",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "other-delegation",
+        "kind": "state-reference",
+        "initialCount": 0
+      }
+    ],
+    "edgeTypeDefinitions": [
+      "declared",
+      "enables"
+    ],
+    "actionTrackDeltas": {
+      "exchange": {
+        "communication": 2
+      },
+      "signal": {
+        "projection": 2
+      }
+    },
+    "resolutionPredicates": {
+      "win": {
+        "all": [
+          {
+            "track": "communication",
+            "operator": ">=",
+            "value": 10
+          },
+          {
+            "track": "trust",
+            "operator": ">",
+            "value": 0
+          },
+          {
+            "track": "stability",
+            "operator": ">",
+            "value": 0
+          }
+        ]
+      },
+      "loss": {
+        "any": [
+          {
+            "track": "projection",
+            "operator": ">=",
+            "value": 6
+          },
+          {
+            "track": "trust",
+            "operator": "<=",
+            "value": 0
+          }
+        ]
+      }
+    },
+    "fixtures": {
+      "win": [
+        "exchange",
+        "exchange",
+        "exchange"
+      ],
+      "loss": [
+        "signal",
+        "signal",
+        "signal"
+      ]
+    }
+  },
+  {
+    "id": "disclosure",
+    "title": "Disclosure",
+    "players": [
+      3,
+      9
+    ],
+    "minutes": [
+      50,
+      110
+    ],
+    "mode": "asymmetric negotiation",
+    "objective": "Reconcile public truth, witness safety, institutional continuity, and accountability.",
+    "resources": [
+      "trust",
+      "stability",
+      "secrecy",
+      "agency"
+    ],
+    "setup": [
+      {
+        "op": "draw",
+        "count": 1,
+        "from": {
+          "classes": [
+            "programs"
+          ]
+        },
+        "to": "hidden-program"
+      },
+      {
+        "op": "draw",
+        "count": 3,
+        "from": {
+          "classes": [
+            "artifacts"
+          ]
+        },
+        "to": "evidence-vault"
+      },
+      {
+        "op": "tag",
+        "target": "players",
+        "tag": "role:witness|keeper|public|mediator"
+      }
+    ],
+    "turn": [
+      {
+        "id": "release",
+        "label": "Release Evidence",
+        "cost": [
+          {
+            "resource": "secrecy",
+            "amount": 2
+          }
+        ],
+        "effects": [
+          {
+            "op": "reveal",
+            "target": "evidence-vault",
+            "count": 1
+          },
+          {
+            "op": "gain",
+            "resource": "agency",
+            "amount": 1
+          },
+          {
+            "op": "retreat-track",
+            "track": "stability",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "verify",
+        "label": "Verify",
+        "cost": [
+          {
+            "resource": "agency",
+            "amount": 1
+          }
+        ],
+        "effects": [
+          {
+            "op": "cite-source",
+            "card": "revealed-evidence",
+            "claim": "public-claim"
+          },
+          {
+            "op": "gain",
+            "resource": "trust",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "id": "protect",
+        "label": "Protect a Witness",
+        "cost": [
+          {
+            "resource": "secrecy",
+            "amount": 1
+          }
+        ],
+        "effects": [
+          {
+            "op": "lock",
+            "target": "witness-identity"
+          },
+          {
+            "op": "gain",
+            "resource": "stability",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "acknowledge",
+        "label": "Official Acknowledgment",
+        "cost": [
+          {
+            "resource": "trust",
+            "amount": 3
+          }
+        ],
+        "effects": [
+          {
+            "op": "advance-track",
+            "track": "disclosure",
+            "amount": 3
+          },
+          {
+            "op": "retreat-track",
+            "track": "secrecy",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "resolution": {
+      "win": "Disclosure reaches ten, at least two evidence cards are sourced, and no role loses all Agency.",
+      "loss": "Stability reaches zero or the evidence vault is exhausted without verification."
+    },
+    "resourceDefinitions": [
+      {
+        "id": "trust",
+        "name": "Trust",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Relational permission to exchange uncertainty and influence.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "agency",
+        "name": "Agency",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to choose a meaningful next action.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "stability",
+        "name": "Stability",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to integrate disruptive information without collapse.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "secrecy",
+        "name": "Secrecy",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Information withheld, compartmented, or not yet safe to reveal.",
+        "kind": "resource",
+        "initial": 6
+      }
+    ],
+    "trackDefinitions": [
+      {
+        "id": "trust",
+        "name": "Trust",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Relational permission to exchange uncertainty and influence.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "agency",
+        "name": "Agency",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to choose a meaningful next action.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "stability",
+        "name": "Stability",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to integrate disruptive information without collapse.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "secrecy",
+        "name": "Secrecy",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Information withheld, compartmented, or not yet safe to reveal.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "disclosure",
+        "name": "Verified Disclosure",
+        "range": [
+          0,
+          12
+        ],
+        "initial": 0,
+        "kind": "progress"
+      },
+      {
+        "id": "rupture",
+        "name": "Institutional Rupture",
+        "range": [
+          0,
+          12
+        ],
+        "initial": 0,
+        "kind": "risk"
+      }
+    ],
+    "zoneDefinitions": [
+      {
+        "id": "evidence-vault",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "hidden-program",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "players",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "revealed-evidence",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "witness-identity",
+        "kind": "state-reference",
+        "initialCount": 0
+      }
+    ],
+    "edgeTypeDefinitions": [
+      "declared"
+    ],
+    "actionTrackDeltas": {
+      "acknowledge": {
+        "disclosure": 1
+      },
+      "release": {
+        "rupture": 2
+      }
+    },
+    "resolutionPredicates": {
+      "win": {
+        "all": [
+          {
+            "track": "disclosure",
+            "operator": ">=",
+            "value": 8
+          }
+        ]
+      },
+      "loss": {
+        "any": [
+          {
+            "track": "rupture",
+            "operator": ">=",
+            "value": 6
+          },
+          {
+            "track": "stability",
+            "operator": "<=",
+            "value": 0
+          }
+        ]
+      }
+    },
+    "fixtures": {
+      "win": [
+        "acknowledge",
+        "acknowledge"
+      ],
+      "loss": [
+        "release",
+        "release",
+        "release"
+      ]
+    }
+  },
+  {
+    "id": "soft-disclosure",
+    "title": "Soft Disclosure",
+    "players": [
+      1,
+      6
+    ],
+    "minutes": [
+      35,
+      80
+    ],
+    "mode": "collaborative narrative design",
+    "objective": "Create a fictional rehearsal that expands readiness without disguising speculation as fact.",
+    "resources": [
+      "clarity",
+      "trust",
+      "stability"
+    ],
+    "setup": [
+      {
+        "op": "draw",
+        "count": 1,
+        "from": {
+          "classes": [
+            "events"
+          ]
+        },
+        "to": "hidden-truth"
+      },
+      {
+        "op": "draw",
+        "count": 1,
+        "from": {
+          "classes": [
+            "worlds"
+          ]
+        },
+        "to": "storyworld"
+      },
+      {
+        "op": "draw",
+        "count": 3,
+        "from": {
+          "classes": [
+            "myths",
+            "beings",
+            "artifacts"
+          ]
+        },
+        "to": "motif-hand"
+      }
+    ],
+    "turn": [
+      {
+        "id": "encode",
+        "label": "Encode",
+        "cost": [],
+        "effects": [
+          {
+            "op": "place",
+            "card": "motif",
+            "zone": "story"
+          },
+          {
+            "op": "connect",
+            "from": "motif",
+            "to": "hidden-truth",
+            "edgeType": "fictionalizes"
+          }
+        ]
+      },
+      {
+        "id": "label",
+        "label": "Label the Boundary",
+        "cost": [],
+        "effects": [
+          {
+            "op": "tag",
+            "target": "story-claim",
+            "tag": "fiction|speculation|documented"
+          },
+          {
+            "op": "gain",
+            "resource": "clarity",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "test-audience",
+        "label": "Test Audience",
+        "cost": [
+          {
+            "resource": "trust",
+            "amount": 1
+          }
+        ],
+        "effects": [
+          {
+            "op": "reveal",
+            "target": "audience-response",
+            "count": 1
+          },
+          {
+            "op": "branch",
+            "condition": "response=overload",
+            "then": [
+              {
+                "op": "gain",
+                "resource": "stability",
+                "amount": 1
+              }
+            ],
+            "otherwise": [
+              {
+                "op": "advance-track",
+                "track": "readiness",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "revise",
+        "label": "Revise the Story",
+        "cost": [],
+        "effects": [
+          {
+            "op": "swap",
+            "first": "story-motif",
+            "second": "motif-hand"
+          },
+          {
+            "op": "gain",
+            "resource": "trust",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "resolution": {
+      "win": "Readiness reaches eight with at least three explicit evidence-state labels.",
+      "loss": "Audience Stability reaches zero or all claims remain unlabeled."
+    },
+    "resourceDefinitions": [
+      {
+        "id": "clarity",
+        "name": "Clarity",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Ability to separate observation, interpretation, and desire.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "trust",
+        "name": "Trust",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Relational permission to exchange uncertainty and influence.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "stability",
+        "name": "Stability",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to integrate disruptive information without collapse.",
+        "kind": "resource",
+        "initial": 6
+      }
+    ],
+    "trackDefinitions": [
+      {
+        "id": "clarity",
+        "name": "Clarity",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Ability to separate observation, interpretation, and desire.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "trust",
+        "name": "Trust",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Relational permission to exchange uncertainty and influence.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "stability",
+        "name": "Stability",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to integrate disruptive information without collapse.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "readiness",
+        "name": "Audience Readiness",
+        "range": [
+          0,
+          12
+        ],
+        "initial": 0,
+        "kind": "progress"
+      },
+      {
+        "id": "overload",
+        "name": "Audience Overload",
+        "range": [
+          0,
+          12
+        ],
+        "initial": 0,
+        "kind": "risk"
+      }
+    ],
+    "zoneDefinitions": [
+      {
+        "id": "audience-response",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "hidden-truth",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "motif",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "motif-hand",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "story",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "story-claim",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "story-motif",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "storyworld",
+        "kind": "state-reference",
+        "initialCount": 0
+      }
+    ],
+    "edgeTypeDefinitions": [
+      "declared",
+      "fictionalizes"
+    ],
+    "actionTrackDeltas": {
+      "test-audience": {
+        "readiness": 1
+      },
+      "encode": {
+        "overload": 2
+      }
+    },
+    "resolutionPredicates": {
+      "win": {
+        "all": [
+          {
+            "track": "readiness",
+            "operator": ">=",
+            "value": 8
+          }
+        ]
+      },
+      "loss": {
+        "any": [
+          {
+            "track": "overload",
+            "operator": ">=",
+            "value": 6
+          },
+          {
+            "track": "stability",
+            "operator": "<=",
+            "value": 0
+          }
+        ]
+      }
+    },
+    "fixtures": {
+      "win": [
+        {
+          "actionId": "test-audience",
+          "branchChoice": "otherwise"
+        },
+        {
+          "actionId": "test-audience",
+          "branchChoice": "otherwise"
+        },
+        {
+          "actionId": "test-audience",
+          "branchChoice": "otherwise"
+        },
+        {
+          "actionId": "test-audience",
+          "branchChoice": "otherwise"
+        }
+      ],
+      "loss": [
+        "encode",
+        "encode",
+        "encode"
+      ]
+    }
+  },
+  {
+    "id": "evidence-assembly",
+    "title": "Evidence Assembly",
+    "players": [
+      1,
+      5
+    ],
+    "minutes": [
+      25,
+      70
+    ],
+    "mode": "cooperative source reasoning",
+    "objective": "Build an auditable claim graph that distinguishes document, inference, testimony, fiction, and synthesis.",
+    "resources": [
+      "clarity",
+      "evidence-debt"
+    ],
+    "setup": [
+      {
+        "op": "draw",
+        "count": 1,
+        "from": {},
+        "to": "claim"
+      },
+      {
+        "op": "draw",
+        "count": 6,
+        "from": {},
+        "to": "evidence-hand"
+      }
+    ],
+    "turn": [
+      {
+        "id": "classify",
+        "label": "Classify Evidence",
+        "cost": [],
+        "effects": [
+          {
+            "op": "tag",
+            "target": "evidence-card",
+            "tag": "documented|active-research|unverified|fictional|symbolic|synthesis"
+          }
+        ]
+      },
+      {
+        "id": "support",
+        "label": "Support",
+        "cost": [],
+        "effects": [
+          {
+            "op": "connect",
+            "from": "evidence-card",
+            "to": "claim",
+            "edgeType": "contextualizes"
+          },
+          {
+            "op": "cite-source",
+            "card": "evidence-card",
+            "claim": "claim"
+          }
+        ]
+      },
+      {
+        "id": "challenge",
+        "label": "Challenge",
+        "cost": [],
+        "effects": [
+          {
+            "op": "challenge-claim",
+            "card": "claim",
+            "stake": "clarity"
+          },
+          {
+            "op": "gain",
+            "resource": "clarity",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "narrow",
+        "label": "Narrow the Claim",
+        "cost": [],
+        "effects": [
+          {
+            "op": "transform",
+            "target": "claim",
+            "into": "bounded-claim"
+          },
+          {
+            "op": "retreat-track",
+            "track": "evidence-debt",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "resolution": {
+      "win": "The claim has three evidence states, two source tiers, and an explicit disconfirmation condition.",
+      "loss": "Evidence Debt reaches ten."
+    },
+    "resourceDefinitions": [
+      {
+        "id": "clarity",
+        "name": "Clarity",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Ability to separate observation, interpretation, and desire.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "evidence-debt",
+        "name": "Evidence Debt",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Unsupported certainty accumulated by play.",
+        "kind": "resource",
+        "initial": 0
+      }
+    ],
+    "trackDefinitions": [
+      {
+        "id": "clarity",
+        "name": "Clarity",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Ability to separate observation, interpretation, and desire.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "evidence-debt",
+        "name": "Evidence Debt",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Unsupported certainty accumulated by play.",
+        "kind": "resource",
+        "initial": 0
+      },
+      {
+        "id": "audit-completeness",
+        "name": "Audit Completeness",
+        "range": [
+          0,
+          12
+        ],
+        "initial": 0,
+        "kind": "progress"
+      }
+    ],
+    "zoneDefinitions": [
+      {
+        "id": "bounded-claim",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "claim",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "evidence-card",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "evidence-hand",
+        "kind": "state-reference",
+        "initialCount": 0
+      }
+    ],
+    "edgeTypeDefinitions": [
+      "contextualizes",
+      "declared"
+    ],
+    "actionTrackDeltas": {
+      "support": {
+        "audit-completeness": 2
+      },
+      "classify": {
+        "audit-completeness": 1
+      },
+      "challenge": {
+        "evidence-debt": 2
+      }
+    },
+    "resolutionPredicates": {
+      "win": {
+        "all": [
+          {
+            "track": "audit-completeness",
+            "operator": ">=",
+            "value": 6
+          }
+        ]
+      },
+      "loss": {
+        "any": [
+          {
+            "track": "evidence-debt",
+            "operator": ">=",
+            "value": 6
+          }
+        ]
+      }
+    },
+    "fixtures": {
+      "win": [
+        "support",
+        "support",
+        "support"
+      ],
+      "loss": [
+        "challenge",
+        "challenge",
+        "challenge"
+      ]
+    }
+  },
+  {
+    "id": "timeline-repair",
+    "title": "Timeline Repair",
+    "players": [
+      1,
+      6
+    ],
+    "minutes": [
+      40,
+      90
+    ],
+    "mode": "cooperative causality puzzle",
+    "objective": "Restore a coherent sequence without erasing paradox, loss, or consequence.",
+    "resources": [
+      "stability",
+      "agency",
+      "clarity"
+    ],
+    "setup": [
+      {
+        "op": "draw",
+        "count": 5,
+        "from": {
+          "classes": [
+            "events"
+          ]
+        },
+        "to": "timeline"
+      },
+      {
+        "op": "swap",
+        "first": "timeline[random]",
+        "second": "timeline[random]"
+      },
+      {
+        "op": "draw",
+        "count": 2,
+        "from": {
+          "classes": [
+            "states",
+            "artifacts"
+          ]
+        },
+        "to": "anomalies"
+      }
+    ],
+    "turn": [
+      {
+        "id": "trace",
+        "label": "Trace Cause",
+        "cost": [],
+        "effects": [
+          {
+            "op": "connect",
+            "from": "event-a",
+            "to": "event-b",
+            "edgeType": "precipitates"
+          },
+          {
+            "op": "gain",
+            "resource": "clarity",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "branch",
+        "label": "Declare Branch",
+        "cost": [
+          {
+            "resource": "stability",
+            "amount": 1
+          }
+        ],
+        "effects": [
+          {
+            "op": "branch",
+            "condition": "paradox",
+            "then": [
+              {
+                "op": "tag",
+                "target": "timeline",
+                "tag": "branch"
+              }
+            ],
+            "otherwise": [
+              {
+                "op": "advance-track",
+                "track": "continuity",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "anchor",
+        "label": "Place Anchor",
+        "cost": [
+          {
+            "resource": "agency",
+            "amount": 1
+          }
+        ],
+        "effects": [
+          {
+            "op": "lock",
+            "target": "event-position"
+          },
+          {
+            "op": "gain",
+            "resource": "stability",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "integrate",
+        "label": "Integrate Anomaly",
+        "cost": [
+          {
+            "resource": "clarity",
+            "amount": 2
+          }
+        ],
+        "effects": [
+          {
+            "op": "place",
+            "card": "anomaly",
+            "zone": "timeline"
+          },
+          {
+            "op": "advance-track",
+            "track": "continuity",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "resolution": {
+      "win": "Continuity reaches ten and every anomaly has a typed edge.",
+      "loss": "Stability reaches zero or three unresolved paradox tags accumulate."
+    },
+    "resourceDefinitions": [
+      {
+        "id": "clarity",
+        "name": "Clarity",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Ability to separate observation, interpretation, and desire.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "agency",
+        "name": "Agency",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to choose a meaningful next action.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "stability",
+        "name": "Stability",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to integrate disruptive information without collapse.",
+        "kind": "resource",
+        "initial": 6
+      }
+    ],
+    "trackDefinitions": [
+      {
+        "id": "clarity",
+        "name": "Clarity",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Ability to separate observation, interpretation, and desire.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "agency",
+        "name": "Agency",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to choose a meaningful next action.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "stability",
+        "name": "Stability",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to integrate disruptive information without collapse.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "continuity",
+        "name": "Continuity",
+        "range": [
+          0,
+          12
+        ],
+        "initial": 0,
+        "kind": "progress"
+      },
+      {
+        "id": "paradox",
+        "name": "Unresolved Paradox",
+        "range": [
+          0,
+          12
+        ],
+        "initial": 0,
+        "kind": "risk"
+      }
+    ],
+    "zoneDefinitions": [
+      {
+        "id": "anomalies",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "anomaly",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "event-a",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "event-b",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "event-position",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "timeline",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "timeline[random]",
+        "kind": "state-reference",
+        "initialCount": 0
+      }
+    ],
+    "edgeTypeDefinitions": [
+      "declared",
+      "precipitates"
+    ],
+    "actionTrackDeltas": {
+      "integrate": {
+        "continuity": 1
+      },
+      "branch": {
+        "paradox": 2
+      }
+    },
+    "resolutionPredicates": {
+      "win": {
+        "all": [
+          {
+            "track": "continuity",
+            "operator": ">=",
+            "value": 8
+          }
+        ]
+      },
+      "loss": {
+        "any": [
+          {
+            "track": "paradox",
+            "operator": ">=",
+            "value": 6
+          },
+          {
+            "track": "stability",
+            "operator": "<=",
+            "value": 0
+          }
+        ]
+      }
+    },
+    "fixtures": {
+      "win": [
+        "integrate",
+        "integrate",
+        "integrate"
+      ],
+      "loss": [
+        {
+          "actionId": "branch",
+          "branchChoice": "then"
+        },
+        {
+          "actionId": "branch",
+          "branchChoice": "then"
+        },
+        {
+          "actionId": "branch",
+          "branchChoice": "then"
+        }
+      ]
+    }
+  },
+  {
+    "id": "threshold-governance",
+    "title": "Governance at the Threshold",
+    "players": [
+      3,
+      8
+    ],
+    "minutes": [
+      55,
+      120
+    ],
+    "mode": "negotiated institution design",
+    "objective": "Create legitimate rules for a transformative capability before one faction captures it.",
+    "resources": [
+      "trust",
+      "agency",
+      "stability",
+      "secrecy"
+    ],
+    "setup": [
+      {
+        "op": "draw",
+        "count": 1,
+        "from": {
+          "classes": [
+            "technologies",
+            "artifacts"
+          ]
+        },
+        "to": "breakthrough"
+      },
+      {
+        "op": "draw",
+        "count": 4,
+        "from": {
+          "classes": [
+            "factions"
+          ]
+        },
+        "to": "stakeholders"
+      },
+      {
+        "op": "draw",
+        "count": 2,
+        "from": {
+          "classes": [
+            "systems",
+            "forces"
+          ]
+        },
+        "to": "constraints"
+      }
+    ],
+    "turn": [
+      {
+        "id": "propose-rule",
+        "label": "Propose Rule",
+        "cost": [
+          {
+            "resource": "agency",
+            "amount": 1
+          }
+        ],
+        "effects": [
+          {
+            "op": "place",
+            "card": "rule",
+            "zone": "charter"
+          },
+          {
+            "op": "vote",
+            "question": "adopt-rule",
+            "threshold": "majority"
+          }
+        ]
+      },
+      {
+        "id": "minority-protection",
+        "label": "Add Minority Protection",
+        "cost": [
+          {
+            "resource": "trust",
+            "amount": 1
+          }
+        ],
+        "effects": [
+          {
+            "op": "tag",
+            "target": "charter-rule",
+            "tag": "minority-protection"
+          },
+          {
+            "op": "gain",
+            "resource": "stability",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "audit",
+        "label": "Audit Power",
+        "cost": [],
+        "effects": [
+          {
+            "op": "reveal",
+            "target": "stakeholder-interest",
+            "count": 1
+          },
+          {
+            "op": "cite-source",
+            "card": "constraint",
+            "claim": "risk"
+          }
+        ]
+      },
+      {
+        "id": "sunset",
+        "label": "Add Sunset Clause",
+        "cost": [],
+        "effects": [
+          {
+            "op": "tag",
+            "target": "charter-rule",
+            "tag": "sunset"
+          },
+          {
+            "op": "gain",
+            "resource": "trust",
+            "amount": 1
+          }
+        ]
+      }
+    ],
+    "resolution": {
+      "win": "A five-rule charter passes with audit, minority protection, review, and sunset provisions.",
+      "loss": "One stakeholder controls three rules or collective Trust reaches zero."
+    },
+    "resourceDefinitions": [
+      {
+        "id": "trust",
+        "name": "Trust",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Relational permission to exchange uncertainty and influence.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "agency",
+        "name": "Agency",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to choose a meaningful next action.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "stability",
+        "name": "Stability",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to integrate disruptive information without collapse.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "secrecy",
+        "name": "Secrecy",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Information withheld, compartmented, or not yet safe to reveal.",
+        "kind": "resource",
+        "initial": 6
+      }
+    ],
+    "trackDefinitions": [
+      {
+        "id": "trust",
+        "name": "Trust",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Relational permission to exchange uncertainty and influence.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "agency",
+        "name": "Agency",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to choose a meaningful next action.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "stability",
+        "name": "Stability",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to integrate disruptive information without collapse.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "secrecy",
+        "name": "Secrecy",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Information withheld, compartmented, or not yet safe to reveal.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "legitimacy",
+        "name": "Charter Legitimacy",
+        "range": [
+          0,
+          12
+        ],
+        "initial": 0,
+        "kind": "progress"
+      },
+      {
+        "id": "capture",
+        "name": "Institutional Capture",
+        "range": [
+          0,
+          12
+        ],
+        "initial": 0,
+        "kind": "risk"
+      }
+    ],
+    "zoneDefinitions": [
+      {
+        "id": "breakthrough",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "charter",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "charter-rule",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "constraint",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "constraints",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "rule",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "stakeholder-interest",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "stakeholders",
+        "kind": "state-reference",
+        "initialCount": 0
+      }
+    ],
+    "edgeTypeDefinitions": [
+      "declared"
+    ],
+    "actionTrackDeltas": {
+      "propose-rule": {
+        "legitimacy": 2,
+        "capture": 1
+      },
+      "audit": {
+        "legitimacy": 1,
+        "capture": -1
+      }
+    },
+    "resolutionPredicates": {
+      "win": {
+        "all": [
+          {
+            "track": "legitimacy",
+            "operator": ">=",
+            "value": 6
+          },
+          {
+            "track": "capture",
+            "operator": "<",
+            "value": 6
+          }
+        ]
+      },
+      "loss": {
+        "any": [
+          {
+            "track": "capture",
+            "operator": ">=",
+            "value": 6
+          },
+          {
+            "track": "trust",
+            "operator": "<=",
+            "value": 0
+          }
+        ]
+      }
+    },
+    "fixtures": {
+      "win": [
+        "propose-rule",
+        "audit",
+        "propose-rule",
+        "audit"
+      ],
+      "loss": [
+        "minority-protection",
+        "minority-protection",
+        "minority-protection",
+        "minority-protection",
+        "minority-protection",
+        "minority-protection"
+      ]
+    }
+  },
+  {
+    "id": "worldseed-engine",
+    "title": "Worldseed Engine",
+    "players": [
+      1,
+      7
+    ],
+    "minutes": [
+      30,
+      85
+    ],
+    "mode": "collaborative world generation",
+    "objective": "Create a coherent world whose environment, infrastructure, institutions, conflict, and future are connected.",
+    "resources": [
+      "clarity",
+      "agency",
+      "stability"
+    ],
+    "setup": [
+      {
+        "op": "draw",
+        "count": 1,
+        "from": {
+          "classes": [
+            "worlds"
+          ]
+        },
+        "to": "world"
+      },
+      {
+        "op": "draw",
+        "count": 7,
+        "from": {},
+        "to": "world-hand"
+      }
+    ],
+    "turn": [
+      {
+        "id": "install",
+        "label": "Install Component",
+        "cost": [],
+        "effects": [
+          {
+            "op": "place",
+            "card": "hand-card",
+            "zone": "world"
+          },
+          {
+            "op": "connect",
+            "from": "hand-card",
+            "to": "world",
+            "edgeType": "declared"
+          }
+        ]
+      },
+      {
+        "id": "complicate",
+        "label": "Reveal Consequence",
+        "cost": [],
+        "effects": [
+          {
+            "op": "draw",
+            "count": 1,
+            "from": {
+              "classes": [
+                "forces",
+                "events",
+                "states"
+              ]
+            },
+            "to": "consequence"
+          },
+          {
+            "op": "retreat-track",
+            "track": "stability",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "institutionalize",
+        "label": "Institutionalize",
+        "cost": [
+          {
+            "resource": "agency",
+            "amount": 1
+          }
+        ],
+        "effects": [
+          {
+            "op": "connect",
+            "from": "faction",
+            "to": "program",
+            "edgeType": "operates"
+          },
+          {
+            "op": "gain",
+            "resource": "clarity",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "future",
+        "label": "Declare Unrealized Future",
+        "cost": [
+          {
+            "resource": "clarity",
+            "amount": 2
+          }
+        ],
+        "effects": [
+          {
+            "op": "draw",
+            "count": 1,
+            "from": {
+              "classes": [
+                "myths",
+                "cosmologies",
+                "events"
+              ]
+            },
+            "to": "future"
+          },
+          {
+            "op": "advance-track",
+            "track": "coherence",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "resolution": {
+      "win": "The world reaches ten Coherence with at least five edge families and one unresolved future question.",
+      "loss": "Stability reaches zero or one card carries more than half the connections."
+    },
+    "resourceDefinitions": [
+      {
+        "id": "clarity",
+        "name": "Clarity",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Ability to separate observation, interpretation, and desire.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "agency",
+        "name": "Agency",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to choose a meaningful next action.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "stability",
+        "name": "Stability",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to integrate disruptive information without collapse.",
+        "kind": "resource",
+        "initial": 6
+      }
+    ],
+    "trackDefinitions": [
+      {
+        "id": "clarity",
+        "name": "Clarity",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Ability to separate observation, interpretation, and desire.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "agency",
+        "name": "Agency",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to choose a meaningful next action.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "stability",
+        "name": "Stability",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to integrate disruptive information without collapse.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "coherence",
+        "name": "World Coherence",
+        "range": [
+          0,
+          12
+        ],
+        "initial": 0,
+        "kind": "progress"
+      },
+      {
+        "id": "entropy",
+        "name": "World Entropy",
+        "range": [
+          0,
+          12
+        ],
+        "initial": 0,
+        "kind": "risk"
+      }
+    ],
+    "zoneDefinitions": [
+      {
+        "id": "consequence",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "faction",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "future",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "hand-card",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "program",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "world",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "world-hand",
+        "kind": "state-reference",
+        "initialCount": 0
+      }
+    ],
+    "edgeTypeDefinitions": [
+      "declared",
+      "operates"
+    ],
+    "actionTrackDeltas": {
+      "install": {
+        "coherence": 2
+      },
+      "future": {
+        "coherence": 1
+      },
+      "complicate": {
+        "entropy": 2
+      }
+    },
+    "resolutionPredicates": {
+      "win": {
+        "all": [
+          {
+            "track": "coherence",
+            "operator": ">=",
+            "value": 6
+          }
+        ]
+      },
+      "loss": {
+        "any": [
+          {
+            "track": "entropy",
+            "operator": ">=",
+            "value": 6
+          },
+          {
+            "track": "stability",
+            "operator": "<=",
+            "value": 0
+          }
+        ]
+      }
+    },
+    "fixtures": {
+      "win": [
+        "install",
+        "install",
+        "install"
+      ],
+      "loss": [
+        "complicate",
+        "complicate",
+        "complicate"
+      ]
+    }
+  },
+  {
+    "id": "secret-space-program",
+    "title": "Secret Space Program",
+    "players": [
+      2,
+      7
+    ],
+    "minutes": [
+      55,
+      130
+    ],
+    "mode": "network construction and audit",
+    "objective": "Build an internally coherent off-world program while auditors test whether its infrastructure, institutions, evidence, and secrecy can coexist.",
+    "resources": [
+      "secrecy",
+      "stability",
+      "agency",
+      "evidence-debt"
+    ],
+    "setup": [
+      {
+        "op": "draw",
+        "count": 2,
+        "from": {
+          "classes": [
+            "worlds"
+          ]
+        },
+        "to": "sites"
+      },
+      {
+        "op": "draw",
+        "count": 2,
+        "from": {
+          "classes": [
+            "factions"
+          ]
+        },
+        "to": "sponsors"
+      },
+      {
+        "op": "draw",
+        "count": 4,
+        "from": {
+          "classes": [
+            "technologies",
+            "artifacts"
+          ]
+        },
+        "to": "capabilities"
+      },
+      {
+        "op": "tag",
+        "target": "one-player",
+        "tag": "role:auditor"
+      },
+      {
+        "op": "advance-track",
+        "track": "secrecy",
+        "amount": 6
+      }
+    ],
+    "turn": [
+      {
+        "id": "commission",
+        "label": "Commission Capability",
+        "cost": [
+          {
+            "resource": "secrecy",
+            "amount": 1
+          }
+        ],
+        "effects": [
+          {
+            "op": "place",
+            "card": "capability",
+            "zone": "program-network"
+          },
+          {
+            "op": "connect",
+            "from": "sponsor",
+            "to": "capability",
+            "edgeType": "operates"
+          },
+          {
+            "op": "advance-track",
+            "track": "readiness",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "establish-base",
+        "label": "Establish Base",
+        "cost": [
+          {
+            "resource": "agency",
+            "amount": 1
+          }
+        ],
+        "effects": [
+          {
+            "op": "place",
+            "card": "site",
+            "zone": "program-network"
+          },
+          {
+            "op": "connect",
+            "from": "site",
+            "to": "capability",
+            "edgeType": "provides-setting-for"
+          },
+          {
+            "op": "gain",
+            "resource": "stability",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "compartment",
+        "label": "Compartment",
+        "cost": [],
+        "effects": [
+          {
+            "op": "lock",
+            "target": "one-network-edge"
+          },
+          {
+            "op": "gain",
+            "resource": "secrecy",
+            "amount": 2
+          },
+          {
+            "op": "advance-track",
+            "track": "evidence-debt",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "audit-trace",
+        "label": "Audit Trace",
+        "cost": [],
+        "effects": [
+          {
+            "op": "reveal",
+            "target": "locked-network-edge",
+            "count": 1
+          },
+          {
+            "op": "challenge-claim",
+            "card": "revealed-component",
+            "stake": "evidence-debt"
+          }
+        ]
+      },
+      {
+        "id": "document",
+        "label": "Document Infrastructure",
+        "cost": [
+          {
+            "resource": "secrecy",
+            "amount": 1
+          }
+        ],
+        "effects": [
+          {
+            "op": "cite-source",
+            "card": "network-component",
+            "claim": "operational-necessity"
+          },
+          {
+            "op": "retreat-track",
+            "track": "evidence-debt",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "resolution": {
+      "win": "Builders win with two sites, two sponsors, four capabilities, and Evidence Debt below six; the auditor wins by exposing three unsupported dependencies.",
+      "loss": "All sides lose if the network reaches maximum Evidence Debt without an auditable causal chain."
+    },
+    "resourceDefinitions": [
+      {
+        "id": "agency",
+        "name": "Agency",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to choose a meaningful next action.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "stability",
+        "name": "Stability",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to integrate disruptive information without collapse.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "secrecy",
+        "name": "Secrecy",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Information withheld, compartmented, or not yet safe to reveal.",
+        "kind": "resource",
+        "initial": 0
+      },
+      {
+        "id": "evidence-debt",
+        "name": "Evidence Debt",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Unsupported certainty accumulated by play.",
+        "kind": "resource",
+        "initial": 0
+      }
+    ],
+    "trackDefinitions": [
+      {
+        "id": "agency",
+        "name": "Agency",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to choose a meaningful next action.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "stability",
+        "name": "Stability",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to integrate disruptive information without collapse.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "secrecy",
+        "name": "Secrecy",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Information withheld, compartmented, or not yet safe to reveal.",
+        "kind": "resource",
+        "initial": 0
+      },
+      {
+        "id": "evidence-debt",
+        "name": "Evidence Debt",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Unsupported certainty accumulated by play.",
+        "kind": "resource",
+        "initial": 0
+      },
+      {
+        "id": "readiness",
+        "name": "Operational Readiness",
+        "range": [
+          0,
+          12
+        ],
+        "initial": 0,
+        "kind": "progress"
+      },
+      {
+        "id": "exposure",
+        "name": "Unsupported Exposure",
+        "range": [
+          0,
+          12
+        ],
+        "initial": 0,
+        "kind": "risk"
+      }
+    ],
+    "zoneDefinitions": [
+      {
+        "id": "capabilities",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "capability",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "locked-network-edge",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "network-component",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "one-network-edge",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "one-player",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "program-network",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "revealed-component",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "site",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "sites",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "sponsor",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "sponsors",
+        "kind": "state-reference",
+        "initialCount": 0
+      }
+    ],
+    "edgeTypeDefinitions": [
+      "declared",
+      "operates",
+      "provides-setting-for"
+    ],
+    "actionTrackDeltas": {
+      "commission": {
+        "readiness": 1
+      },
+      "establish-base": {
+        "readiness": 1
+      },
+      "compartment": {
+        "exposure": 2
+      }
+    },
+    "resolutionPredicates": {
+      "win": {
+        "all": [
+          {
+            "track": "readiness",
+            "operator": ">=",
+            "value": 6
+          },
+          {
+            "track": "evidence-debt",
+            "operator": "<",
+            "value": 6
+          }
+        ]
+      },
+      "loss": {
+        "any": [
+          {
+            "track": "exposure",
+            "operator": ">=",
+            "value": 6
+          },
+          {
+            "track": "evidence-debt",
+            "operator": ">=",
+            "value": 12
+          }
+        ]
+      }
+    },
+    "fixtures": {
+      "win": [
+        "commission",
+        "commission",
+        "commission"
+      ],
+      "loss": [
+        "compartment",
+        "compartment",
+        "compartment"
+      ]
+    }
+  },
+  {
+    "id": "ascension",
+    "title": "Ascension",
+    "players": [
+      2,
+      8
+    ],
+    "minutes": [
+      50,
+      120
+    ],
+    "mode": "cooperative civilizational transition",
+    "objective": "Move a civilization toward greater agency and interconnection without triggering collapse, authoritarian capture, ecological failure, runaway AI, or war.",
+    "resources": [
+      "stability",
+      "agency",
+      "trust",
+      "clarity"
+    ],
+    "setup": [
+      {
+        "op": "draw",
+        "count": 1,
+        "from": {
+          "classes": [
+            "worlds"
+          ]
+        },
+        "to": "civilization"
+      },
+      {
+        "op": "draw",
+        "count": 3,
+        "from": {
+          "classes": [
+            "systems",
+            "factions"
+          ]
+        },
+        "to": "institutions"
+      },
+      {
+        "op": "draw",
+        "count": 3,
+        "from": {
+          "classes": [
+            "forces",
+            "events"
+          ]
+        },
+        "to": "crisis-row"
+      },
+      {
+        "op": "advance-track",
+        "track": "stability",
+        "amount": 6
+      },
+      {
+        "op": "advance-track",
+        "track": "agency",
+        "amount": 4
+      },
+      {
+        "op": "advance-track",
+        "track": "trust",
+        "amount": 4
+      }
+    ],
+    "turn": [
+      {
+        "id": "develop",
+        "label": "Develop Capacity",
+        "cost": [
+          {
+            "resource": "stability",
+            "amount": 1
+          }
+        ],
+        "effects": [
+          {
+            "op": "draw",
+            "count": 1,
+            "from": {
+              "classes": [
+                "technologies",
+                "programs"
+              ]
+            },
+            "to": "capacity"
+          },
+          {
+            "op": "advance-track",
+            "track": "development",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "distribute",
+        "label": "Distribute Agency",
+        "cost": [
+          {
+            "resource": "trust",
+            "amount": 1
+          }
+        ],
+        "effects": [
+          {
+            "op": "connect",
+            "from": "institution",
+            "to": "capacity",
+            "edgeType": "governs"
+          },
+          {
+            "op": "gain",
+            "resource": "agency",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "id": "integrate-shadow",
+        "label": "Integrate Shadow",
+        "cost": [
+          {
+            "resource": "clarity",
+            "amount": 1
+          }
+        ],
+        "effects": [
+          {
+            "op": "reveal",
+            "target": "crisis-row",
+            "count": 1
+          },
+          {
+            "op": "transform",
+            "target": "crisis",
+            "into": "integration-task"
+          },
+          {
+            "op": "gain",
+            "resource": "stability",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "set-limits",
+        "label": "Set Limits",
+        "cost": [
+          {
+            "resource": "agency",
+            "amount": 1
+          }
+        ],
+        "effects": [
+          {
+            "op": "lock",
+            "target": "unsafe-capability-route"
+          },
+          {
+            "op": "gain",
+            "resource": "trust",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "cross-threshold",
+        "label": "Cross Threshold",
+        "cost": [
+          {
+            "resource": "stability",
+            "amount": 2
+          },
+          {
+            "resource": "trust",
+            "amount": 2
+          }
+        ],
+        "effects": [
+          {
+            "op": "advance-track",
+            "track": "development",
+            "amount": 2
+          },
+          {
+            "op": "draw",
+            "count": 1,
+            "from": {
+              "classes": [
+                "states",
+                "cosmologies"
+              ]
+            },
+            "to": "new-condition"
+          }
+        ]
+      }
+    ],
+    "resolution": {
+      "win": "Development reaches twelve while Stability, Agency, and Trust each remain at four or more.",
+      "loss": "Any collapse track reaches eight or any shared resource reaches zero."
+    },
+    "resourceDefinitions": [
+      {
+        "id": "clarity",
+        "name": "Clarity",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Ability to separate observation, interpretation, and desire.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "trust",
+        "name": "Trust",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Relational permission to exchange uncertainty and influence.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "agency",
+        "name": "Agency",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to choose a meaningful next action.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "stability",
+        "name": "Stability",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to integrate disruptive information without collapse.",
+        "kind": "resource",
+        "initial": 6
+      }
+    ],
+    "trackDefinitions": [
+      {
+        "id": "clarity",
+        "name": "Clarity",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Ability to separate observation, interpretation, and desire.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "trust",
+        "name": "Trust",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Relational permission to exchange uncertainty and influence.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "agency",
+        "name": "Agency",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to choose a meaningful next action.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "stability",
+        "name": "Stability",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to integrate disruptive information without collapse.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "development",
+        "name": "Integrated Development",
+        "range": [
+          0,
+          12
+        ],
+        "initial": 0,
+        "kind": "progress"
+      },
+      {
+        "id": "collapse",
+        "name": "Transition Collapse",
+        "range": [
+          0,
+          12
+        ],
+        "initial": 0,
+        "kind": "risk"
+      }
+    ],
+    "zoneDefinitions": [
+      {
+        "id": "capacity",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "civilization",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "crisis",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "crisis-row",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "institution",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "institutions",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "integration-task",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "new-condition",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "unsafe-capability-route",
+        "kind": "state-reference",
+        "initialCount": 0
+      }
+    ],
+    "edgeTypeDefinitions": [
+      "declared",
+      "governs"
+    ],
+    "actionTrackDeltas": {
+      "develop": {
+        "development": 1
+      },
+      "cross-threshold": {
+        "collapse": 2
+      }
+    },
+    "resolutionPredicates": {
+      "win": {
+        "all": [
+          {
+            "track": "development",
+            "operator": ">=",
+            "value": 6
+          },
+          {
+            "track": "stability",
+            "operator": ">=",
+            "value": 4
+          }
+        ]
+      },
+      "loss": {
+        "any": [
+          {
+            "track": "collapse",
+            "operator": ">=",
+            "value": 6
+          },
+          {
+            "track": "stability",
+            "operator": "<=",
+            "value": 0
+          }
+        ]
+      }
+    },
+    "fixtures": {
+      "win": [
+        "develop",
+        "develop",
+        "develop"
+      ],
+      "loss": [
+        "cross-threshold",
+        "cross-threshold",
+        "cross-threshold"
+      ]
+    }
+  },
+  {
+    "id": "prison-planet",
+    "title": "Prison Planet",
+    "players": [
+      1,
+      7
+    ],
+    "minutes": [
+      45,
+      105
+    ],
+    "mode": "cooperative diagnosis and liberation",
+    "objective": "Determine what kind of enclosure exists, who benefits, how it reproduces itself, and which escape preserves reality contact and collective agency.",
+    "resources": [
+      "clarity",
+      "agency",
+      "trust",
+      "stability",
+      "evidence-debt"
+    ],
+    "setup": [
+      {
+        "op": "draw",
+        "count": 1,
+        "from": {
+          "classes": [
+            "cosmologies",
+            "worlds"
+          ]
+        },
+        "to": "enclosure"
+      },
+      {
+        "op": "draw",
+        "count": 2,
+        "from": {
+          "classes": [
+            "systems"
+          ]
+        },
+        "to": "walls"
+      },
+      {
+        "op": "draw",
+        "count": 1,
+        "from": {
+          "classes": [
+            "factions",
+            "beings"
+          ]
+        },
+        "to": "beneficiary"
+      },
+      {
+        "op": "draw",
+        "count": 3,
+        "from": {
+          "classes": [
+            "forces",
+            "states",
+            "technologies"
+          ]
+        },
+        "to": "mechanisms"
+      }
+    ],
+    "turn": [
+      {
+        "id": "name-wall",
+        "label": "Name the Wall",
+        "cost": [],
+        "effects": [
+          {
+            "op": "tag",
+            "target": "wall",
+            "tag": "physical|political|psychological|spiritual|symbolic"
+          },
+          {
+            "op": "gain",
+            "resource": "clarity",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "trace-benefit",
+        "label": "Trace the Benefit",
+        "cost": [
+          {
+            "resource": "trust",
+            "amount": 1
+          }
+        ],
+        "effects": [
+          {
+            "op": "connect",
+            "from": "beneficiary",
+            "to": "mechanism",
+            "edgeType": "harvests"
+          },
+          {
+            "op": "advance-track",
+            "track": "evidence-debt",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "ground-claim",
+        "label": "Ground the Claim",
+        "cost": [],
+        "effects": [
+          {
+            "op": "cite-source",
+            "card": "mechanism",
+            "claim": "enclosure-claim"
+          },
+          {
+            "op": "retreat-track",
+            "track": "evidence-debt",
+            "amount": 2
+          },
+          {
+            "op": "gain",
+            "resource": "stability",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "id": "test-exit",
+        "label": "Test an Exit",
+        "cost": [
+          {
+            "resource": "agency",
+            "amount": 1
+          }
+        ],
+        "effects": [
+          {
+            "op": "unlock",
+            "target": "exit-route"
+          },
+          {
+            "op": "branch",
+            "condition": "exit-increases-agency",
+            "then": [
+              {
+                "op": "advance-track",
+                "track": "liberation",
+                "amount": 2
+              }
+            ],
+            "otherwise": [
+              {
+                "op": "advance-track",
+                "track": "evidence-debt",
+                "amount": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "collective-escape",
+        "label": "Collective Escape",
+        "cost": [
+          {
+            "resource": "trust",
+            "amount": 2
+          },
+          {
+            "resource": "clarity",
+            "amount": 2
+          }
+        ],
+        "effects": [
+          {
+            "op": "transform",
+            "target": "wall",
+            "into": "boundary-with-appeal"
+          },
+          {
+            "op": "advance-track",
+            "track": "liberation",
+            "amount": 3
+          }
+        ]
+      }
+    ],
+    "resolution": {
+      "win": "Liberation reaches ten, at least three wall types have been tested, and Evidence Debt is below five.",
+      "loss": "Evidence Debt reaches twelve, Stability reaches zero, or escape becomes available only to one player."
+    },
+    "resourceDefinitions": [
+      {
+        "id": "clarity",
+        "name": "Clarity",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Ability to separate observation, interpretation, and desire.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "trust",
+        "name": "Trust",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Relational permission to exchange uncertainty and influence.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "agency",
+        "name": "Agency",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to choose a meaningful next action.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "stability",
+        "name": "Stability",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to integrate disruptive information without collapse.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "evidence-debt",
+        "name": "Evidence Debt",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Unsupported certainty accumulated by play.",
+        "kind": "resource",
+        "initial": 0
+      }
+    ],
+    "trackDefinitions": [
+      {
+        "id": "clarity",
+        "name": "Clarity",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Ability to separate observation, interpretation, and desire.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "trust",
+        "name": "Trust",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Relational permission to exchange uncertainty and influence.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "agency",
+        "name": "Agency",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to choose a meaningful next action.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "stability",
+        "name": "Stability",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Capacity to integrate disruptive information without collapse.",
+        "kind": "resource",
+        "initial": 6
+      },
+      {
+        "id": "evidence-debt",
+        "name": "Evidence Debt",
+        "range": [
+          0,
+          12
+        ],
+        "meaning": "Unsupported certainty accumulated by play.",
+        "kind": "resource",
+        "initial": 0
+      },
+      {
+        "id": "liberation",
+        "name": "Collective Liberation",
+        "range": [
+          0,
+          12
+        ],
+        "initial": 0,
+        "kind": "progress"
+      }
+    ],
+    "zoneDefinitions": [
+      {
+        "id": "beneficiary",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "boundary-with-appeal",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "enclosure",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "exit-route",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "mechanism",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "mechanisms",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "wall",
+        "kind": "state-reference",
+        "initialCount": 0
+      },
+      {
+        "id": "walls",
+        "kind": "state-reference",
+        "initialCount": 0
+      }
+    ],
+    "edgeTypeDefinitions": [
+      "declared",
+      "harvests"
+    ],
+    "actionTrackDeltas": {
+      "collective-escape": {
+        "liberation": 1
+      },
+      "trace-benefit": {
+        "evidence-debt": 1
+      }
+    },
+    "resolutionPredicates": {
+      "win": {
+        "all": [
+          {
+            "track": "liberation",
+            "operator": ">=",
+            "value": 10
+          },
+          {
+            "track": "evidence-debt",
+            "operator": "<",
+            "value": 5
+          }
+        ]
+      },
+      "loss": {
+        "any": [
+          {
+            "track": "evidence-debt",
+            "operator": ">=",
+            "value": 6
+          },
+          {
+            "track": "stability",
+            "operator": "<=",
+            "value": 0
+          }
+        ]
+      }
+    },
+    "fixtures": {
+      "win": [
+        "collective-escape",
+        "collective-escape",
+        "collective-escape"
+      ],
+      "loss": [
+        "trace-benefit",
+        "trace-benefit",
+        "trace-benefit"
+      ]
+    }
+  }
+]

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Conceptual interface systems and implementation-facing prototypes for Kiduna.",
   openGraph: {
     title: "Kiduna Design",
-    description: "Explore eight published Kiduna design systems and five living decks.",
+    description: "Explore ten published Kiduna design systems and five living decks.",
     images: ["/og.png"],
   },
   icons: { icon: "/assets/kiduna/mark.svg" },

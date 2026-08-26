@@ -1,0 +1,828 @@
+[
+  {
+    "id": "rabbit-hole",
+    "title": "Rabbit Hole",
+    "cards": 7,
+    "purpose": "Follow an anomaly far enough to discover structure without surrendering proportional reality or disconfirmation.",
+    "positions": [
+      {
+        "id": "anomaly",
+        "title": "The Anomaly",
+        "prompt": "What observation refuses the current explanation?",
+        "allowedClasses": [
+          "artifacts",
+          "events",
+          "states"
+        ]
+      },
+      {
+        "id": "first-explanation",
+        "title": "The First Explanation",
+        "prompt": "Which model becomes compelling first?",
+        "allowedClasses": [
+          "hypotheses",
+          "cosmologies",
+          "myths"
+        ]
+      },
+      {
+        "id": "hidden-connection",
+        "title": "The Hidden Connection",
+        "prompt": "What meaningful connection deserves testing?",
+        "allowedClasses": [
+          "forces",
+          "systems",
+          "programs"
+        ]
+      },
+      {
+        "id": "projection",
+        "title": "The Projection",
+        "prompt": "What desire, fear, or identity is being placed onto the pattern?",
+        "allowedClasses": [
+          "states",
+          "myths",
+          "beings"
+        ]
+      },
+      {
+        "id": "evidence",
+        "title": "The Evidence",
+        "prompt": "What trace can be checked independently?",
+        "allowedClasses": [
+          "artifacts",
+          "technologies",
+          "events"
+        ]
+      },
+      {
+        "id": "point-of-no-return",
+        "title": "The Point of No Return",
+        "prompt": "Which commitment would make revision socially or psychologically costly?",
+        "allowedClasses": [
+          "events",
+          "systems",
+          "factions"
+        ]
+      },
+      {
+        "id": "discernment",
+        "title": "Discernment",
+        "prompt": "What test preserves wonder while restoring the ability to turn around?",
+        "allowedClasses": [
+          "forces",
+          "hypotheses",
+          "programs"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "first-contact",
+    "title": "First Contact",
+    "cards": 6,
+    "purpose": "Prepare two unlike intelligences for contact without collapsing difference into threat or salvation.",
+    "positions": [
+      {
+        "id": "other",
+        "title": "The Other",
+        "prompt": "What form of intelligence may be approaching?",
+        "allowedClasses": [
+          "beings",
+          "hypotheses"
+        ]
+      },
+      {
+        "id": "projection",
+        "title": "What You Project",
+        "prompt": "What expectation could distort the encounter?",
+        "allowedClasses": [
+          "forces",
+          "myths",
+          "states"
+        ]
+      },
+      {
+        "id": "actual-gift",
+        "title": "What They Actually Bring",
+        "prompt": "What capability, need, or difference arrives with them?",
+        "allowedClasses": [
+          "artifacts",
+          "technologies",
+          "forces"
+        ]
+      },
+      {
+        "id": "boundary",
+        "title": "The Boundary",
+        "prompt": "What must remain protected, consensual, or untranslated?",
+        "allowedClasses": [
+          "systems",
+          "worlds",
+          "forces"
+        ]
+      },
+      {
+        "id": "exchange",
+        "title": "The Exchange",
+        "prompt": "What can be offered without coercion or assimilation?",
+        "allowedClasses": [
+          "artifacts",
+          "technologies",
+          "programs"
+        ]
+      },
+      {
+        "id": "new-world",
+        "title": "The New World",
+        "prompt": "What shared reality is created if contact becomes reciprocal?",
+        "allowedClasses": [
+          "worlds",
+          "events",
+          "cosmologies"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "disclosure",
+    "title": "Disclosure",
+    "cards": 6,
+    "purpose": "Assess concealment, visibility, readiness, consequence, and the next responsible release.",
+    "positions": [
+      {
+        "id": "hidden",
+        "title": "What Is Hidden",
+        "prompt": "What material, history, or relationship is not yet visible?",
+        "allowedClasses": [
+          "artifacts",
+          "programs",
+          "systems"
+        ]
+      },
+      {
+        "id": "beneficiary",
+        "title": "Who Benefits from Concealment",
+        "prompt": "Who gains power, safety, time, or legitimacy while this remains hidden?",
+        "allowedClasses": [
+          "factions",
+          "beings",
+          "systems"
+        ]
+      },
+      {
+        "id": "visible",
+        "title": "What Is Already Visible",
+        "prompt": "Which trace has been normalized, overlooked, or misclassified?",
+        "allowedClasses": [
+          "artifacts",
+          "events",
+          "states"
+        ]
+      },
+      {
+        "id": "change",
+        "title": "What Revelation Would Change",
+        "prompt": "Which identity, institution, or system could not remain the same?",
+        "allowedClasses": [
+          "events",
+          "systems",
+          "states"
+        ]
+      },
+      {
+        "id": "not-ready",
+        "title": "What You Are Not Ready to Know",
+        "prompt": "What truth requires more support before it can be integrated?",
+        "allowedClasses": [
+          "states",
+          "myths",
+          "forces"
+        ]
+      },
+      {
+        "id": "reveal-now",
+        "title": "What Should Be Revealed Now",
+        "prompt": "What bounded disclosure increases agency without avoidable harm?",
+        "allowedClasses": [
+          "programs",
+          "events",
+          "artifacts"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "system-anatomy",
+    "title": "System Anatomy",
+    "cards": 7,
+    "purpose": "Reveal the inputs, rules, beneficiaries, externalities, resistance, and transformation path of a system.",
+    "positions": [
+      {
+        "id": "input",
+        "title": "Input",
+        "prompt": "What enters the system?",
+        "allowedClasses": [
+          "artifacts",
+          "forces",
+          "beings"
+        ]
+      },
+      {
+        "id": "rule",
+        "title": "Rule",
+        "prompt": "What converts input into behavior?",
+        "allowedClasses": [
+          "systems",
+          "technologies",
+          "programs"
+        ]
+      },
+      {
+        "id": "operator",
+        "title": "Operator",
+        "prompt": "Who maintains or steers the rule?",
+        "allowedClasses": [
+          "factions",
+          "beings"
+        ]
+      },
+      {
+        "id": "beneficiary",
+        "title": "Beneficiary",
+        "prompt": "Who gains from the current output?",
+        "allowedClasses": [
+          "factions",
+          "beings",
+          "worlds"
+        ]
+      },
+      {
+        "id": "cost",
+        "title": "Externalized Cost",
+        "prompt": "What is being displaced, extracted, or forgotten?",
+        "allowedClasses": [
+          "forces",
+          "states",
+          "worlds"
+        ]
+      },
+      {
+        "id": "resistance",
+        "title": "Resistance",
+        "prompt": "Where is agency already appearing?",
+        "allowedClasses": [
+          "forces",
+          "factions",
+          "events"
+        ]
+      },
+      {
+        "id": "redesign",
+        "title": "Redesign",
+        "prompt": "What change could alter the system without reproducing it?",
+        "allowedClasses": [
+          "technologies",
+          "programs",
+          "systems"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "timeline",
+    "title": "Timeline",
+    "cards": 6,
+    "purpose": "Compare the current timeline, a branch point, two futures, their convergence, and what persists.",
+    "positions": [
+      {
+        "id": "current",
+        "title": "Current Timeline",
+        "prompt": "What inherited sequence is still selecting the present?",
+        "allowedClasses": [
+          "myths",
+          "events",
+          "forces"
+        ]
+      },
+      {
+        "id": "branch-point",
+        "title": "Branch Point",
+        "prompt": "Which decision or event creates divergence now?",
+        "allowedClasses": [
+          "events",
+          "programs",
+          "beings"
+        ]
+      },
+      {
+        "id": "path-a",
+        "title": "Path A",
+        "prompt": "What unfolds if the dominant pattern continues?",
+        "allowedClasses": [
+          "systems",
+          "worlds",
+          "states"
+        ]
+      },
+      {
+        "id": "path-b",
+        "title": "Path B",
+        "prompt": "What unfolds if the hidden option is chosen?",
+        "allowedClasses": [
+          "systems",
+          "worlds",
+          "states"
+        ]
+      },
+      {
+        "id": "convergence",
+        "title": "Convergence",
+        "prompt": "Where could the two paths meet again without erasing consequence?",
+        "allowedClasses": [
+          "events",
+          "technologies",
+          "forces"
+        ]
+      },
+      {
+        "id": "persists",
+        "title": "What Persists",
+        "prompt": "What value, memory, or relationship survives both timelines?",
+        "allowedClasses": [
+          "artifacts",
+          "forces",
+          "states"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prison-planet",
+    "title": "Prison Planet",
+    "cards": 6,
+    "purpose": "Diagnose an enclosure without assuming in advance whether it is physical, political, psychological, spiritual, or symbolic.",
+    "positions": [
+      {
+        "id": "wall",
+        "title": "The Wall",
+        "prompt": "What boundary actually limits movement, knowledge, or choice?",
+        "allowedClasses": [
+          "systems",
+          "worlds",
+          "forces"
+        ]
+      },
+      {
+        "id": "keeper",
+        "title": "The Keeper",
+        "prompt": "Who or what maintains the enclosure?",
+        "allowedClasses": [
+          "factions",
+          "beings",
+          "systems"
+        ]
+      },
+      {
+        "id": "reward",
+        "title": "The Reward for Staying",
+        "prompt": "What comfort, identity, or protection makes the enclosure durable?",
+        "allowedClasses": [
+          "artifacts",
+          "states",
+          "forces"
+        ]
+      },
+      {
+        "id": "fear",
+        "title": "The Fear of Leaving",
+        "prompt": "What threat—real or projected—makes exit feel impossible?",
+        "allowedClasses": [
+          "states",
+          "myths",
+          "events"
+        ]
+      },
+      {
+        "id": "exit",
+        "title": "The Hidden Exit",
+        "prompt": "Where is agency already present but unrecognized?",
+        "allowedClasses": [
+          "technologies",
+          "programs",
+          "forces"
+        ]
+      },
+      {
+        "id": "freedom",
+        "title": "What Freedom Requires",
+        "prompt": "What capacity and collective condition make escape more than a change of scenery?",
+        "allowedClasses": [
+          "forces",
+          "factions",
+          "events"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "worldseed",
+    "title": "Worldseed",
+    "cards": 8,
+    "purpose": "Compose a world from environment, resource, intelligence, system, fracture, threshold, memory, and promise.",
+    "positions": [
+      {
+        "id": "place",
+        "title": "Environment",
+        "prompt": "What physical or ontological environment holds the world?",
+        "allowedClasses": [
+          "worlds",
+          "cosmologies"
+        ]
+      },
+      {
+        "id": "resource",
+        "title": "Scarce or Sacred Resource",
+        "prompt": "What does the world organize around?",
+        "allowedClasses": [
+          "artifacts",
+          "forces"
+        ]
+      },
+      {
+        "id": "people",
+        "title": "Inhabitants",
+        "prompt": "Who is capable of acting here?",
+        "allowedClasses": [
+          "beings",
+          "factions"
+        ]
+      },
+      {
+        "id": "infrastructure",
+        "title": "Infrastructure",
+        "prompt": "What makes everyday life possible?",
+        "allowedClasses": [
+          "technologies",
+          "systems"
+        ]
+      },
+      {
+        "id": "order",
+        "title": "Governing Order",
+        "prompt": "How is coordination enforced or earned?",
+        "allowedClasses": [
+          "systems",
+          "factions"
+        ]
+      },
+      {
+        "id": "fracture",
+        "title": "Fracture",
+        "prompt": "What contradiction can no longer be contained?",
+        "allowedClasses": [
+          "forces",
+          "states"
+        ]
+      },
+      {
+        "id": "threshold",
+        "title": "Threshold Event",
+        "prompt": "What makes this story begin now?",
+        "allowedClasses": [
+          "events",
+          "programs"
+        ]
+      },
+      {
+        "id": "promise",
+        "title": "Unrealized Future",
+        "prompt": "What can this world become?",
+        "allowedClasses": [
+          "myths",
+          "events",
+          "cosmologies"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "character-continuity",
+    "title": "Character Continuity",
+    "cards": 6,
+    "purpose": "Build a character whose body, memory, role, secret, conflict, and transformation belong to one arc.",
+    "positions": [
+      {
+        "id": "role",
+        "title": "Role",
+        "prompt": "What recurring role does the character inhabit?",
+        "allowedClasses": [
+          "beings"
+        ]
+      },
+      {
+        "id": "body",
+        "title": "Embodiment",
+        "prompt": "What makes this body capable or vulnerable?",
+        "allowedClasses": [
+          "technologies",
+          "states",
+          "beings"
+        ]
+      },
+      {
+        "id": "memory",
+        "title": "Memory",
+        "prompt": "What past defines identity?",
+        "allowedClasses": [
+          "states",
+          "artifacts",
+          "myths"
+        ]
+      },
+      {
+        "id": "secret",
+        "title": "Secret",
+        "prompt": "What knowledge cannot yet be integrated?",
+        "allowedClasses": [
+          "programs",
+          "systems",
+          "artifacts"
+        ]
+      },
+      {
+        "id": "conflict",
+        "title": "Conflict",
+        "prompt": "What force or institution opposes the character?",
+        "allowedClasses": [
+          "forces",
+          "factions",
+          "systems"
+        ]
+      },
+      {
+        "id": "becoming",
+        "title": "Becoming",
+        "prompt": "What threshold changes the meaning of the self?",
+        "allowedClasses": [
+          "events",
+          "states",
+          "technologies"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "faction-tension",
+    "title": "Faction Tension",
+    "cards": 7,
+    "purpose": "Create a faction from origin, promise, method, resource, internal dissent, rival, and public mask.",
+    "positions": [
+      {
+        "id": "origin",
+        "title": "Origin",
+        "prompt": "What event or wound called the faction into being?",
+        "allowedClasses": [
+          "events",
+          "myths"
+        ]
+      },
+      {
+        "id": "promise",
+        "title": "Promise",
+        "prompt": "What future does membership offer?",
+        "allowedClasses": [
+          "myths",
+          "cosmologies",
+          "forces"
+        ]
+      },
+      {
+        "id": "method",
+        "title": "Method",
+        "prompt": "How does the faction act repeatedly?",
+        "allowedClasses": [
+          "programs",
+          "technologies",
+          "systems"
+        ]
+      },
+      {
+        "id": "resource",
+        "title": "Resource",
+        "prompt": "What capability can it control or exchange?",
+        "allowedClasses": [
+          "artifacts",
+          "technologies",
+          "worlds"
+        ]
+      },
+      {
+        "id": "dissent",
+        "title": "Internal Dissent",
+        "prompt": "What cannot be reconciled inside it?",
+        "allowedClasses": [
+          "forces",
+          "states",
+          "hypotheses"
+        ]
+      },
+      {
+        "id": "rival",
+        "title": "Rival",
+        "prompt": "Who contests its legitimacy or objective?",
+        "allowedClasses": [
+          "factions",
+          "beings"
+        ]
+      },
+      {
+        "id": "mask",
+        "title": "Public Mask",
+        "prompt": "What story does it tell about itself?",
+        "allowedClasses": [
+          "myths",
+          "systems",
+          "artifacts"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ascension",
+    "title": "Ascension",
+    "cards": 6,
+    "purpose": "Explore developmental transformation without using transcendence to bypass embodiment, accountability, or care.",
+    "positions": [
+      {
+        "id": "current-density",
+        "title": "Current Density",
+        "prompt": "What level of complexity, care, and agency can the present system actually hold?",
+        "allowedClasses": [
+          "states",
+          "systems",
+          "cosmologies"
+        ]
+      },
+      {
+        "id": "integrate",
+        "title": "What Must Be Integrated",
+        "prompt": "Which shadow or contradiction cannot be left behind?",
+        "allowedClasses": [
+          "forces",
+          "states",
+          "myths"
+        ]
+      },
+      {
+        "id": "release",
+        "title": "What Must Be Released",
+        "prompt": "What identity, control, or scarcity pattern has completed its work?",
+        "allowedClasses": [
+          "forces",
+          "systems",
+          "artifacts"
+        ]
+      },
+      {
+        "id": "threshold",
+        "title": "The Threshold",
+        "prompt": "What event or practice makes the transition irreversible?",
+        "allowedClasses": [
+          "events",
+          "programs",
+          "technologies"
+        ]
+      },
+      {
+        "id": "shadow",
+        "title": "Shadow of Transcendence",
+        "prompt": "How could the promise of ascent reproduce hierarchy, denial, or capture?",
+        "allowedClasses": [
+          "systems",
+          "factions",
+          "states"
+        ]
+      },
+      {
+        "id": "capacity",
+        "title": "The New Capacity",
+        "prompt": "What becomes possible through integration rather than escape?",
+        "allowedClasses": [
+          "technologies",
+          "forces",
+          "states"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cross-ontology-council",
+    "title": "Cross-Ontology Council",
+    "cards": 9,
+    "purpose": "Place competing explanations in dialogue without treating uncertainty as failure.",
+    "positions": [
+      {
+        "id": "observation",
+        "title": "Shared Observation",
+        "prompt": "What must every model explain?",
+        "allowedClasses": [
+          "events",
+          "artifacts",
+          "states"
+        ]
+      },
+      {
+        "id": "material",
+        "title": "Material Model",
+        "prompt": "What physical explanation is strongest?",
+        "allowedClasses": [
+          "technologies",
+          "hypotheses"
+        ]
+      },
+      {
+        "id": "psychosocial",
+        "title": "Psychosocial Model",
+        "prompt": "What cultural or psychological dynamics matter?",
+        "allowedClasses": [
+          "hypotheses",
+          "states",
+          "systems"
+        ]
+      },
+      {
+        "id": "experiential",
+        "title": "Experiential Model",
+        "prompt": "What does first-person report contribute?",
+        "allowedClasses": [
+          "states",
+          "beings"
+        ]
+      },
+      {
+        "id": "mythic",
+        "title": "Mythic Model",
+        "prompt": "What durable story shape organizes the experience?",
+        "allowedClasses": [
+          "myths",
+          "cosmologies"
+        ]
+      },
+      {
+        "id": "political",
+        "title": "Political Model",
+        "prompt": "Who gains authority from each explanation?",
+        "allowedClasses": [
+          "factions",
+          "systems",
+          "programs"
+        ]
+      },
+      {
+        "id": "fictional",
+        "title": "Fictional Rehearsal",
+        "prompt": "Where has culture rehearsed this possibility?",
+        "allowedClasses": [
+          "myths",
+          "worlds",
+          "artifacts"
+        ]
+      },
+      {
+        "id": "disconfirmation",
+        "title": "Disconfirmation",
+        "prompt": "What observation would weaken the favored model?",
+        "allowedClasses": [
+          "forces",
+          "hypotheses",
+          "programs"
+        ]
+      },
+      {
+        "id": "provisional",
+        "title": "Provisional Synthesis",
+        "prompt": "What can be acted upon before ontology is settled?",
+        "allowedClasses": [
+          "forces",
+          "events",
+          "systems"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "one-card-reality-check",
+    "title": "One-Card Reality Check",
+    "cards": 1,
+    "purpose": "Interrupt certainty with one card that reframes the immediate question.",
+    "positions": [
+      {
+        "id": "check",
+        "title": "Reality Check",
+        "prompt": "What distinction, question, or action deserves attention before the story grows?",
+        "allowedClasses": []
+      }
+    ]
+  }
+]

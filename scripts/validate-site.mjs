@@ -7,6 +7,8 @@ const oracle = join(root, "public", "systems-oracle-app");
 const alchemy = join(root, "public", "mapshifting", "alchemy");
 const tao = join(root, "public", "tao");
 const realEstate = join(root, "public", "real-estate-mortgage");
+const political = join(root, "public", "political-change");
+const disclosure = join(root, "public", "science-fiction-disclosure");
 const failures = [];
 const check = (condition, message) => {
   if (!condition) failures.push(message);
@@ -131,9 +133,55 @@ const realEstatePage = await readFile(join(root, "app", "real-estate-mortgage", 
 check(realEstatePage.includes("RealEstateLibrary"), "Real Estate & Mortgage route does not expose the complete tile library");
 check(realEstatePage.includes("Real-Estate-Mortgage-System-Complete-v1.0.0.zip"), "Real Estate & Mortgage route does not expose its complete archive");
 
+const politicalNodes = JSON.parse(await readFile(join(political, "data", "nodes.json"), "utf8"));
+const politicalEdges = JSON.parse(await readFile(join(political, "data", "relationships.json"), "utf8"));
+const politicalMapshifts = JSON.parse(await readFile(join(political, "data", "mapshifts.json"), "utf8"));
+const politicalEngine = JSON.parse(await readFile(join(political, "data", "engine-output.json"), "utf8"));
+const politicalSentinel = JSON.parse(await readFile(join(political, "data", "sentinel-handoffs.json"), "utf8"));
+check(politicalNodes.length === 1168, `Expected 1,168 Political Change nodes; found ${politicalNodes.length}`);
+check(politicalEdges.length === 2287, `Expected 2,287 Political Change relationships; found ${politicalEdges.length}`);
+check(politicalMapshifts.length === 160, `Expected 160 Political Change mapshifts; found ${politicalMapshifts.length}`);
+check(politicalNodes.every((node) => node.id && node.title && node.family && node.summary && node.mechanism && node.epistemic_status && node.provenance), "A Political Change node lacks a required public field");
+check(politicalEdges.every((edge) => edge.source && edge.target && edge.predicate && edge.epistemic_status && edge.provenance), "A Political Change relationship lacks epistemic status or provenance");
+check(politicalEngine && typeof politicalEngine === "object", "Political Change Engine Output is missing or invalid");
+check(Array.isArray(politicalSentinel) && politicalSentinel.length === 47, "Political Change Sentinel handoffs are missing or merged into Engine Output");
+const politicalTriptych = join(political, "enamel-triptych.png");
+check(await exists(politicalTriptych), "Missing Political Change enamel triptych");
+if (await exists(politicalTriptych)) check((await stat(politicalTriptych)).size > 1_000_000, "Political Change enamel triptych is unexpectedly small");
+const politicalDownload = join(root, "public", "downloads", "Political-Change-System-Complete-v1.0.0.zip");
+check(await exists(politicalDownload), "Missing complete Political Change system download");
+if (await exists(politicalDownload)) check((await stat(politicalDownload)).size > 7_000_000, "Political Change complete-system download is unexpectedly small");
+const politicalPage = await readFile(join(root, "app", "political-change", "page.tsx"), "utf8");
+check(politicalPage.includes("PoliticalChangeLibrary"), "Political Change route does not expose the complete node library");
+check(politicalPage.includes("Political-Change-System-Complete-v1.0.0.zip"), "Political Change route does not expose its complete archive");
+
+const disclosureCards = JSON.parse(await readFile(join(disclosure, "oracle", "downloads", "cards.json"), "utf8"));
+const disclosureEdges = JSON.parse(await readFile(join(disclosure, "oracle", "downloads", "relationships.json"), "utf8"));
+const disclosureLineages = JSON.parse(await readFile(join(disclosure, "oracle", "downloads", "lineages.json"), "utf8"));
+const disclosureSpreads = JSON.parse(await readFile(join(disclosure, "oracle", "downloads", "spreads.json"), "utf8"));
+const disclosureGames = JSON.parse(await readFile(join(disclosure, "oracle", "downloads", "games.json"), "utf8"));
+check(disclosureCards.length === 480, `Expected 480 Science Fiction & Disclosure Tiles; found ${disclosureCards.length}`);
+check(disclosureEdges.length === 2226, `Expected 2,226 Science Fiction & Disclosure relationships; found ${disclosureEdges.length}`);
+check(disclosureLineages.length === 14, `Expected 14 Science Fiction & Disclosure lineages; found ${disclosureLineages.length}`);
+check(disclosureSpreads.length === 12, `Expected 12 Science Fiction & Disclosure spreads; found ${disclosureSpreads.length}`);
+check(disclosureGames.length === 12, `Expected 12 Science Fiction & Disclosure games; found ${disclosureGames.length}`);
+check(disclosureCards.every((card) => card.id && card.title && card.class && card.epistemicLayers && card.sources && card.safety), "A Science Fiction & Disclosure Tile lacks identity, epistemic layers, sources, or safety controls");
+for (const slug of ["disclosure", "starseed", "secret-space-program", "space-memory-network", "structured-water"]) {
+  check(await exists(disclosure, "oracle", "assets", "reference-tiles", `sfoc-${slug === "disclosure" ? "events" : slug === "starseed" ? "beings" : slug === "secret-space-program" ? "programs" : slug === "space-memory-network" ? "cosmologies" : "technologies"}-${slug}.svg`), `Missing Science Fiction & Disclosure reference Tile: ${slug}`);
+}
+const disclosureHero = join(disclosure, "featured-enamel-network.png");
+check(await exists(disclosureHero), "Missing Science Fiction & Disclosure finished enamel hero");
+if (await exists(disclosureHero)) check((await stat(disclosureHero)).size > 1_000_000, "Science Fiction & Disclosure hero is unexpectedly small");
+const disclosureDownload = join(root, "public", "downloads", "Science-Fiction-Disclosure-System-Complete-v1.0.0.zip");
+check(await exists(disclosureDownload), "Missing complete Science Fiction & Disclosure system download");
+if (await exists(disclosureDownload)) check((await stat(disclosureDownload)).size > 50_000_000, "Science Fiction & Disclosure complete-system download is unexpectedly small");
+const disclosurePage = await readFile(join(root, "app", "science-fiction-disclosure", "page.tsx"), "utf8");
+check(disclosurePage.includes("/science-fiction-disclosure/oracle/index.html#home"), "Science Fiction & Disclosure route does not expose its interactive system");
+check(disclosurePage.includes("Science-Fiction-Disclosure-System-Complete-v1.0.0.zip"), "Science Fiction & Disclosure route does not expose its complete archive");
+
 if (failures.length) {
   console.error(failures.map((failure) => `- ${failure}`).join("\n"));
   process.exit(1);
 }
 
-console.log(`Validated Kiduna Design: Systems Oracle has ${artifacts.length} artifacts and ${references.length} reference artworks; Alchemy has ${alchemyCards.length} cards and ${alchemyCards.length * 2} finished compositions; Tao has ${taoCards.length} tiles and ${taoGraph.edges.length} typed relations; Real Estate & Mortgage has ${realEstateCards.length} tiles and ${realEstateEdges.length} typed relations.`);
+console.log(`Validated Kiduna Design: Systems Oracle has ${artifacts.length} artifacts and ${references.length} reference artworks; Alchemy has ${alchemyCards.length} cards and ${alchemyCards.length * 2} finished compositions; Tao has ${taoCards.length} tiles and ${taoGraph.edges.length} typed relations; Real Estate & Mortgage has ${realEstateCards.length} tiles and ${realEstateEdges.length} typed relations; Political Change has ${politicalNodes.length} nodes, ${politicalEdges.length} typed relations, and ${politicalMapshifts.length} mapshifts; Science Fiction & Disclosure has ${disclosureCards.length} Tiles and ${disclosureEdges.length} typed relations.`);

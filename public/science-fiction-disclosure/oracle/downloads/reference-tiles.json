@@ -1,0 +1,1742 @@
+[
+  {
+    "id": "reference-mythic-past",
+    "cardId": "sfoc-myths-mythic-past",
+    "name": "Mythic Past",
+    "primaryClass": "myths",
+    "formats": {
+      "svg": "reference-tiles/svg/mythic-past.svg",
+      "png2048": "reference-tiles/png/mythic-past-2048.png",
+      "png1024": "reference-tiles/png/mythic-past-1024.png",
+      "png512": "reference-tiles/png/mythic-past-512.png",
+      "png256": "reference-tiles/thumbnails/mythic-past-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-aspirational-future",
+    "cardId": "sfoc-myths-aspirational-future",
+    "name": "Aspirational Future",
+    "primaryClass": "myths",
+    "formats": {
+      "svg": "reference-tiles/svg/aspirational-future.svg",
+      "png2048": "reference-tiles/png/aspirational-future-2048.png",
+      "png1024": "reference-tiles/png/aspirational-future-1024.png",
+      "png512": "reference-tiles/png/aspirational-future-512.png",
+      "png256": "reference-tiles/thumbnails/aspirational-future-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-spice",
+    "cardId": "sfoc-artifacts-spice",
+    "name": "Spice",
+    "primaryClass": "artifacts",
+    "formats": {
+      "svg": "reference-tiles/svg/spice.svg",
+      "png2048": "reference-tiles/png/spice-2048.png",
+      "png1024": "reference-tiles/png/spice-1024.png",
+      "png512": "reference-tiles/png/spice-512.png",
+      "png256": "reference-tiles/thumbnails/spice-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-disclosure",
+    "cardId": "sfoc-events-disclosure",
+    "name": "Disclosure",
+    "primaryClass": "events",
+    "formats": {
+      "svg": "reference-tiles/svg/disclosure.svg",
+      "png2048": "reference-tiles/png/disclosure-2048.png",
+      "png1024": "reference-tiles/png/disclosure-1024.png",
+      "png512": "reference-tiles/png/disclosure-512.png",
+      "png256": "reference-tiles/thumbnails/disclosure-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-starseed",
+    "cardId": "sfoc-beings-starseed",
+    "name": "Starseed",
+    "primaryClass": "beings",
+    "formats": {
+      "svg": "reference-tiles/svg/starseed.svg",
+      "png2048": "reference-tiles/png/starseed-2048.png",
+      "png1024": "reference-tiles/png/starseed-1024.png",
+      "png512": "reference-tiles/png/starseed-512.png",
+      "png256": "reference-tiles/thumbnails/starseed-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-pleiadian",
+    "cardId": "sfoc-beings-pleiadian",
+    "name": "Pleiadian",
+    "primaryClass": "beings",
+    "formats": {
+      "svg": "reference-tiles/svg/pleiadian.svg",
+      "png2048": "reference-tiles/png/pleiadian-2048.png",
+      "png1024": "reference-tiles/png/pleiadian-1024.png",
+      "png512": "reference-tiles/png/pleiadian-512.png",
+      "png256": "reference-tiles/thumbnails/pleiadian-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-grey",
+    "cardId": "sfoc-beings-grey",
+    "name": "Grey",
+    "primaryClass": "beings",
+    "formats": {
+      "svg": "reference-tiles/svg/grey.svg",
+      "png2048": "reference-tiles/png/grey-2048.png",
+      "png1024": "reference-tiles/png/grey-1024.png",
+      "png512": "reference-tiles/png/grey-512.png",
+      "png256": "reference-tiles/thumbnails/grey-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-reptilian",
+    "cardId": "sfoc-beings-reptilian",
+    "name": "Reptilian",
+    "primaryClass": "beings",
+    "formats": {
+      "svg": "reference-tiles/svg/reptilian.svg",
+      "png2048": "reference-tiles/png/reptilian-2048.png",
+      "png1024": "reference-tiles/png/reptilian-1024.png",
+      "png512": "reference-tiles/png/reptilian-512.png",
+      "png256": "reference-tiles/thumbnails/reptilian-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-mantis",
+    "cardId": "sfoc-beings-mantis",
+    "name": "Mantis",
+    "primaryClass": "beings",
+    "formats": {
+      "svg": "reference-tiles/svg/mantis.svg",
+      "png2048": "reference-tiles/png/mantis-2048.png",
+      "png1024": "reference-tiles/png/mantis-1024.png",
+      "png512": "reference-tiles/png/mantis-512.png",
+      "png256": "reference-tiles/thumbnails/mantis-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-galactic-federation",
+    "cardId": "sfoc-factions-galactic-federation",
+    "name": "Galactic Federation",
+    "primaryClass": "factions",
+    "formats": {
+      "svg": "reference-tiles/svg/galactic-federation.svg",
+      "png2048": "reference-tiles/png/galactic-federation-2048.png",
+      "png1024": "reference-tiles/png/galactic-federation-1024.png",
+      "png512": "reference-tiles/png/galactic-federation-512.png",
+      "png256": "reference-tiles/thumbnails/galactic-federation-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-loosh",
+    "cardId": "sfoc-forces-loosh",
+    "name": "Loosh",
+    "primaryClass": "forces",
+    "formats": {
+      "svg": "reference-tiles/svg/loosh.svg",
+      "png2048": "reference-tiles/png/loosh-2048.png",
+      "png1024": "reference-tiles/png/loosh-1024.png",
+      "png512": "reference-tiles/png/loosh-512.png",
+      "png256": "reference-tiles/thumbnails/loosh-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-loosh-harvest",
+    "cardId": "sfoc-systems-loosh-harvest",
+    "name": "Loosh Harvest",
+    "primaryClass": "systems",
+    "formats": {
+      "svg": "reference-tiles/svg/loosh-harvest.svg",
+      "png2048": "reference-tiles/png/loosh-harvest-2048.png",
+      "png1024": "reference-tiles/png/loosh-harvest-1024.png",
+      "png512": "reference-tiles/png/loosh-harvest-512.png",
+      "png256": "reference-tiles/thumbnails/loosh-harvest-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-prison-planet",
+    "cardId": "sfoc-cosmologies-prison-planet",
+    "name": "Prison Planet",
+    "primaryClass": "cosmologies",
+    "formats": {
+      "svg": "reference-tiles/svg/prison-planet.svg",
+      "png2048": "reference-tiles/png/prison-planet-2048.png",
+      "png1024": "reference-tiles/png/prison-planet-1024.png",
+      "png512": "reference-tiles/png/prison-planet-512.png",
+      "png256": "reference-tiles/thumbnails/prison-planet-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-akashic-records",
+    "cardId": "sfoc-artifacts-akashic-records",
+    "name": "Akashic Records",
+    "primaryClass": "artifacts",
+    "formats": {
+      "svg": "reference-tiles/svg/akashic-records.svg",
+      "png2048": "reference-tiles/png/akashic-records-2048.png",
+      "png1024": "reference-tiles/png/akashic-records-1024.png",
+      "png512": "reference-tiles/png/akashic-records-512.png",
+      "png256": "reference-tiles/thumbnails/akashic-records-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-remote-viewing",
+    "cardId": "sfoc-technologies-remote-viewing",
+    "name": "Remote Viewing",
+    "primaryClass": "technologies",
+    "formats": {
+      "svg": "reference-tiles/svg/remote-viewing.svg",
+      "png2048": "reference-tiles/png/remote-viewing-2048.png",
+      "png1024": "reference-tiles/png/remote-viewing-1024.png",
+      "png512": "reference-tiles/png/remote-viewing-512.png",
+      "png256": "reference-tiles/thumbnails/remote-viewing-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-near-death-experience",
+    "cardId": "sfoc-states-near-death-experience",
+    "name": "Near-Death Experience",
+    "primaryClass": "states",
+    "formats": {
+      "svg": "reference-tiles/svg/near-death-experience.svg",
+      "png2048": "reference-tiles/png/near-death-experience-2048.png",
+      "png1024": "reference-tiles/png/near-death-experience-1024.png",
+      "png512": "reference-tiles/png/near-death-experience-512.png",
+      "png256": "reference-tiles/thumbnails/near-death-experience-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-life-review",
+    "cardId": "sfoc-events-life-review",
+    "name": "Life Review",
+    "primaryClass": "events",
+    "formats": {
+      "svg": "reference-tiles/svg/life-review.svg",
+      "png2048": "reference-tiles/png/life-review-2048.png",
+      "png1024": "reference-tiles/png/life-review-1024.png",
+      "png512": "reference-tiles/png/life-review-512.png",
+      "png256": "reference-tiles/thumbnails/life-review-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-zero-point-energy",
+    "cardId": "sfoc-technologies-zero-point-energy",
+    "name": "Zero-Point Energy",
+    "primaryClass": "technologies",
+    "formats": {
+      "svg": "reference-tiles/svg/zero-point-energy.svg",
+      "png2048": "reference-tiles/png/zero-point-energy-2048.png",
+      "png1024": "reference-tiles/png/zero-point-energy-1024.png",
+      "png512": "reference-tiles/png/zero-point-energy-512.png",
+      "png256": "reference-tiles/thumbnails/zero-point-energy-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-structured-water",
+    "cardId": "sfoc-technologies-structured-water",
+    "name": "Structured Water",
+    "primaryClass": "technologies",
+    "formats": {
+      "svg": "reference-tiles/svg/structured-water.svg",
+      "png2048": "reference-tiles/png/structured-water-2048.png",
+      "png1024": "reference-tiles/png/structured-water-1024.png",
+      "png512": "reference-tiles/png/structured-water-512.png",
+      "png256": "reference-tiles/thumbnails/structured-water-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-med-bed",
+    "cardId": "sfoc-technologies-med-bed",
+    "name": "Med Bed",
+    "primaryClass": "technologies",
+    "formats": {
+      "svg": "reference-tiles/svg/med-bed.svg",
+      "png2048": "reference-tiles/png/med-bed-2048.png",
+      "png1024": "reference-tiles/png/med-bed-1024.png",
+      "png512": "reference-tiles/png/med-bed-512.png",
+      "png256": "reference-tiles/thumbnails/med-bed-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-20-and-back",
+    "cardId": "sfoc-programs-20-and-back",
+    "name": "20 and Back",
+    "primaryClass": "programs",
+    "formats": {
+      "svg": "reference-tiles/svg/20-and-back.svg",
+      "png2048": "reference-tiles/png/20-and-back-2048.png",
+      "png1024": "reference-tiles/png/20-and-back-1024.png",
+      "png512": "reference-tiles/png/20-and-back-512.png",
+      "png256": "reference-tiles/thumbnails/20-and-back-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-montauk-project",
+    "cardId": "sfoc-programs-montauk-project",
+    "name": "Montauk Project",
+    "primaryClass": "programs",
+    "formats": {
+      "svg": "reference-tiles/svg/montauk-project.svg",
+      "png2048": "reference-tiles/png/montauk-project-2048.png",
+      "png1024": "reference-tiles/png/montauk-project-1024.png",
+      "png512": "reference-tiles/png/montauk-project-512.png",
+      "png256": "reference-tiles/thumbnails/montauk-project-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-philadelphia-experiment",
+    "cardId": "sfoc-programs-philadelphia-experiment",
+    "name": "Philadelphia Experiment",
+    "primaryClass": "programs",
+    "formats": {
+      "svg": "reference-tiles/svg/philadelphia-experiment.svg",
+      "png2048": "reference-tiles/png/philadelphia-experiment-2048.png",
+      "png1024": "reference-tiles/png/philadelphia-experiment-1024.png",
+      "png512": "reference-tiles/png/philadelphia-experiment-512.png",
+      "png256": "reference-tiles/thumbnails/philadelphia-experiment-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-area-51",
+    "cardId": "sfoc-worlds-area-51",
+    "name": "Area 51",
+    "primaryClass": "worlds",
+    "formats": {
+      "svg": "reference-tiles/svg/area-51.svg",
+      "png2048": "reference-tiles/png/area-51-2048.png",
+      "png1024": "reference-tiles/png/area-51-1024.png",
+      "png512": "reference-tiles/png/area-51-512.png",
+      "png256": "reference-tiles/thumbnails/area-51-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-antarctica",
+    "cardId": "sfoc-worlds-antarctica",
+    "name": "Antarctica",
+    "primaryClass": "worlds",
+    "formats": {
+      "svg": "reference-tiles/svg/antarctica.svg",
+      "png2048": "reference-tiles/png/antarctica-2048.png",
+      "png1024": "reference-tiles/png/antarctica-1024.png",
+      "png512": "reference-tiles/png/antarctica-512.png",
+      "png256": "reference-tiles/thumbnails/antarctica-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-secret-space-program",
+    "cardId": "sfoc-programs-secret-space-program",
+    "name": "Secret Space Program",
+    "primaryClass": "programs",
+    "formats": {
+      "svg": "reference-tiles/svg/secret-space-program.svg",
+      "png2048": "reference-tiles/png/secret-space-program-2048.png",
+      "png1024": "reference-tiles/png/secret-space-program-1024.png",
+      "png512": "reference-tiles/png/secret-space-program-512.png",
+      "png256": "reference-tiles/thumbnails/secret-space-program-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-breakaway-civilization",
+    "cardId": "sfoc-factions-breakaway-civilization",
+    "name": "Breakaway Civilization",
+    "primaryClass": "factions",
+    "formats": {
+      "svg": "reference-tiles/svg/breakaway-civilization.svg",
+      "png2048": "reference-tiles/png/breakaway-civilization-2048.png",
+      "png1024": "reference-tiles/png/breakaway-civilization-1024.png",
+      "png512": "reference-tiles/png/breakaway-civilization-512.png",
+      "png256": "reference-tiles/thumbnails/breakaway-civilization-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-black-goo",
+    "cardId": "sfoc-technologies-black-goo",
+    "name": "Black Goo",
+    "primaryClass": "technologies",
+    "formats": {
+      "svg": "reference-tiles/svg/black-goo.svg",
+      "png2048": "reference-tiles/png/black-goo-2048.png",
+      "png1024": "reference-tiles/png/black-goo-1024.png",
+      "png512": "reference-tiles/png/black-goo-512.png",
+      "png256": "reference-tiles/thumbnails/black-goo-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-15-minute-city",
+    "cardId": "sfoc-worlds-15-minute-city",
+    "name": "15-Minute City",
+    "primaryClass": "worlds",
+    "formats": {
+      "svg": "reference-tiles/svg/15-minute-city.svg",
+      "png2048": "reference-tiles/png/15-minute-city-2048.png",
+      "png1024": "reference-tiles/png/15-minute-city-1024.png",
+      "png512": "reference-tiles/png/15-minute-city-512.png",
+      "png256": "reference-tiles/thumbnails/15-minute-city-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-panopticon",
+    "cardId": "sfoc-systems-panopticon",
+    "name": "Panopticon",
+    "primaryClass": "systems",
+    "formats": {
+      "svg": "reference-tiles/svg/panopticon.svg",
+      "png2048": "reference-tiles/png/panopticon-2048.png",
+      "png1024": "reference-tiles/png/panopticon-1024.png",
+      "png512": "reference-tiles/png/panopticon-512.png",
+      "png256": "reference-tiles/thumbnails/panopticon-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-digital-id",
+    "cardId": "sfoc-systems-digital-id",
+    "name": "Digital ID",
+    "primaryClass": "systems",
+    "formats": {
+      "svg": "reference-tiles/svg/digital-id.svg",
+      "png2048": "reference-tiles/png/digital-id-2048.png",
+      "png1024": "reference-tiles/png/digital-id-1024.png",
+      "png512": "reference-tiles/png/digital-id-512.png",
+      "png256": "reference-tiles/thumbnails/digital-id-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-rabbit-hole",
+    "cardId": "sfoc-states-rabbit-hole",
+    "name": "Rabbit Hole",
+    "primaryClass": "states",
+    "formats": {
+      "svg": "reference-tiles/svg/rabbit-hole.svg",
+      "png2048": "reference-tiles/png/rabbit-hole-2048.png",
+      "png1024": "reference-tiles/png/rabbit-hole-1024.png",
+      "png512": "reference-tiles/png/rabbit-hole-512.png",
+      "png256": "reference-tiles/thumbnails/rabbit-hole-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-chapel-perilous",
+    "cardId": "sfoc-states-chapel-perilous",
+    "name": "Chapel Perilous",
+    "primaryClass": "states",
+    "formats": {
+      "svg": "reference-tiles/svg/chapel-perilous.svg",
+      "png2048": "reference-tiles/png/chapel-perilous-2048.png",
+      "png1024": "reference-tiles/png/chapel-perilous-1024.png",
+      "png512": "reference-tiles/png/chapel-perilous-512.png",
+      "png256": "reference-tiles/thumbnails/chapel-perilous-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-soft-disclosure",
+    "cardId": "sfoc-programs-soft-disclosure",
+    "name": "Soft Disclosure",
+    "primaryClass": "programs",
+    "formats": {
+      "svg": "reference-tiles/svg/soft-disclosure.svg",
+      "png2048": "reference-tiles/png/soft-disclosure-2048.png",
+      "png1024": "reference-tiles/png/soft-disclosure-1024.png",
+      "png512": "reference-tiles/png/soft-disclosure-512.png",
+      "png256": "reference-tiles/thumbnails/soft-disclosure-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-predictive-programming",
+    "cardId": "sfoc-programs-predictive-programming",
+    "name": "Predictive Programming",
+    "primaryClass": "programs",
+    "formats": {
+      "svg": "reference-tiles/svg/predictive-programming.svg",
+      "png2048": "reference-tiles/png/predictive-programming-2048.png",
+      "png1024": "reference-tiles/png/predictive-programming-1024.png",
+      "png512": "reference-tiles/png/predictive-programming-512.png",
+      "png256": "reference-tiles/thumbnails/predictive-programming-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-dark-matter",
+    "cardId": "sfoc-forces-dark-matter",
+    "name": "Dark Matter",
+    "primaryClass": "forces",
+    "formats": {
+      "svg": "reference-tiles/svg/dark-matter.svg",
+      "png2048": "reference-tiles/png/dark-matter-2048.png",
+      "png1024": "reference-tiles/png/dark-matter-1024.png",
+      "png512": "reference-tiles/png/dark-matter-512.png",
+      "png256": "reference-tiles/thumbnails/dark-matter-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-wormhole",
+    "cardId": "sfoc-technologies-wormhole",
+    "name": "Wormhole",
+    "primaryClass": "technologies",
+    "formats": {
+      "svg": "reference-tiles/svg/wormhole.svg",
+      "png2048": "reference-tiles/png/wormhole-2048.png",
+      "png1024": "reference-tiles/png/wormhole-1024.png",
+      "png512": "reference-tiles/png/wormhole-512.png",
+      "png256": "reference-tiles/thumbnails/wormhole-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-portal",
+    "cardId": "sfoc-technologies-portal",
+    "name": "Portal",
+    "primaryClass": "technologies",
+    "formats": {
+      "svg": "reference-tiles/svg/portal.svg",
+      "png2048": "reference-tiles/png/portal-2048.png",
+      "png1024": "reference-tiles/png/portal-1024.png",
+      "png512": "reference-tiles/png/portal-512.png",
+      "png256": "reference-tiles/thumbnails/portal-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-great-filter",
+    "cardId": "sfoc-forces-great-filter",
+    "name": "Great Filter",
+    "primaryClass": "forces",
+    "formats": {
+      "svg": "reference-tiles/svg/great-filter.svg",
+      "png2048": "reference-tiles/png/great-filter-2048.png",
+      "png1024": "reference-tiles/png/great-filter-1024.png",
+      "png512": "reference-tiles/png/great-filter-512.png",
+      "png256": "reference-tiles/thumbnails/great-filter-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-prime-directive",
+    "cardId": "sfoc-systems-prime-directive",
+    "name": "Prime Directive",
+    "primaryClass": "systems",
+    "formats": {
+      "svg": "reference-tiles/svg/prime-directive.svg",
+      "png2048": "reference-tiles/png/prime-directive-2048.png",
+      "png1024": "reference-tiles/png/prime-directive-1024.png",
+      "png512": "reference-tiles/png/prime-directive-512.png",
+      "png256": "reference-tiles/thumbnails/prime-directive-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-borg",
+    "cardId": "sfoc-beings-borg",
+    "name": "Borg",
+    "primaryClass": "beings",
+    "formats": {
+      "svg": "reference-tiles/svg/borg.svg",
+      "png2048": "reference-tiles/png/borg-2048.png",
+      "png1024": "reference-tiles/png/borg-1024.png",
+      "png512": "reference-tiles/png/borg-512.png",
+      "png256": "reference-tiles/thumbnails/borg-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-the-matrix",
+    "cardId": "sfoc-systems-the-matrix",
+    "name": "The Matrix",
+    "primaryClass": "systems",
+    "formats": {
+      "svg": "reference-tiles/svg/the-matrix.svg",
+      "png2048": "reference-tiles/png/the-matrix-2048.png",
+      "png1024": "reference-tiles/png/the-matrix-1024.png",
+      "png512": "reference-tiles/png/the-matrix-512.png",
+      "png256": "reference-tiles/thumbnails/the-matrix-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-simulation",
+    "cardId": "sfoc-cosmologies-simulation",
+    "name": "Simulation",
+    "primaryClass": "cosmologies",
+    "formats": {
+      "svg": "reference-tiles/svg/simulation.svg",
+      "png2048": "reference-tiles/png/simulation-2048.png",
+      "png1024": "reference-tiles/png/simulation-1024.png",
+      "png512": "reference-tiles/png/simulation-512.png",
+      "png256": "reference-tiles/thumbnails/simulation-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-technological-singularity",
+    "cardId": "sfoc-events-technological-singularity",
+    "name": "Technological Singularity",
+    "primaryClass": "events",
+    "formats": {
+      "svg": "reference-tiles/svg/technological-singularity.svg",
+      "png2048": "reference-tiles/png/technological-singularity-2048.png",
+      "png1024": "reference-tiles/png/technological-singularity-1024.png",
+      "png512": "reference-tiles/png/technological-singularity-512.png",
+      "png256": "reference-tiles/thumbnails/technological-singularity-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-alignment-protocol",
+    "cardId": "sfoc-technologies-alignment-protocol",
+    "name": "Alignment Protocol",
+    "primaryClass": "technologies",
+    "formats": {
+      "svg": "reference-tiles/svg/alignment-protocol.svg",
+      "png2048": "reference-tiles/png/alignment-protocol-2048.png",
+      "png1024": "reference-tiles/png/alignment-protocol-1024.png",
+      "png512": "reference-tiles/png/alignment-protocol-512.png",
+      "png256": "reference-tiles/thumbnails/alignment-protocol-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-ancient-astronaut-hypothesis",
+    "cardId": "sfoc-hypotheses-ancient-astronaut-hypothesis",
+    "name": "Ancient Astronaut Hypothesis",
+    "primaryClass": "hypotheses",
+    "formats": {
+      "svg": "reference-tiles/svg/ancient-astronaut-hypothesis.svg",
+      "png2048": "reference-tiles/png/ancient-astronaut-hypothesis-2048.png",
+      "png1024": "reference-tiles/png/ancient-astronaut-hypothesis-1024.png",
+      "png512": "reference-tiles/png/ancient-astronaut-hypothesis-512.png",
+      "png256": "reference-tiles/thumbnails/ancient-astronaut-hypothesis-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-atlantis",
+    "cardId": "sfoc-worlds-atlantis",
+    "name": "Atlantis",
+    "primaryClass": "worlds",
+    "formats": {
+      "svg": "reference-tiles/svg/atlantis.svg",
+      "png2048": "reference-tiles/png/atlantis-2048.png",
+      "png1024": "reference-tiles/png/atlantis-1024.png",
+      "png512": "reference-tiles/png/atlantis-512.png",
+      "png256": "reference-tiles/thumbnails/atlantis-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-hidden-heir",
+    "cardId": "sfoc-myths-hidden-heir",
+    "name": "Hidden Heir",
+    "primaryClass": "myths",
+    "formats": {
+      "svg": "reference-tiles/svg/hidden-heir.svg",
+      "png2048": "reference-tiles/png/hidden-heir-2048.png",
+      "png1024": "reference-tiles/png/hidden-heir-1024.png",
+      "png512": "reference-tiles/png/hidden-heir-512.png",
+      "png256": "reference-tiles/thumbnails/hidden-heir-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-bloodline",
+    "cardId": "sfoc-myths-bloodline",
+    "name": "Bloodline",
+    "primaryClass": "myths",
+    "formats": {
+      "svg": "reference-tiles/svg/bloodline.svg",
+      "png2048": "reference-tiles/png/bloodline-2048.png",
+      "png1024": "reference-tiles/png/bloodline-1024.png",
+      "png512": "reference-tiles/png/bloodline-512.png",
+      "png256": "reference-tiles/thumbnails/bloodline-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-the-great-awakening",
+    "cardId": "sfoc-myths-the-great-awakening",
+    "name": "The Great Awakening",
+    "primaryClass": "myths",
+    "formats": {
+      "svg": "reference-tiles/svg/the-great-awakening.svg",
+      "png2048": "reference-tiles/png/the-great-awakening-2048.png",
+      "png1024": "reference-tiles/png/the-great-awakening-1024.png",
+      "png512": "reference-tiles/png/the-great-awakening-512.png",
+      "png256": "reference-tiles/thumbnails/the-great-awakening-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-monolith",
+    "cardId": "sfoc-artifacts-monolith",
+    "name": "Monolith",
+    "primaryClass": "artifacts",
+    "formats": {
+      "svg": "reference-tiles/svg/monolith.svg",
+      "png2048": "reference-tiles/png/monolith-2048.png",
+      "png1024": "reference-tiles/png/monolith-1024.png",
+      "png512": "reference-tiles/png/monolith-512.png",
+      "png256": "reference-tiles/thumbnails/monolith-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-dune",
+    "cardId": "sfoc-myths-dune",
+    "name": "Dune",
+    "primaryClass": "myths",
+    "formats": {
+      "svg": "reference-tiles/svg/dune.svg",
+      "png2048": "reference-tiles/png/dune-2048.png",
+      "png1024": "reference-tiles/png/dune-1024.png",
+      "png512": "reference-tiles/png/dune-512.png",
+      "png256": "reference-tiles/thumbnails/dune-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-artificial-general-intelligence",
+    "cardId": "sfoc-beings-artificial-general-intelligence",
+    "name": "Artificial General Intelligence",
+    "primaryClass": "beings",
+    "formats": {
+      "svg": "reference-tiles/svg/artificial-general-intelligence.svg",
+      "png2048": "reference-tiles/png/artificial-general-intelligence-2048.png",
+      "png1024": "reference-tiles/png/artificial-general-intelligence-1024.png",
+      "png512": "reference-tiles/png/artificial-general-intelligence-512.png",
+      "png256": "reference-tiles/thumbnails/artificial-general-intelligence-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-first-contact",
+    "cardId": "sfoc-events-first-contact",
+    "name": "First Contact",
+    "primaryClass": "events",
+    "formats": {
+      "svg": "reference-tiles/svg/first-contact.svg",
+      "png2048": "reference-tiles/png/first-contact-2048.png",
+      "png1024": "reference-tiles/png/first-contact-1024.png",
+      "png512": "reference-tiles/png/first-contact-512.png",
+      "png256": "reference-tiles/thumbnails/first-contact-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-ontological-shock",
+    "cardId": "sfoc-states-ontological-shock",
+    "name": "Ontological Shock",
+    "primaryClass": "states",
+    "formats": {
+      "svg": "reference-tiles/svg/ontological-shock.svg",
+      "png2048": "reference-tiles/png/ontological-shock-2048.png",
+      "png1024": "reference-tiles/png/ontological-shock-1024.png",
+      "png512": "reference-tiles/png/ontological-shock-512.png",
+      "png256": "reference-tiles/thumbnails/ontological-shock-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-trickster",
+    "cardId": "sfoc-beings-trickster",
+    "name": "Trickster",
+    "primaryClass": "beings",
+    "formats": {
+      "svg": "reference-tiles/svg/trickster.svg",
+      "png2048": "reference-tiles/png/trickster-2048.png",
+      "png1024": "reference-tiles/png/trickster-1024.png",
+      "png512": "reference-tiles/png/trickster-512.png",
+      "png256": "reference-tiles/thumbnails/trickster-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-space-memory-network",
+    "cardId": "sfoc-cosmologies-space-memory-network",
+    "name": "Space Memory Network",
+    "primaryClass": "cosmologies",
+    "formats": {
+      "svg": "reference-tiles/svg/space-memory-network.svg",
+      "png2048": "reference-tiles/png/space-memory-network-2048.png",
+      "png1024": "reference-tiles/png/space-memory-network-1024.png",
+      "png512": "reference-tiles/png/space-memory-network-512.png",
+      "png256": "reference-tiles/thumbnails/space-memory-network-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  },
+  {
+    "id": "reference-qanon",
+    "cardId": "sfoc-myths-qanon",
+    "name": "QAnon",
+    "primaryClass": "myths",
+    "formats": {
+      "svg": "reference-tiles/svg/qanon.svg",
+      "png2048": "reference-tiles/png/qanon-2048.png",
+      "png1024": "reference-tiles/png/qanon-1024.png",
+      "png512": "reference-tiles/png/qanon-512.png",
+      "png256": "reference-tiles/thumbnails/qanon-256.png"
+    },
+    "dimensions": [
+      2048,
+      1024,
+      512,
+      256
+    ],
+    "shape": "square-rounded-corner",
+    "materials": [
+      "fired dark enamel",
+      "warm gold cloisonné",
+      "luminous core"
+    ],
+    "textEmbedded": false,
+    "artStatus": "original-production-reference",
+    "generatedBy": "deterministic vector renderer",
+    "generatedAt": "2026-08-24",
+    "prompt": "Original, non-franchise rounded-square enamel oracle tile; one dominant symbolic silhouette; no lettering; high legibility at 96px; midnight field, warm metal, restrained colored enamel."
+  }
+]
