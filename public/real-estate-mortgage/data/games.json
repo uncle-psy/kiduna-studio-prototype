@@ -1,0 +1,224 @@
+[
+  {
+    "id": "game:development",
+    "name": "Development",
+    "roles": [
+      "developer",
+      "planner",
+      "lender",
+      "community",
+      "contractor"
+    ],
+    "objective": "Assemble land, entitlement, capital, design, construction, market, and operations before costs or politics make the plan nonviable.",
+    "system_version": "system:kiduna:real-estate-mortgage:1.0.0",
+    "setup_nodes": [
+      "node:kiduna:real-estate-mortgage:land-place:land",
+      "node:kiduna:real-estate-mortgage:land-place:parcel",
+      "node:kiduna:real-estate-mortgage:land-place:lot",
+      "node:kiduna:real-estate-mortgage:land-place:site",
+      "node:kiduna:real-estate-mortgage:land-place:place",
+      "node:kiduna:real-estate-mortgage:land-place:location",
+      "node:kiduna:real-estate-mortgage:land-place:topography",
+      "node:kiduna:real-estate-mortgage:land-place:soil",
+      "node:kiduna:real-estate-mortgage:land-place:bedrock",
+      "node:kiduna:real-estate-mortgage:land-place:watershed",
+      "node:kiduna:real-estate-mortgage:land-place:shoreline",
+      "node:kiduna:real-estate-mortgage:land-place:airspace"
+    ],
+    "event_families": [
+      "rates",
+      "zoning",
+      "costs",
+      "demand",
+      "insurance",
+      "politics"
+    ],
+    "simulation_ref": "tests/games/development.json"
+  },
+  {
+    "id": "game:mortgage-market",
+    "name": "Mortgage Market",
+    "roles": [
+      "borrower",
+      "originator",
+      "aggregator",
+      "servicer",
+      "securitizer",
+      "investor"
+    ],
+    "objective": "Move a mortgage through the system while making each participant's asset, liability, incentive, and information boundary visible.",
+    "system_version": "system:kiduna:real-estate-mortgage:1.0.0",
+    "setup_nodes": [
+      "node:kiduna:real-estate-mortgage:land-place:subsurface",
+      "node:kiduna:real-estate-mortgage:home-shelter:house",
+      "node:kiduna:real-estate-mortgage:home-shelter:home",
+      "node:kiduna:real-estate-mortgage:home-shelter:shelter",
+      "node:kiduna:real-estate-mortgage:home-shelter:dwelling",
+      "node:kiduna:real-estate-mortgage:home-shelter:address",
+      "node:kiduna:real-estate-mortgage:home-shelter:homestead",
+      "node:kiduna:real-estate-mortgage:home-shelter:household",
+      "node:kiduna:real-estate-mortgage:home-shelter:tenure",
+      "node:kiduna:real-estate-mortgage:home-shelter:occupancy",
+      "node:kiduna:real-estate-mortgage:home-shelter:belonging",
+      "node:kiduna:real-estate-mortgage:home-shelter:domesticity"
+    ],
+    "event_families": [
+      "rates",
+      "zoning",
+      "costs",
+      "demand",
+      "insurance",
+      "politics"
+    ],
+    "simulation_ref": "tests/games/mortgage-market.json"
+  },
+  {
+    "id": "game:neighborhood",
+    "name": "Build the Neighborhood",
+    "roles": [
+      "resident",
+      "planner",
+      "developer",
+      "transit agency",
+      "school district",
+      "tax authority"
+    ],
+    "objective": "Balance housing, transport, commerce, schools, parks, infrastructure, affordability, tax base, and preservation while externalities cross parcels.",
+    "system_version": "system:kiduna:real-estate-mortgage:1.0.0",
+    "setup_nodes": [
+      "node:kiduna:real-estate-mortgage:home-shelter:inheritance",
+      "node:kiduna:real-estate-mortgage:home-shelter:housing-security",
+      "node:kiduna:real-estate-mortgage:residential-property:single-family-detached",
+      "node:kiduna:real-estate-mortgage:residential-property:townhouse",
+      "node:kiduna:real-estate-mortgage:residential-property:condominium",
+      "node:kiduna:real-estate-mortgage:residential-property:cooperative-apartment",
+      "node:kiduna:real-estate-mortgage:residential-property:duplex",
+      "node:kiduna:real-estate-mortgage:residential-property:triplex",
+      "node:kiduna:real-estate-mortgage:residential-property:fourplex",
+      "node:kiduna:real-estate-mortgage:residential-property:manufactured-home",
+      "node:kiduna:real-estate-mortgage:residential-property:modular-home",
+      "node:kiduna:real-estate-mortgage:residential-property:accessory-dwelling-unit"
+    ],
+    "event_families": [
+      "rates",
+      "zoning",
+      "costs",
+      "demand",
+      "insurance",
+      "politics"
+    ],
+    "simulation_ref": "tests/games/neighborhood.json"
+  },
+  {
+    "id": "game:underwrite",
+    "name": "Underwrite",
+    "roles": [
+      "loan officer",
+      "borrower",
+      "underwriter",
+      "appraiser",
+      "investor"
+    ],
+    "objective": "Structure a viable mortgage without hiding capacity, collateral, compliance, or timing risk.",
+    "system_version": "system:kiduna:real-estate-mortgage:1.0.0",
+    "setup_nodes": [
+      "node:kiduna:real-estate-mortgage:residential-property:mixed-use-residence",
+      "node:kiduna:real-estate-mortgage:residential-property:vacation-home",
+      "node:kiduna:real-estate-mortgage:residential-property:investment-property",
+      "node:kiduna:real-estate-mortgage:commercial-property:multifamily",
+      "node:kiduna:real-estate-mortgage:commercial-property:office",
+      "node:kiduna:real-estate-mortgage:commercial-property:retail",
+      "node:kiduna:real-estate-mortgage:commercial-property:industrial",
+      "node:kiduna:real-estate-mortgage:commercial-property:warehouse",
+      "node:kiduna:real-estate-mortgage:commercial-property:logistics-facility",
+      "node:kiduna:real-estate-mortgage:commercial-property:hotel",
+      "node:kiduna:real-estate-mortgage:commercial-property:self-storage",
+      "node:kiduna:real-estate-mortgage:commercial-property:data-center"
+    ],
+    "event_families": [
+      "rates",
+      "zoning",
+      "costs",
+      "demand",
+      "insurance",
+      "politics"
+    ],
+    "simulation_ref": "tests/games/underwrite.json"
+  },
+  {
+    "id": "game:closing-table",
+    "name": "The Closing Table",
+    "roles": [
+      "buyer",
+      "seller",
+      "lender",
+      "appraiser",
+      "inspector",
+      "title",
+      "agent"
+    ],
+    "objective": "Resolve progressively revealed conditions before funding, recording, and key handoff.",
+    "system_version": "system:kiduna:real-estate-mortgage:1.0.0",
+    "setup_nodes": [
+      "node:kiduna:real-estate-mortgage:commercial-property:life-science-facility",
+      "node:kiduna:real-estate-mortgage:commercial-property:medical-office",
+      "node:kiduna:real-estate-mortgage:commercial-property:student-housing",
+      "node:kiduna:real-estate-mortgage:commercial-property:senior-living",
+      "node:kiduna:real-estate-mortgage:estates-tenure:fee-simple",
+      "node:kiduna:real-estate-mortgage:estates-tenure:freehold",
+      "node:kiduna:real-estate-mortgage:estates-tenure:leasehold",
+      "node:kiduna:real-estate-mortgage:estates-tenure:life-estate",
+      "node:kiduna:real-estate-mortgage:estates-tenure:future-interest",
+      "node:kiduna:real-estate-mortgage:estates-tenure:reversion",
+      "node:kiduna:real-estate-mortgage:estates-tenure:remainder",
+      "node:kiduna:real-estate-mortgage:estates-tenure:tenancy-in-common"
+    ],
+    "event_families": [
+      "rates",
+      "zoning",
+      "costs",
+      "demand",
+      "insurance",
+      "politics"
+    ],
+    "simulation_ref": "tests/games/closing-table.json"
+  },
+  {
+    "id": "game:2008",
+    "name": "2008",
+    "roles": [
+      "borrower",
+      "broker",
+      "lender",
+      "rating agency",
+      "securitizer",
+      "investor",
+      "regulator"
+    ],
+    "objective": "Recognize systemic instability while rising prices and fee incentives reward risk transfer, leverage, and opacity.",
+    "system_version": "system:kiduna:real-estate-mortgage:1.0.0",
+    "setup_nodes": [
+      "node:kiduna:real-estate-mortgage:estates-tenure:joint-tenancy",
+      "node:kiduna:real-estate-mortgage:estates-tenure:tenancy-by-the-entirety",
+      "node:kiduna:real-estate-mortgage:estates-tenure:community-property",
+      "node:kiduna:real-estate-mortgage:estates-tenure:condominium-ownership",
+      "node:kiduna:real-estate-mortgage:estates-tenure:cooperative-ownership",
+      "node:kiduna:real-estate-mortgage:estates-tenure:ground-lease",
+      "node:kiduna:real-estate-mortgage:property-rights:bundle-of-rights",
+      "node:kiduna:real-estate-mortgage:property-rights:possession",
+      "node:kiduna:real-estate-mortgage:property-rights:use",
+      "node:kiduna:real-estate-mortgage:property-rights:exclusion",
+      "node:kiduna:real-estate-mortgage:property-rights:transfer",
+      "node:kiduna:real-estate-mortgage:property-rights:access"
+    ],
+    "event_families": [
+      "rates",
+      "zoning",
+      "costs",
+      "demand",
+      "insurance",
+      "politics"
+    ],
+    "simulation_ref": "tests/games/2008.json"
+  }
+]

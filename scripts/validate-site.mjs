@@ -6,6 +6,7 @@ const root = fileURLToPath(new URL("..", import.meta.url));
 const oracle = join(root, "public", "systems-oracle-app");
 const alchemy = join(root, "public", "mapshifting", "alchemy");
 const tao = join(root, "public", "tao");
+const realEstate = join(root, "public", "real-estate-mortgage");
 const political = join(root, "public", "political-change");
 const disclosure = join(root, "public", "science-fiction-disclosure");
 const failures = [];
@@ -108,6 +109,30 @@ const taoPage = await readFile(join(root, "app", "tao", "page.tsx"), "utf8");
 check(taoPage.includes("TaoCardLibrary"), "Tao route does not expose the complete tile library");
 check(taoPage.includes("Tao-Enamel-Oracle-Complete-v1.1.0.zip"), "Tao route does not expose its complete archive");
 
+const realEstateCards = JSON.parse(await readFile(join(root, "app", "real-estate-mortgage", "cards.generated.json"), "utf8"));
+const realEstateEdges = JSON.parse(await readFile(join(realEstate, "data", "relationships.json"), "utf8"));
+const realEstateManifest = JSON.parse(await readFile(join(realEstate, "tiles", "manifest.json"), "utf8"));
+check(realEstateCards.length === 659, `Expected 659 Real Estate & Mortgage tiles; found ${realEstateCards.length}`);
+check(realEstateEdges.length === 1302, `Expected 1,302 Real Estate & Mortgage relationships; found ${realEstateEdges.length}`);
+check(realEstateManifest.length === 659, `Expected 659 Real Estate & Mortgage artwork records; found ${realEstateManifest.length}`);
+check(realEstateCards.filter((card) => card.tone === "life-light").length > 590, "Expected life-light to be the default emotional register");
+check(realEstateCards.filter((card) => card.tone === "warning").length > 0, "Expected a preserved warning register");
+check(realEstateCards.every((card) => card.what_it_is && card.what_it_actually_does && card.gift && card.wound_shadow && card.divination && card.question && card.guidance), "A Real Estate & Mortgage tile lacks a required meaning field");
+for (const card of realEstateManifest) {
+  const path = join(root, "public", card.artwork);
+  check(await exists(path), `Missing Real Estate & Mortgage enamel tile: ${card.artwork}`);
+  if (await exists(path)) check((await stat(path)).size > 4_000, `Real Estate & Mortgage enamel tile is unexpectedly small: ${card.artwork}`);
+}
+const realEstateAnchor = join(realEstate, "tiles", "featured", "thirty-year-fixed-mortgage.png");
+check(await exists(realEstateAnchor), "Missing Thirty-Year Fixed Mortgage quality-anchor artwork");
+if (await exists(realEstateAnchor)) check((await stat(realEstateAnchor)).size > 1_000_000, "Thirty-Year Fixed Mortgage anchor artwork is unexpectedly small");
+const realEstateDownload = join(root, "public", "downloads", "Real-Estate-Mortgage-System-Complete-v1.0.0.zip");
+check(await exists(realEstateDownload), "Missing complete Real Estate & Mortgage system download");
+if (await exists(realEstateDownload)) check((await stat(realEstateDownload)).size > 5_000_000, "Real Estate & Mortgage complete-system download is unexpectedly small");
+const realEstatePage = await readFile(join(root, "app", "real-estate-mortgage", "page.tsx"), "utf8");
+check(realEstatePage.includes("RealEstateLibrary"), "Real Estate & Mortgage route does not expose the complete tile library");
+check(realEstatePage.includes("Real-Estate-Mortgage-System-Complete-v1.0.0.zip"), "Real Estate & Mortgage route does not expose its complete archive");
+
 const politicalNodes = JSON.parse(await readFile(join(political, "data", "nodes.json"), "utf8"));
 const politicalEdges = JSON.parse(await readFile(join(political, "data", "relationships.json"), "utf8"));
 const politicalMapshifts = JSON.parse(await readFile(join(political, "data", "mapshifts.json"), "utf8"));
@@ -159,4 +184,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(`Validated Kiduna Design: Systems Oracle has ${artifacts.length} artifacts and ${references.length} reference artworks; Alchemy has ${alchemyCards.length} cards and ${alchemyCards.length * 2} finished compositions; Tao has ${taoCards.length} tiles and ${taoGraph.edges.length} typed relations; Political Change has ${politicalNodes.length} nodes, ${politicalEdges.length} typed relations, and ${politicalMapshifts.length} mapshifts; Science Fiction & Disclosure has ${disclosureCards.length} Tiles and ${disclosureEdges.length} typed relations.`);
+console.log(`Validated Kiduna Design: Systems Oracle has ${artifacts.length} artifacts and ${references.length} reference artworks; Alchemy has ${alchemyCards.length} cards and ${alchemyCards.length * 2} finished compositions; Tao has ${taoCards.length} tiles and ${taoGraph.edges.length} typed relations; Real Estate & Mortgage has ${realEstateCards.length} tiles and ${realEstateEdges.length} typed relations; Political Change has ${politicalNodes.length} nodes, ${politicalEdges.length} typed relations, and ${politicalMapshifts.length} mapshifts; Science Fiction & Disclosure has ${disclosureCards.length} Tiles and ${disclosureEdges.length} typed relations.`);

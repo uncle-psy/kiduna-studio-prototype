@@ -147,6 +147,18 @@
       "listedInSystemsMenu": true
     },
     {
+      "id": "real-estate-mortgage-system",
+      "label": "Real Estate & Mortgage — Enamel System",
+      "kind": "system",
+      "route": "/real-estate-mortgage",
+      "firstPublishedAt": "2026-08-24",
+      "surface": "local-page",
+      "status": "active",
+      "order": 13,
+      "listedOnHome": true,
+      "listedInSystemsMenu": true
+    },
+    {
       "id": "political-change-system",
       "label": "Political Change System",
       "kind": "system",

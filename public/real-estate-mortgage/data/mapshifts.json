@@ -1,0 +1,1654 @@
+[
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:001",
+    "node_ref": "node:kiduna:real-estate-mortgage:residential-mortgages:mortgage",
+    "default_map": "A mortgage is debt.",
+    "shift_operator": "change scale",
+    "changed_map": "A mortgage moves decades of future income into the present and binds that promise to place.",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00265",
+      "edge:kiduna:real-estate-mortgage:00278",
+      "edge:kiduna:real-estate-mortgage:00290",
+      "edge:kiduna:real-estate-mortgage:01255",
+      "edge:kiduna:real-estate-mortgage:01256"
+    ],
+    "questions": [
+      "What future is being pledged through Mortgage, and who receives protection if conditions change?",
+      "Who gains agency in the changed map?",
+      "Which cost or relationship was invisible before?"
+    ],
+    "possible_moves": [
+      "change the boundary",
+      "follow the cash flow",
+      "follow the claim",
+      "return to the human map"
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:002",
+    "node_ref": "node:kiduna:real-estate-mortgage:home-shelter:home",
+    "default_map": "A home is a building.",
+    "shift_operator": "change clock",
+    "changed_map": "A home is a relationship among shelter, memory, identity, wealth, neighborhood, and belonging.",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00014",
+      "edge:kiduna:real-estate-mortgage:00026",
+      "edge:kiduna:real-estate-mortgage:00027",
+      "edge:kiduna:real-estate-mortgage:00039",
+      "edge:kiduna:real-estate-mortgage:01255"
+    ],
+    "questions": [
+      "What relationships become visible when Home is treated as a place rather than only an asset?",
+      "Who gains agency in the changed map?",
+      "Which cost or relationship was invisible before?"
+    ],
+    "possible_moves": [
+      "change the boundary",
+      "follow the cash flow",
+      "follow the claim",
+      "return to the human map"
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:003",
+    "node_ref": "node:kiduna:real-estate-mortgage:appraisal-valuation:appraisal",
+    "default_map": "An appraiser discovers value.",
+    "shift_operator": "change stakeholder",
+    "changed_map": "An appraisal is a disciplined argument about what a market would probably agree to exchange.",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00240",
+      "edge:kiduna:real-estate-mortgage:00253",
+      "edge:kiduna:real-estate-mortgage:00265",
+      "edge:kiduna:real-estate-mortgage:01261",
+      "edge:kiduna:real-estate-mortgage:01262"
+    ],
+    "questions": [
+      "What information or condition must Appraisal translate before the next commitment becomes safe?",
+      "Who gains agency in the changed map?",
+      "Which cost or relationship was invisible before?"
+    ],
+    "possible_moves": [
+      "change the boundary",
+      "follow the cash flow",
+      "follow the claim",
+      "return to the human map"
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:004",
+    "node_ref": "node:kiduna:real-estate-mortgage:zoning-urbanism:zoning",
+    "default_map": "Zoning is a land-use rule.",
+    "shift_operator": "change unit of analysis",
+    "changed_map": "Zoning is spatial software deciding which programs may execute on land.",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00690",
+      "edge:kiduna:real-estate-mortgage:00703",
+      "edge:kiduna:real-estate-mortgage:00715",
+      "edge:kiduna:real-estate-mortgage:01283"
+    ],
+    "questions": [
+      "Who has legitimate authority under Zoning, and where does that authority stop?",
+      "Who gains agency in the changed map?",
+      "Which cost or relationship was invisible before?"
+    ],
+    "possible_moves": [
+      "change the boundary",
+      "follow the cash flow",
+      "follow the claim",
+      "return to the human map"
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:005",
+    "node_ref": "node:kiduna:real-estate-mortgage:neighborhood-infrastructure:neighborhood",
+    "default_map": "A neighborhood is a location.",
+    "shift_operator": "change boundary",
+    "changed_map": "A neighborhood is a network of externalities continuously pricing and shaping every parcel inside it.",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:01117",
+      "edge:kiduna:real-estate-mortgage:01130",
+      "edge:kiduna:real-estate-mortgage:01142",
+      "edge:kiduna:real-estate-mortgage:01289"
+    ],
+    "questions": [
+      "What relationships become visible when Neighborhood is treated as a place rather than only an asset?",
+      "Who gains agency in the changed map?",
+      "Which cost or relationship was invisible before?"
+    ],
+    "possible_moves": [
+      "change the boundary",
+      "follow the cash flow",
+      "follow the claim",
+      "return to the human map"
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:006",
+    "node_ref": "node:kiduna:real-estate-mortgage:default-foreclosure:foreclosure",
+    "default_map": "A borrower lost a house.",
+    "shift_operator": "change ownership map",
+    "changed_map": "A contingent ownership structure resolved under a collateral contract—then returned to the human map of loss.",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00475",
+      "edge:kiduna:real-estate-mortgage:00487",
+      "edge:kiduna:real-estate-mortgage:00488",
+      "edge:kiduna:real-estate-mortgage:00500",
+      "edge:kiduna:real-estate-mortgage:01293"
+    ],
+    "questions": [
+      "Which earlier warning became visible only after Foreclosure arrived?",
+      "Who gains agency in the changed map?",
+      "Which cost or relationship was invisible before?"
+    ],
+    "possible_moves": [
+      "change the boundary",
+      "follow the cash flow",
+      "follow the claim",
+      "return to the human map"
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:007",
+    "node_ref": "node:kiduna:real-estate-mortgage:title-deeds:title",
+    "default_map": "Title is a document.",
+    "shift_operator": "change risk map",
+    "changed_map": "Title is the system's memory of claims connecting present possession to past authority.",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00138",
+      "edge:kiduna:real-estate-mortgage:00151",
+      "edge:kiduna:real-estate-mortgage:00165",
+      "edge:kiduna:real-estate-mortgage:01263"
+    ],
+    "questions": [
+      "Who has legitimate authority under Title, and where does that authority stop?",
+      "Who gains agency in the changed map?",
+      "Which cost or relationship was invisible before?"
+    ],
+    "possible_moves": [
+      "change the boundary",
+      "follow the cash flow",
+      "follow the claim",
+      "return to the human map"
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:008",
+    "node_ref": "node:kiduna:real-estate-mortgage:origination:rate-lock",
+    "default_map": "A rate lock fixes a number.",
+    "shift_operator": "change capital map",
+    "changed_map": "A rate lock is paying for certainty when the cost of time and uncertainty has become material.",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00346",
+      "edge:kiduna:real-estate-mortgage:00358",
+      "edge:kiduna:real-estate-mortgage:00359",
+      "edge:kiduna:real-estate-mortgage:00371"
+    ],
+    "questions": [
+      "What changes when Rate Lock becomes the unit of analysis?",
+      "Who gains agency in the changed map?",
+      "Which cost or relationship was invisible before?"
+    ],
+    "possible_moves": [
+      "change the boundary",
+      "follow the cash flow",
+      "follow the claim",
+      "return to the human map"
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:009",
+    "node_ref": "node:kiduna:real-estate-mortgage:zoning-urbanism:adaptive-reuse",
+    "default_map": "An old building is obsolete.",
+    "shift_operator": "change human map",
+    "changed_map": "The structure can remain while its original purpose ends and a new interior life begins.",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:01287"
+    ],
+    "questions": [
+      "What changes when Adaptive Reuse becomes the unit of analysis?",
+      "Who gains agency in the changed map?",
+      "Which cost or relationship was invisible before?"
+    ],
+    "possible_moves": [
+      "change the boundary",
+      "follow the cash flow",
+      "follow the claim",
+      "return to the human map"
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:010",
+    "node_ref": "node:kiduna:real-estate-mortgage:property-rights:easement",
+    "default_map": "Ownership means exclusion.",
+    "shift_operator": "change legal map",
+    "changed_map": "Another party may hold a legitimate path through territory you own.",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00119",
+      "edge:kiduna:real-estate-mortgage:00131",
+      "edge:kiduna:real-estate-mortgage:00132",
+      "edge:kiduna:real-estate-mortgage:00144",
+      "edge:kiduna:real-estate-mortgage:01265"
+    ],
+    "questions": [
+      "What changes when Easement becomes the unit of analysis?",
+      "Who gains agency in the changed map?",
+      "Which cost or relationship was invisible before?"
+    ],
+    "possible_moves": [
+      "change the boundary",
+      "follow the cash flow",
+      "follow the claim",
+      "return to the human map"
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:011",
+    "node_ref": "node:kiduna:real-estate-mortgage:market-pathologies:negative-amortization",
+    "default_map": "Payments reduce debt.",
+    "shift_operator": "change scale",
+    "changed_map": "Activity can look like service while the underlying obligation grows.",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00970",
+      "edge:kiduna:real-estate-mortgage:00982",
+      "edge:kiduna:real-estate-mortgage:00983",
+      "edge:kiduna:real-estate-mortgage:00995"
+    ],
+    "questions": [
+      "What changes when Negative Amortization becomes the unit of analysis?",
+      "Who gains agency in the changed map?",
+      "Which cost or relationship was invisible before?"
+    ],
+    "possible_moves": [
+      "change the boundary",
+      "follow the cash flow",
+      "follow the claim",
+      "return to the human map"
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:012",
+    "node_ref": "node:kiduna:real-estate-mortgage:whole-loan-warehouse:warehouse-line",
+    "default_map": "The lender supplies the mortgage money.",
+    "shift_operator": "change clock",
+    "changed_map": "Short-duration institutional capital carries the loan until a permanent buyer arrives.",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00570",
+      "edge:kiduna:real-estate-mortgage:00582",
+      "edge:kiduna:real-estate-mortgage:00583",
+      "edge:kiduna:real-estate-mortgage:00595"
+    ],
+    "questions": [
+      "What future is being pledged through Warehouse Line, and who receives protection if conditions change?",
+      "Who gains agency in the changed map?",
+      "Which cost or relationship was invisible before?"
+    ],
+    "possible_moves": [
+      "change the boundary",
+      "follow the cash flow",
+      "follow the claim",
+      "return to the human map"
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:013",
+    "node_ref": "node:kiduna:real-estate-mortgage:msr-economics:mortgage-servicing-right",
+    "default_map": "The mortgage is the asset.",
+    "shift_operator": "change stakeholder",
+    "changed_map": "The right and obligation to administer the promise can be a separate asset from the principal cash flow.",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00590",
+      "edge:kiduna:real-estate-mortgage:00603",
+      "edge:kiduna:real-estate-mortgage:00615",
+      "edge:kiduna:real-estate-mortgage:01268"
+    ],
+    "questions": [
+      "What future is being pledged through Mortgage Servicing Right, and who receives protection if conditions change?",
+      "Who gains agency in the changed map?",
+      "Which cost or relationship was invisible before?"
+    ],
+    "possible_moves": [
+      "change the boundary",
+      "follow the cash flow",
+      "follow the claim",
+      "return to the human map"
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:014",
+    "node_ref": "node:kiduna:real-estate-mortgage:affordable-housing:community-land-trust",
+    "default_map": "Affordability requires cheaper construction.",
+    "shift_operator": "change unit of analysis",
+    "changed_map": "Separating land ownership from building ownership can preserve affordability across resale generations.",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00772",
+      "edge:kiduna:real-estate-mortgage:00784",
+      "edge:kiduna:real-estate-mortgage:00785",
+      "edge:kiduna:real-estate-mortgage:00797"
+    ],
+    "questions": [
+      "What relationships become visible when Community Land Trust is treated as a place rather than only an asset?",
+      "Who gains agency in the changed map?",
+      "Which cost or relationship was invisible before?"
+    ],
+    "possible_moves": [
+      "change the boundary",
+      "follow the cash flow",
+      "follow the claim",
+      "return to the human map"
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:015",
+    "node_ref": "node:kiduna:real-estate-mortgage:strange-property:paper-street",
+    "default_map": "If a street is on the map, it exists.",
+    "shift_operator": "change boundary",
+    "changed_map": "The legal map can contain a future reality the ground has never accepted.",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:01050",
+      "edge:kiduna:real-estate-mortgage:01062",
+      "edge:kiduna:real-estate-mortgage:01063",
+      "edge:kiduna:real-estate-mortgage:01075",
+      "edge:kiduna:real-estate-mortgage:01302"
+    ],
+    "questions": [
+      "What relationships become visible when Paper Street is treated as a place rather than only an asset?",
+      "Who gains agency in the changed map?",
+      "Which cost or relationship was invisible before?"
+    ],
+    "possible_moves": [
+      "change the boundary",
+      "follow the cash flow",
+      "follow the claim",
+      "return to the human map"
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:016",
+    "node_ref": "node:kiduna:real-estate-mortgage:land-place:land",
+    "default_map": "Land is understood only as a term inside Land & Place.",
+    "shift_operator": "change risk map",
+    "changed_map": "Land becomes The Habitat: Land holds the physical conditions beneath every later claim",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00001",
+      "edge:kiduna:real-estate-mortgage:00013",
+      "edge:kiduna:real-estate-mortgage:01242"
+    ],
+    "questions": [
+      "What relationships become visible when Land is treated as a place rather than only an asset?"
+    ],
+    "possible_moves": [
+      "Walk the physical, legal, financial, ecological, and human maps separately before recombining them."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:017",
+    "node_ref": "node:kiduna:real-estate-mortgage:land-place:watershed",
+    "default_map": "Watershed is understood only as a term inside Land & Place.",
+    "shift_operator": "change capital map",
+    "changed_map": "Watershed becomes The Pattern: Watershed holds the physical conditions beneath every later claim",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00009",
+      "edge:kiduna:real-estate-mortgage:00010",
+      "edge:kiduna:real-estate-mortgage:00022",
+      "edge:kiduna:real-estate-mortgage:01251"
+    ],
+    "questions": [
+      "What changes when Watershed becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:018",
+    "node_ref": "node:kiduna:real-estate-mortgage:home-shelter:homestead",
+    "default_map": "Homestead is understood only as a term inside Home & Shelter.",
+    "shift_operator": "change human map",
+    "changed_map": "Homestead becomes The Habitat: Homestead connects occupancy to safety, identity, memory, and belonging",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00018",
+      "edge:kiduna:real-estate-mortgage:00030",
+      "edge:kiduna:real-estate-mortgage:00031",
+      "edge:kiduna:real-estate-mortgage:00043"
+    ],
+    "questions": [
+      "What relationships become visible when Homestead is treated as a place rather than only an asset?"
+    ],
+    "possible_moves": [
+      "Walk the physical, legal, financial, ecological, and human maps separately before recombining them."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:019",
+    "node_ref": "node:kiduna:real-estate-mortgage:residential-property:townhouse",
+    "default_map": "Townhouse is understood only as a term inside Residential Property.",
+    "shift_operator": "change legal map",
+    "changed_map": "Townhouse becomes The Vessel: Townhouse packages domestic space into a legally and financially recognizable asset",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00039",
+      "edge:kiduna:real-estate-mortgage:00051",
+      "edge:kiduna:real-estate-mortgage:00052",
+      "edge:kiduna:real-estate-mortgage:00064"
+    ],
+    "questions": [
+      "What relationships become visible when Townhouse is treated as a place rather than only an asset?"
+    ],
+    "possible_moves": [
+      "Walk the physical, legal, financial, ecological, and human maps separately before recombining them."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:020",
+    "node_ref": "node:kiduna:real-estate-mortgage:residential-property:mixed-use-residence",
+    "default_map": "Mixed-Use Residence is understood only as a term inside Residential Property.",
+    "shift_operator": "change scale",
+    "changed_map": "Mixed-Use Residence becomes The Relation: Mixed-Use Residence packages domestic space into a legally and financially recognizable asset",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00048",
+      "edge:kiduna:real-estate-mortgage:00060",
+      "edge:kiduna:real-estate-mortgage:00061",
+      "edge:kiduna:real-estate-mortgage:00073"
+    ],
+    "questions": [
+      "What changes when Mixed-Use Residence becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:021",
+    "node_ref": "node:kiduna:real-estate-mortgage:commercial-property:hotel",
+    "default_map": "Hotel is understood only as a term inside Commercial Property.",
+    "shift_operator": "change clock",
+    "changed_map": "Hotel becomes The Threshold: Hotel joins a physical asset to an operating use and income stream",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00069",
+      "edge:kiduna:real-estate-mortgage:00081",
+      "edge:kiduna:real-estate-mortgage:00082",
+      "edge:kiduna:real-estate-mortgage:00094"
+    ],
+    "questions": [
+      "What relationships become visible when Hotel is treated as a place rather than only an asset?"
+    ],
+    "possible_moves": [
+      "Walk the physical, legal, financial, ecological, and human maps separately before recombining them."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:022",
+    "node_ref": "node:kiduna:real-estate-mortgage:estates-tenure:leasehold",
+    "default_map": "Leasehold is understood only as a term inside Estates & Tenure.",
+    "shift_operator": "change stakeholder",
+    "changed_map": "Leasehold becomes The Tension: Leasehold defines the duration and quality of a person's interest in land",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00090",
+      "edge:kiduna:real-estate-mortgage:00102",
+      "edge:kiduna:real-estate-mortgage:00103",
+      "edge:kiduna:real-estate-mortgage:00115"
+    ],
+    "questions": [
+      "What changes when Leasehold becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:023",
+    "node_ref": "node:kiduna:real-estate-mortgage:estates-tenure:condominium-ownership",
+    "default_map": "Condominium Ownership is understood only as a term inside Estates & Tenure.",
+    "shift_operator": "change unit of analysis",
+    "changed_map": "Condominium Ownership becomes The Covenant: Condominium Ownership defines the duration and quality of a person's interest in land",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00099",
+      "edge:kiduna:real-estate-mortgage:00111",
+      "edge:kiduna:real-estate-mortgage:00112",
+      "edge:kiduna:real-estate-mortgage:00124"
+    ],
+    "questions": [
+      "Who has legitimate authority under Condominium Ownership, and where does that authority stop?"
+    ],
+    "possible_moves": [
+      "Name the source, scope, duration, appeal path, and release of authority."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:024",
+    "node_ref": "node:kiduna:real-estate-mortgage:property-rights:easement",
+    "default_map": "Easement is understood only as a term inside Property Rights.",
+    "shift_operator": "change boundary",
+    "changed_map": "Easement becomes The Tension: Easement separates ownership into particular powers that may be shared, limited, or transferred",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00119",
+      "edge:kiduna:real-estate-mortgage:00131",
+      "edge:kiduna:real-estate-mortgage:00132",
+      "edge:kiduna:real-estate-mortgage:00144"
+    ],
+    "questions": [
+      "What changes when Easement becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:025",
+    "node_ref": "node:kiduna:real-estate-mortgage:title-deeds:warranty-deed",
+    "default_map": "Warranty Deed is understood only as a term inside Title, Deeds & Recording.",
+    "shift_operator": "change ownership map",
+    "changed_map": "Warranty Deed becomes The Memory: Warranty Deed links present claims to durable evidence and past transfers",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00140",
+      "edge:kiduna:real-estate-mortgage:00152",
+      "edge:kiduna:real-estate-mortgage:00153",
+      "edge:kiduna:real-estate-mortgage:00167"
+    ],
+    "questions": [
+      "What must Warranty Deed make durable before you can safely proceed?"
+    ],
+    "possible_moves": [
+      "Resolve provenance, authority, custody, and ambiguity before relying on the artifact."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:026",
+    "node_ref": "node:kiduna:real-estate-mortgage:title-deeds:land-registry",
+    "default_map": "Land Registry is understood only as a term inside Title, Deeds & Recording.",
+    "shift_operator": "change risk map",
+    "changed_map": "Land Registry becomes The Threshold: Land Registry links present claims to durable evidence and past transfers",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00149",
+      "edge:kiduna:real-estate-mortgage:00161",
+      "edge:kiduna:real-estate-mortgage:00162",
+      "edge:kiduna:real-estate-mortgage:00176"
+    ],
+    "questions": [
+      "What relationships become visible when Land Registry is treated as a place rather than only an asset?"
+    ],
+    "possible_moves": [
+      "Walk the physical, legal, financial, ecological, and human maps separately before recombining them."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:027",
+    "node_ref": "node:kiduna:real-estate-mortgage:survey-boundary:lot-and-block",
+    "default_map": "Lot and Block is understood only as a term inside Survey & Boundary.",
+    "shift_operator": "change capital map",
+    "changed_map": "Lot and Block becomes The Release: Lot and Block translates physical land into measurable and contestable geometry",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00170",
+      "edge:kiduna:real-estate-mortgage:00182",
+      "edge:kiduna:real-estate-mortgage:00183",
+      "edge:kiduna:real-estate-mortgage:00195"
+    ],
+    "questions": [
+      "What changes when Lot and Block becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:028",
+    "node_ref": "node:kiduna:real-estate-mortgage:listing-transaction:multiple-listing-service",
+    "default_map": "Multiple Listing Service is understood only as a term inside Listing & Transaction.",
+    "shift_operator": "change human map",
+    "changed_map": "Multiple Listing Service becomes The Clock: Multiple Listing Service coordinates discovery, negotiation, commitment, and transfer",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00191",
+      "edge:kiduna:real-estate-mortgage:00203",
+      "edge:kiduna:real-estate-mortgage:00204",
+      "edge:kiduna:real-estate-mortgage:00216"
+    ],
+    "questions": [
+      "What is Multiple Listing Service measuring—and which important reality has been left outside the denominator?"
+    ],
+    "possible_moves": [
+      "Change the denominator, time horizon, and stakeholder. If the conclusion changes, the map—not only the number—was doing the work."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:029",
+    "node_ref": "node:kiduna:real-estate-mortgage:listing-transaction:bidding-war",
+    "default_map": "Bidding War is understood only as a term inside Listing & Transaction.",
+    "shift_operator": "change legal map",
+    "changed_map": "Bidding War becomes The Relation: Bidding War coordinates discovery, negotiation, commitment, and transfer",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00200",
+      "edge:kiduna:real-estate-mortgage:00212",
+      "edge:kiduna:real-estate-mortgage:00213",
+      "edge:kiduna:real-estate-mortgage:00225"
+    ],
+    "questions": [
+      "What changes when Bidding War becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:030",
+    "node_ref": "node:kiduna:real-estate-mortgage:due-diligence:structural-inspection",
+    "default_map": "Structural Inspection is understood only as a term inside Due Diligence & Inspection.",
+    "shift_operator": "change scale",
+    "changed_map": "Structural Inspection becomes The Translation: Structural Inspection reduces uncertainty before capital and authority become difficult to reverse",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00220",
+      "edge:kiduna:real-estate-mortgage:00232",
+      "edge:kiduna:real-estate-mortgage:00233",
+      "edge:kiduna:real-estate-mortgage:00245"
+    ],
+    "questions": [
+      "What information or condition must Structural Inspection translate before the next commitment becomes safe?"
+    ],
+    "possible_moves": [
+      "Make conditions, exceptions, handoffs, and completion criteria explicit."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:031",
+    "node_ref": "node:kiduna:real-estate-mortgage:appraisal-valuation:market-value",
+    "default_map": "Market Value is understood only as a term inside Appraisal & Valuation.",
+    "shift_operator": "change clock",
+    "changed_map": "Market Value becomes The Clock: Market Value translates a unique property into a supportable opinion of value",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00241",
+      "edge:kiduna:real-estate-mortgage:00253",
+      "edge:kiduna:real-estate-mortgage:00254",
+      "edge:kiduna:real-estate-mortgage:00266"
+    ],
+    "questions": [
+      "What is Market Value measuring—and which important reality has been left outside the denominator?"
+    ],
+    "possible_moves": [
+      "Change the denominator, time horizon, and stakeholder. If the conclusion changes, the map—not only the number—was doing the work."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:032",
+    "node_ref": "node:kiduna:real-estate-mortgage:appraisal-valuation:automated-valuation-model",
+    "default_map": "Automated Valuation Model is understood only as a term inside Appraisal & Valuation.",
+    "shift_operator": "change stakeholder",
+    "changed_map": "Automated Valuation Model becomes The Pattern: Automated Valuation Model translates a unique property into a supportable opinion of value",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00250",
+      "edge:kiduna:real-estate-mortgage:00262",
+      "edge:kiduna:real-estate-mortgage:00263",
+      "edge:kiduna:real-estate-mortgage:00275"
+    ],
+    "questions": [
+      "What changes when Automated Valuation Model becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:033",
+    "node_ref": "node:kiduna:real-estate-mortgage:residential-mortgages:graduated-payment-mortgage",
+    "default_map": "Graduated-Payment Mortgage is understood only as a term inside Residential Mortgage Products.",
+    "shift_operator": "change unit of analysis",
+    "changed_map": "Graduated-Payment Mortgage becomes The Bridge: Graduated-Payment Mortgage moves future household income into present purchasing power",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00271",
+      "edge:kiduna:real-estate-mortgage:00283",
+      "edge:kiduna:real-estate-mortgage:00284",
+      "edge:kiduna:real-estate-mortgage:00296"
+    ],
+    "questions": [
+      "What future is being pledged through Graduated-Payment Mortgage, and who receives protection if conditions change?"
+    ],
+    "possible_moves": [
+      "Separate access from cost, payment from principal, and temporary liquidity from permanent viability."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:034",
+    "node_ref": "node:kiduna:real-estate-mortgage:government-mortgages:usda-guaranteed-loan",
+    "default_map": "USDA Guaranteed Loan is understood only as a term inside Government & Agency Mortgage Programs.",
+    "shift_operator": "change boundary",
+    "changed_map": "USDA Guaranteed Loan becomes The Reservoir: USDA Guaranteed Loan uses public insurance, guarantee, or standards to reshape access and risk",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00292",
+      "edge:kiduna:real-estate-mortgage:00304",
+      "edge:kiduna:real-estate-mortgage:00305",
+      "edge:kiduna:real-estate-mortgage:00317"
+    ],
+    "questions": [
+      "What future is being pledged through USDA Guaranteed Loan, and who receives protection if conditions change?"
+    ],
+    "possible_moves": [
+      "Separate access from cost, payment from principal, and temporary liquidity from permanent viability."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:035",
+    "node_ref": "node:kiduna:real-estate-mortgage:government-mortgages:conforming-loan",
+    "default_map": "Conforming Loan is understood only as a term inside Government & Agency Mortgage Programs.",
+    "shift_operator": "change ownership map",
+    "changed_map": "Conforming Loan becomes The Promise: Conforming Loan uses public insurance, guarantee, or standards to reshape access and risk",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00301",
+      "edge:kiduna:real-estate-mortgage:00313",
+      "edge:kiduna:real-estate-mortgage:00314",
+      "edge:kiduna:real-estate-mortgage:00326"
+    ],
+    "questions": [
+      "What future is being pledged through Conforming Loan, and who receives protection if conditions change?"
+    ],
+    "possible_moves": [
+      "Separate access from cost, payment from principal, and temporary liquidity from permanent viability."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:036",
+    "node_ref": "node:kiduna:real-estate-mortgage:alternative-finance:construction-loan",
+    "default_map": "Construction Loan is understood only as a term inside Alternative & Non-QM Finance.",
+    "shift_operator": "change risk map",
+    "changed_map": "Construction Loan becomes The Bridge: Construction Loan serves a timing, documentation, collateral, or borrower profile outside ordinary channels",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00322",
+      "edge:kiduna:real-estate-mortgage:00334",
+      "edge:kiduna:real-estate-mortgage:00335",
+      "edge:kiduna:real-estate-mortgage:00347"
+    ],
+    "questions": [
+      "What future is being pledged through Construction Loan, and who receives protection if conditions change?"
+    ],
+    "possible_moves": [
+      "Separate access from cost, payment from principal, and temporary liquidity from permanent viability."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:037",
+    "node_ref": "node:kiduna:real-estate-mortgage:origination:application",
+    "default_map": "Application is understood only as a term inside Mortgage Origination.",
+    "shift_operator": "change capital map",
+    "changed_map": "Application becomes The Field: Application turns borrower intent into a documented, priced loan file",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00343",
+      "edge:kiduna:real-estate-mortgage:00355",
+      "edge:kiduna:real-estate-mortgage:00356",
+      "edge:kiduna:real-estate-mortgage:00368"
+    ],
+    "questions": [
+      "What changes when Application becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:038",
+    "node_ref": "node:kiduna:real-estate-mortgage:origination:loan-origination-system",
+    "default_map": "Loan Origination System is understood only as a term inside Mortgage Origination.",
+    "shift_operator": "change human map",
+    "changed_map": "Loan Origination System becomes The Bridge: Loan Origination System turns borrower intent into a documented, priced loan file",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00352",
+      "edge:kiduna:real-estate-mortgage:00364",
+      "edge:kiduna:real-estate-mortgage:00377"
+    ],
+    "questions": [
+      "What future is being pledged through Loan Origination System, and who receives protection if conditions change?"
+    ],
+    "possible_moves": [
+      "Separate access from cost, payment from principal, and temporary liquidity from permanent viability."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:039",
+    "node_ref": "node:kiduna:real-estate-mortgage:borrower-underwriting:employment",
+    "default_map": "Employment is understood only as a term inside Borrower Underwriting.",
+    "shift_operator": "change legal map",
+    "changed_map": "Employment becomes The Tension: Employment tests whether the promised payment can be supported by the borrower's resources and obligations",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00373",
+      "edge:kiduna:real-estate-mortgage:00385",
+      "edge:kiduna:real-estate-mortgage:00386",
+      "edge:kiduna:real-estate-mortgage:00398"
+    ],
+    "questions": [
+      "What changes when Employment becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:040",
+    "node_ref": "node:kiduna:real-estate-mortgage:collateral-underwriting:project-review",
+    "default_map": "Project Review is understood only as a term inside Collateral Underwriting.",
+    "shift_operator": "change scale",
+    "changed_map": "Project Review becomes The Passage: Project Review tests whether the property can support the legal, physical, and market assumptions of the loan",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00394",
+      "edge:kiduna:real-estate-mortgage:00406",
+      "edge:kiduna:real-estate-mortgage:00407",
+      "edge:kiduna:real-estate-mortgage:00419"
+    ],
+    "questions": [
+      "What information or condition must Project Review translate before the next commitment becomes safe?"
+    ],
+    "possible_moves": [
+      "Make conditions, exceptions, handoffs, and completion criteria explicit."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:041",
+    "node_ref": "node:kiduna:real-estate-mortgage:closing-disclosures:closing-disclosure",
+    "default_map": "Closing Disclosure is understood only as a term inside Closing & Disclosures.",
+    "shift_operator": "change clock",
+    "changed_map": "Closing Disclosure becomes The Memory: Closing Disclosure turns negotiated terms into executed, funded, and transferable obligations",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00415",
+      "edge:kiduna:real-estate-mortgage:00428",
+      "edge:kiduna:real-estate-mortgage:00440"
+    ],
+    "questions": [
+      "What must Closing Disclosure make durable before you can safely proceed?"
+    ],
+    "possible_moves": [
+      "Resolve provenance, authority, custody, and ambiguity before relying on the artifact."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:042",
+    "node_ref": "node:kiduna:real-estate-mortgage:closing-disclosures:initial-escrow-statement",
+    "default_map": "Initial Escrow Statement is understood only as a term inside Closing & Disclosures.",
+    "shift_operator": "change stakeholder",
+    "changed_map": "Initial Escrow Statement becomes The Witness: Initial Escrow Statement turns negotiated terms into executed, funded, and transferable obligations",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00424",
+      "edge:kiduna:real-estate-mortgage:00436",
+      "edge:kiduna:real-estate-mortgage:00437",
+      "edge:kiduna:real-estate-mortgage:00449"
+    ],
+    "questions": [
+      "What must Initial Escrow Statement make durable before you can safely proceed?"
+    ],
+    "possible_moves": [
+      "Resolve provenance, authority, custody, and ambiguity before relying on the artifact."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:043",
+    "node_ref": "node:kiduna:real-estate-mortgage:servicing:amortization",
+    "default_map": "Amortization is understood only as a term inside Mortgage Servicing.",
+    "shift_operator": "change unit of analysis",
+    "changed_map": "Amortization becomes The Tension: Amortization keeps the long promise operating after the excitement of closing has ended",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00445",
+      "edge:kiduna:real-estate-mortgage:00457",
+      "edge:kiduna:real-estate-mortgage:00458",
+      "edge:kiduna:real-estate-mortgage:00470"
+    ],
+    "questions": [
+      "What changes when Amortization becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:044",
+    "node_ref": "node:kiduna:real-estate-mortgage:default-foreclosure:default",
+    "default_map": "Default is understood only as a term inside Default, Loss Mitigation & Foreclosure.",
+    "shift_operator": "change boundary",
+    "changed_map": "Default becomes The Reversion: Default governs what happens when the original payment map no longer holds",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00466",
+      "edge:kiduna:real-estate-mortgage:00478",
+      "edge:kiduna:real-estate-mortgage:00479",
+      "edge:kiduna:real-estate-mortgage:00491"
+    ],
+    "questions": [
+      "Which earlier warning became visible only after Default arrived?"
+    ],
+    "possible_moves": [
+      "Trace the failure backward through incentives, information, leverage, timing, and feedback rather than locating blame at the final visible event."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:045",
+    "node_ref": "node:kiduna:real-estate-mortgage:default-foreclosure:foreclosure",
+    "default_map": "Foreclosure is understood only as a term inside Default, Loss Mitigation & Foreclosure.",
+    "shift_operator": "change ownership map",
+    "changed_map": "Foreclosure becomes The Reversion: Foreclosure governs what happens when the original payment map no longer holds",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00475",
+      "edge:kiduna:real-estate-mortgage:00487",
+      "edge:kiduna:real-estate-mortgage:00488",
+      "edge:kiduna:real-estate-mortgage:00500"
+    ],
+    "questions": [
+      "Which earlier warning became visible only after Foreclosure arrived?"
+    ],
+    "possible_moves": [
+      "Trace the failure backward through incentives, information, leverage, timing, and feedback rather than locating blame at the final visible event."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:046",
+    "node_ref": "node:kiduna:real-estate-mortgage:secondary-market:usda-rural-development",
+    "default_map": "USDA Rural Development is understood only as a term inside Secondary Mortgage Market.",
+    "shift_operator": "change risk map",
+    "changed_map": "USDA Rural Development becomes The Settlement: USDA Rural Development recycles lender capital and standardizes loans for investors beyond the local transaction",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00496",
+      "edge:kiduna:real-estate-mortgage:00508",
+      "edge:kiduna:real-estate-mortgage:00509",
+      "edge:kiduna:real-estate-mortgage:00521"
+    ],
+    "questions": [
+      "What information or condition must USDA Rural Development translate before the next commitment becomes safe?"
+    ],
+    "possible_moves": [
+      "Make conditions, exceptions, handoffs, and completion criteria explicit."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:047",
+    "node_ref": "node:kiduna:real-estate-mortgage:securitization:private-label-rmbs",
+    "default_map": "Private-Label RMBS is understood only as a term inside Securitization & MBS.",
+    "shift_operator": "change capital map",
+    "changed_map": "Private-Label RMBS becomes The Tension: Private-Label RMBS turns pools of individual promises into tradable capital-market claims",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00517",
+      "edge:kiduna:real-estate-mortgage:00529",
+      "edge:kiduna:real-estate-mortgage:00530",
+      "edge:kiduna:real-estate-mortgage:00542"
+    ],
+    "questions": [
+      "What changes when Private-Label RMBS becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:048",
+    "node_ref": "node:kiduna:real-estate-mortgage:securitization:overcollateralization",
+    "default_map": "Overcollateralization is understood only as a term inside Securitization & MBS.",
+    "shift_operator": "change human map",
+    "changed_map": "Overcollateralization becomes The Relation: Overcollateralization turns pools of individual promises into tradable capital-market claims",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00526",
+      "edge:kiduna:real-estate-mortgage:00538",
+      "edge:kiduna:real-estate-mortgage:00539",
+      "edge:kiduna:real-estate-mortgage:00551"
+    ],
+    "questions": [
+      "What changes when Overcollateralization becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:049",
+    "node_ref": "node:kiduna:real-estate-mortgage:bond-math-tba:conditional-prepayment-rate",
+    "default_map": "Conditional Prepayment Rate is understood only as a term inside Bond Math & TBA Market.",
+    "shift_operator": "change legal map",
+    "changed_map": "Conditional Prepayment Rate becomes The Clock: Conditional Prepayment Rate prices uncertain timing and optionality inside mortgage cash flows",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00547",
+      "edge:kiduna:real-estate-mortgage:00559",
+      "edge:kiduna:real-estate-mortgage:00560",
+      "edge:kiduna:real-estate-mortgage:00572"
+    ],
+    "questions": [
+      "What is Conditional Prepayment Rate measuring—and which important reality has been left outside the denominator?"
+    ],
+    "possible_moves": [
+      "Change the denominator, time horizon, and stakeholder. If the conclusion changes, the map—not only the number—was doing the work."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:050",
+    "node_ref": "node:kiduna:real-estate-mortgage:whole-loan-warehouse:wholesale-lending",
+    "default_map": "Wholesale Lending is understood only as a term inside Whole Loans, Warehouse & Correspondent.",
+    "shift_operator": "change scale",
+    "changed_map": "Wholesale Lending becomes The Field: Wholesale Lending funds and transfers loans between production and permanent capital",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00568",
+      "edge:kiduna:real-estate-mortgage:00580",
+      "edge:kiduna:real-estate-mortgage:00581",
+      "edge:kiduna:real-estate-mortgage:00593"
+    ],
+    "questions": [
+      "What changes when Wholesale Lending becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:051",
+    "node_ref": "node:kiduna:real-estate-mortgage:whole-loan-warehouse:best-efforts-delivery",
+    "default_map": "Best-Efforts Delivery is understood only as a term inside Whole Loans, Warehouse & Correspondent.",
+    "shift_operator": "change clock",
+    "changed_map": "Best-Efforts Delivery becomes The Tension: Best-Efforts Delivery funds and transfers loans between production and permanent capital",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00577",
+      "edge:kiduna:real-estate-mortgage:00589",
+      "edge:kiduna:real-estate-mortgage:00602"
+    ],
+    "questions": [
+      "What changes when Best-Efforts Delivery becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:052",
+    "node_ref": "node:kiduna:real-estate-mortgage:msr-economics:advance-obligation",
+    "default_map": "Advance Obligation is understood only as a term inside Mortgage Servicing Rights & Economics.",
+    "shift_operator": "change stakeholder",
+    "changed_map": "Advance Obligation becomes The Relation: Advance Obligation separates the right and obligation to administer a loan from ownership of its principal cash flow",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00598",
+      "edge:kiduna:real-estate-mortgage:00610",
+      "edge:kiduna:real-estate-mortgage:00611",
+      "edge:kiduna:real-estate-mortgage:00623"
+    ],
+    "questions": [
+      "What changes when Advance Obligation becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:053",
+    "node_ref": "node:kiduna:real-estate-mortgage:cre-metrics:occupancy-rate",
+    "default_map": "Occupancy Rate is understood only as a term inside Commercial Real Estate Metrics.",
+    "shift_operator": "change unit of analysis",
+    "changed_map": "Occupancy Rate becomes The Clock: Occupancy Rate compresses property operations and risk into decision-making measures",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00619",
+      "edge:kiduna:real-estate-mortgage:00631",
+      "edge:kiduna:real-estate-mortgage:00632",
+      "edge:kiduna:real-estate-mortgage:00644"
+    ],
+    "questions": [
+      "What is Occupancy Rate measuring—and which important reality has been left outside the denominator?"
+    ],
+    "possible_moves": [
+      "Change the denominator, time horizon, and stakeholder. If the conclusion changes, the map—not only the number—was doing the work."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:054",
+    "node_ref": "node:kiduna:real-estate-mortgage:cre-finance:permanent-loan",
+    "default_map": "Permanent Loan is understood only as a term inside Commercial Real Estate Finance.",
+    "shift_operator": "change boundary",
+    "changed_map": "Permanent Loan becomes The Claim: Permanent Loan allocates priority, control, recourse, and return across a commercial capital stack",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00640",
+      "edge:kiduna:real-estate-mortgage:00653",
+      "edge:kiduna:real-estate-mortgage:00665"
+    ],
+    "questions": [
+      "What future is being pledged through Permanent Loan, and who receives protection if conditions change?"
+    ],
+    "possible_moves": [
+      "Separate access from cost, payment from principal, and temporary liquidity from permanent viability."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:055",
+    "node_ref": "node:kiduna:real-estate-mortgage:cre-finance:b-note",
+    "default_map": "B-Note is understood only as a term inside Commercial Real Estate Finance.",
+    "shift_operator": "change ownership map",
+    "changed_map": "B-Note becomes The Memory: B-Note allocates priority, control, recourse, and return across a commercial capital stack",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00649",
+      "edge:kiduna:real-estate-mortgage:00661",
+      "edge:kiduna:real-estate-mortgage:00662",
+      "edge:kiduna:real-estate-mortgage:00674"
+    ],
+    "questions": [
+      "What must B-Note make durable before you can safely proceed?"
+    ],
+    "possible_moves": [
+      "Resolve provenance, authority, custody, and ambiguity before relying on the artifact."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:056",
+    "node_ref": "node:kiduna:real-estate-mortgage:development-entitlement:variance",
+    "default_map": "Variance is understood only as a term inside Development & Entitlement.",
+    "shift_operator": "change risk map",
+    "changed_map": "Variance becomes The Field: Variance converts land's present condition into a permitted future use",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00670",
+      "edge:kiduna:real-estate-mortgage:00682",
+      "edge:kiduna:real-estate-mortgage:00683",
+      "edge:kiduna:real-estate-mortgage:00695"
+    ],
+    "questions": [
+      "What changes when Variance becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:057",
+    "node_ref": "node:kiduna:real-estate-mortgage:zoning-urbanism:euclidean-zoning",
+    "default_map": "Euclidean Zoning is understood only as a term inside Zoning, Planning & Urbanism.",
+    "shift_operator": "change capital map",
+    "changed_map": "Euclidean Zoning becomes The Boundary: Euclidean Zoning programs which spatial uses may occur, where, and at what intensity",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00691",
+      "edge:kiduna:real-estate-mortgage:00703",
+      "edge:kiduna:real-estate-mortgage:00704",
+      "edge:kiduna:real-estate-mortgage:00716"
+    ],
+    "questions": [
+      "Who has legitimate authority under Euclidean Zoning, and where does that authority stop?"
+    ],
+    "possible_moves": [
+      "Name the source, scope, duration, appeal path, and release of authority."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:058",
+    "node_ref": "node:kiduna:real-estate-mortgage:zoning-urbanism:urban-growth-boundary",
+    "default_map": "Urban Growth Boundary is understood only as a term inside Zoning, Planning & Urbanism.",
+    "shift_operator": "change human map",
+    "changed_map": "Urban Growth Boundary becomes The Pattern: Urban Growth Boundary programs which spatial uses may occur, where, and at what intensity",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00700",
+      "edge:kiduna:real-estate-mortgage:00712",
+      "edge:kiduna:real-estate-mortgage:00713",
+      "edge:kiduna:real-estate-mortgage:00725"
+    ],
+    "questions": [
+      "What changes when Urban Growth Boundary becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:059",
+    "node_ref": "node:kiduna:real-estate-mortgage:construction:topping-out",
+    "default_map": "Topping Out is understood only as a term inside Construction.",
+    "shift_operator": "change legal map",
+    "changed_map": "Topping Out becomes The Relation: Topping Out turns plans, labor, materials, and capital into built form",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00720",
+      "edge:kiduna:real-estate-mortgage:00732",
+      "edge:kiduna:real-estate-mortgage:00733",
+      "edge:kiduna:real-estate-mortgage:00745"
+    ],
+    "questions": [
+      "What changes when Topping Out becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:060",
+    "node_ref": "node:kiduna:real-estate-mortgage:building-systems:foundation-system",
+    "default_map": "Foundation System is understood only as a term inside Building Systems & Stewardship.",
+    "shift_operator": "change scale",
+    "changed_map": "Foundation System becomes The Pattern: Foundation System keeps the physical vessel safe, useful, comfortable, and capable of renewal",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00741",
+      "edge:kiduna:real-estate-mortgage:00753",
+      "edge:kiduna:real-estate-mortgage:00754",
+      "edge:kiduna:real-estate-mortgage:00766"
+    ],
+    "questions": [
+      "What changes when Foundation System becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:061",
+    "node_ref": "node:kiduna:real-estate-mortgage:building-systems:deferred-maintenance",
+    "default_map": "Deferred Maintenance is understood only as a term inside Building Systems & Stewardship.",
+    "shift_operator": "change clock",
+    "changed_map": "Deferred Maintenance becomes The Settlement: Deferred Maintenance keeps the physical vessel safe, useful, comfortable, and capable of renewal",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00750",
+      "edge:kiduna:real-estate-mortgage:00762",
+      "edge:kiduna:real-estate-mortgage:00763",
+      "edge:kiduna:real-estate-mortgage:00775"
+    ],
+    "questions": [
+      "What information or condition must Deferred Maintenance translate before the next commitment becomes safe?"
+    ],
+    "possible_moves": [
+      "Make conditions, exceptions, handoffs, and completion criteria explicit."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:062",
+    "node_ref": "node:kiduna:real-estate-mortgage:affordable-housing:rent-control",
+    "default_map": "Rent Control is understood only as a term inside Affordable & Social Housing.",
+    "shift_operator": "change stakeholder",
+    "changed_map": "Rent Control becomes The Field: Rent Control reshapes ownership, subsidy, land, or rent so shelter remains accessible",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00771",
+      "edge:kiduna:real-estate-mortgage:00783",
+      "edge:kiduna:real-estate-mortgage:00784",
+      "edge:kiduna:real-estate-mortgage:00796"
+    ],
+    "questions": [
+      "What changes when Rent Control becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:063",
+    "node_ref": "node:kiduna:real-estate-mortgage:fair-housing:redlining",
+    "default_map": "Redlining is understood only as a term inside Fair Housing & Exclusion.",
+    "shift_operator": "change unit of analysis",
+    "changed_map": "Redlining becomes The Charter: Redlining reveals and governs how access to place and credit can be distributed or denied",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00792",
+      "edge:kiduna:real-estate-mortgage:00804",
+      "edge:kiduna:real-estate-mortgage:00805",
+      "edge:kiduna:real-estate-mortgage:00817"
+    ],
+    "questions": [
+      "Who has legitimate authority under Redlining, and where does that authority stop?"
+    ],
+    "possible_moves": [
+      "Name the source, scope, duration, appeal path, and release of authority."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:064",
+    "node_ref": "node:kiduna:real-estate-mortgage:fair-housing:exclusionary-zoning",
+    "default_map": "Exclusionary Zoning is understood only as a term inside Fair Housing & Exclusion.",
+    "shift_operator": "change boundary",
+    "changed_map": "Exclusionary Zoning becomes The Covenant: Exclusionary Zoning reveals and governs how access to place and credit can be distributed or denied",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00801",
+      "edge:kiduna:real-estate-mortgage:00813",
+      "edge:kiduna:real-estate-mortgage:00814",
+      "edge:kiduna:real-estate-mortgage:00826"
+    ],
+    "questions": [
+      "Who has legitimate authority under Exclusionary Zoning, and where does that authority stop?"
+    ],
+    "possible_moves": [
+      "Name the source, scope, duration, appeal path, and release of authority."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:065",
+    "node_ref": "node:kiduna:real-estate-mortgage:laws-regulators:regulation-z",
+    "default_map": "Regulation Z is understood only as a term inside Laws & Regulators.",
+    "shift_operator": "change ownership map",
+    "changed_map": "Regulation Z becomes The Boundary: Regulation Z sets the rules and enforcement boundaries for transactions, credit, markets, and rights",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00821",
+      "edge:kiduna:real-estate-mortgage:00833",
+      "edge:kiduna:real-estate-mortgage:00834",
+      "edge:kiduna:real-estate-mortgage:00846"
+    ],
+    "questions": [
+      "Who has legitimate authority under Regulation Z, and where does that authority stop?"
+    ],
+    "possible_moves": [
+      "Name the source, scope, duration, appeal path, and release of authority."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:066",
+    "node_ref": "node:kiduna:real-estate-mortgage:tax-insurance-climate:tax-lien",
+    "default_map": "Tax Lien is understood only as a term inside Tax, Insurance & Climate Risk.",
+    "shift_operator": "change risk map",
+    "changed_map": "Tax Lien becomes The Relation: Tax Lien prices, pools, transfers, or socializes risks attached to property and place",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00842",
+      "edge:kiduna:real-estate-mortgage:00854",
+      "edge:kiduna:real-estate-mortgage:00855",
+      "edge:kiduna:real-estate-mortgage:00867"
+    ],
+    "questions": [
+      "What changes when Tax Lien becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:067",
+    "node_ref": "node:kiduna:real-estate-mortgage:tax-insurance-climate:wildfire-risk",
+    "default_map": "Wildfire Risk is understood only as a term inside Tax, Insurance & Climate Risk.",
+    "shift_operator": "change capital map",
+    "changed_map": "Wildfire Risk becomes The Reversion: Wildfire Risk prices, pools, transfers, or socializes risks attached to property and place",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00851",
+      "edge:kiduna:real-estate-mortgage:00863",
+      "edge:kiduna:real-estate-mortgage:00864",
+      "edge:kiduna:real-estate-mortgage:00876"
+    ],
+    "questions": [
+      "Which earlier warning became visible only after Wildfire Risk arrived?"
+    ],
+    "possible_moves": [
+      "Trace the failure backward through incentives, information, leverage, timing, and feedback rather than locating blame at the final visible event."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:068",
+    "node_ref": "node:kiduna:real-estate-mortgage:investment-capital:limited-partner",
+    "default_map": "Limited Partner is understood only as a term inside Investment & Capital.",
+    "shift_operator": "change human map",
+    "changed_map": "Limited Partner becomes The Field: Limited Partner organizes who contributes capital, who controls it, and who receives return",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00872",
+      "edge:kiduna:real-estate-mortgage:00884",
+      "edge:kiduna:real-estate-mortgage:00885",
+      "edge:kiduna:real-estate-mortgage:00897"
+    ],
+    "questions": [
+      "What changes when Limited Partner becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:069",
+    "node_ref": "node:kiduna:real-estate-mortgage:roles-institutions:lender",
+    "default_map": "Lender is understood only as a term inside Roles & Institutions.",
+    "shift_operator": "change legal map",
+    "changed_map": "Lender becomes The Principal: Lender makes the division of labor, authority, information, and incentive visible",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00893",
+      "edge:kiduna:real-estate-mortgage:00905",
+      "edge:kiduna:real-estate-mortgage:00906",
+      "edge:kiduna:real-estate-mortgage:00920"
+    ],
+    "questions": [
+      "What does Lender know, want, control, and carry if the transaction fails?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:070",
+    "node_ref": "node:kiduna:real-estate-mortgage:roles-institutions:title-officer",
+    "default_map": "Title Officer is understood only as a term inside Roles & Institutions.",
+    "shift_operator": "change scale",
+    "changed_map": "Title Officer becomes The Custodian: Title Officer makes the division of labor, authority, information, and incentive visible",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00902",
+      "edge:kiduna:real-estate-mortgage:00914",
+      "edge:kiduna:real-estate-mortgage:00915",
+      "edge:kiduna:real-estate-mortgage:00929"
+    ],
+    "questions": [
+      "What does Title Officer know, want, control, and carry if the transaction fails?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:071",
+    "node_ref": "node:kiduna:real-estate-mortgage:proptech-digital:mers-eregistry",
+    "default_map": "MERS eRegistry is understood only as a term inside PropTech & Digital Mortgage.",
+    "shift_operator": "change clock",
+    "changed_map": "MERS eRegistry becomes The Tension: MERS eRegistry turns documents, observations, decisions, and physical assets into computational workflows",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00923",
+      "edge:kiduna:real-estate-mortgage:00935",
+      "edge:kiduna:real-estate-mortgage:00936",
+      "edge:kiduna:real-estate-mortgage:00948"
+    ],
+    "questions": [
+      "What changes when MERS eRegistry becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:072",
+    "node_ref": "node:kiduna:real-estate-mortgage:fraud-cyber:income-fraud",
+    "default_map": "Income Fraud is understood only as a term inside Fraud, Cyber & Operational Failure.",
+    "shift_operator": "change stakeholder",
+    "changed_map": "Income Fraud becomes The Tide: Income Fraud shows where trust, identity, data, money, and documents can be manipulated",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00944",
+      "edge:kiduna:real-estate-mortgage:00956",
+      "edge:kiduna:real-estate-mortgage:00957",
+      "edge:kiduna:real-estate-mortgage:00969"
+    ],
+    "questions": [
+      "What is Income Fraud measuring—and which important reality has been left outside the denominator?"
+    ],
+    "possible_moves": [
+      "Change the denominator, time horizon, and stakeholder. If the conclusion changes, the map—not only the number—was doing the work."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:073",
+    "node_ref": "node:kiduna:real-estate-mortgage:fraud-cyber:data-breach",
+    "default_map": "Data Breach is understood only as a term inside Fraud, Cyber & Operational Failure.",
+    "shift_operator": "change unit of analysis",
+    "changed_map": "Data Breach becomes The Field: Data Breach shows where trust, identity, data, money, and documents can be manipulated",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00953",
+      "edge:kiduna:real-estate-mortgage:00965",
+      "edge:kiduna:real-estate-mortgage:00966",
+      "edge:kiduna:real-estate-mortgage:00978"
+    ],
+    "questions": [
+      "What changes when Data Breach becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:074",
+    "node_ref": "node:kiduna:real-estate-mortgage:market-pathologies:regulatory-capture",
+    "default_map": "Regulatory Capture is understood only as a term inside Market Pathologies.",
+    "shift_operator": "change boundary",
+    "changed_map": "Regulatory Capture becomes The Hidden Cost: Regulatory Capture shows how individually rational actions can compound into systemic harm",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00974",
+      "edge:kiduna:real-estate-mortgage:00986",
+      "edge:kiduna:real-estate-mortgage:00987",
+      "edge:kiduna:real-estate-mortgage:00999"
+    ],
+    "questions": [
+      "Which earlier warning became visible only after Regulatory Capture arrived?"
+    ],
+    "possible_moves": [
+      "Trace the failure backward through incentives, information, leverage, timing, and feedback rather than locating blame at the final visible event."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:075",
+    "node_ref": "node:kiduna:real-estate-mortgage:history-events:tenement-era",
+    "default_map": "Tenement Era is understood only as a term inside History & Events.",
+    "shift_operator": "change ownership map",
+    "changed_map": "Tenement Era becomes The Field: Tenement Era preserves the lineage that made today's property and mortgage systems feel normal",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:00995",
+      "edge:kiduna:real-estate-mortgage:01007",
+      "edge:kiduna:real-estate-mortgage:01008",
+      "edge:kiduna:real-estate-mortgage:01020"
+    ],
+    "questions": [
+      "What changes when Tenement Era becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:076",
+    "node_ref": "node:kiduna:real-estate-mortgage:history-events:dodd-frank-reform",
+    "default_map": "Dodd-Frank Reform is understood only as a term inside History & Events.",
+    "shift_operator": "change risk map",
+    "changed_map": "Dodd-Frank Reform becomes The Ledger: Dodd-Frank Reform preserves the lineage that made today's property and mortgage systems feel normal",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:01004",
+      "edge:kiduna:real-estate-mortgage:01016",
+      "edge:kiduna:real-estate-mortgage:01029"
+    ],
+    "questions": [
+      "What must Dodd-Frank Reform make durable before you can safely proceed?"
+    ],
+    "possible_moves": [
+      "Resolve provenance, authority, custody, and ambiguity before relying on the artifact."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:077",
+    "node_ref": "node:kiduna:real-estate-mortgage:global-models:singapore-public-housing",
+    "default_map": "Singapore Public Housing is understood only as a term inside Global Property Systems.",
+    "shift_operator": "change capital map",
+    "changed_map": "Singapore Public Housing becomes The Vessel: Singapore Public Housing demonstrates that ownership and mortgage conventions vary by jurisdiction and history",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:01025",
+      "edge:kiduna:real-estate-mortgage:01037",
+      "edge:kiduna:real-estate-mortgage:01038",
+      "edge:kiduna:real-estate-mortgage:01050"
+    ],
+    "questions": [
+      "What relationships become visible when Singapore Public Housing is treated as a place rather than only an asset?"
+    ],
+    "possible_moves": [
+      "Walk the physical, legal, financial, ecological, and human maps separately before recombining them."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:078",
+    "node_ref": "node:kiduna:real-estate-mortgage:strange-property:escheat",
+    "default_map": "Escheat is understood only as a term inside Strange Property Law.",
+    "shift_operator": "change human map",
+    "changed_map": "Escheat becomes The Field: Escheat makes visible the moments when maps, records, use, and physical reality disagree",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:01046",
+      "edge:kiduna:real-estate-mortgage:01058",
+      "edge:kiduna:real-estate-mortgage:01059",
+      "edge:kiduna:real-estate-mortgage:01071"
+    ],
+    "questions": [
+      "What changes when Escheat becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  },
+  {
+    "id": "mapshift:kiduna:real-estate-mortgage:079",
+    "node_ref": "node:kiduna:real-estate-mortgage:rituals-relics:key",
+    "default_map": "Key is understood only as a term inside Rituals & Relics.",
+    "shift_operator": "change legal map",
+    "changed_map": "Key becomes The Transfer: Key gives tangible form to otherwise abstract changes in belonging and authority",
+    "new_relationships": [
+      "edge:kiduna:real-estate-mortgage:01067",
+      "edge:kiduna:real-estate-mortgage:01080",
+      "edge:kiduna:real-estate-mortgage:01092",
+      "edge:kiduna:real-estate-mortgage:01300"
+    ],
+    "questions": [
+      "What changes when Key becomes the unit of analysis?"
+    ],
+    "possible_moves": [
+      "Shift scale, clock, stakeholder, boundary, and claim layer before choosing a move."
+    ],
+    "claim_layer": "interpretive"
+  }
+]

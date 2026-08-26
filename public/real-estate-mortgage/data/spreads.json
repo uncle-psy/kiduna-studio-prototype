@@ -1,0 +1,147 @@
+[
+  {
+    "id": "spread:house",
+    "name": "The House",
+    "positions": [
+      "Foundation",
+      "Structure",
+      "Systems",
+      "Interior",
+      "Exterior",
+      "Neighborhood",
+      "Hidden defect"
+    ],
+    "system_version": "system:kiduna:real-estate-mortgage:1.0.0",
+    "game_effect_schema": "schemas/game-effect.schema.json",
+    "tested_reading_ref": "tests/readings/house.json",
+    "graph_walk": true
+  },
+  {
+    "id": "spread:mortgage",
+    "name": "The Mortgage",
+    "positions": [
+      "What are you acquiring?",
+      "What are you pledging?",
+      "What is the true cost?",
+      "What is fixed?",
+      "What can change?",
+      "Where is your equity?",
+      "What happens if circumstances change?"
+    ],
+    "system_version": "system:kiduna:real-estate-mortgage:1.0.0",
+    "game_effect_schema": "schemas/game-effect.schema.json",
+    "tested_reading_ref": "tests/readings/mortgage.json",
+    "graph_walk": false
+  },
+  {
+    "id": "spread:underwrite",
+    "name": "The Underwrite",
+    "positions": [
+      "Capacity",
+      "Character / intention",
+      "Capital",
+      "Collateral",
+      "Conditions",
+      "Exception"
+    ],
+    "system_version": "system:kiduna:real-estate-mortgage:1.0.0",
+    "game_effect_schema": "schemas/game-effect.schema.json",
+    "tested_reading_ref": "tests/readings/underwrite.json",
+    "graph_walk": true
+  },
+  {
+    "id": "spread:appraisal",
+    "name": "The Appraisal",
+    "positions": [
+      "Subject",
+      "Comparable 1",
+      "Comparable 2",
+      "Adjustment",
+      "Highest and best use",
+      "Reconciliation"
+    ],
+    "system_version": "system:kiduna:real-estate-mortgage:1.0.0",
+    "game_effect_schema": "schemas/game-effect.schema.json",
+    "tested_reading_ref": "tests/readings/appraisal.json",
+    "graph_walk": false
+  },
+  {
+    "id": "spread:development",
+    "name": "The Development",
+    "positions": [
+      "Land",
+      "Entitlement",
+      "Capital",
+      "Design",
+      "Construction",
+      "Market",
+      "Stabilization"
+    ],
+    "system_version": "system:kiduna:real-estate-mortgage:1.0.0",
+    "game_effect_schema": "schemas/game-effect.schema.json",
+    "tested_reading_ref": "tests/readings/development.json",
+    "graph_walk": true
+  },
+  {
+    "id": "spread:capital-stack",
+    "name": "The Capital Stack",
+    "positions": [
+      "Senior claim",
+      "Mezzanine risk",
+      "Preferred return",
+      "Equity",
+      "Hidden leverage",
+      "Waterfall"
+    ],
+    "system_version": "system:kiduna:real-estate-mortgage:1.0.0",
+    "game_effect_schema": "schemas/game-effect.schema.json",
+    "tested_reading_ref": "tests/readings/capital-stack.json",
+    "graph_walk": false
+  },
+  {
+    "id": "spread:closing",
+    "name": "The Closing",
+    "positions": [
+      "What has been agreed?",
+      "What remains conditional?",
+      "What must be disclosed?",
+      "What must be funded?",
+      "What must be recorded?",
+      "What changes hands?"
+    ],
+    "system_version": "system:kiduna:real-estate-mortgage:1.0.0",
+    "game_effect_schema": "schemas/game-effect.schema.json",
+    "tested_reading_ref": "tests/readings/closing.json",
+    "graph_walk": true
+  },
+  {
+    "id": "spread:location",
+    "name": "Location, Location, Location",
+    "positions": [
+      "Where are you physically?",
+      "Where are you relationally?",
+      "Where are you in time?"
+    ],
+    "system_version": "system:kiduna:real-estate-mortgage:1.0.0",
+    "game_effect_schema": "schemas/game-effect.schema.json",
+    "tested_reading_ref": "tests/readings/location.json",
+    "graph_walk": false
+  },
+  {
+    "id": "spread:foreclosure",
+    "name": "The Foreclosure",
+    "positions": [
+      "The promise",
+      "The missed obligation",
+      "The collateral",
+      "The institution",
+      "What can be modified",
+      "What must be released",
+      "What remains after loss"
+    ],
+    "system_version": "system:kiduna:real-estate-mortgage:1.0.0",
+    "game_effect_schema": "schemas/game-effect.schema.json",
+    "tested_reading_ref": "tests/readings/foreclosure.json",
+    "graph_walk": true
+  }
+]
