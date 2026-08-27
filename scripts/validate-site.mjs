@@ -9,6 +9,7 @@ const tao = join(root, "public", "tao");
 const realEstate = join(root, "public", "real-estate-mortgage");
 const political = join(root, "public", "political-change");
 const disclosure = join(root, "public", "science-fiction-disclosure");
+const military = join(root, "public", "military-systems");
 const failures = [];
 const check = (condition, message) => {
   if (!condition) failures.push(message);
@@ -179,9 +180,37 @@ const disclosurePage = await readFile(join(root, "app", "science-fiction-disclos
 check(disclosurePage.includes("/science-fiction-disclosure/oracle/index.html#home"), "Science Fiction & Disclosure route does not expose its interactive system");
 check(disclosurePage.includes("Science-Fiction-Disclosure-System-Complete-v1.0.0.zip"), "Science Fiction & Disclosure route does not expose its complete archive");
 
+const militaryProject = JSON.parse(await readFile(join(military, "data", "engine-project-v1.3.json"), "utf8"));
+check(militaryProject.schema_version === "1.0", "Military Systems does not preserve the Engine 1.3 transport schema version");
+check(militaryProject.project?.engine_version === "1.3.0", "Military Systems does not declare Engine 1.3.0");
+check(militaryProject.nodes?.length === 20, `Expected 20 Military Systems nodes; found ${militaryProject.nodes?.length}`);
+check(militaryProject.edges?.length === 19, `Expected 19 Military Systems typed relations; found ${militaryProject.edges?.length}`);
+check(militaryProject.expressions?.length === 8, `Expected eight Military Systems expressions; found ${militaryProject.expressions?.length}`);
+check(militaryProject.expressions?.every((expression) => expression.form === "card_pair"), "A Military Systems expression is not a paired card");
+check(militaryProject.sentinel_handoffs?.length === 2, "Military Systems must preserve health/benefits and crisis Sentinel handoffs");
+const militarySlugs = ["whole-field", "hidden-chain", "73-easting", "service-continues", "gulf-war-illness", "va-navigation", "connection-creates-time", "family-sustainment"];
+for (const slug of militarySlugs) {
+  for (const orientation of ["vertical", "horizontal"]) {
+    const path = join(military, "cards", `${slug}-${orientation}-v1.1.webp`);
+    check(await exists(path), `Missing Military Systems card artwork: ${slug}-${orientation}`);
+    if (await exists(path)) check((await stat(path)).size > 25_000, `Military Systems card artwork is unexpectedly small: ${slug}-${orientation}`);
+  }
+}
+for (const file of ["CARD-DECK.md", "VETERAN-VA-GULF-WAR-SOURCE-NOTE.md", "73-EASTING-CASE-NOTE.md", "SOURCE-ART-AUDIT.md", "VALIDATION-REPORT.md"]) {
+  check(await exists(military, file), `Missing Military Systems public record: ${file}`);
+}
+const militaryDownload = join(root, "public", "downloads", "Mapshifting-Military-Systems-Web-v1.1.0.zip");
+check(await exists(militaryDownload), "Missing Military Systems web-edition download");
+if (await exists(militaryDownload)) check((await stat(militaryDownload)).size > 1_000_000, "Military Systems web edition is unexpectedly small");
+const militaryPage = await readFile(join(root, "app", "military-systems", "page.tsx"), "utf8");
+check(militaryPage.includes("MilitaryCardLibrary"), "Military Systems route does not expose its complete card field");
+check(militaryPage.includes("988") && militaryPage.includes("838255"), "Military Systems route lacks the current Veterans Crisis Line handoff");
+const militaryCardData = await readFile(join(root, "app", "military-systems", "military-cards.ts"), "utf8");
+check(!militaryCardData.includes("gift:") && !militaryCardData.includes("wound:"), "Military Systems card data regressed to legacy Gift/Wound fields");
+
 if (failures.length) {
   console.error(failures.map((failure) => `- ${failure}`).join("\n"));
   process.exit(1);
 }
 
-console.log(`Validated Kiduna Design: Systems Oracle has ${artifacts.length} artifacts and ${references.length} reference artworks; Alchemy has ${alchemyCards.length} cards and ${alchemyCards.length * 2} finished compositions; Tao has ${taoCards.length} tiles and ${taoGraph.edges.length} typed relations; Real Estate & Mortgage has ${realEstateCards.length} tiles and ${realEstateEdges.length} typed relations; Political Change has ${politicalNodes.length} nodes, ${politicalEdges.length} typed relations, and ${politicalMapshifts.length} mapshifts; Science Fiction & Disclosure has ${disclosureCards.length} Tiles and ${disclosureEdges.length} typed relations.`);
+console.log(`Validated Kiduna Design: Systems Oracle has ${artifacts.length} artifacts and ${references.length} reference artworks; Alchemy has ${alchemyCards.length} cards and ${alchemyCards.length * 2} finished compositions; Tao has ${taoCards.length} tiles and ${taoGraph.edges.length} typed relations; Real Estate & Mortgage has ${realEstateCards.length} tiles and ${realEstateEdges.length} typed relations; Political Change has ${politicalNodes.length} nodes, ${politicalEdges.length} typed relations, and ${politicalMapshifts.length} mapshifts; Science Fiction & Disclosure has ${disclosureCards.length} Tiles and ${disclosureEdges.length} typed relations; Military Systems has ${militaryProject.nodes.length} nodes, ${militaryProject.edges.length} typed relations, and ${militaryProject.expressions.length} paired expressions.`);

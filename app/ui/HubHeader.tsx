@@ -52,6 +52,7 @@ export function HubHeader({ section }: { section?: "isometric" | "royals" }) {
             <a href="/political-change"><small>09 · LIVING SYMBOLIC SYSTEM</small><b>Political Change</b><span>1,168 core nodes, 2,287 typed relations, 160 mapshifts, provenance, games, and complete archive.</span></a>
             <a href="/science-fiction-disclosure"><small>10 · MAPSHIFTING SYSTEM</small><b>Science Fiction &amp; Disclosure</b><span>480 Tiles, 2,226 typed relations, evidence states, oracle, games, story lab, and complete archive.</span></a>
             <a href="/real-estate-mortgage"><small>11 · PROPERTY SYSTEM</small><b>Real Estate &amp; Mortgage</b><span>659 enamel tiles, 1,302 typed relationships, complete dossiers, graph, games, provenance, and portable system.</span></a>
+            <a href="/military-systems"><small>12 · MAPSHIFTING SYSTEM</small><b>Military Systems</b><span>Power, sustainment, 73 Easting, Veterans, Gulf War illness, VA navigation, family care, crisis handoffs, and memory.</span></a>
           </div>
         </details>
       </nav>
