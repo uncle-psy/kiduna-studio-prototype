@@ -13,8 +13,8 @@ export default function Home() {
     <main>
       <section className={styles.hero}>
         <p className={styles.eyebrow}>KIDUNA DESIGN · CONCEPTUAL PROTOTYPES</p>
-        <h1>Eleven systems.<br /><span>Five living decks.</span></h1>
-        <p className={styles.intro}>Explore Kiduna’s spatial language, the complete Royals &amp; Rogues game library, a build-ready system for alignment without obedience, Bellwether’s playable Level 1 reference world, symbolic maps of biology, culture, human-made systems, the Tao, political change, science-fiction disclosure inquiry, and the complete machinery of real estate and mortgage finance—plus three Mapshifting decks for reflection, discernment, and agency. These are design systems and working prototypes—not the production system.</p>
+        <h1>Twelve systems.<br /><span>Six living decks.</span></h1>
+        <p className={styles.intro}>Explore Kiduna’s spatial language, the complete Royals &amp; Rogues game library, a build-ready system for alignment without obedience, Bellwether’s playable Level 1 reference world, symbolic maps of biology, culture, human-made systems, the Tao, political change, science-fiction disclosure inquiry, real estate and mortgage finance, and military power carried through service and long aftermath—plus three Mapshifting decks for reflection, discernment, and agency. These are design systems and working prototypes—not the production system.</p>
       </section>
 
       <section className={styles.systems} aria-label="Kiduna design systems">
@@ -173,6 +173,19 @@ export default function Home() {
             <h2>Real Estate &amp; Mortgage</h2>
             <span>A complete 659-tile enamel system connecting place, rights, title, mortgage finance, capital markets, development, construction, regulation, history, and lived consequence through 1,302 typed relationships.</span>
             <a className={styles.enter} href="/real-estate-mortgage">Enter the system <b>→</b></a>
+          </div>
+        </article>
+        <article className={styles.systemCard}>
+          <a className={styles.visual} href="/military-systems" aria-label="Enter Mapshifting Military Systems">
+            <img src="/military-systems/cards/whole-field-horizontal-v1.1.webp" alt="The Whole Field card from Mapshifting Military Systems" />
+            <span className={styles.number}>12</span>
+            <span className={styles.status}>MAPSHIFTING SYSTEM</span>
+          </a>
+          <div className={styles.cardCopy}>
+            <p>POWER · SERVICE · CONSEQUENCE · RETURN</p>
+            <h2>Military Systems</h2>
+            <span>A graph-native System connecting political purpose, force, command, sustainment, battle, Veterans, Gulf War illness, VA navigation, family care, crisis support, and memory through one long field.</span>
+            <a className={styles.enter} href="/military-systems">Enter the system <b>→</b></a>
           </div>
         </article>
       </section>

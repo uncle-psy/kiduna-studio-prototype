@@ -181,6 +181,18 @@
       "order": 15,
       "listedOnHome": true,
       "listedInSystemsMenu": true
+    },
+    {
+      "id": "military-systems",
+      "label": "Mapshifting Military Systems",
+      "kind": "system",
+      "route": "/military-systems",
+      "firstPublishedAt": "2026-08-27",
+      "surface": "local-page",
+      "status": "active",
+      "order": 16,
+      "listedOnHome": true,
+      "listedInSystemsMenu": true
     }
   ]
 }
