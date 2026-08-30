@@ -43,7 +43,7 @@ export default function PoliticalChangePage() {
           <figure className={styles.heroArt}>
             <span className={styles.orbit}/>
             <img src="/political-change/enamel-triptych.png" alt="Three high-fidelity enamel Political Change cards representing Protest, Constitution, and Revolution" width={1536} height={1024}/>
-            <figcaption><b>A field of forces, not a line of slogans.</b><span>Each node holds mechanism, gift, wound, strategy, divination, evidence, and relation.</span></figcaption>
+            <figcaption><b>A field of forces, not a line of slogans.</b><span>Each node holds mechanism, forces, frictions, strategy, divination, evidence, and relation.</span></figcaption>
           </figure>
         </section>
 
