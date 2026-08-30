@@ -116,7 +116,7 @@ export default function PoliticalChangeLibrary() {
           <button className={styles.close} type="button" onClick={() => setSelected(null)} aria-label="Close node">×</button>
           <header><small>{selected.family} · {selected.kind} · {selected.archetypal_function}</small><h2 id="node-title">{selected.title}</h2><p>{selected.summary}</p></header>
           <section className={styles.mechanism}><small>MECHANISM</small><p>{selected.mechanism}</p></section>
-          <section className={styles.polarities}><div><small>GIFT</small><p>{selected.gift}</p></div><div><small>WOUND</small><p>{selected.wound}</p></div></section>
+          <section className={styles.polarities} aria-label="Polarity"><div><small>FORCES</small><p>{selected.gift}</p></div><div><small>FRICTIONS</small><p>{selected.wound}</p></div></section>
           <section><small>STRATEGIC MEANING</small><p>{selected.strategic_meaning}</p></section>
           <section><small>DIVINATORY MEANING</small><p>{selected.divinatory_meaning}</p></section>
           <blockquote>{selected.question}</blockquote>
