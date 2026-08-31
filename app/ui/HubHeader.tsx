@@ -37,6 +37,7 @@ export function HubHeader({ section }: { section?: "isometric" | "royals" }) {
       </a>
       <nav className={styles.primaryNav} aria-label="Primary">
         <a href="/">Home</a>
+        <a href="/power-maps">Power Maps</a>
         <a href="/#mapshifting">Mapshifting</a>
         <details>
           <summary>Systems <span>⌄</span></summary>
