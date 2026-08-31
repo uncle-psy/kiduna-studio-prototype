@@ -3,21 +3,21 @@ import DeckShell from "../DeckShell";
 import AnimalManualLibrary from "./AnimalManualLibrary";
 
 export const metadata: Metadata = {
-  title: "Mapshifting Animal Deck",
-  description: "The Living Mirror: a source-grounded 68-card animal deck manual for agency and self-inquiry.",
+  title: "The Living Mirror — Animal Power Map",
+  description: "The Living Mirror V0.04: a production-complete 366-node animal Power Map with 68 native-2048 Cards.",
 };
 
 export default function AnimalDeckPage() {
   return <DeckShell
     deckClass="animal-deck"
     eyebrow="THE LIVING MIRROR"
-    status="Complete 68-card manual · Approved visual references"
+    status="Published V0.04 · Production complete"
     title="Mapshifting"
     subtitle="Animal Deck"
     lede="Encounter animals as living beings first and symbolic mirrors second. Each card connects a Gift with a related Wound, then returns interpretation to reflection, relationship, and choice."
     heroImage="/mapshifting/animal/001-gray-wolf.jpg"
     heroAlt="Gray Wolf card from the Mapshifting Animal Deck"
-    metrics={[["68","species cards"],["10","manual chapters"],["1","living mirror"]]}
+    metrics={[["366","graph nodes"],["68","native-2048 Cards"],["298","fallback Icons"]]}
     principles={[["Living being first","Verified biology and behavior come before symbolic use, and popular animal myths are corrected."],["Gift and Wound","Capacity and hurt are read as related expressions of one energy—not as positive and negative animals."],["Cultural care","Specific traditions are attributed; closed teachings and generic claims about Indigenous peoples are excluded."]]}
     cards={[]}
     galleryEyebrow="68 CARDS + COMPLETE MANUAL"

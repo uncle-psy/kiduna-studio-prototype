@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-24",
+  "updatedAt": "2026-08-30",
   "systems": [
     {
       "id": "isometric-scene-system",
@@ -192,6 +192,18 @@
       "status": "active",
       "order": 16,
       "listedOnHome": true,
+      "listedInSystemsMenu": true
+    },
+    {
+      "id": "power-maps-index",
+      "label": "Power Maps",
+      "kind": "system-family",
+      "route": "/power-maps",
+      "firstPublishedAt": "2026-08-30",
+      "surface": "local-page",
+      "status": "active",
+      "order": 17,
+      "listedOnHome": false,
       "listedInSystemsMenu": true
     }
   ]
