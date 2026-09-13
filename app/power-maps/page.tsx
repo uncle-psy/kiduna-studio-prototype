@@ -15,7 +15,7 @@ const maps = [
   { name: "Service, Force & Memory", version: "V0.02", status: "High-resolution master release", detail: "320 nodes · 425 local visual masters", href: "/military-systems", active: true },
   { name: "Civic Fury", version: "V0.01", status: "Complete validated release", detail: "1,168 nodes · political change and civic power", href: "/political-change", active: true },
   { name: "Ultimate Science Fiction & Disclosure Oracle", version: "V0.01", status: "Complete portable release", detail: "480 tiles · evidence-aware speculative inquiry", href: "/science-fiction-disclosure", active: true },
-  { name: "Real Estate & Mortgage", version: "V0.01", status: "Complete validated release", detail: "659 nodes · land, shelter, ownership, debt, and capital", href: "/real-estate-mortgage", active: true },
+  { name: "Homeslice", version: "V0.01", status: "Complete validated release", detail: "659 nodes · land, shelter, ownership, debt, and capital", href: "/real-estate-mortgage", active: true },
   { name: "The Tao — Enamel Oracle", version: "V0.01", status: "Semantic and visual complete", detail: "75 nodes · source, polarity, transformation, and return", href: "/tao", active: true },
   { name: "Mapshifting Alchemy", version: "V0.01", status: "Visual complete · text partial", detail: "50 Cards · 100 visual expressions", href: "/mapshifting/alchemy-deck", active: true },
   { name: "Black Love", version: "V0.01", status: "Complete · print upgrade pending", detail: "252-node living cultural Power Map", active: false },

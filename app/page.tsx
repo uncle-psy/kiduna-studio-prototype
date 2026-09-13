@@ -163,14 +163,14 @@ export default function Home() {
           </div>
         </article>
         <article className={styles.systemCard}>
-          <a className={styles.visual} href="/real-estate-mortgage" aria-label="Enter the Real Estate and Mortgage Enamel System">
+          <a className={styles.visual} href="/real-estate-mortgage" aria-label="Enter the Homeslice">
             <img src="/real-estate-mortgage/enamel-life-light-sample-01.png" alt="Luminous enamel tiles expressing land, home, mortgage, liquidity, development, and belonging" />
             <span className={styles.number}>11</span>
             <span className={styles.status}>PROPERTY SYSTEM</span>
           </a>
           <div className={styles.cardCopy}>
             <p>LAND · SHELTER · CAPITAL · BELONGING</p>
-            <h2>Real Estate &amp; Mortgage</h2>
+            <h2>Homeslice</h2>
             <span>A complete 659-tile enamel system connecting place, rights, title, mortgage finance, capital markets, development, construction, regulation, history, and lived consequence through 1,302 typed relationships.</span>
             <a className={styles.enter} href="/real-estate-mortgage">Enter the system <b>→</b></a>
           </div>
