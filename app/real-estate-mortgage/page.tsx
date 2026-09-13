@@ -4,10 +4,10 @@ import RealEstateLibrary from "./RealEstateLibrary";
 import styles from "./real-estate.module.css";
 
 export const metadata: Metadata = {
-  title: "Real Estate & Mortgage — Complete Enamel System",
+  title: "Homeslice — Complete Enamel System",
   description: "A complete 659-tile graph of land, home, rights, mortgage finance, capital, building, regulation, history, and belonging.",
   openGraph: {
-    title: "Real Estate & Mortgage — Complete Enamel System",
+    title: "Homeslice — Complete Enamel System",
     description: "659 luminous enamel tiles connected by 1,302 typed relationships.",
     images: ["/real-estate-mortgage/enamel-life-light-sample-01.png"],
   },
@@ -34,7 +34,7 @@ export default function RealEstateMortgagePage() {
     <div className={styles.realm}>
       <header className={styles.header}>
         <Link className={styles.brand} href="/"><img src="/assets/kiduna/mark.svg" alt="" width={34} height={34}/><span><b>Kiduna</b><small>Design systems</small></span></Link>
-        <nav aria-label="Real Estate & Mortgage system navigation"><a href="#map">The map</a><a href="#tiles">659 tiles</a><a href="#library">Library</a></nav>
+        <nav aria-label="Homeslice system navigation"><a href="#map">The map</a><a href="#tiles">659 tiles</a><a href="#library">Library</a></nav>
         <Link className={styles.back} href="/">All systems ←</Link>
       </header>
 
@@ -43,7 +43,7 @@ export default function RealEstateMortgagePage() {
           <div className={styles.heroCopy}>
             <p className={styles.eyebrow}>THE COMPLETE ENAMEL PROPERTY SYSTEM</p>
             <span className={styles.release}>System 13 · First edition · 24 August 2026</span>
-            <h1>Real Estate<br/><em>& Mortgage</em></h1>
+            <h1><em>Homeslice</em></h1>
             <p className={styles.lede}>Land becomes place. Place becomes property. Property becomes collateral. Collateral becomes capital. People live inside the consequences.</p>
             <p className={styles.promise}>The visual default is shelter, agency, family, safety, liquidity, and possibility. Shadow appears when the mechanism truly warrants a warning.</p>
             <div className={styles.actions}><a className={styles.primaryButton} href="#tiles">Enter all 659 tiles</a><a href="/downloads/Real-Estate-Mortgage-System-Complete-v1.0.0.zip" download>Download complete system ↓</a></div>
@@ -88,7 +88,7 @@ export default function RealEstateMortgagePage() {
         <section className={styles.librarySection} id="library">
           <div><p className={styles.eyebrow}>COMPLETE WORKING LIBRARY</p><h2>Carry the whole system.</h2><p>The preserved edition includes all 659 node dossiers, graph and adjacency exports, schemas, research provenance, 1,723-candidate ledger, manual, lineages, spreads, games, Sentinel handoffs, visual constitution, and reference artifacts.</p></div>
           <div className={styles.downloads}>
-            <a href="/downloads/Real-Estate-Mortgage-System-Complete-v1.0.0.zip" download><small>COMPLETE EDITION</small><h3>Real Estate & Mortgage v1.0.0</h3><p>The full portable system, including every authored record and machine-readable export.</p><b>Download ZIP ↓</b></a>
+            <a href="/downloads/Real-Estate-Mortgage-System-Complete-v1.0.0.zip" download><small>COMPLETE EDITION</small><h3>Homeslice v1.0.0</h3><p>The full portable system, including every authored record and machine-readable export.</p><b>Download ZIP ↓</b></a>
             <a href="/real-estate-mortgage/README.md"><small>READABLE SOURCE</small><h3>System guide</h3><p>Identity, boundaries, navigation, ethics, data layout, validation, and operating notes.</p><b>Open guide ↗</b></a>
           </div>
         </section>
