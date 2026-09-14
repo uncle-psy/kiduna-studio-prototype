@@ -1,0 +1,999 @@
+{
+  "id": "philosophy-power-map-v0.1",
+  "title": "Philosophy’s recurring mistakes—and the ideas worth rescuing",
+  "version": "0.1.0",
+  "status": "review-release",
+  "nodeCount": 54,
+  "edgeCount": 61,
+  "zones": {
+    "cosmos": {
+      "label": "Cosmos & first principles",
+      "color": "var(--viz-series-1)"
+    },
+    "split": {
+      "label": "The mind–world split",
+      "color": "var(--viz-series-2)"
+    },
+    "idealism": {
+      "label": "Idealism & history machines",
+      "color": "var(--viz-series-3)"
+    },
+    "existence": {
+      "label": "Life, time & existence",
+      "color": "var(--viz-series-4)"
+    },
+    "language": {
+      "label": "Language & its traps",
+      "color": "var(--viz-series-5)"
+    },
+    "desire": {
+      "label": "Desire, power & difference",
+      "color": "var(--viz-series-6)"
+    },
+    "simulation": {
+      "label": "Modernity & simulation",
+      "color": "var(--viz-series-2)"
+    },
+    "consciousness": {
+      "label": "Consciousness laboratory",
+      "color": "var(--viz-series-1)"
+    }
+  },
+  "nodes": [
+    {
+      "id": "anaximander",
+      "label": "Anaximander",
+      "year": -610,
+      "zone": "cosmos",
+      "x": 20,
+      "y": 42,
+      "verdict": "keep",
+      "claim": "Reality exceeds every named element; worlds emerge from an indefinite source.",
+      "opinion": "A productive refusal to confuse a favored ingredient with reality itself.",
+      "tags": "ontology"
+    },
+    {
+      "id": "heraclitus",
+      "label": "Heraclitus",
+      "year": -500,
+      "zone": "cosmos",
+      "x": 15,
+      "y": 20,
+      "verdict": "keep",
+      "claim": "Reality is patterned change; identity persists through tension.",
+      "opinion": "Still fresher than most substance metaphysics. The slogan “everything flows” is crude, but process is the right default.",
+      "tags": "spinoza history"
+    },
+    {
+      "id": "parmenides",
+      "label": "Parmenides",
+      "year": -475,
+      "zone": "cosmos",
+      "x": 78,
+      "y": 79,
+      "verdict": "repair",
+      "claim": "What truly is cannot become what it is not.",
+      "opinion": "A brilliant logical trap that turns grammar into ontology. Useful as a stress test, disastrous as a world picture.",
+      "tags": "ontology"
+    },
+    {
+      "id": "democritus",
+      "label": "Democritus",
+      "year": -420,
+      "zone": "cosmos",
+      "x": 10,
+      "y": 66,
+      "verdict": "keep",
+      "claim": "Complex appearances arise from atoms and void.",
+      "opinion": "The reductionist wager pays enormous scientific dividends, but experience is not explained merely by shrinking the furniture.",
+      "tags": "mind"
+    },
+    {
+      "id": "plato",
+      "label": "Plato",
+      "year": -380,
+      "zone": "cosmos",
+      "x": 88,
+      "y": 88,
+      "verdict": "repair",
+      "claim": "Stable intelligible Forms are more real than changing appearances.",
+      "opinion": "An immortal machine for asking normative questions—and a seductive source of anti-body, anti-change metaphysics. Fame is not a truth warrant.",
+      "tags": "idealism mind"
+    },
+    {
+      "id": "aristotle",
+      "label": "Aristotle",
+      "year": -340,
+      "zone": "cosmos",
+      "x": 40,
+      "y": 68,
+      "verdict": "keep",
+      "claim": "Form is embodied organization, not a second world.",
+      "opinion": "Usually the better ancient guide to living form, though his hierarchy of nature aged badly.",
+      "tags": "mind"
+    },
+    {
+      "id": "descartes",
+      "label": "Descartes",
+      "year": 1641,
+      "zone": "split",
+      "x": 92,
+      "y": 52,
+      "verdict": "repair",
+      "claim": "Thinking substance and extended substance are fundamentally different.",
+      "opinion": "A first-rate problem statement attached to a terrible solution. The split still haunts neuroscience disguised as “representation.”",
+      "tags": "mind"
+    },
+    {
+      "id": "spinoza",
+      "label": "Spinoza",
+      "year": 1677,
+      "zone": "split",
+      "x": 18,
+      "y": 35,
+      "verdict": "keep",
+      "claim": "Mind and body are two attributes of one immanent reality.",
+      "opinion": "The map’s backbone: the cleanest early escape from the Cartesian trap, though geometric certainty is more performance than proof.",
+      "tags": "mind spinoza"
+    },
+    {
+      "id": "leibniz",
+      "label": "Leibniz",
+      "year": 1714,
+      "zone": "split",
+      "x": 68,
+      "y": 72,
+      "verdict": "repair",
+      "claim": "Reality consists of perspective-bearing monads coordinated without causal exchange.",
+      "opinion": "A dazzling anticipation of distributed perspective; the pre-established harmony is metaphysical duct tape.",
+      "tags": "mind idealism"
+    },
+    {
+      "id": "berkeley",
+      "label": "Berkeley",
+      "year": 1710,
+      "zone": "idealism",
+      "x": 96,
+      "y": 64,
+      "verdict": "repair",
+      "claim": "To exist is to be perceived or to perceive.",
+      "opinion": "Coherent enough to embarrass naive realism; gains little by relabeling the whole universe “mind.”",
+      "tags": "idealism mind"
+    },
+    {
+      "id": "hume",
+      "label": "Hume",
+      "year": 1748,
+      "zone": "split",
+      "x": 30,
+      "y": 25,
+      "verdict": "keep",
+      "claim": "The self and causality are habits assembled from impressions.",
+      "opinion": "Excellent acid for bad metaphysics. Less good at explaining why stable practices survive his acid bath.",
+      "tags": "epistemology mind"
+    },
+    {
+      "id": "kant",
+      "label": "Kant",
+      "year": 1781,
+      "zone": "idealism",
+      "x": 76,
+      "y": 84,
+      "verdict": "keep",
+      "claim": "Experience is structured by conditions supplied by cognition; things-in-themselves remain beyond direct knowledge.",
+      "opinion": "The necessary checkpoint against naive access to reality. His cure risks turning the mind into a new prison.",
+      "tags": "idealism epistemology"
+    },
+    {
+      "id": "hegel",
+      "label": "Hegel",
+      "year": 1807,
+      "zone": "idealism",
+      "x": 82,
+      "y": 94,
+      "verdict": "repair",
+      "claim": "Concepts and social forms develop through contradictions toward fuller self-comprehension.",
+      "opinion": "Feedback, mediation, and historical intelligibility: keep. Totalizing closure and providential tone: cut. “End of history” is mostly his afterlife.",
+      "tags": "history idealism"
+    },
+    {
+      "id": "schopenhauer",
+      "label": "Schopenhauer",
+      "year": 1818,
+      "zone": "idealism",
+      "x": 58,
+      "y": 54,
+      "verdict": "repair",
+      "claim": "Representation is driven by blind striving or Will.",
+      "opinion": "Piercing about appetite and suffering; his cosmic pessimism overfits a temperament into an ontology.",
+      "tags": "mind history"
+    },
+    {
+      "id": "kierkegaard",
+      "label": "Kierkegaard",
+      "year": 1843,
+      "zone": "existence",
+      "x": 58,
+      "y": 20,
+      "verdict": "keep",
+      "claim": "Truth that matters is lived through commitment, anxiety, and singular choice.",
+      "opinion": "A needed antidote to Hegelian aerial photography; faith is not compulsory to keep the insight.",
+      "tags": "history"
+    },
+    {
+      "id": "baudelaire",
+      "label": "Baudelaire",
+      "year": 1863,
+      "zone": "simulation",
+      "x": 48,
+      "y": 28,
+      "verdict": "keep",
+      "claim": "Modernity is transient, artificial, urban, intoxicating—and must be read aesthetically.",
+      "opinion": "Not a system-builder, which is part of his value: a sensor for modern experience before theory embalms it.",
+      "tags": "language history"
+    },
+    {
+      "id": "nietzsche",
+      "label": "Nietzsche",
+      "year": 1887,
+      "zone": "existence",
+      "x": 18,
+      "y": 18,
+      "verdict": "keep",
+      "claim": "Truths are embodied perspectives; values are made, contested, and sedimented.",
+      "opinion": "The great de-moralizer of metaphysics. Perspectivism is disciplined interpretation, not permission for any claim whatsoever.",
+      "tags": "spinoza history"
+    },
+    {
+      "id": "bergson",
+      "label": "Bergson",
+      "year": 1889,
+      "zone": "existence",
+      "x": 15,
+      "y": 8,
+      "verdict": "keep",
+      "claim": "Lived duration is qualitative flow, not clock time cut into spatial units.",
+      "opinion": "Indispensable for time and experience. Élan vital can be retired without losing duration or creative becoming.",
+      "tags": "mind spinoza"
+    },
+    {
+      "id": "husserl",
+      "label": "Husserl",
+      "year": 1900,
+      "zone": "existence",
+      "x": 64,
+      "y": 40,
+      "verdict": "keep",
+      "claim": "Consciousness is intentional: always consciousness of something.",
+      "opinion": "A precise return to experience, burdened by fantasies of presuppositionless method.",
+      "tags": "mind epistemology"
+    },
+    {
+      "id": "freud",
+      "label": "Freud",
+      "year": 1900,
+      "zone": "desire",
+      "x": 44,
+      "y": 62,
+      "verdict": "repair",
+      "claim": "The conscious ego is not master in its own house.",
+      "opinion": "The unconscious remains essential; many hydraulic details and clinical universalizations do not.",
+      "tags": "mind language"
+    },
+    {
+      "id": "wittgenstein1",
+      "label": "Early Wittgenstein",
+      "year": 1921,
+      "zone": "language",
+      "x": 34,
+      "y": 78,
+      "verdict": "repair",
+      "claim": "A proposition pictures a possible fact; what cannot be said should be passed over.",
+      "opinion": "A beautiful attempt to fence nonsense that accidentally reveals how much life occurs outside the fence.",
+      "tags": "language epistemology"
+    },
+    {
+      "id": "logicalpos",
+      "label": "Logical positivism",
+      "year": 1925,
+      "zone": "language",
+      "x": 20,
+      "y": 88,
+      "verdict": "repair",
+      "claim": "Meaningful claims are empirically verifiable or analytically true.",
+      "opinion": "Excellent intellectual hygiene; verificationism fails its own test and amputates ethics, aesthetics, history, and much of science.",
+      "tags": "language epistemology"
+    },
+    {
+      "id": "heidegger",
+      "label": "Heidegger",
+      "year": 1927,
+      "zone": "existence",
+      "x": 44,
+      "y": 48,
+      "verdict": "repair",
+      "claim": "Human existence is already involved in a meaningful world before detached cognition.",
+      "opinion": "Deep correction to spectator theories of mind; needless obscurity and catastrophic politics demand permanent warning labels.",
+      "tags": "mind history"
+    },
+    {
+      "id": "huxley",
+      "label": "Aldous Huxley",
+      "year": 1945,
+      "zone": "consciousness",
+      "x": 42,
+      "y": 18,
+      "verdict": "repair",
+      "claim": "Ordinary consciousness may filter a wider field of experience; altered states can disclose neglected modes.",
+      "opinion": "Take the phenomenology seriously. Treat the perennial philosophy as comparative poetry, not a culturally neutral discovery.",
+      "tags": "mind"
+    },
+    {
+      "id": "kojeve",
+      "label": "Kojève",
+      "year": 1947,
+      "zone": "idealism",
+      "x": 80,
+      "y": 80,
+      "verdict": "repair",
+      "claim": "Hegel’s struggle for recognition culminates in a post-historical order.",
+      "opinion": "Electrifying interpretation, weak prophecy. History changes costume; it does not clock out.",
+      "tags": "history"
+    },
+    {
+      "id": "sartre",
+      "label": "Sartre",
+      "year": 1943,
+      "zone": "existence",
+      "x": 62,
+      "y": 32,
+      "verdict": "repair",
+      "claim": "Consciousness is freedom and negation, condemned to choose.",
+      "opinion": "Bad faith remains sharp. Radical freedom underestimates embodiment, trauma, institutions, and luck.",
+      "tags": "history mind"
+    },
+    {
+      "id": "camus",
+      "label": "Camus",
+      "year": 1942,
+      "zone": "existence",
+      "x": 36,
+      "y": 14,
+      "verdict": "keep",
+      "claim": "The world offers no final answer; revolt creates dignity without metaphysical consolation.",
+      "opinion": "More honest than systems promising closure: lucid limits, solidarity, and no cosmic receipt.",
+      "tags": "history"
+    },
+    {
+      "id": "merleau",
+      "label": "Merleau-Ponty",
+      "year": 1945,
+      "zone": "existence",
+      "x": 22,
+      "y": 28,
+      "verdict": "keep",
+      "claim": "Perception is enacted by a lived body already intertwined with the world.",
+      "opinion": "One of the strongest bridges from phenomenology to contemporary embodied cognition.",
+      "tags": "mind spinoza"
+    },
+    {
+      "id": "saussure",
+      "label": "Saussure",
+      "year": 1916,
+      "zone": "language",
+      "x": 62,
+      "y": 70,
+      "verdict": "keep",
+      "claim": "Signs acquire meaning through differences within a system.",
+      "opinion": "Foundational and powerful—so long as the system does not swallow bodies, history, and material practice.",
+      "tags": "language"
+    },
+    {
+      "id": "wittgenstein2",
+      "label": "Later Wittgenstein",
+      "year": 1953,
+      "zone": "language",
+      "x": 28,
+      "y": 46,
+      "verdict": "keep",
+      "claim": "Meaning is use within forms of life; many philosophical knots are misuse of language.",
+      "opinion": "One of philosophy’s best anti-philosophies. Therapy beats grand theory surprisingly often.",
+      "tags": "language"
+    },
+    {
+      "id": "lacan",
+      "label": "Lacan",
+      "year": 1953,
+      "zone": "desire",
+      "x": 66,
+      "y": 64,
+      "verdict": "repair",
+      "claim": "The subject is split by language; desire circles what symbolization cannot supply.",
+      "opinion": "A potent diagram of desire and misrecognition, surrounded by cultic obscurity and thin empirical constraint.",
+      "tags": "language mind"
+    },
+    {
+      "id": "dennett",
+      "label": "Dennett",
+      "year": 1991,
+      "zone": "consciousness",
+      "x": 12,
+      "y": 56,
+      "verdict": "repair",
+      "claim": "There is no Cartesian theater; multiple distributed processes compete and revise.",
+      "opinion": "The demolition is right. The leap from “no inner screen” to “phenomenality is explained or illusory” is not. Location is dependence, not explanation.",
+      "tags": "mind"
+    },
+    {
+      "id": "nagel",
+      "label": "Nagel",
+      "year": 1974,
+      "zone": "consciousness",
+      "x": 54,
+      "y": 18,
+      "verdict": "keep",
+      "claim": "Objective descriptions omit what experience is like for the subject.",
+      "opinion": "Still the cleanest reminder that third-person completeness has not been demonstrated.",
+      "tags": "mind"
+    },
+    {
+      "id": "foucault",
+      "label": "Foucault",
+      "year": 1975,
+      "zone": "desire",
+      "x": 38,
+      "y": 72,
+      "verdict": "keep",
+      "claim": "Knowledge and subjectivity are formed inside practices of power.",
+      "opinion": "Essential correction to disembodied epistemology. Genealogy diagnoses better than it governs.",
+      "tags": "language history"
+    },
+    {
+      "id": "deleuze",
+      "label": "Deleuze & Guattari",
+      "year": 1980,
+      "zone": "desire",
+      "x": 20,
+      "y": 18,
+      "verdict": "keep",
+      "claim": "Reality is productive difference, multiplicity, assemblage, and rhizomatic becoming.",
+      "opinion": "The best cartography for process after Spinoza and Nietzsche—also a machine that can manufacture empty jargon.",
+      "tags": "spinoza language"
+    },
+    {
+      "id": "derrida",
+      "label": "Derrida",
+      "year": 1967,
+      "zone": "language",
+      "x": 46,
+      "y": 58,
+      "verdict": "keep",
+      "claim": "Meaning depends on differences and deferrals that prevent final self-presence.",
+      "opinion": "A durable tool against binary certainty. Deconstruction is close reading, not a license for mush.",
+      "tags": "language"
+    },
+    {
+      "id": "baudrillard",
+      "label": "Baudrillard",
+      "year": 1981,
+      "zone": "simulation",
+      "x": 78,
+      "y": 44,
+      "verdict": "repair",
+      "claim": "Signs and models can precede and organize what counts as reality.",
+      "opinion": "Prophetic about media saturation; “everything is simulation” becomes the totalizing gesture it mocks.",
+      "tags": "language"
+    },
+    {
+      "id": "chalmers",
+      "label": "Chalmers",
+      "year": 1995,
+      "zone": "consciousness",
+      "x": 72,
+      "y": 40,
+      "verdict": "keep",
+      "claim": "Functional explanation leaves the hard problem: why is processing accompanied by experience?",
+      "opinion": "Correctly preserves the explanandum. Conceivability arguments do not automatically settle ontology.",
+      "tags": "mind"
+    },
+    {
+      "id": "zizek",
+      "label": "Žižek",
+      "year": 1989,
+      "zone": "desire",
+      "x": 74,
+      "y": 78,
+      "verdict": "repair",
+      "claim": "Ideology persists in practices and enjoyment even when belief becomes cynical.",
+      "opinion": "A gifted contradiction detector and philosophical clown; signal diluted by compulsive repetition and performance.",
+      "tags": "language history"
+    },
+    {
+      "id": "embodied",
+      "label": "4E cognition",
+      "year": 1998,
+      "zone": "consciousness",
+      "x": 18,
+      "y": 22,
+      "verdict": "keep",
+      "claim": "Mind is embodied, embedded, enacted, and sometimes extended through organism–world coupling.",
+      "opinion": "The most promising broad correction to brain-in-a-vat cognitive science; extension claims still require careful boundaries.",
+      "tags": "mind spinoza"
+    },
+    {
+      "id": "panpsych",
+      "label": "Panpsychism / Russellian monism",
+      "year": 2010,
+      "zone": "consciousness",
+      "x": 48,
+      "y": 42,
+      "verdict": "repair",
+      "claim": "Experience or proto-experience is fundamental rather than produced from wholly non-experiential matter.",
+      "opinion": "Avoids brute emergence, inherits the combination problem. Best treated as a live metaphysical hypothesis, not a discovery.",
+      "tags": "mind spinoza"
+    },
+    {
+      "id": "gnwt",
+      "label": "Global neuronal workspace",
+      "year": 2020,
+      "zone": "consciousness",
+      "x": 28,
+      "y": 64,
+      "verdict": "keep",
+      "claim": "A representation becomes consciously accessible when globally broadcast through recurrent brain networks.",
+      "opinion": "Strong on access, report, and flexible control; may explain availability better than felt presence.",
+      "tags": "mind"
+    },
+    {
+      "id": "iit",
+      "label": "Integrated information theory 4.0",
+      "year": 2023,
+      "zone": "consciousness",
+      "x": 58,
+      "y": 76,
+      "verdict": "repair",
+      "claim": "Consciousness corresponds to irreducible intrinsic cause–effect structure.",
+      "opinion": "Bold and formal, but its metaphysical reach outruns current tests and yields counterintuitive assignments.",
+      "tags": "mind"
+    },
+    {
+      "id": "hot",
+      "label": "Higher-order theories",
+      "year": 2019,
+      "zone": "consciousness",
+      "x": 70,
+      "y": 66,
+      "verdict": "repair",
+      "claim": "A mental state becomes conscious when represented by a higher-order state.",
+      "opinion": "Useful for metacognition; risks mistaking knowing that one sees for seeing.",
+      "tags": "mind"
+    },
+    {
+      "id": "rpt",
+      "label": "Recurrent processing",
+      "year": 2018,
+      "zone": "consciousness",
+      "x": 26,
+      "y": 48,
+      "verdict": "keep",
+      "claim": "Local recurrent sensory processing may suffice for phenomenal consciousness before report.",
+      "opinion": "A parsimonious rival to prefrontal-heavy access theories; boundaries remain contested.",
+      "tags": "mind"
+    },
+    {
+      "id": "predictive",
+      "label": "Predictive processing",
+      "year": 2018,
+      "zone": "consciousness",
+      "x": 20,
+      "y": 36,
+      "verdict": "keep",
+      "claim": "Perception is hierarchical inference constrained by sensory prediction error.",
+      "opinion": "A powerful account of perception and action, not by itself a complete theory of consciousness.",
+      "tags": "mind spinoza"
+    },
+    {
+      "id": "active",
+      "label": "Active inference",
+      "year": 2024,
+      "zone": "consciousness",
+      "x": 16,
+      "y": 28,
+      "verdict": "repair",
+      "claim": "Organisms act to maintain viable states by minimizing expected surprise through perception and action.",
+      "opinion": "Excellent organism-level framework; consciousness is often smuggled in rather than derived.",
+      "tags": "mind spinoza"
+    },
+    {
+      "id": "beautiful",
+      "label": "Beautiful Loop theory",
+      "year": 2025,
+      "zone": "consciousness",
+      "x": 24,
+      "y": 20,
+      "verdict": "repair",
+      "claim": "A hierarchically deep world-model becomes reflexively self-evidencing: it models a world that includes its own modeling existence.",
+      "opinion": "One of the most interesting new active-inference proposals; conceptually fertile, empirically immature, and not yet a solution to felt experience.",
+      "tags": "mind spinoza"
+    },
+    {
+      "id": "dit",
+      "label": "Dendritic integration theory",
+      "year": 2024,
+      "zone": "consciousness",
+      "x": 34,
+      "y": 54,
+      "verdict": "keep",
+      "claim": "Apical dendrites may integrate context with feedforward content in ways crucial to conscious processing.",
+      "opinion": "Promising bridge between cellular mechanism and large-scale theories; still not an answer to why mechanism feels.",
+      "tags": "mind"
+    },
+    {
+      "id": "ast",
+      "label": "Attention schema theory",
+      "year": 2019,
+      "zone": "consciousness",
+      "x": 46,
+      "y": 62,
+      "verdict": "repair",
+      "claim": "The brain models its own attention and reports that simplified model as awareness.",
+      "opinion": "Explains self-modeling and report elegantly; the model may still leave experience standing outside the explanation.",
+      "tags": "mind"
+    },
+    {
+      "id": "affective",
+      "label": "Affective / brainstem accounts",
+      "year": 2021,
+      "zone": "consciousness",
+      "x": 12,
+      "y": 42,
+      "verdict": "keep",
+      "claim": "Valenced organismic feeling may be more basic than cortical report or cognition.",
+      "opinion": "A necessary correction to vision-centric, cortex-centric theories; precise sufficiency claims remain open.",
+      "tags": "mind"
+    },
+    {
+      "id": "cogitate",
+      "label": "COGITATE adversarial test",
+      "year": 2025,
+      "zone": "consciousness",
+      "x": 42,
+      "y": 88,
+      "verdict": "keep",
+      "claim": "Preregistered tests found important predictions of both GNWT and IIT unsupported or complicated.",
+      "opinion": "The healthiest result: no coronation. Consciousness science needs sharper discriminating predictions, not fan clubs.",
+      "tags": "mind"
+    },
+    {
+      "id": "orch",
+      "label": "Orch-OR",
+      "year": 2014,
+      "zone": "consciousness",
+      "x": 76,
+      "y": 56,
+      "verdict": "quarantine",
+      "claim": "Quantum state reductions in neuronal microtubules generate conscious moments.",
+      "opinion": "Interesting only insofar as it produces risky, discriminating tests. Quantum vocabulary is not explanatory pixie dust.",
+      "tags": "mind"
+    },
+    {
+      "id": "haramein",
+      "label": "Nassim Haramein",
+      "year": 2015,
+      "zone": "consciousness",
+      "x": 94,
+      "y": 30,
+      "verdict": "quarantine",
+      "claim": "Cosmic geometry and vacuum structure are invoked to connect matter, information, and consciousness.",
+      "opinion": "Treat as speculative cosmological storytelling, not a credible consciousness theory, until independent testable evidence exists.",
+      "tags": "mind"
+    }
+  ],
+  "edges": [
+    {
+      "source": "anaximander",
+      "target": "heraclitus",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "heraclitus",
+      "target": "parmenides",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "parmenides",
+      "target": "plato",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "democritus",
+      "target": "dennett",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "plato",
+      "target": "descartes",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "plato",
+      "target": "kant",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "aristotle",
+      "target": "spinoza",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "descartes",
+      "target": "spinoza",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "descartes",
+      "target": "leibniz",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "descartes",
+      "target": "dennett",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "descartes",
+      "target": "chalmers",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "spinoza",
+      "target": "nietzsche",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "spinoza",
+      "target": "bergson",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "spinoza",
+      "target": "deleuze",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "spinoza",
+      "target": "panpsych",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "spinoza",
+      "target": "embodied",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "hume",
+      "target": "kant",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "berkeley",
+      "target": "kant",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "kant",
+      "target": "hegel",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "kant",
+      "target": "schopenhauer",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "hegel",
+      "target": "kojeve",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "kojeve",
+      "target": "zizek",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "hegel",
+      "target": "nietzsche",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "schopenhauer",
+      "target": "nietzsche",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "kierkegaard",
+      "target": "sartre",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "nietzsche",
+      "target": "heidegger",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "bergson",
+      "target": "deleuze",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "husserl",
+      "target": "heidegger",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "heidegger",
+      "target": "sartre",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "heidegger",
+      "target": "merleau",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "sartre",
+      "target": "camus",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "merleau",
+      "target": "embodied",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "baudelaire",
+      "target": "baudrillard",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "saussure",
+      "target": "lacan",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "saussure",
+      "target": "derrida",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "freud",
+      "target": "lacan",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "lacan",
+      "target": "zizek",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "nietzsche",
+      "target": "foucault",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "nietzsche",
+      "target": "deleuze",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "derrida",
+      "target": "baudrillard",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "deleuze",
+      "target": "baudrillard",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "foucault",
+      "target": "zizek",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "wittgenstein1",
+      "target": "logicalpos",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "logicalpos",
+      "target": "wittgenstein2",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "wittgenstein2",
+      "target": "derrida",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "huxley",
+      "target": "panpsych",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "nagel",
+      "target": "chalmers",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "dennett",
+      "target": "gnwt",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "dennett",
+      "target": "ast",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "chalmers",
+      "target": "iit",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "embodied",
+      "target": "predictive",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "predictive",
+      "target": "active",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "active",
+      "target": "beautiful",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "predictive",
+      "target": "dit",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "rpt",
+      "target": "gnwt",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "rpt",
+      "target": "dit",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "hot",
+      "target": "gnwt",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "affective",
+      "target": "active",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "gnwt",
+      "target": "cogitate",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "iit",
+      "target": "cogitate",
+      "type": "lineage-or-argument-bridge"
+    },
+    {
+      "source": "orch",
+      "target": "haramein",
+      "type": "lineage-or-argument-bridge"
+    }
+  ]
+}

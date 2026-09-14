@@ -1,0 +1,22 @@
+{
+  "id": "philosophy-power-map-v0.1",
+  "title": "Philosophy Power Map",
+  "version": "V0.2",
+  "sourceVersion": "0.1.0",
+  "releasedAt": "2026-09-14T09:36:04.954935-04:00",
+  "timezone": "America/New_York",
+  "change": "Register and publish the recovered edition without changing existing copy, artwork, graph or behavior.",
+  "status": "publication-ready-legacy-review-edition",
+  "sourceTask": "01a06d98-0d07-7c72-a71c-67db170a1284",
+  "counts": {
+    "nodes": 54,
+    "relationships": 61,
+    "faces": 54
+  },
+  "knownGaps": [
+    "Full-meaning V1.0 audit pending for all 54 inherited nodes; claims and editorial judgments preserved verbatim.",
+    "Inherited Coherence numbers are editorial interpretations, not observed measurements; emotional Valence is unmeasured.",
+    "Whole-map identity Sigil and separate node Icons are not approved or registered; no artwork is promoted into core.",
+    "The 61 inherited relationships are preserved; typed relationship and cross-map review remain pending."
+  ]
+}

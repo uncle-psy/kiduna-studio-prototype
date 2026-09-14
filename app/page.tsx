@@ -13,7 +13,7 @@ export default function Home() {
     <main>
       <section className={styles.hero}>
         <p className={styles.eyebrow}>KIDUNA DESIGN · CONCEPTUAL PROTOTYPES</p>
-        <h1>Twelve systems.<br /><span>Six living decks.</span></h1>
+        <h1>Thirteen systems.<br /><span>Six living decks.</span></h1>
         <p className={styles.intro}>Explore Kiduna’s spatial language, the complete Royals &amp; Rogues game library, a build-ready system for alignment without obedience, Bellwether’s playable Level 1 reference world, symbolic maps of biology, culture, human-made systems, the Tao, political change, science-fiction disclosure inquiry, real estate and mortgage finance, and military power carried through service and long aftermath—plus three Mapshifting decks for reflection, discernment, and agency. These are design systems and working prototypes—not the production system.</p>
       </section>
 
@@ -186,6 +186,20 @@ export default function Home() {
             <h2>Military Systems</h2>
             <span>A graph-native System connecting political purpose, force, command, sustainment, battle, Veterans, Gulf War illness, VA navigation, family care, crisis support, and memory through one long field.</span>
             <a className={styles.enter} href="/military-systems">Enter the system <b>→</b></a>
+          </div>
+        </article>
+
+        <article className={styles.systemCard}>
+          <a className={styles.visual} href="/power-maps/philosophy" aria-label="Enter the Philosophy Power Map">
+            <img src="/power-maps/philosophy/v0.2-2026-09-14-093604-edt/philosophy-power-map-v0.1/cards/finished/spinoza.png" alt="The Immanent Orchard: Spinoza Card artwork" style={{ objectFit: "contain" }} />
+            <span className={styles.number}>13</span>
+            <span className={styles.status}>PHILOSOPHY POWER MAP</span>
+          </a>
+          <div className={styles.cardCopy}>
+            <p>PHILOSOPHY · MIND · CONSCIOUSNESS</p>
+            <h2>Philosophy Power Map</h2>
+            <span>54 nodes, 61 relationships, and 54 illustrated Cards connecting Spinoza, Dennett, Bergson, and the consciousness laboratory.</span>
+            <a className={styles.enter} href="/power-maps/philosophy">Enter the map <b>→</b></a>
           </div>
         </article>
       </section>

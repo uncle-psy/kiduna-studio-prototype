@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Philosophy’s recurring mistakes—and the ideas worth rescuing</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --background: light-dark(#f7f4ee, #171614);
+  --foreground: light-dark(#26231f, #f0ece5);
+  --card: light-dark(#fffdf8, #24211e);
+  --card-foreground: light-dark(#26231f, #f0ece5);
+  --muted: light-dark(#e8e2d7, #37322d);
+  --muted-foreground: light-dark(#686057, #c2b8ad);
+  --border: light-dark(#cfc5b8, #544c44);
+  --ring: light-dark(#3949ab, #aeb8ff);
+  --green: light-dark(#247a52, #65d7a1);
+  --orange: light-dark(#a85a16, #f1a35c);
+  --red: light-dark(#b63e35, #f17f76);
+  --viz-series-1: light-dark(#286d7a, #68c6d8);
+  --viz-series-2: light-dark(#8f4c35, #e39b7f);
+  --viz-series-3: light-dark(#6450a1, #afa0ee);
+  --viz-series-4: light-dark(#47752e, #8ecb6d);
+  --viz-series-5: light-dark(#a0376f, #e584b8);
+  --viz-series-6: light-dark(#846d24, #d8bd61);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+}
+* { box-sizing: border-box; }
+body { margin: 0; padding: 24px; background: var(--background); color: var(--foreground); }
+body > #philosophy-map-v1 { max-width: 1180px; margin: 0 auto; }
+h1 { font-size: clamp(1.5rem, 3vw, 2.4rem); line-height: 1.12; font-weight: 500; }
+.viz-controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; }
+.form-label { display: grid; gap: 5px; color: var(--muted-foreground); font-size: .875rem; }
+.form-select { min-width: 210px; padding: 9px 34px 9px 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); color: var(--card-foreground); font: inherit; }
+.card { padding: 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--card); color: var(--card-foreground); }
+.text-muted { color: var(--muted-foreground); }
+.viz-badge { display: inline-flex; padding: 3px 8px; border-radius: 999px; background: var(--muted); color: var(--foreground); font-size: .8rem; }
+@media (max-width: 560px) {
+  body { padding: 14px; }
+  .viz-controls, .form-label, .form-select { width: 100%; }
+}
+</style>
+</head>
+<body>
+<div id="philosophy-map-v1">
+  <h1>Philosophy’s recurring mistakes—and the ideas worth rescuing</h1>
+  <div class="viz-controls" aria-label="Map controls">
+    <label class="form-label" for="pm-view">Visual approach
+      <select class="form-select" id="pm-view">
+        <option value="atlas">Fault-line atlas</option>
+        <option value="subway">Argument subway</option>
+        <option value="carnival">Carnival of bad answers</option>
+      </select>
+    </label>
+    <label class="form-label" for="pm-filter">Show
+      <select class="form-select" id="pm-filter">
+        <option value="all">Whole map</option>
+        <option value="mind">Mind–body & consciousness</option>
+        <option value="spinoza">Spinoza’s long wake</option>
+        <option value="language">Language, desire & simulation</option>
+        <option value="history">History, existence & nihilism</option>
+      </select>
+    </label>
+    <label class="form-label" for="pm-pick">Inspect
+      <select class="form-select" id="pm-pick" aria-label="Inspect a philosopher or theory"></select>
+    </label>
+  </div>
+  <div class="pm-legend" aria-label="Editorial verdict legend">
+    <span><i class="pm-mark keep"></i> Keep</span>
+    <span><i class="pm-mark repair"></i> Repair</span>
+    <span><i class="pm-mark quarantine"></i> Quarantine</span>
+    <span class="viz-badge">54 / 54 Cards</span>
+    <span class="text-muted">Verdicts are editorial provocations, not truth scores.</span>
+  </div>
+  <div class="pm-stage">
+    <svg id="pm-svg" role="img" aria-labelledby="pm-title pm-desc">
+      <title id="pm-title">Interactive map of philosophical traditions and consciousness theories</title>
+      <desc id="pm-desc">Choose one of three layouts, select a node, and inspect its claim, strongest contribution, and main failure.</desc>
+      <g id="pm-bg"></g>
+      <g id="pm-edges"></g>
+      <g id="pm-nodes"></g>
+    </svg>
+  </div>
+  <div class="card pm-detail" aria-live="polite">
+    <img id="pm-card-art" class="pm-card-art" src="philosophy-power-map-v0.1/cards/finished/spinoza.png" alt="Spinoza Card artwork">
+    <div class="pm-detail-copy">
+      <div class="pm-detail-top"><strong id="pm-name">Spinoza</strong><span id="pm-meta" class="text-muted">Immanence · 1677</span></div>
+      <div id="pm-claim">Mind and body are not two substances but two attributes of one reality.</div>
+      <div id="pm-opinion" class="text-muted">The map’s backbone: the cleanest early escape from the Cartesian trap, though his geometric certainty is more performance than proof.</div>
+    </div>
+  </div>
+</div>
+
+<style>
+#philosophy-map-v1 { color: var(--foreground); width: 100%; }
+#philosophy-map-v1 h1 { margin: 0 0 12px; }
+#philosophy-map-v1 .viz-controls { margin-bottom: 10px; }
+#philosophy-map-v1 .pm-legend { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; margin: 6px 0 10px; }
+#philosophy-map-v1 .pm-mark { display: inline-block; width: 10px; height: 10px; margin-right: 5px; border-radius: 50%; background: var(--muted); }
+#philosophy-map-v1 .pm-mark.keep { background: var(--green); }
+#philosophy-map-v1 .pm-mark.repair { background: var(--orange); }
+#philosophy-map-v1 .pm-mark.quarantine { background: var(--red); }
+#philosophy-map-v1 .pm-stage { width: 100%; min-height: 650px; }
+#philosophy-map-v1 svg { width: 100%; height: 650px; display: block; overflow: visible; }
+#philosophy-map-v1 .pm-axis { stroke: var(--border); stroke-width: 1; }
+#philosophy-map-v1 .pm-axis-label, #philosophy-map-v1 .pm-zone-label { fill: var(--muted-foreground); font-size: 11px; font-weight: 500; }
+#philosophy-map-v1 .pm-zone-shape { fill: var(--muted); opacity: .22; stroke: var(--border); stroke-width: 1; }
+#philosophy-map-v1 .pm-edge { fill: none; stroke: var(--border); stroke-width: 1.1; opacity: .48; transition: opacity .2s, stroke-width .2s; }
+#philosophy-map-v1 .pm-edge.active { stroke: var(--foreground); stroke-width: 2.2; opacity: .86; }
+#philosophy-map-v1 .pm-node { cursor: pointer; }
+#philosophy-map-v1 .pm-node circle { stroke: var(--background); stroke-width: 2; transition: r .2s, opacity .2s; }
+#philosophy-map-v1 .pm-node text { fill: var(--foreground); font-size: 11px; paint-order: stroke; stroke: var(--background); stroke-width: 3px; stroke-linejoin: round; }
+#philosophy-map-v1 .pm-node.dim { opacity: .14; }
+#philosophy-map-v1 .pm-node.selected circle { stroke: var(--foreground); stroke-width: 3; }
+#philosophy-map-v1 .pm-node.selected text { font-weight: 500; }
+#philosophy-map-v1 .pm-node:focus circle { stroke: var(--ring); stroke-width: 4; }
+#philosophy-map-v1 .pm-detail { margin-top: 10px; display: grid; grid-template-columns: minmax(150px, 220px) minmax(0, 1fr); gap: 16px; align-items: start; }
+#philosophy-map-v1 .pm-card-art { display: block; width: 100%; height: auto; }
+#philosophy-map-v1 .pm-detail-top { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 6px; }
+#philosophy-map-v1 #pm-opinion { margin-top: 4px; }
+@media (max-width: 560px) {
+  #philosophy-map-v1 .pm-stage { min-height: 720px; }
+  #philosophy-map-v1 svg { height: 720px; }
+  #philosophy-map-v1 .pm-node text { font-size: 11px; }
+  #philosophy-map-v1 .pm-detail { grid-template-columns: 1fr; }
+  #philosophy-map-v1 .pm-card-art { max-width: 240px; margin: 0 auto; }
+}
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById('philosophy-map-v1');
+  const svg = root.querySelector('#pm-svg');
+  const bg = root.querySelector('#pm-bg');
+  const edgeLayer = root.querySelector('#pm-edges');
+  const nodeLayer = root.querySelector('#pm-nodes');
+  const viewSelect = root.querySelector('#pm-view');
+  const filterSelect = root.querySelector('#pm-filter');
+  const pickSelect = root.querySelector('#pm-pick');
+  const ns = 'http://www.w3.org/2000/svg';
+  const zones = {
+    cosmos: {label:'Cosmos & first principles', color:'var(--viz-series-1)'},
+    split: {label:'The mind–world split', color:'var(--viz-series-2)'},
+    idealism: {label:'Idealism & history machines', color:'var(--viz-series-3)'},
+    existence: {label:'Life, time & existence', color:'var(--viz-series-4)'},
+    language: {label:'Language & its traps', color:'var(--viz-series-5)'},
+    desire: {label:'Desire, power & difference', color:'var(--viz-series-6)'},
+    simulation: {label:'Modernity & simulation', color:'var(--viz-series-2)'},
+    consciousness: {label:'Consciousness laboratory', color:'var(--viz-series-1)'}
+  };
+  const N = (id,label,year,zone,x,y,verdict,claim,opinion,tags='') => ({id,label,year,zone,x,y,verdict,claim,opinion,tags});
+  const nodes = [
+    N('anaximander','Anaximander',-610,'cosmos',20,42,'keep','Reality exceeds every named element; worlds emerge from an indefinite source.','A productive refusal to confuse a favored ingredient with reality itself.','ontology'),
+    N('heraclitus','Heraclitus',-500,'cosmos',15,20,'keep','Reality is patterned change; identity persists through tension.','Still fresher than most substance metaphysics. The slogan “everything flows” is crude, but process is the right default.','spinoza history'),
+    N('parmenides','Parmenides',-475,'cosmos',78,79,'repair','What truly is cannot become what it is not.','A brilliant logical trap that turns grammar into ontology. Useful as a stress test, disastrous as a world picture.','ontology'),
+    N('democritus','Democritus',-420,'cosmos',10,66,'keep','Complex appearances arise from atoms and void.','The reductionist wager pays enormous scientific dividends, but experience is not explained merely by shrinking the furniture.','mind'),
+    N('plato','Plato',-380,'cosmos',88,88,'repair','Stable intelligible Forms are more real than changing appearances.','An immortal machine for asking normative questions—and a seductive source of anti-body, anti-change metaphysics. Fame is not a truth warrant.','idealism mind'),
+    N('aristotle','Aristotle',-340,'cosmos',40,68,'keep','Form is embodied organization, not a second world.','Usually the better ancient guide to living form, though his hierarchy of nature aged badly.','mind'),
+    N('descartes','Descartes',1641,'split',92,52,'repair','Thinking substance and extended substance are fundamentally different.','A first-rate problem statement attached to a terrible solution. The split still haunts neuroscience disguised as “representation.”','mind'),
+    N('spinoza','Spinoza',1677,'split',18,35,'keep','Mind and body are two attributes of one immanent reality.','The map’s backbone: the cleanest early escape from the Cartesian trap, though geometric certainty is more performance than proof.','mind spinoza'),
+    N('leibniz','Leibniz',1714,'split',68,72,'repair','Reality consists of perspective-bearing monads coordinated without causal exchange.','A dazzling anticipation of distributed perspective; the pre-established harmony is metaphysical duct tape.','mind idealism'),
+    N('berkeley','Berkeley',1710,'idealism',96,64,'repair','To exist is to be perceived or to perceive.','Coherent enough to embarrass naive realism; gains little by relabeling the whole universe “mind.”','idealism mind'),
+    N('hume','Hume',1748,'split',30,25,'keep','The self and causality are habits assembled from impressions.','Excellent acid for bad metaphysics. Less good at explaining why stable practices survive his acid bath.','epistemology mind'),
+    N('kant','Kant',1781,'idealism',76,84,'keep','Experience is structured by conditions supplied by cognition; things-in-themselves remain beyond direct knowledge.','The necessary checkpoint against naive access to reality. His cure risks turning the mind into a new prison.','idealism epistemology'),
+    N('hegel','Hegel',1807,'idealism',82,94,'repair','Concepts and social forms develop through contradictions toward fuller self-comprehension.','Feedback, mediation, and historical intelligibility: keep. Totalizing closure and providential tone: cut. “End of history” is mostly his afterlife.','history idealism'),
+    N('schopenhauer','Schopenhauer',1818,'idealism',58,54,'repair','Representation is driven by blind striving or Will.','Piercing about appetite and suffering; his cosmic pessimism overfits a temperament into an ontology.','mind history'),
+    N('kierkegaard','Kierkegaard',1843,'existence',58,20,'keep','Truth that matters is lived through commitment, anxiety, and singular choice.','A needed antidote to Hegelian aerial photography; faith is not compulsory to keep the insight.','history'),
+    N('baudelaire','Baudelaire',1863,'simulation',48,28,'keep','Modernity is transient, artificial, urban, intoxicating—and must be read aesthetically.','Not a system-builder, which is part of his value: a sensor for modern experience before theory embalms it.','language history'),
+    N('nietzsche','Nietzsche',1887,'existence',18,18,'keep','Truths are embodied perspectives; values are made, contested, and sedimented.','The great de-moralizer of metaphysics. Perspectivism is disciplined interpretation, not permission for any claim whatsoever.','spinoza history'),
+    N('bergson','Bergson',1889,'existence',15,8,'keep','Lived duration is qualitative flow, not clock time cut into spatial units.','Indispensable for time and experience. Élan vital can be retired without losing duration or creative becoming.','mind spinoza'),
+    N('husserl','Husserl',1900,'existence',64,40,'keep','Consciousness is intentional: always consciousness of something.','A precise return to experience, burdened by fantasies of presuppositionless method.','mind epistemology'),
+    N('freud','Freud',1900,'desire',44,62,'repair','The conscious ego is not master in its own house.','The unconscious remains essential; many hydraulic details and clinical universalizations do not.','mind language'),
+    N('wittgenstein1','Early Wittgenstein',1921,'language',34,78,'repair','A proposition pictures a possible fact; what cannot be said should be passed over.','A beautiful attempt to fence nonsense that accidentally reveals how much life occurs outside the fence.','language epistemology'),
+    N('logicalpos','Logical positivism',1925,'language',20,88,'repair','Meaningful claims are empirically verifiable or analytically true.','Excellent intellectual hygiene; verificationism fails its own test and amputates ethics, aesthetics, history, and much of science.','language epistemology'),
+    N('heidegger','Heidegger',1927,'existence',44,48,'repair','Human existence is already involved in a meaningful world before detached cognition.','Deep correction to spectator theories of mind; needless obscurity and catastrophic politics demand permanent warning labels.','mind history'),
+    N('huxley','Aldous Huxley',1945,'consciousness',42,18,'repair','Ordinary consciousness may filter a wider field of experience; altered states can disclose neglected modes.','Take the phenomenology seriously. Treat the perennial philosophy as comparative poetry, not a culturally neutral discovery.','mind'),
+    N('kojeve','Kojève',1947,'idealism',80,80,'repair','Hegel’s struggle for recognition culminates in a post-historical order.','Electrifying interpretation, weak prophecy. History changes costume; it does not clock out.','history'),
+    N('sartre','Sartre',1943,'existence',62,32,'repair','Consciousness is freedom and negation, condemned to choose.','Bad faith remains sharp. Radical freedom underestimates embodiment, trauma, institutions, and luck.','history mind'),
+    N('camus','Camus',1942,'existence',36,14,'keep','The world offers no final answer; revolt creates dignity without metaphysical consolation.','More honest than systems promising closure: lucid limits, solidarity, and no cosmic receipt.','history'),
+    N('merleau','Merleau-Ponty',1945,'existence',22,28,'keep','Perception is enacted by a lived body already intertwined with the world.','One of the strongest bridges from phenomenology to contemporary embodied cognition.','mind spinoza'),
+    N('saussure','Saussure',1916,'language',62,70,'keep','Signs acquire meaning through differences within a system.','Foundational and powerful—so long as the system does not swallow bodies, history, and material practice.','language'),
+    N('wittgenstein2','Later Wittgenstein',1953,'language',28,46,'keep','Meaning is use within forms of life; many philosophical knots are misuse of language.','One of philosophy’s best anti-philosophies. Therapy beats grand theory surprisingly often.','language'),
+    N('lacan','Lacan',1953,'desire',66,64,'repair','The subject is split by language; desire circles what symbolization cannot supply.','A potent diagram of desire and misrecognition, surrounded by cultic obscurity and thin empirical constraint.','language mind'),
+    N('dennett','Dennett',1991,'consciousness',12,56,'repair','There is no Cartesian theater; multiple distributed processes compete and revise.','The demolition is right. The leap from “no inner screen” to “phenomenality is explained or illusory” is not. Location is dependence, not explanation.','mind'),
+    N('nagel','Nagel',1974,'consciousness',54,18,'keep','Objective descriptions omit what experience is like for the subject.','Still the cleanest reminder that third-person completeness has not been demonstrated.','mind'),
+    N('foucault','Foucault',1975,'desire',38,72,'keep','Knowledge and subjectivity are formed inside practices of power.','Essential correction to disembodied epistemology. Genealogy diagnoses better than it governs.','language history'),
+    N('deleuze','Deleuze & Guattari',1980,'desire',20,18,'keep','Reality is productive difference, multiplicity, assemblage, and rhizomatic becoming.','The best cartography for process after Spinoza and Nietzsche—also a machine that can manufacture empty jargon.','spinoza language'),
+    N('derrida','Derrida',1967,'language',46,58,'keep','Meaning depends on differences and deferrals that prevent final self-presence.','A durable tool against binary certainty. Deconstruction is close reading, not a license for mush.','language'),
+    N('baudrillard','Baudrillard',1981,'simulation',78,44,'repair','Signs and models can precede and organize what counts as reality.','Prophetic about media saturation; “everything is simulation” becomes the totalizing gesture it mocks.','language'),
+    N('chalmers','Chalmers',1995,'consciousness',72,40,'keep','Functional explanation leaves the hard problem: why is processing accompanied by experience?','Correctly preserves the explanandum. Conceivability arguments do not automatically settle ontology.','mind'),
+    N('zizek','Žižek',1989,'desire',74,78,'repair','Ideology persists in practices and enjoyment even when belief becomes cynical.','A gifted contradiction detector and philosophical clown; signal diluted by compulsive repetition and performance.','language history'),
+    N('embodied','4E cognition',1998,'consciousness',18,22,'keep','Mind is embodied, embedded, enacted, and sometimes extended through organism–world coupling.','The most promising broad correction to brain-in-a-vat cognitive science; extension claims still require careful boundaries.','mind spinoza'),
+    N('panpsych','Panpsychism / Russellian monism',2010,'consciousness',48,42,'repair','Experience or proto-experience is fundamental rather than produced from wholly non-experiential matter.','Avoids brute emergence, inherits the combination problem. Best treated as a live metaphysical hypothesis, not a discovery.','mind spinoza'),
+    N('gnwt','Global neuronal workspace',2020,'consciousness',28,64,'keep','A representation becomes consciously accessible when globally broadcast through recurrent brain networks.','Strong on access, report, and flexible control; may explain availability better than felt presence.','mind'),
+    N('iit','Integrated information theory 4.0',2023,'consciousness',58,76,'repair','Consciousness corresponds to irreducible intrinsic cause–effect structure.','Bold and formal, but its metaphysical reach outruns current tests and yields counterintuitive assignments.','mind'),
+    N('hot','Higher-order theories',2019,'consciousness',70,66,'repair','A mental state becomes conscious when represented by a higher-order state.','Useful for metacognition; risks mistaking knowing that one sees for seeing.','mind'),
+    N('rpt','Recurrent processing',2018,'consciousness',26,48,'keep','Local recurrent sensory processing may suffice for phenomenal consciousness before report.','A parsimonious rival to prefrontal-heavy access theories; boundaries remain contested.','mind'),
+    N('predictive','Predictive processing',2018,'consciousness',20,36,'keep','Perception is hierarchical inference constrained by sensory prediction error.','A powerful account of perception and action, not by itself a complete theory of consciousness.','mind spinoza'),
+    N('active','Active inference',2024,'consciousness',16,28,'repair','Organisms act to maintain viable states by minimizing expected surprise through perception and action.','Excellent organism-level framework; consciousness is often smuggled in rather than derived.','mind spinoza'),
+    N('beautiful','Beautiful Loop theory',2025,'consciousness',24,20,'repair','A hierarchically deep world-model becomes reflexively self-evidencing: it models a world that includes its own modeling existence.','One of the most interesting new active-inference proposals; conceptually fertile, empirically immature, and not yet a solution to felt experience.','mind spinoza'),
+    N('dit','Dendritic integration theory',2024,'consciousness',34,54,'keep','Apical dendrites may integrate context with feedforward content in ways crucial to conscious processing.','Promising bridge between cellular mechanism and large-scale theories; still not an answer to why mechanism feels.','mind'),
+    N('ast','Attention schema theory',2019,'consciousness',46,62,'repair','The brain models its own attention and reports that simplified model as awareness.','Explains self-modeling and report elegantly; the model may still leave experience standing outside the explanation.','mind'),
+    N('affective','Affective / brainstem accounts',2021,'consciousness',12,42,'keep','Valenced organismic feeling may be more basic than cortical report or cognition.','A necessary correction to vision-centric, cortex-centric theories; precise sufficiency claims remain open.','mind'),
+    N('cogitate','COGITATE adversarial test',2025,'consciousness',42,88,'keep','Preregistered tests found important predictions of both GNWT and IIT unsupported or complicated.','The healthiest result: no coronation. Consciousness science needs sharper discriminating predictions, not fan clubs.','mind'),
+    N('orch','Orch-OR',2014,'consciousness',76,56,'quarantine','Quantum state reductions in neuronal microtubules generate conscious moments.','Interesting only insofar as it produces risky, discriminating tests. Quantum vocabulary is not explanatory pixie dust.','mind'),
+    N('haramein','Nassim Haramein',2015,'consciousness',94,30,'quarantine','Cosmic geometry and vacuum structure are invoked to connect matter, information, and consciousness.','Treat as speculative cosmological storytelling, not a credible consciousness theory, until independent testable evidence exists.','mind'),
+  ];
+  const edges = [
+    ['anaximander','heraclitus'],['heraclitus','parmenides'],['parmenides','plato'],['democritus','dennett'],['plato','descartes'],['plato','kant'],['aristotle','spinoza'],
+    ['descartes','spinoza'],['descartes','leibniz'],['descartes','dennett'],['descartes','chalmers'],['spinoza','nietzsche'],['spinoza','bergson'],['spinoza','deleuze'],['spinoza','panpsych'],['spinoza','embodied'],
+    ['hume','kant'],['berkeley','kant'],['kant','hegel'],['kant','schopenhauer'],['hegel','kojeve'],['kojeve','zizek'],['hegel','nietzsche'],['schopenhauer','nietzsche'],
+    ['kierkegaard','sartre'],['nietzsche','heidegger'],['bergson','deleuze'],['husserl','heidegger'],['heidegger','sartre'],['heidegger','merleau'],['sartre','camus'],['merleau','embodied'],
+    ['baudelaire','baudrillard'],['saussure','lacan'],['saussure','derrida'],['freud','lacan'],['lacan','zizek'],['nietzsche','foucault'],['nietzsche','deleuze'],['derrida','baudrillard'],['deleuze','baudrillard'],['foucault','zizek'],
+    ['wittgenstein1','logicalpos'],['logicalpos','wittgenstein2'],['wittgenstein2','derrida'],['huxley','panpsych'],
+    ['nagel','chalmers'],['dennett','gnwt'],['dennett','ast'],['chalmers','iit'],['embodied','predictive'],['predictive','active'],['active','beautiful'],['predictive','dit'],['rpt','gnwt'],['rpt','dit'],['hot','gnwt'],['affective','active'],['gnwt','cogitate'],['iit','cogitate'],['orch','haramein']
+  ];
+  const byId = Object.fromEntries(nodes.map(n => [n.id,n]));
+  let selected = 'spinoza';
+  let positions = {};
+  const el = (name, attrs={}) => { const x=document.createElementNS(ns,name); Object.entries(attrs).forEach(([k,v])=>x.setAttribute(k,v)); return x; };
+  function hash(id){ let h=0; for(const c of id) h=(h*31+c.charCodeAt(0))>>>0; return h; }
+  function layout(view,w,h){
+    const pad=52;
+    if(view==='atlas'){
+      nodes.forEach(n=>positions[n.id]={x:pad+(w-2*pad)*n.x/100,y:pad+(h-2*pad)*n.y/100});
+      return;
+    }
+    if(view==='subway'){
+      const rows=Object.keys(zones); const min=-650,max=2026;
+      nodes.forEach(n=>positions[n.id]={x:pad+(w-2*pad)*(n.year-min)/(max-min),y:56+rows.indexOf(n.zone)*(h-112)/(rows.length-1)});
+      return;
+    }
+    const centers={cosmos:[.15,.22],split:[.38,.17],idealism:[.67,.18],existence:[.86,.31],language:[.82,.66],desire:[.61,.82],simulation:[.32,.82],consciousness:[.16,.58]};
+    nodes.forEach(n=>{ const c=centers[n.zone],a=(hash(n.id)%628)/100,r=24+(hash(n.id+'r')%58); positions[n.id]={x:pad+(w-2*pad)*c[0]+Math.cos(a)*r,y:pad+(h-2*pad)*c[1]+Math.sin(a)*r}; });
+  }
+  function visible(n){
+    const f=filterSelect.value; if(f==='all') return true;
+    if(f==='mind') return n.tags.includes('mind') || n.zone==='consciousness' || ['descartes','spinoza'].includes(n.id);
+    if(f==='spinoza') return n.tags.includes('spinoza') || ['descartes','schopenhauer','nietzsche','bergson','deleuze','embodied','predictive','active','panpsych'].includes(n.id);
+    if(f==='language') return ['language','desire','simulation'].includes(n.zone);
+    return n.tags.includes('history') || ['idealism','existence'].includes(n.zone);
+  }
+  function verdictColor(v){ return v==='keep'?'var(--green)':v==='repair'?'var(--orange)':'var(--red)'; }
+  function render(){
+    const w=Math.max(320,svg.getBoundingClientRect().width||900), h=w<560?720:650;
+    svg.setAttribute('viewBox',`0 0 ${w} ${h}`); svg.style.height=h+'px';
+    layout(viewSelect.value,w,h); bg.replaceChildren(); edgeLayer.replaceChildren(); nodeLayer.replaceChildren();
+    if(viewSelect.value==='atlas'){
+      const vx=el('line',{x1:w/2,y1:28,x2:w/2,y2:h-28,class:'pm-axis'}), hy=el('line',{x1:28,y1:h/2,x2:w-28,y2:h/2,class:'pm-axis'}); bg.append(vx,hy);
+      [['one world / immanence',34,h-18,'start'],['split worlds / idealism',w-34,h-18,'end'],['process / lived time',w-34,20,'end'],['system / fixed essence',34,20,'start']].forEach(([t,x,y,a])=>{const tx=el('text',{x,y,'text-anchor':a,class:'pm-axis-label'});tx.textContent=t;bg.append(tx)});
+    } else if(viewSelect.value==='subway') {
+      Object.entries(zones).forEach(([id,z],i)=>{const y=56+i*(h-112)/(Object.keys(zones).length-1);const l=el('line',{x1:34,y1:y,x2:w-28,y2:y,class:'pm-axis'});l.style.stroke=z.color;l.style.opacity='.45';bg.append(l);const tx=el('text',{x:38,y:y-8,class:'pm-zone-label'});tx.textContent=z.label;bg.append(tx)});
+    } else {
+      const centers={cosmos:[.15,.22],split:[.38,.17],idealism:[.67,.18],existence:[.86,.31],language:[.82,.66],desire:[.61,.82],simulation:[.32,.82],consciousness:[.16,.58]};
+      Object.entries(centers).forEach(([id,c])=>{const shape=el('circle',{cx:52+(w-104)*c[0],cy:52+(h-104)*c[1],r:78,class:'pm-zone-shape'});shape.style.fill=zones[id].color;bg.append(shape);const tx=el('text',{x:52+(w-104)*c[0],y:52+(h-104)*c[1]-84,'text-anchor':'middle',class:'pm-zone-label'});tx.textContent=zones[id].label;bg.append(tx)});
+    }
+    edges.forEach(([a,b])=>{const p=positions[a],q=positions[b];if(!p||!q)return;const path=el('path',{d:`M${p.x},${p.y} Q${(p.x+q.x)/2},${(p.y+q.y)/2-12} ${q.x},${q.y}`,class:'pm-edge','data-a':a,'data-b':b}); if(a===selected||b===selected)path.classList.add('active'); edgeLayer.append(path)});
+    nodes.forEach(n=>{const p=positions[n.id],g=el('g',{class:'pm-node'+(n.id===selected?' selected':'')+(visible(n)?'':' dim'),transform:`translate(${p.x},${p.y})`});g.dataset.id=n.id;const title=el('title');title.textContent=`${n.label}. ${n.claim}`;const c=el('circle',{r:n.id===selected?8:6,fill:zones[n.zone].color});c.style.stroke=verdictColor(n.verdict);const t=el('text',{x:9,y:4});t.textContent=n.label;g.append(title,c,t);g.addEventListener('click',()=>select(n.id));nodeLayer.append(g)});
+  }
+  function select(id){ selected=id; pickSelect.value=id; const n=byId[id]; const art=root.querySelector('#pm-card-art'); art.src=`philosophy-power-map-v0.1/cards/finished/${id}.png`; art.alt=`${n.label} Card artwork`; root.querySelector('#pm-name').textContent=n.label;root.querySelector('#pm-meta').textContent=`${zones[n.zone].label} · ${n.year<0?Math.abs(n.year)+' BCE':n.year} · ${n.verdict}`;root.querySelector('#pm-claim').textContent=n.claim;root.querySelector('#pm-opinion').textContent=n.opinion;render(); }
+  nodes.slice().sort((a,b)=>a.label.localeCompare(b.label)).forEach(n=>{const o=document.createElement('option');o.value=n.id;o.textContent=n.label;pickSelect.append(o)});
+  pickSelect.value=selected;
+  viewSelect.addEventListener('change',render); filterSelect.addEventListener('change',render);
+  pickSelect.addEventListener('change',()=>select(pickSelect.value));
+  new ResizeObserver(render).observe(root.querySelector('.pm-stage'));
+  render();
+})();
+</script>
+
+</body>
+</html>

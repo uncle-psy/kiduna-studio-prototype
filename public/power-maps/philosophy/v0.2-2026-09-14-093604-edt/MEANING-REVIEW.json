@@ -1,0 +1,384 @@
+{
+  "contract": "Complete Card Meanings V1.0",
+  "status": "legacy-review-pending",
+  "records": [
+    {
+      "nodeKey": "anaximander",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "e1bff6ef2618da3b5a1d2fe1b5fc8cba129f22fb78b89e5d59d40d3579c8dd4a",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "heraclitus",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "3ea42397493cbc466e2b3c2ab555ae2094a34f43af7ba5838a9ac338975dea53",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "parmenides",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "47cb7e0fb2f8f94f167cbeed3ac2e18fdc6b87461f5cd9abb45775d34e7598b4",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "democritus",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "442e852c08f9b4c13049d2c59ed088cff8ad44fbebf1de27ac5958a783c10c91",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "plato",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "dd59c97563438e9f5b34729471fb5d498ecc98fe42699923f47fa77d15b0333b",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "aristotle",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "1b706c0dd1d3480d45605bb0cdb96e9215259f4c958c3812310de8d45ba96130",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "descartes",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "87b36f7bddbc2f3b439be68adda1dd61107f7bede9eed5465f7cf754cf8e5b64",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "spinoza",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "dff49065da48091a5f27eb6ec6822ba14d5a49cf5e12a51903a522cfa6ba0ce6",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "leibniz",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "093859d6b5aa37a54da1bb48cede13b2096da7067e8a4da09657f6cda2928e68",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "berkeley",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "0264b76b1688e3057adeee615440803ee7e388eff5c0b5d7301ad6997c35715d",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "hume",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "6bbcd29bfc445d11a8418d4418918044402d5ccdb754a031a95339104b523791",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "kant",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "3ab9bd66c9f4b093ae5c7f3c5165eb3dc12e388594f025b523251f2dfc71ec87",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "hegel",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "f5514edcd7b2de9e35c2df4d4ab2bcdd864385e577a78facb56ab406b04e5b82",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "schopenhauer",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "f457dc5b7ab9f5245007335edbe9f8796fd3c03ac305f146f64ca15ded9c48b8",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "kierkegaard",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "17534eee189e519b6cf120a6b6ad33bc4304c9bdd398f64409bdc66d926349f4",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "baudelaire",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "90336c46792d7455d3ad9daa473f395320fd0cf7f97fb1c2abba2fa577e6925d",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "nietzsche",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "c3e962bbba4627f93b8226bbe698cdd74532dd39e7d2c7892abdb6bd1359ecc1",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "bergson",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "70609e1f6dd5250cbe0e1c77b134fda3e601890cc6e6f5ddb120ad638c5698ab",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "husserl",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "37c978465976ef8846b142be4f03de90705dabefe01b354fd5a3de448533d158",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "freud",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "a78cc16965712e9cfe31481ce7e031d160df7dfb2bff9d0f2a789264161f8250",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "wittgenstein1",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "0f5ec81e4f4b0fc83ada7d18a70f9cd89e925abc80e1c52c8e8c3bb98401b60e",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "logicalpos",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "e8b35d4f39343e20f26e8b92bfe766f8a03c59fcd342de7f9aeae1c73b4da487",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "heidegger",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "9516db3bcfb0b0236b13b32681864640616f213755d0c69fad38bafbcc556ef8",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "huxley",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "01b26d41d753da3a7015b86a3cdc3d3962827d2acb52510329d7837486d24687",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "kojeve",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "e7590b918586daa14ab682bfade111fafedcf56711cb7af82a79bf1d19c6b69f",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "sartre",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "0dd14197647f3f21bd6f240ca19795672224118518d6be668e6fee8811eb839b",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "camus",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "325c3790e75c8a06705595ae1f635f1b2127f21af42bd243508070260d94be67",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "merleau",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "370c6910ae42d43e71d6c28b49a8772017a4e1d68eac7f6d44470db7c7e644f2",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "saussure",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "7e62e0b75c4a5cf96593605d247c1003b9aaefc0f217ed72c63c46f770c2c122",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "wittgenstein2",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "9797b4d78a1112905afc455e43b24a490a2997c430eb433d86bc7faf8f9982e0",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "lacan",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "429f9b95560acbbc070c5776cc5a05ce92c23677cd64feeef3dc95570dcb7c66",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "dennett",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "5b1d104ba2a9a2e559a74c78bdb2f92745fa2d8f061b08478adf522fc8e133fc",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "nagel",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "ff62cd2fab97c63793d43d54b5896533cfdd854a63a1ae628de5cf8dde5e4955",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "foucault",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "6883c47afd8dac759ee6051f46531a7720144fdbc1b7c0d6fbdf71891a17b0bb",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "deleuze",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "212d00b754773423ae4a067575482dd86b5859abfc27f6a5eda016a8a5460378",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "derrida",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "f5c18d81e8941114b4493f4844ff7d22a84d5307a0c2073f8893c781935fd732",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "baudrillard",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "f636984386369c571f9f325418d5f0461577c92ce3182f94e4b68a0d498c14e0",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "chalmers",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "b7f877443fd23aa251d891f1e85d2e48cb51777ee6477b988d233cfe2e7dce13",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "zizek",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "2e6c98d93b9f4a6fc6412180f5537467975ed5b8df137de90fa650da1d59539e",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "embodied",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "113cb861d8befe5c72b39c2de8ac8465885f38ae6ebcff5a37d40ab9098e74f3",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "panpsych",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "2744a4d12c1ab86b6552f4d9334b828e624d0f2ee3390e09993ed6d5f3fb62df",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "gnwt",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "3a918a27afd9e8edecab0343f03db5f056370b54c79dc5fe8a3a65141f6928a1",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "iit",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "a76fc94aa9a86b2a286370fe0e290bf83873ce9d299e7e88f1e9569a30b7b460",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "hot",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "c5ed74bd056b625a8da0bf7c29af8843e7a55540c655a552e2a40574333a9a24",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "rpt",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "6aa29180fc362e3e93233d31358a35e1f79a536f3ca69e6b372613fcb3be6dfc",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "predictive",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "e7b4264bc58aaba985403731dc82c3377a0268481a0a3f29715290aee9c6c9fa",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "active",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "c314f79891c1fb44e970db1e3d2e39bc0308b43681b8b2e964e2b322679a97ca",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "beautiful",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "ba4b3d6a0e10391233eace4c221d0f6bffaf9a3f911c58ab8a326c2a47e32fb8",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "dit",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "5f0887df07fc0cf02586d5f731203818f7fa5ca6e554d14d02147e091aad38c7",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "ast",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "f130109fd14fff049190083684db7d4a732df7da19e9ac90f2872682e5e69a78",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "affective",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "99e9e7d82a928592d5c0d3d6e59dc324722e51613a70e8ec58d062a40ec11ec7",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "cogitate",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "43c788fc4c34f92b6757da23df7c2dcd0f1c3466f0a388f6b22bd68d58a2e84c",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "orch",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "8d02747c44388c57df2b9248db36f92cef028212bfdaa7df3787165723a8cd17",
+      "fullMeaningApproved": false
+    },
+    {
+      "nodeKey": "haramein",
+      "meaningBinding": "graph.json nodes[].claim + nodes[].opinion",
+      "status": "legacy-brief-claim-and-editorial-judgment",
+      "textSha256": "f534ce0c61c6c8da385cb931d524c47f6dea566c6cfc324f33b85ca97a487e92",
+      "fullMeaningApproved": false
+    }
+  ]
+}

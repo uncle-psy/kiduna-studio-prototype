@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 };
 
 const maps = [
+  { name: "Philosophy Power Map", version: "V0.2", status: "Published review edition", detail: "54 nodes · 61 relationships · 54 illustrated Cards", href: "/power-maps/philosophy", active: true },
   { name: "The Living Mirror", version: "V0.04", status: "Published · production complete", detail: "366 nodes · 962 typed edges · 68 native-2048 Cards · 298 fallback Icons", href: "/mapshifting/animal-deck", active: true },
   { name: "FORCES OF NATURE", version: "V1.0.0", status: "Published · production complete", detail: "589 nodes · 2,517 typed edges · 81 Cards · 589 Icons", href: "https://kiduna-ai-working-preview-0828.motodave.chatgpt.site/power-maps/forces-of-nature", active: true },
   { name: "It’s the Law", version: "V0.07", status: "Published · production complete", detail: "132 nodes · 310 typed edges · 132 finished Cards", href: "https://kiduna-ai-working-preview-0828.motodave.chatgpt.site/power-maps/the-law", active: true },
@@ -32,7 +33,7 @@ export default function PowerMapsPage() {
         <div>
           <p>POWER MAPS · CURRENT INDEX · CANON V0.52</p>
           <h1>Living systems,<br /><span>made traversable.</span></h1>
-          <div className={styles.metrics}><b>14 registered maps</b><b>Independently versioned</b><b>Cards + scalable Icons</b></div>
+          <div className={styles.metrics}><b>{maps.length} registered maps</b><b>Independently versioned</b><b>Cards + scalable Icons</b></div>
         </div>
         <p>A Power Map connects meanings, evidence, relationships, tensions, paths, practices, and expressions without pretending that a portable release is the living map itself.</p>
       </section>

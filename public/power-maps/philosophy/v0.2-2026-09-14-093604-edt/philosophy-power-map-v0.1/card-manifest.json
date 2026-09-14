@@ -1,0 +1,3137 @@
+{
+  "version": "0.1.0",
+  "cards": [
+    {
+      "id": "anaximander",
+      "label": "Anaximander",
+      "semanticKernel": "Reality exceeds every named element; worlds emerge from an indefinite source.",
+      "editorialPosition": "A productive refusal to confuse a favored ingredient with reality itself.",
+      "visualFamily": "immanent-orchard",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/anaximander.png",
+      "cardPath": "cards/finished/anaximander.png",
+      "sha256": "4f85a00c5c19bfe2e38f5992bcfe296abec2f153857e112a3c3140ec453ad322",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 78,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "heraclitus",
+      "label": "Heraclitus",
+      "semanticKernel": "Reality is patterned change; identity persists through tension.",
+      "editorialPosition": "Still fresher than most substance metaphysics. The slogan “everything flows” is crude, but process is the right default.",
+      "visualFamily": "immanent-orchard",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/heraclitus.png",
+      "cardPath": "cards/finished/heraclitus.png",
+      "sha256": "27e467a2f835a06c2f39bf2342d5fb3c81a8ad5c6351fe97ba1f035e1712d56b",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 86,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "parmenides",
+      "label": "Parmenides",
+      "semanticKernel": "What truly is cannot become what it is not.",
+      "editorialPosition": "A brilliant logical trap that turns grammar into ontology. Useful as a stress test, disastrous as a world picture.",
+      "visualFamily": "immanent-orchard",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/parmenides.png",
+      "cardPath": "cards/finished/parmenides.png",
+      "sha256": "acfe1237df3fff44e23613b2a79329f1ea98ec233bd2ea3f99a31698cafde76a",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 56,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 36,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "democritus",
+      "label": "Democritus",
+      "semanticKernel": "Complex appearances arise from atoms and void.",
+      "editorialPosition": "The reductionist wager pays enormous scientific dividends, but experience is not explained merely by shrinking the furniture.",
+      "visualFamily": "immanent-orchard",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/democritus.png",
+      "cardPath": "cards/finished/democritus.png",
+      "sha256": "eb1d98d0bc33e78254808cf343a722b1496e1cb088186b8c1af1ee0ff364af09",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 86,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 86,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "plato",
+      "label": "Plato",
+      "semanticKernel": "Stable intelligible Forms are more real than changing appearances.",
+      "editorialPosition": "An immortal machine for asking normative questions—and a seductive source of anti-body, anti-change metaphysics. Fame is not a truth warrant.",
+      "visualFamily": "immanent-orchard",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/plato.png",
+      "cardPath": "cards/finished/plato.png",
+      "sha256": "d75fb5bf11f2f4003633ed074672adf4510bba34842e13a7972d32d80225b1b8",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 39,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 36,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 64,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "aristotle",
+      "label": "Aristotle",
+      "semanticKernel": "Form is embodied organization, not a second world.",
+      "editorialPosition": "Usually the better ancient guide to living form, though his hierarchy of nature aged badly.",
+      "visualFamily": "immanent-orchard",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/aristotle.png",
+      "cardPath": "cards/finished/aristotle.png",
+      "sha256": "72c66e5ebf3d8c998a9c5226d82621a59733691718b2c600022e8fbd2c03c02a",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 86,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 86,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "descartes",
+      "label": "Descartes",
+      "semanticKernel": "Thinking substance and extended substance are fundamentally different.",
+      "editorialPosition": "A first-rate problem statement attached to a terrible solution. The split still haunts neuroscience disguised as “representation.”",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/descartes.png",
+      "cardPath": "cards/finished/descartes.png",
+      "sha256": "a4272f951e103009afea629de999442fb0e2812311273c01fe3690ec4d6a9cae",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 39,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 56,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 64,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "spinoza",
+      "label": "Spinoza",
+      "semanticKernel": "Mind and body are two attributes of one immanent reality.",
+      "editorialPosition": "The map’s backbone: the cleanest early escape from the Cartesian trap, though geometric certainty is more performance than proof.",
+      "visualFamily": "immanent-orchard",
+      "sourceStatus": "approved-source-sample",
+      "rawPath": "cards/raw/spinoza.png",
+      "cardPath": "cards/finished/spinoza.png",
+      "sha256": "563395f6e144e5e891d4b25b4c0eee012df55faccf9207cc09bba01e83ecce24",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 94,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 86,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "leibniz",
+      "label": "Leibniz",
+      "semanticKernel": "Reality consists of perspective-bearing monads coordinated without causal exchange.",
+      "editorialPosition": "A dazzling anticipation of distributed perspective; the pre-established harmony is metaphysical duct tape.",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/leibniz.png",
+      "cardPath": "cards/finished/leibniz.png",
+      "sha256": "fbcf2db860dd3d2357768466840c566d5bae173d2d02df2116ab970340f41498",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 39,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 56,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 64,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "berkeley",
+      "label": "Berkeley",
+      "semanticKernel": "To exist is to be perceived or to perceive.",
+      "editorialPosition": "Coherent enough to embarrass naive realism; gains little by relabeling the whole universe “mind.”",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/berkeley.png",
+      "cardPath": "cards/finished/berkeley.png",
+      "sha256": "26ed3c352057dd18fc33743e58994e6bd6405f3693d469267ce8fa1afd68176a",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 64,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 56,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 64,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "hume",
+      "label": "Hume",
+      "semanticKernel": "The self and causality are habits assembled from impressions.",
+      "editorialPosition": "Excellent acid for bad metaphysics. Less good at explaining why stable practices survive his acid bath.",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/hume.png",
+      "cardPath": "cards/finished/hume.png",
+      "sha256": "ac038a68ae192bba1dddf0f5ea38f8d319ce9512ca801406d4236915e98a38bf",
+      "dimensions": {
+        "world-contact": {
+          "value": 86,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 86,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 86,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 88,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "kant",
+      "label": "Kant",
+      "semanticKernel": "Experience is structured by conditions supplied by cognition; things-in-themselves remain beyond direct knowledge.",
+      "editorialPosition": "The necessary checkpoint against naive access to reality. His cure risks turning the mind into a new prison.",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/kant.png",
+      "cardPath": "cards/finished/kant.png",
+      "sha256": "ef716db2d7fcdf3150c55a8e028fd4f00d308b34d7da7fe208b7a636ae9409e4",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 78,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "hegel",
+      "label": "Hegel",
+      "semanticKernel": "Concepts and social forms develop through contradictions toward fuller self-comprehension.",
+      "editorialPosition": "Feedback, mediation, and historical intelligibility: keep. Totalizing closure and providential tone: cut. “End of history” is mostly his afterlife.",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/hegel.png",
+      "cardPath": "cards/finished/hegel.png",
+      "sha256": "ead5623ea9ce92ab70cf447771c3500c0b7b2c31799804501c88f8fc18832a6a",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 56,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 36,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "schopenhauer",
+      "label": "Schopenhauer",
+      "semanticKernel": "Representation is driven by blind striving or Will.",
+      "editorialPosition": "Piercing about appetite and suffering; his cosmic pessimism overfits a temperament into an ontology.",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/schopenhauer.png",
+      "cardPath": "cards/finished/schopenhauer.png",
+      "sha256": "ae0169cae5c96540673b5c090abe7803b5706242e2635a95595df76a51b843bd",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 64,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 56,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 64,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "kierkegaard",
+      "label": "Kierkegaard",
+      "semanticKernel": "Truth that matters is lived through commitment, anxiety, and singular choice.",
+      "editorialPosition": "A needed antidote to Hegelian aerial photography; faith is not compulsory to keep the insight.",
+      "visualFamily": "immanent-orchard",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/kierkegaard.png",
+      "cardPath": "cards/finished/kierkegaard.png",
+      "sha256": "ba0fcba34925f8fb9c125c4e29ed56f85cbd8ba851acae32ab21672ab01f0568",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 78,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "baudelaire",
+      "label": "Baudelaire",
+      "semanticKernel": "Modernity is transient, artificial, urban, intoxicating—and must be read aesthetically.",
+      "editorialPosition": "Not a system-builder, which is part of his value: a sensor for modern experience before theory embalms it.",
+      "visualFamily": "infinite-gift-shop",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/baudelaire.png",
+      "cardPath": "cards/finished/baudelaire.png",
+      "sha256": "7b6f37517c9bea0cf28e76e559de77059d50d711303c7e5cf9e44eee3d9ba58f",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 78,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "nietzsche",
+      "label": "Nietzsche",
+      "semanticKernel": "Truths are embodied perspectives; values are made, contested, and sedimented.",
+      "editorialPosition": "The great de-moralizer of metaphysics. Perspectivism is disciplined interpretation, not permission for any claim whatsoever.",
+      "visualFamily": "immanent-orchard",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/nietzsche.png",
+      "cardPath": "cards/finished/nietzsche.png",
+      "sha256": "35dfe4d1b1ebd812fb15f715f440876824e617c8ef3cb39d1fa12015285c1159",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 86,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "bergson",
+      "label": "Bergson",
+      "semanticKernel": "Lived duration is qualitative flow, not clock time cut into spatial units.",
+      "editorialPosition": "Indispensable for time and experience. Élan vital can be retired without losing duration or creative becoming.",
+      "visualFamily": "immanent-orchard",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/bergson.png",
+      "cardPath": "cards/finished/bergson.png",
+      "sha256": "469f0c8e1625123c397d851cd0f2e95912715f40c84633edebef56ca28928e41",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 94,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 86,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "husserl",
+      "label": "Husserl",
+      "semanticKernel": "Consciousness is intentional: always consciousness of something.",
+      "editorialPosition": "A precise return to experience, burdened by fantasies of presuppositionless method.",
+      "visualFamily": "immanent-orchard",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/husserl.png",
+      "cardPath": "cards/finished/husserl.png",
+      "sha256": "7f74607d64f727baa294ce14033791e0869804fe70496ff82a5af486a61597bc",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 86,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 86,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "freud",
+      "label": "Freud",
+      "semanticKernel": "The conscious ego is not master in its own house.",
+      "editorialPosition": "The unconscious remains essential; many hydraulic details and clinical universalizations do not.",
+      "visualFamily": "infinite-gift-shop",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/freud.png",
+      "cardPath": "cards/finished/freud.png",
+      "sha256": "ba1b2e42a13270eaa8ec36065354e11239769209ab908a138f62c4752d567e4f",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 64,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 56,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 64,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "wittgenstein1",
+      "label": "Early Wittgenstein",
+      "semanticKernel": "A proposition pictures a possible fact; what cannot be said should be passed over.",
+      "editorialPosition": "A beautiful attempt to fence nonsense that accidentally reveals how much life occurs outside the fence.",
+      "visualFamily": "infinite-gift-shop",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/wittgenstein1.png",
+      "cardPath": "cards/finished/wittgenstein1.png",
+      "sha256": "06384082591425f7c19c1ed239ea98562c5e32782f0cffd28a4f5cd4e6b32fa3",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 56,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 56,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "logicalpos",
+      "label": "Logical positivism",
+      "semanticKernel": "Meaningful claims are empirically verifiable or analytically true.",
+      "editorialPosition": "Excellent intellectual hygiene; verificationism fails its own test and amputates ethics, aesthetics, history, and much of science.",
+      "visualFamily": "infinite-gift-shop",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/logicalpos.png",
+      "cardPath": "cards/finished/logicalpos.png",
+      "sha256": "3aa1e06d7770cbb64544b60f852998d2cc5cb60098bf53e9ce796c0029f7dc8f",
+      "dimensions": {
+        "world-contact": {
+          "value": 64,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 56,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 56,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 36,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "heidegger",
+      "label": "Heidegger",
+      "semanticKernel": "Human existence is already involved in a meaningful world before detached cognition.",
+      "editorialPosition": "Deep correction to spectator theories of mind; needless obscurity and catastrophic politics demand permanent warning labels.",
+      "visualFamily": "immanent-orchard",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/heidegger.png",
+      "cardPath": "cards/finished/heidegger.png",
+      "sha256": "4ce5cb210644579c820e70397f81f6c23960283523a05107d548162f3e5e819e",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 64,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 56,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 64,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 38,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "huxley",
+      "label": "Aldous Huxley",
+      "semanticKernel": "Ordinary consciousness may filter a wider field of experience; altered states can disclose neglected modes.",
+      "editorialPosition": "Take the phenomenology seriously. Treat the perennial philosophy as comparative poetry, not a culturally neutral discovery.",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/huxley.png",
+      "cardPath": "cards/finished/huxley.png",
+      "sha256": "c41e31b0cf0ef25c03bab6d6cc1b756312a87887befed315b759c19b53ff7675",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 64,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 56,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 64,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "kojeve",
+      "label": "Kojève",
+      "semanticKernel": "Hegel’s struggle for recognition culminates in a post-historical order.",
+      "editorialPosition": "Electrifying interpretation, weak prophecy. History changes costume; it does not clock out.",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/kojeve.png",
+      "cardPath": "cards/finished/kojeve.png",
+      "sha256": "f599a7909101b08cda9d140e72f8b711a3e6b098b137063dab48263d8b03e990",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 56,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 36,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "sartre",
+      "label": "Sartre",
+      "semanticKernel": "Consciousness is freedom and negation, condemned to choose.",
+      "editorialPosition": "Bad faith remains sharp. Radical freedom underestimates embodiment, trauma, institutions, and luck.",
+      "visualFamily": "immanent-orchard",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/sartre.png",
+      "cardPath": "cards/finished/sartre.png",
+      "sha256": "9551c52e60a1d2a79737f2835b4f642d20867e0ef4db5d3d249e97b0c63db609",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 64,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 56,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 64,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "camus",
+      "label": "Camus",
+      "semanticKernel": "The world offers no final answer; revolt creates dignity without metaphysical consolation.",
+      "editorialPosition": "More honest than systems promising closure: lucid limits, solidarity, and no cosmic receipt.",
+      "visualFamily": "immanent-orchard",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/camus.png",
+      "cardPath": "cards/finished/camus.png",
+      "sha256": "38855b31243fd062b6569ddec039427caf92449d9ab3f42abff52eaf5708f53c",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 78,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 90,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 88,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "merleau",
+      "label": "Merleau-Ponty",
+      "semanticKernel": "Perception is enacted by a lived body already intertwined with the world.",
+      "editorialPosition": "One of the strongest bridges from phenomenology to contemporary embodied cognition.",
+      "visualFamily": "immanent-orchard",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/merleau.png",
+      "cardPath": "cards/finished/merleau.png",
+      "sha256": "c1829f75b0e242212c7288f854fa3605db1cd7438b58642e9a835054a5275c1d",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 94,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 86,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "saussure",
+      "label": "Saussure",
+      "semanticKernel": "Signs acquire meaning through differences within a system.",
+      "editorialPosition": "Foundational and powerful—so long as the system does not swallow bodies, history, and material practice.",
+      "visualFamily": "infinite-gift-shop",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/saussure.png",
+      "cardPath": "cards/finished/saussure.png",
+      "sha256": "5dfae7d20c80665e864bde6a1892239d3ce2ba06ea8bf4f8d294d1271a6d8735",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 78,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "wittgenstein2",
+      "label": "Later Wittgenstein",
+      "semanticKernel": "Meaning is use within forms of life; many philosophical knots are misuse of language.",
+      "editorialPosition": "One of philosophy’s best anti-philosophies. Therapy beats grand theory surprisingly often.",
+      "visualFamily": "infinite-gift-shop",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/wittgenstein2.png",
+      "cardPath": "cards/finished/wittgenstein2.png",
+      "sha256": "0eadeeb1339152869bfdfb05e3d9f4b05fa3022ecc69d6afef693dffad64dc36",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 78,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 90,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 88,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "lacan",
+      "label": "Lacan",
+      "semanticKernel": "The subject is split by language; desire circles what symbolization cannot supply.",
+      "editorialPosition": "A potent diagram of desire and misrecognition, surrounded by cultic obscurity and thin empirical constraint.",
+      "visualFamily": "infinite-gift-shop",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/lacan.png",
+      "cardPath": "cards/finished/lacan.png",
+      "sha256": "07aebef6a547cc48a9d3ff259aff7ca1a70d3d3dfe2993838295112291f02edf",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 64,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 56,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 64,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 38,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "dennett",
+      "label": "Dennett",
+      "semanticKernel": "There is no Cartesian theater; multiple distributed processes compete and revise.",
+      "editorialPosition": "The demolition is right. The leap from “no inner screen” to “phenomenality is explained or illusory” is not. Location is dependence, not explanation.",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "approved-source-sample",
+      "rawPath": "cards/raw/dennett.png",
+      "cardPath": "cards/finished/dennett.png",
+      "sha256": "11af596e1f38445a750d0970e722ba85497f25802f8133c0f775a618a29dfefa",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 64,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 56,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 44,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "nagel",
+      "label": "Nagel",
+      "semanticKernel": "Objective descriptions omit what experience is like for the subject.",
+      "editorialPosition": "Still the cleanest reminder that third-person completeness has not been demonstrated.",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/nagel.png",
+      "cardPath": "cards/finished/nagel.png",
+      "sha256": "4e50bdc37c798b6de0d30d5d08dd0eca61e62096b8c26713dd1bf50addd33b66",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 86,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 86,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 88,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "foucault",
+      "label": "Foucault",
+      "semanticKernel": "Knowledge and subjectivity are formed inside practices of power.",
+      "editorialPosition": "Essential correction to disembodied epistemology. Genealogy diagnoses better than it governs.",
+      "visualFamily": "infinite-gift-shop",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/foucault.png",
+      "cardPath": "cards/finished/foucault.png",
+      "sha256": "deab7ef1d04f78a155b46bdbc421825b9ac44eed9165809c0cc5a715c58baaa4",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 78,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "deleuze",
+      "label": "Deleuze & Guattari",
+      "semanticKernel": "Reality is productive difference, multiplicity, assemblage, and rhizomatic becoming.",
+      "editorialPosition": "The best cartography for process after Spinoza and Nietzsche—also a machine that can manufacture empty jargon.",
+      "visualFamily": "infinite-gift-shop",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/deleuze.png",
+      "cardPath": "cards/finished/deleuze.png",
+      "sha256": "4c0af5342743e488a429fb116a0d89f5243944ce18683ac687db5a7851121a35",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 86,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "derrida",
+      "label": "Derrida",
+      "semanticKernel": "Meaning depends on differences and deferrals that prevent final self-presence.",
+      "editorialPosition": "A durable tool against binary certainty. Deconstruction is close reading, not a license for mush.",
+      "visualFamily": "infinite-gift-shop",
+      "sourceStatus": "approved-source-sample",
+      "rawPath": "cards/raw/derrida.png",
+      "cardPath": "cards/finished/derrida.png",
+      "sha256": "5aa5c7139d4f374aa20bc0f3422f219002c8922ad0a4a11bcc7c16ea09070581",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 78,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "baudrillard",
+      "label": "Baudrillard",
+      "semanticKernel": "Signs and models can precede and organize what counts as reality.",
+      "editorialPosition": "Prophetic about media saturation; “everything is simulation” becomes the totalizing gesture it mocks.",
+      "visualFamily": "infinite-gift-shop",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/baudrillard.png",
+      "cardPath": "cards/finished/baudrillard.png",
+      "sha256": "41d981d1ef70f3853d1cca304442f662b318be4213421e7f6378e02db34dc3f9",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 56,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 36,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "chalmers",
+      "label": "Chalmers",
+      "semanticKernel": "Functional explanation leaves the hard problem: why is processing accompanied by experience?",
+      "editorialPosition": "Correctly preserves the explanandum. Conceivability arguments do not automatically settle ontology.",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/chalmers.png",
+      "cardPath": "cards/finished/chalmers.png",
+      "sha256": "fe49c47fc90840842e13a3ca5353a2463804de5b49ca5391ac1f1bc65feb0b72",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 86,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 86,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "zizek",
+      "label": "Žižek",
+      "semanticKernel": "Ideology persists in practices and enjoyment even when belief becomes cynical.",
+      "editorialPosition": "A gifted contradiction detector and philosophical clown; signal diluted by compulsive repetition and performance.",
+      "visualFamily": "infinite-gift-shop",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/zizek.png",
+      "cardPath": "cards/finished/zizek.png",
+      "sha256": "637b70e969ebbb3e4350a8fe1da880d7daa9e2029067890c9432e68290916c63",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 56,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 56,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 38,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "embodied",
+      "label": "4E cognition",
+      "semanticKernel": "Mind is embodied, embedded, enacted, and sometimes extended through organism–world coupling.",
+      "editorialPosition": "The most promising broad correction to brain-in-a-vat cognitive science; extension claims still require careful boundaries.",
+      "visualFamily": "immanent-orchard",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/embodied.png",
+      "cardPath": "cards/finished/embodied.png",
+      "sha256": "4246e7a777df95efbdf924921021dd4ef2a1010bb49ccb085564a87c1c3726eb",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 94,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 86,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "panpsych",
+      "label": "Panpsychism / Russellian monism",
+      "semanticKernel": "Experience or proto-experience is fundamental rather than produced from wholly non-experiential matter.",
+      "editorialPosition": "Avoids brute emergence, inherits the combination problem. Best treated as a live metaphysical hypothesis, not a discovery.",
+      "visualFamily": "immanent-orchard",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/panpsych.png",
+      "cardPath": "cards/finished/panpsych.png",
+      "sha256": "89d3a7dd276cfe5cf01ff3124a575ff6387ee2be67af3f91e8691ae2bdef40c3",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 72,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 56,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 64,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "gnwt",
+      "label": "Global neuronal workspace",
+      "semanticKernel": "A representation becomes consciously accessible when globally broadcast through recurrent brain networks.",
+      "editorialPosition": "Strong on access, report, and flexible control; may explain availability better than felt presence.",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/gnwt.png",
+      "cardPath": "cards/finished/gnwt.png",
+      "sha256": "edbc8d789034c3103371102d4048ef8d840255881cb3c26b1be1a6e5f12f85bb",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 86,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 86,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "iit",
+      "label": "Integrated information theory 4.0",
+      "semanticKernel": "Consciousness corresponds to irreducible intrinsic cause–effect structure.",
+      "editorialPosition": "Bold and formal, but its metaphysical reach outruns current tests and yields counterintuitive assignments.",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/iit.png",
+      "cardPath": "cards/finished/iit.png",
+      "sha256": "e3f5a95ed7fa9e8e9d5db4de6894377b1a5e5cd153d83fd4e02e1c96bce1ab19",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 64,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 56,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 64,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "hot",
+      "label": "Higher-order theories",
+      "semanticKernel": "A mental state becomes conscious when represented by a higher-order state.",
+      "editorialPosition": "Useful for metacognition; risks mistaking knowing that one sees for seeing.",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/hot.png",
+      "cardPath": "cards/finished/hot.png",
+      "sha256": "a87b507d6220e40c398cc6a3364b886e3733c3a21c3077d0f41c1ea244f2300c",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 64,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 56,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 64,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "rpt",
+      "label": "Recurrent processing",
+      "semanticKernel": "Local recurrent sensory processing may suffice for phenomenal consciousness before report.",
+      "editorialPosition": "A parsimonious rival to prefrontal-heavy access theories; boundaries remain contested.",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/rpt.png",
+      "cardPath": "cards/finished/rpt.png",
+      "sha256": "acc12b5333d4fe3ecc0c475b77189637046e32ab427c0ee06a04ccbf7f39288f",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 86,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 86,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "predictive",
+      "label": "Predictive processing",
+      "semanticKernel": "Perception is hierarchical inference constrained by sensory prediction error.",
+      "editorialPosition": "A powerful account of perception and action, not by itself a complete theory of consciousness.",
+      "visualFamily": "immanent-orchard",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/predictive.png",
+      "cardPath": "cards/finished/predictive.png",
+      "sha256": "30887efbb307f4445547a8d1d2c9b741670190b301726fd088605fc86202a7ab",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 94,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 86,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "active",
+      "label": "Active inference",
+      "semanticKernel": "Organisms act to maintain viable states by minimizing expected surprise through perception and action.",
+      "editorialPosition": "Excellent organism-level framework; consciousness is often smuggled in rather than derived.",
+      "visualFamily": "immanent-orchard",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/active.png",
+      "cardPath": "cards/finished/active.png",
+      "sha256": "347add12f0ab09fb0dfd472a85c86c109931d432812ce19ff6bf08ece29c17b6",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 72,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 56,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 64,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "beautiful",
+      "label": "Beautiful Loop theory",
+      "semanticKernel": "A hierarchically deep world-model becomes reflexively self-evidencing: it models a world that includes its own modeling existence.",
+      "editorialPosition": "One of the most interesting new active-inference proposals; conceptually fertile, empirically immature, and not yet a solution to felt experience.",
+      "visualFamily": "immanent-orchard",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/beautiful.png",
+      "cardPath": "cards/finished/beautiful.png",
+      "sha256": "dbada762e6bd94722eb48c34a815284800db1a56abb1c97174c3423687d8f11d",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 72,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 56,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 64,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "dit",
+      "label": "Dendritic integration theory",
+      "semanticKernel": "Apical dendrites may integrate context with feedforward content in ways crucial to conscious processing.",
+      "editorialPosition": "Promising bridge between cellular mechanism and large-scale theories; still not an answer to why mechanism feels.",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/dit.png",
+      "cardPath": "cards/finished/dit.png",
+      "sha256": "e6411db520704bb44b1c3d391e7ec0e00acbb84fc4b0113bba1b2ecef290db62",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 86,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 86,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "ast",
+      "label": "Attention schema theory",
+      "semanticKernel": "The brain models its own attention and reports that simplified model as awareness.",
+      "editorialPosition": "Explains self-modeling and report elegantly; the model may still leave experience standing outside the explanation.",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/ast.png",
+      "cardPath": "cards/finished/ast.png",
+      "sha256": "d954ca5bf53e27019a2eda3b27d15bb57c702aea5d4d172cb02986264730f686",
+      "dimensions": {
+        "world-contact": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 64,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 56,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 64,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 56,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "affective",
+      "label": "Affective / brainstem accounts",
+      "semanticKernel": "Valenced organismic feeling may be more basic than cortical report or cognition.",
+      "editorialPosition": "A necessary correction to vision-centric, cortex-centric theories; precise sufficiency claims remain open.",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/affective.png",
+      "cardPath": "cards/finished/affective.png",
+      "sha256": "9f61104ac9fe8b946d7abd932b371001f54b6eef04c7fdd799fab9cc45636c59",
+      "dimensions": {
+        "world-contact": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 86,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 78,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 86,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "cogitate",
+      "label": "COGITATE adversarial test",
+      "semanticKernel": "Preregistered tests found important predictions of both GNWT and IIT unsupported or complicated.",
+      "editorialPosition": "The healthiest result: no coronation. Consciousness science needs sharper discriminating predictions, not fan clubs.",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/cogitate.png",
+      "cardPath": "cards/finished/cogitate.png",
+      "sha256": "71b8b2b677e04f39999c91c406dcaed03b9cff100647a2c57e9b5cc003762e3e",
+      "dimensions": {
+        "world-contact": {
+          "value": 86,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 86,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 90,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 86,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 78,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "orch",
+      "label": "Orch-OR",
+      "semanticKernel": "Quantum state reductions in neuronal microtubules generate conscious moments.",
+      "editorialPosition": "Interesting only insofar as it produces risky, discriminating tests. Quantum vocabulary is not explanatory pixie dust.",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/orch.png",
+      "cardPath": "cards/finished/orch.png",
+      "sha256": "b894690a78288959f0d460739c3955c4074ef776d54408d9cb412eabdf896ad8",
+      "dimensions": {
+        "world-contact": {
+          "value": 14,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 30,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 22,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 30,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 22,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    },
+    {
+      "id": "haramein",
+      "label": "Nassim Haramein",
+      "semanticKernel": "Cosmic geometry and vacuum structure are invoked to connect matter, information, and consciousness.",
+      "editorialPosition": "Treat as speculative cosmological storytelling, not a credible consciousness theory, until independent testable evidence exists.",
+      "visualFamily": "cartesian-theater",
+      "sourceStatus": "production-complete-in-approved-family",
+      "rawPath": "cards/raw/haramein.png",
+      "cardPath": "cards/finished/haramein.png",
+      "sha256": "cc7edb57647ec2eb9d033cb8b004478b0382da5d045c734edffb5b2a6f773c7b",
+      "dimensions": {
+        "world-contact": {
+          "value": 14,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "embodied-adequacy": {
+          "value": 30,
+          "acceptableRange": [
+            30,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "closure-resistance": {
+          "value": 22,
+          "acceptableRange": [
+            40,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "experiential-respect": {
+          "value": 30,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        },
+        "language-legibility": {
+          "value": 10,
+          "acceptableRange": [
+            35,
+            100
+          ],
+          "claimLayer": "editorial-interpretation",
+          "confidence": "medium"
+        }
+      }
+    }
+  ]
+}
