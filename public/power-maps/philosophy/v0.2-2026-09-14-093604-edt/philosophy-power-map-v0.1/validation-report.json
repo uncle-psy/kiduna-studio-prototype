@@ -1,0 +1,30 @@
+{
+  "version": "0.1.0",
+  "date": "2026-09-04",
+  "published": false,
+  "registered": false,
+  "nodes": 54,
+  "edges": 61,
+  "rawCards": 54,
+  "finishedCards": 54,
+  "missingCards": [],
+  "cardContract": {
+    "format": "PNG",
+    "width": 1024,
+    "height": 1536,
+    "alphaChannel": true,
+    "transparentExterior": true,
+    "opaqueInterior": true,
+    "antialiasedBoundary": true,
+    "readableTextDetected": false
+  },
+  "visualReview": {
+    "contactSheets": 6,
+    "cardsReviewed": 54
+  },
+  "sourceSamples": [
+    "spinoza",
+    "dennett",
+    "derrida"
+  ]
+}

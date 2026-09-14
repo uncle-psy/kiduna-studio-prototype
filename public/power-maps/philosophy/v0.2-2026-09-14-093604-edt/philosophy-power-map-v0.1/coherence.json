@@ -1,0 +1,2590 @@
+{
+  "scope": "whole-map",
+  "valence": {
+    "orientation": "mixed-critical",
+    "policy": "Keep, Repair, and Quarantine are editorial provocations rather than objective truth scores."
+  },
+  "claimLayer": "editorial-interpretation",
+  "dimensions": {
+    "world-contact": {
+      "low": "self-sealing speculation",
+      "high": "evidence, consequence, and revision",
+      "acceptableRange": [
+        35,
+        100
+      ]
+    },
+    "embodied-adequacy": {
+      "low": "disembodied spectator",
+      "high": "situated organism-world relation",
+      "acceptableRange": [
+        30,
+        100
+      ]
+    },
+    "closure-resistance": {
+      "low": "totalizing finality",
+      "high": "plural, revisable, unfinished",
+      "acceptableRange": [
+        40,
+        100
+      ]
+    },
+    "experiential-respect": {
+      "low": "explains experience away",
+      "high": "preserves lived phenomenality as explanandum",
+      "acceptableRange": [
+        35,
+        100
+      ]
+    },
+    "language-legibility": {
+      "low": "obscurantist or purely performative",
+      "high": "clear, discriminating, operational where possible",
+      "acceptableRange": [
+        35,
+        100
+      ]
+    }
+  },
+  "nodeValues": {
+    "anaximander": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 78,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "heraclitus": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 86,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "parmenides": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 56,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 36,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "democritus": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 86,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 86,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "plato": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 39,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 36,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 64,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "aristotle": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 86,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 86,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "descartes": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 39,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 56,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 64,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "spinoza": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 94,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 86,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "leibniz": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 39,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 56,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 64,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "berkeley": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 64,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 56,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 64,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "hume": {
+      "world-contact": {
+        "value": 86,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 86,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 86,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 88,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "kant": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 78,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "hegel": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 56,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 36,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "schopenhauer": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 64,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 56,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 64,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "kierkegaard": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 78,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "baudelaire": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 78,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "nietzsche": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 86,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "bergson": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 94,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 86,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "husserl": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 86,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 86,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "freud": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 64,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 56,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 64,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "wittgenstein1": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 56,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 56,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "logicalpos": {
+      "world-contact": {
+        "value": 64,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 56,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 56,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 36,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "heidegger": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 64,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 56,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 64,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 38,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "huxley": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 64,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 56,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 64,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "kojeve": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 56,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 36,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "sartre": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 64,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 56,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 64,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "camus": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 78,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 90,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 88,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "merleau": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 94,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 86,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "saussure": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 78,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "wittgenstein2": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 78,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 90,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 88,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "lacan": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 64,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 56,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 64,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 38,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "dennett": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 64,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 56,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 44,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "nagel": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 86,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 86,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 88,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "foucault": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 78,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "deleuze": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 86,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "derrida": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 78,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "baudrillard": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 56,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 36,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "chalmers": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 86,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 86,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "zizek": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 56,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 56,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 38,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "embodied": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 94,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 86,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "panpsych": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 72,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 56,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 64,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "gnwt": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 86,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 86,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "iit": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 64,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 56,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 64,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "hot": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 64,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 56,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 64,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "rpt": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 86,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 86,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "predictive": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 94,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 86,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "active": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 72,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 56,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 64,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "beautiful": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 72,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 56,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 64,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "dit": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 86,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 86,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "ast": {
+      "world-contact": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 64,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 56,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 64,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 56,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "affective": {
+      "world-contact": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 86,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 78,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 86,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "cogitate": {
+      "world-contact": {
+        "value": 86,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 86,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 90,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 86,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 78,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "orch": {
+      "world-contact": {
+        "value": 14,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 30,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 22,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 30,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 22,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    },
+    "haramein": {
+      "world-contact": {
+        "value": 14,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "embodied-adequacy": {
+        "value": 30,
+        "acceptableRange": [
+          30,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "closure-resistance": {
+        "value": 22,
+        "acceptableRange": [
+          40,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "experiential-respect": {
+        "value": 30,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      },
+      "language-legibility": {
+        "value": 10,
+        "acceptableRange": [
+          35,
+          100
+        ],
+        "claimLayer": "editorial-interpretation",
+        "confidence": "medium"
+      }
+    }
+  }
+}

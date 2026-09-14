@@ -1,0 +1,22 @@
+{
+  "validatedAt": "2026-09-14T09:36:04.954935-04:00",
+  "nodes": 54,
+  "relationships": 61,
+  "faceFiles": 54,
+  "allFaceChecksumsMatch": true,
+  "pngDimensions": [
+    1024,
+    1536
+  ],
+  "rgba": true,
+  "sourcePayloadBytePreserved": true,
+  "htmlBytePreserved": true,
+  "semanticAudit": "pending",
+  "visualQa": "Inherited 54-Card review retained; no creative edits",
+  "knownGaps": [
+    "Full-meaning V1.0 audit pending for all 54 inherited nodes; claims and editorial judgments preserved verbatim.",
+    "Inherited Coherence numbers are editorial interpretations, not observed measurements; emotional Valence is unmeasured.",
+    "Whole-map identity Sigil and separate node Icons are not approved or registered; no artwork is promoted into core.",
+    "The 61 inherited relationships are preserved; typed relationship and cross-map review remain pending."
+  ]
+}

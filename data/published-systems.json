@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-30",
+  "updatedAt": "2026-09-14",
   "systems": [
     {
       "id": "isometric-scene-system",
@@ -205,6 +205,18 @@
       "order": 17,
       "listedOnHome": false,
       "listedInSystemsMenu": true
+    },
+    {
+      "id": "philosophy-power-map",
+      "label": "Philosophy Power Map",
+      "kind": "system",
+      "route": "/power-maps/philosophy",
+      "firstPublishedAt": "2026-09-14",
+      "surface": "local-page",
+      "status": "active",
+      "order": 18,
+      "listedOnHome": true,
+      "listedInSystemsMenu": false
     }
   ]
 }
